@@ -424,7 +424,7 @@
       var openBtn = cLink && cheapAll != null ? '<a id="ub-open" href="' + esc(cLink) + '" target="_blank" rel="noopener sponsored" data-site="' + esc(c.source) + '" class="block text-center mt-4 bg-accent text-ink font-bold px-5 py-3.5 rounded-xl text-base hover:brightness-95 transition">' +
         T('Open {site} at {price} a night', ov) + '</a>' +
         '<p class="text-xs text-stone-500 mt-1.5 text-center">' + (verdict === 'PARITY' ? T('The lowest listed price. Check the room and the final total on {site} before you book.', ov) : T('Check the room and the final total on {site} before you book.', ov)) + '</p>' : '';
-      var tieBlock = '';
+      var tieBlock = '', nearBlock = '';
       if (openBtn && (!window.UBI18N || UBI18N.lang === 'en') && String(c.source || '').toLowerCase() !== 'booking.com' && !(fcAlt && String(fcAlt.source || '').toLowerCase() === 'booking.com')) {
         var bkRow = srcs.filter(function (s) { return !s.country && String(s.source || '').toLowerCase() === 'booking.com'; })[0];
         var adLk = function (u) { return /^https:\/\/www\.google\.[a-z.]+\/(?:pagead\/)?aclk\?/.test(String(u || '')); };
@@ -434,10 +434,11 @@
         if (bkRow && bkRow.link && !adLk(bkRow.link) && (bkRow.allIn == null) === (c.allIn == null) && (bkTie || bkNear)) {
           var bkLink = goHref(bkRow.link, bkRow.source);
           var allTxt = c.allIn != null && !a.feesUnverified ? ', all in' : '';
-          if (bkLink) tieBlock = (bkTie
+          var bkHtml = (bkTie
               ? '<p id="ub-tie-note" class="text-sm text-slate-600 mt-3 text-center">Booking.com lists the same price, ' + fmt(cheapAll, cur) + ' a night' + allTxt + '.</p>'
-              : '<p id="ub-tie-note" data-near="1" class="text-sm text-slate-600 mt-3 text-center">Booking.com lists ' + fmt(bkP, cur) + ' a night' + allTxt + ', ' + fmt(Math.round(bkP) - Math.round(cheapAll), cur) + ' more than ' + esc(c.source) + '.</p>') +
-            '<a id="ub-tie-open" href="' + esc(bkLink) + '" target="_blank" rel="noopener sponsored" data-site="Booking.com" class="block text-center mt-2 bg-white text-ink font-bold px-5 py-3 rounded-xl text-base border border-stone-300 hover:border-ink transition">Open Booking.com at ' + fmt(bkTie ? cheapAll : bkP, cur) + '&nbsp;a&nbsp;night</a>';
+              : '<p id="ub-tie-note" data-near="1" class="text-sm text-slate-600 text-center">Booking.com lists ' + fmt(bkP, cur) + ' a night' + allTxt + ', ' + fmt(Math.round(bkP) - Math.round(cheapAll), cur) + ' more than ' + esc(c.source) + '.</p>') +
+            '<a id="ub-tie-open" href="' + esc(bkLink) + '" target="_blank" rel="noopener sponsored" data-site="Booking.com" class="block text-center mt-2' + (bkTie ? '' : ' mb-4') + ' bg-white text-ink font-bold px-5 py-3 rounded-xl text-base border border-stone-300 hover:border-ink transition">Open Booking.com at ' + fmt(bkTie ? cheapAll : bkP, cur) + '&nbsp;a&nbsp;night</a>';
+          if (bkLink) { if (bkTie) tieBlock = bkHtml; else nearBlock = bkHtml; }
         }
       }
       var sample = linkDates && stay.checkIn === sampleIn && stay.checkOut === sampleOut;
@@ -468,7 +469,7 @@
           '<div class="text-right shrink-0"><p class="font-bold">' + fmt(all, cur) + '</p>' +
           rowOpen(link, s.source, all, cur) + '</div></li>';
       }).join('');
-      $('sites').innerHTML = '<p class="text-sm font-semibold mb-1">' + (a.feesUnverified ? T('Listed price per night, by site (fees may be missing)') : T('All-in price per night, by site')) + '</p><ul class="list-none">' + rows + '</ul>' +
+      $('sites').innerHTML = nearBlock + '<p class="text-sm font-semibold mb-1">' + (a.feesUnverified ? T('Listed price per night, by site (fees may be missing)') : T('All-in price per night, by site')) + '</p><ul class="list-none">' + rows + '</ul>' +
         (shown.length < nSites ? '<p class="text-xs text-stone-500 mt-2">' + moreSites(nSites - shown.length) + '</p>' : '');
       $('receipt').textContent = receiptText(nSites, cur);
       allInNote(!a.feesUnverified);

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <title>Hotel Price Drop Alerts: Free, So You Can Rebook Lower</title>
+  <meta name="description" content="Free, no account: we check your hotel and dates once a day and email you when the rate is 5% or more lower two days running. Refundable? Rebook lower." />
+  <link rel="canonical" href="https://underbook.co/hotel-price-drop-alerts" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hotel Price Drop Alerts: Free, So You Can Rebook Lower" />
+  <meta property="og:description" content="Free, no account: we check your hotel and dates once a day and email you when the rate is 5% or more lower two days running. Refundable? Rebook lower." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://underbook.co/hotel-price-drop-alerts" />
+  <meta property="og:image" content="https://underbook.co/assets/images/og.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hotel Price Drop Alerts: Free, So You Can Rebook Lower" />
+  <meta name="twitter:description" content="Free, no account: we check your hotel and dates once a day and email you when the rate is 5% or more lower two days running. Refundable? Rebook lower." />
+  <meta name="twitter:image" content="https://underbook.co/assets/images/og.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui,-apple-system' font-size='17' font-weight='800' fill='%23ffffff'%3EU%3C/text%3E%3C/svg%3E" />
+
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Structured data: the app + the FAQ (rich-result eligible) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://underbook.co/#extension",
+    "name": "Underbook",
+    "alternateName": "Underbook: Hotel Price Comparison & Tracker",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome, Microsoft Edge, Firefox",
+    "browserRequirements": "Google Chrome, Microsoft Edge or Mozilla Firefox on a computer, or Firefox for Android 142 or newer",
+    "url": "https://underbook.co/",
+    "installUrl": [
+      "https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid",
+      "https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd",
+      "https://addons.mozilla.org/firefox/addon/underbook/"
+    ],
+    "sameAs": [
+      "https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid",
+      "https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd",
+      "https://addons.mozilla.org/firefox/addon/underbook/"
+    ],
+    "description": "A free browser extension. On the hotel page you are viewing, it shows the price each booking site lists on Google Hotels for your dates, all-in where the sites report taxes and fees, and whether a lower listing names the same room. You book on the site you choose.",
+    "featureList": [
+      "Compares the price each booking site lists on Google Hotels for your hotel and dates",
+      "Shows the going rate, the price most booking sites agree on",
+      "Says whether a lower listing names the same room, and says to check the room when it does not",
+      "Optional price-drop email, also for a refundable stay you already booked",
+      "No account, and it never sees your payment details"
+    ],
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://underbook.co/#organization",
+      "name": "Underbook",
+      "url": "https://underbook.co"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I set a price drop alert for a hotel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Type the hotel and your dates into Underbook's free checker and it checks that hotel's rate for your dates once a day, then emails you when it drops at least 5% on two daily checks in a row. It's a hotel price tracker, similar to CamelCamelCamel for Amazon, but for hotels. No account or app needed to watch a price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do hotel prices really drop after I book?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often. Hotels reprice constantly based on occupancy, and many rooms are booked on fully-refundable rates. If the price falls before your cancellation deadline, you can rebook lower and cancel the old reservation. The alert is what gets you there in time. Here is the full what-to-do playbook when a price drops after you book."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Watching a hotel price and getting drop alerts is free, no account required beyond an email to send the alert to. If you later book through a site Underbook surfaces, it may earn a small commission from that site; you pay nothing extra, and the commission never changes which rates it shows or their order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from just checking myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Underbook checks on a schedule so you don't have to remember, and it doesn't only track the site you booked on: it looks at other booking sites for the same hotel and dates, so a drop can also be another site listing the hotel for less. The email reminds you to check the room before you rebook. More on comparing the same room → If you're weighing the options, here's an honest look at which hotel price tracker fits your situation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The price check runs on Underbook's side from the hotel name and dates you type. It never sees or stores your payment details, booking happens on the site you choose, and it doesn't sell your data or email. Read the privacy policy →"
+      }
+    }
+  ]
+}
+  </script>
+  <!-- Structured data: breadcrumb trail (SERP breadcrumb display) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://underbook.co/" },
+      { "@type": "ListItem", "position": 2, "name": "Hotel Price Comparison", "item": "https://underbook.co/hotel-price-comparison" },
+      { "@type": "ListItem", "position": 3, "name": "Hotel Price Drop Alerts", "item": "https://underbook.co/hotel-price-drop-alerts" }
+    ]
+  }
+  </script>
+</head>
+
+<body class="font-sans bg-stone-50 text-ink antialiased">
+
+  <!-- ───────── NAV ───────── -->
+  <nav class="border-b border-stone-200 bg-stone-50/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg tracking-tight shrink-0">
+        <span class="inline-block w-7 h-7 rounded-md bg-ink text-white grid place-items-center text-base font-extrabold" aria-hidden="true">U</span>
+        Underbook
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="/hotel-price-checker" class="ub-nav-check text-sm font-semibold text-stone-600 hover:text-ink whitespace-nowrap">Check a price</a>
+        <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=nav" target="_blank" rel="noopener" data-cta="nav" class="ub-install ub-nav-install text-sm font-semibold bg-accent text-ink px-4 py-2 rounded-lg hover:bg-accent/90 transition whitespace-nowrap">
+          Add to Chrome, free
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <!-- ───────── HERO ───────── -->
+  <section class="px-6 pt-16 md:pt-24 pb-16 max-w-4xl mx-auto">
+    <p class="inline-block text-xs font-semibold tracking-wider uppercase text-slate-600 bg-stone-200/70 px-3 py-1 rounded-full mb-6">
+      Free hotel price tracker
+    </p>
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.05] mb-6">
+      Hotel price drop alerts<br /><span class="text-emerald-600">for the room you already booked.</span>
+    </h1>
+    <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-2xl">
+      Think CamelCamelCamel, but for hotels. Type a hotel and your dates into the free checker, and Underbook checks that hotel's rate for your dates once a day, then emails you when it <strong class="text-ink">drops</strong> at least 5% on two daily checks in a row. The checker also shows <strong class="text-ink">other booking sites</strong> for the same dates, so you can see if one already lists it for less, and the alert email links the lowest-priced site it found. Free, no account.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+      <a href="/hotel-price-checker" class="bg-accent text-ink font-bold px-6 py-3.5 rounded-lg hover:bg-accent/90 transition w-full sm:w-auto text-center">
+        Watch a hotel price, free
+      </a>
+      <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=hero_link" class="ub-install text-sm font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">or get the Chrome extension that checks as you book →</a>
+    </div>
+    <p data-ub-stores class="text-sm text-slate-600 mt-3 mb-0">Free for Chrome, Edge and Firefox: <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=stores_line" target="_blank" rel="noopener" data-store="chrome" data-cta="stores_line" class="ub-install font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Chrome Web Store</a> &middot; <a href="https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd" target="_blank" rel="noopener" data-store="edge" data-cta="stores_line" class="ub-install font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Edge Add-ons</a> &middot; <a href="https://addons.mozilla.org/firefox/addon/underbook/?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=stores_line" target="_blank" rel="noopener" data-store="firefox" data-cta="stores_line" class="ub-install font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Firefox Add-ons</a></p>
+    <p data-ub-appstore-static class="text-sm text-slate-600 mt-1 mb-6">Free on iPhone, iPad and Mac: <a href="https://apps.apple.com/app/id6818661903?ct=stores_line" data-store="appstore" target="_blank" rel="noopener" class="ub-install font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Get Underbook for Safari on the App Store</a></p>
+    <p class="text-xs text-slate-500 mt-4">
+      Free · no account needed · <strong class="text-slate-600">we never see your payment info</strong>.
+    </p>
+  </section>
+
+  <!-- ───────── HOW IT WORKS ───────── -->
+  <section class="px-6 py-16 bg-white border-y border-stone-200">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-3 tracking-tight">How hotel price drop alerts work</h2>
+      <p class="text-slate-600 mb-12 max-w-2xl">Three steps. The only thing we need from you is an email to send the alert to.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 grid place-items-center font-extrabold mb-4">1</div>
+          <h3 class="font-semibold text-lg mb-2">Enter the hotel and dates</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Type the hotel name and your dates into the free checker. It shows the rate on each booking site; add your email and Underbook starts watching the hotel's going rate for those dates.</p>
+        </div>
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 grid place-items-center font-extrabold mb-4">2</div>
+          <h3 class="font-semibold text-lg mb-2">We track it for you</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Underbook re-checks the price on a schedule, and checks other booking sites for the same hotel and dates, not just the one you started from.</p>
+        </div>
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 grid place-items-center font-extrabold mb-4">3</div>
+          <h3 class="font-semibold text-lg mb-2">You get the drop alert</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">When the going rate is at least 5% lower on two daily checks in a row, you get one email with the new price and where it is. That is the only drop alert for that watch, and every email unsubscribes in one click. If your booking is refundable, that's your cue to rebook lower and cancel the old one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── WHY IT WORKS ───────── -->
+  <section class="px-6 py-20 max-w-3xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">When watching a hotel price helps</h2>
+    <p class="text-slate-600 leading-relaxed mb-4">
+      Hotel rates aren't fixed. A hotel repricing a room as its calendar fills or empties is normal, and it happens right up to check-in. The catch is timing: a price drop only helps if you <strong class="text-ink">find out while you can still act on it</strong>, before a fully-refundable rate's cancellation deadline passes. That's the whole point of a drop alert. You booked; you moved on; Underbook keeps watching.
+    </p>
+    <p class="text-slate-600 leading-relaxed mb-8">
+      And a "drop" isn't only the same site getting cheaper. The same hotel, same dates, is often listed for less on a booking site you didn't check (a different wholesale channel, less ad spend), though not always for the same room. Underbook watches for both, and when the room names don't match, it says to check before booking instead of pretending a lookalike is a match.
+    </p>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="bg-white border border-stone-200 rounded-xl p-6">
+        <p class="font-semibold mb-3">What the tracker does</p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li><span aria-hidden="true">✅</span> Watches your hotel and dates for free, no account</li>
+          <li><span aria-hidden="true">✅</span> Emails you when the rate drops</li>
+          <li><span aria-hidden="true">✅</span> Also checks other sites for the same dates</li>
+          <li><span aria-hidden="true">✅</span> Flags when a match can't be confirmed</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-6">
+        <p class="font-semibold mb-3">What it never does</p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li><span aria-hidden="true">🚫</span> Book or cancel for you</li>
+          <li><span aria-hidden="true">🚫</span> See or store your payment info</li>
+          <li><span aria-hidden="true">🚫</span> Alert on a different room to look cheaper</li>
+          <li><span aria-hidden="true">🚫</span> Sell your email or data</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10 flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+      <a href="/hotel-price-checker" class="bg-ink text-white font-bold px-6 py-3.5 rounded-lg hover:bg-ink/90 transition w-full sm:w-auto text-center">
+        Start watching a hotel price →
+      </a>
+      <span class="text-sm text-slate-500">Booking now? The <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=article_link" class="ub-install underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">Chrome extension</a> checks the rate live as you book.</span>
+    </div>
+  </section>
+
+<!-- answer-links-1027:start -->
+  <section class="px-6 pt-4 pb-12 max-w-3xl mx-auto">
+    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">Checking the sites yourself</p>
+    <ul class="list-disc pl-5 space-y-2 text-slate-700">
+      <li><a href="/hotel-price-tracker-that-emails-you" class="text-ink underline decoration-accent decoration-2 underline-offset-2">Is there a hotel price tracker that emails you when the price drops?</a></li>
+    </ul>
+  </section>
+<!-- answer-links-1027:end -->
+
+<!-- copilot-links-1025:start -->
+  <section class="px-6 pt-4 pb-12 max-w-3xl mx-auto">
+    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">More answers</p>
+    <ul class="list-disc pl-5 space-y-2 text-slate-700">
+      <li><a href="/do-hotel-price-alerts-work" class="text-ink underline decoration-accent decoration-2 underline-offset-2">Do hotel price alerts work?</a></li>
+    </ul>
+  </section>
+<!-- copilot-links-1025:end -->
+
+  <!-- ───────── FAQ ───────── -->
+  <section class="px-6 py-16 bg-white border-y border-stone-200">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Hotel price tracking: common questions</h2>
+      <div class="space-y-6">
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Can I set a price drop alert for a hotel?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">Yes. Type the hotel and your dates into Underbook's free checker and it checks that hotel's rate for your dates once a day, then emails you when it drops at least 5% on two daily checks in a row. It's a hotel price tracker, similar to CamelCamelCamel for Amazon, but for hotels. No account or app needed to watch a price.</p>
+        </details>
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Do hotel prices really drop after I book?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">Often. Hotels reprice constantly based on occupancy, and many rooms are booked on fully-refundable rates. If the price falls before your cancellation deadline, you can rebook lower and cancel the old reservation. The alert is what gets you there in time. Here is the full <a href="/hotel-price-dropped-after-booking" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">what-to-do playbook when a price drops after you book</a>.</p>
+        </details>
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Is it free?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">Yes. Watching a hotel price and getting drop alerts is free, no account required beyond an email to send the alert to. If you later book through a site Underbook surfaces, it may earn a small commission from that site; you pay nothing extra, and the commission never changes which rates it shows or their order.</p>
+        </details>
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">How is this different from just checking myself?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">Underbook checks on a schedule so you don't have to remember, and it doesn't only track the site you booked on: it looks at other booking sites for the same hotel and dates, so a drop can also be another site listing the hotel for less. The email reminds you to check the room before you rebook. <a href="/hotel-price-comparison" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">More on comparing the same room →</a> If you're weighing the options, here's an honest look at <a href="/best-hotel-price-tracker" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">which hotel price tracker fits your situation</a>.</p>
+        </details>
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Is my data safe?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">The price check runs on Underbook's side from the hotel name and dates you type. It never sees or stores your payment details, booking happens on the site you choose, and it doesn't sell your data or email. <a href="/privacy" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">Read the privacy policy →</a></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+<!-- hotel-links:start -->
+  <section class="px-6 pb-12 max-w-3xl mx-auto">
+    <div class="bg-white border border-stone-200 rounded-2xl p-6 md:p-8">
+      <p class="text-sm font-semibold text-emerald-700 uppercase tracking-wider mb-2">Real prices, hotel by hotel</p>
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">Every site's price at 5,970 hotels in 368 cities</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">From our price snapshots of September 25, 2026, September 28, 2026, September 29, 2026, September 30, 2026, October 1, 2026, October 3, 2026 and October 10, 2026: each hotel's page lists every booking site Google Hotels showed, the going rate, and whether the lowest-priced listing named a room, with a button to check today's price for your own dates.</p>
+      <p class="text-sm text-slate-600 leading-relaxed mb-2">By region: <a href="/hotels/united-states" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">United States</a> · <a href="/hotels/europe" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Europe</a> · <a href="/hotels/americas" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Canada, Latin America, Caribbean</a> · <a href="/hotels/asia-pacific" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Asia-Pacific, Middle East, Africa</a></p>
+      <p class="text-sm text-slate-600 leading-relaxed">Start with a city: <a href="/hotels/new-york" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">New York</a> · <a href="/hotels/las-vegas" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Las Vegas</a> · <a href="/hotels/orlando" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Orlando</a> · <a href="/hotels/chicago" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Chicago</a> · <a href="/hotels/london" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">London</a> · <a href="/hotels/cancun" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Cancun</a> · <a href="/hotels/los-angeles" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Los Angeles</a> · <a href="/hotels/miami" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Miami</a> · <a href="/hotels/fort-lauderdale" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Fort Lauderdale</a> · <a href="/hotels/nashville" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Nashville</a> · <a href="/hotels/new-orleans" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">New Orleans</a> · <a href="/hotels/paris" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Paris</a> · <a href="/hotels/punta-cana" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Punta Cana</a> · <a href="/hotels/san-francisco" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">San Francisco</a> · <a href="/hotels/honolulu" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Honolulu</a> · <a href="/hotels/charleston" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Charleston</a> · <a href="/hotels/key-west" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Key West</a> · <a href="/hotels/washington-dc" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Washington DC</a> · <a href="/hotels/boston" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Boston</a> · <a href="/hotels/atlanta" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Atlanta</a> · <a href="/hotels/scottsdale" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Scottsdale</a> · <a href="/hotels/myrtle-beach" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Myrtle Beach</a> · <a href="/hotels/austin" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Austin</a></p>
+      <p class="text-sm mt-4"><a href="/hotels" class="font-semibold underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">All 5,970 hotels by city</a></p>
+    </div>
+  </section>
+<!-- hotel-links:end -->
+  <!-- ───────── FINAL CTA ───────── -->
+  <section class="px-6 py-24 bg-ink text-white text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Stop checking the price by hand.</h2>
+      <p class="text-lg text-stone-300 mb-10">Free price-drop alerts for the hotel and dates you already booked. We never see your payment, and you always book where you choose.</p>
+      <a href="/hotel-price-checker" class="inline-block bg-accent text-ink font-bold px-8 py-4 rounded-lg hover:bg-accent/90 transition">
+        Watch a hotel price, free
+      </a>
+      <p class="text-xs text-stone-400 mt-6">or <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=footer_link" class="ub-install underline hover:text-white">add the Chrome extension →</a></p>
+    </div>
+  </section>
+
+<!-- lang-links-1102:start -->
+  <section class="px-6 py-10 border-t border-stone-200">
+    <div class="max-w-3xl mx-auto space-y-8">
+      <nav aria-labelledby="ub-answer-langs-h">
+        <p id="ub-answer-langs-h" class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3">In other languages: Do hotel price alerts work?</p>
+        <ul class="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+          <li><a href="/es/funcionan-las-alertas-de-precios-de-hoteles" hreflang="es" lang="es" class="text-slate-600 underline decoration-accent decoration-2 underline-offset-2 hover:text-ink transition">Español</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+<!-- lang-links-1102:end -->
+
+  </main>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer class="px-6 py-10 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto mb-8 pb-8 border-b border-stone-200">
+      <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3">Hotel booking guides</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2 text-sm">
+        <a href="/hotel-price-comparison" class="text-slate-500 hover:text-ink transition">Hotel price comparison</a>
+        <a href="/hotel-price-comparison-extension" class="text-slate-500 hover:text-ink transition">Hotel price comparison extension</a>
+        <a href="/is-booking-com-legit" class="text-slate-500 hover:text-ink transition">Is Booking.com legit?</a>
+        <a href="/how-to-get-cheaper-hotel-rates" class="text-slate-500 hover:text-ink transition">How to get cheaper rates</a>
+        <a href="/booking-com-vs-hotel-direct" class="text-slate-500 hover:text-ink transition">Booking.com vs booking direct</a>
+        <a href="/best-hotel-price-tracker" class="text-slate-500 hover:text-ink transition">Best hotel price tracker</a>
+        <a href="/genius-discount-worth-it" class="text-slate-500 hover:text-ink transition">Is the Genius discount worth it?</a>
+        <a href="/hotel-price-drop-alerts" class="text-slate-500 hover:text-ink transition">Hotel price drop alerts</a>
+        <a href="/same-room-different-price" class="text-slate-500 hover:text-ink transition">Same room, different price</a>
+        <a href="/why-are-hotel-prices-different-on-different-sites" class="text-slate-500 hover:text-ink transition">Why prices differ across sites</a>
+        <a href="/resort-fees-explained" class="text-slate-500 hover:text-ink transition">Resort fees explained</a>
+        <a href="/does-clearing-cookies-lower-hotel-prices" class="text-slate-500 hover:text-ink transition">Do cookies affect hotel prices?</a>
+        <a href="/does-a-vpn-lower-hotel-prices" class="text-slate-500 hover:text-ink transition">Does a VPN lower hotel prices?</a>
+        <a href="/do-hotel-prices-drop-closer-to-the-date" class="text-slate-500 hover:text-ink transition">Do prices drop closer to the date?</a>
+        <a href="/cheapest-day-to-book-a-hotel" class="text-slate-500 hover:text-ink transition">Cheapest day to book a hotel?</a>
+        <a href="/is-super-com-legit" class="text-slate-500 hover:text-ink transition">Is Super.com legit?</a>
+        <a href="/is-vio-com-legit" class="text-slate-500 hover:text-ink transition">Is Vio.com legit?</a>
+        <a href="/is-agoda-legit" class="text-slate-500 hover:text-ink transition">Is Agoda legit?</a>
+        <a href="/is-priceline-legit" class="text-slate-500 hover:text-ink transition">Is Priceline legit?</a>
+        <a href="/is-expedia-legit" class="text-slate-500 hover:text-ink transition">Is Expedia legit?</a>
+        <a href="/is-hotels-com-legit" class="text-slate-500 hover:text-ink transition">Is Hotels.com legit?</a>
+        <a href="/is-kayak-legit" class="text-slate-500 hover:text-ink transition">Is Kayak legit?</a>
+        <a href="/is-trivago-legit" class="text-slate-500 hover:text-ink transition">Is trivago legit?</a>
+        <a href="/how-to-rebook-a-hotel-for-a-lower-price" class="text-slate-500 hover:text-ink transition">How to rebook for a lower price</a>
+        <a href="/booking-com-price-drop-after-booking" class="text-slate-500 hover:text-ink transition">Booking.com price dropped?</a>
+        <a href="/hotel-best-rate-guarantee" class="text-slate-500 hover:text-ink transition">Marriott and Hilton rate guarantees</a>
+        <a href="/non-refundable-hotel-price-dropped" class="text-slate-500 hover:text-ink transition">Non-refundable and the price dropped?</a>
+        <a href="/refundable-vs-non-refundable-hotel-rates" class="text-slate-500 hover:text-ink transition">Refundable vs non-refundable</a>
+        <a href="/how-underbook-works" class="text-slate-500 hover:text-ink transition">How Underbook works</a>
+        <a href="/corrections" class="text-slate-500 hover:text-ink transition">Corrections</a>
+        <a href="/is-there-a-honey-for-hotels" class="text-slate-500 hover:text-ink transition">Is there a Honey for hotels?</a>
+        <a href="/hotel-price-comparison-extension-for-safari" class="text-slate-500 hover:text-ink transition">Hotel price comparison in Safari</a>
+        <a href="/ratepunk-alternatives" class="text-slate-500 hover:text-ink transition">RatePunk alternatives</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-6 h-6 rounded bg-ink text-white grid place-items-center text-xs font-extrabold" aria-hidden="true">U</span>
+        <span><strong class="text-ink">Underbook</strong>. Your hotel, double-checked.</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <a href="/" class="hover:text-ink transition">Home</a>
+        <a href="/hotel-price-comparison" class="hover:text-ink transition">Price comparison</a>
+        <a href="/hotel-price-checker" class="hover:text-ink transition">Check a price</a>
+        <a href="/help" class="hover:text-ink transition">Help</a>
+        <a href="/privacy" class="hover:text-ink transition">Privacy</a>
+        <a href="mailto:hi@underbook.co" class="hover:text-ink transition">hi@underbook.co</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/app.js?v=20260925"></script>
+</body>
+</html>

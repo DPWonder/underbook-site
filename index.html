@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="IWDAShAhHQX3X5PoFXhGFW0BqGyKScv2VwIWxLSr2jw" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="msvalidate.01" content="38486BA83FC3CFEE89A9245ACBACAA8C" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <title>Underbook: Free Hotel Price Comparison Extension</title>
+  <meta name="description" content="Underbook is free for Chrome, Edge, Firefox and Safari. On a hotel page it shows if another site lists your stay for less and if it names the same room." />
+
+  <!-- Open Graph. og.png and its alt text: scripts/og_site_card.py draws the picture and --check holds these tags to its words. -->
+  <meta property="og:title" content="Underbook: Your hotel, double-checked." />
+  <meta property="og:description" content="We check whether your hotel is listed cheaper on another site, and whether that cheaper listing names the same room. You always book where you choose." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://underbook.co" />
+  <meta property="og:image" content="https://underbook.co/assets/images/og.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Underbook: Your hotel, double-checked. See if another booking site lists your stay for less, and if that price names the same room. Free for Chrome, Edge and Firefox. Web checker on any device." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Underbook: Your hotel, double-checked." />
+  <meta name="twitter:description" content="We check whether your hotel is listed cheaper on another site, and whether that cheaper listing names the same room. Free." />
+  <meta name="twitter:image" content="https://underbook.co/assets/images/og.png" />
+  <meta name="twitter:image:alt" content="Underbook: Your hotel, double-checked. See if another booking site lists your stay for less, and if that price names the same room. Free for Chrome, Edge and Firefox. Web checker on any device." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui,-apple-system' font-size='17' font-weight='800' fill='%23ffffff'%3EU%3C/text%3E%3C/svg%3E" />
+
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <link rel="stylesheet" href="/assets/site.css" />
+
+  <link rel="stylesheet" href="/styles.css" />
+
+  <link rel="canonical" href="https://underbook.co" />
+
+  <!-- lang-links:start: the language pages (scripts/lang_landing.py, docs/LANG_LANDING_2026-10-19.md) -->
+  <link rel="alternate" hreflang="en" href="https://underbook.co/" />
+  <link rel="alternate" hreflang="id" href="https://underbook.co/id" />
+  <link rel="alternate" hreflang="de" href="https://underbook.co/de" />
+  <link rel="alternate" hreflang="es" href="https://underbook.co/es" />
+  <link rel="alternate" hreflang="fr" href="https://underbook.co/fr" />
+  <link rel="alternate" hreflang="it" href="https://underbook.co/it" />
+  <link rel="alternate" hreflang="nl" href="https://underbook.co/nl" />
+  <link rel="alternate" hreflang="pl" href="https://underbook.co/pl" />
+  <link rel="alternate" hreflang="pt-BR" href="https://underbook.co/pt-br" />
+  <link rel="alternate" hreflang="pt-PT" href="https://underbook.co/pt-pt" />
+  <link rel="alternate" hreflang="sv" href="https://underbook.co/sv" />
+  <link rel="alternate" hreflang="vi" href="https://underbook.co/vi" />
+  <link rel="alternate" hreflang="tr" href="https://underbook.co/tr" />
+  <link rel="alternate" hreflang="ja" href="https://underbook.co/ja" />
+  <link rel="alternate" hreflang="ko" href="https://underbook.co/ko" />
+  <link rel="alternate" hreflang="zh-CN" href="https://underbook.co/zh-cn" />
+  <link rel="alternate" hreflang="zh-TW" href="https://underbook.co/zh-tw" />
+  <link rel="alternate" hreflang="x-default" href="https://underbook.co/" />
+  <!-- lang-links:end -->
+
+  <!-- Phone or computer, decided before the first paint so the hero shows one action with no flash
+       (docs/HOMEPAGE_2026-10-01.md). The same test as isHandheld in app.js: change the two together. -->
+  <script>
+    (function () {
+      var d = 'desktop';
+      try {
+        var u = navigator.userAgent || '';
+        if ((navigator.userAgentData && navigator.userAgentData.mobile) || /Android|iPhone|iPad|iPod|Mobile/i.test(u) ||
+            (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) d = 'handheld';
+        // X70 (2026-11-08): Safari on a Mac cannot add the extension, so it gets the check form. app.js's ubMacSafari: change the two together.
+        else if (/\bMacintosh\b/.test(u) && /\bVersion\/[\d.]+.*\bSafari\//.test(u) && !/Chrome|Chromium|CriOS|Edg|OPR|Firefox|FxiOS/.test(u)) d = 'handheld';
+      } catch (e) { d = 'desktop'; }
+      document.documentElement.setAttribute('data-ub-device', d);
+    })();
+  </script>
+
+  <!-- X71 (2026-11-09, docs/EXPERIMENTS.md): ChatGPT links this English homepage from answers written in other languages, and
+       a browser whose first language is one of the 16 language homepages' gets a link that opens that page. Decided here,
+       before the first paint, so nothing moves when it shows. 2026-11-13 (docs/fast/FAST_WALK_2026-11-13.md, X71 1 and 2):
+       phones and tablets get it too, and it is a filled green pill at the top of the hero, above the chip, instead of a grey
+       bar above the nav. English browsers, Safari on a Mac (X70's user agent rule, tested here directly; an iPad, which
+       also says Macintosh, keeps it), visits from inside this site and a browser that closed it: no link, and the page is
+       unchanged. Remove with its block at the top of the hero and app.js's X71 lines if the read drops it. -->
+  <style>
+    .ub-ll { display: none; }
+    html[data-ub-ll] .ub-ll { display: flex; }
+    .ub-ll { margin: 0 0 12px; }
+    /* the pill takes the hero's top padding, so the action below it moves as little as possible */
+    html[data-ub-ll] .ub-hero { padding-top: 12px; }
+    .ub-ll-pill { display: inline-flex; align-items: center; max-width: 100%; box-sizing: border-box; min-height: 40px;
+      padding: 0 4px 0 18px; border-radius: 9999px; background: #047857; color: #fff;
+      box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+    .ub-ll a { color: #fff; font-size: 16px; line-height: 22px; font-weight: 700; text-decoration: none; padding: 9px 6px 9px 0; }
+    .ub-ll a::after { content: " \2192"; }
+    .ub-ll a:hover, .ub-ll a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+    .ub-ll-close { flex: none; width: 36px; height: 36px; margin-left: 4px; border: 0; border-radius: 9999px;
+      background: transparent; color: #d1fae5; font-size: 22px; line-height: 36px; cursor: pointer; padding: 0; }
+    .ub-ll-close:hover, .ub-ll-close:focus-visible { background: rgba(255,255,255,.18); color: #fff; }
+  </style>
+  <script>
+    (function () {
+      try {
+        var u = navigator.userAgent || '';
+        // Safari on a Mac (X70's rule in the device script above), but not an iPad, whose Safari also says Macintosh
+        if (/\bMacintosh\b/.test(u) && /\bVersion\/[\d.]+.*\bSafari\//.test(u) && !/Chrome|Chromium|CriOS|Edg|OPR|Firefox|FxiOS/.test(u) &&
+            !(navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) return;
+        if (/^https?:\/\/(www\.)?underbook\.co(\/|$)/.test(document.referrer || '')) return;
+        if (window.localStorage.getItem('ub_ll_closed') === '1') return;
+        var l = String((navigator.languages && navigator.languages[0]) || navigator.language || '').toLowerCase();
+        var p = l.split('-')[0], c = '';
+        if (p === 'zh') c = /tw|hk|mo|hant/.test(l) ? 'zh-tw' : 'zh-cn';
+        else if (p === 'pt') c = l === 'pt-pt' ? 'pt-pt' : 'pt-br';
+        else if (/^(es|de|fr|it|nl|pl|tr|sv|id|vi|ja|ko)$/.test(p)) c = p;
+        if (c) document.documentElement.setAttribute('data-ub-ll', c);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- ph-banner:start (2026-11-05, docs/PRODUCT_HUNT_LAUNCH_2026-10-27.md 4.3 and 7): the Product Hunt launch-day line, on this
+       English homepage only. It shows only from 2026-11-07 08:01 UTC (12:01 AM PST, the launch) to 2026-11-08 07:59 UTC (the
+       end of Product Hunt's day), by this page's own clock, so it turns itself on and off with no deploy. Decided here,
+       before the first paint, so nothing moves when it shows; hidden without JavaScript. Its close button is remembered on
+       this browser. Nothing is counted (page views already keep the referring site). Remove this block and the one after
+       <body> after 2026-11-08. -->
+  <style>
+    .ub-ph { display: none; }
+    html[data-ub-ph="on"] .ub-ph { display: flex; }
+    .ub-ph { align-items: center; justify-content: center; gap: 8px; box-sizing: border-box; min-height: 36px;
+      padding: 6px 44px 6px 16px; position: relative; background: #f5f5f4; border-bottom: 1px solid #e7e5e4;
+      color: #44403c; font-size: 14px; line-height: 20px; text-align: center; }
+    .ub-ph p { margin: 0; }
+    .ub-ph a { color: #0a0a0a; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+    .ub-ph-close { position: absolute; right: 6px; top: 0; bottom: 0; margin: auto 0; width: 32px; height: 32px;
+      border: 0; border-radius: 6px; background: transparent; color: #57534e; font-size: 20px; line-height: 32px;
+      cursor: pointer; padding: 0; }
+    .ub-ph-close:hover, .ub-ph-close:focus-visible { background: #e7e5e4; color: #0a0a0a; }
+    @media (min-width: 768px) { .ub-ph { height: 36px; } }
+  </style>
+  <script>
+    (function () {
+      try {
+        var t = Date.now();
+        if (t >= Date.UTC(2026, 10, 7, 8, 1) && t < Date.UTC(2026, 10, 8, 8, 0)) {
+          var closed = false;
+          try { closed = window.localStorage.getItem('ub_ph_1107_closed') === '1'; } catch (e) { closed = false; }
+          if (!closed) document.documentElement.setAttribute('data-ub-ph', 'on');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <!-- ph-banner:end -->
+
+  <!-- Structured data (2026-10-02, docs/AI_VISIBILITY_2026-10-02.md): one graph for the company, the site, the browser extension
+       and the web checker, linked by @id so search engines and AI assistants read them as one entity. Facts only, each one
+       stated on this page or /how-underbook-works: free (price 0), the three stores it is on, no ratings (we have none to
+       show). The store links are the ones app.js uses; scripts/ai_visibility_check.py checks this block against them. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://underbook.co/#organization",
+        "name": "Underbook",
+        "url": "https://underbook.co",
+        "logo": "https://underbook.co/assets/images/og.png",
+        "email": "hi@underbook.co"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://underbook.co/#website",
+        "name": "Underbook",
+        "url": "https://underbook.co",
+        "description": "Hotel price comparison, all-in where the booking sites report taxes and fees. Check whether another site lists your stay for less before you book.",
+        "publisher": { "@id": "https://underbook.co/#organization" }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://underbook.co/#safari-app",
+        "name": "Underbook: Hotel Price Checker",
+        "alternateName": "Underbook for Safari",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "iOS 16 or later (iPhone and iPad), macOS 12 or later (Mac), Safari",
+        "description": "Underbook for Safari on iPhone, iPad and Mac: on the hotel page you are viewing in Safari, shows whether another booking site lists the same stay for less and whether the room names match.",
+        "installUrl": "https://apps.apple.com/us/app/underbook-hotel-price-checker/id6818661903",
+        "url": "https://apps.apple.com/us/app/underbook-hotel-price-checker/id6818661903",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://underbook.co/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://underbook.co/#extension",
+        "name": "Underbook",
+        "alternateName": "Underbook: Hotel Price Comparison & Tracker",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome, Microsoft Edge, Firefox",
+        "browserRequirements": "Google Chrome, Microsoft Edge or Mozilla Firefox on a computer, or Firefox for Android 142 or newer",
+        "url": "https://underbook.co/",
+        "installUrl": ["https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid", "https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd", "https://addons.mozilla.org/firefox/addon/underbook/"],
+        "sameAs": ["https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid", "https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd", "https://addons.mozilla.org/firefox/addon/underbook/"],
+        "description": "A free browser extension. On the hotel page you are viewing, it shows the price each booking site lists on Google Hotels for your dates, all-in where the sites report taxes and fees, and whether a lower listing names the same room. You book on the site you choose.",
+        "featureList": [
+          "Compares the price each booking site lists on Google Hotels for your hotel and dates",
+          "Shows the going rate, the price most booking sites agree on",
+          "Says whether a lower listing names the same room, and says to check the room when it does not",
+          "Optional price-drop email, also for a refundable stay you already booked",
+          "No account, and it never sees your payment details"
+        ],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://underbook.co/#organization" }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://underbook.co/hotel-price-checker#app",
+        "name": "Underbook Hotel Price Checker",
+        "url": "https://underbook.co/hotel-price-checker",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "Any (web browser)",
+        "description": "Checks every booking site Google Hotels lists for a hotel and dates, shows each price all-in when the sites report taxes and fees, and says whether the cheaper listing names the same room.",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://underbook.co/#organization" }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="font-sans bg-stone-50 text-ink antialiased">
+
+  <!-- ph-banner:start (2026-11-05): the launch-day line; shown only by the head script above, inside its window. -->
+  <div class="ub-ph" id="ub-ph" role="region" aria-label="Product Hunt launch">
+    <p>Underbook is on Product Hunt today. <a href="https://www.producthunt.com/products/underbook/launches/underbook-2" target="_blank" rel="noopener">Tell us what you think.</a></p>
+    <button type="button" class="ub-ph-close" aria-label="Close">&times;</button>
+  </div>
+  <script>
+    (function () {
+      var c = document.querySelector('#ub-ph .ub-ph-close');
+      if (!c) return;
+      c.addEventListener('click', function () {
+        try { window.localStorage.setItem('ub_ph_1107_closed', '1'); } catch (e) {}
+        document.documentElement.removeAttribute('data-ub-ph');
+      });
+    })();
+  </script>
+  <!-- ph-banner:end -->
+
+  <!-- ───────── NAV ───────── -->
+  <!-- 2026-10-05 (docs/GOOGLE_ADS_BUILD_2026-10-05.md, item 1 of docs/PAID_TEST_PROPOSAL_2026-10-05.md 4e): this page is
+       the paid test's landing page, and the Chrome Web Store's Deceptive Installation Tactics FAQ asks the first link to
+       the store to say that it installs an extension. On this page only, the nav's store button says so ("Add the Chrome
+       extension, free"; app.js makes it Edge or Firefox in those browsers); every other page keeps the shared nav of
+       scripts/nav_fit_20261001.py, which knows this one as HOME_NAV. -->
+  <nav class="border-b border-stone-200 bg-stone-50/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg tracking-tight shrink-0">
+        <span class="inline-block w-7 h-7 rounded-md bg-ink text-white grid place-items-center text-base font-extrabold" aria-hidden="true">U</span>
+        Underbook
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="/hotel-price-checker" class="ub-nav-check text-sm font-semibold text-stone-600 hover:text-ink whitespace-nowrap">Check a price</a>
+        <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=home&amp;utm_campaign=nav" target="_blank" rel="noopener" data-cta="nav" class="ub-install ub-nav-install text-sm font-semibold bg-accent text-ink px-4 py-2 rounded-lg hover:bg-accent/90 transition whitespace-nowrap">
+          Add the Chrome extension, free
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <!-- ───────── HERO ───────── -->
+  <!-- 2026-10-01 (docs/HOMEPAGE_2026-10-01.md): one action per device. A computer gets the extension (Add to Chrome;
+       app.js makes it Add to Edge on Edge), what it does in one line and what to do once it is added. A phone or tablet,
+       where an extension cannot be added, gets the web price check as a form right here. The trust links sit under both.
+       Which block shows: html[data-ub-device], set before the first paint by the script in <head> (the device test of
+       app.js); without JavaScript, the width (below 768px, the phone block). The rules are in styles.css.
+       2026-10-05 (docs/GOOGLE_ADS_BUILD_2026-10-05.md): the computer block discloses what is installed and what installing
+       does, as the Chrome Web Store's Deceptive Installation Tactics FAQ and Google Ads' unwanted software policy ask of a
+       paid landing page: the label above the headline names the product type and its single purpose, the line above the
+       button says what it does, the button says it adds an extension, and the line under it says what happens once it is
+       added (a welcome page, checks on hotel pages with dates, what it sends, how to remove it). -->
+  <section class="ub-hero px-4 sm:px-6 pt-6 sm:pt-10 md:pt-14 pb-14 md:pb-20 max-w-5xl mx-auto">
+    <div class="ub-hero-grid grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+      <!-- left: the message and the one action -->
+      <div class="min-w-0">
+      <!-- X71: the link to this visitor's language homepage; shown only by the head script above. -->
+      <div class="ub-ll" id="ub-ll" role="region" aria-label="Language">
+        <span class="ub-ll-pill"><a id="ub-ll-link" href="/" data-ub-ll-link></a><button type="button" class="ub-ll-close" aria-label="Close">&times;</button></span>
+      </div>
+      <script>
+        (function () {
+          var c = document.documentElement.getAttribute('data-ub-ll');
+          if (!c) return;
+          var t = { es: 'Ver Underbook en español', de: 'Underbook auf Deutsch ansehen', fr: 'Voir Underbook en français',
+            it: 'Vedi Underbook in italiano', 'pt-br': 'Ver o Underbook em português', 'pt-pt': 'Ver o Underbook em português',
+            nl: 'Bekijk Underbook in het Nederlands', pl: 'Zobacz Underbook po polsku', tr: 'Underbook\'u Türkçe görüntüle',
+            sv: 'Visa Underbook på svenska', id: 'Lihat Underbook dalam Bahasa Indonesia', vi: 'Xem Underbook bằng tiếng Việt',
+            ja: 'Underbook を日本語で見る', ko: 'Underbook 한국어로 보기', 'zh-cn': '查看 Underbook 简体中文版', 'zh-tw': '查看 Underbook 繁體中文版' };
+          var a = document.getElementById('ub-ll-link');
+          a.textContent = t[c];
+          a.href = '/' + c;
+          a.lang = c === 'zh-cn' ? 'zh-CN' : c === 'zh-tw' ? 'zh-TW' : c === 'pt-br' ? 'pt-BR' : c === 'pt-pt' ? 'pt-PT' : c;
+          document.querySelector('#ub-ll .ub-ll-close').addEventListener('click', function () {
+            try { window.localStorage.setItem('ub_ll_closed', '1'); } catch (e) {}
+            document.documentElement.removeAttribute('data-ub-ll');
+          });
+        })();
+      </script>
+        <p class="ub-desk-only"><span class="inline-block text-xs font-semibold tracking-wider uppercase text-slate-600 bg-stone-200/70 px-3 py-1 rounded-full mb-4">Free hotel price comparison extension</span></p>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.05] mb-4 md:mb-5">
+          Your hotel,<br /><span class="text-emerald-600">double-checked.</span>
+        </h1>
+
+        <!-- computer: add the extension -->
+        <div class="ub-desk-only">
+          <p class="text-lg text-slate-600 mb-5 leading-relaxed">On the hotel page you are already looking at, Underbook shows whether another booking site lists the same stay for less, and <strong class="text-ink">whether that lower price names the same room</strong>. You always book where you choose.</p>
+          <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=home&amp;utm_campaign=hero" target="_blank" rel="noopener" data-cta="hero" class="ub-install inline-block text-center bg-accent text-ink font-bold text-lg px-7 py-3.5 rounded-lg hover:bg-accent/90 transition">+ Add the Chrome extension, free</a>
+          <p class="text-sm text-slate-600 mt-3 max-w-md leading-relaxed">For Chrome, Edge and Firefox on a computer. Adding it opens a welcome page; then it checks other booking sites by itself on hotel pages with your dates (<a href="/privacy" class="underline decoration-stone-300 underline-offset-2 hover:text-ink">what it sends</a>). Remove it any time from your browser&#39;s extensions page.</p>
+          <p class="text-sm mt-3"><a href="/hotel-price-checker" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">No install? Check a hotel&#39;s price on the web &rarr;</a></p>
+        </div>
+
+        <!-- phone or tablet: check a price now -->
+        <div class="ub-hh-only">
+          <p data-ub-ios-top hidden class="mb-4"></p>
+          <p class="text-base text-slate-600 mb-4 leading-relaxed">Type a hotel and your dates. We check the booking sites Google Hotels lists and tell you <strong class="text-ink">whether a lower price names the same room</strong>.</p>
+          <form id="ub-home-check" action="/hotel-price-checker" method="get" class="bg-white border border-stone-200 rounded-2xl p-4 shadow-sm">
+            <label for="ub-home-hotel" class="block text-sm font-semibold text-slate-700 mb-1">Hotel</label>
+            <input id="ub-home-hotel" name="hotel" type="text" required maxlength="120" autocomplete="off" placeholder="e.g. Hilton Hawaiian Village Waikiki" class="w-full min-w-0 px-3.5 py-3 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
+            <div class="grid grid-cols-2 gap-3 mt-3">
+              <div class="min-w-0">
+                <label for="ub-home-in" class="block text-sm font-semibold text-slate-700 mb-1">Check-in</label>
+                <input id="ub-home-in" name="in" type="date" class="w-full min-w-0 px-3 py-2.5 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
+              </div>
+              <div class="min-w-0">
+                <label for="ub-home-out" class="block text-sm font-semibold text-slate-700 mb-1">Check-out</label>
+                <input id="ub-home-out" name="out" type="date" class="w-full min-w-0 px-3 py-2.5 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
+              </div>
+            </div>
+            <!-- src=home_phone tells the checker the check started on this phone form; the worker counts cwebHomePhone (X54's
+                 counter, kept when its holiday buttons came off on 2026-11-13: docs/EXPERIMENTS.md X54 Reads). -->
+            <input type="hidden" name="src" value="home_phone" />
+            <button type="submit" class="block w-full mt-3 text-center bg-accent text-ink font-bold text-lg py-3.5 rounded-lg hover:bg-accent/90 transition">Check today&#39;s prices</button>
+          </form>
+          <p class="text-xs text-slate-500 mt-2">Free, no install, works on your phone. The extension is for Chrome, Edge and Firefox on a computer, and Firefox on Android.</p>
+          <!-- The dates start as the checker's own defaults (21 and 23 days ahead; it labels them "Sample dates" only on a
+               visit from a hotel or city page or a shared link);
+               check-out follows check-in and keeps the stay's length, as on the hotel pages (scripts/hotel_pages.py PAGE_JS).
+               Without this script the form still works: empty dates, and the checker uses its defaults. A person's submit
+               lets the checker run by itself (app.js, ub_ck). -->
+          <script>
+            (function () {
+              var f = document.getElementById('ub-home-check'); if (!f) return;
+              var ci = f.elements['in'], co = f.elements['out'];
+              var ymd = function (d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+              var day = function (s) { var p = String(s).split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); };
+              var isDay = function (s) { return /^\d{4}-\d{2}-\d{2}$/.test(s || ''); };
+              var t0 = new Date(), t1 = new Date(); t1.setDate(t1.getDate() + 1);
+              var d1 = new Date(); d1.setDate(d1.getDate() + 21); var d2 = new Date(d1); d2.setDate(d2.getDate() + 2);
+              if (!isDay(ci.value)) ci.value = ymd(d1);
+              if (!isDay(co.value)) co.value = ymd(d2);
+              ci.min = ymd(t0); co.min = ymd(t1);
+              // 2026-10-05 (docs/WEB_CHECKS_2026-10-05.md): until the visitor picks a check-out, an earlier check-in moves it
+              // too (the stay keeps its length; before, the sample stay picked down to this week became two or three weeks),
+              // and check-out's earliest date is the day after check-in.
+              var nights = 2, outPicked = false;
+              var follow = function (keep) { if (isDay(ci.value) && (keep === true || !isDay(co.value) || co.value <= ci.value)) { var o = day(ci.value); o.setDate(o.getDate() + nights); co.value = ymd(o); } };
+              var outMin = function () { if (isDay(ci.value)) { var n = day(ci.value); n.setDate(n.getDate() + 1); co.min = ymd(n); } };
+              outMin();
+              ci.addEventListener('change', function () { if (!isDay(ci.value)) return; outMin(); follow(!outPicked); });
+              co.addEventListener('change', function () { if (isDay(ci.value) && isDay(co.value)) { var n = Math.round((day(co.value) - day(ci.value)) / 864e5); if (n > 0) { nights = n; outPicked = true; } } });
+              f.addEventListener('submit', follow);
+            })();
+          </script>
+        </div>
+
+        <!-- trust, under both -->
+        <p class="text-sm text-slate-600 mt-5 leading-relaxed">We never see your payment details.<br />Check our work: <a href="/how-underbook-works" class="font-semibold text-ink underline decoration-stone-300 underline-offset-4 hover:text-emerald-700 whitespace-nowrap">How we check prices</a> &middot; <a href="/corrections" class="font-semibold text-ink underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Corrections</a></p>
+
+        <!-- Phone path (2026-10-06, docs/PHONE_PATH_2026-10-06.md): phones and tablets only, under the first screen's form and
+             trust line. Where the extension runs and the link to open on a computer; app.js (data-ub-phone) adds the
+             "Send the link to myself" button (the phone's share menu, else copy) and counts phone_link_start / _done.
+             Without JavaScript the sentence below stays, with no button. -->
+        <div class="ub-hh-only">
+          <div data-ub-phone="home" class="mt-6 border border-stone-200 bg-stone-50 rounded-xl p-4">
+            <p class="text-sm text-slate-700"><strong class="text-ink">Booking on a computer too?</strong> The free Underbook extension for Chrome, Edge or Firefox runs this check by itself on the hotel pages you open there. On your computer, open <strong class="text-ink whitespace-nowrap">underbook.co/get</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- right: what the extension shows on a hotel page (illustrative preview; computers only) -->
+      <div class="ub-desk-only relative">
+        <span class="absolute -top-3 left-4 text-[10px] font-semibold uppercase tracking-wider text-slate-500 bg-stone-50 px-2">Preview</span>
+        <div class="rounded-2xl border border-stone-200 bg-white shadow-xl shadow-stone-200/60 p-5">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="inline-block w-5 h-5 rounded bg-ink text-white grid place-items-center text-[11px] font-extrabold" aria-hidden="true">U</span>
+            <span class="text-sm font-semibold">Underbook checked 8 other sites</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-2 border-b border-stone-100">
+            <span class="text-slate-500">You're viewing · Booking.com</span>
+            <span class="font-semibold text-slate-700">$318/nt</span>
+          </div>
+          <div class="flex items-center justify-between text-sm py-2.5">
+            <span class="text-slate-700">We found · Vio.com</span>
+            <span class="font-bold text-emerald-700">$272/nt &nbsp;−$46</span>
+          </div>
+          <div class="my-3">
+            <span class="text-xs font-medium px-2 py-1 rounded-md bg-amber-50 text-amber-800">⚠ Vio.com doesn't name the room. Check it before you book.</span>
+          </div>
+          <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=home&amp;utm_campaign=card" target="_blank" rel="noopener" data-cta="preview" class="ub-install block text-center w-full bg-ink text-white text-sm font-semibold py-2.5 rounded-lg hover:bg-ink/90 transition">Add the Chrome extension, free</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ───────── PROOF: REAL ENGINE COMPARISON ───────── -->
+  <section id="demo" class="px-6 py-20 bg-white border-y border-stone-200">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-center text-sm font-medium text-slate-500 uppercase tracking-wider mb-2">A real comparison, run by our engine</p>
+      <h2 class="text-center text-3xl md:text-4xl font-bold mb-3 tracking-tight">
+        Same dates. <span class="text-emerald-600">A lower listed rate.</span>
+      </h2>
+      <!-- home-demo:start -->
+      <!-- Written by scripts/home_demo.py from data/dispersion/r2_week_later (Rosen Shingle Creek): change the script or its data, not this block. -->
+      <div id="demo-example" data-stay-in="2026-10-30" data-stay-out="2026-11-01">
+        <p id="demo-subhead" class="text-center text-slate-600 mb-8 leading-relaxed"><strong class="text-ink">Rosen Shingle Creek, Orlando</strong><br /><span id="demo-measured">Measured October 2, 2026 for Oct 30 to Nov 1, 2 adults; prices change daily.</span><span id="demo-past" hidden> These dates are no longer ahead, so the button below checks a later stay.</span></p>
+
+        <div id="demo-widget" class="max-w-sm mx-auto rounded-2xl border border-stone-200 bg-white shadow-xl shadow-stone-200/60 overflow-hidden text-left">
+          <div class="flex items-center gap-2 px-5 py-3 border-b border-stone-100">
+            <span class="w-6 h-6 rounded-md bg-ink text-white grid place-items-center text-xs font-extrabold" aria-hidden="true">U</span>
+            <span class="font-bold text-ink">Underbook</span>
+          </div>
+          <div class="px-5 py-4">
+            <p data-banner="headline" class="font-semibold text-ink leading-snug mb-3">~$8 USD/night lower on Hotels.com, same room name as on Expedia.com</p>
+            <p data-banner="row" class="flex flex-wrap items-baseline justify-between gap-x-3 py-1"><span class="text-stone-700 font-medium">Going rate</span><span class="text-ink">~$130 USD/night all-in</span></p>
+            <p data-banner="row" class="flex flex-wrap items-baseline justify-between gap-x-3 py-1"><span class="text-stone-700 font-medium">Hotels.com</span><span class="text-lg font-extrabold text-ink">$122/night all-in</span></p>
+            <p data-banner="allin" class="text-xs text-stone-600 leading-relaxed mt-1 mb-3">Hotels.com before taxes: about $109/night, $218 for 2 nights. Sites split taxes &amp; fees differently, so compare the total at checkout.</p>
+            <p data-banner="evidence" class="rounded-lg bg-amber-50 text-amber-800 text-sm font-medium leading-snug px-3 py-2 mb-3">Same room name: &#x27;Standard Room, 2 Queen Beds&#x27; on Hotels.com and &#x27;Standard Room, 2 Queen Beds&#x27; on Expedia.com. This page&#x27;s room was not compared, so check it before you book.</p>
+            <p data-banner="lowest" class="text-sm text-stone-700 leading-snug mb-3">Lowest: $93/night all-in on Vio.com (no room named).</p>
+            <p data-banner="meta" class="text-xs text-stone-500 leading-relaxed border-t border-stone-100 pt-3">All-in = taxes and fees as each site reports them; a resort or destination fee may be extra. You book on the site you choose. All figures in USD. Checked 36 booking sites. Underbook may earn a commission if you book through these links; it never changes which prices it shows.</p>
+          </div>
+        </div>
+
+        <div class="max-w-sm mx-auto mt-6 text-center">
+          <a id="demo-check" href="/hotel-price-checker?hotel=Rosen+Shingle+Creek&amp;in=2026-11-06&amp;out=2026-11-08&amp;adults=2" data-later-in="2026-11-06" data-later-out="2026-11-08" class="block w-full bg-ink text-white font-semibold py-3 rounded-lg hover:bg-ink/90 transition">Check this hotel&#39;s price now</a>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">For a later stay, <span id="demo-later">Fri, Nov 6 to Sun, Nov 8, 2026</span>, 2 adults, with today&#39;s prices. You can change the dates there.</p>
+        </div>
+        <!-- The block is a record of one day's prices for one stay. Once that stay is no longer ahead, the label says so;
+             the button's stay moves forward by whole weeks (same weekdays and length) until it is at least 21 days
+             ahead, so it never opens a past stay. Without this script: the dated label and the later stay written above. -->
+        <script>
+          (function () {
+            var box = document.getElementById('demo-example'), a = document.getElementById('demo-check');
+            if (!box || !a) return;
+            var day = function (s) { var p = String(s).split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); };
+            var two = function (n) { return (n < 10 ? '0' : '') + n; };
+            var ymd = function (d) { return d.getFullYear() + '-' + two(d.getMonth() + 1) + '-' + two(d.getDate()); };
+            var W = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            var M = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            var say = function (d) { return W[d.getDay()] + ', ' + M[d.getMonth()] + ' ' + d.getDate(); };
+            var today = new Date(); today.setHours(0, 0, 0, 0);
+            if (today >= day(box.getAttribute('data-stay-in'))) document.getElementById('demo-past').hidden = false;
+            var lead = new Date(today); lead.setDate(lead.getDate() + 21);
+            var ci = day(a.getAttribute('data-later-in')), co = day(a.getAttribute('data-later-out'));
+            if (ci >= lead) return;
+            while (ci < lead) { ci.setDate(ci.getDate() + 7); co.setDate(co.getDate() + 7); }
+            var u = new URL(a.getAttribute('href'), location.href);
+            u.searchParams.set('in', ymd(ci)); u.searchParams.set('out', ymd(co));
+            a.setAttribute('href', u.pathname + u.search);
+            document.getElementById('demo-later').textContent = say(ci) + ' to ' + say(co) + ', ' + co.getFullYear();
+          })();
+        </script>
+      </div>
+
+      <p class="text-center text-xs text-slate-500 mt-6" id="demo-note">
+        One hotel from our <a href="/hotel-price-dispersion-study" class="underline">price study</a>, priced by the same engine the extension uses and worded the way its banner words it.
+      </p>
+      <!-- home-demo:end -->
+      <p class="text-center text-sm text-slate-600 mt-6 max-w-2xl mx-auto leading-relaxed">On November 16, 2026, at each of the 11 stays Google Hotels priced out of 12 we checked, the same site&#39;s price with taxes and fees was 9% to 28% above the first number Google showed: <a href="/google-hotels-price-accuracy-study" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">is Google Hotels accurate? Checked every week</a>.</p>
+      <p class="text-center text-sm text-slate-600 mt-3 max-w-2xl mx-auto leading-relaxed">In Google Hotels prices of September 25 to October 10, 2026, another listing was 5% or more below Booking.com at 54% of hotels, but named its room at only 26% of those: <a href="/how-to-check-if-booking-com-has-the-lowest-price" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">how to check if Booking.com has the lowest price</a>.</p>
+      <p class="text-center text-sm text-slate-600 mt-3 max-w-2xl mx-auto leading-relaxed">Every hotel price figure we have published, 25 in all, each with its count, the dates it was measured and its source page: <a href="/hotel-price-statistics" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">hotel price statistics 2026</a>.</p>
+    </div>
+  </section>
+
+  <!-- ───────── WHAT IS UNDERBOOK (answer block) ───────── -->
+  <!-- 2026-10-02, docs/AI_VISIBILITY_2026-10-02.md. A plain answer to "what is Underbook?" for people and for the AI
+       assistants that quote pages. Every statement is on /how-underbook-works or /privacy; keep it in step with
+       landing/public/llms.txt and the SoftwareApplication JSON-LD in <head> (scripts/ai_visibility_check.py checks the
+       three). The store links carry data-store, so app.js leaves their address and wording alone on Edge and Firefox (it
+       points every other store link at the visitor's own store), and ub-install, so a person's click counts as
+       site_install and home_install like every store button. -->
+  <section id="what-is-underbook" class="px-6 pt-4 max-w-3xl mx-auto" aria-labelledby="what-is-underbook-h">
+    <h2 id="what-is-underbook-h" class="text-3xl md:text-4xl font-bold mb-4 tracking-tight">What is Underbook?</h2>
+    <p class="text-lg text-slate-700 leading-relaxed mb-6">Underbook is a free browser extension for Chrome, Edge and Firefox, and a free web price checker. For the hotel and dates you are looking at, it shows the price each booking site lists on Google Hotels, the going rate most of them agree on, and whether a lower listing names the same room. It never books for you: you book on the site you choose.</p>
+    <dl class="grid sm:grid-cols-2 gap-6 text-slate-600 leading-relaxed">
+      <div>
+        <dt class="font-semibold text-ink">Where it works</dt>
+        <dd>On a computer, on hotel pages at Booking.com, Expedia, Hotels.com, Agoda and hotels&#39; own sites. On a phone, use the <a href="/hotel-price-checker" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">web price checker</a>.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold text-ink">What it costs</dt>
+        <dd>Nothing, and there is no account. We may earn a commission when you book through our links, at no extra cost to you. It never changes which prices we show.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold text-ink">What it sends</dt>
+        <dd>The hotel, your dates and the number of adults, to look up prices (<a href="/privacy" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">the full list</a>). Never your identity, your browsing history or your payment details.</dd>
+      </div>
+      <div>
+        <dt class="font-semibold text-ink">What it does not do</dt>
+        <dd>Compare a site that Google Hotels does not list, or call a room the same when the room names do not match.</dd>
+      </div>
+    </dl>
+    <p class="mt-6 text-slate-600 leading-relaxed">Add it to <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=home&amp;utm_campaign=what" target="_blank" rel="noopener" data-cta="what" data-store="chrome" class="ub-install underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">Chrome</a>, <a href="https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd" target="_blank" rel="noopener" data-cta="what" data-store="edge" class="ub-install underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">Edge</a> or <a href="https://addons.mozilla.org/firefox/addon/underbook/?utm_source=underbook.co&amp;utm_medium=home&amp;utm_campaign=what" target="_blank" rel="noopener" data-cta="what" data-store="firefox" class="ub-install underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">Firefox</a>. To check our work: <a href="/how-underbook-works" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">how Underbook works</a> and <a href="/hotel-price-dispersion-study" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">our price study</a>.</p>
+  </section>
+
+  <!-- ───────── HOW IT WORKS ───────── -->
+  <section class="px-6 py-20 max-w-5xl mx-auto">
+    <p class="text-center text-sm font-medium text-slate-500 uppercase tracking-wider mb-2">How it works</p>
+    <h2 class="text-center text-3xl md:text-4xl font-bold mb-16 tracking-tight">You do nothing different.</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="w-11 h-11 rounded-lg bg-stone-100 text-ink grid place-items-center text-lg font-bold mb-5">1</div>
+        <h3 class="text-lg font-bold mb-2">Shop hotels like normal</h3>
+        <p class="text-slate-600 leading-relaxed">Browse on Booking.com, Expedia, Hotels.com, Agoda or the hotel&#39;s own site. Nothing to change.</p>
+      </div>
+      <div>
+        <div class="w-11 h-11 rounded-lg bg-stone-100 text-ink grid place-items-center text-lg font-bold mb-5">2</div>
+        <h3 class="text-lg font-bold mb-2">We quietly check other sites</h3>
+        <p class="text-slate-600 leading-relaxed">In the background, Underbook checks every booking site Google Hotels lists for your dates, including the lesser-known ones.</p>
+      </div>
+      <div>
+        <div class="w-11 h-11 rounded-lg bg-stone-100 text-ink grid place-items-center text-lg font-bold mb-5">3</div>
+        <h3 class="text-lg font-bold mb-2">We show you, you decide</h3>
+        <p class="text-slate-600 leading-relaxed">If a site is cheaper, we show you by how much and whether it named the same room. <strong class="text-ink">You book on the site you choose.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── ALREADY BOOKED: WATCH YOUR BOOKING ───────── -->
+  <!-- 2026-10-01, docs/WATCH_PROMOTION_2026-10-01.md. The rule is the worker's (backend/cloudflare/worker.js: DROP_PCT 0.05,
+       BOOKED_FLOOR 5 per night in USD, DROP_CONFIRM_RUNS 2, one alert, checking stops at the free-cancellation date or
+       check-in): change these words together with it and landing/public/watch-my-booking.html. Never promise savings.
+       Links marked data-wmb are counted by app.js as home_watch_click (daily totals). -->
+  <section id="already-booked" class="px-6 pb-20 max-w-5xl mx-auto">
+    <div class="rounded-2xl border border-stone-200 bg-white p-6 md:p-10 md:flex md:items-center md:gap-10">
+      <div class="md:flex-1 min-w-0">
+        <p class="text-xs font-semibold tracking-wider uppercase text-slate-500 mb-3">Already booked?</p>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-4">We'll tell you if your hotel gets cheaper before free cancellation ends.</h2>
+        <p class="text-slate-600 leading-relaxed">Tell us what you paid per night. We check once a day until your free-cancellation date and email you once if a listed rate is at least 5% lower than what you paid (and at least $5 a night lower, or about that in your currency) on two daily checks in a row. Check the room before you rebook: you book and cancel yourself.</p>
+        <p class="text-xs text-slate-500 mt-3">For a stay you can cancel for free. Free, no account. We never ask for your booking number or payment details.</p>
+      </div>
+      <div class="mt-6 md:mt-0 flex flex-col gap-3 md:w-52 shrink-0">
+        <a href="/hotel-price-checker?booked=1" data-wmb="home" class="text-center bg-ink text-white font-semibold px-5 py-3 rounded-lg hover:bg-ink/90 transition">Watch my booking</a>
+        <a href="/watch-my-booking" data-wmb="home" class="text-center text-sm font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">How watching your booking works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── HONESTY BLOCK (replaces fabricated Guarantee) ───────── -->
+  <section class="px-6 py-20 bg-white border-y border-stone-200">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-3 tracking-tight text-center">Radically honest about it.</h2>
+      <p class="text-slate-600 mb-10 text-center max-w-2xl mx-auto">Most hotel sites hide the fine print. We do the opposite: here's exactly what we will and won't do.</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-emerald-200 bg-emerald-50/40 p-7">
+          <p class="font-bold text-emerald-800 mb-4">What we promise</p>
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li><span aria-hidden="true">✅</span> We never see your payment info: you book on the site you pick.</li>
+            <li><span aria-hidden="true">✅</span> We tell you whether the cheaper listing names the same room, and say so plainly when it doesn't.</li>
+            <li><span aria-hidden="true">✅</span> When no site we checked is 5% or more below the site you are on, we say so in one line.</li>
+            <li><span aria-hidden="true">✅</span> The price comparison is free, always.</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-7">
+          <p class="font-bold text-slate-700 mb-4">What we don't do</p>
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li><span aria-hidden="true">🚫</span> We don't book for you or hold your card.</li>
+            <li><span aria-hidden="true">🚫</span> We don't pretend an unfamiliar rate is the same room: when the room names don't match, we say so and tell you to check before booking.</li>
+            <li><span aria-hidden="true">🚫</span> We don't make up price gaps to get your click.</li>
+            <li><span aria-hidden="true">🚫</span> We don't sell your data.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── FAQ (honest) ───────── -->
+  <section class="px-6 py-20 max-w-3xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Frequently asked</h2>
+    <div class="space-y-6">
+      <details class="border-b border-stone-200 pb-6 group">
+        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Why is the same room cheaper on a site I've never heard of?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">Lesser-known booking sites buy hotel rooms through different wholesale channels and spend less on advertising, so their listed rates are sometimes lower. <strong>Often not for a room it names, though</strong>, which is exactly why Underbook tells you whether the cheaper listing names the same room.</p>
+      </details>
+      <details class="border-b border-stone-200 pb-6 group">
+        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">How do I know it's really the same room?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">We compare the room names the booking sites publish. When the cheaper site names a room that matches, we mark it &ldquo;same room name&rdquo;: strong evidence, not proof. When it names no room or a different one, we say so plainly, so you can check the room and cancellation terms before you book. We never assume.</p>
+      </details>
+      <details class="border-b border-stone-200 pb-6 group">
+        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Why doesn't Google Hotels just show me this?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">Google does list some of these sites, but they're buried below the sponsored results most people click. Underbook checks them for the exact stay you're looking at and brings the result to you.</p>
+      </details>
+      <details class="border-b border-stone-200 pb-6 group">
+        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">How does Underbook make money?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">If you book through a site we surface, we may earn a small commission from that site. You pay nothing extra. We'll show you the lower rate even when our commission would be smaller. The comparison is for you, not us.</p>
+      </details>
+      <details class="border-b border-stone-200 pb-6 group">
+        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Is my data safe?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">When you open a hotel page, Underbook sends the hotel name, your dates and your party size to its price service to look up current rates. Nothing that identifies you goes with it. We never see or store your payment details, booking happens on the site you choose, and we don't sell your data.</p>
+      </details>
+      <details class="border-b border-stone-200 pb-6 group">
+        <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Is Underbook available yet?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+        <p class="mt-3 text-slate-600 leading-relaxed">Yes. Underbook is a free extension on the <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=home&amp;utm_campaign=faq" target="_blank" rel="noopener" data-cta="faq" data-store="chrome" class="ub-install underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">Chrome Web Store</a>, <a href="https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd" target="_blank" rel="noopener" data-cta="faq" data-store="edge" class="ub-install underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">Microsoft Edge Add-ons</a> and <a href="https://addons.mozilla.org/firefox/addon/underbook/?utm_source=underbook.co&amp;utm_medium=home&amp;utm_campaign=faq" target="_blank" rel="noopener" data-cta="faq" data-store="firefox" class="ub-install underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">Firefox Add-ons</a>. Add it and it checks the next hotel page you open. On a phone, the <a href="/hotel-price-checker" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">web price checker</a> runs the same check with no install.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ───────── FINAL CTA ───────── -->
+  <section id="install" class="px-6 py-24 bg-ink text-white text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Double-check your next hotel.</h2>
+      <p class="text-lg text-stone-300 mb-10">Free. We never see your payment details, and you always book where you choose.</p>
+      <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=home&amp;utm_campaign=footer" target="_blank" rel="noopener" data-cta="footer" class="ub-install inline-block bg-accent text-ink font-bold px-8 py-4 rounded-lg hover:bg-accent/90 transition">Add the Chrome extension, free</a>
+      <p class="text-sm text-stone-400 mt-6">How often does the cheaper listing even say which room it is? <a href="/hotel-price-dispersion-study" class="underline hover:text-white">We measured 7,044 hotel prices in 368 cities.</a></p>
+    </div>
+  </section>
+
+  <!-- ───────── GUIDES (internal hub → SEO cluster) ───────── -->
+  <section class="px-6 py-20 max-w-5xl mx-auto">
+    <p class="text-center text-sm font-medium text-slate-500 uppercase tracking-wider mb-2">Honest hotel-booking guides</p>
+    <h2 class="text-center text-3xl md:text-4xl font-bold mb-3 tracking-tight">Read before you book.</h2>
+    <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">Plain-English guides on where lower hotel prices actually come from, and the myths that cost you money. Start with how to <a href="/hotel-price-comparison" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-emerald-700">compare hotel prices</a> the right way. No hype.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="/hotel-price-comparison" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Hotel comparison website, explained</p>
+        <p class="text-sm text-slate-600">How to compare hotel prices and find the lowest all-in rate for the same room.</p>
+      </a>
+      <a href="/how-to-get-cheaper-hotel-rates" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">How to get cheaper hotel rates</p>
+        <p class="text-sm text-slate-600">7 tactics that work, and the coupon myths that don't.</p>
+      </a>
+      <a href="/best-hotel-price-tracker" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Best hotel price tracker</p>
+        <p class="text-sm text-slate-600">No tracker lowers a price. Here's what actually helps.</p>
+      </a>
+      <a href="/hotel-price-drop-alerts" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Hotel price drop alerts</p>
+        <p class="text-sm text-slate-600">Book refundable, then rebook if the rate falls. How it works.</p>
+      </a>
+      <a href="/booking-com-vs-hotel-direct" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Booking.com vs booking direct</p>
+        <p class="text-sm text-slate-600">Rate parity means the sticker is often identical. What breaks the tie.</p>
+      </a>
+      <a href="/genius-discount-worth-it" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Is the Genius discount worth it?</p>
+        <p class="text-sm text-slate-600">Real perks vs a badge that often matches the price elsewhere. Four checks.</p>
+      </a>
+      <a href="/same-room-different-price" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Same room, different price?</p>
+        <p class="text-sm text-slate-600">When a lower listing really is the same stay, and when it isn't.</p>
+      </a>
+      <a href="/hotel-price-dispersion-study" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Our hotel price study</p>
+        <p class="text-sm text-slate-600">Booking sites' prices for the same stay, and how often the lower one names the room.</p>
+      </a>
+      <a href="/resort-fees-explained" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Resort fees, explained</p>
+        <p class="text-sm text-slate-600">The hidden charge that makes the cheap rate not so cheap.</p>
+      </a>
+      <a href="/is-super-com-legit" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Is Super.com legit?</p>
+        <p class="text-sm text-slate-600">An honest look at the lesser-known site and its trade-offs.</p>
+      </a>
+      <a href="/is-vio-com-legit" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Is Vio.com legit?</p>
+        <p class="text-sm text-slate-600">What Vio is, why it's cheaper, and what to check first.</p>
+      </a>
+      <a href="/is-booking-com-legit" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Is Booking.com legit?</p>
+        <p class="text-sm text-slate-600">Yes, with caveats. What to check on the biggest booking site before you pay.</p>
+      </a>
+      <a href="/why-are-hotel-prices-different-on-different-sites" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Why prices differ across sites</p>
+        <p class="text-sm text-slate-600">Same hotel, different number. The real reasons, and how to win the gap.</p>
+      </a>
+      <a href="/cheapest-day-to-book-a-hotel" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">The cheapest day to book?</p>
+        <p class="text-sm text-slate-600">There is no magic weekday. What actually moves the price instead.</p>
+      </a>
+      <a href="/is-expedia-legit" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Is Expedia legit?</p>
+        <p class="text-sm text-slate-600">A straight look at the OTA giant, and where it helps or hurts.</p>
+      </a>
+      <a href="/do-hotel-prices-drop-closer-to-the-date" class="block rounded-xl border border-stone-200 bg-white p-5 hover:border-accent hover:shadow-sm transition">
+        <p class="font-semibold text-ink mb-1">Do prices drop closer to the date?</p>
+        <p class="text-sm text-slate-600">Sometimes. When last-minute wins, and when it backfires.</p>
+      </a>
+    </div>
+  </section>
+
+<!-- hotel-hubs:start -->
+  <section class="px-6 pb-20 max-w-5xl mx-auto">
+    <p class="text-center text-sm font-medium text-slate-500 uppercase tracking-wider mb-2">Real prices, hotel by hotel</p>
+    <h2 class="text-center text-3xl md:text-4xl font-bold mb-3 tracking-tight">Hotel prices we measured, by region</h2>
+    <p class="text-center text-slate-600 mb-10 max-w-2xl mx-auto">368 cities, 5,970 hotels, each priced on every booking site Google Hotels listed for the same stay. Pick a region for its cities, or a star class for every hotel of that class there, with its going rate and the lowest price we recorded.</p>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-stone-200 bg-white p-5 min-w-0">
+        <p class="mb-2"><a href="/hotels/united-states" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700 break-words">United States</a> <span class="text-sm text-slate-500 whitespace-nowrap">185 cities, 2,927 hotels</span></p>
+        <p class="text-sm text-slate-600 break-words">By star class: <a href="/hotels/5-star-hotels-united-states" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">5-star</a> · <a href="/hotels/4-star-hotels-united-states" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">4-star</a> · <a href="/hotels/3-star-hotels-united-states" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">3-star</a> · <a href="/hotels/1-and-2-star-hotels-united-states" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">1- and 2-star</a> · <a href="/hotels/hotels-no-star-class-united-states" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">No star class listed</a></p>
+      </div>
+      <div class="rounded-xl border border-stone-200 bg-white p-5 min-w-0">
+        <p class="mb-2"><a href="/hotels/europe" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700 break-words">Europe</a> <span class="text-sm text-slate-500 whitespace-nowrap">91 cities, 1,523 hotels</span></p>
+        <p class="text-sm text-slate-600 break-words">By star class: <a href="/hotels/5-star-hotels-europe" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">5-star</a> · <a href="/hotels/4-star-hotels-europe" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">4-star</a> · <a href="/hotels/3-star-hotels-europe" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">3-star</a> · <a href="/hotels/1-and-2-star-hotels-europe" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">1- and 2-star</a> · <a href="/hotels/hotels-no-star-class-europe" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">No star class listed</a></p>
+      </div>
+      <div class="rounded-xl border border-stone-200 bg-white p-5 min-w-0">
+        <p class="mb-2"><a href="/hotels/americas" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700 break-words">Canada, Latin America, Caribbean</a> <span class="text-sm text-slate-500 whitespace-nowrap">43 cities, 687 hotels</span></p>
+        <p class="text-sm text-slate-600 break-words">By star class: <a href="/hotels/5-star-hotels-americas" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">5-star</a> · <a href="/hotels/4-star-hotels-americas" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">4-star</a> · <a href="/hotels/3-star-hotels-americas" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">3-star</a> · <a href="/hotels/1-and-2-star-hotels-americas" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">1- and 2-star</a> · <a href="/hotels/hotels-no-star-class-americas" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">No star class listed</a></p>
+      </div>
+      <div class="rounded-xl border border-stone-200 bg-white p-5 min-w-0">
+        <p class="mb-2"><a href="/hotels/asia-pacific" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700 break-words">Asia-Pacific, Middle East, Africa</a> <span class="text-sm text-slate-500 whitespace-nowrap">49 cities, 833 hotels</span></p>
+        <p class="text-sm text-slate-600 break-words">By star class: <a href="/hotels/5-star-hotels-asia-pacific" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">5-star</a> · <a href="/hotels/4-star-hotels-asia-pacific" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">4-star</a> · <a href="/hotels/3-star-hotels-asia-pacific" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">3-star</a> · <a href="/hotels/1-and-2-star-hotels-asia-pacific" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">1- and 2-star</a> · <a href="/hotels/hotels-no-star-class-asia-pacific" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">No star class listed</a></p>
+      </div>
+    </div>
+    <p class="text-center text-sm text-slate-600 leading-relaxed mt-6 max-w-3xl mx-auto break-words">Start with a city: <a href="/hotel-prices/new-york" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">New York</a> · <a href="/hotel-prices/las-vegas" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Las Vegas</a> · <a href="/hotel-prices/orlando" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Orlando</a> · <a href="/hotel-prices/chicago" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Chicago</a> · <a href="/hotel-prices/london" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">London</a> · <a href="/hotel-prices/cancun" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Cancun</a> · <a href="/hotel-prices/los-angeles" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Los Angeles</a> · <a href="/hotel-prices/miami" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Miami</a> · <a href="/hotel-prices/fort-lauderdale" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Fort Lauderdale</a> · <a href="/hotel-prices/nashville" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Nashville</a> · <a href="/hotel-prices/new-orleans" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">New Orleans</a> · <a href="/hotel-prices/paris" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Paris</a> · <a href="/hotels/punta-cana" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Punta Cana</a> · <a href="/hotels/san-francisco" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">San Francisco</a> · <a href="/hotels/honolulu" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Honolulu</a> · <a href="/hotels/charleston" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Charleston</a> · <a href="/hotels/key-west" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Key West</a> · <a href="/hotels/washington-dc" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Washington DC</a> · <a href="/hotels/boston" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Boston</a> · <a href="/hotels/atlanta" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Atlanta</a> · <a href="/hotels/scottsdale" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Scottsdale</a> · <a href="/hotels/myrtle-beach" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Myrtle Beach</a> · <a href="/hotels/austin" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Austin</a></p>
+    <p class="text-center text-sm mt-6"><a href="/hotels" class="font-semibold underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">All cities</a> · <a href="/hotel-prices" class="font-semibold underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">City price guides</a></p>
+  </section>
+<!-- hotel-hubs:end -->
+  </main>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer class="px-6 py-10 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto mb-8 pb-8 border-b border-stone-200">
+      <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3">Hotel booking guides</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2 text-sm">
+        <a href="/hotel-price-comparison" class="text-slate-500 hover:text-ink transition">Hotel price comparison</a>
+        <a href="/hotel-price-comparison-extension" class="text-slate-500 hover:text-ink transition">Hotel price comparison extension</a>
+        <a href="/hotel-price-match-guarantee" class="text-slate-500 hover:text-ink transition">Do price match guarantees work?</a>
+        <a href="/is-booking-com-legit" class="text-slate-500 hover:text-ink transition">Is Booking.com legit?</a>
+        <a href="/how-to-get-cheaper-hotel-rates" class="text-slate-500 hover:text-ink transition">How to get cheaper rates</a>
+        <a href="/booking-com-vs-hotel-direct" class="text-slate-500 hover:text-ink transition">Booking.com vs booking direct</a>
+        <a href="/expedia-vs-booking-com" class="text-slate-500 hover:text-ink transition">Expedia vs Booking.com</a>
+        <a href="/hotels-com-vs-booking-com" class="text-slate-500 hover:text-ink transition">Hotels.com vs Booking.com</a>
+        <a href="/hotel-booking-sites-compared" class="text-slate-500 hover:text-ink transition">Booking sites compared, pair by pair</a>
+        <a href="/best-hotel-price-tracker" class="text-slate-500 hover:text-ink transition">Best hotel price tracker</a>
+        <a href="/genius-discount-worth-it" class="text-slate-500 hover:text-ink transition">Is the Genius discount worth it?</a>
+        <a href="/hotel-price-drop-alerts" class="text-slate-500 hover:text-ink transition">Hotel price drop alerts</a>
+        <a href="/watch-my-booking" class="text-slate-500 hover:text-ink transition">Watch a hotel you already booked</a>
+        <a href="/same-room-different-price" class="text-slate-500 hover:text-ink transition">Same room, different price</a>
+        <a href="/why-are-hotel-prices-different-on-different-sites" class="text-slate-500 hover:text-ink transition">Why prices differ across sites</a>
+        <a href="/resort-fees-explained" class="text-slate-500 hover:text-ink transition">Resort fees explained</a>
+        <a href="/does-clearing-cookies-lower-hotel-prices" class="text-slate-500 hover:text-ink transition">Do cookies affect hotel prices?</a>
+        <a href="/does-a-vpn-lower-hotel-prices" class="text-slate-500 hover:text-ink transition">Does a VPN lower hotel prices?</a>
+        <a href="/do-hotel-prices-drop-closer-to-the-date" class="text-slate-500 hover:text-ink transition">Do prices drop closer to the date?</a>
+        <a href="/cheapest-day-to-book-a-hotel" class="text-slate-500 hover:text-ink transition">Cheapest day to book a hotel?</a>
+        <a href="/is-super-com-legit" class="text-slate-500 hover:text-ink transition">Is Super.com legit?</a>
+        <a href="/is-vio-com-legit" class="text-slate-500 hover:text-ink transition">Is Vio.com legit?</a>
+        <a href="/is-agoda-legit" class="text-slate-500 hover:text-ink transition">Is Agoda legit?</a>
+        <a href="/is-priceline-legit" class="text-slate-500 hover:text-ink transition">Is Priceline legit?</a>
+        <a href="/is-expedia-legit" class="text-slate-500 hover:text-ink transition">Is Expedia legit?</a>
+        <a href="/is-hotels-com-legit" class="text-slate-500 hover:text-ink transition">Is Hotels.com legit?</a>
+        <a href="/is-kayak-legit" class="text-slate-500 hover:text-ink transition">Is Kayak legit?</a>
+        <a href="/is-trivago-legit" class="text-slate-500 hover:text-ink transition">Is trivago legit?</a>
+        <a href="/is-google-hotels-accurate" class="text-slate-500 hover:text-ink transition">Is Google Hotels accurate?</a>
+        <a href="/is-trip-com-legit" class="text-slate-500 hover:text-ink transition">Is Trip.com legit?</a>
+        <a href="/is-hotwire-legit" class="text-slate-500 hover:text-ink transition">Is Hotwire legit?</a>
+        <a href="/is-hopper-legit" class="text-slate-500 hover:text-ink transition">Is Hopper legit?</a>
+        <a href="/cheapest-site-to-book-hotels" class="text-slate-500 hover:text-ink transition">Cheapest site to book hotels?</a>
+        <a href="/hotel-price-parity-myth" class="text-slate-500 hover:text-ink transition">Is the same room cheaper elsewhere?</a>
+        <a href="/do-hotel-resort-fees-show-in-price" class="text-slate-500 hover:text-ink transition">Do resort fees show in the price?</a>
+        <a href="/is-free-cancellation-worth-it" class="text-slate-500 hover:text-ink transition">Is free cancellation worth it?</a>
+        <a href="/hotels" class="text-slate-500 hover:text-ink transition">Hotel prices by city</a>
+        <a href="/is-travelocity-legit" class="text-slate-500 hover:text-ink transition">Is Travelocity legit?</a>
+        <a href="/lesser-known-hotel-booking-sites" class="text-slate-500 hover:text-ink transition">Lesser-known booking sites: are they legit?</a>
+        <a href="/is-algotels-legit" class="text-slate-500 hover:text-ink transition">Is Algotels legit?</a>
+        <a href="/is-stayforlong-legit" class="text-slate-500 hover:text-ink transition">Is Stayforlong legit?</a>
+        <a href="/is-prestigia-legit" class="text-slate-500 hover:text-ink transition">Is Prestigia legit?</a>
+        <a href="/how-to-rebook-a-hotel-for-a-lower-price" class="text-slate-500 hover:text-ink transition">How to rebook for a lower price</a>
+        <a href="/booking-com-price-drop-after-booking" class="text-slate-500 hover:text-ink transition">Booking.com price dropped?</a>
+        <a href="/hotel-best-rate-guarantee" class="text-slate-500 hover:text-ink transition">Marriott and Hilton rate guarantees</a>
+        <a href="/non-refundable-hotel-price-dropped" class="text-slate-500 hover:text-ink transition">Non-refundable and the price dropped?</a>
+        <a href="/refundable-vs-non-refundable-hotel-rates" class="text-slate-500 hover:text-ink transition">Refundable vs non-refundable</a>
+        <a href="/how-underbook-works" class="text-slate-500 hover:text-ink transition">How Underbook works</a>
+        <a href="/corrections" class="text-slate-500 hover:text-ink transition">Corrections</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-6 h-6 rounded bg-ink text-white grid place-items-center text-xs font-extrabold" aria-hidden="true">U</span>
+        <span><strong class="text-ink">Underbook</strong> · Your hotel, double-checked.</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+        <a href="/help" class="hover:text-ink transition">Help</a>
+        <a href="/terms" class="hover:text-ink transition">Terms</a>
+        <a href="mailto:hi@underbook.co" class="hover:text-ink transition">hi@underbook.co</a>
+      </div>
+    </div>
+    <!-- lang-switch:start: scripts/lang_landing.py -->
+    <nav aria-labelledby="ub-langs-h" class="max-w-6xl mx-auto mt-8 pt-8 border-t border-stone-200">
+      <p id="ub-langs-h" class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3">Underbook in other languages</p>
+      <ul class="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+        <li><span lang="en" aria-current="page" class="font-semibold text-ink">English</span></li>
+        <li><a href="/id" hreflang="id" lang="id" class="text-slate-500 hover:text-ink transition">Bahasa Indonesia</a></li>
+        <li><a href="/de" hreflang="de" lang="de" class="text-slate-500 hover:text-ink transition">Deutsch</a></li>
+        <li><a href="/es" hreflang="es" lang="es" class="text-slate-500 hover:text-ink transition">Español</a></li>
+        <li><a href="/fr" hreflang="fr" lang="fr" class="text-slate-500 hover:text-ink transition">Français</a></li>
+        <li><a href="/it" hreflang="it" lang="it" class="text-slate-500 hover:text-ink transition">Italiano</a></li>
+        <li><a href="/nl" hreflang="nl" lang="nl" class="text-slate-500 hover:text-ink transition">Nederlands</a></li>
+        <li><a href="/pl" hreflang="pl" lang="pl" class="text-slate-500 hover:text-ink transition">Polski</a></li>
+        <li><a href="/pt-br" hreflang="pt-BR" lang="pt-BR" class="text-slate-500 hover:text-ink transition">Português (Brasil)</a></li>
+        <li><a href="/pt-pt" hreflang="pt-PT" lang="pt-PT" class="text-slate-500 hover:text-ink transition">Português (Portugal)</a></li>
+        <li><a href="/sv" hreflang="sv" lang="sv" class="text-slate-500 hover:text-ink transition">Svenska</a></li>
+        <li><a href="/vi" hreflang="vi" lang="vi" class="text-slate-500 hover:text-ink transition">Tiếng Việt</a></li>
+        <li><a href="/tr" hreflang="tr" lang="tr" class="text-slate-500 hover:text-ink transition">Türkçe</a></li>
+        <li><a href="/ja" hreflang="ja" lang="ja" class="text-slate-500 hover:text-ink transition">日本語</a></li>
+        <li><a href="/ko" hreflang="ko" lang="ko" class="text-slate-500 hover:text-ink transition">한국어</a></li>
+        <li><a href="/zh-cn" hreflang="zh-CN" lang="zh-CN" class="text-slate-500 hover:text-ink transition">简体中文</a></li>
+        <li><a href="/zh-tw" hreflang="zh-TW" lang="zh-TW" class="text-slate-500 hover:text-ink transition">繁體中文</a></li>
+      </ul>
+    </nav>
+    <!-- lang-switch:end -->
+  </footer>
+
+  <script type="module" src="/app.js?v=20261006b"></script>
+</body>
+</html>

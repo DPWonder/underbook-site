@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="robots" content="noindex, follow" />
+
+  <title>Rate Underbook in your browser's add-on store | Underbook</title>
+  <meta name="description" content="Opens Underbook in the add-on store for your browser: the Chrome Web Store, Microsoft Edge Add-ons or Firefox Add-ons. An honest rating, good or bad, helps other travelers decide whether to try it." />
+  <link rel="canonical" href="https://underbook.co/rate" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui,-apple-system' font-size='17' font-weight='800' fill='%23ffffff'%3EU%3C/text%3E%3C/svg%3E" />
+
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="font-sans bg-stone-50 text-ink antialiased">
+
+  <!-- The rating page (2026-10-02, docs/STORE_GROWTH_2026-10-02.md section 4d). Linked only from the rating line of the
+       watch emails (backend/cloudflare/worker.js, rateLineHtml), through underbook.co/em, when the email cannot tell which
+       store the watch came from (since 2026-11-13 a watch from a known store links that store directly). noindex, so it is out of the
+       sitemap and needs no inbound link (scripts/build_sitemap.py, scripts/seo-link-audit.mjs).
+       Without JavaScript it is a plain list of the three stores. With it, a computer browser we recognise gets its store
+       as the first button, and is sent there once when only one store is possible: Firefox to Firefox Add-ons, Chrome and
+       the other Chromium browsers (Brave, Opera, Vivaldi, Arc) to the Chrome Web Store reviews tab. Edge is not sent
+       anywhere: it installs from Edge Add-ons and from the Chrome Web Store (our site sent Edge visitors to the Chrome Web
+       Store until 2026-09-30), so it gets both buttons. Phones, tablets, Safari, unknown browsers and automated browsers
+       stay on this page and are told, in one sentence, to open it on the computer where Underbook is installed. Once a
+       store is picked, the list below shows only the other stores. Back, Forward and reload never send anyone again, so there is no redirect loop.
+       Store policies this follows (cited in the doc): no reward, the same words for everyone, no opinion question, no
+       pre-selected stars. This page does not load app.js: its store-link rewriting would change the links below. -->
+
+  <!-- ───────── NAV ───────── -->
+  <nav class="border-b border-stone-200 bg-stone-50/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg tracking-tight">
+        <span class="inline-block w-7 h-7 rounded-md bg-ink text-white grid place-items-center text-base font-extrabold" aria-hidden="true">U</span>
+        Underbook
+      </a>
+      <a href="/hotel-price-checker" class="text-sm font-semibold text-stone-600 hover:text-ink">Check a price</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <section class="px-4 sm:px-6 pt-14 md:pt-20 pb-16 max-w-2xl mx-auto">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.05] mb-6">Rate Underbook</h1>
+    <p class="text-lg text-slate-600 leading-relaxed mb-8">
+      An honest rating, good or bad, helps other travelers decide whether to try Underbook. You rate it in the add-on store you installed it from. Nothing is offered for a rating, and Underbook works the same whether you rate it or not.
+    </p>
+
+    <div id="rate-pick" class="mb-10" hidden>
+      <p id="rate-pick-why" class="text-slate-600 mb-4"></p>
+      <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+        <a id="rate-pick-link" href="#stores" class="inline-block bg-ink text-white font-semibold text-lg px-7 py-3.5 rounded-lg hover:bg-stone-800 transition"></a>
+        <span id="rate-pick-alt-wrap" hidden><a id="rate-pick-alt" href="#stores" class="inline-block bg-white border border-stone-300 text-ink font-semibold text-lg px-7 py-3.5 rounded-lg hover:border-ink transition"></a></span>
+      </div>
+    </div>
+
+    <p id="rate-elsewhere" class="text-slate-600 mb-8" hidden>Open this page on the computer where Underbook is installed, in the browser you added it to, and it will take you to the right store.</p>
+
+    <h2 id="stores" class="text-xl font-bold tracking-tight mb-4">The three stores</h2>
+    <ul class="space-y-3">
+      <li>
+        <a data-store="cws" href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid/reviews" class="block border border-stone-200 rounded-xl p-5 bg-white hover:border-ink transition">
+          <span class="block font-bold mb-1">Chrome Web Store</span>
+          <span class="block text-sm text-slate-600">For Chrome, and for Brave, Opera, Vivaldi and other browsers that add extensions from the Chrome Web Store. Opens Underbook's reviews.</span>
+        </a>
+      </li>
+      <li>
+        <a data-store="edge" href="https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd" class="block border border-stone-200 rounded-xl p-5 bg-white hover:border-ink transition">
+          <span class="block font-bold mb-1">Microsoft Edge Add-ons</span>
+          <span class="block text-sm text-slate-600">For Microsoft Edge, if you added Underbook from Edge Add-ons. If you added it from the Chrome Web Store, rate it there.</span>
+        </a>
+      </li>
+      <li>
+        <a data-store="amo" href="https://addons.mozilla.org/firefox/addon/underbook/" class="block border border-stone-200 rounded-xl p-5 bg-white hover:border-ink transition">
+          <span class="block font-bold mb-1">Firefox Add-ons</span>
+          <span class="block text-sm text-slate-600">For Firefox. The rating stars are on Underbook's add-on page once you log in.</span>
+        </a>
+      </li>
+    </ul>
+
+    <p class="text-sm text-slate-600 mt-6 leading-relaxed">
+      Each store asks you to sign in, and may only take a rating from someone who added Underbook from that store. The stores rate the browser extension, so if you only used the price checker on underbook.co, there is nothing to rate. On a phone? Underbook runs in computer browsers, so the store pages are easiest to use on your computer.
+    </p>
+  </section>
+
+  </main>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer class="px-4 sm:px-6 py-10 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-6 h-6 rounded bg-ink text-white grid place-items-center text-xs font-extrabold" aria-hidden="true">U</span>
+        <span><strong class="text-ink">Underbook</strong>. Your hotel, double-checked.</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+        <a href="/" class="hover:text-ink transition">Home</a>
+        <a href="/hotel-price-checker" class="hover:text-ink transition">Check a price</a>
+        <a href="/privacy" class="hover:text-ink transition">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Store by browser, an anonymous daily total, and one forward (see the comment at the top of the page).
+    (function () {
+      var STORES = {
+        cws: { forward: true, label: 'Rate Underbook on the Chrome Web Store', why: 'You are using Chrome or a browser built on it, so this opens the Chrome Web Store.' },
+        // Edge adds extensions from both stores and a page cannot tell which one Underbook came from: two buttons, no forward.
+        edge: { forward: false, label: 'Rate it on Edge Add-ons', alt: 'cws', altLabel: 'Rate it on the Chrome Web Store',
+          why: 'You are using Microsoft Edge, which can add extensions from Edge Add-ons or from the Chrome Web Store. Rate Underbook in the one you added it from.' },
+        amo: { forward: true, label: 'Rate Underbook on Firefox Add-ons', why: 'You are using Firefox, so this opens Firefox Add-ons.' }
+      };
+      /* rate-pick */
+      // The store this browser adds extensions from, or null: a phone or tablet, Safari, or a browser we cannot tell.
+      function ubRateStore(ua, brands, mobile, touchMac) {
+        ua = String(ua || '');
+        var b = '';
+        for (var i = 0; brands && i < brands.length; i++) b += ' ' + ((brands[i] && brands[i].brand) || '');
+        if (mobile === true || touchMac === true || /Android|iPhone|iPad|iPod|Mobile/i.test(ua)) return null;
+        if (/Microsoft Edge/i.test(b) || /\bEdg\//.test(ua)) return 'edge';
+        if (/\bFirefox\//.test(ua) && !/Seamonkey/i.test(ua)) return 'amo';
+        if (/\b(Google Chrome|Chromium)\b/i.test(b) || /\bChrome\//.test(ua)) return 'cws';
+        return null;
+      }
+      /* /rate-pick */
+      // The same crawler and automation rule as app.js (UB_BOT); worker-ladder-test.mjs TCG8 keeps them in step.
+      var RATE_BOT = /bot|crawl|spider|slurp|headless|lighthouse|phantom|puppeteer|playwright|selenium|preview|scan|monitor|python|curl|wget|httpclient|^$|inspectiontool|\bYeti\/|\bDaum\/\d|\bDaumoa|\bia_archiver|facebookexternalhit|\bmeta-(webindexer|external)|^WhatsApp\/\d|\bEmbedly\b|\bIframely\/|\bGoogle-(InspectionTool|Read-Aloud|Site-Verification|CWS)\b|\bGoogleOther\b|\bPTST\//i;
+      var n = navigator, ua = '', auto = true, store = null;
+      try { ua = n.userAgent || ''; auto = n.webdriver === true || RATE_BOT.test(ua); } catch (x) { auto = true; }
+      try {
+        var d = n.userAgentData;
+        store = ubRateStore(ua, d && d.brands, d && d.mobile, n.platform === 'MacIntel' && n.maxTouchPoints > 1);
+      } catch (x) { store = null; }
+      function tab(k, v) { try { if (v == null) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); return v; } catch (x) { return undefined; } }
+
+      // rate_view: a person opened the page, once per tab. Event name only (see /privacy).
+      if (!auto && tab('ub_rate_v') == null) {
+        tab('ub_rate_v', '1');
+        var body = JSON.stringify({ ev: 'rate_view' }), sent = false;
+        try { sent = !!(n.sendBeacon && n.sendBeacon('https://underbook-backend.underbook.workers.dev/event', body)); } catch (x) {}
+        if (!sent) { try { fetch('https://underbook-backend.underbook.workers.dev/event', { method: 'POST', body: body, keepalive: true }); } catch (x) {} }
+      }
+
+      // No store for this browser (a phone or tablet, Safari, one we cannot tell): one sentence saying where to open the page.
+      if (!store) { var el = document.getElementById('rate-elsewhere'); if (el) el.hidden = false; return; }
+      var link = document.querySelector('a[data-store="' + store + '"]');
+      var pick = document.getElementById('rate-pick');
+      if (!link || !pick) return;
+      var s = STORES[store], go = document.getElementById('rate-pick-link');
+      go.href = link.href;
+      go.textContent = s.label;
+      document.getElementById('rate-pick-why').textContent = s.why;
+      var altLink = s.alt && document.querySelector('a[data-store="' + s.alt + '"]');
+      if (altLink) {
+        var alt = document.getElementById('rate-pick-alt');
+        alt.href = altLink.href;
+        alt.textContent = s.altLabel;
+        document.getElementById('rate-pick-alt-wrap').hidden = false;
+      }
+      pick.hidden = false;
+      // The list keeps only the stores not already a button above.
+      var shown = 0;
+      ['cws', 'edge', 'amo'].forEach(function (k) {
+        var a = document.querySelector('a[data-store="' + k + '"]');
+        if (k === store || k === s.alt) { if (a && a.parentNode) a.parentNode.hidden = true; } else shown++;
+      });
+      document.getElementById('stores').textContent = shown === 1 ? 'The other store' : 'The other stores';
+
+      // One forward per tab, on a fresh visit only, and only when one store is possible: never after Back, Forward or a
+      // reload, never for an automated browser, and never when the tab cannot remember that it already went (then the
+      // button above does it).
+      var how = 'navigate';
+      try { var e = performance.getEntriesByType('navigation')[0]; if (e && e.type) how = e.type; } catch (x) {}
+      if (!s.forward || auto || how !== 'navigate' || tab('ub_rate_fwd') != null) return;
+      if (tab('ub_rate_fwd', '1') !== '1') return;
+      location.assign(link.href);
+    })();
+  </script>
+</body>
+</html>

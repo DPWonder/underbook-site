@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <title>Hotel Price Comparison: Check Every Booking Site Before You Pay | Underbook</title>
+  <meta name="description" content="Free extension and web checker: each booking site&#x27;s Google Hotels price for your hotel and dates, all-in where reported, and whether a lower one names the same room." />
+  <link rel="canonical" href="https://underbook.co/hotel-price-comparison" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hotel Price Comparison: Check Every Booking Site Before You Pay" />
+  <meta property="og:description" content="Free extension and web checker: each booking site&#x27;s Google Hotels price for your hotel and dates, all-in where reported, and whether a lower one names the same room." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://underbook.co/hotel-price-comparison" />
+  <meta property="og:image" content="https://underbook.co/assets/images/og.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hotel Price Comparison: Check Every Booking Site Before You Pay" />
+  <meta name="twitter:description" content="Free extension and web checker: each booking site&#x27;s Google Hotels price for your hotel and dates, all-in where reported, and whether a lower one names the same room." />
+  <meta name="twitter:image" content="https://underbook.co/assets/images/og.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui,-apple-system' font-size='17' font-weight='800' fill='%23ffffff'%3EU%3C/text%3E%3C/svg%3E" />
+
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Structured data: the app + the FAQ (rich-result eligible) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://underbook.co/#extension",
+    "name": "Underbook",
+    "alternateName": "Underbook: Hotel Price Comparison & Tracker",
+    "applicationCategory": "BrowserApplication",
+    "operatingSystem": "Chrome, Microsoft Edge, Firefox",
+    "browserRequirements": "Google Chrome, Microsoft Edge or Mozilla Firefox on a computer, or Firefox for Android 142 or newer",
+    "url": "https://underbook.co/",
+    "installUrl": [
+      "https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid",
+      "https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd",
+      "https://addons.mozilla.org/firefox/addon/underbook/"
+    ],
+    "sameAs": [
+      "https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid",
+      "https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd",
+      "https://addons.mozilla.org/firefox/addon/underbook/"
+    ],
+    "description": "A free browser extension. On the hotel page you are viewing, it shows the price each booking site lists on Google Hotels for your dates, all-in where the sites report taxes and fees, and whether a lower listing names the same room. You book on the site you choose.",
+    "featureList": [
+      "Compares the price each booking site lists on Google Hotels for your hotel and dates",
+      "Shows the going rate, the price most booking sites agree on",
+      "Says whether a lower listing names the same room, and says to check the room when it does not",
+      "Optional price-drop email, also for a refundable stay you already booked",
+      "No account, and it never sees your payment details"
+    ],
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://underbook.co/#organization",
+      "name": "Underbook",
+      "url": "https://underbook.co"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I compare hotel prices across booking sites?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Look up one hotel and your dates on Google Hotels, which lists the booking sites side by side, then compare the totals with taxes and fees for the same room name and the same cancellation terms, and check the hotel's own site too. A lower listing is common and often names no room: in our 17 price snapshots of September 22 to October 10, 2026, some booking site listed the stay 5% or more below the going rate at 5,114 of 7,044 hotel prices (73%), and at 4,294 of those the lowest listing named no room. Underbook's free browser extension and web price checker show each booking site's Google Hotels price for your hotel and dates and say whether a lower listing names the same room."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best hotel comparison website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No single booking site had the lowest price everywhere: in our 14 price snapshots of September 25 to October 1, 2026, Booking.com's public price was at or below every other site's at only 846 of 4,729 hotels (18%), compared like with like. Look for one that shows the price with taxes and fees where the sites report them, includes the smaller sites as well as the big ones, and says whether a lower listing names the same room. Underbook is a free browser extension that does this for the booking sites Google Hotels lists for your hotel and dates. It sees only the public prices those sites list there, not member prices or sites Google Hotels leaves out, and a matching room name is not proof of the same room."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are hotel comparison sites accurate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The nightly rate they show is usually accurate, but it can be misleading. Many hotel comparison sites rank listings by commercial factors, quote a base rate before taxes and resort fees, and compare a cheaper room against the one you actually want. When we recorded 7,044 hotel prices from September 22 to October 10, 2026, the lowest listing named no room at 4,294 of the 5,114 hotels where some site was 5% or more below the going rate. So treat the headline number as a starting point, then confirm the room, all-in total, and cancellation terms before you book."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I compare hotel prices for the same room?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The trap is comparing a cheaper rate that's really a different room or a non-refundable version. Underbook shows the price each booking site lists on Google Hotels for your hotel and dates, says whether a lower listing names the same room and whether it shows free cancellation, and says to check before booking when the room names don't match. A matching room name is strong evidence, not proof, so read the room and the cancellation terms on the site before you book."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is the same room cheaper on a site I've never heard of?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lesser-known booking sites buy rooms through different wholesale channels and spend less on advertising, so their listed rates are sometimes lower. Not always the identical room, though, which is exactly why Underbook tells you whether the cheaper listing names the same room, so you can check before you book."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it cost anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Underbook is a free browser extension. If you book through a site it surfaces, it may earn a small commission from that site; you pay nothing extra, and it shows the lower rate even when its commission would be smaller."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you open a hotel page, Underbook sends the hotel name, your dates and your party size to its price service to look up current rates. Nothing that identifies you goes with it. It never sees or stores your payment details, booking happens on the site you choose, and it doesn't sell your data. Read the privacy policy →"
+      }
+    }
+  ]
+}
+  </script>
+  <!-- Structured data: breadcrumb trail (SERP breadcrumb display) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://underbook.co/" },
+      { "@type": "ListItem", "position": 2, "name": "Hotel Price Comparison", "item": "https://underbook.co/hotel-price-comparison" }
+    ]
+  }
+  </script>
+</head>
+
+<body class="font-sans bg-stone-50 text-ink antialiased">
+
+  <!-- ───────── NAV ───────── -->
+  <nav class="border-b border-stone-200 bg-stone-50/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg tracking-tight shrink-0">
+        <span class="inline-block w-7 h-7 rounded-md bg-ink text-white grid place-items-center text-base font-extrabold" aria-hidden="true">U</span>
+        Underbook
+      </a>
+      <div class="flex items-center gap-4">
+        <a href="/hotel-price-checker" class="ub-nav-check text-sm font-semibold text-stone-600 hover:text-ink whitespace-nowrap">Check a price</a>
+        <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=nav" target="_blank" rel="noopener" data-cta="nav" class="ub-install ub-nav-install text-sm font-semibold bg-accent text-ink px-4 py-2 rounded-lg hover:bg-accent/90 transition whitespace-nowrap">
+          Add to Chrome, free
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <!-- ───────── HERO ───────── -->
+  <section class="px-6 pt-16 md:pt-24 pb-16 max-w-4xl mx-auto">
+    <p class="inline-block text-xs font-semibold tracking-wider uppercase text-slate-600 bg-stone-200/70 px-3 py-1 rounded-full mb-6">
+      Free browser extension
+    </p>
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.05] mb-6">
+      A hotel comparison website<br /><span class="text-emerald-600">that checks whether the cheaper listing names the same room.</span>
+    </h1>
+    <p class="text-lg text-slate-700 mb-4 leading-relaxed max-w-2xl">
+      <!-- ai-answer:start -->To compare hotel prices across booking sites, look up one hotel and your dates on Google Hotels, which lists the booking sites side by side, then compare the totals with taxes and fees for the same room name and the same cancellation terms, and check the hotel&#39;s own site too. In our 17 price snapshots of September 22 to October 10, 2026 (7,044 hotel prices in 368 cities, for a US searcher in US dollars), some booking site listed the stay 5% or more below the going rate at 5,114 hotels (73%), but at 4,294 of those the lowest listing named no room.<!-- ai-answer:end -->
+    </p>
+    <p class="text-slate-600 mb-8 leading-relaxed max-w-2xl">
+      Underbook compares hotel prices for <strong class="text-ink">your</strong> hotel and dates across the booking sites Google Hotels lists, and shows <strong class="text-ink">the prices side by side (all-in when the sites report taxes and fees), and whether the cheaper listing names the same room</strong>, so a lookalike room does not pass for yours. The free browser extension for Chrome, Edge or Firefox does this by itself on the hotel page you are already looking at, and you always book where you choose. Rather not install anything? <a href="/compare-one-hotel-no-install" class="text-ink underline decoration-accent decoration-2 underline-offset-2">Compare one hotel in your browser</a>, on a phone or a computer. On a phone? <a href="/compare-hotel-prices-on-your-phone" class="text-ink underline decoration-accent decoration-2 underline-offset-2">What works on iPhone and Android</a>.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+      <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=hero" class="ub-install bg-accent text-ink font-bold px-6 py-3.5 rounded-lg hover:bg-accent/90 transition w-full sm:w-auto text-center">
+        + Add to Chrome, free
+      </a>
+      <a href="/hotel-price-checker" class="text-sm font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">or check a hotel&#39;s price without installing →</a>
+    </div>
+    <p data-ub-stores class="text-sm text-slate-600 mt-3 mb-0">Free for Chrome, Edge and Firefox: <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=stores_line" target="_blank" rel="noopener" data-store="chrome" data-cta="stores_line" class="ub-install font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Chrome Web Store</a> &middot; <a href="https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd" target="_blank" rel="noopener" data-store="edge" data-cta="stores_line" class="ub-install font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Edge Add-ons</a> &middot; <a href="https://addons.mozilla.org/firefox/addon/underbook/?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=stores_line" target="_blank" rel="noopener" data-store="firefox" data-cta="stores_line" class="ub-install font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Firefox Add-ons</a></p>
+    <p data-ub-appstore-static class="text-sm text-slate-600 mt-1 mb-6">Free on iPhone, iPad and Mac: <a href="https://apps.apple.com/app/id6818661903?ct=stores_line" data-store="appstore" target="_blank" rel="noopener" class="ub-install font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Get Underbook for Safari on the App Store</a></p>
+    <!-- ai-page:start -->
+    <div class="mt-6 max-w-2xl bg-white border border-stone-200 rounded-xl p-5">
+      <p class="text-sm font-semibold text-emerald-700 uppercase tracking-wider mb-2">In numbers</p>
+      <ul class="list-disc pl-5 space-y-2 text-sm text-slate-700 leading-relaxed">
+        <li>Some booking site listed the stay 5% or more below the going rate (the price most sites agree on) at 5,114 of 7,044 hotel prices (73%), typically 16.7% below.</li>
+        <li>At 4,294 of those 5,114 (84%), the lowest listing named no room, so check the room before you book.</li>
+        <li>Google Hotels listed a median of 17 booking sites per hotel, and Booking.com&#39;s public price was at or below every other site&#39;s at 846 of 4,729 hotels (18%), compared like with like.</li>
+      </ul>
+      <p class="text-xs text-slate-500 leading-relaxed mt-3">Source: <a href="/hotel-price-dispersion-study" class="underline">our hotel price study</a>, 17 snapshots of September 22 to October 10, 2026 in 368 cities, Google Hotels&#39; prices for a US searcher in US dollars; the last line uses our 14 price snapshots of September 25 to October 1, 2026, which kept every site. Method and per-hotel CSVs are on the study page.</p>
+    </div>
+    <!-- ai-page:end -->
+    <p class="text-xs text-slate-500 mt-4">
+      Free · no account needed · <strong class="text-slate-600">we never see your payment info</strong>.
+    </p>
+  </section>
+
+<!-- inline-check:start -->
+  <!-- ───────── CHECK A PRICE HERE ───────── -->
+  <!-- 2026-10-26 (docs/ANSWER_CHECK_2026-10-26.md, X33; written by scripts/answer_check_20261026.py through
+       scripts/inline_check_20261005.py and the answer-page generators): the web checker's own check, run in this box.
+       check-inline.js (lifted from the checker's script, loaded when the box is touched) sends the checker's request with
+       src=answer, shows the checker's answer under the form, then the install offer for this browser (computers) or the
+       phone card (app.js), and a link to the full checker for that stay. Without the script the form opens
+       /hotel-price-checker with the stay, as before. The dates start as the checker's defaults (21 and 23 days ahead). -->
+  <section class="px-4 sm:px-6 pb-16 max-w-4xl mx-auto">
+    <form id="ub-page-check" action="/hotel-price-checker" method="get" aria-labelledby="ub-page-check-h" class="max-w-2xl bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-sm">
+      <h2 id="ub-page-check-h" class="text-xl font-bold tracking-tight mb-1">Check your hotel&#39;s price here</h2>
+      <p class="text-sm text-slate-600 mb-4 leading-relaxed">Type the hotel and your dates. We check the booking sites Google Hotels lists and show the answer on this page: what each site lists, and <strong class="text-ink">whether a lower price names the same room</strong>. Free, no install, works on your phone.</p>
+      <label for="ub-page-hotel" class="block text-sm font-semibold text-slate-700 mb-1">Hotel</label>
+      <input id="ub-page-hotel" name="hotel" type="text" required maxlength="120" autocomplete="off" placeholder="e.g. Hilton Hawaiian Village Waikiki" class="w-full min-w-0 px-3.5 py-3 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
+      <div class="grid grid-cols-2 gap-3 mt-3">
+        <div class="min-w-0">
+          <label for="ub-page-in" class="block text-sm font-semibold text-slate-700 mb-1">Check-in</label>
+          <input id="ub-page-in" name="in" type="date" class="w-full min-w-0 px-3 py-2.5 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
+        </div>
+        <div class="min-w-0">
+          <label for="ub-page-out" class="block text-sm font-semibold text-slate-700 mb-1">Check-out</label>
+          <input id="ub-page-out" name="out" type="date" class="w-full min-w-0 px-3 py-2.5 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
+        </div>
+      </div>
+      <div class="flex items-center gap-3 mt-3">
+        <label for="ub-page-adults" class="text-sm font-semibold text-slate-700">Adults</label>
+        <select id="ub-page-adults" name="adults" class="px-3 py-2 rounded-xl border border-stone-500 text-base bg-white focus:outline-none focus:border-ink"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select>
+      </div>
+      <button id="ub-page-btn" type="submit" class="block w-full mt-4 text-center bg-ink text-white font-bold text-lg py-3.5 rounded-lg hover:bg-ink/90 transition">Check every booking site</button>
+      <p id="ub-page-msg" class="text-sm text-stone-500 mt-2 min-h-[1.25rem]" role="status" aria-live="polite"></p>
+    </form>
+    <p id="ub-page-said" class="sr-only" role="status" aria-live="polite"></p>
+    <div id="ub-page-result" role="region" aria-label="Your hotel&#39;s prices" class="hidden max-w-2xl mt-4 bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-sm">
+      <div id="ub-page-verdict"></div>
+      <div id="ub-page-offer" class="hidden sm:flex items-start gap-3 mt-4 border border-stone-200 bg-stone-50 rounded-xl p-4">
+        <span class="inline-block w-7 h-7 shrink-0 rounded-md bg-ink text-accent grid place-items-center text-sm font-extrabold" aria-hidden="true">U</span>
+        <div class="min-w-0">
+          <p id="ub-page-offer-lead" class="text-sm text-slate-700"></p>
+          <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
+            <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=answer_offer" target="_blank" rel="noopener" data-cta="answer-offer" class="ub-install inline-block bg-ink text-white font-semibold text-base px-5 py-3 rounded-lg hover:bg-stone-800 transition whitespace-nowrap">+ Add to Chrome, free</a>
+            <button id="ub-page-offer-hide" type="button" class="text-sm text-stone-600 px-2 py-1 rounded underline underline-offset-4 hover:text-ink whitespace-nowrap">Not now</button>
+          </div>
+          <p class="text-xs text-stone-500 mt-2">It sends the hotel name, its town, your dates and party size to our price service (<a href="/privacy" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-ink">privacy</a>).</p>
+        </div>
+      </div>
+      <div id="ub-page-phone" data-ub-phone="result" class="hidden mt-4 border border-stone-200 bg-stone-50 rounded-xl p-4"></div>
+      <details class="mt-4 border-t border-stone-200 pt-3 group">
+        <summary class="cursor-pointer text-sm font-semibold text-ink flex justify-between items-center list-none">See the price on each site<span class="text-xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+        <div id="ub-page-sites" class="mt-2"></div>
+      </details>
+      <p id="ub-page-receipt" class="text-xs text-stone-500 mt-3"></p>
+      <p id="ub-page-allin" class="hidden text-xs text-stone-500 mt-2"></p>
+      <p class="text-xs text-stone-500 mt-2">How Underbook is free: if you book through a site we link to, we may earn a small commission from that site. It never changes which prices we show or their order.</p>
+      <p class="mt-3 text-sm"><a id="ub-page-full" href="/hotel-price-checker" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Open this check on the full price checker, to share it or get an email if this stay gets cheaper &#8594;</a></p>
+    </div>
+  </section>
+  <script>
+    (function () {
+      var f = document.getElementById('ub-page-check'); if (!f) return;
+      var ci = f.elements['in'], co = f.elements['out'];
+      var ymd = function (d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+      var day = function (s) { var p = String(s).split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); };
+      var isDay = function (s) { return /^\d{4}-\d{2}-\d{2}$/.test(s || ''); };
+      // Check-out follows check-in at the stay's length until the visitor picks a check-out; after that, only when it
+      // would no longer be after check-in. Its earliest date is the day after check-in.
+      var nights = 2, outPicked = false;
+      var follow = function (keep) { if (isDay(ci.value) && (keep === true || !isDay(co.value) || co.value <= ci.value)) { var o = day(ci.value); o.setDate(o.getDate() + nights); co.value = ymd(o); } };
+      var outMin = function () { if (isDay(ci.value)) { var n = day(ci.value); n.setDate(n.getDate() + 1); co.min = ymd(n); } };
+      // Never in the past: a missing or past check-in (a browser can restore one into the field) is the sample stay again.
+      var fresh = function () {
+        var t0 = new Date(), d1 = new Date(); d1.setDate(d1.getDate() + 21); var d2 = new Date(d1); d2.setDate(d2.getDate() + 2);
+        if (!isDay(ci.value) || ci.value < ymd(t0)) { ci.value = ymd(d1); co.value = ymd(d2); nights = 2; outPicked = false; }
+        follow();
+        ci.min = ymd(t0); outMin();
+      };
+      fresh();
+      window.addEventListener('pageshow', fresh);
+      ci.addEventListener('change', function () { if (!isDay(ci.value)) return; outMin(); follow(!outPicked); });
+      co.addEventListener('change', function () { if (isDay(ci.value) && isDay(co.value)) { var n = Math.round((day(co.value) - day(ci.value)) / 864e5); if (n > 0) { nights = n; outPicked = true; } } });
+      // The check runs in this box (check-inline.js, fetched once when the box is first touched). A person's submit only:
+      // a scripted one, or a browser where the script cannot load, opens the checker with the stay, as the form always did.
+      var last = 0, state = 0, waiting = [];
+      var load = function (cb) {
+        if (cb) waiting.push(cb);
+        var flush = function () { var w = waiting; waiting = []; w.forEach(function (fn) { fn(state === 2); }); };
+        if (state >= 2) { flush(); return; }
+        if (state === 1) return;
+        state = 1;
+        var s = document.createElement('script');
+        s.src = '/check-inline.js?v=985f80e5ce';
+        s.onload = function () { state = window.UBAnswerCheck ? 2 : 3; flush(); };
+        s.onerror = function () { state = 3; flush(); };
+        document.head.appendChild(s);
+      };
+      ['pointerdown', 'touchstart', 'keydown', 'click', 'input'].forEach(function (t) { f.addEventListener(t, function (e) { if (e.isTrusted) { last = Date.now(); load(); } }, { capture: true, passive: true }); });
+      f.addEventListener('focusin', function () { load(); });
+      f.addEventListener('submit', function (e) {
+        follow();
+        if (e.isTrusted === false || Date.now() - last > 5000) return;
+        e.preventDefault();
+        load(function (ready) { if (!(ready && window.UBAnswerCheck.check())) f.submit(); });
+      });
+      // The hero's "check a hotel's price" links (and the button app.js turns into one on a phone) come down to this box.
+      var here = function (e) {
+        e.preventDefault();
+        var calm = false; try { calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (x) { calm = false; }
+        try { f.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' }); } catch (x) { f.scrollIntoView(); }
+        try { f.elements.hotel.focus({ preventScroll: true }); } catch (x) { f.elements.hotel.focus(); }
+      };
+      document.addEventListener('DOMContentLoaded', function () {
+        var hero = document.querySelector('main section'); if (!hero || hero.contains(f)) return;
+        Array.prototype.forEach.call(hero.querySelectorAll('a[href="/hotel-price-checker"]'), function (a) {
+          if (!a.hasAttribute('data-handheld') && !/^or check a hotel/i.test(a.textContent.trim())) return;
+          a.setAttribute('href', '#ub-page-check'); a.addEventListener('click', here);
+        });
+      });
+    })();
+  </script>
+<!-- inline-check:end -->
+
+  <!-- ───────── HOW IT WORKS ───────── -->
+  <section class="px-6 py-16 bg-white border-y border-stone-200">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-3 tracking-tight">How hotel price comparison works with Underbook</h2>
+      <p class="text-slate-600 mb-12 max-w-2xl">Three steps, on the hotel page you are already on. Nothing to sign up for.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 grid place-items-center font-extrabold mb-4">1</div>
+          <h3 class="font-semibold text-lg mb-2">Book like normal</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Search a hotel on the site you already use. Underbook stays out of the way until there's a reason to speak up.</p>
+        </div>
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 grid place-items-center font-extrabold mb-4">2</div>
+          <h3 class="font-semibold text-lg mb-2">It double-checks the rate</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Underbook checks other booking sites for the same hotel, same dates, and same room, quietly, in the background.</p>
+        </div>
+        <div>
+          <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-800 grid place-items-center font-extrabold mb-4">3</div>
+          <h3 class="font-semibold text-lg mb-2">You compare and decide</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">If a cheaper rate exists, you see the room name and cancellation terms next to what you were about to book. You choose where to book.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── WHY SAME ROOM MATTERS ───────── -->
+  <section class="px-6 py-20 max-w-3xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">The catch with cheap hotel rates</h2>
+    <p class="text-slate-600 leading-relaxed mb-4">
+      A lower price only counts if it's the <strong class="text-ink">same room on the same terms</strong>. Booking sites are full of near-matches: a "city view" swapped for a "standard," a fully-refundable rate quietly replaced with a non-refundable one, a resort fee that only appears at checkout. A comparison that ignores those differences isn't lowering your price; it's changing your booking.
+    </p>
+    <p class="text-slate-600 leading-relaxed mb-8">
+      Underbook's whole job is to make the comparison honest. It compares the room names each site publishes and tells you whether the cheaper listing names the same room. When it <em>can't</em> confirm the two rooms are identical, it says so plainly and shows you both. It never pretends a lookalike is the same room to win a click.
+    </p>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="bg-white border border-stone-200 rounded-xl p-6">
+        <p class="font-semibold mb-3">What Underbook does</p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li><span aria-hidden="true">✅</span> Checks the same room, same dates</li>
+          <li><span aria-hidden="true">✅</span> Says whether the cheaper listing names the same room</li>
+          <li><span aria-hidden="true">✅</span> Tells you when a match is unconfirmed</li>
+          <li><span aria-hidden="true">✅</span> Free, no account needed</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-stone-200 rounded-xl p-6">
+        <p class="font-semibold mb-3">What it never does</p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li><span aria-hidden="true">🚫</span> Book for you or hold your card</li>
+          <li><span aria-hidden="true">🚫</span> Pass off a different room as a lower price</li>
+          <li><span aria-hidden="true">🚫</span> Invent price gaps to get your click</li>
+          <li><span aria-hidden="true">🚫</span> Sell your data</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────── WHICH COMPARISON SITE + HOW TO COMPARE (search-intent answer) ───────── -->
+  <section class="px-6 py-20 max-w-3xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Which hotel comparison site actually gets you the lowest price?</h2>
+    <p class="text-slate-600 leading-relaxed mb-4">
+      We measured this rather than guessed. Recording 7,044 hotel prices in 368 cities on every booking site Google Hotels lists (17 snapshots, September 22 to October 10, 2026), two patterns held. First, a lower listing is common: at <strong class="text-ink">73% of hotels</strong> some site was 5% or more below the going rate, typically <strong class="text-ink">16.7% below</strong>, and the big names hold <a href="/hotel-price-parity-myth" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-emerald-700">rate parity</a> less tightly than advertised: on the same tax footing, Expedia and Booking.com were within $2 a night at 59% of the 3,056 hotels where both could be compared, in our 14 price snapshots of September 25 to October 1, 2026. Second, the lower listing rarely proves it is your room: at 4,294 of 5,114 hotels with one, the lowest listing named no room, and in our 14 price snapshots of September 25 to October 1, 2026, a lower listing whose room name matched turned up at 515 of 5,830 hotels (8.8%) on our original room check (952, or 16.3%, on the stricter October 1 check), strong evidence but not proof.
+    </p>
+    <p class="text-slate-600 leading-relaxed mb-4">
+      <!-- ai-answer:start -->Even Booking.com, the site Google Hotels listed most, was at or below every other site at only 18% of the hotels where its price could be compared like with like, in our 14 snapshots of September 25 to October 1, 2026: <a href="/does-booking-com-have-the-lowest-prices" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-emerald-700">does Booking.com have the cheapest prices?</a> To compare on the page you are already on, browser extensions do it for you: <a href="/hotel-price-comparison-extension" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-emerald-700">which ones, side by side</a>, and if you use Hotel Ninja, <a href="/hotel-ninja-alternatives" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-emerald-700">its alternatives</a>.<!-- ai-answer:end -->
+    </p>
+    <p class="text-slate-600 leading-relaxed mb-8">
+      So the comparison worth using shows you the <strong class="text-ink">all-in price</strong> where the sites report taxes and fees, includes the smaller sites the big ones leave out, and tells you plainly when the lower listing does not name the same room. A comparison that hides the fine print does not lower your price; it changes what you book.
+    </p>
+    <!-- 2026-10-06 (docs/AI_GAPS_2026-10-06.md; scripts/ai_gaps_20261006.py checks it): the comparison sites travelers name,
+         each described from its own help, about or terms pages, read that day. -->
+    <!-- ai-answer:start -->
+    <h2 id="comparison-sites" class="text-3xl md:text-4xl font-bold mb-3 tracking-tight">The comparison sites travelers name, side by side</h2>
+    <p class="text-slate-600 leading-relaxed mb-6">
+      What each one says about the prices it shows, from its own help, about or terms pages, read on October 6, 2026: whether taxes and fees are in the price, what it says about the room, whether the hotel&#39;s own site is among the offers, and how it is paid. Where its pages say nothing, the table says so. They can change, and <a href="mailto:hi@underbook.co" class="text-ink underline decoration-accent decoration-2 underline-offset-2">a correction is welcome</a>.
+    </p>
+    <div class="overflow-x-auto" tabindex="0" role="region" aria-label="Table: hotel comparison sites, as each describes itself">
+      <table class="w-full text-xs sm:text-sm border border-stone-200 rounded-xl overflow-hidden">
+        <caption class="sr-only">Hotel comparison sites, as each describes itself on October 6, 2026</caption>
+        <thead class="bg-stone-100 text-left">
+          <tr>
+            <th scope="col" class="px-3 py-3 font-semibold">Site</th>
+            <th scope="col" class="px-3 py-3 font-semibold">What it compares</th>
+            <th scope="col" class="px-3 py-3 font-semibold">Taxes and fees in the price</th>
+            <th scope="col" class="px-3 py-3 font-semibold">The room</th>
+            <th scope="col" class="px-3 py-3 font-semibold">The hotel&#39;s own site</th>
+            <th scope="col" class="px-3 py-3 font-semibold">How it is paid</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-stone-200 text-slate-700">
+          <tr>
+            <th scope="row" class="px-3 py-3 font-semibold text-left">Google Hotels</th>
+            <td class="px-3 py-3">Prices from its hotel, online travel agency and metasearch partners; free booking links ranked by their use to you, paid ads marked &quot;Ad&quot;</td>
+            <td class="px-3 py-3">In the US and Canada, the total shown first includes the base rate and mandatory non-governmental fees, and choosing &quot;Nightly price&quot; also shows a &quot;Nightly total&quot; with taxes and fees; elsewhere, the total with taxes and fees</td>
+            <td class="px-3 py-3">May show room details such as maximum occupancy or bed type</td>
+            <td class="px-3 py-3">A link to the hotel&#39;s website on its page; in our data the hotel&#39;s own site was among the prices at 3,908 of 5,830 hotels (67%)</td>
+            <td class="px-3 py-3">Ads by auction; free booking links cost partners nothing, and Google&#39;s commercial relationship with a partner has no effect on their order, it says</td>
+          </tr>
+          <tr>
+            <th scope="row" class="px-3 py-3 font-semibold text-left">KAYAK</th>
+            <td class="px-3 py-3">Hotel prices across hundreds of travel sites, well-known online travel agencies and smaller sellers</td>
+            <td class="px-3 py-3">Its help says flight and car prices include taxes and fees; it does not say so for hotels</td>
+            <td class="px-3 py-3">Not stated on its help pages</td>
+            <td class="px-3 py-3">Results from hotels as well as online travel agencies, its about page says</td>
+            <td class="px-3 py-3">Commissions from partners, per click or per booking, and ads; part of Booking Holdings</td>
+          </tr>
+          <tr>
+            <th scope="row" class="px-3 py-3 font-semibold text-left">trivago</th>
+            <td class="px-3 py-3">Offers for hotel rooms from &quot;100s of sites&quot;, from hotels directly or through online travel companies, its terms say</td>
+            <td class="px-3 py-3">Prices are per night (the average for a longer stay) and a provider&#39;s price may differ from the one shown, its terms say; they do not mention taxes</td>
+            <td class="px-3 py-3">Not stated in its terms</td>
+            <td class="px-3 py-3">Offers can come directly from a hotel, its terms say</td>
+            <td class="px-3 py-3">Not stated on the pages we could read; its help center refused our reader</td>
+          </tr>
+          <tr>
+            <th scope="row" class="px-3 py-3 font-semibold text-left">Skyscanner</th>
+            <td class="px-3 py-3">Thousands of sites for flights, hotels and car hire</td>
+            <td class="px-3 py-3">Prices &quot;always include an estimate of all taxes and charges&quot;, travel agencies&#39; fees included, its help says</td>
+            <td class="px-3 py-3">Not stated on its help pages</td>
+            <td class="px-3 py-3">Not stated on its help pages</td>
+            <td class="px-3 py-3">A referral fee from the travel company you book with</td>
+          </tr>
+          <tr>
+            <th scope="row" class="px-3 py-3 font-semibold text-left">momondo</th>
+            <td class="px-3 py-3">Hundreds of travel sites, from major booking sites to individual company sites</td>
+            <td class="px-3 py-3">It tries to include all mandatory fees and surcharges, and advises checking the final price on the booking page</td>
+            <td class="px-3 py-3">Not stated on its help page</td>
+            <td class="px-3 py-3">Prices come from suppliers such as online travel agents and the hotel&#39;s own site</td>
+            <td class="px-3 py-3">Referral fees per booking or click, and ads; a hotel&#39;s offers are ordered by clicks, price and what the site pays per click, with the lowest price marked in green when it is not on top</td>
+          </tr>
+          <tr>
+            <th scope="row" class="px-3 py-3 font-semibold text-left">HotelsCombined</th>
+            <td class="px-3 py-3">Hundreds of other travel sites at once</td>
+            <td class="px-3 py-3">Its help answer on taxes and fees covers flights, trains and buses, not hotels</td>
+            <td class="px-3 py-3">Not stated on its help page</td>
+            <td class="px-3 py-3">Not stated on its help page</td>
+            <td class="px-3 py-3">Not stated on its help page</td>
+          </tr>
+          <tr>
+            <th scope="row" class="px-3 py-3 font-semibold text-left">Tripadvisor</th>
+            <td class="px-3 py-3">Prices from partners; it is not a booking agent, its press center says</td>
+            <td class="px-3 py-3">Check the partner&#39;s site for a full disclosure of all applicable fees, its press center says</td>
+            <td class="px-3 py-3">Not stated; tripadvisor.com and its help center refused our reader</td>
+            <td class="px-3 py-3">Not stated</td>
+            <td class="px-3 py-3">Not stated</td>
+          </tr>
+          <tr>
+            <th scope="row" class="px-3 py-3 font-semibold text-left">Vio</th>
+            <td class="px-3 py-3">Hotel prices across 100+ travel sites, its own included; sometimes you book with Vio, sometimes with a partner</td>
+            <td class="px-3 py-3">It says it shows what is included and how much you will pay, before you book</td>
+            <td class="px-3 py-3">Not stated on its How Vio Works page</td>
+            <td class="px-3 py-3">Not stated on that page</td>
+            <td class="px-3 py-3">Not stated on that page; Vio also takes bookings and payment itself</td>
+          </tr>
+          <tr>
+            <th scope="row" class="px-3 py-3 font-semibold text-left">Underbook</th>
+            <td class="px-3 py-3">Every booking site Google Hotels lists for your hotel and dates, a median of 17 per hotel in our data</td>
+            <td class="px-3 py-3">All-in where the sites report taxes and fees (at 4,062 of 5,830 hotels, 70%, in our data); otherwise the listed rate, marked as such</td>
+            <td class="px-3 py-3">Says whether a lower listing names the same room, and to check when it does not</td>
+            <td class="px-3 py-3">Included when Google Hotels lists it</td>
+            <td class="px-3 py-3">May earn a commission if you book through its link, which never changes the order of prices</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-sm text-slate-500 mt-5 mb-8 leading-relaxed">
+      Sources, read October 6, 2026: Google&#39;s help pages &quot;Search for hotels on Google&quot;, &quot;About hotel free booking links&quot; and its Taxes and Fees Policy; KAYAK&#39;s help pages on search, pricing and the company; trivago&#39;s home page and terms of use; Skyscanner&#39;s help articles on what its prices include and why it is free; momondo&#39;s help page; HotelsCombined&#39;s help page; Tripadvisor&#39;s US press center; vio.com/how-vio-works. KAYAK and momondo each say they are part of Booking Holdings. In our 14 price snapshots of September 25 to October 1, 2026, HotelsCombined&#39;s price on Google Hotels was KAYAK&#39;s at all 1,045 hotels listing both (<a href="/lesser-known-hotel-booking-sites#hotelscombined" class="text-ink underline decoration-accent decoration-2 underline-offset-2">is HotelsCombined legit?</a>). If you book through Underbook we may earn a commission, which never changes which rate we show.
+    </p>
+    <!-- ai-answer:end -->
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 tracking-tight">How to compare hotel prices the right way</h2>
+    <p class="text-slate-600 leading-relaxed mb-6">
+      A genuine hotel room comparison lines up four things, not just the headline nightly rate:
+    </p>
+    <div class="bg-white border border-stone-200 rounded-xl p-6">
+      <ul class="space-y-3 text-sm text-slate-700">
+        <li><strong class="text-ink">1. The same room.</strong> A "city view king" is not a "standard queen." Confirm the room name matches before you compare prices.</li>
+        <li><strong class="text-ink">2. The all-in total.</strong> Compare the price with taxes, resort fees, and cleaning fees included. A lower base rate with a hidden <a href="/resort-fees-explained" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-emerald-700">resort fee</a> often costs more at checkout.</li>
+        <li><strong class="text-ink">3. The cancellation terms.</strong> A cheaper non-refundable rate is a different product than a refundable one. Compare like for like.</li>
+        <li><strong class="text-ink">4. The same dates and occupancy.</strong> Prices swing by date and guest count, so hold those constant across every site.</li>
+      </ul>
+    </div>
+    <p class="text-slate-600 leading-relaxed mt-8">
+      Doing all four by hand for every booking is tedious enough that almost nobody does it. That is exactly the job Underbook automates: it compares hotel prices for your hotel and dates across sites on an all-in basis and flags whether the lowest-priced listing names the same room or is an unverified lead to check.
+    </p>
+  </section>
+
+<!-- substance:start -->
+  <section class="px-6 pt-8 pb-8 max-w-3xl mx-auto">
+    <div class="bg-white border border-stone-200 rounded-2xl p-6 md:p-8">
+      <p class="text-sm font-semibold text-emerald-700 uppercase tracking-wider mb-2">Measured, September 25 to October 1, 2026</p>
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">How the big booking sites&#x27; prices sat against the going rate</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">In our 14 price snapshots of September 25 to October 1, 2026 we recorded 5,830 hotel prices in 348 cities on every booking site Google Hotels lists. Each big site&#39;s price against the going rate (the price most sites agree on), compared like with like; the percentages are of the hotels where that could be read (KAYAK is a comparison site, and its price was often before tax):</p>
+      <div class="overflow-x-auto mb-4" tabindex="0" role="region" aria-label="Table: the big booking sites against the going rate"><table class="w-full text-sm"><thead><tr class="text-left text-slate-500"><th scope="col" class="py-2 pr-4 font-semibold">Site</th><th scope="col" class="py-2 pr-4 font-semibold text-right">Hotels listed</th><th scope="col" class="py-2 pr-4 font-semibold text-right">Within 2% of the going rate</th><th scope="col" class="py-2 pr-4 font-semibold text-right">5% or more below</th><th scope="col" class="py-2 font-semibold text-right">Named a room</th></tr></thead><tbody><tr class="border-t border-stone-100"><th scope="row" class="py-2 pr-4 font-normal text-left">Booking.com</th><td class="py-2 pr-4 text-right">5,264</td><td class="py-2 pr-4 text-right">63%</td><td class="py-2 pr-4 text-right">5%</td><td class="py-2 text-right">87%</td></tr><tr class="border-t border-stone-100"><th scope="row" class="py-2 pr-4 font-normal text-left">Expedia.com</th><td class="py-2 pr-4 text-right">3,996</td><td class="py-2 pr-4 text-right">91%</td><td class="py-2 pr-4 text-right">2%</td><td class="py-2 text-right">92%</td></tr><tr class="border-t border-stone-100"><th scope="row" class="py-2 pr-4 font-normal text-left">Hotels.com</th><td class="py-2 pr-4 text-right">4,433</td><td class="py-2 pr-4 text-right">79%</td><td class="py-2 pr-4 text-right">6%</td><td class="py-2 text-right">86%</td></tr><tr class="border-t border-stone-100"><th scope="row" class="py-2 pr-4 font-normal text-left">Priceline</th><td class="py-2 pr-4 text-right">4,380</td><td class="py-2 pr-4 text-right">64%</td><td class="py-2 pr-4 text-right">5%</td><td class="py-2 text-right">38%</td></tr><tr class="border-t border-stone-100"><th scope="row" class="py-2 pr-4 font-normal text-left">Agoda</th><td class="py-2 pr-4 text-right">3,434</td><td class="py-2 pr-4 text-right">60%</td><td class="py-2 pr-4 text-right">13%</td><td class="py-2 text-right">51%</td></tr><tr class="border-t border-stone-100"><th scope="row" class="py-2 pr-4 font-normal text-left">Trip.com</th><td class="py-2 pr-4 text-right">2,409</td><td class="py-2 pr-4 text-right">53%</td><td class="py-2 pr-4 text-right">9%</td><td class="py-2 text-right">11%</td></tr><tr class="border-t border-stone-100"><th scope="row" class="py-2 pr-4 font-normal text-left">KAYAK</th><td class="py-2 pr-4 text-right">1,679</td><td class="py-2 pr-4 text-right">40%</td><td class="py-2 pr-4 text-right">15%</td><td class="py-2 text-right">0%</td></tr></tbody></table></div>
+      <p class="text-slate-700 leading-relaxed mb-4">Some site was 5% or more below the going rate at 4,181 of 5,830 hotels (72%). At 3,323 of them (79%) the lowest listing was on none of these seven sites, most often on Super.com (1,123 hotels), Vio.com (449) and Traveluro (305). At 3,479 of them (83%) the lowest listing named no room.</p>
+      <p class="text-slate-700 leading-relaxed mb-4">So the big sites mostly agree with each other, and the lower prices sit on sites many people never open, usually without saying which room they sell. A comparison is worth as much as the sites it covers and how plainly it shows the room.</p>
+      <p class="text-sm text-slate-500">Each snapshot: US market, USD, prices from one moment for a two-night stay, not completed bookings. "Like with like" means before tax against before tax and all-in against all-in, inferred from the hotel&#39;s two going rates; hotels where that could not be read are left out. Method, charts and the per-hotel CSVs: <a href="/hotel-price-dispersion-study" class="underline">the hotel price study</a>.</p>
+    </div>
+  </section>
+<!-- substance:end -->
+
+<!-- answer-links-1027:start -->
+  <section class="px-6 pt-4 pb-12 max-w-3xl mx-auto">
+    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">Checking the sites yourself</p>
+    <ul class="list-disc pl-5 space-y-2 text-slate-700">
+      <li><a href="/kayak-trivago-or-google-hotels" class="text-ink underline decoration-accent decoration-2 underline-offset-2">KAYAK, trivago or Google Hotels: which should you use for hotel prices?</a></li>
+      <li><a href="/how-to-tell-if-a-cheaper-hotel-price-is-the-same-room" class="text-ink underline decoration-accent decoration-2 underline-offset-2">How can I tell if a cheaper hotel price is the same room?</a></li>
+      <li><a href="/how-to-find-out-if-the-hotel-website-is-cheaper" class="text-ink underline decoration-accent decoration-2 underline-offset-2">How do I find out if the hotel&#39;s own website is cheaper?</a></li>
+    </ul>
+  </section>
+<!-- answer-links-1027:end -->
+
+  <!-- ───────── FAQ ───────── -->
+  <section class="px-6 py-16 bg-white border-y border-stone-200">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 tracking-tight">Hotel price comparison: common questions</h2>
+      <div class="space-y-6">
+        <details id="how-to-compare-hotel-prices" class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">How do I compare hotel prices across booking sites?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">Look up one hotel and your dates on Google Hotels, which lists the booking sites side by side, then compare the totals with taxes and fees for the same room name and the same cancellation terms, and check the hotel's own site too. A lower listing is common and often names no room: in our 17 price snapshots of September 22 to October 10, 2026, some booking site listed the stay 5% or more below the going rate at 5,114 of 7,044 hotel prices (73%), and at 4,294 of those the lowest listing named no room. Underbook's free browser extension and web price checker show each booking site's Google Hotels price for your hotel and dates and say whether a lower listing names the same room.</p>
+        </details>
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">What is the best hotel comparison website?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">No single booking site had the lowest price everywhere: in our 14 price snapshots of September 25 to October 1, 2026, Booking.com's public price was at or below every other site's at only 846 of 4,729 hotels (18%), compared like with like. Look for one that shows the price with taxes and fees where the sites report them, includes the smaller sites as well as the big ones, and says whether a lower listing names the same room. Underbook is a free browser extension that does this for the booking sites Google Hotels lists for your hotel and dates. It sees only the public prices those sites list there, not member prices or sites Google Hotels leaves out, and a matching room name is not proof of the same room.</p>
+        </details>
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Are hotel comparison sites accurate?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">The nightly rate they show is usually accurate, but it can be misleading. Many hotel comparison sites rank listings by commercial factors, quote a base rate before taxes and resort fees, and compare a cheaper room against the one you actually want. When we recorded 7,044 hotel prices from September 22 to October 10, 2026, the lowest listing named no room at 4,294 of the 5,114 hotels where some site was 5% or more below the going rate. So treat the headline number as a starting point, then confirm the room, all-in total, and cancellation terms before you book.</p>
+        </details>
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">How do I compare hotel prices for the same room?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">The trap is comparing a cheaper rate that's really a different room or a non-refundable version. Underbook shows the price each booking site lists on Google Hotels for your hotel and dates, says whether a lower listing names the same room and whether it shows free cancellation, and says to check before booking when the room names don't match. A matching room name is strong evidence, not proof, so read the room and the cancellation terms on the site before you book.</p>
+        </details>
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Why is the same room cheaper on a site I've never heard of?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">Lesser-known booking sites buy rooms through different wholesale channels and spend less on advertising, so their listed rates are sometimes lower. Not always the identical room, though, which is exactly why Underbook tells you whether the cheaper listing names the same room, so you can check before you book.</p>
+        </details>
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Does it cost anything?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">No. Underbook is a free browser extension. If you book through a site it surfaces, it may earn a small commission from that site; you pay nothing extra, and it shows the lower rate even when its commission would be smaller.</p>
+        </details>
+        <details class="border-b border-stone-200 pb-6 group">
+          <summary class="cursor-pointer font-semibold text-lg flex justify-between items-center list-none">Is my data safe?<span class="text-2xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+          <p class="mt-3 text-slate-600 leading-relaxed">When you open a hotel page, Underbook sends the hotel name, your dates and your party size to its price service to look up current rates. Nothing that identifies you goes with it. It never sees or stores your payment details, booking happens on the site you choose, and it doesn't sell your data. <a href="/privacy" class="underline decoration-accent decoration-2 underline-offset-2 hover:text-ink">Read the privacy policy →</a></p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+<!-- gap-links:start -->
+  <section class="px-6 pt-16 pb-12 max-w-3xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">Which sites a comparison covers</h2>
+    <p class="text-slate-600 leading-relaxed">Google Hotels listed a median of 17 booking sites per hotel in our snapshots: <a href="/which-sites-does-google-hotels-show" class="text-ink underline decoration-accent decoration-2 underline-offset-2">which booking sites Google Hotels shows</a>. Some of them are one company with one price: <a href="/hotel-sites-owned-by-expedia" class="text-ink underline decoration-accent decoration-2 underline-offset-2">the sites Expedia owns</a>.</p>
+  </section>
+<!-- gap-links:end -->
+<!-- hotel-links:start -->
+  <section class="px-6 pb-12 max-w-3xl mx-auto">
+    <div class="bg-white border border-stone-200 rounded-2xl p-6 md:p-8">
+      <p class="text-sm font-semibold text-emerald-700 uppercase tracking-wider mb-2">Real prices, hotel by hotel</p>
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">Every site's price at 5,970 hotels in 368 cities</h2>
+      <p class="text-slate-700 leading-relaxed mb-4">From our price snapshots of September 25, 2026, September 28, 2026, September 29, 2026, September 30, 2026, October 1, 2026, October 3, 2026 and October 10, 2026: each hotel's page lists every booking site Google Hotels showed, the going rate, and whether the lowest-priced listing named a room, with a button to check today's price for your own dates.</p>
+      <p class="text-sm text-slate-600 leading-relaxed mb-2">By region: <a href="/hotels/united-states" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">United States</a> · <a href="/hotels/europe" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Europe</a> · <a href="/hotels/americas" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Canada, Latin America, Caribbean</a> · <a href="/hotels/asia-pacific" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Asia-Pacific, Middle East, Africa</a></p>
+      <p class="text-sm text-slate-600 leading-relaxed">Start with a city: <a href="/hotels/new-york" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">New York</a> · <a href="/hotels/las-vegas" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Las Vegas</a> · <a href="/hotels/orlando" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Orlando</a> · <a href="/hotels/chicago" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Chicago</a> · <a href="/hotels/london" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">London</a> · <a href="/hotels/cancun" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Cancun</a> · <a href="/hotels/los-angeles" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Los Angeles</a> · <a href="/hotels/miami" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Miami</a> · <a href="/hotels/fort-lauderdale" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Fort Lauderdale</a> · <a href="/hotels/nashville" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Nashville</a> · <a href="/hotels/new-orleans" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">New Orleans</a> · <a href="/hotels/paris" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Paris</a> · <a href="/hotels/punta-cana" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Punta Cana</a> · <a href="/hotels/san-francisco" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">San Francisco</a> · <a href="/hotels/honolulu" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Honolulu</a> · <a href="/hotels/charleston" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Charleston</a> · <a href="/hotels/key-west" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Key West</a> · <a href="/hotels/washington-dc" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Washington DC</a> · <a href="/hotels/boston" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Boston</a> · <a href="/hotels/atlanta" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Atlanta</a> · <a href="/hotels/scottsdale" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Scottsdale</a> · <a href="/hotels/myrtle-beach" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Myrtle Beach</a> · <a href="/hotels/austin" class="underline decoration-stone-300 underline-offset-4 hover:text-emerald-700">Austin</a></p>
+      <p class="text-sm mt-4"><a href="/hotels" class="font-semibold underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">All 5,970 hotels by city</a></p>
+    </div>
+  </section>
+<!-- hotel-links:end -->
+  <!-- ───────── FINAL CTA ───────── -->
+  <section class="px-6 py-24 bg-ink text-white text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Double-check your next hotel.</h2>
+      <p class="text-lg text-stone-300 mb-10">Free hotel price comparison for the hotel and dates you're booking. We never see your payment, and you always book where you choose.</p>
+      <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=guide&amp;utm_campaign=footer" class="ub-install inline-block bg-accent text-ink font-bold px-8 py-4 rounded-lg hover:bg-accent/90 transition">
+        + Add to Chrome, free
+      </a>
+      <p class="text-xs text-stone-400 mt-6">or <a href="/" class="underline hover:text-white">see how Underbook works →</a></p>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer class="px-6 py-10 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto mb-8 pb-8 border-b border-stone-200">
+      <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3">Hotel booking guides</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-2 text-sm">
+        <a href="/hotel-price-comparison" class="text-slate-500 hover:text-ink transition">Hotel price comparison</a>
+        <a href="/hotel-price-comparison-extension" class="text-slate-500 hover:text-ink transition">Hotel price comparison extension</a>
+        <a href="/hotel-price-match-guarantee" class="text-slate-500 hover:text-ink transition">Do price match guarantees work?</a>
+        <a href="/is-booking-com-legit" class="text-slate-500 hover:text-ink transition">Is Booking.com legit?</a>
+        <a href="/how-to-get-cheaper-hotel-rates" class="text-slate-500 hover:text-ink transition">How to get cheaper rates</a>
+        <a href="/booking-com-vs-hotel-direct" class="text-slate-500 hover:text-ink transition">Booking.com vs booking direct</a>
+        <a href="/expedia-vs-booking-com" class="text-slate-500 hover:text-ink transition">Expedia vs Booking.com</a>
+        <a href="/hotels-com-vs-booking-com" class="text-slate-500 hover:text-ink transition">Hotels.com vs Booking.com</a>
+        <a href="/hotel-booking-sites-compared" class="text-slate-500 hover:text-ink transition">Booking sites compared, pair by pair</a>
+        <a href="/best-hotel-price-tracker" class="text-slate-500 hover:text-ink transition">Best hotel price tracker</a>
+        <a href="/genius-discount-worth-it" class="text-slate-500 hover:text-ink transition">Is the Genius discount worth it?</a>
+        <a href="/hotel-price-drop-alerts" class="text-slate-500 hover:text-ink transition">Hotel price drop alerts</a>
+        <a href="/same-room-different-price" class="text-slate-500 hover:text-ink transition">Same room, different price</a>
+        <a href="/why-are-hotel-prices-different-on-different-sites" class="text-slate-500 hover:text-ink transition">Why prices differ across sites</a>
+        <a href="/resort-fees-explained" class="text-slate-500 hover:text-ink transition">Resort fees explained</a>
+        <a href="/does-clearing-cookies-lower-hotel-prices" class="text-slate-500 hover:text-ink transition">Do cookies affect hotel prices?</a>
+        <a href="/does-a-vpn-lower-hotel-prices" class="text-slate-500 hover:text-ink transition">Does a VPN lower hotel prices?</a>
+        <a href="/do-hotel-prices-drop-closer-to-the-date" class="text-slate-500 hover:text-ink transition">Do prices drop closer to the date?</a>
+        <a href="/cheapest-day-to-book-a-hotel" class="text-slate-500 hover:text-ink transition">Cheapest day to book a hotel?</a>
+        <a href="/is-super-com-legit" class="text-slate-500 hover:text-ink transition">Is Super.com legit?</a>
+        <a href="/is-vio-com-legit" class="text-slate-500 hover:text-ink transition">Is Vio.com legit?</a>
+        <a href="/is-agoda-legit" class="text-slate-500 hover:text-ink transition">Is Agoda legit?</a>
+        <a href="/is-priceline-legit" class="text-slate-500 hover:text-ink transition">Is Priceline legit?</a>
+        <a href="/is-expedia-legit" class="text-slate-500 hover:text-ink transition">Is Expedia legit?</a>
+        <a href="/is-hotels-com-legit" class="text-slate-500 hover:text-ink transition">Is Hotels.com legit?</a>
+        <a href="/is-kayak-legit" class="text-slate-500 hover:text-ink transition">Is Kayak legit?</a>
+        <a href="/is-trivago-legit" class="text-slate-500 hover:text-ink transition">Is trivago legit?</a>
+        <a href="/is-google-hotels-accurate" class="text-slate-500 hover:text-ink transition">Is Google Hotels accurate?</a>
+        <a href="/is-trip-com-legit" class="text-slate-500 hover:text-ink transition">Is Trip.com legit?</a>
+        <a href="/is-hotwire-legit" class="text-slate-500 hover:text-ink transition">Is Hotwire legit?</a>
+        <a href="/is-hopper-legit" class="text-slate-500 hover:text-ink transition">Is Hopper legit?</a>
+        <a href="/is-hoteltonight-legit" class="text-slate-500 hover:text-ink transition">Is HotelTonight legit?</a>
+        <a href="/cheapest-site-to-book-hotels" class="text-slate-500 hover:text-ink transition">Cheapest site to book hotels?</a>
+        <a href="/hotel-price-parity-myth" class="text-slate-500 hover:text-ink transition">Is the same room cheaper elsewhere?</a>
+        <a href="/do-hotel-resort-fees-show-in-price" class="text-slate-500 hover:text-ink transition">Do resort fees show in the price?</a>
+        <a href="/is-free-cancellation-worth-it" class="text-slate-500 hover:text-ink transition">Is free cancellation worth it?</a>
+        <a href="/is-travelocity-legit" class="text-slate-500 hover:text-ink transition">Is Travelocity legit?</a>
+        <a href="/lesser-known-hotel-booking-sites" class="text-slate-500 hover:text-ink transition">Lesser-known booking sites: are they legit?</a>
+        <a href="/is-algotels-legit" class="text-slate-500 hover:text-ink transition">Is Algotels legit?</a>
+        <a href="/is-stayforlong-legit" class="text-slate-500 hover:text-ink transition">Is Stayforlong legit?</a>
+        <a href="/is-prestigia-legit" class="text-slate-500 hover:text-ink transition">Is Prestigia legit?</a>
+        <a href="/how-underbook-works" class="text-slate-500 hover:text-ink transition">How Underbook works</a>
+        <a href="/corrections" class="text-slate-500 hover:text-ink transition">Corrections</a>
+        <a href="/is-there-a-honey-for-hotels" class="text-slate-500 hover:text-ink transition">Is there a Honey for hotels?</a>
+        <a href="/hotel-price-comparison-extension-for-safari" class="text-slate-500 hover:text-ink transition">Hotel price comparison in Safari</a>
+        <a href="/ratepunk-alternatives" class="text-slate-500 hover:text-ink transition">RatePunk alternatives</a>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-6 h-6 rounded bg-ink text-white grid place-items-center text-xs font-extrabold" aria-hidden="true">U</span>
+        <span><strong class="text-ink">Underbook</strong>. Your hotel, double-checked.</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <a href="/" class="hover:text-ink transition">Home</a>
+        <a href="/how-to-get-cheaper-hotel-rates" class="hover:text-ink transition">Cheaper hotel rates</a>
+        <a href="/booking-com-vs-hotel-direct" class="hover:text-ink transition">Booking.com vs direct</a>
+        <a href="/hotel-price-drop-alerts" class="hover:text-ink transition">Price drop alerts</a>
+        <a href="/best-hotel-price-tracker" class="hover:text-ink transition">Best price tracker</a>
+        <a href="/genius-discount-worth-it" class="hover:text-ink transition">Is Genius worth it?</a>
+        <a href="/is-super-com-legit" class="hover:text-ink transition">Is Super.com legit?</a>
+        <a href="/resort-fees-explained" class="hover:text-ink transition">Resort fees explained</a>
+        <a href="/same-room-different-price" class="hover:text-ink transition">Same room, different price</a>
+        <a href="/hotel-price-checker" class="hover:text-ink transition">Check a price</a>
+        <a href="/help" class="hover:text-ink transition">Help</a>
+        <a href="/privacy" class="hover:text-ink transition">Privacy</a>
+        <a href="mailto:hi@underbook.co" class="hover:text-ink transition">hi@underbook.co</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/app.js?v=20260925"></script>
+</body>
+</html>

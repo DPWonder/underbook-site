@@ -1,0 +1,676 @@
+city,region,hotel,segment,sites_listed,going_rate_usd,cheapest_usd,cheapest_site,discount_pct,verdict,cheaper_room_name_matched,cheapest_named_a_room,fees_unverified,check_in,check_out,free_cancellation_elsewhere_same_or_less,going_rate_all_in_usd,stay
+Anaheim,US,Anaheim Marriott,chain,12,248,214,Hotels.com,13.7,REAL_LOWER_MATCHED,yes,yes,yes,2026-12-23,2026-12-27,no,248,christmas
+Anaheim,US,Anaheim Marriott,chain,12,243,208,Despegar,14.4,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,243,new_years_eve
+Anaheim,US,Anaheim Marriott,chain,12,368,316,Traveluro,14.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,430,mid_january
+Anaheim,US,Candlewood Suites Anaheim - Resort Area by IHG,chain,12,181,89,Super.com,50.8,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,212,christmas
+Anaheim,US,Candlewood Suites Anaheim - Resort Area by IHG,chain,12,160,105,Vio.com,34.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,187,new_years_eve
+Anaheim,US,Candlewood Suites Anaheim - Resort Area by IHG,chain,12,140,99,Super.com,29.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,164,mid_january
+Anaheim,US,Clarion Hotel Anaheim Resort,chain,12,170,135,Vio.com,20.6,REAL_LOWER_MATCHED,yes,yes,yes,2026-12-23,2026-12-27,yes,170,christmas
+Anaheim,US,Clarion Hotel Anaheim Resort,chain,12,138,106,Vio.com,23.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,162,new_years_eve
+Anaheim,US,Clarion Hotel Anaheim Resort,chain,12,144,106,Billabook.com,26.4,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,144,mid_january
+Anaheim,US,Cortona Inn and Suites Anaheim Resort,independent,12,161,140,Super.com,13.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,189,christmas
+Anaheim,US,Cortona Inn and Suites Anaheim Resort,independent,12,182,151,Super.com,17.0,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,182,new_years_eve
+Anaheim,US,Cortona Inn and Suites Anaheim Resort,independent,12,249,202,Cortona Inn and Suites Anaheim,18.9,UNVERIFIED_LOWER,no,yes,yes,2027-01-12,2027-01-16,no,249,mid_january
+Anaheim,US,Extended Stay America Suites- Orange County - Anaheim Convention Center,independent,12,151,131,Vio.com,13.2,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,151,christmas
+Anaheim,US,Extended Stay America Suites- Orange County - Anaheim Convention Center,independent,12,118,104,KAYAK.com,11.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,138,new_years_eve
+Anaheim,US,Extended Stay America Suites- Orange County - Anaheim Convention Center,independent,12,110,91,Super.com,17.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,128,mid_january
+Anaheim,US,Hilton Garden Inn Anaheim/Garden Grove,chain,12,174,138,Super.com,20.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,204,christmas
+Anaheim,US,Hilton Garden Inn Anaheim/Garden Grove,chain,12,216,172,Traveluro,20.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,253,new_years_eve
+Anaheim,US,Hilton Garden Inn Anaheim/Garden Grove,chain,12,144,115,Super.com,20.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,169,mid_january
+Anaheim,US,"Hotel Fera Anaheim, a DoubleTree by Hilton",chain,12,148,103,Super.com,30.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,163,christmas
+Anaheim,US,"Hotel Fera Anaheim, a DoubleTree by Hilton",chain,12,172,128,Super.com,25.6,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,172,new_years_eve
+Anaheim,US,"Hotel Fera Anaheim, a DoubleTree by Hilton",chain,12,140,106,Super.com,24.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,155,mid_january
+Anaheim,US,Howard Johnson by Wyndham Fullerton Anaheim Conference Cntr,chain,12,82,73,Super.com,11.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,89,christmas
+Anaheim,US,Howard Johnson by Wyndham Fullerton Anaheim Conference Cntr,chain,12,103,75,KAYAK.com,27.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,114,new_years_eve
+Anaheim,US,Howard Johnson by Wyndham Fullerton Anaheim Conference Cntr,chain,12,84,61,Super.com,27.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,93,mid_january
+Anaheim,US,Sonesta Anaheim Resort Area,independent,12,148,132,Vio.com,10.8,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,148,christmas
+Anaheim,US,Sonesta Anaheim Resort Area,independent,12,120,100,Super.com,16.7,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,140,new_years_eve
+Anaheim,US,Sonesta Anaheim Resort Area,independent,12,129,119,Hotels In America,7.8,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,129,mid_january
+Atlanta,US,Atlanta Marriott Marquis,chain,12,119,87,KAYAK.com,26.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,144,christmas
+Atlanta,US,Atlanta Marriott Marquis,chain,10,214,214,Atlanta Marriott Marquis,0.0,PARITY,no,no,yes,2026-12-29,2027-01-02,yes,214,new_years_eve
+Atlanta,US,Atlanta Marriott Marquis,chain,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+Atlanta,US,Courtland Grand Hotel,independent,12,86,72,Vio.com,16.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,105,christmas
+Atlanta,US,Courtland Grand Hotel,independent,12,125,99,Vio.com,20.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,151,new_years_eve
+Atlanta,US,Courtland Grand Hotel,independent,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+Atlanta,US,Embassy Suites by Hilton Atlanta Buckhead,chain,12,126,100,Super.com,20.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,153,christmas
+Atlanta,US,Embassy Suites by Hilton Atlanta Buckhead,chain,12,148,132,Super.com,10.8,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,148,new_years_eve
+Atlanta,US,Embassy Suites by Hilton Atlanta Buckhead,chain,12,198,185,Super.com,6.6,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,236,mid_january
+Atlanta,US,Holiday Inn Express & Suites Atlanta Buckhead by IHG,chain,12,101,81,Super.com,19.8,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,122,christmas
+Atlanta,US,Holiday Inn Express & Suites Atlanta Buckhead by IHG,chain,12,106,85,Super.com,19.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,129,new_years_eve
+Atlanta,US,Holiday Inn Express & Suites Atlanta Buckhead by IHG,chain,12,120,103,Hotels In America,14.2,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,146,mid_january
+Atlanta,US,Holiday Inn Express & Suites Atlanta Downtown by IHG,chain,12,91,85,Super.com,6.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,112,christmas
+Atlanta,US,Holiday Inn Express & Suites Atlanta Downtown by IHG,chain,12,116,90,Super.com,22.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,140,new_years_eve
+Atlanta,US,Holiday Inn Express & Suites Atlanta Downtown by IHG,chain,1,318,318,Billabook.com,0.0,PARITY,no,no,no,2027-01-12,2027-01-16,no,386,mid_january
+Atlanta,US,Margaritaville Vacation Club - Atlanta,independent,12,193,125,Super.com,35.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,230,christmas
+Atlanta,US,Margaritaville Vacation Club - Atlanta,independent,12,367,229,Super.com,37.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,434,new_years_eve
+Atlanta,US,Margaritaville Vacation Club - Atlanta,independent,12,326,203,Super.com,37.7,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,387,mid_january
+Atlanta,US,Origin Hotel Atlanta,independent,7,141,141,Booking.com,0.0,PARITY,no,yes,yes,2026-12-23,2026-12-27,no,141,christmas
+Atlanta,US,Origin Hotel Atlanta,independent,12,159,134,Best Hotel Deals,15.7,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,191,new_years_eve
+Atlanta,US,Origin Hotel Atlanta,independent,12,230,179,Super.com,22.2,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,230,mid_january
+Atlanta,US,"The Candler Hotel Atlanta, Curio Collection by Hilton",chain,6,192,192,Expedia.com,0.0,PARITY,no,no,yes,2026-12-23,2026-12-27,no,192,christmas
+Atlanta,US,"The Candler Hotel Atlanta, Curio Collection by Hilton",chain,12,279,245,Super.com,12.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,331,new_years_eve
+Atlanta,US,"The Candler Hotel Atlanta, Curio Collection by Hilton",chain,12,623,594,Super.com,4.7,PARITY,no,no,no,2027-01-12,2027-01-16,no,734,mid_january
+Atlanta,US,"The Connally Hotel Downtown Atlanta, an Ascend Collection Hotel",chain,12,80,57,trivago DEALS,28.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,80,christmas
+Atlanta,US,"The Connally Hotel Downtown Atlanta, an Ascend Collection Hotel",chain,12,126,108,goseek.com,14.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,152,new_years_eve
+Atlanta,US,"The Connally Hotel Downtown Atlanta, an Ascend Collection Hotel",chain,12,279,218,Super.com,21.9,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,331,mid_january
+Boston,US,Battery Wharf Hotel Boston Waterfront,independent,12,349,165,Super.com,52.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,407,christmas
+Boston,US,Battery Wharf Hotel Boston Waterfront,independent,12,405,202,Vio.com,50.1,UNVERIFIED_LOWER,no,yes,no,2026-12-29,2027-01-02,yes,472,new_years_eve
+Boston,US,Battery Wharf Hotel Boston Waterfront,independent,12,300,194,Super.com,35.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,343,mid_january
+Boston,US,Cambria Hotel Boston Downtown - Seaport,chain,12,146,116,Super.com,20.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,170,christmas
+Boston,US,Cambria Hotel Boston Downtown - Seaport,chain,12,160,121,Super.com,24.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,186,new_years_eve
+Boston,US,Cambria Hotel Boston Downtown - Seaport,chain,12,154,101,Super.com,34.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,180,mid_january
+Boston,US,Four Points by Sheraton Boston Newton,chain,12,95,88,KAYAK.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,106,christmas
+Boston,US,Four Points by Sheraton Boston Newton,chain,12,168,126,Four Points by Sheraton Boston Newton,25.0,UNVERIFIED_LOWER,no,yes,yes,2026-12-29,2027-01-02,no,168,new_years_eve
+Boston,US,Four Points by Sheraton Boston Newton,chain,12,99,98,Super.com,1.0,PARITY,no,no,no,2027-01-12,2027-01-16,no,111,mid_january
+Boston,US,Hotel Boston,independent,12,107,107,The Boston Hotel,0.0,PARITY,no,yes,yes,2026-12-23,2026-12-27,yes,107,christmas
+Boston,US,Hotel Boston,independent,5,156,113,The Boston Hotel,27.6,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,156,new_years_eve
+Boston,US,Hotel Boston,independent,8,123,90,Priceline,26.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,147,mid_january
+Boston,US,Hyatt Place Boston / Seaport District,chain,12,152,134,Super.com,11.8,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,177,christmas
+Boston,US,Hyatt Place Boston / Seaport District,chain,12,178,152,Super.com,14.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,207,new_years_eve
+Boston,US,Hyatt Place Boston / Seaport District,chain,12,157,134,Super.com,14.6,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,182,mid_january
+Boston,US,Premier Suites - Bay Village,independent,12,120,103,Reservation Day,14.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,138,christmas
+Boston,US,Premier Suites - Bay Village,independent,3,234,234,Expedia.com,0.0,PARITY,no,no,yes,2026-12-29,2027-01-02,no,234,new_years_eve
+Boston,US,Premier Suites - Bay Village,independent,9,142,132,Long Stay Discounts,7.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,163,mid_january
+Boston,US,Ramada by Wyndham Boston,chain,12,97,72,Super.com,25.8,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,113,christmas
+Boston,US,Ramada by Wyndham Boston,chain,12,96,70,Super.com,27.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,112,new_years_eve
+Boston,US,Ramada by Wyndham Boston,chain,12,96,70,Super.com,27.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,112,mid_january
+Boston,US,SpringHill Suites by Marriott Boston Logan Airport Revere Beach,chain,12,160,159,Hotels.com,0.6,PARITY,no,yes,yes,2026-12-23,2026-12-27,no,160,christmas
+Boston,US,SpringHill Suites by Marriott Boston Logan Airport Revere Beach,chain,12,168,160,Priceline,4.8,PARITY,no,no,no,2026-12-29,2027-01-02,no,188,new_years_eve
+Boston,US,SpringHill Suites by Marriott Boston Logan Airport Revere Beach,chain,12,179,170,Super.com,5.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,200,mid_january
+Boston,US,The Revolution Hotel,independent,12,151,133,trivago DEALS,11.9,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,151,christmas
+Boston,US,The Revolution Hotel,independent,12,119,92,Super.com,22.7,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,139,new_years_eve
+Boston,US,The Revolution Hotel,independent,12,135,115,Billabook.com,14.8,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,135,mid_january
+Chicago,US,DoubleTree by Hilton Hotel Chicago O'Hare Airport - Rosemont,chain,12,127,92,Super.com,27.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,144,christmas
+Chicago,US,DoubleTree by Hilton Hotel Chicago O'Hare Airport - Rosemont,chain,12,146,135,KAYAK.com,7.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,166,new_years_eve
+Chicago,US,DoubleTree by Hilton Hotel Chicago O'Hare Airport - Rosemont,chain,12,148,140,Super.com,5.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,169,mid_january
+Chicago,US,"Fairmont Chicago, Millennium Park",chain,12,274,206,Super.com,24.8,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,274,christmas
+Chicago,US,"Fairmont Chicago, Millennium Park",chain,12,323,236,Super.com,26.9,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,323,new_years_eve
+Chicago,US,"Fairmont Chicago, Millennium Park",chain,12,233,181,Super.com,22.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,267,mid_january
+Chicago,US,Hampton Inn Chicago Downtown/N Loop/Michigan Ave,chain,12,114,93,KAYAK.com,18.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,136,christmas
+Chicago,US,Hampton Inn Chicago Downtown/N Loop/Michigan Ave,chain,12,178,142,KAYAK.com,20.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,212,new_years_eve
+Chicago,US,Hampton Inn Chicago Downtown/N Loop/Michigan Ave,chain,12,108,88,Super.com,18.5,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,108,mid_january
+Chicago,US,InterContinental Chicago Magnificent Mile by IHG,chain,12,206,148,Super.com,28.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,245,christmas
+Chicago,US,InterContinental Chicago Magnificent Mile by IHG,chain,12,257,187,Super.com,27.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,305,new_years_eve
+Chicago,US,InterContinental Chicago Magnificent Mile by IHG,chain,12,224,174,Hotels In America,22.3,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,224,mid_january
+Chicago,US,Sofitel Chicago Magnificent Mile,chain,12,186,161,Super.com,13.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,221,christmas
+Chicago,US,Sofitel Chicago Magnificent Mile,chain,12,254,218,Super.com,14.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,302,new_years_eve
+Chicago,US,Sofitel Chicago Magnificent Mile,chain,12,192,161,Super.com,16.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,228,mid_january
+Chicago,US,"Staypineapple, An Iconic Hotel, The Loop Chicago",independent,12,204,188,Super.com,7.8,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,204,christmas
+Chicago,US,"Staypineapple, An Iconic Hotel, The Loop Chicago",independent,12,244,222,Billabook.com,9.0,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,244,new_years_eve
+Chicago,US,"Staypineapple, An Iconic Hotel, The Loop Chicago",independent,12,192,161,Super.com,16.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,228,mid_january
+Chicago,US,"The Hoxton, Chicago",independent,12,184,159,Super.com,13.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,218,christmas
+Chicago,US,"The Hoxton, Chicago",independent,12,304,253,Super.com,16.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,361,new_years_eve
+Chicago,US,"The Hoxton, Chicago",independent,12,359,358,Skyscanner,0.3,PARITY,no,no,no,2027-01-12,2027-01-16,no,426,mid_january
+Chicago,US,The Wade,independent,12,132,132,The Wade,0.0,PARITY,no,yes,yes,2026-12-23,2026-12-27,no,132,christmas
+Chicago,US,The Wade,independent,12,181,162,Super.com,10.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,215,new_years_eve
+Chicago,US,The Wade,independent,12,211,211,Hotels.com,0.0,PARITY,no,yes,no,2027-01-12,2027-01-16,no,251,mid_january
+Chicago,US,Warwick Allerton - Chicago,independent,12,125,88,Super.com,29.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,148,christmas
+Chicago,US,Warwick Allerton - Chicago,independent,12,195,100,Trip.com,48.7,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,232,new_years_eve
+Chicago,US,Warwick Allerton - Chicago,independent,12,108,75,Hotels In America,30.6,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,128,mid_january
+Dallas,US,Comfort Suites NW Dallas Near Love Field,independent,12,65,55,Super.com,15.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,77,christmas
+Dallas,US,Comfort Suites NW Dallas Near Love Field,independent,12,63,51,Super.com,19.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,74,new_years_eve
+Dallas,US,Comfort Suites NW Dallas Near Love Field,independent,12,67,53,Super.com,20.9,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,67,mid_january
+Dallas,US,Crowne Plaza Dallas Market Ctr - Love Field by IHG,chain,12,109,56,Super.com,48.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,128,christmas
+Dallas,US,Crowne Plaza Dallas Market Ctr - Love Field by IHG,chain,12,111,86,Vio.com,22.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,130,new_years_eve
+Dallas,US,Crowne Plaza Dallas Market Ctr - Love Field by IHG,chain,12,137,109,Super.com,20.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,161,mid_january
+Dallas,US,Hilton Garden Inn Downtown Dallas,chain,12,159,129,KAYAK.com,18.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,186,christmas
+Dallas,US,Hilton Garden Inn Downtown Dallas,chain,12,173,143,Super.com,17.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,203,new_years_eve
+Dallas,US,Hilton Garden Inn Downtown Dallas,chain,12,172,150,Super.com,12.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,201,mid_january
+Dallas,US,Holiday Inn Dallas-Richardson by IHG,chain,12,77,62,Super.com,19.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,87,christmas
+Dallas,US,Holiday Inn Dallas-Richardson by IHG,chain,12,92,76,Vio.com,17.4,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,92,new_years_eve
+Dallas,US,Holiday Inn Dallas-Richardson by IHG,chain,12,98,78,Super.com,20.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,111,mid_january
+Dallas,US,La Quinta Inn & Suites by Wyndham Dallas - Wylie,chain,12,79,73,Super.com,7.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,89,christmas
+Dallas,US,La Quinta Inn & Suites by Wyndham Dallas - Wylie,chain,12,72,72,Vio.com,0.0,PARITY,no,yes,yes,2026-12-29,2027-01-02,yes,72,new_years_eve
+Dallas,US,La Quinta Inn & Suites by Wyndham Dallas - Wylie,chain,12,81,63,Super.com,22.2,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,92,mid_january
+Dallas,US,"Lorenzo Hotel Dallas, Tapestry Collection by Hilton",chain,12,124,116,Super.com,6.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,146,christmas
+Dallas,US,"Lorenzo Hotel Dallas, Tapestry Collection by Hilton",chain,12,156,125,Super.com,19.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,184,new_years_eve
+Dallas,US,"Lorenzo Hotel Dallas, Tapestry Collection by Hilton",chain,12,146,130,Super.com,11.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,171,mid_january
+Dallas,US,Magnolia Dallas Downtown,independent,12,142,114,Super.com,19.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,167,christmas
+Dallas,US,Magnolia Dallas Downtown,independent,12,152,116,Super.com,23.7,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,152,new_years_eve
+Dallas,US,Magnolia Dallas Downtown,independent,12,126,99,Super.com,21.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,148,mid_january
+Dallas,US,Omni Dallas Hotel,chain,12,175,123,Super.com,29.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,205,christmas
+Dallas,US,Omni Dallas Hotel,chain,12,311,249,Super.com,19.9,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,311,new_years_eve
+Dallas,US,Omni Dallas Hotel,chain,12,487,454,Hotel prive,6.8,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,487,mid_january
+Dallas,US,The Bishop Arts Hotel by Q resorts,independent,12,146,114,Vio.com,21.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,168,christmas
+Dallas,US,The Bishop Arts Hotel by Q resorts,independent,12,182,141,Agoda,22.5,UNVERIFIED_LOWER,no,yes,no,2026-12-29,2027-01-02,no,210,new_years_eve
+Dallas,US,The Bishop Arts Hotel by Q resorts,independent,3,143,128,Bluepillow.in,10.5,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,143,mid_january
+Denver,US,Catbird Hotel,independent,12,136,114,Super.com,16.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,157,christmas
+Denver,US,Catbird Hotel,independent,9,188,174,Billabook.com,7.4,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,188,new_years_eve
+Denver,US,Catbird Hotel,independent,12,257,211,Vio.com,17.9,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,257,mid_january
+Denver,US,Courtyard by Marriott Denver Cherry Creek,chain,12,137,115,Evendo,16.1,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,137,christmas
+Denver,US,Courtyard by Marriott Denver Cherry Creek,chain,12,125,99,trivago DEALS,20.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,144,new_years_eve
+Denver,US,Courtyard by Marriott Denver Cherry Creek,chain,12,125,99,Evendo,20.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,144,mid_january
+Denver,US,Ember Hostel,independent,12,82,71,Ember Hostel,13.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,95,christmas
+Denver,US,Ember Hostel,independent,6,93,80,Ember Hostel,14.0,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,93,new_years_eve
+Denver,US,Ember Hostel,independent,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+Denver,US,Holiday Inn Express Denver Downtown by IHG,chain,12,139,81,trivago DEALS,41.7,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,139,christmas
+Denver,US,Holiday Inn Express Denver Downtown by IHG,chain,12,183,98,Super.com,46.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,212,new_years_eve
+Denver,US,Holiday Inn Express Denver Downtown by IHG,chain,12,114,71,Vio.com,37.7,REAL_LOWER_MATCHED,yes,yes,no,2027-01-12,2027-01-16,yes,132,mid_january
+Denver,US,Hotel Teatro,independent,12,179,142,Super.com,20.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,207,christmas
+Denver,US,Hotel Teatro,independent,12,235,197,Super.com,16.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,272,new_years_eve
+Denver,US,Hotel Teatro,independent,12,177,140,Super.com,20.9,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,205,mid_january
+Denver,US,"Motel 6 Denver, CO – Downtown",chain,12,79,74,trivago DEALS,6.3,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,79,christmas
+Denver,US,"Motel 6 Denver, CO – Downtown",chain,12,62,59,Vio.com,4.8,PARITY,no,no,no,2026-12-29,2027-01-02,yes,71,new_years_eve
+Denver,US,"Motel 6 Denver, CO – Downtown",chain,10,49,49,Booking.com,0.0,PARITY,no,yes,no,2027-01-12,2027-01-16,no,57,mid_january
+Denver,US,Sonesta Denver Downtown,independent,12,103,78,Super.com,24.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,119,christmas
+Denver,US,Sonesta Denver Downtown,independent,12,140,120,Super.com,14.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,162,new_years_eve
+Denver,US,Sonesta Denver Downtown,independent,12,115,91,Super.com,20.9,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,133,mid_january
+Denver,US,Spark by Hilton Denver East I 70,chain,6,88,88,Booking.com,0.0,PARITY,no,no,yes,2026-12-23,2026-12-27,no,88,christmas
+Denver,US,Spark by Hilton Denver East I 70,chain,10,88,80,Super.com,9.1,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,88,new_years_eve
+Denver,US,Spark by Hilton Denver East I 70,chain,11,76,72,Super.com,5.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,88,mid_january
+Denver,US,The Source Hotel,independent,12,189,160,Preferred Hotels & Resorts,15.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,219,christmas
+Denver,US,The Source Hotel,independent,12,189,160,Preferred Hotels & Resorts,15.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,219,new_years_eve
+Denver,US,The Source Hotel,independent,12,222,186,Preferred Hotels & Resorts,16.2,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,257,mid_january
+Detroit,US,A Victory Hotel & Suites - Southfield/Detroit,independent,4,102,102,Super.com,0.0,PARITY,no,no,no,2026-12-23,2026-12-27,no,113,christmas
+Detroit,US,A Victory Hotel & Suites - Southfield/Detroit,independent,3,97,97,Super.com,0.0,PARITY,no,no,no,2026-12-29,2027-01-02,no,107,new_years_eve
+Detroit,US,A Victory Hotel & Suites - Southfield/Detroit,independent,4,48,48,Super.com,0.0,PARITY,no,no,no,2027-01-12,2027-01-16,no,53,mid_january
+Detroit,US,Baymont by Wyndham Downtown Detroit,chain,12,100,76,Super.com,24.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,112,christmas
+Detroit,US,Baymont by Wyndham Downtown Detroit,chain,12,98,74,Super.com,24.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,110,new_years_eve
+Detroit,US,Baymont by Wyndham Downtown Detroit,chain,12,130,97,Super.com,25.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,145,mid_january
+Detroit,US,Comfort Inn Detroit Downtown,chain,12,110,93,Super.com,15.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,120,christmas
+Detroit,US,Comfort Inn Detroit Downtown,chain,12,115,100,Super.com,13.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,125,new_years_eve
+Detroit,US,Comfort Inn Detroit Downtown,chain,8,159,136,Comfort Inn Detroit Downtown,14.5,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,159,mid_january
+Detroit,US,Fort Pontchartrain a Wyndham Hotel,chain,12,176,122,Super.com,30.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,204,christmas
+Detroit,US,Fort Pontchartrain a Wyndham Hotel,chain,12,186,130,Super.com,30.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,214,new_years_eve
+Detroit,US,Fort Pontchartrain a Wyndham Hotel,chain,12,204,187,Billabook.com,8.3,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,204,mid_january
+Detroit,US,Hotel Saint Regis Detroit,independent,12,151,151,Priceline,0.0,PARITY,no,yes,no,2026-12-23,2026-12-27,no,170,christmas
+Detroit,US,Hotel Saint Regis Detroit,independent,0,,,,,,no,no,no,2026-12-29,2027-01-02,,,new_years_eve
+Detroit,US,Hotel Saint Regis Detroit,independent,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+Detroit,US,Quality Inn Detroit Downtown,chain,12,119,101,Super.com,15.1,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,119,christmas
+Detroit,US,Quality Inn Detroit Downtown,chain,12,118,105,Vio.com,11.0,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,118,new_years_eve
+Detroit,US,Quality Inn Detroit Downtown,chain,12,128,111,Super.com,13.3,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,128,mid_january
+Detroit,US,Quality Inn Southfield - Detroit,chain,12,78,69,KAYAK.com,11.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,88,christmas
+Detroit,US,Quality Inn Southfield - Detroit,chain,12,83,71,Super.com,14.5,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,83,new_years_eve
+Detroit,US,Quality Inn Southfield - Detroit,chain,9,69,62,Super.com,10.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,78,mid_january
+Detroit,US,Radisson Hotel Southfield-Detroit,chain,12,105,80,Super.com,23.8,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,119,christmas
+Detroit,US,Radisson Hotel Southfield-Detroit,chain,12,122,94,Super.com,23.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,138,new_years_eve
+Detroit,US,Radisson Hotel Southfield-Detroit,chain,8,98,92,Hotels In America,6.1,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,98,mid_january
+Detroit,US,Trumbull And Porter Hotel - Detroit Downtown,independent,12,119,119,Priceline,0.0,PARITY,no,yes,no,2026-12-23,2026-12-27,no,134,christmas
+Detroit,US,Trumbull And Porter Hotel - Detroit Downtown,independent,12,114,113,Super.com,0.9,PARITY,no,no,no,2026-12-29,2027-01-02,no,128,new_years_eve
+Detroit,US,Trumbull And Porter Hotel - Detroit Downtown,independent,12,132,116,Priceline,12.1,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,yes,132,mid_january
+Honolulu,US,Hilton Garden Inn Waikiki Beach,chain,12,457,378,Hotels In America,17.3,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,457,christmas
+Honolulu,US,Hilton Garden Inn Waikiki Beach,chain,12,387,344,Super.com,11.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,459,new_years_eve
+Honolulu,US,Hilton Garden Inn Waikiki Beach,chain,12,280,232,Super.com,17.1,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,280,mid_january
+Honolulu,US,Hilton Hawaiian Village Waikiki Beach Resort,chain,12,625,390,Billabook.com,37.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,742,christmas
+Honolulu,US,Hilton Hawaiian Village Waikiki Beach Resort,chain,12,783,676,Billabook.com,13.7,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,783,new_years_eve
+Honolulu,US,Hilton Hawaiian Village Waikiki Beach Resort,chain,12,368,287,Super.com,22.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,437,mid_january
+Honolulu,US,Hilton Waikiki Beach Resort & Spa,chain,12,451,394,Super.com,12.6,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,451,christmas
+Honolulu,US,Hilton Waikiki Beach Resort & Spa,chain,12,477,451,Billabook.com,5.5,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,477,new_years_eve
+Honolulu,US,Hilton Waikiki Beach Resort & Spa,chain,12,260,225,Super.com,13.5,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,308,mid_january
+Honolulu,US,Oasis Hotel Waikiki,independent,12,243,205,Super.com,15.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,288,christmas
+Honolulu,US,Oasis Hotel Waikiki,independent,12,317,203,Super.com,36.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,377,new_years_eve
+Honolulu,US,Oasis Hotel Waikiki,independent,12,168,148,Super.com,11.9,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,199,mid_january
+Honolulu,US,Prince Waikiki,independent,12,580,364,Super.com,37.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,690,christmas
+Honolulu,US,Prince Waikiki,independent,12,658,417,Super.com,36.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,782,new_years_eve
+Honolulu,US,Prince Waikiki,independent,12,356,235,Super.com,34.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,424,mid_january
+Honolulu,US,Sheraton Princess Kaiulani Waikiki Beach,chain,12,409,340,KAYAK.com,16.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,486,christmas
+Honolulu,US,Sheraton Princess Kaiulani Waikiki Beach,chain,12,547,547,Sheraton Princess Kaiulani Waikiki Beach,0.0,PARITY,no,yes,yes,2026-12-29,2027-01-02,yes,547,new_years_eve
+Honolulu,US,Sheraton Princess Kaiulani Waikiki Beach,chain,12,288,228,Super.com,20.8,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,288,mid_january
+Honolulu,US,Sheraton Waikiki Beach Resort,chain,12,836,532,KAYAK.com,36.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,992,christmas
+Honolulu,US,Sheraton Waikiki Beach Resort,chain,12,863,685,KAYAK.com,20.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,1025,new_years_eve
+Honolulu,US,Sheraton Waikiki Beach Resort,chain,12,402,368,trivago DEALS,8.5,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,478,mid_january
+Honolulu,US,The Kahala Hotel & Resort,independent,12,769,615,Super.com,20.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,913,christmas
+Honolulu,US,The Kahala Hotel & Resort,independent,2,1312,1312,Billabook.com,0.0,PARITY,no,no,yes,2026-12-29,2027-01-02,no,1312,new_years_eve
+Honolulu,US,The Kahala Hotel & Resort,independent,12,891,568,Super.com,36.3,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,891,mid_january
+Honolulu,US,Waikiki Monarch Hotel,independent,12,161,134,Vio.com,16.8,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,191,christmas
+Honolulu,US,Waikiki Monarch Hotel,independent,12,179,150,Vio.com,16.2,UNVERIFIED_LOWER,no,yes,no,2026-12-29,2027-01-02,no,212,new_years_eve
+Honolulu,US,Waikiki Monarch Hotel,independent,12,138,113,Vio.com,18.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,164,mid_january
+Houston,US,Best Western Galleria Inn & Suites,chain,12,95,66,Super.com,30.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,111,christmas
+Houston,US,Best Western Galleria Inn & Suites,chain,12,89,63,Super.com,29.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,104,new_years_eve
+Houston,US,Best Western Galleria Inn & Suites,chain,12,89,62,Super.com,30.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,104,mid_january
+Houston,US,DoubleTree by Hilton Hotel Houston - Greenway Plaza,chain,12,98,91,KAYAK.com,7.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,114,christmas
+Houston,US,DoubleTree by Hilton Hotel Houston - Greenway Plaza,chain,5,114,114,Booking.com,0.0,PARITY,no,no,yes,2026-12-29,2027-01-02,no,114,new_years_eve
+Houston,US,DoubleTree by Hilton Hotel Houston - Greenway Plaza,chain,12,118,105,Traveluro,11.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,138,mid_january
+Houston,US,Holiday Inn Houston Reliant Park Area- By IHG,chain,12,116,104,KAYAK.com,10.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,136,christmas
+Houston,US,Holiday Inn Houston Reliant Park Area- By IHG,chain,12,99,88,KAYAK.com,11.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,115,new_years_eve
+Houston,US,Holiday Inn Houston Reliant Park Area- By IHG,chain,12,111,98,Long Stay Discounts,11.7,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,130,mid_january
+Houston,US,Homewood Suites by Hilton Houston NW at Beltway 8,chain,12,98,91,KAYAK.com,7.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,115,christmas
+Houston,US,Homewood Suites by Hilton Houston NW at Beltway 8,chain,12,116,107,Super.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,136,new_years_eve
+Houston,US,Homewood Suites by Hilton Houston NW at Beltway 8,chain,8,137,125,Super.com,8.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,157,mid_january
+Houston,US,Hotel ZaZa Houston Memorial City,independent,12,257,233,Super.com,9.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,299,christmas
+Houston,US,Hotel ZaZa Houston Memorial City,independent,1,365,365,Hotel ZaZa Houston Memorial City,0.0,PARITY,no,no,no,2026-12-29,2027-01-02,no,419,new_years_eve
+Houston,US,Hotel ZaZa Houston Memorial City,independent,1,345,345,Hotel ZaZa Houston Memorial City,0.0,PARITY,no,no,no,2027-01-12,2027-01-16,no,395,mid_january
+Houston,US,Hyatt Regency Houston West,chain,12,95,69,KAYAK.com,27.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,111,christmas
+Houston,US,Hyatt Regency Houston West,chain,12,95,74,KAYAK.com,22.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,111,new_years_eve
+Houston,US,Hyatt Regency Houston West,chain,12,146,146,Hyatt Regency Houston West,0.0,PARITY,no,yes,yes,2027-01-12,2027-01-16,no,146,mid_january
+Houston,US,Sara's Inn on the Boulevard,independent,12,172,143,Sara's Inn on the Boulevard,16.9,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,172,christmas
+Houston,US,Sara's Inn on the Boulevard,independent,12,143,119,Sara's Inn on the Boulevard,16.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,167,new_years_eve
+Houston,US,Sara's Inn on the Boulevard,independent,1,119,119,Sara's Inn on the Boulevard,0.0,PARITY,no,no,no,2027-01-12,2027-01-16,no,139,mid_january
+Houston,US,The Royal Sonesta Houston Galleria,independent,12,133,128,Vio.com,3.8,PARITY,no,no,yes,2026-12-23,2026-12-27,yes,133,christmas
+Houston,US,The Royal Sonesta Houston Galleria,independent,12,160,110,Vio.com,31.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,187,new_years_eve
+Houston,US,The Royal Sonesta Houston Galleria,independent,12,168,146,Vio.com,13.1,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,168,mid_january
+Houston,US,Wyndham Houston at Reliant Park/Medical Center,chain,12,92,65,Luxury Escapes,29.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,107,christmas
+Houston,US,Wyndham Houston at Reliant Park/Medical Center,chain,12,105,74,Luxury Escapes,29.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,123,new_years_eve
+Houston,US,Wyndham Houston at Reliant Park/Medical Center,chain,12,91,74,Super.com,18.7,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,106,mid_january
+Las Vegas,US,ARIA Resort & Casino,independent,12,178,168,Super.com,5.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,201,christmas
+Las Vegas,US,ARIA Resort & Casino,independent,12,450,396,KAYAK.com,12.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,501,new_years_eve
+Las Vegas,US,ARIA Resort & Casino,independent,12,157,146,Super.com,7.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,169,mid_january
+Las Vegas,US,Bellagio Hotel & Casino,chain,8,272,272,Billabook.com,0.0,PARITY,no,no,yes,2026-12-23,2026-12-27,yes,272,christmas
+Las Vegas,US,Bellagio Hotel & Casino,chain,12,640,583,Super.com,8.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,718,new_years_eve
+Las Vegas,US,Bellagio Hotel & Casino,chain,12,209,202,Super.com,3.3,PARITY,no,no,no,2027-01-12,2027-01-16,yes,236,mid_january
+Las Vegas,US,Excalibur Hotel & Casino,independent,7,69,69,Billabook.com,0.0,PARITY,no,no,yes,2026-12-23,2026-12-27,yes,69,christmas
+Las Vegas,US,Excalibur Hotel & Casino,independent,12,152,142,KAYAK.com,6.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,166,new_years_eve
+Las Vegas,US,Excalibur Hotel & Casino,independent,12,61,58,Super.com,4.9,PARITY,no,no,no,2027-01-12,2027-01-16,yes,70,mid_january
+Las Vegas,US,Flamingo Las Vegas,independent,12,82,71,Super.com,13.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,93,christmas
+Las Vegas,US,Flamingo Las Vegas,independent,12,238,203,Traveluro,14.7,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,270,new_years_eve
+Las Vegas,US,Flamingo Las Vegas,independent,12,101,87,Billabook.com,13.9,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,101,mid_january
+Las Vegas,US,Las Vegas Hilton at Resorts World,chain,12,179,111,Traveluro,38.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,203,christmas
+Las Vegas,US,Las Vegas Hilton at Resorts World,chain,12,399,265,Super.com,33.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,452,new_years_eve
+Las Vegas,US,Las Vegas Hilton at Resorts World,chain,12,254,139,WIOL.com,45.3,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,no,254,mid_january
+Las Vegas,US,Luxor Hotel & Casino,independent,12,75,67,KAYAK.com,10.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,79,christmas
+Las Vegas,US,Luxor Hotel & Casino,independent,12,156,144,Super.com,7.7,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,171,new_years_eve
+Las Vegas,US,Luxor Hotel & Casino,independent,12,68,60,Super.com,11.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,70,mid_january
+Las Vegas,US,MGM Grand,chain,11,143,115,Billabook.com,19.6,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,143,christmas
+Las Vegas,US,MGM Grand,chain,12,312,251,KAYAK.com,19.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,353,new_years_eve
+Las Vegas,US,MGM Grand,chain,12,104,89,Super.com,14.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,118,mid_january
+Las Vegas,US,Park MGM Las Vegas,chain,12,182,125,Vio.com,31.3,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,182,christmas
+Las Vegas,US,Park MGM Las Vegas,chain,12,340,250,KAYAK.com,26.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,385,new_years_eve
+Las Vegas,US,Park MGM Las Vegas,chain,12,137,110,Super.com,19.7,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,155,mid_january
+Las Vegas,US,"The STRAT Hotel, Casino & Tower",independent,12,70,63,Super.com,10.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,71,christmas
+Las Vegas,US,"The STRAT Hotel, Casino & Tower",independent,12,203,155,Vio.com,23.6,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,203,new_years_eve
+Las Vegas,US,"The STRAT Hotel, Casino & Tower",independent,12,75,60,trivago DEALS,20.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,85,mid_january
+Los Angeles,US,AIR Venice,independent,10,137,137,Agoda,0.0,PARITY,no,yes,yes,2026-12-23,2026-12-27,no,137,christmas
+Los Angeles,US,AIR Venice,independent,12,179,147,Vio.com,17.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,204,new_years_eve
+Los Angeles,US,AIR Venice,independent,12,134,113,Traveluro,15.7,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,156,mid_january
+Los Angeles,US,"Dream Hollywood, by Hyatt",chain,12,276,241,KAYAK.com,12.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,321,christmas
+Los Angeles,US,"Dream Hollywood, by Hyatt",chain,12,313,283,Super.com,9.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,364,new_years_eve
+Los Angeles,US,"Dream Hollywood, by Hyatt",chain,12,276,258,Super.com,6.5,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,321,mid_january
+Los Angeles,US,Freehand Los Angeles,independent,12,174,126,Super.com,27.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,203,christmas
+Los Angeles,US,Freehand Los Angeles,independent,12,230,186,Super.com,19.1,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,230,new_years_eve
+Los Angeles,US,Freehand Los Angeles,independent,12,176,126,Super.com,28.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,205,mid_january
+Los Angeles,US,Hotel Indigo Los Angeles Downtown by IHG,chain,12,226,195,Super.com,13.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,263,christmas
+Los Angeles,US,Hotel Indigo Los Angeles Downtown by IHG,chain,12,328,279,Super.com,14.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,381,new_years_eve
+Los Angeles,US,Hotel Indigo Los Angeles Downtown by IHG,chain,12,303,266,Super.com,12.2,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,352,mid_january
+Los Angeles,US,Hyatt Regency Los Angeles International Airport,chain,12,181,162,Vio.com,10.5,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,181,christmas
+Los Angeles,US,Hyatt Regency Los Angeles International Airport,chain,12,180,144,Super.com,20.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,209,new_years_eve
+Los Angeles,US,Hyatt Regency Los Angeles International Airport,chain,12,180,145,Super.com,19.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,209,mid_january
+Los Angeles,US,InterContinental Los Angeles Downtown by IHG,chain,12,345,324,Super.com,6.1,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,345,christmas
+Los Angeles,US,InterContinental Los Angeles Downtown by IHG,chain,12,564,471,Super.com,16.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,656,new_years_eve
+Los Angeles,US,InterContinental Los Angeles Downtown by IHG,chain,12,472,434,Vio.com,8.1,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,472,mid_january
+Los Angeles,US,Omni Los Angeles Hotel at California Plaza,chain,12,194,169,Vio.com,12.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,225,christmas
+Los Angeles,US,Omni Los Angeles Hotel at California Plaza,chain,12,408,334,Vio.com,18.1,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,408,new_years_eve
+Los Angeles,US,Omni Los Angeles Hotel at California Plaza,chain,12,221,200,Traveluro,9.5,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,257,mid_january
+Los Angeles,US,Sonesta Los Angeles Airport LAX,independent,12,171,144,Super.com,15.8,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,171,christmas
+Los Angeles,US,Sonesta Los Angeles Airport LAX,independent,12,148,122,KAYAK.com,17.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,171,new_years_eve
+Los Angeles,US,Sonesta Los Angeles Airport LAX,independent,12,178,151,Super.com,15.2,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,178,mid_january
+Los Angeles,US,"The Wayfarer Downtown LA, Tapestry Collection by Hilton",chain,12,150,129,KAYAK.com,14.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,174,christmas
+Los Angeles,US,"The Wayfarer Downtown LA, Tapestry Collection by Hilton",chain,12,223,163,Billabook.com,26.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,259,new_years_eve
+Los Angeles,US,"The Wayfarer Downtown LA, Tapestry Collection by Hilton",chain,12,246,196,Billabook.com,20.3,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,246,mid_january
+Miami,US,Atrium Design District,independent,11,97,75,Booking.com,22.7,UNVERIFIED_LOWER,no,yes,no,2026-12-23,2026-12-27,no,109,christmas
+Miami,US,Atrium Design District,independent,12,99,74,Booking.com,25.3,UNVERIFIED_LOWER,no,yes,no,2026-12-29,2027-01-02,no,112,new_years_eve
+Miami,US,Atrium Design District,independent,5,83,83,Booking.com,0.0,PARITY,no,yes,yes,2027-01-12,2027-01-16,no,83,mid_january
+Miami,US,EAST Miami,independent,12,536,430,Traveluro,19.8,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,606,christmas
+Miami,US,EAST Miami,independent,12,795,636,Traveluro,20.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,898,new_years_eve
+Miami,US,EAST Miami,independent,7,616,535,Hotels.com,13.1,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,no,616,mid_january
+Miami,US,EVEN Hotel Miami - Airport by IHG,independent,12,198,90,Super.com,54.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,224,christmas
+Miami,US,EVEN Hotel Miami - Airport by IHG,independent,12,205,137,Vio.com,33.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,232,new_years_eve
+Miami,US,EVEN Hotel Miami - Airport by IHG,independent,12,200,108,Super.com,46.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,226,mid_january
+Miami,US,Holiday Inn Miami-International Airport by IHG,chain,12,178,133,Super.com,25.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,202,christmas
+Miami,US,Holiday Inn Miami-International Airport by IHG,chain,12,207,169,Super.com,18.4,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,207,new_years_eve
+Miami,US,Holiday Inn Miami-International Airport by IHG,chain,12,190,161,Hotels In America,15.3,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,190,mid_january
+Miami,US,JW Marriott Miami,chain,12,502,502,JW Marriott Miami,0.0,PARITY,no,yes,yes,2026-12-23,2026-12-27,yes,502,christmas
+Miami,US,JW Marriott Miami,chain,12,640,635,Super.com,0.8,PARITY,no,no,no,2026-12-29,2027-01-02,yes,723,new_years_eve
+Miami,US,JW Marriott Miami,chain,10,572,516,JW Marriott Miami,9.8,UNVERIFIED_LOWER,no,yes,yes,2027-01-12,2027-01-16,no,572,mid_january
+Miami,US,Metropole Suites South Beach,independent,12,244,172,Vio.com,29.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,279,christmas
+Miami,US,Metropole Suites South Beach,independent,12,351,243,Vio.com,30.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,400,new_years_eve
+Miami,US,Metropole Suites South Beach,independent,12,189,143,Vio.com,24.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,216,mid_january
+Miami,US,Novotel Miami Brickell,chain,12,320,286,KAYAK.com,10.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,358,christmas
+Miami,US,Novotel Miami Brickell,chain,12,438,357,Super.com,18.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,495,new_years_eve
+Miami,US,Novotel Miami Brickell,chain,12,369,322,Vio.com,12.7,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,369,mid_january
+Miami,US,Pullman Miami Airport,chain,12,194,161,Super.com,17.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,219,christmas
+Miami,US,Pullman Miami Airport,chain,12,235,199,Super.com,15.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,266,new_years_eve
+Miami,US,Pullman Miami Airport,chain,12,212,186,Super.com,12.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,239,mid_january
+Miami,US,Sheraton Miami Airport Hotel & Executive Meeting Center,chain,12,208,181,Super.com,13.0,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,208,christmas
+Miami,US,Sheraton Miami Airport Hotel & Executive Meeting Center,chain,12,201,172,Traveluro,14.4,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,201,new_years_eve
+Miami,US,Sheraton Miami Airport Hotel & Executive Meeting Center,chain,12,180,157,Super.com,12.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,203,mid_january
+Minneapolis,US,DoubleTree Suites by Hilton Minneapolis Downtown,chain,12,141,105,Super.com,25.5,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,141,christmas
+Minneapolis,US,DoubleTree Suites by Hilton Minneapolis Downtown,chain,12,118,94,Super.com,20.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,138,new_years_eve
+Minneapolis,US,DoubleTree Suites by Hilton Minneapolis Downtown,chain,8,136,109,Hotels In America,19.9,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,136,mid_january
+Minneapolis,US,DoubleTree by Hilton Hotel Minneapolis - Park Place,chain,12,108,100,trivago DEALS,7.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,120,christmas
+Minneapolis,US,DoubleTree by Hilton Hotel Minneapolis - Park Place,chain,12,110,101,Super.com,8.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,122,new_years_eve
+Minneapolis,US,DoubleTree by Hilton Hotel Minneapolis - Park Place,chain,12,110,102,Super.com,7.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,122,mid_january
+Minneapolis,US,Hilton Minneapolis,chain,10,157,157,Hotels.com,0.0,PARITY,no,yes,yes,2026-12-23,2026-12-27,no,157,christmas
+Minneapolis,US,Hilton Minneapolis,chain,12,136,108,Super.com,20.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,159,new_years_eve
+Minneapolis,US,Hilton Minneapolis,chain,12,143,114,Super.com,20.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,167,mid_january
+Minneapolis,US,Hyatt Place Minneapolis/Downtown,chain,10,169,169,Hyatt Place Minneapolis/Downtown,0.0,PARITY,no,no,yes,2026-12-23,2026-12-27,no,169,christmas
+Minneapolis,US,Hyatt Place Minneapolis/Downtown,chain,12,164,164,Expedia.com,0.0,PARITY,no,yes,yes,2026-12-29,2027-01-02,no,164,new_years_eve
+Minneapolis,US,Hyatt Place Minneapolis/Downtown,chain,12,110,95,Super.com,13.6,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,129,mid_january
+Minneapolis,US,Radisson RED Minneapolis Downtown,chain,12,158,123,Super.com,22.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,185,christmas
+Minneapolis,US,Radisson RED Minneapolis Downtown,chain,12,148,117,Super.com,20.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,173,new_years_eve
+Minneapolis,US,Radisson RED Minneapolis Downtown,chain,12,161,161,Expedia.com,0.0,PARITY,no,yes,yes,2027-01-12,2027-01-16,no,161,mid_january
+Minneapolis,US,Roami at Century Plaza,independent,11,143,128,Hotels.com,10.5,REAL_LOWER_MATCHED,yes,yes,no,2026-12-23,2026-12-27,no,167,christmas
+Minneapolis,US,Roami at Century Plaza,independent,11,101,96,Hotels.com,5.0,PARITY,no,yes,no,2026-12-29,2027-01-02,no,118,new_years_eve
+Minneapolis,US,Roami at Century Plaza,independent,5,90,90,Hotels.com,0.0,PARITY,no,yes,no,2027-01-12,2027-01-16,no,105,mid_january
+Minneapolis,US,"The Lofton Hotel Minneapolis, Tapestry Collection by Hilton",chain,12,147,94,Long Stay Discounts,36.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,172,christmas
+Minneapolis,US,"The Lofton Hotel Minneapolis, Tapestry Collection by Hilton",chain,12,157,137,Super.com,12.7,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,184,new_years_eve
+Minneapolis,US,"The Lofton Hotel Minneapolis, Tapestry Collection by Hilton",chain,12,147,120,Super.com,18.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,172,mid_january
+Minneapolis,US,The Royal Sonesta Minneapolis Downtown,independent,10,145,128,Billabook.com,11.7,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,145,christmas
+Minneapolis,US,The Royal Sonesta Minneapolis Downtown,independent,12,120,92,Vio.com,23.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,140,new_years_eve
+Minneapolis,US,The Royal Sonesta Minneapolis Downtown,independent,12,113,91,Super.com,19.5,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,132,mid_january
+Minneapolis,US,Tru by Hilton Minneapolis Downtown,chain,10,121,121,Hotels.com,0.0,PARITY,no,yes,yes,2026-12-23,2026-12-27,no,121,christmas
+Minneapolis,US,Tru by Hilton Minneapolis Downtown,chain,12,111,111,Expedia.com,0.0,PARITY,no,yes,yes,2026-12-29,2027-01-02,no,111,new_years_eve
+Minneapolis,US,Tru by Hilton Minneapolis Downtown,chain,12,96,92,Super.com,4.2,PARITY,no,no,no,2027-01-12,2027-01-16,no,115,mid_january
+Nashville,US,DoubleTree by Hilton Hotel Nashville Downtown,chain,12,186,119,trivago DEALS,36.0,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,186,christmas
+Nashville,US,DoubleTree by Hilton Hotel Nashville Downtown,chain,12,284,277,Hotels In America,2.5,PARITY,no,no,yes,2026-12-29,2027-01-02,no,284,new_years_eve
+Nashville,US,DoubleTree by Hilton Hotel Nashville Downtown,chain,12,183,120,Traveluro,34.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,216,mid_january
+Nashville,US,Grand Hyatt Nashville,chain,12,212,178,Super.com,16.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,250,christmas
+Nashville,US,Grand Hyatt Nashville,chain,12,299,274,Billabook.com,8.4,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,299,new_years_eve
+Nashville,US,Grand Hyatt Nashville,chain,12,320,259,Vio.com,19.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,376,mid_january
+Nashville,US,Holiday Inn Express & Suites Nashville Southeast - Antioch by IHG,chain,12,134,86,Super.com,35.8,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,159,christmas
+Nashville,US,Holiday Inn Express & Suites Nashville Southeast - Antioch by IHG,chain,12,128,84,Super.com,34.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,152,new_years_eve
+Nashville,US,Holiday Inn Express & Suites Nashville Southeast - Antioch by IHG,chain,12,172,168,Evendo,2.3,PARITY,no,no,yes,2027-01-12,2027-01-16,no,172,mid_january
+Nashville,US,Homewood Suites by Hilton Nashville-Downtown,chain,12,171,151,KAYAK.com,11.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,203,christmas
+Nashville,US,Homewood Suites by Hilton Nashville-Downtown,chain,12,296,249,KAYAK.com,15.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,348,new_years_eve
+Nashville,US,Homewood Suites by Hilton Nashville-Downtown,chain,12,213,180,Super.com,15.5,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,251,mid_january
+Nashville,US,Loews Nashville Hotel at Vanderbilt Plaza,chain,12,240,212,Priceline,11.7,REAL_LOWER_MATCHED,yes,yes,yes,2026-12-23,2026-12-27,yes,240,christmas
+Nashville,US,Loews Nashville Hotel at Vanderbilt Plaza,chain,12,212,179,trivago DEALS,15.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,250,new_years_eve
+Nashville,US,Loews Nashville Hotel at Vanderbilt Plaza,chain,12,179,179,Hotels.com,0.0,PARITY,no,yes,no,2027-01-12,2027-01-16,yes,211,mid_january
+Nashville,US,Millennium Hotel Maxwell House Nashville,independent,12,96,70,Super.com,27.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,115,christmas
+Nashville,US,Millennium Hotel Maxwell House Nashville,independent,12,120,87,Super.com,27.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,143,new_years_eve
+Nashville,US,Millennium Hotel Maxwell House Nashville,independent,12,107,78,Super.com,27.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,127,mid_january
+Nashville,US,Omni Nashville Hotel,chain,12,240,215,Super.com,10.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,283,christmas
+Nashville,US,Omni Nashville Hotel,chain,12,317,285,KAYAK.com,10.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,373,new_years_eve
+Nashville,US,Omni Nashville Hotel,chain,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+Nashville,US,The Westin Nashville,chain,12,202,187,Super.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,238,christmas
+Nashville,US,The Westin Nashville,chain,12,255,240,KAYAK.com,5.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,300,new_years_eve
+Nashville,US,The Westin Nashville,chain,12,321,299,Super.com,6.9,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,377,mid_january
+Nashville,US,Virgin Hotels Nashville,independent,12,211,157,Super.com,25.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,249,christmas
+Nashville,US,Virgin Hotels Nashville,independent,12,244,177,Traveluro,27.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,287,new_years_eve
+Nashville,US,Virgin Hotels Nashville,independent,12,284,204,Super.com,28.2,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,335,mid_january
+New Orleans,US,Dauphine Orleans Hotel,independent,12,147,89,Super.com,39.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,174,christmas
+New Orleans,US,Dauphine Orleans Hotel,independent,12,266,188,TUI.com,29.3,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,266,new_years_eve
+New Orleans,US,Dauphine Orleans Hotel,independent,12,160,113,Super.com,29.4,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,160,mid_january
+New Orleans,US,Holiday Inn New Orleans-Downtown Superdome by IHG,chain,12,109,97,Super.com,11.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,129,christmas
+New Orleans,US,Holiday Inn New Orleans-Downtown Superdome by IHG,chain,12,150,129,Super.com,14.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,177,new_years_eve
+New Orleans,US,Holiday Inn New Orleans-Downtown Superdome by IHG,chain,12,222,173,Super.com,22.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,262,mid_january
+New Orleans,US,Hotel Indigo New Orleans - French Quarter by IHG,chain,3,195,153,Hotel Indigo New Orleans - French Quarter by IHG,21.5,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,195,christmas
+New Orleans,US,Hotel Indigo New Orleans - French Quarter by IHG,chain,12,163,128,Vio.com,21.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,192,new_years_eve
+New Orleans,US,Hotel Indigo New Orleans - French Quarter by IHG,chain,11,214,214,Hotel Indigo New Orleans - French Quarter by IHG,0.0,PARITY,no,yes,yes,2027-01-12,2027-01-16,no,214,mid_january
+New Orleans,US,Hotel Le Marais,independent,12,192,90,KAYAK.com,53.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,226,christmas
+New Orleans,US,Hotel Le Marais,independent,12,242,171,Vio.com,29.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,286,new_years_eve
+New Orleans,US,Hotel Le Marais,independent,12,284,124,Super.com,56.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,335,mid_january
+New Orleans,US,"NOPSI Hotel, New Orleans",independent,12,148,120,Traveluro,18.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,175,christmas
+New Orleans,US,"NOPSI Hotel, New Orleans",independent,12,273,180,Super.com,34.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,321,new_years_eve
+New Orleans,US,"NOPSI Hotel, New Orleans",independent,12,346,234,Agoda,32.4,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,yes,346,mid_january
+New Orleans,US,The Riverfront Hotel New Orleans,independent,8,142,142,Booking.com,0.0,PARITY,no,yes,yes,2026-12-23,2026-12-27,no,142,christmas
+New Orleans,US,The Riverfront Hotel New Orleans,independent,12,194,164,Super.com,15.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,229,new_years_eve
+New Orleans,US,The Riverfront Hotel New Orleans,independent,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+New Orleans,US,The Troubadour Hotel New Orleans,independent,12,94,79,Vio.com,16.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,94,christmas
+New Orleans,US,The Troubadour Hotel New Orleans,independent,12,193,73,Traveluro,62.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,228,new_years_eve
+New Orleans,US,The Troubadour Hotel New Orleans,independent,12,206,171,Hotels In America,17.0,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,206,mid_january
+New Orleans,US,Virgin Hotels New Orleans,independent,12,185,153,Vio.com,17.3,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,185,christmas
+New Orleans,US,Virgin Hotels New Orleans,independent,12,276,187,Vio.com,32.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,325,new_years_eve
+New Orleans,US,Virgin Hotels New Orleans,independent,12,328,233,Super.com,29.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,386,mid_january
+New Orleans,US,W.G. Creole House 1850,independent,5,113,113,Expedia.com,0.0,PARITY,no,no,yes,2026-12-23,2026-12-27,yes,113,christmas
+New Orleans,US,W.G. Creole House 1850,independent,0,,,,,,no,no,no,2026-12-29,2027-01-02,,,new_years_eve
+New Orleans,US,W.G. Creole House 1850,independent,12,137,122,Agoda,10.9,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,yes,137,mid_january
+New York,US,Courtyard by Marriott Edgewater NYC Area,chain,12,262,243,KAYAK.com,7.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,301,christmas
+New York,US,Courtyard by Marriott Edgewater NYC Area,chain,12,321,321,Courtyard by Marriott Edgewater NYC Area,0.0,PARITY,no,yes,yes,2026-12-29,2027-01-02,no,321,new_years_eve
+New York,US,Courtyard by Marriott Edgewater NYC Area,chain,12,159,158,Courtyard by Marriott Edgewater NYC Area,0.6,PARITY,no,yes,no,2027-01-12,2027-01-16,no,183,mid_january
+New York,US,Courtyard by Marriott New York Queens/Fresh Meadows,chain,12,224,151,Evendo,32.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,261,christmas
+New York,US,Courtyard by Marriott New York Queens/Fresh Meadows,chain,12,208,151,Traveluro,27.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,243,new_years_eve
+New York,US,Courtyard by Marriott New York Queens/Fresh Meadows,chain,12,174,111,trivago DEALS,36.2,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,204,mid_january
+New York,US,DoubleTree by Hilton Hotel Newark Airport,chain,12,175,146,Traveluro,16.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,204,christmas
+New York,US,DoubleTree by Hilton Hotel Newark Airport,chain,11,252,190,Booking.com,24.6,REAL_LOWER_MATCHED,yes,yes,yes,2026-12-29,2027-01-02,no,252,new_years_eve
+New York,US,DoubleTree by Hilton Hotel Newark Airport,chain,12,104,104,Booking.com,0.0,PARITY,no,yes,no,2027-01-12,2027-01-16,yes,123,mid_january
+New York,US,Dynasty Hotel and Suites New York LaGuardia Hotel,independent,12,172,147,Dynasty Hotel and Suites New York LaGuardia Hotel,14.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,201,christmas
+New York,US,Dynasty Hotel and Suites New York LaGuardia Hotel,independent,12,171,146,Dynasty Hotel and Suites New York LaGuardia Hotel,14.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,199,new_years_eve
+New York,US,Dynasty Hotel and Suites New York LaGuardia Hotel,independent,5,146,120,Dynasty Hotel and Suites New York LaGuardia Hotel,17.8,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,146,mid_january
+New York,US,Hotel Executive Suites,independent,12,113,100,Super.com,11.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,129,christmas
+New York,US,Hotel Executive Suites,independent,12,155,139,Agoda,10.3,UNVERIFIED_LOWER,no,yes,yes,2026-12-29,2027-01-02,no,155,new_years_eve
+New York,US,Hotel Executive Suites,independent,12,104,93,Super.com,10.6,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,120,mid_january
+New York,US,Paris Suites Hotel,independent,10,192,192,Expedia.com,0.0,PARITY,no,yes,no,2026-12-23,2026-12-27,no,224,christmas
+New York,US,Paris Suites Hotel,independent,10,192,192,Expedia.com,0.0,PARITY,no,yes,no,2026-12-29,2027-01-02,no,224,new_years_eve
+New York,US,Paris Suites Hotel,independent,11,192,192,Expedia.com,0.0,PARITY,no,yes,no,2027-01-12,2027-01-16,no,224,mid_january
+New York,US,Q4 Hotel New York City,independent,5,125,125,Hostelworld,0.0,PARITY,no,no,no,2026-12-23,2026-12-27,yes,150,christmas
+New York,US,Q4 Hotel New York City,independent,3,120,120,Hostelworld,0.0,PARITY,no,yes,no,2026-12-29,2027-01-02,no,145,new_years_eve
+New York,US,Q4 Hotel New York City,independent,9,102,89,Q4 Hotel & Hostel,12.7,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,102,mid_january
+New York,US,SpringHill Suites by Marriott Newark Liberty International Airport,chain,12,163,107,trivago DEALS,34.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,181,christmas
+New York,US,SpringHill Suites by Marriott Newark Liberty International Airport,chain,12,160,109,trivago DEALS,31.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,187,new_years_eve
+New York,US,SpringHill Suites by Marriott Newark Liberty International Airport,chain,12,135,78,Super.com,42.2,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,159,mid_january
+New York,US,The One Boutique Hotel,independent,12,184,149,Super.com,19.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,215,christmas
+New York,US,The One Boutique Hotel,independent,12,306,219,Traveluro,28.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,354,new_years_eve
+New York,US,The One Boutique Hotel,independent,9,146,146,Agoda,0.0,PARITY,no,yes,yes,2027-01-12,2027-01-16,no,146,mid_january
+Orlando,US,"DASKK Orlando Hotel near Universal Blvd, an Ascend Collection Hotel",chain,12,102,66,KAYAK.com,35.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,115,christmas
+Orlando,US,"DASKK Orlando Hotel near Universal Blvd, an Ascend Collection Hotel",chain,12,126,81,Super.com,35.7,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,142,new_years_eve
+Orlando,US,"DASKK Orlando Hotel near Universal Blvd, an Ascend Collection Hotel",chain,12,118,77,Super.com,34.7,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,118,mid_january
+Orlando,US,DoubleTree by Hilton Hotel at the Entrance to Universal Orlando,chain,12,136,122,Super.com,10.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,153,christmas
+Orlando,US,DoubleTree by Hilton Hotel at the Entrance to Universal Orlando,chain,12,151,137,Super.com,9.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,170,new_years_eve
+Orlando,US,DoubleTree by Hilton Hotel at the Entrance to Universal Orlando,chain,5,210,205,Super.com,2.4,PARITY,no,no,yes,2027-01-12,2027-01-16,no,210,mid_january
+Orlando,US,DoubleTree by Hilton Orlando Theme Park Resort,chain,12,127,92,KAYAK.com,27.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,143,christmas
+Orlando,US,DoubleTree by Hilton Orlando Theme Park Resort,chain,12,175,118,Super.com,32.6,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,175,new_years_eve
+Orlando,US,DoubleTree by Hilton Orlando Theme Park Resort,chain,12,186,124,Super.com,33.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,209,mid_january
+Orlando,US,Hilton Orlando,chain,12,275,245,Super.com,10.9,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,275,christmas
+Orlando,US,Hilton Orlando,chain,12,235,204,Super.com,13.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,267,new_years_eve
+Orlando,US,Hilton Orlando,chain,12,531,521,Reservation Day,1.9,PARITY,no,no,yes,2027-01-12,2027-01-16,no,531,mid_january
+Orlando,US,Renaissance Orlando at SeaWorld®,independent,12,152,138,Traveluro,9.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,171,christmas
+Orlando,US,Renaissance Orlando at SeaWorld®,independent,12,302,258,Super.com,14.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,339,new_years_eve
+Orlando,US,Renaissance Orlando at SeaWorld®,independent,12,364,363,Hoteles.com,0.3,PARITY,no,yes,yes,2027-01-12,2027-01-16,no,364,mid_january
+Orlando,US,Rosen Shingle Creek,independent,12,106,102,Super.com,3.8,PARITY,no,no,no,2026-12-23,2026-12-27,no,120,christmas
+Orlando,US,Rosen Shingle Creek,independent,3,963,884,Vio.com,8.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,963,new_years_eve
+Orlando,US,Rosen Shingle Creek,independent,12,359,301,Billabook.com,16.2,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,359,mid_january
+Orlando,US,Staybridge Suites Orlando at Seaworld by IHG,chain,12,277,217,Super.com,21.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,312,christmas
+Orlando,US,Staybridge Suites Orlando at Seaworld by IHG,chain,12,304,239,Super.com,21.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,343,new_years_eve
+Orlando,US,Staybridge Suites Orlando at Seaworld by IHG,chain,12,207,158,Super.com,23.7,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,233,mid_january
+Orlando,US,Westgate Lakes Resort & Spa,independent,12,205,145,Reservation Day,29.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,231,christmas
+Orlando,US,Westgate Lakes Resort & Spa,independent,12,211,169,Reservation Day,19.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,237,new_years_eve
+Orlando,US,Westgate Lakes Resort & Spa,independent,12,133,88,Reservation Day,33.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,150,mid_january
+Orlando,US,Wyndham I-Drive Avanti Resort & Conference Center,chain,12,105,95,Traveluro,9.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,118,christmas
+Orlando,US,Wyndham I-Drive Avanti Resort & Conference Center,chain,12,115,91,Traveluro,20.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,130,new_years_eve
+Orlando,US,Wyndham I-Drive Avanti Resort & Conference Center,chain,12,103,79,Traveluro,23.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,116,mid_january
+Philadelphia,US,Aloft by Marriott Philadelphia Downtown,chain,12,175,162,Hotels.com,7.4,REAL_LOWER_MATCHED,yes,yes,yes,2026-12-23,2026-12-27,yes,175,christmas
+Philadelphia,US,Aloft by Marriott Philadelphia Downtown,chain,12,252,216,Super.com,14.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,293,new_years_eve
+Philadelphia,US,Aloft by Marriott Philadelphia Downtown,chain,12,168,133,Super.com,20.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,196,mid_january
+Philadelphia,US,Penn's View Hotel,independent,12,131,122,Priceline,6.9,REAL_LOWER_MATCHED,yes,yes,yes,2026-12-23,2026-12-27,no,131,christmas
+Philadelphia,US,Penn's View Hotel,independent,12,155,148,Vio.com,4.5,PARITY,no,no,no,2026-12-29,2027-01-02,no,180,new_years_eve
+Philadelphia,US,Penn's View Hotel,independent,11,134,114,Priceline,14.9,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,no,134,mid_january
+Philadelphia,US,Quality Inn - Center City,chain,12,111,93,Super.com,16.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,128,christmas
+Philadelphia,US,Quality Inn - Center City,chain,12,138,117,Super.com,15.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,159,new_years_eve
+Philadelphia,US,Quality Inn - Center City,chain,12,101,87,Super.com,13.9,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,117,mid_january
+Philadelphia,US,Sosuite at French Quarters - Rittenhouse Square,independent,12,226,212,Sosuite at French Quarters - Rittenhouse Square,6.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,261,christmas
+Philadelphia,US,Sosuite at French Quarters - Rittenhouse Square,independent,12,177,154,Best Hotel Deals,13.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,205,new_years_eve
+Philadelphia,US,Sosuite at French Quarters - Rittenhouse Square,independent,10,119,119,Best Hotel Deals,0.0,PARITY,no,no,no,2027-01-12,2027-01-16,yes,138,mid_january
+Philadelphia,US,Sosuite at Independence Lofts - Callowhill,independent,10,255,199,Booking.com,22.0,UNVERIFIED_LOWER,no,yes,no,2026-12-23,2026-12-27,no,297,christmas
+Philadelphia,US,Sosuite at Independence Lofts - Callowhill,independent,5,286,286,Booking.com,0.0,PARITY,no,yes,yes,2026-12-29,2027-01-02,no,286,new_years_eve
+Philadelphia,US,Sosuite at Independence Lofts - Callowhill,independent,7,166,133,Booking.com,19.9,UNVERIFIED_LOWER,no,yes,yes,2027-01-12,2027-01-16,no,166,mid_january
+Philadelphia,US,"The Franklin on Rittenhouse, A Boutique Hotel",independent,11,220,220,Hoteis.com,0.0,PARITY,no,yes,yes,2026-12-23,2026-12-27,no,220,christmas
+Philadelphia,US,"The Franklin on Rittenhouse, A Boutique Hotel",independent,12,282,278,Super.com,1.4,PARITY,no,no,no,2026-12-29,2027-01-02,no,343,new_years_eve
+Philadelphia,US,"The Franklin on Rittenhouse, A Boutique Hotel",independent,4,231,220,"The Franklin on Rittenhouse, A Boutique Hotel",4.8,PARITY,no,no,yes,2027-01-12,2027-01-16,no,231,mid_january
+Philadelphia,US,The Gas Lamp Hotel,independent,2,453,453,Booking.com,0.0,PARITY,no,no,yes,2026-12-23,2026-12-27,no,453,christmas
+Philadelphia,US,The Gas Lamp Hotel,independent,0,,,,,,no,no,no,2026-12-29,2027-01-02,,,new_years_eve
+Philadelphia,US,The Gas Lamp Hotel,independent,4,199,199,Booking.com,0.0,PARITY,no,yes,no,2027-01-12,2027-01-16,no,230,mid_january
+Philadelphia,US,The Windsor Suites,independent,12,183,128,Super.com,30.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,213,christmas
+Philadelphia,US,The Windsor Suites,independent,12,221,206,Bluepillow.co.uk,6.8,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,221,new_years_eve
+Philadelphia,US,The Windsor Suites,independent,12,158,125,Super.com,20.9,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,184,mid_january
+Philadelphia,US,Wyndham Philadelphia Historic District,chain,12,121,89,Vio.com,26.4,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,121,christmas
+Philadelphia,US,Wyndham Philadelphia Historic District,chain,12,133,89,trivago DEALS,33.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,155,new_years_eve
+Philadelphia,US,Wyndham Philadelphia Historic District,chain,12,115,77,Traveluro,33.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,134,mid_january
+San Diego,US,Best Western Plus Island Palms Hotel & Marina,chain,12,150,125,Vio.com,16.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,172,christmas
+San Diego,US,Best Western Plus Island Palms Hotel & Marina,chain,12,164,143,Super.com,12.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,189,new_years_eve
+San Diego,US,Best Western Plus Island Palms Hotel & Marina,chain,12,224,179,Super.com,20.1,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,257,mid_january
+San Diego,US,Best Western Yacht Harbor Hotel,chain,12,208,188,Priceline,9.6,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,208,christmas
+San Diego,US,Best Western Yacht Harbor Hotel,chain,0,,,,,,no,no,no,2026-12-29,2027-01-02,,,new_years_eve
+San Diego,US,Best Western Yacht Harbor Hotel,chain,12,173,156,Priceline,9.8,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,no,173,mid_january
+San Diego,US,Handlery Hotel San Diego,independent,12,142,119,Vio.com,16.2,REAL_LOWER_MATCHED,yes,yes,yes,2026-12-23,2026-12-27,no,142,christmas
+San Diego,US,Handlery Hotel San Diego,independent,12,130,98,trivago DEALS,24.6,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,130,new_years_eve
+San Diego,US,Handlery Hotel San Diego,independent,12,133,108,Super.com,18.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,153,mid_january
+San Diego,US,Hilton San Diego/Del Mar,chain,12,163,142,Traveluro,12.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,185,christmas
+San Diego,US,Hilton San Diego/Del Mar,chain,12,180,168,Traveluro,6.7,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,205,new_years_eve
+San Diego,US,Hilton San Diego/Del Mar,chain,12,170,159,Super.com,6.5,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,193,mid_january
+San Diego,US,Humphreys Half Moon Inn,independent,11,196,190,Agoda,3.1,PARITY,no,yes,yes,2026-12-23,2026-12-27,no,196,christmas
+San Diego,US,Humphreys Half Moon Inn,independent,12,230,188,Super.com,18.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,265,new_years_eve
+San Diego,US,Humphreys Half Moon Inn,independent,12,249,184,Super.com,26.1,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,249,mid_january
+San Diego,US,Kings Inn San Diego,independent,12,119,75,KAYAK.com,37.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,136,christmas
+San Diego,US,Kings Inn San Diego,independent,12,132,91,KAYAK.com,31.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,151,new_years_eve
+San Diego,US,Kings Inn San Diego,independent,12,124,114,Kings Inn San Diego,8.1,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,yes,124,mid_january
+San Diego,US,La Jolla Cove Hotel & Suites,independent,12,320,253,Super.com,20.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,367,christmas
+San Diego,US,La Jolla Cove Hotel & Suites,independent,12,332,276,Vio.com,16.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,381,new_years_eve
+San Diego,US,La Jolla Cove Hotel & Suites,independent,12,291,234,Super.com,19.6,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,335,mid_january
+San Diego,US,Palihotel San Diego,independent,12,154,103,Vio.com,33.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,179,christmas
+San Diego,US,Palihotel San Diego,independent,12,220,183,Vio.com,16.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,255,new_years_eve
+San Diego,US,Palihotel San Diego,independent,9,308,207,Hotels In America,32.8,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,308,mid_january
+San Diego,US,Sheraton San Diego Resort,chain,12,198,181,Billabook.com,8.6,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,198,christmas
+San Diego,US,Sheraton San Diego Resort,chain,12,229,220,Billabook.com,3.9,PARITY,no,no,yes,2026-12-29,2027-01-02,no,229,new_years_eve
+San Diego,US,Sheraton San Diego Resort,chain,12,273,198,Super.com,27.5,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,313,mid_january
+San Francisco,US,Beacon Grand A Union Square Hotel,independent,12,251,184,Super.com,26.7,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,251,christmas
+San Francisco,US,Beacon Grand A Union Square Hotel,independent,12,281,200,Super.com,28.8,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,281,new_years_eve
+San Francisco,US,Beacon Grand A Union Square Hotel,independent,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+San Francisco,US,Grand Hyatt San Francisco,chain,12,179,165,KAYAK.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,210,christmas
+San Francisco,US,Grand Hyatt San Francisco,chain,9,243,241,Grand Hyatt San Francisco,0.8,PARITY,no,no,yes,2026-12-29,2027-01-02,no,243,new_years_eve
+San Francisco,US,Grand Hyatt San Francisco,chain,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+San Francisco,US,HI San Francisco Fisherman's Wharf Hostel,independent,11,120,68,Booking.com,43.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,120,christmas
+San Francisco,US,HI San Francisco Fisherman's Wharf Hostel,independent,7,67,67,Hostelworld,0.0,PARITY,no,yes,yes,2026-12-29,2027-01-02,no,67,new_years_eve
+San Francisco,US,HI San Francisco Fisherman's Wharf Hostel,independent,9,69,69,Booking.com,0.0,PARITY,no,yes,no,2027-01-12,2027-01-16,no,69,mid_january
+San Francisco,US,Hotel G,independent,12,159,131,Super.com,17.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,188,christmas
+San Francisco,US,Hotel G,independent,12,183,142,Super.com,22.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,216,new_years_eve
+San Francisco,US,Hotel G,independent,2,838,838,Hotel G,0.0,PARITY,no,yes,yes,2027-01-12,2027-01-16,no,838,mid_january
+San Francisco,US,Hotel Union Square,independent,12,139,126,Agoda,9.4,REAL_LOWER_MATCHED,yes,yes,yes,2026-12-23,2026-12-27,yes,139,christmas
+San Francisco,US,Hotel Union Square,independent,12,150,150,Hotels.com,0.0,PARITY,no,yes,no,2026-12-29,2027-01-02,yes,177,new_years_eve
+San Francisco,US,Hotel Union Square,independent,6,566,566,Agoda,0.0,PARITY,no,yes,yes,2027-01-12,2027-01-16,yes,566,mid_january
+San Francisco,US,Hotel VIA,independent,12,186,131,Super.com,29.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,219,christmas
+San Francisco,US,Hotel VIA,independent,5,269,240,Billabook.com,10.8,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,269,new_years_eve
+San Francisco,US,Hotel VIA,independent,12,791,575,Super.com,27.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,931,mid_january
+San Francisco,US,Hotel Zoe Fisherman’s Wharf,independent,12,172,123,Best Hotel Deals,28.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,204,christmas
+San Francisco,US,Hotel Zoe Fisherman’s Wharf,independent,12,197,157,Hotels In America,20.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,231,new_years_eve
+San Francisco,US,Hotel Zoe Fisherman’s Wharf,independent,12,837,836,Hotel Zoe Fisherman's Wharf,0.1,PARITY,no,no,yes,2027-01-12,2027-01-16,no,837,mid_january
+San Francisco,US,The Embassy Hotel,independent,12,81,67,Super.com,17.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,95,christmas
+San Francisco,US,The Embassy Hotel,independent,12,93,72,Super.com,22.6,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,110,new_years_eve
+San Francisco,US,The Embassy Hotel,independent,5,282,241,Bluepillow.com,14.5,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,282,mid_january
+San Francisco,US,The Marker Union Square San Francisco,independent,12,135,100,Super.com,25.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,159,christmas
+San Francisco,US,The Marker Union Square San Francisco,independent,12,180,150,Evendo,16.7,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,180,new_years_eve
+San Francisco,US,The Marker Union Square San Francisco,independent,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+Scottsdale,US,Great Wolf Lodge | Arizona,independent,10,334,311,Vio.com,6.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,380,christmas
+Scottsdale,US,Great Wolf Lodge | Arizona,independent,9,517,517,Expedia.com,0.0,PARITY,no,yes,yes,2026-12-29,2027-01-02,no,517,new_years_eve
+Scottsdale,US,Great Wolf Lodge | Arizona,independent,12,221,182,Hotels In America,17.6,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,251,mid_january
+Scottsdale,US,Hilton Vacation Club Scottsdale Links Resort,chain,12,259,234,Super.com,9.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,295,christmas
+Scottsdale,US,Hilton Vacation Club Scottsdale Links Resort,chain,12,264,244,Super.com,7.6,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,264,new_years_eve
+Scottsdale,US,Hilton Vacation Club Scottsdale Links Resort,chain,11,251,230,Super.com,8.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,286,mid_january
+Scottsdale,US,Hilton Vacation Club Scottsdale Villa Mirage,chain,12,124,118,Super.com,4.8,PARITY,no,no,no,2026-12-23,2026-12-27,no,142,christmas
+Scottsdale,US,Hilton Vacation Club Scottsdale Villa Mirage,chain,12,155,147,Super.com,5.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,177,new_years_eve
+Scottsdale,US,Hilton Vacation Club Scottsdale Villa Mirage,chain,12,194,179,Super.com,7.7,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,194,mid_january
+Scottsdale,US,Scottsdale Camelback Resort,independent,0,,,,,,no,no,no,2026-12-23,2026-12-27,,,christmas
+Scottsdale,US,Scottsdale Camelback Resort,independent,9,312,312,Hoteis.com,0.0,PARITY,no,no,yes,2026-12-29,2027-01-02,yes,312,new_years_eve
+Scottsdale,US,Scottsdale Camelback Resort,independent,8,262,260,Super.com,0.8,PARITY,no,no,no,2027-01-12,2027-01-16,yes,296,mid_january
+Scottsdale,US,Scottsdale Parkview Hotel,independent,7,113,85,Super.com,24.8,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,129,christmas
+Scottsdale,US,Scottsdale Parkview Hotel,independent,0,,,,,,no,no,no,2026-12-29,2027-01-02,,,new_years_eve
+Scottsdale,US,Scottsdale Parkview Hotel,independent,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+Scottsdale,US,"Sheraton Desert Oasis Villas, Scottsdale",chain,12,279,254,Super.com,9.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,318,christmas
+Scottsdale,US,"Sheraton Desert Oasis Villas, Scottsdale",chain,9,295,295,"Sheraton Desert Oasis Villas, Scottsdale",0.0,PARITY,no,yes,yes,2026-12-29,2027-01-02,no,295,new_years_eve
+Scottsdale,US,"Sheraton Desert Oasis Villas, Scottsdale",chain,12,239,216,Super.com,9.6,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,272,mid_january
+Scottsdale,US,Talking Stick Resort Hotel,independent,12,207,128,trivago DEALS,38.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,235,christmas
+Scottsdale,US,Talking Stick Resort Hotel,independent,12,274,178,Traveluro,35.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,312,new_years_eve
+Scottsdale,US,Talking Stick Resort Hotel,independent,3,289,278,Super.com,3.8,PARITY,no,no,no,2027-01-12,2027-01-16,no,326,mid_january
+Scottsdale,US,The McCormick Scottsdale,independent,12,199,103,Super.com,48.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,227,christmas
+Scottsdale,US,The McCormick Scottsdale,independent,12,200,160,Super.com,20.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,228,new_years_eve
+Scottsdale,US,The McCormick Scottsdale,independent,12,212,157,Super.com,25.9,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,241,mid_january
+Scottsdale,US,WorldMark Scottsdale,independent,12,161,106,Super.com,34.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,184,christmas
+Scottsdale,US,WorldMark Scottsdale,independent,12,137,90,Super.com,34.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,156,new_years_eve
+Scottsdale,US,WorldMark Scottsdale,independent,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+Seattle,US,Coast Seattle Downtown Hotel by APA,independent,12,122,120,HomeToGo,1.6,PARITY,no,no,yes,2026-12-23,2026-12-27,yes,122,christmas
+Seattle,US,Coast Seattle Downtown Hotel by APA,independent,12,103,96,Super.com,6.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,122,new_years_eve
+Seattle,US,Coast Seattle Downtown Hotel by APA,independent,12,122,104,Super.com,14.8,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,122,mid_january
+Seattle,US,Graduate by Hilton Seattle,chain,12,152,120,KAYAK.com,21.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,176,christmas
+Seattle,US,Graduate by Hilton Seattle,chain,12,179,142,Super.com,20.7,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,179,new_years_eve
+Seattle,US,Graduate by Hilton Seattle,chain,12,154,122,Super.com,20.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,178,mid_january
+Seattle,US,Hotel Max,independent,12,136,110,Super.com,19.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,161,christmas
+Seattle,US,Hotel Max,independent,12,144,112,Super.com,22.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,170,new_years_eve
+Seattle,US,Hotel Max,independent,10,138,121,Billabook.com,12.3,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,138,mid_january
+Seattle,US,Mayflower Park Hotel,independent,12,149,138,Super.com,7.4,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,149,christmas
+Seattle,US,Mayflower Park Hotel,independent,9,176,149,Reserving,15.3,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,176,new_years_eve
+Seattle,US,Mayflower Park Hotel,independent,12,150,115,Trip.com,23.3,REAL_LOWER_MATCHED,yes,yes,no,2027-01-12,2027-01-16,yes,177,mid_january
+Seattle,US,Mediterranean Inn,independent,12,148,122,Super.com,17.6,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,175,christmas
+Seattle,US,Mediterranean Inn,independent,12,166,144,Super.com,13.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,196,new_years_eve
+Seattle,US,Mediterranean Inn,independent,12,163,163,Hotels.com,0.0,PARITY,no,yes,yes,2027-01-12,2027-01-16,yes,163,mid_january
+Seattle,US,Seattle Gaslight Inn,independent,0,,,,,,no,no,no,2026-12-23,2026-12-27,,,christmas
+Seattle,US,Seattle Gaslight Inn,independent,0,,,,,,no,no,no,2026-12-29,2027-01-02,,,new_years_eve
+Seattle,US,Seattle Gaslight Inn,independent,1,146,146,Seattle Gaslight Inn,0.0,PARITY,no,no,yes,2027-01-12,2027-01-16,no,146,mid_january
+Seattle,US,The Boylston Hotel Capitol Hill,independent,12,112,100,Vio.com,10.7,REAL_LOWER_MATCHED,yes,yes,no,2026-12-23,2026-12-27,yes,129,christmas
+Seattle,US,The Boylston Hotel Capitol Hill,independent,11,156,152,The Boylston Hotel Capitol Hill,2.6,PARITY,no,no,yes,2026-12-29,2027-01-02,no,156,new_years_eve
+Seattle,US,The Boylston Hotel Capitol Hill,independent,6,108,105,eDreams,2.8,PARITY,no,yes,no,2027-01-12,2027-01-16,no,125,mid_january
+Seattle,US,Travelodge by Wyndham Seattle By The Space Needle,chain,12,105,70,Super.com,33.3,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,124,christmas
+Seattle,US,Travelodge by Wyndham Seattle By The Space Needle,chain,12,131,74,Super.com,43.5,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,155,new_years_eve
+Seattle,US,Travelodge by Wyndham Seattle By The Space Needle,chain,9,115,96,Hotel prive,16.5,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,115,mid_january
+Seattle,US,Warwick Seattle,independent,12,125,106,Warwick Seattle,15.2,UNVERIFIED_LOWER,no,yes,no,2026-12-23,2026-12-27,yes,141,christmas
+Seattle,US,Warwick Seattle,independent,12,164,139,Warwick Seattle,15.2,REAL_LOWER_MATCHED,yes,yes,yes,2026-12-29,2027-01-02,yes,164,new_years_eve
+Seattle,US,Warwick Seattle,independent,12,180,146,Evendo,18.9,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,180,mid_january
+St. Louis,US,Aloft by Marriott St Louis Central West End,chain,12,107,102,Super.com,4.7,PARITY,no,no,no,2026-12-23,2026-12-27,no,125,christmas
+St. Louis,US,Aloft by Marriott St Louis Central West End,chain,12,157,150,Super.com,4.5,PARITY,no,no,yes,2026-12-29,2027-01-02,no,157,new_years_eve
+St. Louis,US,Aloft by Marriott St Louis Central West End,chain,9,126,125,Booking.com,0.8,PARITY,no,no,yes,2027-01-12,2027-01-16,no,126,mid_january
+St. Louis,US,Clayton Plaza Hotel,independent,12,108,96,Vio.com,11.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,126,christmas
+St. Louis,US,Clayton Plaza Hotel,independent,12,139,122,trivago DEALS,12.2,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,139,new_years_eve
+St. Louis,US,Clayton Plaza Hotel,independent,10,131,131,Priceline,0.0,PARITY,no,yes,yes,2027-01-12,2027-01-16,yes,131,mid_january
+St. Louis,US,Drury Plaza Hotel St. Louis At The Arch,independent,12,139,125,KAYAK.com,10.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,163,christmas
+St. Louis,US,Drury Plaza Hotel St. Louis At The Arch,independent,12,185,162,Traveluro,12.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,217,new_years_eve
+St. Louis,US,Drury Plaza Hotel St. Louis At The Arch,independent,12,137,133,Drury Plaza Hotel St Louis at the Arch,2.9,PARITY,no,yes,no,2027-01-12,2027-01-16,no,160,mid_january
+St. Louis,US,Four Seasons Hotel St. Louis,chain,12,375,330,Super.com,12.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,438,christmas
+St. Louis,US,Four Seasons Hotel St. Louis,chain,12,421,367,Super.com,12.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,493,new_years_eve
+St. Louis,US,Four Seasons Hotel St. Louis,chain,12,296,258,Super.com,12.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,346,mid_january
+St. Louis,US,HoteLumière at the Arch - A Caesars Rewards Destination,chain,11,204,172,Evendo,15.7,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,204,christmas
+St. Louis,US,HoteLumière at the Arch - A Caesars Rewards Destination,chain,0,,,,,,no,no,no,2026-12-29,2027-01-02,,,new_years_eve
+St. Louis,US,HoteLumière at the Arch - A Caesars Rewards Destination,chain,12,142,121,Super.com,14.8,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,166,mid_january
+St. Louis,US,Moonrise Hotel,independent,12,223,125,Super.com,43.9,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,266,christmas
+St. Louis,US,Moonrise Hotel,independent,12,208,117,Super.com,43.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,248,new_years_eve
+St. Louis,US,Moonrise Hotel,independent,8,201,117,Priceline,41.8,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,201,mid_january
+St. Louis,US,River City Casino Hotel,independent,6,201,170,trivago DEALS,15.4,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,201,christmas
+St. Louis,US,River City Casino Hotel,independent,0,,,,,,no,no,no,2026-12-29,2027-01-02,,,new_years_eve
+St. Louis,US,River City Casino Hotel,independent,10,150,145,trivago DEALS,3.3,PARITY,no,no,no,2027-01-12,2027-01-16,no,175,mid_january
+St. Louis,US,The Truitt,independent,4,241,226,The Truitt,6.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,282,christmas
+St. Louis,US,The Truitt,independent,3,223,211,The Truitt,5.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,262,new_years_eve
+St. Louis,US,The Truitt,independent,3,262,245,The Truitt,6.5,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,262,mid_january
+St. Louis,US,The West End,independent,12,124,114,The West End,8.1,REAL_LOWER_MATCHED,yes,yes,no,2026-12-23,2026-12-27,no,144,christmas
+St. Louis,US,The West End,independent,12,157,145,The West End,7.6,REAL_LOWER_MATCHED,yes,yes,no,2026-12-29,2027-01-02,no,183,new_years_eve
+St. Louis,US,The West End,independent,10,96,96,Travelocity.com,0.0,PARITY,no,yes,no,2027-01-12,2027-01-16,no,112,mid_january
+Tampa,US,Econo Lodge Airport @ RJ Stadium,chain,12,68,54,Super.com,20.6,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,68,christmas
+Tampa,US,Econo Lodge Airport @ RJ Stadium,chain,12,75,59,Super.com,21.3,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,85,new_years_eve
+Tampa,US,Econo Lodge Airport @ RJ Stadium,chain,12,66,57,Super.com,13.6,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,66,mid_january
+Tampa,US,Four Points by Sheraton Suites Tampa Airport Westshore,chain,12,129,110,KAYAK.com,14.7,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,146,christmas
+Tampa,US,Four Points by Sheraton Suites Tampa Airport Westshore,chain,12,169,148,groupon.com,12.4,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,no,169,new_years_eve
+Tampa,US,Four Points by Sheraton Suites Tampa Airport Westshore,chain,11,316,253,Hotels.com,19.9,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,no,316,mid_january
+Tampa,US,Hilton Garden Inn Tampa North,chain,12,112,95,KAYAK.com,15.2,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,127,christmas
+Tampa,US,Hilton Garden Inn Tampa North,chain,12,120,102,KAYAK.com,15.0,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,137,new_years_eve
+Tampa,US,Hilton Garden Inn Tampa North,chain,12,171,146,Super.com,14.6,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,194,mid_january
+Tampa,US,Holiday Inn Express & Suites Tampa-I-75 @ Bruce B. Downs by IHG,chain,12,138,98,Super.com,29.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,157,christmas
+Tampa,US,Holiday Inn Express & Suites Tampa-I-75 @ Bruce B. Downs by IHG,chain,12,209,153,Super.com,26.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,237,new_years_eve
+Tampa,US,Holiday Inn Express & Suites Tampa-I-75 @ Bruce B. Downs by IHG,chain,12,229,161,Super.com,29.7,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,259,mid_january
+Tampa,US,Holiday Inn Tampa Westshore - Airport Area by IHG,chain,12,113,88,Billabook.com,22.1,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,128,christmas
+Tampa,US,Holiday Inn Tampa Westshore - Airport Area by IHG,chain,12,138,114,Hotels In America,17.4,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,157,new_years_eve
+Tampa,US,Holiday Inn Tampa Westshore - Airport Area by IHG,chain,12,234,191,Super.com,18.4,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,266,mid_january
+Tampa,US,Hyatt Place Tampa/Busch Gardens,chain,12,119,94,Super.com,21.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,135,christmas
+Tampa,US,Hyatt Place Tampa/Busch Gardens,chain,7,134,134,Hyatt Place Tampa/Busch Gardens,0.0,PARITY,no,no,yes,2026-12-29,2027-01-02,no,134,new_years_eve
+Tampa,US,Hyatt Place Tampa/Busch Gardens,chain,12,170,136,Super.com,20.0,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,193,mid_january
+Tampa,US,La Quinta Inn by Wyndham Tampa Near Busch Gardens,chain,12,89,78,Super.com,12.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,101,christmas
+Tampa,US,La Quinta Inn by Wyndham Tampa Near Busch Gardens,chain,12,93,93,Expedia.com,0.0,PARITY,no,yes,yes,2026-12-29,2027-01-02,no,93,new_years_eve
+Tampa,US,La Quinta Inn by Wyndham Tampa Near Busch Gardens,chain,12,96,80,Super.com,16.7,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,no,109,mid_january
+Tampa,US,Red Roof PLUS+ & Suites Tampa - Busch Gardens,independent,12,65,53,KAYAK.com,18.5,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,74,christmas
+Tampa,US,Red Roof PLUS+ & Suites Tampa - Busch Gardens,independent,12,59,52,KAYAK.com,11.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,66,new_years_eve
+Tampa,US,Red Roof PLUS+ & Suites Tampa - Busch Gardens,independent,12,74,59,Super.com,20.3,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,84,mid_january
+Tampa,US,Sailport Waterfront Suites,independent,12,137,131,Super.com,4.4,PARITY,no,no,no,2026-12-23,2026-12-27,no,153,christmas
+Tampa,US,Sailport Waterfront Suites,independent,12,177,176,KAYAK.com,0.6,PARITY,no,no,no,2026-12-29,2027-01-02,yes,198,new_years_eve
+Tampa,US,Sailport Waterfront Suites,independent,12,232,198,br.Bluepillow.com,14.7,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,232,mid_january
+Washington DC,US,Architect Hotel,independent,12,134,114,Hotels.com,14.9,REAL_LOWER_MATCHED,yes,yes,yes,2026-12-23,2026-12-27,no,134,christmas
+Washington DC,US,Architect Hotel,independent,12,108,83,KAYAK.com,23.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,125,new_years_eve
+Washington DC,US,Architect Hotel,independent,0,,,,,,no,no,no,2027-01-12,2027-01-16,,,mid_january
+Washington DC,US,"Courtyard by Marriott Washington, DC/U.S. Capitol",chain,12,113,89,Super.com,21.2,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,113,christmas
+Washington DC,US,"Courtyard by Marriott Washington, DC/U.S. Capitol",chain,12,126,116,Super.com,7.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,146,new_years_eve
+Washington DC,US,"Courtyard by Marriott Washington, DC/U.S. Capitol",chain,12,137,130,Booking.com,5.1,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,yes,137,mid_january
+Washington DC,US,Days Inn by Wyndham Washington DC/Connecticut Avenue,chain,12,96,83,Pilot,13.5,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,no,96,christmas
+Washington DC,US,Days Inn by Wyndham Washington DC/Connecticut Avenue,chain,12,101,78,Super.com,22.8,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,117,new_years_eve
+Washington DC,US,Days Inn by Wyndham Washington DC/Connecticut Avenue,chain,12,94,77,Vio.com,18.1,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,no,94,mid_january
+Washington DC,US,Hyatt Place Washington DC/US Capitol,chain,12,87,86,Super.com,1.1,PARITY,no,no,no,2026-12-23,2026-12-27,no,101,christmas
+Washington DC,US,Hyatt Place Washington DC/US Capitol,chain,12,121,105,Super.com,13.2,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,141,new_years_eve
+Washington DC,US,Hyatt Place Washington DC/US Capitol,chain,12,143,119,Super.com,16.8,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,143,mid_january
+Washington DC,US,The Dupont Circle Hotel,independent,12,251,198,Vio.com,21.1,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,251,christmas
+Washington DC,US,The Dupont Circle Hotel,independent,12,255,191,Super.com,25.1,UNVERIFIED_LOWER,no,no,yes,2026-12-29,2027-01-02,yes,255,new_years_eve
+Washington DC,US,The Dupont Circle Hotel,independent,12,272,213,Vio.com,21.7,REAL_LOWER_MATCHED,yes,yes,yes,2027-01-12,2027-01-16,yes,272,mid_january
+Washington DC,US,The Royal Sonesta Washington DC Dupont Circle,independent,12,144,116,Super.com,19.4,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,yes,167,christmas
+Washington DC,US,The Royal Sonesta Washington DC Dupont Circle,independent,12,158,157,Super.com,0.6,PARITY,no,no,yes,2026-12-29,2027-01-02,yes,158,new_years_eve
+Washington DC,US,The Royal Sonesta Washington DC Dupont Circle,independent,12,174,133,Super.com,23.6,UNVERIFIED_LOWER,no,no,no,2027-01-12,2027-01-16,yes,201,mid_january
+Washington DC,US,YOTEL Washington DC,chain,12,183,160,Vio.com,12.6,UNVERIFIED_LOWER,no,no,yes,2026-12-23,2026-12-27,yes,183,christmas
+Washington DC,US,YOTEL Washington DC,chain,12,196,153,trivago DEALS,21.9,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,yes,196,new_years_eve
+Washington DC,US,YOTEL Washington DC,chain,12,282,260,Hotels In America,7.8,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,yes,282,mid_january
+Washington DC,US,citizenM Washington DC Georgetown,chain,12,107,105,citizenM Washington DC Georgetown,1.9,PARITY,no,yes,yes,2026-12-23,2026-12-27,no,107,christmas
+Washington DC,US,citizenM Washington DC Georgetown,chain,12,118,118,citizenM Washington DC Georgetown,0.0,PARITY,no,yes,no,2026-12-29,2027-01-02,no,137,new_years_eve
+Washington DC,US,citizenM Washington DC Georgetown,chain,9,142,141,Hoteis.com,0.7,PARITY,no,yes,yes,2027-01-12,2027-01-16,no,142,mid_january
+Washington DC,US,"citizenM Washington, DC NOMA",chain,12,84,79,Super.com,6.0,UNVERIFIED_LOWER,no,no,no,2026-12-23,2026-12-27,no,98,christmas
+Washington DC,US,"citizenM Washington, DC NOMA",chain,12,109,98,Super.com,10.1,UNVERIFIED_LOWER,no,no,no,2026-12-29,2027-01-02,no,126,new_years_eve
+Washington DC,US,"citizenM Washington, DC NOMA",chain,12,142,123,Traveluro,13.4,UNVERIFIED_LOWER,no,no,yes,2027-01-12,2027-01-16,no,142,mid_january

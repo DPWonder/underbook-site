@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Hotel Price Checker: Every Booking Site for Your Dates, Free | Underbook</title>
+  <meta name="description" content="Type a hotel and your dates. Underbook checks every booking site Google Hotels lists, shows each price all-in when the sites report taxes and fees, and tells you whether the cheaper one names the same room. Free, works on your phone." />
+  <link rel="canonical" href="https://underbook.co/hotel-price-checker" />
+  <!-- Link previews (2026-10-01, share a check): a shared check is this page plus ?hotel=&in=&out=&adults=&cur=&src=share,
+       so the card is static and says what opening it does. No og:url on purpose: some apps send a tap on the card to
+       og:url, which would drop the shared hotel and dates; without it they use the link that was shared.
+       2026-10-02 (docs/SHARING_2026-10-02.md): the description says when the prices are from (the day the link is opened)
+       and shows none. The title does not name the shared hotel: crawlers read this static file, so naming it would take a
+       server route that copies the link's hotel= into the preview, and anyone could then make an underbook.co preview say
+       anything. The message that carries the link names the hotel, its dates and the day it was checked (shareText). -->
+  <meta property="og:site_name" content="Underbook" />
+  <meta property="og:title" content="Is this hotel cheaper on another site?" />
+  <meta property="og:description" content="Checks the booking sites Google Hotels lists for a hotel and dates, live, on the day the link is opened: all-in when the sites report taxes and fees, and whether the cheaper one names the same room. Free, works on your phone." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://underbook.co/assets/images/og-checker.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Underbook hotel price checker: every booking site for your dates, all-in, and whether the cheaper one names the same room." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Is this hotel cheaper on another site?" />
+  <meta name="twitter:description" content="Checks the booking sites Google Hotels lists for a hotel and dates, live, on the day the link is opened, all-in when the sites report fees. Free, works on your phone." />
+  <meta name="twitter:image" content="https://underbook.co/assets/images/og-checker.png" />
+  <meta name="twitter:image:alt" content="Underbook hotel price checker: every booking site for your dates, all-in, and whether the cheaper one names the same room." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Inter,system-ui' font-weight='800' font-size='18' fill='%2310b981'%3EU%3C/text%3E%3C/svg%3E" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="stylesheet" href="/styles.css" />
+  <!-- In the visitor's language (2026-10-10, docs/LOCALIZE_2026-10-10.md): es, de, fr, pt-BR, it from navigator.language,
+       from 2026-10-13 (docs/LOCALIZE_10_2026-10-13.md) ja, ko, nl, pl, tr, sv, id, vi, zh-CN, zh-TW, and from
+       2026-10-14 (docs/PT_PT_2026-10-14.md) pt-PT (every Portuguese browser but Brazil's); strings from
+       /i18n/checker.<lang>.json; English browsers get this page as it is, nothing fetched or waited for. -->
+  <script src="/i18n.js?v=20261117h" data-page="checker"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","@id":"https://underbook.co/hotel-price-checker#app","name":"Underbook Hotel Price Checker","url":"https://underbook.co/hotel-price-checker",
+   "applicationCategory":"TravelApplication","operatingSystem":"Any (web browser)","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+   "description":"Checks every booking site Google Hotels lists for a hotel and dates, shows each price all-in when the sites report taxes and fees, and says whether the cheaper listing names the same room.",
+   "publisher":{"@type":"Organization","@id":"https://underbook.co/#organization","name":"Underbook","url":"https://underbook.co"}}
+  </script>
+</head>
+<body class="font-sans bg-stone-50 text-ink antialiased">
+  <nav class="border-b border-stone-200 bg-stone-50/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 font-extrabold text-lg"><span class="inline-block w-7 h-7 rounded-md bg-ink text-accent grid place-items-center text-sm" aria-hidden="true">U</span>Underbook</a>
+      <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=checker&amp;utm_campaign=nav" target="_blank" rel="noopener" data-cta="checker-nav" class="ub-install hidden sm:inline-block text-sm font-semibold bg-accent text-ink px-4 py-2 rounded-lg hover:brightness-95 transition">Add to Chrome, free</a>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 pt-8 pb-12">
+    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight mb-3">Is this hotel cheaper on another site?</h1>
+    <p data-ub-ios-top hidden class="mb-4"></p>
+    <p class="text-slate-600 text-base sm:text-lg mb-6">Type the hotel and your dates. We check every booking site Google Hotels lists, show each price all-in when the sites report taxes and fees, and tell you whether the cheaper one names the same room. Free, no install, works on your phone.</p>
+
+    <!-- Shared check (2026-10-01): a link from "Share this check" (?src=share) says so here, runs again with today's
+         prices, and keeps the dates editable; dates that have passed are not checked, the visitor picks new ones. -->
+    <div id="sharedNote" class="hidden mb-4 bg-amber-50 border border-amber-200 text-amber-900 rounded-2xl px-4 py-3 text-sm leading-relaxed" role="status"></div>
+    <!-- Phone path (2026-10-06, docs/PHONE_PATH_2026-10-06.md): a phone or tablet sent here by underbook.co/get (the short link
+         in posts and the YouTube Shorts' descriptions) followed a link to the extension. app.js fills and shows this note
+         only then: the extension is for computers, a button hands them the link to open there, and the check is right here. -->
+    <div id="phoneGet" data-ub-phone="get" class="hidden mb-4 border border-stone-200 bg-stone-50 rounded-xl p-4"></div>
+
+    <form id="stay" style="scroll-margin-top:72px" class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-sm space-y-4" autocomplete="off">
+      <div>
+        <label for="hotel" class="block text-sm font-semibold mb-1">Hotel</label>
+        <input id="hotel" name="hotel" type="text" required maxlength="120" placeholder="e.g. Hilton Hawaiian Village Waikiki" aria-describedby="stayMsg"
+          class="w-full px-3.5 py-3 rounded-xl border border-stone-500 text-base focus:outline-none focus:border-ink" />
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label for="checkIn" class="block text-sm font-semibold mb-1">Check-in</label>
+          <input id="checkIn" type="date" required class="w-full px-3 py-3 rounded-xl border border-stone-500 text-base focus:outline-none focus:border-ink" />
+        </div>
+        <div>
+          <label for="checkOut" class="block text-sm font-semibold mb-1">Check-out</label>
+          <input id="checkOut" type="date" required class="w-full px-3 py-3 rounded-xl border border-stone-500 text-base focus:outline-none focus:border-ink" />
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3">
+        <label class="flex items-center gap-2 text-sm font-semibold">Adults
+          <input id="adults" type="number" min="1" max="6" value="2" class="w-16 px-3 py-2 rounded-xl border border-stone-500 text-base focus:outline-none focus:border-ink" />
+        </label>
+        <label class="flex items-center gap-2 text-sm font-semibold">Currency
+          <select id="currency" class="px-3 py-2 rounded-xl border border-stone-500 text-base bg-white focus:outline-none focus:border-ink"></select>
+        </label>
+      </div>
+      <button id="checkBtn" type="submit" class="w-full bg-ink text-white font-semibold py-3.5 rounded-xl text-base hover:bg-stone-800 transition">Check every booking site</button>
+      <p id="stayMsg" class="text-sm text-stone-500 min-h-[1.25rem]" role="status" aria-live="polite"></p>
+      <!-- X5, a next step on a no-price result (2026-10-02, docs/CHECKER_CLICKS_2026-10-02.md, docs/EXPERIMENTS.md). A check
+           with no price (no match, no prices for these dates, or no answer) used to end on the grey line above with nothing
+           to click. Two dated searches, on Booking.com and Expedia, for the name typed, the dates and the adults; through
+           /go with ch=web and res=none, so the worker counts a person's click as goWeb and, apart, goWebNone. The copy
+           says there is no price to compare and names no lower site. "Did you mean" buttons, when there are any, stay
+           above it. Shown with a no-price line only, counted once per such result as web_none_next_shown. -->
+      <div id="noneNext" class="hidden border-t border-stone-200 pt-4">
+        <p class="text-sm text-slate-700"><strong class="text-ink">No price to compare for this stay.</strong> You can look the hotel up on a booking site yourself: these links search for the name you typed, with your dates and number of adults. We have no price from these sites, so we can&#39;t say which one is lower.</p>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <a id="noneBooking" href="https://www.booking.com/" target="_blank" rel="noopener sponsored" class="inline-flex items-center text-sm font-semibold px-3.5 py-2 rounded-lg border border-stone-300 bg-white hover:border-ink transition">Search Booking.com</a>
+          <a id="noneExpedia" href="https://www.expedia.com/" target="_blank" rel="noopener sponsored" class="inline-flex items-center text-sm font-semibold px-3.5 py-2 rounded-lg border border-stone-300 bg-white hover:border-ink transition">Search Expedia</a>
+        </div>
+        <p class="text-xs text-stone-500 mt-2">Check the room and the final total on the site before you book. If you book through these links, we may earn a small commission from that site.</p>
+        <!-- X40 (2026-10-27, docs/WEB_RESULT_INSTALL_2026-10-27.md, docs/EXPERIMENTS.md): the extension offer under a no-price
+             result, on a computer that can add it. X29's offer (#installCta, in the result below) is drawn only with prices, so
+             a check that found none ended here with nothing but the two searches. Drawn like X29's box, under the searches: one
+             sentence the script writes with each such result (it names the visitor's browser, as X29's does), the store button
+             (app.js routes it to Edge Add-ons or Firefox Add-ons and relabels it, as every store button) and what the
+             extension sends. Hidden below 640px (sm:flex); the script removes it on phones and tablets, in desktop Safari
+             (which cannot add the extension), on a visit from the install's welcome page, and when X29's offer was put away
+             ("Not now") in this page view. Counted as web_none_install_shown and web_none_install_click, once per page view
+             each; never result_install_* or web_install_*, which stay X29's. -->
+        <div id="noneInstall" class="hidden sm:flex items-start gap-3 mt-4 border border-stone-200 bg-stone-50 rounded-xl p-4">
+          <span class="inline-block w-7 h-7 shrink-0 rounded-md bg-ink text-accent grid place-items-center text-sm font-extrabold" aria-hidden="true">U</span>
+          <div class="min-w-0">
+            <p id="noneInstallLead" class="text-sm text-slate-700"></p>
+            <div class="mt-3">
+              <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=checker&amp;utm_campaign=none_offer" target="_blank" rel="noopener" data-cta="none-offer" class="ub-install inline-block bg-ink text-white font-semibold text-base px-5 py-3 rounded-lg hover:bg-stone-800 transition whitespace-nowrap">+ Add to Chrome, free</a>
+            </div>
+            <p class="text-xs text-stone-500 mt-2">It sends the hotel name, its town, your dates and party size to our price service (<a href="/privacy" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-ink">privacy</a>).</p>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Accessibility (2026-10-01, docs/ACCESSIBILITY_2026-10-01.md): one line for screen readers when a result is ready
+         (its headline and how many sites were checked). It stays in the page, so a change to it is announced. -->
+    <p id="resultStatus" class="sr-only" role="status" aria-live="polite"></p>
+
+    <!-- X29 (2026-10-22, docs/SITE_INSTALL_2026-10-22.md): no scroll margin of its own. Its 72px came on top of the site's 80px
+         (styles.css, html scroll-padding-top: 5rem), so on a computer a result stopped 152px down, under the bottom of the form,
+         and the offer's store button sat at the bottom edge of a 1366x768 laptop's window (below it in German or with a lower
+         price). Phones lost the 72px on 10/06 (docs/PHONE_CLICKS_2026-10-06.md); a result now stops just under the nav everywhere. -->
+    <section id="result" class="hidden mt-5" aria-label="Result">
+      <div class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-sm">
+        <div id="verdict"></div>
+        <!-- 2026-10-01 (docs/HOTEL_PAGE_FUNNEL_2026-10-01.md): the extension offer moved up from the end of the result section
+             (about 1,900 to 2,500px under the Open button with a typical 18 to 26 site result) to above the site list.
+             Hidden on phones and tablets (an extension cannot be added there).
+             X1 (2026-10-02, docs/EXPERIMENTS.md): the offer says what the extension does, in the page's own terms, and what it
+             sends (as the privacy page words it), with no savings claim, and can be put away ("Not now", for the rest of this
+             page view). The store link is static so app.js routes it like every store button (Chrome, Edge Add-ons, Firefox
+             Add-ons; the label says which). Counted as web_install_shown and web_install_click (once per page view each).
+             X17 (2026-10-06, docs/CHECKER_INSTALL_2026-10-06.md, docs/EXPERIMENTS.md): on computers it sits directly under the
+             result's Open button (above the share row, where it used to sit below it), the payoff first and what it sends in
+             a line of its own, a larger store button. After a person opens a booking site from the result (a new tab), the
+             first line says so and names that site, and the box is outlined: when the traveler comes back to this tab, the
+             offer is under the button they just used. A store click made then also counts web_install_after_go.
+             X29 (2026-10-22, docs/SITE_INSTALL_2026-10-22.md): the first line is the payoff, "Check hotel prices on the hotel page
+             itself.", and its sentence names the visitor's browser ("The free Underbook extension for Chrome", Edge or Firefox:
+             the browser the button installs into). The script writes it with each result (offerReset), so it is empty here. -->
+        <div id="installCta" class="hidden sm:flex items-start gap-3 mt-4 border border-stone-200 bg-stone-50 rounded-xl p-4">
+          <span class="inline-block w-7 h-7 shrink-0 rounded-md bg-ink text-accent grid place-items-center text-sm font-extrabold" aria-hidden="true">U</span>
+          <div class="min-w-0">
+            <p id="installLead" class="text-sm text-slate-700"></p>
+            <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
+              <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=checker&amp;utm_campaign=result_offer" target="_blank" rel="noopener" data-cta="checker-result" class="ub-install inline-block bg-ink text-white font-semibold text-base px-5 py-3 rounded-lg hover:bg-stone-800 transition whitespace-nowrap">+ Add to Chrome, free</a>
+              <button id="installHide" type="button" class="text-sm text-stone-600 px-2 py-1 rounded underline underline-offset-4 hover:text-ink whitespace-nowrap">Not now</button>
+            </div>
+            <p class="text-xs text-stone-500 mt-2">It sends the hotel name, its town, your dates and party size to our price service (<a href="/privacy" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-ink">privacy</a>).</p>
+          </div>
+        </div>
+        <!-- One question (2026-11-13, docs/USER_QUESTIONS.md): the week's one-tap question to the people who run a check, once
+             per visitor, English pages only. Empty and hidden here; the script (the "One question" block) fills it after the
+             first result and moves it with each result: on a result with prices directly under the install offer above (or,
+             where no offer is drawn for this visitor, directly under the answer, #verdict); at the end of X5's block
+             (#noneNext, after X40's offer) on a no-price result. It never touches #installCta or #noneInstall. Counted as
+             uq_view (half of it in the window for one second) and uq_1 to uq_4 (which button), nothing else. -->
+        <div id="uq" class="hidden mt-4 border border-stone-200 bg-stone-50 rounded-xl p-4"></div>
+        <!-- Share this check (2026-10-01): right under the main button, above the long list, so it is in reach on a phone.
+             The link carries the hotel, dates, adults and currency (never an email or a price paid) and runs the check again. -->
+        <div id="shareRow" class="mt-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+          <!-- At the moment of value (2026-10-02, docs/SHARING_2026-10-02.md): on a result that found a lower price, a line
+               said who the share is for. No price, no savings wording; counted by the same web_share_start and web_share_done
+               as the button. Hidden on every other result.
+               X20 (2026-10-10, docs/SHARE_PUSH_2026-10-10.md, docs/EXPERIMENTS.md): on such a result this row moves up to sit
+               right under the Open button (the script's X20 block) and reads as one line, "Traveling with someone? [Send
+               them this check]". The sentence that followed the question (what the link does) is in the note that travels
+               with the link and in the message after a copy. -->
+          <p id="shareLead" class="hidden text-center text-sm text-slate-700"><strong class="text-ink">Traveling with someone?</strong></p>
+          <button id="shareBtn" type="button" class="inline-flex items-center gap-1.5 text-sm font-semibold px-3.5 py-2 rounded-lg border border-stone-300 bg-white hover:border-ink transition">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+            <span id="shareBtnText">Share this check</span></button>
+          <span id="shareMsg" class="text-sm text-stone-500 text-center" role="status" aria-live="polite"></span>
+        </div>
+        <div id="shareCopy" class="hidden mt-2">
+          <label for="shareUrl" class="block text-xs text-stone-500 mb-1">Link to this check</label>
+          <input id="shareUrl" type="text" readonly class="w-full min-w-0 px-3 py-2 rounded-lg border border-stone-500 bg-stone-50 text-sm" />
+        </div>
+        <!-- Watch your booking from a result (2026-10-01, docs/WATCH_PROMOTION_2026-10-01.md): a traveler who already booked
+             this stay sees it here, above the long site list, instead of 1,500 to 2,000px down on a phone. It ticks the
+             "I already booked this stay" box and brings the box into view; the box states the rule. -->
+        <p id="bookedJump" class="mt-3 text-center text-sm text-slate-600">Already booked this stay? <button id="bookedJumpBtn" type="button" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Watch your booking</button></p>
+        <!-- Phone path (2026-10-06, docs/PHONE_PATH_2026-10-06.md): on a phone or tablet, where the offer above is left out,
+             the extension in one line and a button that hands the visitor the link to open on their computer (app.js,
+             data-ub-phone; phone_link_start / _done). Under the share and watch lines, above the site list. Shown with a
+             result by the script below; never on computers, on a visit from the install's welcome page, or when the
+             note above the form (data-ub-phone="get") was shown on this page view. -->
+        <div id="phoneLink" data-ub-phone="result" class="hidden mt-4 border border-stone-200 bg-stone-50 rounded-xl p-4"></div>
+        <div id="sites" class="mt-4"></div>
+        <!-- The resort-fee caveat (2026-10-22, docs/CHECKER_FEES_2026-10-22.md): a result whose prices are all-in says what that
+             covers, the card's own fine print (allInDef, 0.5.56+, docs/PROPERTY_FEES_2026-10-19.md). Written with each result
+             (allInNote); empty and hidden on a listed-rate result, which already says fees may be missing. Down here, not under
+             the going rate, so the first screen and X29's offer (docs/SITE_INSTALL_2026-10-22.md) stay where they are. -->
+        <p id="receipt" class="text-xs text-stone-500 mt-3"></p>
+        <p id="allInNote" class="hidden text-xs text-stone-500 mt-2"></p>
+        <p id="howFree" class="text-xs text-stone-500 mt-2">How Underbook is free: if you book through a site we link to, we may earn a small commission from that site. It never changes which prices we show or their order.</p>
+      </div>
+
+      <form id="watch" style="scroll-margin-top:72px" class="mt-4 bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-sm space-y-3">
+        <p id="watchHead" class="font-semibold">Not booking yet? Get an email if this stay gets cheaper.</p>
+        <!-- 2026-09-30 watch conversion pass: name the stay the alert follows (hotel, dates, nights, party); a stay
+             opened from a hotel page with sample dates says so here, where the email goes. -->
+        <p id="watchStay" class="text-sm font-medium text-stone-700"></p>
+        <p id="watchRule" class="text-sm text-slate-600">We check the going rate for this hotel and these dates once a day and email you if it is at least 5% lower on two daily checks in a row. Booking now? Pick a free-cancellation rate so you can rebook if it drops.</p>
+        <!-- Watch your booking (2026-10-01, docs/WATCH_BOOKING_PLAN.md): a traveler who already booked a refundable stay
+             says what they paid per night and, optionally, when free cancellation ends. ?booked=1 ticks the box. -->
+        <div id="bookedBox" class="space-y-3">
+          <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <label class="flex items-center gap-2 py-1 text-sm font-semibold cursor-pointer"><input id="booked" type="checkbox" class="w-4 h-4 accent-emerald-600" /> I already booked this stay</label>
+            <a href="/watch-my-booking" class="text-xs text-stone-500 underline">How watching a booking works</a>
+          </div>
+          <div id="bookedFields" class="hidden space-y-3 border-l-2 border-stone-200 pl-3">
+            <div>
+              <label for="paidNight" class="block text-sm font-semibold mb-1">Price you paid per night, all-in</label>
+              <div class="flex items-center gap-2">
+                <input id="paidNight" type="number" inputmode="decimal" step="any" disabled aria-describedby="paidHint" class="w-36 px-3 py-2.5 rounded-xl border border-stone-500 text-base focus:outline-none focus:border-ink" />
+                <span id="paidCur" class="text-sm font-semibold text-stone-600">USD</span>
+              </div>
+              <p id="paidHint" class="text-xs text-stone-500 mt-1" aria-live="polite"></p>
+            </div>
+            <div>
+              <label for="cancelBy" class="block text-sm font-semibold mb-1">Free cancellation until <span class="font-normal text-stone-500">(optional)</span></label>
+              <input id="cancelBy" type="date" disabled aria-describedby="cancelHint" class="px-3 py-2.5 rounded-xl border border-stone-500 text-base bg-white focus:outline-none focus:border-ink" />
+              <p id="cancelHint" class="text-xs text-stone-500 mt-1">The last day you can cancel for free. It is on your confirmation.</p>
+            </div>
+            <p class="text-xs text-stone-500">Don't include your booking number or your name. We don't need them, and we never see your payment details.</p>
+          </div>
+        </div>
+        <div id="watchRow">
+          <label for="email" class="block text-sm font-semibold mb-1">Your email</label>
+          <div class="flex flex-col sm:flex-row gap-2">
+            <input id="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" aria-describedby="watchMsg" class="flex-1 px-3.5 py-3 rounded-xl border border-stone-500 text-base focus:outline-none focus:border-ink" />
+            <button id="watchBtn" type="submit" class="bg-accent text-ink font-semibold px-5 py-3 rounded-xl hover:brightness-95 transition whitespace-nowrap">Email me if it drops</button>
+          </div>
+        </div>
+        <p id="watchMsg" class="text-sm text-stone-500" role="status" aria-live="polite"></p>
+        <p id="watchPrivacy" class="text-xs text-stone-500">Emails about this stay only, and at most one drop alert. No account. Unsubscribe in one click. We store only your email and this stay. <a href="/privacy" class="underline">Privacy</a>.</p>
+      </form>
+    </section>
+
+    <section class="mt-10 space-y-4 text-slate-700">
+      <h2 class="text-xl font-bold text-ink">How the check works</h2>
+      <ul class="list-disc pl-5 space-y-2 text-sm leading-relaxed">
+        <li><strong>Every site Google Hotels lists</strong> for that hotel and dates, including the lesser-known ones where the lower prices usually are.</li>
+        <li><strong>The going rate</strong> is the price most sites agree on. A site 5% or more below it is flagged as cheaper.</li>
+        <li><strong>Same room or not.</strong> We compare the room each site names. "Same room name" only when the names match (strong evidence, not proof); otherwise we show you which room the lower price is for, so you can judge. Many cheap listings name no room at all. <a href="/hotel-price-dispersion-study" class="underline">We measured how often, on 7,044 hotel prices.</a></li>
+        <li><strong>All-in prices</strong> include taxes and fees as each site reports them; a resort or destination fee may be extra. When no site shows a before-tax rate, we say fees may be missing.</li>
+        <li>We never book anything and never see payment details. You book on the site you choose.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="px-4 sm:px-6 py-10 border-t border-stone-200">
+    <div class="max-w-3xl mx-auto text-sm text-slate-500 flex gap-4 flex-wrap">
+      <a href="/" class="hover:text-ink">Underbook</a>
+      <a href="/hotel-price-dispersion-study" class="hover:text-ink">Our hotel price study</a>
+      <a href="/why-are-hotel-prices-different-on-different-sites" class="hover:text-ink">Why prices differ</a>
+      <a href="/watch-my-booking" class="hover:text-ink">Watch my booking</a>
+      <a href="/how-underbook-works" class="hover:text-ink">How Underbook works</a>
+      <a href="/corrections" class="hover:text-ink">Corrections</a>
+      <a href="/help" class="hover:text-ink">Help</a>
+      <a href="/privacy" class="hover:text-ink">Privacy</a>
+      <a href="/terms" class="hover:text-ink">Terms</a>
+    </div>
+  </footer>
+
+  <script>
+  // A translated page runs this once its strings are in (UBI18N.ready, i18n.js); in English it runs at once, as before.
+  (window.UBI18N ? UBI18N.ready : function (f) { f(); })(function () {
+    // L10N: the page shows in one of the 16 languages of i18n.js (docs/LOCALIZE_2026-10-10.md, LOCALIZE_10_2026-10-13.md,
+    // PT_PT_2026-10-14.md). T()
+    // writes a sentence with values in the page's language: the English template is the key (the English itself when no
+    // translation matches it), so the English page writes exactly what it wrote before. What the price service writes
+    // (site, room and hotel names, "Did you mean" names, the booked watch's refusals) and the message "Share this check"
+    // sends stay as they come.
+    var L10N = window.UBI18N && UBI18N.lang !== 'en' ? UBI18N : null;
+    var T = window.UBI18N ? UBI18N.t : function (s, v) { return String(s).replace(/\{([A-Za-z_]+)\}/g, function (m, k) { return v && k in v ? String(v[k]) : m; }); };
+    // Between two sentences (2026-10-13, docs/LOCALIZE_10_2026-10-13.md): Japanese and Chinese put none after their full stop;
+    // every other language (English included) a space, as before. END: the full stop a spoken result line gets.
+    var CJK = !!(L10N && /^(ja|zh)/.test(L10N.lang)), SEP = CJK ? '' : ' ', END = CJK ? '。' : '.';
+    var API = 'https://underbook-backend.underbook.workers.dev';
+    var $ = function (id) { return document.getElementById(id); };
+    var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]; }); };
+    // Market + currency from the browser's region; the worker whitelists both.
+    var CUR = { us: 'USD', gb: 'GBP', de: 'EUR', fr: 'EUR', it: 'EUR', es: 'EUR', pt: 'EUR', nl: 'EUR', br: 'BRL', in: 'INR', ua: 'UAH', ca: 'CAD', au: 'AUD', jp: 'JPY', mx: 'MXN', pl: 'PLN', tr: 'TRY', ae: 'AED', sg: 'SGD', th: 'THB',
+      // 2026-11-12 (docs/CURRENCIES_2026-11-12.md): the currencies added that day, each with its country.
+      il: 'ILS', cz: 'CZK', hu: 'HUF', ro: 'RON', dk: 'DKK', no: 'NOK', se: 'SEK', ch: 'CHF', my: 'MYR', kr: 'KRW', id: 'IDR', vn: 'VND', tw: 'TWD', hk: 'HKD', sa: 'SAR',
+      ma: 'MAD', qa: 'QAR', nz: 'NZD', za: 'ZAR', ph: 'PHP', co: 'COP', cl: 'CLP' };
+    // The browser's languages in order (international audit 2026-10-02, docs/INTERNATIONAL_2026-10-02.md; the extension's
+    // navLocale): a supported region wins; else a language with one main market, with no region or a euro-area one ("de",
+    // German Firefox's default, and "de-AT" got the US market in dollars); English with no supported region says nothing.
+    // A bare language after the same language with a region this page has no market for says nothing more (2026-10-26,
+    // docs/CHECKER_FIXES_2026-10-26.md): Chrome adds it to every regional choice, so "es-419, es" (Spanish, Latin America)
+    // and "es-AR, es" got Spain's market in euros, while Safari's "es-AR" alone got the US market in dollars, as every region
+    // without a market of its own does. Both now get the latter. A euro-area region ("de-CH, de", "tr-CY, tr") is as before.
+    var LANG_MARKET = { de: 'de', fr: 'fr', it: 'it', es: 'es', nl: 'nl', pl: 'pl', pt: 'pt', ja: 'jp', tr: 'tr', th: 'th', uk: 'ua', hi: 'in',
+      he: 'il', cs: 'cz', hu: 'hu', ro: 'ro', da: 'dk', nb: 'no', no: 'no', nn: 'no', sv: 'se', ms: 'my', ko: 'kr', id: 'id', vi: 'vn', fil: 'ph' };
+    var EURO_REGION = /^(at|be|ch|li|lu|ie|fi|gr|sk|si|ee|lv|lt|mt|cy|hr)$/;
+    var gl = (function () {
+      var langs = [], away = {};
+      try { langs = (navigator.languages && navigator.languages.length ? Array.prototype.slice.call(navigator.languages) : [navigator.language]); } catch (e) { langs = [navigator.language]; }
+      for (var i = 0; i < langs.length; i++) {
+        var m = String(langs[i] || '').trim().match(/^([A-Za-z]{2,3})(?:[-_][A-Za-z]{4})?(?:[-_]([A-Za-z]{2}|\d{3}))?(?:[-_]|$)/);
+        if (!m) continue;
+        var lang = m[1].toLowerCase(), region = (m[2] || '').toLowerCase();
+        if (region && CUR[region]) return region;
+        var mk = LANG_MARKET[lang];
+        if (mk && (!region ? !away[lang] : (EURO_REGION.test(region) && CUR[mk] === 'EUR'))) return mk;
+        if (region && !EURO_REGION.test(region)) away[lang] = 1;
+      }
+      return 'us';
+    })();
+    var list = ['USD', 'EUR', 'GBP', 'CAD', 'AUD', 'INR', 'JPY', 'MXN', 'BRL', 'PLN', 'TRY', 'AED', 'SGD', 'THB', 'UAH',
+      'ILS', 'CZK', 'HUF', 'RON', 'DKK', 'NOK', 'SEK', 'CHF', 'MYR', 'KRW', 'IDR', 'VND', 'TWD', 'HKD', 'SAR', 'MAD', 'QAR', 'NZD', 'ZAR', 'PHP', 'COP', 'CLP'];
+    list.forEach(function (c) { var o = document.createElement('option'); o.value = c; o.textContent = c; $('currency').appendChild(o); });
+    $('currency').value = CUR[gl];
+    var fmt = function (n, cur) { try { return new Intl.NumberFormat(undefined, { style: 'currency', currency: cur, maximumFractionDigits: 0 }).format(n); } catch (e) { return cur + ' ' + Math.round(n); } };
+    // One price, one currency mark (2026-10-05, extension 0.5.42, docs/RELEASE_QA_0.5.42.md). fmt writes an amount the way
+    // the browser's language writes that currency, and this page names the currency once beside the prices (the receipt's
+    // "in USD", the booked box's code). The share message is read away from this page, so its first amount names the
+    // currency by itself: fmtNamed adds the code only after a bare "$" or "¥"/"￥", signs several currencies write as their
+    // own ("$344 USD a night"); "US$", "$US", "€", "£", "CA$" or the code itself stand alone (never "US$ USD").
+    var SHARED_MARK = /^(?:\$|¥|￥)$/;
+    var fmtNamed = function (n, cur) {
+      var mark = '';
+      try {
+        var parts = new Intl.NumberFormat(undefined, { style: 'currency', currency: cur, maximumFractionDigits: 0 }).formatToParts(n);
+        for (var i = 0; i < parts.length; i++) if (parts[i].type === 'currency') mark = parts[i].value;
+      } catch (e) { mark = ''; }
+      return fmt(n, cur) + (SHARED_MARK.test(mark) ? ' ' + cur : '');
+    };
+    var ymd = function (d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+    var today = new Date(), d1 = new Date(); d1.setDate(d1.getDate() + 21); var d2 = new Date(d1); d2.setDate(d2.getDate() + 2);
+    $('checkIn').value = ymd(d1); $('checkOut').value = ymd(d2); $('checkIn').min = ymd(today); $('checkOut').min = ymd(today);
+    var q = new URLSearchParams(location.search);
+    // Click flag (2026-10-01, docs/CHECKER_CRAWLER_GUARD_2026-10-01.md): a person's click on one of our check forms or
+    // links (app.js on our pages, and this page's own form below) leaves the time of the click in this tab's
+    // sessionStorage under ub_ck. Read once and cleared at once, so it vouches for this load only, and only within two
+    // minutes of the click. A crawler that opens a checker link it found never clicked anything here, so it has none.
+    var CLICK_FLAG = 'ub_ck', CLICK_MS = 120000;
+    var clickedIn = false;
+    try {
+      var ck = Number(sessionStorage.getItem(CLICK_FLAG)) || 0;
+      sessionStorage.removeItem(CLICK_FLAG);
+      clickedIn = ck > 0 && Date.now() - ck >= 0 && Date.now() - ck < CLICK_MS;
+    } catch (x) { clickedIn = false; }
+    // A submit event is trusted even when a script calls requestSubmit(), so it counts only within 5 seconds of a
+    // person's own input (a trusted tap, click or key press), as in app.js.
+    var lastInput = 0;
+    ['pointerdown', 'touchstart', 'keydown', 'click'].forEach(function (t) {
+      document.addEventListener(t, function (e) { if (e.isTrusted) lastInput = Date.now(); }, { capture: true, passive: true });
+    });
+    var markCheck = function (e) {
+      if ((e && e.isTrusted === false) || Date.now() - lastInput > 5000) return; // a scripted submit is not a person's click
+      try { sessionStorage.setItem(CLICK_FLAG, String(Date.now())); } catch (x) { /* storage blocked: the next load asks for one tap */ }
+    };
+    if (q.get('hotel')) $('hotel').value = q.get('hotel').slice(0, 120);
+    // Never in the past (2026-10-02, X2, docs/EXPERIMENTS.md): a link whose check-in has passed (an old hotel or city page
+    // form, a stale bookmark) keeps the later-stay defaults above, labelled sample dates in the result, instead of
+    // checking dates nobody can book. A shared link's passed dates are handled below (its note asks for new ones).
+    var linkPast = q.get('src') !== 'share' && /^\d{4}-\d{2}-\d{2}$/.test(q.get('in') || '') && q.get('in') < ymd(today);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(q.get('in') || '') && !linkPast) $('checkIn').value = q.get('in');
+    if (/^\d{4}-\d{2}-\d{2}$/.test(q.get('out') || '') && !linkPast) $('checkOut').value = q.get('out');
+    if (q.get('adults')) $('adults').value = Math.min(6, Math.max(1, parseInt(q.get('adults'), 10) || 2));
+    if (q.get('cur') && list.indexOf(q.get('cur')) >= 0) $('currency').value = q.get('cur');
+    // Readable stay (2026-09-30 UX pass): "Wed, Oct 21 to Fri, Oct 23 · 2 nights" instead of ISO dates.
+    var parseYmd = function (s) { var p = String(s).split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); };
+    var nightsOf = function (a, b) { var x = parseYmd(a), y = parseYmd(b); return Math.round((Date.UTC(y.getFullYear(), y.getMonth(), y.getDate()) - Date.UTC(x.getFullYear(), x.getMonth(), x.getDate())) / 864e5); };
+    var dayFmt = function (s) {
+      var d = parseYmd(s);
+      // English words in this English page (2026-10-02): a German browser wrote "Fr., 6. Nov. to Mo., 9. Nov.". An English
+      // browser keeps its order; any other gets English names in day-month order ("Fri 6 Nov").
+      var dl = /^en(-|$)/i.test(navigator.language || 'en-US') ? (navigator.language || 'en-US') : 'en-GB';
+      try { return new Intl.DateTimeFormat(dl, { weekday: 'short', month: 'short', day: 'numeric', year: d.getFullYear() === today.getFullYear() ? undefined : 'numeric' }).format(d); } catch (e) { return s; }
+    };
+    // A translated page shows its dates in its own words ("vie, 6 nov"); the shared message keeps dayFmt's English.
+    var dayShow = function (s) {
+      if (!L10N) return dayFmt(s);
+      var d = parseYmd(s);
+      try { return L10N.date(d, { weekday: 'short', month: 'short', day: 'numeric', year: d.getFullYear() === today.getFullYear() ? undefined : 'numeric' }); } catch (e) { return s; }
+    };
+    var stayText = function (st) {
+      var n = nightsOf(st.checkIn, st.checkOut);
+      if (!L10N) return dayFmt(st.checkIn) + ' to ' + dayFmt(st.checkOut) + ' · ' + n + '\u00a0night' + (n === 1 ? '' : 's');
+      return L10N.range(dayShow(st.checkIn), dayShow(st.checkOut)) + ' · ' + (n === 1 ? T('{n}\u00a0night', { n: n }) : T('{n}\u00a0nights', { n: n }));
+    };
+    // Dates that came with the link, labelled in the result until the visitor changes them. A hotel page sends dates the
+    // visitor never chose (3 weeks out, 2 nights) unless they picked dates in its check form (2026-10-01), so there only
+    // the checker's own defaults count as sample dates. A shared link's dates (src=share) are the sharer's, as they came.
+    var sampleIn = q.get('src') === 'share' ? $('checkIn').value : ymd(d1);
+    var sampleOut = q.get('src') === 'share' ? $('checkOut').value : ymd(d2);
+    // Arriving from the install-time welcome page: the extension is already installed, so the
+    // install pitch becomes a note about what happens next.
+    var fromWelcome = q.get('src') === 'welcome';
+    // Arriving from a /hotels/* snapshot page (src=hotel): forwarded on every check this visit, counted as cwebHotel.
+    var fromHotel = q.get('src') === 'hotel';
+    // Arriving from a holiday page's form (src=holiday, 2026-11-03, X48): forwarded on every check this visit, counted as
+    // cwebHoliday from the worker deploy that adds it (the worker ignores an unknown src until then). Nothing else changes.
+    var fromHoliday = q.get('src') === 'holiday';
+    // Arriving from the phone homepage's form (src=home_phone, or home_phone_hol for a holiday week; 2026-11-04, X54):
+    // forwarded on every check this visit, counted as cwebHomePhone from the worker deploy that adds it (the worker ignores
+    // an unknown src until then). Nothing else changes.
+    var fromHomePhone = /^home_phone(_hol)?$/.test(q.get('src') || '') ? q.get('src') : '';
+    // Arriving on a link from "Share this check" (src=share, 2026-10-01): forwarded on every check and booking-site
+    // click this visit, counted as cwebShare and goWebShare. The link's dates are the sharer's, labelled as such.
+    var fromShare = q.get('src') === 'share';
+    // A shared link made by the extension's banner (2026-10-01) also carries via=ext: forwarded with src=share on every
+    // check and booking-site click this visit, and the arrival counts web_share_visit_ext too, so /stats can tell shares
+    // from the extension apart (cwebShareExt, goWebShareExt). A share made here again carries no via.
+    var viaExt = fromShare && q.get('via') === 'ext';
+    var sharedIn = fromShare && /^\d{4}-\d{2}-\d{2}$/.test(q.get('in') || '') && /^\d{4}-\d{2}-\d{2}$/.test(q.get('out') || '');
+    // Where the visitor came from (2026-09-29), as a CATEGORY only: the referrer's address never leaves the page.
+    // search engine, our own site, none (typed or bookmarked), a social site, or another site. Sent with each check.
+    var refCat = (function () {
+      var h = ''; try { h = document.referrer ? new URL(document.referrer).hostname.toLowerCase() : ''; } catch (x) { h = ''; }
+      if (!h) return 'direct';
+      if (/(^|\.)underbook\.co$/.test(h)) return 'ours';
+      if (/(^|\.)(google|bing|duckduckgo|yahoo|ecosia|yandex|baidu|brave|startpage|qwant|naver)\./.test(h)) return 'search';
+      if (/(^|\.)(facebook|instagram|twitter|x|t|reddit|linkedin|pinterest|tiktok|youtube|threads|bsky)\./.test(h) || /(^|\.)t\.co$/.test(h)) return 'social';
+      return 'other';
+    })();
+    // Where this visit came from, sent with each check as one word (ls=, 2026-10-26, docs/ATTRIBUTION_2026-10-26.md): outreach,
+    // ai, youtube, store, search, direct or other. app.js keeps the visit's word in this tab's sessionStorage (ub_ls) from its
+    // first page. A check that starts before app.js has run (a shared link or the install page's form checks on load), or in
+    // a browser that keeps no storage, works it out from this page alone with ubLandOf, app.js's function word for word
+    // (scripts/worker-ladder-test.mjs TLS3 holds the two copies the same). The worker counts each word as a daily total
+    // (cwebLand in /stats); the address, its tags and the referrer never leave the page.
+    var LANDS = ['outreach', 'ai', 'youtube', 'store', 'search', 'direct', 'other'];
+    function ubLandOf(search, referrer, host) {
+      var q = null, src = '', med = '', h = '';
+      try { q = new URLSearchParams(search || ''); src = (q.get('utm_source') || '').trim().toLowerCase(); med = (q.get('utm_medium') || '').trim().toLowerCase(); } catch (e) { q = null; }
+      try { h = referrer ? new URL(referrer).hostname.toLowerCase() : ''; } catch (e) { h = '-'; }
+      var AI = /^(chatgpt(\.com)?|chat\.openai\.com|com\.openai\.chatgpt|perplexity|(www\.)?perplexity\.ai|ai\.perplexity\.app\.android|claude(\.ai)?|com\.anthropic\.claude|copilot|(www\.)?copilot\.com|copilot\.microsoft\.com|edgeservices\.bing\.com|m365\.cloud\.microsoft|com\.microsoft\.copilot|gemini|gemini\.google\.com|bard\.google\.com|com\.google\.android\.apps\.bard|you\.com|phind|(www\.)?phind\.com|(www\.)?meta\.ai|deepseek|chat\.deepseek\.com|grok(\.com)?|mistral|chat\.mistral\.ai)$/;
+      var YT = /^(youtube|(www\.|m\.)?youtube\.com|youtu\.be|com\.google\.android\.youtube)$/;
+      var STORE = /^(chromewebstore\.google\.com|chrome\.google\.com|addons\.mozilla\.org|microsoftedge\.microsoft\.com|apps\.apple\.com)$/;
+      var SEARCH = /^(google|bing|duckduckgo|yahoo|ecosia|yandex|baidu|brave|startpage|qwant|naver)$|(^|\.)(google|bing|duckduckgo|yahoo|ecosia|yandex|baidu|brave|startpage|qwant|naver)\.|^com\.google\.android\.googlequicksearchbox$/;
+      if (src === 'underbook.co') src = ''; // our own tags (the send-to-self link) say nothing about how the visit began
+      if ((q && q.get('o')) || src === 'outreach' || med === 'email') return 'outreach'; // ?o=<code>: our outreach emails
+      if (src) return AI.test(src) ? 'ai' : YT.test(src) ? 'youtube' : STORE.test(src) ? 'store' : SEARCH.test(src) || med === 'cpc' ? 'search' : 'other';
+      if (q && q.get('src') === 'welcome') return 'store';
+      if (!h) return 'direct';
+      if (h === String(host || '').toLowerCase() || /(^|\.)underbook\.co$/.test(h)) return ''; // a later page of the visit
+      return AI.test(h) ? 'ai' : YT.test(h) ? 'youtube' : STORE.test(h) ? 'store' : SEARCH.test(h) ? 'search' : 'other';
+    }
+    function landNow() {
+      var v = '';
+      try { v = sessionStorage.getItem('ub_ls') || ''; } catch (x) { v = ''; }
+      return LANDS.indexOf(v) >= 0 ? v : (ubLandOf(location.search, document.referrer, location.hostname) || 'other');
+    }
+    // A hotel page whose name lacks its city also passes city=; used only as one retry after a no-match
+    // on the unchanged arrival name (9/29: first-try city cut listings 27 to 6, as a retry it only rescues).
+    var arrivalName = (q.get('hotel') || '').slice(0, 120).trim();
+    var arrivalCity = fromHotel ? (q.get('city') || '').slice(0, 60).trim() : '';
+    // 9/30: hotel pages also pass pt= (the hotel's Google property token from the study), so the check prices that
+    // exact hotel. Sent only while the hotel field still holds the arrival name; a typed name drops it.
+    // A shared link carries pt= too when the shared check was priced by it, so the same hotel is priced again.
+    var arrivalPt = (fromHotel || fromShare) && /^[A-Za-z0-9_-]{16,160}$/.test(q.get('pt') || '') ? q.get('pt') : '';
+    // Dates that came with the link (a hotel page's sample dates, or the dates of a shared check), not from the visitor.
+    var linkDates = fromHotel || fromShare;
+    var datesLabel = sharedIn ? T('Shared dates:') : T('Sample dates:');
+    // The extension offer under a result (2026-10-01): computers only. Phones and tablets cannot add an extension, so the
+    // offer leaves the page there (the same device test as app.js); a visitor sent by the install's welcome page already
+    // has it and gets a note instead.
+    var handheld = (function () {
+      try {
+        if (navigator.userAgentData && navigator.userAgentData.mobile) return true;
+        if (/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || '')) return true;
+        return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+      } catch (x) { return false; }
+    })();
+    var ic = $('installCta');
+    if (ic && fromWelcome) {
+      ic.innerHTML = '<p class="text-sm text-slate-700"><strong class="text-ink">Underbook is installed.</strong> Next time you open a hotel on Booking.com, Expedia, Hotels.com, Agoda or a hotel\'s own site with your dates, it runs this check on the page by itself.</p>';
+    } else if (ic && handheld) {
+      ic.parentNode.removeChild(ic); ic = null;
+    }
+    // Phone path (2026-10-06, docs/PHONE_PATH_2026-10-06.md): on a phone or tablet the result gets app.js's card instead
+    // (the extension on a computer, and the link to open there). Not on computers, and not on a visit from the install's
+    // welcome page (a Safari install on an iPhone already has it). Shown with each result once app.js has filled it
+    // (data-ub-ready), unless app.js showed the note above the form on this page view (data-ub-skip).
+    var pl = $('phoneLink');
+    if (pl && (!handheld || fromWelcome)) { pl.parentNode.removeChild(pl); pl = null; }
+    // X95 (2026-11-17, docs/EXPERIMENTS.md): on a result with prices (top), a card that holds the App Store line (iPhone
+    // and iPad: the only install a phone visitor there has) is drawn directly under the answer and its Open button, where
+    // a computer's offer sits, above the question, the share line and "Already booked"; it ended 868px to 952px into the
+    // result on an iPhone, below the first screen. Every other card (Android, X76), and a result priced for another
+    // country (the list sits under the answer there), keeps the place in the markup, under "Already booked".
+    // 2026-11-17 (inline-x95-1117): the guide pages' check box runs this same function (check-inline.js) and has no
+    // "Already booked" (its $('bookedJump') is a detached spare): there the card stays where the box's markup puts it,
+    // which on a phone is already directly under the answer. Without at.parentNode an Android card or any phone's
+    // other-country result stopped the box's answer ("Something went wrong"). On this page bookedJump is always there.
+    function phoneShown(top) {
+      if (!pl) return;
+      var up = !!top && !!pl.querySelector('[data-ub-appstore]'), at = up ? $('verdict') : $('bookedJump');
+      if (at && at.parentNode && pl.previousElementSibling !== at) at.parentNode.insertBefore(pl, at.nextSibling);
+      if (pl.getAttribute('data-ub-ready') === '1' && !pl.hasAttribute('data-ub-skip')) pl.classList.remove('hidden');
+    }
+    // Phone clicks (2026-10-06, docs/PHONE_CLICKS_2026-10-06.md), phones and tablets only; a computer's page is unchanged.
+    // 1. A result scrolls to just under the nav. This section's own 72px scroll margin came on top of the site's 80px
+    //    (styles.css, html scroll-padding-top: 5rem), so a result stopped 152px down, under the bottom of the form.
+    // 2. Each row of the site list opens its site wherever it is tapped: the row's Open link, a size larger, covers the
+    //    row (styles.css, .ub-tap-rows). The Open button alone was 26px tall, and a tap on a site's name or price did nothing.
+    //    Same link, words and label as on a computer; the list's order and every line in it are unchanged.
+    // X29 (2026-10-22): point 1 now holds on computers too: the section has no scroll margin of its own (the markup above).
+    if (handheld) { $('sites').classList.add('ub-tap-rows'); }
+    var ROW_OPEN = handheld ? 'ub-row-open inline-block mt-1 text-sm font-semibold px-3 py-1.5 rounded-lg border border-stone-300 bg-white hover:border-ink'
+      : 'inline-block mt-1 text-xs font-semibold px-2.5 py-1 rounded-md border border-stone-300 hover:border-ink';
+    function rowOpen(link, source, all, cur) {
+      return link ? '<a href="' + esc(link) + '" target="_blank" rel="noopener sponsored" data-site="' + esc(source) + '" aria-label="' + T('Open {site}, {price} a night', { site: esc(source), price: fmt(all, cur) }) + '" class="' + ROW_OPEN + '">' + T('Open') + '</a>' : '';
+    }
+    // A person's click on the offer, once per page view, as an anonymous daily total: result_install_hotel on a visit that
+    // came from a /hotels/* page, else result_install_other. app.js still counts it as site_install like every store
+    // button; this count says the click came from a result, and from which kind of visit.
+    // X1 (2026-10-02, docs/EXPERIMENTS.md): the same click also counts web_install_click, and the offer on screen with a
+    // result counts web_install_shown, each once per page view, so the offer's own rate can be read next to site_install
+    // per cwebComputer. Computers only: on phones and tablets the offer is not on the page, and below 640px (sm:flex) it
+    // is not drawn, so nothing is counted. Not counted after "Not now", on the welcome page's "installed" note, or from a
+    // browser that says it is automated (isAuto, below). Only {"ev": <name>} is sent.
+    var installSent = false, installShown = false, installClicked = false;
+    function offerShown() {
+      if (!ic || fromWelcome || installShown || isAuto || !ic.getClientRects().length) return;
+      installShown = true; wev('web_install_shown');
+    }
+    // "Not now": the offer leaves the page for the rest of this page view (nothing is stored). Focus moves to the next
+    // control in the result, so a keyboard user is not left on a removed button. X17: the offer sits above the share row,
+    // so that is the next control (on another country's prices there is no share row: "Watch your booking").
+    function offerHide() {
+      if (!ic) return;
+      var had = ic.contains(document.activeElement);
+      // X20 (2026-10-10): on a lower-price result the share row sits above the offer, so the next control is the first of
+      // these that comes after the offer in the page (else the first one shown).
+      var box = ic, cands = ['shareBtn', 'bookedJumpBtn', 'ub-open'].map($).filter(function (el) { return el && el.getClientRects().length; });
+      var after = cands.filter(function (el) { return box.compareDocumentPosition(el) & 4; }); // Node.DOCUMENT_POSITION_FOLLOWING
+      ic.parentNode.removeChild(ic); ic = null;
+      if (!had) return;
+      var next = after[0] || cands[0];
+      if (next) { try { next.focus({ preventScroll: true }); } catch (x) { next.focus(); } }
+    }
+    // X17 (2026-10-06, docs/CHECKER_INSTALL_2026-10-06.md): after a person opens a booking site from the result (the main
+    // button, the free-cancellation button or a row's Open, each in a new tab), the offer's first line says so and names that
+    // site, and the box is outlined, so a traveler who comes back to this tab finds the offer under the button they used.
+    // For Booking.com, Expedia, Hotels.com and Agoda (the sites the offer names) it says the check runs on that site's hotel
+    // page; for any other site it names those four and the hotel's own site, as the line it replaces does. Nothing is stored
+    // or sent for this, and each new result puts the first line back. A store click made while the line says so also counts
+    // web_install_after_go: only with web_install_click (so it is one of those clicks, once per page view), never from a
+    // browser that says it is automated. Not after "Not now", and not on the welcome page's "installed" note.
+    // X29 (2026-10-22, docs/SITE_INSTALL_2026-10-22.md): the plain first line names the visitor's browser, the one the offer's
+    // button installs into. The same tests as app.js (isEdge, isFirefox), which routes the button to Edge Add-ons or Firefox
+    // Add-ons and relabels it: change the two together. Every other computer browser keeps Chrome, as the button does.
+    var BROWSER = (function () {
+      try {
+        var ua = navigator.userAgent || '', br = (navigator.userAgentData && navigator.userAgentData.brands) || [];
+        if (br.some(function (x) { return /Microsoft Edge/i.test(x.brand); }) || /\bEdg\//.test(ua)) return 'Edge';
+        if (/\bFirefox\//.test(ua) && !/\bSeamonkey\//i.test(ua)) return 'Firefox';
+      } catch (x) { /* Chrome */ }
+      return 'Chrome';
+    })();
+    // X118 (2026-11-23, docs/EXPERIMENTS.md): from the second priced result of a page view the first line counts the
+    // visitor's own checks ("You have run 2 checks in this visit."), then the same sentence as before. On 11/22 computers
+    // ran 38 checks here in at most 19 page views and the offer was pressed 0 times in 28 views that week. The count
+    // lives in this page view only: nothing is stored in the browser and nothing is sent. offerReset() runs once per
+    // priced result, so that is where it goes up; it is kept on the function itself (offerReset.n), so the two
+    // functions stay whole when scripts/answer_check_20261026.py lifts them.
+    // X124 (2026-11-23, docs/EXPERIMENTS.md): on the first priced result of a visit that began at an AI assistant
+    // (landNow() 'ai'), on the English page only (no L10N), the first line asks about the other hotels on the visitor's
+    // list. The sentence after it, the count from the second result and offerAfterGo() are unchanged. Only on this page's
+    // own address: the guide pages' box (check-inline.js) runs this function word for word and keeps today's line.
+    function leadPlain() {
+      return '<strong class="block text-base text-ink">' + (offerReset.n >= 2 ? T('You have run {n} checks in this visit.', { n: offerReset.n }) : !L10N && landNow() === 'ai' && /^\/hotel-price-checker(\.html)?\/?$/.test(location.pathname) ? 'Checking the other hotels on your list?' : T('Check hotel prices on the hotel page itself.')) + '</strong> ' +
+        T('The free Underbook extension for {browser} runs this check by itself when you open a hotel with your dates on Booking.com, Expedia, Hotels.com, Agoda or the hotel&#39;s own site.', { browser: BROWSER });
+    }
+    var EXT_SITE = /^(booking\.com|expedia(\.com)?|hotels\.com|agoda(\.com)?)$/i;
+    var afterGo = false;
+    function offerTone(on) {
+      if (!ic) return;
+      ['border-stone-200', 'bg-stone-50'].forEach(function (c) { ic.classList.toggle(c, !on); });
+      ['border-accent', 'bg-emerald-50/40'].forEach(function (c) { ic.classList.toggle(c, on); });
+    }
+    function offerReset() {
+      afterGo = false;
+      offerReset.n = Math.min(999, (offerReset.n || 0) + 1);
+      if (!ic || fromWelcome || !$('installLead')) return;
+      $('installLead').innerHTML = leadPlain();
+      offerTone(false);
+    }
+    function offerAfterGo(site) {
+      if (!ic || fromWelcome || !$('installLead') || !site) return;
+      afterGo = true;
+      var named = EXT_SITE.test(site);
+      var sv = { site: esc(site) };
+      $('installLead').innerHTML = '<span class="block text-xs text-stone-500">' + T('Opened {site} in a new tab.', sv) + '</span>' +
+        '<strong class="block text-base text-ink">' + (named ? T('Next time, get this check on the {site} page itself.', sv) : T('Next time, get this check on the hotel page itself.')) + '</strong> ' + (named
+          ? T('When you open a hotel on {site} with your dates, the free Underbook extension runs it on that page by itself.', sv)
+          : T('When you open a hotel with your dates on Booking.com, Expedia, Hotels.com, Agoda or the hotel&#39;s own site, the free Underbook extension runs it on that page by itself.'));
+      offerTone(true);
+    }
+    var goClick = function (e) {
+      if (e.isTrusted === false || (e.type === 'auxclick' && e.button !== 1) || !e.target.closest) return;
+      var a = e.target.closest('a[data-site]');
+      if (a) offerAfterGo(a.getAttribute('data-site'));
+    };
+    $('result').addEventListener('click', goClick);
+    $('result').addEventListener('auxclick', goClick); // a middle click opens the site in a background tab
+    if (ic) ic.addEventListener('click', function (e) {
+      if (!e.target.closest) return;
+      if (e.target.closest('#installHide')) { offerHide(); return; }
+      if (e.isTrusted === false || !e.target.closest('a.ub-install')) return;
+      if (!installSent) { installSent = true; wev(fromHotel ? 'result_install_hotel' : 'result_install_other'); }
+      if (!installClicked && !isAuto) { installClicked = true; wev('web_install_click'); if (afterGo) wev('web_install_after_go'); }
+    });
+    // X40 (2026-10-27, docs/WEB_RESULT_INSTALL_2026-10-27.md): the offer under a no-price result (#noneInstall, in X5's block).
+    // Only where the extension can be added: every Chromium browser (Chrome, Edge, Brave, Opera, Vivaldi, Arc) from its
+    // store, Firefox from Firefox Add-ons; never desktop Safari (its user agent names no Chrome, Chromium or Firefox), a
+    // phone or a tablet (handheld), or a visit from the install's welcome page (it is installed). Its sentence names the
+    // visitor's browser (BROWSER, X29's). "Not now" on X29's offer puts this one away too, for the rest of the page view.
+    // Counted, once per page view each and never from a browser that says it is automated (isAuto): web_none_install_shown
+    // when it is drawn with a no-price result (X5's block shown by noneShow(), 640px and wider), web_none_install_click on a
+    // person's click on its store button (app.js counts the same click as site_install). Written apart from noneShow() and
+    // the other pieces scripts/answer_check_20261026.py lifts into the guide pages' box (check-inline.js, X33), so the box
+    // is unchanged: it has no no-price block and draws no X40 offer.
+    var CAN_ADD = (function () {
+      try {
+        if (BROWSER !== 'Chrome') return true; // Edge, Firefox
+        var br = (navigator.userAgentData && navigator.userAgentData.brands) || [];
+        return br.length > 0 || /\b(Chrome|Chromium)\//.test(navigator.userAgent || '');
+      } catch (x) { return false; }
+    })();
+    var ni = $('noneInstall'), niShown = false, niClicked = false;
+    if (ni && (handheld || fromWelcome || !CAN_ADD || !window.MutationObserver)) { ni.parentNode.removeChild(ni); ni = null; }
+    if (ni) {
+      $('noneInstallLead').textContent = T('The free Underbook extension for {browser} checks prices by itself when you open a hotel with your dates on Booking.com, Expedia or Hotels.com, and can email you when a price appears or drops.', { browser: BROWSER });
+      document.addEventListener('click', function (e) {
+        if (ni && e.target && e.target.closest && e.target.closest('#installHide')) { ni.parentNode.removeChild(ni); ni = null; }
+      });
+      new MutationObserver(function () {
+        if (!ni || niShown || isAuto || $('noneNext').classList.contains('hidden') || !ni.getClientRects().length) return;
+        niShown = true; wev('web_none_install_shown');
+      }).observe($('noneNext'), { attributes: true, attributeFilter: ['class'] });
+      ni.addEventListener('click', function (e) {
+        if (niClicked || e.isTrusted === false || isAuto || !e.target.closest || !e.target.closest('a.ub-install')) return;
+        niClicked = true; wev('web_none_install_click');
+      });
+    }
+    var stay = null;
+
+    // Every Open link goes through the worker's /go (counted as goWeb). Responses from worker
+    // 366be171 and older cached ones carry raw links in `more`; wrap those here.
+    // A visit that arrived on a shared link adds src=share (the worker counts person-started ones as goWebShare); one
+    // that arrived from a /hotels/* page adds src=hotel (goWebHotel, 2026-10-01, docs/HOTEL_PAGE_FUNNEL_2026-10-01.md), so
+    // the hotel-page funnel can be read to its end. A visit has at most one src.
+    function goHref(link, source) {
+      if (!link) return '';
+      var tag = '&ch=web' + (fromShare ? '&src=share' + (viaExt ? '&via=ext' : '') : fromHotel ? '&src=hotel' : '');
+      if (link.indexOf(API + '/go?') === 0) return link + tag;
+      return API + '/go?u=' + encodeURIComponent(link) + '&s=' + encodeURIComponent(source || '') + tag;
+    }
+
+    // The cheaper site, in one line (2026-10-10, docs/CARD_TRUST_2026-10-10.md, X22). On a lower price, right above the Open
+    // button: "This site may ask you to sign in to see this price." when the site is on the Vio.com booking engine (Vio.com,
+    // Etrip.net, goSeek, Kiwi.com: about 5 of 22 of their pages read asked for a sign-in), and "Is <site> legit?", a link to
+    // our page about that site, when it is a lesser-known site with such a page. Both lists are the worker's (SITE_PAGES and
+    // SIGN_IN_SITES in worker.js), sent as siteNotes with a priced answer (sn=1); nothing here names a site. A page name that
+    // is not is-<name>-legit is never linked. Never on PARITY or a no-price result. The link opens our page in a new tab (no
+    // data-site, so X17's offer does not read it as a booking site). A person's click counts legit_click, once per result,
+    // never from a browser that says it is automated (isAuto); only {"ev": "legit_click"} is sent, never the site.
+    var TRUST_PAGE = /^is-[a-z0-9]+(?:-[a-z0-9]+)*-legit$/;
+    function trustNote(a, source) {
+      var all = a && a.siteNotes;
+      var n = all && typeof all === 'object' && source && Object.prototype.hasOwnProperty.call(all, source) ? all[source] : null;
+      if (!n || typeof n !== 'object') return null;
+      var page = typeof n.legit === 'string' && TRUST_PAGE.test(n.legit) && typeof n.name === 'string' && n.name.trim() ? n.legit : '';
+      var signIn = n.signIn === true;
+      return page || signIn ? { page: page, name: page ? n.name.trim().slice(0, 40) : '', signIn: signIn } : null;
+    }
+    function trustLine(a, c, verdict) {
+      if (verdict !== 'UNVERIFIED_LOWER' && verdict !== 'REAL_LOWER_MATCHED') return '';
+      var t = trustNote(a, c && c.source);
+      if (!t) return '';
+      // A translated page (docs/LOCALIZE_2026-10-10.md): both sentences through T(); the English output is unchanged.
+      return '<p id="ub-trust" class="text-sm text-slate-600 mt-3">' + (t.signIn ? T('This site may ask you to sign in to see this price.') : '') + (t.signIn && t.page ? ' ' : '') +
+        (t.page ? '<a id="ub-legit" href="' + esc('/' + t.page) + '" target="_blank" rel="noopener" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">' + T('Is {site} legit?', { site: esc(t.name) }) + '</a>' : '') + '</p>';
+    }
+    var legitSent = false;
+    var legitClick = function (e) {
+      if (legitSent || e.isTrusted === false || (e.type === 'auxclick' && e.button !== 1) || !e.target.closest || !e.target.closest('#ub-legit') || isAuto) return;
+      legitSent = true; wev('legit_click');
+    };
+    $('result').addEventListener('click', legitClick);
+    $('result').addEventListener('auxclick', legitClick);
+
+    // X5 (2026-10-02, docs/EXPERIMENTS.md): a no-price result's next step. Two dated searches for the name the visitor
+    // typed (st.hotel), with the stay's dates and adults: Booking.com (ss, checkin, checkout, group_adults) and Expedia
+    // (destination, startDate, endDate, adults). Through /go like every booking-site link, plus res=none, so the worker
+    // counts a person's click apart (goWebNone, inside goWeb). Counted as web_none_next_shown once per no-price result,
+    // never from a browser that says it is automated (isAuto). Only {"ev": <name>} is sent; never the name or the dates.
+    function noneHide() { $('noneNext').classList.add('hidden'); }
+    function noneShow(st) {
+      var qs = function (o) { return Object.keys(o).map(function (k) { return k + '=' + encodeURIComponent(o[k]); }).join('&'); };
+      var stayWords = st.hotel + ', ' + stayText(st);
+      var bk = 'https://www.booking.com/searchresults.html?' + qs({ ss: st.hotel, checkin: st.checkIn, checkout: st.checkOut, group_adults: st.adults, no_rooms: 1, group_children: 0 });
+      var ex = 'https://www.expedia.com/Hotel-Search?' + qs({ destination: st.hotel, startDate: st.checkIn, endDate: st.checkOut, adults: st.adults, rooms: 1 });
+      [['noneBooking', bk, 'Booking.com'], ['noneExpedia', ex, 'Expedia']].forEach(function (x) {
+        var a = $(x[0]);
+        a.href = goHref(x[1], x[2]) + '&res=none';
+        a.setAttribute('aria-label', T('Search {site} for {stay}', { site: x[2], stay: stayWords }));
+      });
+      var box = $('noneNext');
+      box.classList.remove('hidden');
+      if (!isAuto) wev('web_none_next_shown');
+      // On a phone the two links can sit just under the first screen; bring them up without moving a page that already shows them.
+      try { box.scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth', block: 'nearest' }); } catch (x) { /* ignore */ }
+    }
+
+    // One row per site, the first entry Google lists. Booking.com's free link (2026-11-19, docs/BOOKING_FREE_LINK_2026-11-19.md,
+    // list line X105): Google often lists Booking.com twice at the same price, its sponsored ad first (/aclk) and its free
+    // listing after it (/travel/.../clk); in the saved answers 502 of 1,638 that list Booking.com. The row keeps the first
+    // entry's price, room and labels and opens the free listing's link: the same site and price, and a press on it can go
+    // out through the partner link (the worker never wraps an ad click). adLink keeps the ad link for the Open button.
+    function sitesDedup(sources) {
+      var seen = {}, out = [];
+      var ad = function (u) { return /^https:\/\/www\.google\.[a-z.]+\/(?:pagead\/)?aclk\?/.test(String(u || '')); };
+      var free = function (u) { return /^https:\/\/www\.google\.[a-z.]+\/travel\/(?:[a-z]+\/)*clk\?/.test(String(u || '')); };
+      (sources || []).forEach(function (s) {
+        if (!s || !s.source) return; var k = s.source.toLowerCase();
+        if (seen.hasOwnProperty(k)) {
+          var o = out[seen[k]];
+          if (k === 'booking.com' && !o.adLink && ad(o.link) && free(s.link) && o.allIn === s.allIn && o.nightly === s.nightly && !o.country === !s.country) {
+            var c2 = {}; for (var f in o) if (o.hasOwnProperty(f)) c2[f] = o[f];
+            c2.link = s.link; c2.adLink = o.link; out[seen[k]] = c2;
+          }
+          return;
+        }
+        seen[k] = out.length; out.push(s);
+      });
+      return out;
+    }
+
+    // Another country's site (2026-10-01, docs/FOREIGN_STOREFRONT_2026-10-01.md). The worker sends listings Google priced
+    // for a visitor in another country (their link names it, or the answer's other links do) in a.otherCountry, each with
+    // its `country`. This page lists them with a note and never makes one the lowest, the main button or the
+    // free-cancellation line. A site already listed for this market is not listed twice.
+    function countryName(cc) {
+      if (L10N) return L10N.countryName(cc);
+      try { return new Intl.DisplayNames(['en'], { type: 'region' }).of(cc) || cc; } catch (e) { return cc; }
+    }
+    // "the United States", "Canada": a country as the end of "a visitor in ...".
+    function countryPhrase(cc) {
+      var c = String(cc || '').toUpperCase();
+      return (/^(US|GB|NL|AE|PH|BS|GM|DO|CF|KM|MV|MH|SB)$/.test(c) ? 'the ' : '') + countryName(c);
+    }
+    function otherRows(a, srcs) {
+      var have = {};
+      (srcs || []).forEach(function (s) { have[s.source.toLowerCase()] = 1; });
+      return sitesDedup(a.otherCountry || []).filter(function (s) { return s.country && !have[s.source.toLowerCase()]; });
+    }
+    function otherNote(s) {
+      return '<p class="text-xs text-amber-800">' + T('Another country&#39;s site: priced for travelers in {country}. Yours may differ.', { country: esc(countryName(s.country)), in_country: L10N ? esc(L10N.inCountry(s.country)) : '' }) + '</p>';
+    }
+    // All-in rows first, low to high; rows with no tax figure (pre-tax rate only) after them, so a smaller pre-tax
+    // number never sits above the row tagged lowest.
+    function byShown(x, y) {
+      var price = function (s) { return s.allIn != null ? s.allIn : s.nightly; };
+      var ax = x.allIn == null, ay = y.allIn == null; if (ax !== ay) return ax - ay; var px = price(x), py = price(y); return (px == null) - (py == null) || (px == null ? 0 : px - py);
+    }
+    function stayHead(sample) {
+      return '<p class="text-sm text-stone-500">' + esc(stay.hotel) + ' · ' + (stay.adults > 1 ? T('{n} adults', { n: stay.adults }) : T('{n} adult', { n: stay.adults })) + '</p>' +
+        '<p class="text-sm mt-0.5 mb-2 leading-7"><span id="ub-stay" class="' + (sample ? 'text-amber-800' : 'text-stone-700') + '">' +
+        (sample ? '<strong>' + datesLabel + '</strong> ' : '') + esc(stayText(stay)) + '</span> ' +
+        '<button id="ub-dates" type="button" class="inline-block ml-1 text-sm font-semibold text-ink px-2.5 py-0.5 rounded-lg border border-stone-300 bg-white hover:border-ink">' + (sample ? T('Enter your dates') : T('Change dates')) + '</button>' +
+        (sample ? '' : '<button id="ub-another" type="button" class="inline-block ml-1 mt-1 text-sm font-semibold text-ink px-2.5 py-0.5 rounded-lg border border-stone-300 bg-white hover:border-ink">' + T('Check another hotel') + '</button>') + '</p>';
+    }
+
+    // Where the list of prices sits (2026-11-16, labelled-order; data/foreign/labelled_2026-11-16/walk): on a result priced
+    // for another country (renderOther) the list is the answer, so it goes directly under the heading's note (#verdict),
+    // ahead of the install offer, the one question, the watch line and the phone card; every other result puts it back in
+    // its own place, just above the receipt line. The guide pages' box (check-inline.js) keeps its list in a closed
+    // "See the price on each site" fold: on such a result the fold moves with it and is opened, and closed again on the
+    // next result only if it was opened here.
+    function listPlace(other) {
+      var el = $('sites'), v = $('verdict'), rc = $('receipt');
+      if (!el || !v || !rc) return;
+      var box = el.parentNode && el.parentNode.tagName === 'DETAILS' ? el.parentNode : el;
+      if (other) v.parentNode.insertBefore(box, v.nextSibling);
+      else rc.parentNode.insertBefore(box, rc);
+      if (box.tagName !== 'DETAILS') return;
+      if (other && !box.open) { box.open = true; box.setAttribute('data-ub-opened', '1'); }
+      else if (!other && box.getAttribute('data-ub-opened')) { box.open = false; box.removeAttribute('data-ub-opened'); }
+    }
+    function render(a, cur) {
+      listPlace(false);
+      var c = a.cheapest || {}, rm = a.roomMatch || {}, srcs = sitesDedup((a.sources || []).concat(a.more || []));
+      var nSites = a.sourceCount || srcs.length;
+      var base = a.consensusAllIn != null ? a.consensusAllIn : a.consensus;
+      var price = function (s) { return s.allIn != null ? s.allIn : s.nightly; };
+      // All-in order (2026-09-30 UX pass). The worker ranks sites by the pre-tax rate, but this page shows the all-in
+      // price, so a site whose taxes are higher could sit on top as "lowest" above cheaper rows (1253 Recoleta Small
+      // Hotel: Agoda $104 over three $102 rows). Rows now run low to high by the price shown (stable, so ties keep the
+      // worker's order), and the headline and main button name the lowest price shown. The worker's pick stays when it
+      // ties for lowest, and when its room name matched the going rate's (REAL_LOWER_MATCHED): a room-name match is
+      // the only same-room evidence there is, and it belongs to that listing alone.
+      // All-in rows first, low to high (byShown). The rows from another country's site are listed with them (shown) but
+      // never picked below.
+      srcs.sort(byShown);
+      var shown = srcs.concat(otherRows(a, srcs)).sort(byShown);
+      // Tax guard (operator review, 2026-09-30): only listings with a known all-in price can take the headline from the
+      // worker's pick. A site that reports no tax figure shows its pre-tax rate, which would look cheaper than every
+      // all-in price simply by leaving taxes out.
+      var withAll = srcs.filter(function (s) { return s.allIn != null; });
+      var low = withAll[0] || null, lowPrice = low ? low.allIn : null;
+      var repick = !!(low && low.source !== c.source && c.allIn != null && lowPrice < c.allIn && a.verdict !== 'REAL_LOWER_MATCHED');
+      var verdict = a.verdict;
+      // Trust layer (2026-10-01, worker rm=2): on REAL_LOWER_MATCHED the deal is the listing whose room name matched
+      // (roomMatch.proof). It can be pricier than the lowest listing; that one keeps the "lowest" tag and its own line.
+      var proof = verdict === 'REAL_LOWER_MATCHED' && rm.proof && rm.proof.source ? rm.proof : null;
+      var lowest = a.cheapest || {};
+      var proofElsewhere = !!(proof && !(proof.source === lowest.source && proof.nightly === lowest.nightly));
+      if (proofElsewhere) {
+        var pRow = srcs.filter(function (s) { return s.source === proof.source; })[0] || {};
+        // freeCancellation as the worker sent it: true, false, or null / missing (no data), never coerced (2026-10-02).
+        c = { source: proof.source, nightly: proof.nightly, allIn: proof.allIn, link: proof.link || pRow.link, freeCancellation: proof.freeCancellation, rooms: [proof.room] };
+        if (proof.memberPrice) c.memberPrice = proof.memberPrice;
+      }
+      if (repick) {
+        // The worker's verdict was about its own pick. For the lower all-in listing: a lower price if the worker found
+        // one or this one is 5% or more under the going rate (the page's stated rule); never a room-name match.
+        verdict = a.verdict !== 'PARITY' || (base != null && lowPrice < base * 0.95) ? 'UNVERIFIED_LOWER' : 'PARITY';
+        c = low;
+      }
+      var cheapAll = price(c);
+      var save = base != null && cheapAll != null && cheapAll < base ? base - cheapAll : null;
+      var roomHere = repick ? (c.rooms && c.rooms[0]) || '' : (rm.cheapRoom && a.cheapestRoom && a.cheapestRoom.source === c.source ? rm.cheapRoom : '');
+      // One line of evidence (2026-10-01): what the room names show. Responses without roomMatch.relation (cached before
+      // the trust layer) keep the older lines below.
+      var q2 = function (s) { var x = String(s || '').trim(), v = esc(x.length > 60 ? x.slice(0, 57) + '...' : x); return L10N ? L10N.quote(v) : '&#39;' + v + '&#39;'; };
+      var evidence = '';
+      if (rm.relation !== undefined) {
+        if (verdict === 'REAL_LOWER_MATCHED' && proof) {
+          evidence = T('Same room name: {room} on {site} and {goingRoom} on {goingSite}.', { room: q2(proof.room), site: esc(proof.source), goingRoom: q2(proof.goingRoom), goingSite: esc(proof.goingSource) });
+        } else if (verdict === 'UNVERIFIED_LOWER') {
+          if (!(c.rooms && c.rooms.length) && !roomHere) evidence = T('{site} doesn&#39;t name the room. Check it before you book.', { site: esc(c.source) });
+          else if (!repick && roomHere && (rm.relation === 'nogoing' || !rm.goingRoom)) evidence = T('{site} lists {room}; no site at the going rate names its room.', { site: esc(c.source), room: q2(roomHere) });
+          else if (!repick && roomHere) evidence = T('{site} lists {room}; the going rate is for {goingRoom}.', { site: esc(c.source), room: q2(roomHere), goingRoom: q2(rm.goingRoom) }) + SEP +
+            (rm.relation === 'different' ? T('Different room.') : rm.relation === 'similar' ? T('Similar, but not proof.') : T('Not clear it is the same room.'));
+        }
+      }
+      var lowestLine = proofElsewhere && lowest.source
+        ? '<p class="text-sm text-slate-600 mt-2">' + T('Lowest: {price} a night on {site} ({room}).', { price: fmt(price(lowest), cur), site: esc(lowest.source),
+          room: lowest.rooms && lowest.rooms.length ? T('room not confirmed: {room}', { room: q2(lowest.rooms[0]) }) : T('no room named') }) + '</p>' : '';
+      var h = '', sub = '';
+      // Whose room name matched (2026-10-06, docs/ROOM_HEADLINE_FIX_2026-10-06.md): the proof matches a room sold at the going
+      // rate on one site (goingSource), and this page measures against the going rate, so the headline names that site. A
+      // reader who saw the hotel on another booking site must not take it for that site's room.
+      var sameAs = (proof && proof.goingSource) || rm.goingSource || '';
+      var hv = { same: esc(sameAs), site: esc(c.source), amount: save ? fmt(save, cur) : '' };
+      if (verdict === 'REAL_LOWER_MATCHED') {
+        h = sameAs
+          ? (save ? T('Same room name as on {same}, cheaper on {site}: about {amount} a night less', hv) : T('Same room name as on {same}, cheaper on {site}', hv))
+          : (save ? T('Same room name, cheaper on {site}: about {amount} a night less', hv) : T('Same room name, cheaper on {site}', hv));
+        sub = evidence
+          ? '<p id="ub-evidence" class="mt-2 text-sm font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1.5 rounded-lg">✓ ' + evidence + '</p>' + lowestLine
+          : '<span class="inline-block mt-2 text-sm font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-lg">' + T('✓ Room name matches: {room}', { room: esc(roomHere || rm.cheapRoom) }) + '</span>';
+      } else if (verdict === 'UNVERIFIED_LOWER') {
+        h = save ? T('A lower price is listed on {site}, about {amount} a night less', hv) : T('A lower price is listed on {site}', hv);
+        sub = evidence ? '<p id="ub-evidence" class="mt-2 text-sm font-semibold text-amber-800 bg-amber-50 px-2.5 py-1.5 rounded-lg">' + evidence + '</p>' :
+          '<span class="inline-block mt-2 text-sm font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-lg">' + T('Not confirmed as the same room. Check the room and cancellation terms.') + '</span>' +
+          (roomHere ? '<p class="text-sm text-slate-600 mt-2">' + (rm.goingRoom
+            ? T('{site}&#39;s price is for: <strong>{room}</strong>. The going rate is for: {goingRoom}.', { site: esc(c.source), room: esc(roomHere), goingRoom: esc(rm.goingRoom) })
+            : T('{site}&#39;s price is for: <strong>{room}</strong>.', { site: esc(c.source), room: esc(roomHere) })) + '</p>'
+            : '<p class="text-sm text-slate-600 mt-2">' + T('{site} does not say which room this price is for.', { site: esc(c.source) }) + '</p>');
+      } else {
+        // PARITY means no listing is 5%+ under the going rate (worker `lower`), not that none is lower (Night QA B, 10/2).
+        h = save ? T('Prices are close: no site is 5% or more below the going rate.') : T('No site is cheaper than the going rate.');
+        var lv = { price: fmt(cheapAll != null ? cheapAll : base, cur) };
+        sub = '<p class="text-sm text-slate-600 mt-2">' + (a.feesUnverified ? T('The lowest listed price is about {price} a night.', lv) : T('The lowest listed price is about {price} a night, all in.', lv)) + '</p>';
+      }
+      // Whose prices these are (2026-10-02, docs/INTERNATIONAL_2026-10-02.md): outside the US, the worker names the country
+      // Google priced the answer for when it is not this browser's (pointOfSale). Every German and Indian check read on
+      // 10/02 was priced for a visitor in the US or Canada, then converted; a site that prices by country can show
+      // the traveler another price, so the page says so beside the prices.
+      // And why (2026-10-26, docs/CHECKER_FIXES_2026-10-26.md): a Spanish browser's check in euros read "for a visitor in the
+      // United Kingdom" with no reason. This page asks for the browser's market (gl) and the worker searches it, but Google
+      // Hotels decides which country each search is priced for (11 of the 12 German, British and Indian answers of 10/02 were
+      // priced elsewhere), so the line also names the market asked for. An answer priced by the worker's us search (Mode E:
+      // the browser's market gave no price; searchedMarket) says that instead; when its links name no country, its prices are
+      // that search's, as the worker reads links that name none for the market asked.
+      var homeCc = gl.toUpperCase();
+      var askedCc = /^[A-Za-z]{2}$/.test(a.searchedMarket || '') ? String(a.searchedMarket).toUpperCase() : '';
+      var posCc = a.pointOfSale ? String(a.pointOfSale).toUpperCase() : askedCc;
+      if (gl !== 'us' && posCc && posCc !== homeCc) {
+        var pv = { country: esc(countryPhrase(posCc)), in_country: L10N ? esc(L10N.inCountry(posCc)) : '', cur: esc(cur),
+          home: esc(countryPhrase(homeCc)), in_home: L10N ? esc(L10N.inCountry(homeCc)) : '' };
+        if (askedCc && askedCc !== homeCc) { pv.asked = esc(countryPhrase(askedCc)); pv.in_asked = L10N ? esc(L10N.inCountry(askedCc)) : ''; }
+        sub += '<p id="ub-pos" class="text-sm text-amber-800 mt-2">' + (pv.asked
+          ? T('These are the prices the sites list for a visitor in {country}, shown in {cur}. Google Hotels, where our prices come from, gave us no prices for this hotel for a visitor in {home}, so we asked for a visitor in {asked}. A site may show you a different price.', pv)
+          : T('These are the prices the sites list for a visitor in {country}, shown in {cur}. Google Hotels, where our prices come from, decides which country each search is priced for; we asked for a visitor in {home}, from your browser settings. A site may show you a different price.', pv)) + '</p>';
+      }
+      // Whose prices these are when Google Hotels did not answer (2026-10-03, docs/COVERAGE_FALLBACK_2026-10-03.md): the
+      // worker's backup price service (engine 'makcorps') names no rooms and sends no links, so there is no button below;
+      // the page says where the prices came from and which hotel that service matched (mcName), so a wrong one shows.
+      if (a.engine === 'makcorps') {
+        sub += '<p id="ub-standby" class="text-sm text-amber-800 mt-2">' + (a.mcName
+          ? T('These prices come from MakCorps, a backup price service, not from Google Hotels, for {name}. It names no rooms and has no links to book: check the hotel and the price on a booking site before you book.', { name: esc(a.mcName) })
+          : T('These prices come from MakCorps, a backup price service, not from Google Hotels. It names no rooms and has no links to book: check the hotel and the price on a booking site before you book.')) + '</p>';
+      }
+      // A lower price on another country's site (2026-10-01): named, and said why it is not the deal.
+      var awayLow = shown.filter(function (s) { return s.country && price(s) != null && cheapAll != null && price(s) < cheapAll; })[0];
+      if (awayLow) {
+        if (verdict === 'PARITY') h = T('No site priced for you is 5% or more below the going rate.');
+        sub += '<p id="ub-away" class="text-sm text-amber-800 mt-2">' + T('{site} lists {price} a night on another country&#39;s site, priced for travelers in {country}. It may not be your price, so it is not counted here.',
+          { site: esc(awayLow.source), price: fmt(price(awayLow), cur), country: esc(countryName(awayLow.country)), in_country: L10N ? esc(L10N.inCountry(awayLow.country)) : '' }) + '</p>';
+      }
+      // Free cancellation (2026-09-24, flex probe: 26% of site listings had a cancellable
+      // listing at or under a non-refundable one). The lowest cancellable price, and on a
+      // lower-price verdict whether the cheaper listing itself can be cancelled.
+      var fcs = srcs.filter(function (s) { return s.freeCancellation && price(s) != null; }).sort(function (x, y) { return price(x) - price(y); });
+      var fcBest = fcs[0];
+      // Free cancellation for the same price or less (2026-10-02, docs/FREE_CANCEL_LINE_2026-10-02.md, X7). When the
+      // listing the main button opens has no free-cancellation label and another site's listing has the label at no more
+      // than 1.02 times its price, a block under the main button says so with both prices and a button to that listing.
+      // Google Hotels shows the label or nothing, so the page says "no free-cancellation label", never "non-refundable",
+      // and only on an answer that marks which sites carry the label (fcData >= 1): freeCancellation === false. A site whose
+      // listings never carry the label (null: Super.com, KAYAK.com) is never said to lack it. Same price basis only
+      // (all-in against all-in); a tie goes to a listing with a link. Rows as the table shows them (one per site).
+      var fcAlt = null;
+      if (a.fcData >= 1 && c.freeCancellation === false && cheapAll != null) {
+        fcAlt = srcs.filter(function (s) {
+          return s.source.toLowerCase() !== String(c.source || '').toLowerCase() && s.freeCancellation === true && price(s) != null &&
+            (s.allIn != null) === (c.allIn != null) && price(s) <= cheapAll * 1.02;
+        }).sort(function (x, y) { return price(x) - price(y) || (y.link ? 1 : 0) - (x.link ? 1 : 0); })[0] || null;
+      }
+      if (verdict !== 'PARITY' && c.freeCancellation) {
+        sub += '<p class="text-sm text-emerald-800 mt-2">' + T('✓ Free cancellation is listed on {site}: you can book, check the room on your confirmation, and cancel before the deadline if it is not the one you want.', { site: esc(c.source) }) + '</p>';
+      } else if (!fcAlt && fcBest && base != null && price(fcBest) <= base * 1.02) {
+        sub += '<p class="text-sm text-emerald-800 mt-2">' + T('✓ Lowest price with free cancellation: {site}, {price} a night.', { site: esc(fcBest.source), price: fmt(price(fcBest), cur) }) + '</p>';
+      }
+      // Member prices (2026-10-03, docs/MEMBER_PRICES_2026-10-03.md). Google marks a members-only rate ("Member rate, save
+      // 5%") and gives the price without the membership; the worker prices that listing at the price without it and sends
+      // the member rate as memberPrice. Every price on this page is one a traveler gets without signing in. The note says
+      // what the member price is: on the listing the page leads with, else the lowest member price below the price named.
+      var mPrice = function (s) { var m = s && s.memberPrice; return m ? (s.allIn != null && m.allIn != null ? m.allIn : m.nightly) : null; };
+      var mNote = '';
+      if (mPrice(c) != null && cheapAll != null) {
+        mNote = T('{site} lists {member} a night for members who sign in. The {price} above is its price without signing in.', { site: esc(c.source), member: fmt(mPrice(c), cur), price: fmt(cheapAll, cur) });
+      } else if (cheapAll != null) {
+        var mLow = srcs.filter(function (s) { return mPrice(s) != null && price(s) != null && mPrice(s) < cheapAll; })
+          .sort(function (x, y) { return mPrice(x) - mPrice(y); })[0];
+        if (mLow) mNote = T('Members-only prices are not counted: {site} lists {member} a night for members who sign in, {price} without.', { site: esc(mLow.source), member: fmt(mPrice(mLow), cur), price: fmt(price(mLow), cur) });
+      }
+      if (mNote) sub += '<p id="ub-member" class="text-sm text-slate-600 mt-2">' + mNote + '</p>';
+      var fcBlock = '';
+      if (fcAlt) {
+        var fp = price(fcAlt), fAll = c.allIn != null && !a.feesUnverified;
+        var fv = { site: esc(c.source), alt: esc(fcAlt.source), price: fmt(cheapAll, cur), altPrice: fmt(fp, cur),
+          room: fcAlt.rooms && fcAlt.rooms.length ? T('room not confirmed: {room}', { room: q2(fcAlt.rooms[0]) }) : T('no room named') };
+        var fLink = goHref(fcAlt.link, fcAlt.source);
+        fcBlock = '<div id="ub-fc" class="mt-4 rounded-xl border border-emerald-300 bg-emerald-50 px-4 py-3">' +
+          '<p class="font-bold text-emerald-800">' + (fmt(fp, cur) === fmt(cheapAll, cur) ? T('✓ Free cancellation for the same price on {alt}', fv) : fp < cheapAll ? T('✓ Free cancellation for less on {alt}', fv) : T('✓ Free cancellation for about the same price on {alt}', fv)) + '</p>' +
+          '<p class="text-sm text-slate-700 mt-1">' + (fAll
+            ? T('The {site} price above, {price} a night, all in, has no free-cancellation label on Google Hotels. {alt} lists free cancellation at {altPrice} a night, all in ({room}). Check the room and the cancellation terms on {alt} before you book.', fv)
+            : T('The {site} price above, {price} a night, has no free-cancellation label on Google Hotels. {alt} lists free cancellation at {altPrice} a night ({room}). Check the room and the cancellation terms on {alt} before you book.', fv)) + '</p>' +
+          (fLink ? '<a id="ub-fc-open" href="' + esc(fLink) + '" target="_blank" rel="noopener sponsored" data-site="' + esc(fcAlt.source) + '" class="block text-center mt-3 bg-white text-ink font-bold px-5 py-3 rounded-xl text-base border border-stone-300 hover:border-ink transition">' +
+            T('Open {alt} at {altPrice}&nbsp;a&nbsp;night', fv) + '</a>' : '') +
+          '</div>';
+      }
+      // W3 (2026-09-28): the cheapest listing's link is the page's main action, not a small
+      // "Open" in the table. Same /go route (counted as goWeb), so the demand criterion reads it.
+      var cRow = srcs.filter(function (s) { return s.source === c.source; })[0] || {};
+      var cLink = goHref(cRow.adLink && c.link === cRow.adLink ? cRow.link : (c.link || cRow.link), c.source);
+      var ov = { site: esc(c.source), price: fmt(cheapAll, cur) };
+      var openBtn = cLink && cheapAll != null ? '<a id="ub-open" href="' + esc(cLink) + '" target="_blank" rel="noopener sponsored" data-site="' + esc(c.source) + '" class="block text-center mt-4 bg-accent text-ink font-bold px-5 py-3.5 rounded-xl text-base hover:brightness-95 transition">' +
+        T('Open {site} at {price} a night', ov) + '</a>' +
+        '<p class="text-xs text-stone-500 mt-1.5 text-center">' + (verdict === 'PARITY' ? T('The lowest listed price. Check the room and the final total on {site} before you book.', ov) : T('Check the room and the final total on {site} before you book.', ov)) + '</p>' : '';
+      // The stay, readable, with a way to change it right here (2026-09-30 UX pass): the form is above the fold only
+      // before the result scrolls into view. Dates from a hotel page's button are labelled as sample dates.
+      // X128 (2026-11-24, docs/EXPERIMENTS.md): when the site named lowest is not Booking.com and Booking.com's own row
+      // (this market, its free listing, not a Google ad) shows the same price as the page writes it (whole units), a second button says
+      // so and opens it, through /go like every row. English page only (the sentence has no translations; the partner link
+      // is for visitors outside the EU and the UK, decided by /go as for every press). No new counter: /stats aff reads it.
+      var tieBlock = '';
+      if (openBtn && (!window.UBI18N || UBI18N.lang === 'en') && String(c.source || '').toLowerCase() !== 'booking.com' && !(fcAlt && String(fcAlt.source || '').toLowerCase() === 'booking.com')) {
+        var bkRow = srcs.filter(function (s) { return !s.country && String(s.source || '').toLowerCase() === 'booking.com'; })[0];
+        var adLk = function (u) { return /^https:\/\/www\.google\.[a-z.]+\/(?:pagead\/)?aclk\?/.test(String(u || '')); };
+        if (bkRow && bkRow.link && !adLk(bkRow.link) && (bkRow.allIn == null) === (c.allIn == null) && price(bkRow) != null && fmt(price(bkRow), cur) === fmt(cheapAll, cur)) {
+          var bkLink = goHref(bkRow.link, bkRow.source);
+          if (bkLink) tieBlock = '<p id="ub-tie-note" class="text-sm text-slate-600 mt-3 text-center">Booking.com lists the same price, ' + fmt(cheapAll, cur) + ' a night' + (c.allIn != null && !a.feesUnverified ? ', all in' : '') + '.</p>' +
+            '<a id="ub-tie-open" href="' + esc(bkLink) + '" target="_blank" rel="noopener sponsored" data-site="Booking.com" class="block text-center mt-2 bg-white text-ink font-bold px-5 py-3 rounded-xl text-base border border-stone-300 hover:border-ink transition">Open Booking.com at ' + fmt(cheapAll, cur) + '&nbsp;a&nbsp;night</a>';
+        }
+      }
+      var sample = linkDates && stay.checkIn === sampleIn && stay.checkOut === sampleOut;
+      legitSent = false; // X22: one legit_click per result
+      $('verdict').innerHTML = stayHead(sample) +
+        '<h2 class="text-xl font-extrabold leading-snug">' + h + '</h2>' + sub +
+        (base != null ? '<p class="text-sm text-slate-600 mt-3">' + (a.feesUnverified
+          ? T('Going rate: <strong>{price}</strong> a night (listed rate; resort or property fees may be missing).', { price: fmt(base, cur) })
+          : T('Going rate: <strong>{price}</strong> a night all in.', { price: fmt(base, cur) })) + '</p>' : '') +
+        trustLine(a, c, verdict) + openBtn + tieBlock + fcBlock;
+      // X7 (2026-10-02, docs/EXPERIMENTS.md): the free-cancellation offer drawn with this result (web_flex_shown) and a
+      // person's click on its button (web_flex_click), each once per result, never from a browser that says it is automated
+      // (isAuto). Only {"ev": <name>} is sent. The click also goes through /go like every booking-site link (goWeb).
+      if (fcBlock && !isAuto) wev('web_flex_shown');
+      var fcOpen = $('ub-fc-open'), fcClicked = false;
+      if (fcOpen) fcOpen.addEventListener('click', function (e) {
+        if (fcClicked || e.isTrusted === false || isAuto) return;
+        fcClicked = true; wev('web_flex_click');
+      });
+      // One "lowest" tag: on the pick when its price is the lowest shown, else on the first lowest row (a room-name
+      // match can keep the pick above a cheaper listing that names no room).
+      var lowTag = cheapAll != null && cheapAll === lowPrice ? c.source : (low && low.source);
+      var rows = shown.map(function (s) {
+        var all = price(s);
+        var isCheap = !s.country && s.source === c.source;
+        var sameRoom = verdict === 'REAL_LOWER_MATCHED' && isCheap;
+        var room = sameRoom && proof ? proof.room : (s.rooms && s.rooms.length ? s.rooms[0] : '');
+        var link = goHref(s.link, s.source);
+        return '<li class="flex items-start justify-between gap-3 py-3 border-t border-stone-100' + (isCheap ? ' bg-emerald-50/40 -mx-2 px-2 rounded-lg' : '') + '">' +
+          '<div class="min-w-0"><p class="font-semibold">' + esc(s.source) + (!s.country && s.source === lowTag ? ' <span class="text-xs font-semibold text-emerald-700">' + T('lowest') + '</span>' : '') + '</p>' +
+          '<p class="text-xs text-stone-500 break-words">' + (room ? esc(room) + (sameRoom ? ' · ' + (sameAs ? T('same room name as on {site}', { site: esc(sameAs) }) : T('same room name')) : '') : T('No room named')) + (s.freeCancellation ? ' · ' + T('free cancellation') : '') + '</p>' + (s.country ? otherNote(s) : '') +
+          (mPrice(s) != null ? '<p class="text-xs text-stone-600">' + T('Members who sign in: {price}. The price shown is without signing in.', { price: fmt(mPrice(s), cur) }) + '</p>' : '') + '</div>' +
+          '<div class="text-right shrink-0"><p class="font-bold">' + fmt(all, cur) + '</p>' +
+          rowOpen(link, s.source, all, cur) + '</div></li>';
+      }).join('');
+      $('sites').innerHTML = '<p class="text-sm font-semibold mb-1">' + (a.feesUnverified ? T('Listed price per night, by site (fees may be missing)') : T('All-in price per night, by site')) + '</p><ul class="list-none">' + rows + '</ul>' +
+        (shown.length < nSites ? '<p class="text-xs text-stone-500 mt-2">' + moreSites(nSites - shown.length) + '</p>' : '');
+      $('receipt').textContent = receiptText(nSites, cur);
+      allInNote(!a.feesUnverified);
+      // Share this check (2026-10-01): bound to the stay this result is for, so editing the form before checking again
+      // does not change what is shared. The text says only what this result shows, in the page's own terms.
+      var lowerV = verdict === 'REAL_LOWER_MATCHED' || verdict === 'UNVERIFIED_LOWER';
+      shared = { url: shareUrl(stay, true), started: false, done: false, title: 'Hotel price check: ' + stay.hotel,
+        text: shareText(stay, verdict, c.source, lowerV ? cheapAll : (cheapAll != null ? cheapAll : base), lowerV ? c.allIn != null && !a.feesUnverified : !a.feesUnverified, base, nSites, cur) };
+      $('shareMsg').textContent = ''; $('shareCopy').classList.add('hidden'); $('shareRow').classList.remove('hidden');
+      // The question beside the button only where a lower price was found (2026-10-02, docs/SHARING_2026-10-02.md); X20
+      // (2026-10-10) also moves the row up under the Open button there and names the button "Send them this check".
+      sharePush(lowerV && cheapAll != null);
+      stay.resCur = cur; // the currency the prices came back in: a booked watch is priced and compared in it
+      watchReset(sample, a.feesUnverified ? null : lowPrice);
+      $('result').classList.remove('hidden');
+      offerReset(); offerShown(); phoneShown(true);
+      $('result').scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth', block: 'start' });
+      // One line for screen readers (2026-10-01): the headline and the receipt's count. Emptied first so the same
+      // result twice in a row is announced twice.
+      var said = String(h).replace(/<[^>]*>/g, '').replace(/&#39;/g, "'").replace(/&amp;/g, '&').trim();
+      announce(T('Result: {result}', { result: said + (/[.!?。！？]$/.test(said) ? '' : END) }) + SEP + checkedSites(nSites));
+    }
+    // Lines shared by both renderings (a plural, said whole in each language).
+    function moreSites(n) { return n === 1 ? T('{n} more site listed higher prices.', { n: n }) : T('{n} more sites listed higher prices.', { n: n }); }
+    function receiptText(n, cur) {
+      return n === 1 ? T('Checked {n} booking site just now, in {cur}. Prices change; the site you open shows the final total.', { n: n, cur: cur })
+        : T('Checked {n} booking sites just now, in {cur}. Prices change; the site you open shows the final total.', { n: n, cur: cur });
+    }
+    function checkedSites(n) { return n === 1 ? T('Checked {n} booking site.', { n: n }) : T('Checked {n} booking sites.', { n: n }); }
+    // What "all-in" covers (2026-10-22, docs/CHECKER_FEES_2026-10-22.md): the card's allInDef sentence, word for word, under a
+    // result whose prices are all-in; a listed-rate result (feesUnverified) says fees may be missing instead and gets none.
+    function allInNote(on) {
+      var el = $('allInNote');
+      el.textContent = on ? T('All-in = taxes and fees as each site reports them; a resort or destination fee may be extra.') : '';
+      el.classList.toggle('hidden', !on);
+    }
+    function reduceMotion() { try { return window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (x) { return false; } }
+    function announce(text) {
+      var el = $('resultStatus'); el.textContent = '';
+      setTimeout(function () { el.textContent = text; }, 120);
+    }
+
+    // Every listing was on another country's site (2026-10-01, docs/FOREIGN_STOREFRONT_2026-10-01.md), also after the worker's
+    // one fresh retry (docs/FOREIGN_RETRY_TEST.md). The answer is cached for 30 minutes (CACHE_TTL), so "check again" says when. The worker answers
+    // none with reason other_country and the listings. They are shown, each with its note, with no verdict, no main button
+    // and nothing to share: none of these prices is known to be the one this traveler pays.
+    // 2026-11-16 (docs/POS_COUNTRY_2026-11-16.md, worker labelledOf): outside the US every answer priced for another country
+    // comes this way, every listing with its country. No "more sites listed higher prices" line: a listing the worker set
+    // aside (no tax figure, a private rate) may be lower.
+    // 2026-11-16 (labelled-order): a row carries otherNote only when its country is not the heading's (a.pointOfSale); the
+    // heading and its note already say it for the rest. With no pointOfSale (the heading says "another country") every row
+    // keeps its note.
+    function renderOther(a, cur) {
+      listPlace(true);
+      var rows = sitesDedup(a.otherCountry).filter(function (s) { return s.country; }).sort(byShown);
+      var nSites = a.sourceCount || rows.length;
+      var where = a.pointOfSale ? countryName(a.pointOfSale) : T('another country');
+      var wv = { country: esc(where), in_country: L10N ? esc(a.pointOfSale ? L10N.inCountry(a.pointOfSale) : T('in another country')) : '' };
+      var sample = linkDates && stay.checkIn === sampleIn && stay.checkOut === sampleOut;
+      $('verdict').innerHTML = stayHead(sample) +
+        '<h2 id="ub-other" class="text-xl font-extrabold leading-snug">' + T('These prices were listed for travelers in {country}', wv) + '</h2>' +
+        '<p class="text-sm text-slate-600 mt-2">' + T('Google Hotels gave us this stay&#39;s prices as they are shown in {country}, not where you are. A site can show you another price, so we do not name a cheaper site. We keep each answer for half an hour; checking again after that may find prices listed for you.', wv) + '</p>';
+      $('sites').innerHTML = '<p class="text-sm font-semibold mb-1">' + (a.feesUnverified ? T('Listed price per night, by site (fees may be missing)') : T('All-in price per night, by site')) + '</p><ul class="list-none">' +
+        rows.map(function (s) {
+          var all = s.allIn != null ? s.allIn : s.nightly, link = goHref(s.link, s.source), room = s.rooms && s.rooms.length ? s.rooms[0] : '';
+          return '<li class="flex items-start justify-between gap-3 py-3 border-t border-stone-100"><div class="min-w-0"><p class="font-semibold">' + esc(s.source) + '</p>' +
+            '<p class="text-xs text-stone-500 break-words">' + (room ? esc(room) : T('No room named')) + (s.freeCancellation ? ' · ' + T('free cancellation') : '') + '</p>' + (a.pointOfSale && s.country === a.pointOfSale ? '' : otherNote(s)) + '</div>' +
+            '<div class="text-right shrink-0"><p class="font-bold">' + fmt(all, cur) + '</p>' +
+            rowOpen(link, s.source, all, cur) + '</div></li>';
+        }).join('') + '</ul>';
+      $('receipt').textContent = receiptText(nSites, cur);
+      allInNote(!a.feesUnverified);
+      shared = null; $('shareMsg').textContent = ''; $('shareCopy').classList.add('hidden'); $('shareRow').classList.add('hidden');
+      stay.resCur = cur;
+      watchReset(sample, null);
+      $('result').classList.remove('hidden');
+      offerReset(); offerShown(); phoneShown();
+      $('result').scrollIntoView({ behavior: reduceMotion() ? 'auto' : 'smooth', block: 'start' });
+      announce(T('Result: these prices were listed for travelers in {country}.', { country: where, in_country: L10N ? (a.pointOfSale ? L10N.inCountry(a.pointOfSale) : T('in another country')) : '' }) + SEP + checkedSites(nSites));
+    }
+
+    // The stay as a link: hotel, dates, adults, currency. Nothing else ever goes in it: no email, no price paid, nothing
+    // typed in the alert box. The shared link adds src=share (and pt= when this check was priced by the hotel's Google
+    // token) and points at underbook.co; the address bar gets the same stay without them, so a reload is not a shared visit.
+    var SHARE_BASE = /(^|\.)underbook\.co$/.test(location.hostname) ? 'https://underbook.co/hotel-price-checker' : location.origin + '/hotel-price-checker';
+    var shared = null;
+    // The page's language as the link set it (2026-10-26, docs/CHECKER_FIXES_2026-10-26.md): a visit with ?lang= (the
+    // language pages' buttons: ?lang=es, ?lang=pt-BR...) keeps it in the address bar after a check, so a reload, or the address
+    // copied, shows the page in that language again; until then a reload in a browser in another language showed English.
+    // Only a code as i18n.js reads one, and only in the address bar: the shared link is unchanged.
+    var linkLang = /^[A-Za-z]{2,3}(?:[-_][A-Za-z0-9]{2,8})?$/.test(q.get('lang') || '') ? q.get('lang') : '';
+    function shareUrl(st, forShare) {
+      var p = new URLSearchParams({ hotel: st.hotel, in: st.checkIn, out: st.checkOut, adults: String(st.adults), cur: st.currency });
+      if (!forShare) { if (linkLang) p.set('lang', linkLang); return location.origin + location.pathname + '?' + p.toString(); }
+      if (st.pt) p.set('pt', st.pt);
+      p.set('src', 'share');
+      return SHARE_BASE + '?' + p.toString();
+    }
+    // What the result shows, in one message: the stay, the verdict line (the page's words: going rate, all in only where
+    // the sites report fees, same room name only on a room-name match), how many sites, and that prices change.
+    // The day it was checked (2026-10-02, docs/SHARING_2026-10-02.md): a message is read days later, and its price must
+    // not read as that day's. "Hotel price check on Oct 2:" dates it before any price, and the link checks again on the day
+    // it is opened.
+    function checkedOn() {
+      var dl = /^en(-|$)/i.test(navigator.language || 'en-US') ? (navigator.language || 'en-US') : 'en-GB';
+      try { return new Intl.DateTimeFormat(dl, { month: 'short', day: 'numeric' }).format(new Date()); } catch (e) { return ymd(new Date()); }
+    }
+    function shareText(st, verdict, site, price, allIn, base, nSites, cur) {
+      var head = 'Hotel price check on ' + checkedOn() + ': ' + st.hotel + ', ' + dayFmt(st.checkIn) + ' to ' + dayFmt(st.checkOut) + ' (' + st.adults + ' adult' + (st.adults > 1 ? 's' : '') + '). ';
+      var each = price != null ? fmtNamed(price, cur) + ' a night' + (allIn ? ', all in' : '') : '';
+      var under = base != null && price != null && price < base ? ', under the ' + fmt(base, cur) + ' going rate' : '';
+      var line = '';
+      if (price != null && verdict === 'REAL_LOWER_MATCHED') line = site + ' listed ' + each + under + ', with the same room name as a site at the going rate. ';
+      else if (price != null && verdict === 'UNVERIFIED_LOWER') line = site + ' listed ' + each + under + '. Not confirmed as the same room. ';
+      else if (price != null) line = (under ? 'No site was 5% or more below the going rate; the lowest listed price was ' + each + under : 'No site was cheaper than the going rate; the lowest listed price was ' + each) + '. ';
+      // The resort-fee caveat (2026-10-22, docs/CHECKER_FEES_2026-10-22.md): a message that says "all in" says what that covers,
+      // as the card's shared note has since 0.5.56.
+      var def = allIn && price != null ? 'All-in = taxes and fees as each site reports them; a resort or destination fee may be extra. ' : '';
+      return head + line + def + 'Underbook checked ' + nSites + ' booking site' + (nSites === 1 ? '' : 's') + '. The link runs the check again with today’s prices.';
+    }
+
+    async function run() {
+      var hotel = $('hotel').value.trim(), checkIn = $('checkIn').value, checkOut = $('checkOut').value;
+      var adults = Math.min(6, Math.max(1, parseInt($('adults').value, 10) || 2)), currency = $('currency').value;
+      if (!hotel || !checkIn || !checkOut) { $('stayMsg').textContent = 'Enter a hotel and both dates.'; return; }
+      if (checkOut <= checkIn) { $('stayMsg').textContent = 'Check-out must be after check-in.'; return; }
+      // The shared-check note is about the link's stay; a check of another stay or hotel puts it away.
+      if (fromShare && (checkIn !== sampleIn || checkOut !== sampleOut || hotel !== arrivalName)) $('sharedNote').classList.add('hidden');
+      // A disabled button drops keyboard focus to the page; it goes back to the button when the check ends.
+      var hadFocus = document.activeElement === $('checkBtn');
+      $('checkBtn').disabled = true; $('checkBtn').textContent = 'Checking every site…';
+      $('stayMsg').textContent = 'This takes about 5 to 15 seconds.';
+      noneHide(); // the last no-price result's next step goes with it
+      $('resultStatus').textContent = ''; // the last result's line goes with it; a failed check says so in stayMsg
+      stay = { hotel: hotel, checkIn: checkIn, checkOut: checkOut, adults: adults, currency: currency };
+      try {
+        // rm=2 (2026-10-01): this page renders roomMatch.proof, so the worker may prove a room on a listing above the lowest.
+        // oc=1 (2026-10-01): this page shows listings from another country's site with a note (otherCountry).
+        // sn=1 (2026-10-10, docs/CARD_TRUST_2026-10-10.md): this page draws the cheaper site's line (trustLine), so a priced
+        // answer carries siteNotes.
+        var p = new URLSearchParams({ hotel: hotel, checkIn: checkIn, checkOut: checkOut, adults: String(adults), currency: currency, gl: gl, web: '1', rm: '2', oc: '1', nr: '1', sn: '1' });
+        if (fromHotel) p.set('src', 'hotel');
+        if (fromShare) p.set('src', 'share');
+        if (fromHoliday) p.set('src', 'holiday');
+        if (fromHomePhone) p.set('src', fromHomePhone);
+        if (viaExt) p.set('via', 'ext');
+        if (arrivalPt && hotel === arrivalName) p.set('pt', arrivalPt);
+        stay.pt = p.get('pt') || ''; // a shared link carries it only when this check was priced with it
+        p.set('ref', refCat);
+        p.set('ls', landNow()); // where the visit came from, one word (landNow above)
+        var r = await fetch(API + '/compare?' + p.toString());
+        if (r.status === 429) {
+          $('stayMsg').textContent = T('You have reached today’s limit of checks from this connection. Try again tomorrow, or add the free browser extension, which checks hotel pages as you browse.');
+          return;
+        }
+        var a = await r.json();
+        // The worker answers a crawler or link-preview user agent with a short refusal and no search (2026-10-01). Say
+        // that plainly instead of "no booking site is publishing a price", and do not retry with the city.
+        if (r.status === 403 && a && (a.automated || a.error === 'automated client')) {
+          $('stayMsg').textContent = 'This browser says it is an automated client or a link preview, so we did not run a live check. Open this page in your own browser to check prices.';
+          $('result').classList.add('hidden'); return;
+        }
+        // Prices listed only for another country (reason other_country) are this hotel's prices: no retry with the city.
+        var otherOnly = !!(a && a.none && a.reason === 'other_country' && Array.isArray(a.otherCountry) && a.otherCountry.length);
+        if ((!a || a.error || a.none || a.consensus == null) && !otherOnly && arrivalCity && hotel === arrivalName &&
+            hotel.toLowerCase().indexOf(arrivalCity.toLowerCase()) < 0) {
+          var withCity = hotel + ', ' + arrivalCity;
+          p.set('hotel', withCity);
+          var r2 = await fetch(API + '/compare?' + p.toString());
+          if (r2.ok) {
+            var a2 = await r2.json();
+            if (a2 && !a2.error && !a2.none && a2.consensus != null) { a = a2; hotel = withCity; stay.hotel = withCity; stay.pt = ''; $('hotel').value = withCity; }
+          }
+        }
+        if (otherOnly) {
+          $('stayMsg').textContent = '';
+          try { history.replaceState(null, '', shareUrl(stay, false)); } catch (e) { /* ignore */ }
+          renderOther(a, a.currency || currency);
+          return;
+        }
+        if (!a || a.error || a.none || a.consensus == null) {
+          // 2026-11-22 (docs/owners/web-checks.md, floor F2): the price service itself did not answer (a 5xx: its search plan
+          // refusing or out, or a fault). Until today this fell to the last line below, which says no booking site is publishing a
+          // price: untrue, nothing was read. Now it says so, and the two searches for this stay (X5's block) are the way on.
+          if (r.status >= 500) {
+            $('stayMsg').textContent = 'We could not get prices just now. Try again in a few minutes, or search this stay on a booking site below.';
+            $('result').classList.add('hidden');
+            noneShow(stay);
+            return;
+          }
+          // "Did you mean" (2026-09-26): on a no-match, the worker returns Google's top candidates (up to 3; since 2026-11-13
+          // also from Google's last answer, webSuggest in worker.js). A press runs the check for that name, same dates and party.
+          // Counted (docs/DID_YOU_MEAN_2026-11-13.md): dym_view when the buttons are drawn, dym_press when one is pressed by a
+          // person, each once per result, never from a browser that says it is automated (isAuto). Only {"ev": <name>} is sent.
+          if (a && Array.isArray(a.suggestions) && a.suggestions.length) {
+            var dymSugg = a.suggestions.slice(0, 3), dymPressed = false;
+            $('stayMsg').innerHTML = T('We could not match that name exactly. Did you mean:') + ' ' + dymSugg.map(function (s, i) {
+              return '<button type="button" data-sugg="' + i + '" class="ub-sugg inline-block mt-2 mr-2 px-3 py-1.5 rounded-lg border border-stone-300 bg-white text-ink font-semibold hover:border-ink">' + esc(s) + '</button>';
+            }).join('');
+            if (!isAuto) wev('dym_view');
+            Array.prototype.forEach.call(document.querySelectorAll('.ub-sugg'), function (btn) {
+              btn.addEventListener('click', function (e) {
+                if (!dymPressed && !isAuto && e.isTrusted !== false) { dymPressed = true; wev('dym_press'); }
+                $('hotel').value = dymSugg[Number(btn.getAttribute('data-sugg'))]; run();
+              });
+            });
+          } else if (a && a.reason === 'not_found') {
+            // Why there is no price (nr=1, 2026-10-02): the same two reasons the extension words, only as observed. A town
+            // typed as a hotel ("Capaccio-Paestum", 10/02) lands here, not in "no booking site is publishing a price".
+            $('stayMsg').textContent = 'We couldn’t find a hotel by that name on Google Hotels, where our prices come from. If you typed a town, type the hotel’s name as your booking site shows it. Small guesthouses and holiday rentals are often not listed there.';
+          } else if (a && a.reason === 'zero_rates' && adults < 3) {
+            $('stayMsg').textContent = 'Google Hotels, where our prices come from, lists this hotel but shows no prices for these dates right now. Try again later.';
+          } else {
+            $('stayMsg').textContent = 'No booking site is publishing a price for that hotel and those dates. Try the hotel’s full name as a booking site shows it, or other dates.';
+          }
+          // X68 (2026-11-08): a town typed as a hotel. The worker sends up to 4 hotels Google listed in that place; one tap checks one,
+          // with the typed town kept after the name. Added under the line above, whichever it was.
+          // Only when the list is about the place typed: a "Did you mean" (it shares a typed word) or a listed name carrying a typed word.
+          // Live 11/08: 'Vũng tàu' and 'Relais Forus' can come back with a list from somewhere else (Los Angeles, Tennessee); those get no line.
+          var plain = function (x) { return String(x).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); };
+          var typedWords = plain(hotel.split(',')[0]).split(/[^\p{L}\p{N}]+/u).filter(function (w) { return w.length >= 4; });
+          var townAbout = a && Array.isArray(a.townHotels) && a.townHotels.length && ((a.suggestions && a.suggestions.length) ||
+            a.townHotels.some(function (n) { var pn = plain(n); return typedWords.some(function (w) { return pn.indexOf(w) >= 0; }); }));
+          if (townAbout) {
+            var townTyped = hotel;
+            if (!(a.suggestions && a.suggestions.length)) $('stayMsg').textContent = '';
+            var townBox = document.createElement('span');
+            townBox.className = 'block mt-1';
+            townBox.innerHTML = T('If you typed a town or area, pick a hotel there:') + ' ' + a.townHotels.map(function (s, i) {
+              return '<button type="button" data-town="' + i + '" class="ub-town inline-block mt-2 mr-2 px-3 py-1.5 rounded-lg border border-stone-300 bg-white text-ink font-semibold hover:border-ink">' + esc(s) + '</button>';
+            }).join('');
+            $('stayMsg').appendChild(townBox);
+            Array.prototype.forEach.call(document.querySelectorAll('.ub-town'), function (btn) {
+              btn.addEventListener('click', function () { $('hotel').value = a.townHotels[Number(btn.getAttribute('data-town'))] + ', ' + townTyped; run(); });
+            });
+          }
+          $('result').classList.add('hidden');
+          noneShow(stay); // X5: a next step under the no-price line (and under any "Did you mean" buttons)
+          return;
+        }
+        $('stayMsg').textContent = '';
+        try { history.replaceState(null, '', shareUrl(stay, false)); } catch (e) { /* ignore */ }
+        render(a, a.currency || currency);
+      } catch (err) {
+        $('stayMsg').textContent = 'Something went wrong. Try again in a moment.';
+      } finally {
+        $('checkBtn').disabled = false; $('checkBtn').textContent = 'Check every booking site';
+        if (hadFocus && (!document.activeElement || document.activeElement === document.body)) { try { $('checkBtn').focus({ preventScroll: true }); } catch (x) { /* ignore */ } }
+      }
+    }
+
+    // A person's check here also sets the click flag, so reloading the result within two minutes runs it again.
+    $('stay').addEventListener('submit', function (e) { e.preventDefault(); markCheck(e); run(); });
+
+    // Change dates from the result (2026-09-30 UX pass): bring the date fields back into view and open check-in.
+    function openDates() {
+      var ci = $('checkIn');
+      try { $('stay').scrollIntoView({ block: 'start' }); } catch (x) { /* ignore */ }
+      try { ci.focus({ preventScroll: true }); } catch (x) { ci.focus(); }
+      try { if (ci.showPicker) ci.showPicker(); } catch (x) { /* focus is enough */ }
+    }
+    $('verdict').addEventListener('click', function (e) {
+      if (!e.target.closest || !e.target.closest('#ub-dates')) return;
+      openDates();
+    });
+    // X74 (2026-11-09, docs/owners/clicks.md B7): the next hotel, same dates and party. The name goes and the cursor goes there;
+    // the old result stays until the next check replaces it.
+    $('verdict').addEventListener('click', function (e) {
+      if (!e.target.closest || !e.target.closest('#ub-another')) return;
+      var h = $('hotel'); h.value = ''; $('stayMsg').textContent = '';
+      try { $('stay').scrollIntoView({ block: 'start' }); } catch (x) { /* ignore */ }
+      try { h.focus({ preventScroll: true }); } catch (x) { h.focus(); }
+    });
+    $('sharedNote').addEventListener('click', function (e) {
+      if (!e.target.closest || !e.target.closest('[data-dates]')) return;
+      openDates();
+    });
+    // Check-out follows check-in: a new check-in on or after the old check-out keeps the stay's length, instead of
+    // stopping the visitor with "Check-out must be after check-in."
+    // 2026-10-05 (docs/WEB_CHECKS_2026-10-05.md): an EARLIER check-in kept the old check-out too, so the sample stay
+    // (21 to 23 days ahead) picked down to a trip this week became a stay of two or three weeks, checked as such unless
+    // the visitor also changed check-out. Until the visitor picks a check-out on this page (outPicked), a new check-in
+    // moves check-out with it at the stay's length; once they have, it moves only when it would no longer be after
+    // check-in. And check-out's earliest date is the day after check-in from the start (it was today until check-in
+    // changed, so its picker offered dates before the stay).
+    var lastNights = Math.max(1, nightsOf($('checkIn').value, $('checkOut').value) || 2), outPicked = false;
+    if (/^\d{4}-\d{2}-\d{2}$/.test($('checkIn').value)) { var outMin = parseYmd($('checkIn').value); outMin.setDate(outMin.getDate() + 1); if (ymd(outMin) > $('checkOut').min) $('checkOut').min = ymd(outMin); }
+    var datesEdited = function () {
+      if (stay && !$('checkBtn').disabled && ($('checkIn').value !== stay.checkIn || $('checkOut').value !== stay.checkOut)) $('checkBtn').textContent = 'Check these dates';
+    };
+    var unmarkDates = function () { ['checkIn', 'checkOut'].forEach(function (id) { $(id).classList.remove('ring-2', 'ring-amber-400'); }); };
+    $('checkIn').addEventListener('change', function () {
+      unmarkDates();
+      var ci = $('checkIn').value; if (!/^\d{4}-\d{2}-\d{2}$/.test(ci)) return;
+      var next = parseYmd(ci); next.setDate(next.getDate() + 1); $('checkOut').min = ymd(next);
+      if (!outPicked || !$('checkOut').value || $('checkOut').value <= ci) { var d = parseYmd(ci); d.setDate(d.getDate() + lastNights); $('checkOut').value = ymd(d); }
+      datesEdited();
+    });
+    $('checkOut').addEventListener('change', function () { unmarkDates(); var n = nightsOf($('checkIn').value, $('checkOut').value); if (n > 0) { lastNights = n; outPicked = true; } datesEdited(); });
+
+    // Share this check (2026-10-01). Phones get the system share sheet (navigator.share); elsewhere, or if the sheet
+    // cannot open, the link is copied; if copying is blocked too, the link is shown selected to copy by hand.
+    // Counted once per result as daily totals with no identifier: web_share_start (tapped) and web_share_done (the share
+    // sheet finished or the link was copied). Closing the sheet without sharing is not a share.
+    function shareDone(sh) { if (sh && !sh.done) { sh.done = true; wev('web_share_done'); } }
+    $('shareBtn').addEventListener('click', async function () {
+      if (!shared) return;
+      var sh = shared;
+      if (!sh.started) { sh.started = true; wev('web_share_start'); }
+      $('shareMsg').textContent = ''; $('shareCopy').classList.add('hidden');
+      // 2026-10-02 (docs/SHARING_2026-10-02.md): the sheet's title names the hotel (mail uses it as the subject), and a
+      // copy carries the note above the link, as the extension's does: the link's preview is a static card that cannot
+      // name the hotel, so on a computer, where most copies happen, the pasted note is what names it and dates the check.
+      if (navigator.share) {
+        try { await navigator.share({ title: sh.title, text: sh.text, url: sh.url }); shareDone(sh); return; }
+        catch (e) { if (e && e.name === 'AbortError') return; /* no share sheet here: copy instead */ }
+      }
+      try {
+        await navigator.clipboard.writeText(sh.text + '\n' + sh.url);
+        shareDone(sh);
+        $('shareMsg').textContent = 'Copied a note of this check and its link. Whoever opens the link gets the check again, with that day’s prices.';
+      } catch (e) {
+        $('shareUrl').value = sh.url; $('shareCopy').classList.remove('hidden');
+        $('shareMsg').textContent = 'Copy this link to share the check.';
+        try { $('shareUrl').focus(); $('shareUrl').select(); } catch (x) { /* ignore */ }
+      }
+    });
+    $('shareUrl').addEventListener('copy', function () { shareDone(shared); });
+
+    // ---- X20: share at the moment of value (2026-10-10, docs/SHARE_PUSH_2026-10-10.md, docs/EXPERIMENTS.md) ----
+    // From 10/02 a result that found a lower price put "Traveling with someone? Send them this check. It runs again, with
+    // that day's prices, when they open it." above "Share this check": 23 such web results from 10/03 to 10/09 and not one
+    // tap. On a computer the row sat under the extension offer (X17, from 10/06), its button about 280px under the Open
+    // button and below the first screen of a 1366x768 or 1920x1080 (125%) laptop; on a phone the question came with two
+    // more lines of explanation.
+    // On such a result the row now moves up to sit right under the Open button (under X7's free-cancellation block when
+    // that is drawn, above the extension offer on a computer) and reads as one line, "Traveling with someone? [Send them
+    // this check]": the same button, the same share sheet or copy, the same note and link, counted as before
+    // (web_share_start, web_share_done). On every other result the row is where it was, "Share this check" alone.
+    // One count of its own: web_share_lower, a tap on the button on such a result (once per result, also a web_share_start),
+    // so shares per lower-price web result can be read apart from shares of other results. {"ev": <name>} only.
+    function sharePush(on) {
+      var row = $('shareRow');
+      if (on) $('verdict').insertAdjacentElement('afterend', row); else $('bookedJump').insertAdjacentElement('beforebegin', row);
+      row.insertAdjacentElement('afterend', $('shareCopy')); // the copy-by-hand box stays under the row it belongs to
+      $('shareLead').classList.toggle('hidden', !on);
+      $('shareBtnText').textContent = on ? 'Send them this check' : 'Share this check';
+      if (shared) shared.lower = on;
+    }
+    $('shareBtn').addEventListener('click', function () {
+      var sh = shared;
+      if (sh && sh.lower && !sh.lowerSent) { sh.lowerSent = true; wev('web_share_lower'); }
+    });
+    // ---- end X20 ----
+
+    // Price-drop box (2026-09-30 watch conversion pass, docs/WATCH_CONVERSION_2026-09-30.md). Each result names the stay
+    // the alert follows and resets the box; before this, a set watch replaced the form for good, so a second check on the
+    // same visit (another hotel, new dates) still read "Watching" under a stay nobody was watching.
+    // Anonymous daily totals: the box shown with a result, started (the field focused), submitted. No id, no cookie,
+    // never the email (see /privacy); the worker counts crawler user agents apart.
+    function wev(name) {
+      var body = JSON.stringify({ ev: name });
+      try { if (navigator.sendBeacon && navigator.sendBeacon(API + '/event', body)) return; } catch (x) { /* fall through */ }
+      try { fetch(API + '/event', { method: 'POST', body: body, keepalive: true }).catch(function () {}); } catch (x) { /* ignore */ }
+    }
+    var watchStarted = false;
+    // Watch your booking (2026-10-01, docs/WATCH_BOOKING_PLAN.md). The box keeps the visitor's tick across results; each
+    // result refreshes the price prefill (the lowest all-in price shown, never a listed rate without fees) and the date
+    // limits. The worker checks every field again and answers in sentences this box shows as they are.
+    // The worker's per-night floor (BOOKED_FLOOR in worker.js): a listed rate must also be at least this much lower.
+    var FLOOR = { USD: 5, EUR: 5, GBP: 5, CAD: 5, AUD: 5, SGD: 5, JPY: 500, INR: 400, BRL: 25, MXN: 100, THB: 150, PLN: 20, TRY: 200, AED: 20, UAH: 200,
+      ILS: 15, CZK: 100, HUF: 1500, RON: 25, DKK: 35, NOK: 50, SEK: 50, CHF: 5, MYR: 20, KRW: 7000, IDR: 100000, VND: 130000, TWD: 150, HKD: 40, SAR: 20,
+      MAD: 50, QAR: 20, NZD: 10, ZAR: 80, PHP: 300, COP: 20000, CLP: 5000 };
+    var RULE_PLAIN = $('watchRule').textContent, HEAD_PLAIN = $('watchHead').textContent, BTN_PLAIN = $('watchBtn').textContent;
+    var bookedOpened = false, lowAllIn = null;
+    // Where a booked watch set on this visit came from (2026-10-01, docs/WATCH_PROMOTION_2026-10-01.md): a hotel or city
+    // page's "Watch your booking" button (booked=1 with src=hotel), a link with booked=1 from another of our pages (the
+    // homepage, a rebooking guide, /watch-my-booking), or the result's "Already booked this stay?" link (set when it ticks
+    // the box). A watch the worker accepts counts web_booked_set_<that>; a box ticked by hand carries none.
+    var bookedVia = q.get('booked') === '1' ? (fromHotel ? 'hotel' : 'page') : '', linkSent = false;
+    var boxCur = function () { return (stay && (stay.resCur || stay.currency)) || $('currency').value || 'USD'; };
+    function syncBooked() {
+      var on = $('booked').checked, cur = boxCur();
+      $('bookedFields').classList.toggle('hidden', !on);
+      $('paidNight').disabled = !on; $('cancelBy').disabled = !on; // disabled fields are left out of the browser's form checks
+      $('watchHead').textContent = on ? 'Already booked? Get an email if this stay gets cheaper before free cancellation ends.' : HEAD_PLAIN;
+      $('watchRule').textContent = on ? T('For a booking you can cancel for free. We check once a day until your free-cancellation date, or until check-in if you leave it empty. If a listed rate is at least 5% lower than what you paid (and at least {floor} a night lower) on two daily checks in a row, we email you so you can rebook. Check the room before you rebook.', { floor: fmt(FLOOR[cur] || 5, cur) }) : RULE_PLAIN;
+      $('watchBtn').textContent = on ? 'Watch my booking' : BTN_PLAIN;
+    }
+    function bookedOpen() { if (bookedOpened) return; bookedOpened = true; wev('web_watch_booked_open'); }
+    function paidCheck() {
+      var v = Number($('paidNight').value), cur = boxCur(), t;
+      if (lowAllIn != null && v > 0 && (v < lowAllIn / 2 || v > lowAllIn * 2)) {
+        t = T('Check this number: the lowest price listed now is {price} a night. Enter the price per night with taxes and fees, not the total for the stay.', { price: fmt(lowAllIn, cur) });
+      } else {
+        t = lowAllIn != null ? T('We filled in the lowest price listed now. Change it to what you paid.') : T('Enter the price per night with taxes and fees, from your confirmation.');
+      }
+      if ($('paidHint').textContent !== t) $('paidHint').textContent = t;
+    }
+    function watchReset(sample, low) {
+      var ad = stay.adults;
+      $('watchStay').innerHTML = '<span class="' + (sample ? 'text-amber-800' : '') + '">' + (sample ? '<strong>' + datesLabel + '</strong> ' : '') +
+        esc(stay.hotel) + ' · ' + esc(stayText(stay)) + ' · ' + (ad > 1 ? T('{n} adults', { n: ad }) : T('{n} adult', { n: ad })) + '</span>' +
+        (sample ? '<span class="block text-amber-800 mt-1">These dates came with the link, not from you. Change them above so the alert follows your stay.</span>' : '');
+      $('watchRow').classList.remove('hidden');
+      $('bookedBox').classList.remove('hidden');
+      $('bookedJump').classList.remove('hidden'); linkSent = false;
+      $('watchBtn').disabled = false; $('email').disabled = false;
+      $('watchMsg').textContent = '';
+      lowAllIn = low != null && low > 0 ? low : null;
+      $('paidCur').textContent = boxCur();
+      $('paidNight').value = lowAllIn != null ? String(Math.round(lowAllIn)) : '';
+      var t = ymd(new Date()), cb = $('cancelBy');
+      cb.min = t; cb.max = stay.checkIn;
+      if (cb.value && (cb.value < t || cb.value > stay.checkIn)) cb.value = '';
+      paidCheck(); syncBooked();
+      watchStarted = false; bookedOpened = false;
+      wev('web_watch_shown');
+      wev('web_watch_booked_offered');
+    }
+    $('email').addEventListener('focus', function () { if (watchStarted) return; watchStarted = true; wev('web_watch_start'); });
+    $('booked').addEventListener('change', function () { syncBooked(); if ($('booked').checked) bookedOpen(); });
+    $('paidNight').addEventListener('focus', bookedOpen);
+    $('cancelBy').addEventListener('focus', bookedOpen);
+    $('paidNight').addEventListener('input', paidCheck);
+    // "Already booked this stay?" under every result (2026-10-01): ticks the box (a tick counts web_watch_booked_open, as
+    // ever) and scrolls the box into view, where the rule is stated. A person's press counts web_booked_link once per result.
+    $('bookedJumpBtn').addEventListener('click', function (e) {
+      if (e.isTrusted !== false && !linkSent) { linkSent = true; wev('web_booked_link'); }
+      if (!$('booked').checked) { $('booked').checked = true; syncBooked(); bookedOpen(); if (!bookedVia) bookedVia = 'link'; }
+      try { $('watch').scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (x) { $('watch').scrollIntoView(); }
+    });
+    // Arriving from /watch-my-booking (?booked=1): the box starts ticked.
+    if (q.get('booked') === '1') {
+      $('booked').checked = true;
+      if (!q.get('hotel')) $('stayMsg').textContent = 'Already booked? Enter the hotel and your dates, then check. You can watch your booking under the result.';
+    }
+    syncBooked();
+
+    // X52's one-line watch under a priced result was taken off 2026-11-13 (docs/EXPERIMENTS.md X52 Reads: dropped). It kept the
+    // email of a watch set here in localStorage ub_watch_email for a one-tap line; nothing reads it now, so it is deleted.
+    try { localStorage.removeItem('ub_watch_email'); } catch (x) { /* storage blocked: nothing kept */ }
+    // Who the confirmation comes from, and where to look (2026-11-14): a seed-mailbox test (data/outreach/placement_2026-11-14)
+    // read it in the inbox at Gmail but in spam or junk at Outlook.com, Yahoo, AOL and iCloud. A new watch: the worker sends
+    // a confirmation now. Already watching (a.already, also an updated booking watch): the worker sends none
+    // (confirmationSent: false), so the line points to the earlier one instead of promising another.
+    function spamHint(already) {
+      return '<span id="watchSpam" class="block mt-1">' + (already
+        ? T('Your earlier confirmation came from alerts@underbook.co.') + SEP + T('If you cannot find it, look in your spam or junk folder and mark it as not spam, so the price alert reaches you too.')
+        : T('A confirmation is on its way from alerts@underbook.co.') + SEP + T('If it is not in your inbox in a few minutes, look in your spam or junk folder and mark it as not spam, so the price alert reaches you too.')) + '</span>';
+    }
+    $('watch').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var email = $('email').value.trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { $('email').setAttribute('aria-invalid', 'true'); $('watchMsg').textContent = 'Enter a valid email.'; return; }
+      $('email').removeAttribute('aria-invalid');
+      if (!stay) return;
+      var st = stay; // a new check while this one is in flight must not change what was watched
+      var isBooked = $('booked').checked, paid = null, cancelBy = '', cur = boxCur();
+      if (isBooked) {
+        paid = Number($('paidNight').value);
+        // The ceiling per currency (BOOKED_PAID_MAX_CUR in worker.js, 2026-11-12): 100000 unless that is under about 1,000 US dollars.
+        if (!(paid > 0 && paid < ({ HUF: 10000000, KRW: 40000000, IDR: 500000000, VND: 800000000, COP: 100000000, CLP: 30000000 }[cur] || 100000))) { $('watchMsg').textContent = 'Enter the price you paid per night, with taxes and fees.'; return; }
+        cancelBy = $('cancelBy').value || '';
+      }
+      if (!watchStarted) { watchStarted = true; wev('web_watch_start'); }
+      wev('web_watch_submit');
+      if (isBooked) { bookedOpen(); wev('web_watch_booked_submit'); }
+      var watchFocus = $('watch').contains(document.activeElement);
+      var keepFocus = function (el) {
+        var now = document.activeElement; // a focused field inside a row just hidden still reads as focused until the next frame
+        if (!watchFocus || (now && now !== document.body && (now.checkVisibility ? now.checkVisibility() : now.getClientRects().length > 0))) return;
+        if (el === $('watchMsg')) el.setAttribute('tabindex', '-1');
+        try { el.focus({ preventScroll: true }); } catch (x) { /* ignore */ }
+      };
+      $('watchBtn').disabled = true; $('watchMsg').textContent = 'Setting up your watch…';
+      // A price watch is priced in this check's market and currency too (2026-10-02; it went without them, so the worker
+      // priced it for the US in dollars after a check in euros). A worker before that ignores both.
+      var req = { email: email, hotel: st.hotel, checkIn: st.checkIn, checkOut: st.checkOut, adults: st.adults, currency: cur, gl: gl };
+      // A booked watch is priced in the market and currency of this check (gl and the currency the prices came back in).
+      if (isBooked) { req.booked = true; req.paidNight = paid; if (cancelBy) req.cancelBy = cancelBy; }
+      try {
+        var r = await fetch(API + '/watch', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(req) });
+        var a = await r.json();
+        if (!r.ok || a.error) {
+          // The worker's booked-watch errors are sentences written for this box ("Free cancellation has already ended,
+          // so there is nothing to rebook."); anything else gets the generic line.
+          $('watchBtn').disabled = false;
+          $('watchMsg').textContent = a && typeof a.error === 'string' && /\.$/.test(a.error) ? a.error : 'Could not set the watch. Try again.';
+          keepFocus($('watchBtn'));
+          return;
+        }
+        // A booked watch the worker set (new, upgraded from a price-drop watch, or updated), by the entry this visit came in
+        // through. "Already watching" with nothing changed is not a new one.
+        if (isBooked && bookedVia && (!a.already || a.updated)) wev('web_booked_set_' + bookedVia);
+        if (st !== stay) return; // the visitor already moved on to another check; that result has its own box
+        $('watchRow').classList.add('hidden');
+        $('bookedBox').classList.add('hidden');
+        $('bookedJump').classList.add('hidden');
+        var where = esc(st.hotel) + ', ' + esc(stayText(st));
+        if (isBooked || a.booked) {
+          // a.upgraded: this email had a price-drop watch on this stay, and the worker turned it into this booking watch.
+          // a.already: a booking watch was already running on this stay (a.updated: with another price or date, now replaced).
+          var paidTxt = fmt(isBooked ? paid : a.watching, cur), until = cancelBy ? dayShow(cancelBy) : T('check-in');
+          var bv = { where: where, paid: paidTxt, email: esc(email), until: esc(until) };
+          $('watchMsg').innerHTML = '<span class="font-semibold text-emerald-700">' + (a.already && a.updated
+            ? T('Updated your booking watch at {where}. We now compare listed rates with the {paid} a night you paid. Your earlier confirmation still applies.', bv)
+            : a.already ? T('Already watching your booking at {where}. Your earlier confirmation still applies.', bv)
+            : T('Watching your booking at {where}. We will email {email} if a listed rate is at least 5% lower than the {paid} a night you paid on two daily checks in a row, until {until}.', bv) +
+              (a.upgraded ? SEP + T('This replaces the price-drop watch you had on this stay.') : '')) + '</span>' + spamHint(a.already);
+          keepFocus($('watchMsg'));
+          return;
+        }
+        // a.already (2026-10-01 promise audit): this email already has a watch running on this stay, so the worker kept
+        // that one and sent no second confirmation. Say so instead of promising one.
+        var wv2 = { where: where, email: esc(email) };
+        $('watchMsg').innerHTML = '<span class="font-semibold text-emerald-700">' + (a.already
+          ? T('Already watching {where}. We will email {email} if the going rate is at least 5% lower on two daily checks in a row.', wv2) + SEP + T('Your earlier confirmation still applies.')
+          : T('Watching {where}. We will email {email} if the going rate is at least 5% lower on two daily checks in a row.', wv2)) + '</span>' + spamHint(a.already);
+        keepFocus($('watchMsg'));
+      } catch (err) { $('watchBtn').disabled = false; $('watchMsg').textContent = 'Could not set the watch. Try again.'; keepFocus($('watchBtn')); }
+    });
+
+    // ---- Before taxes beside all in (2026-11-13, docs/beside/BESIDE_GOOGLE_2026-11-13.md) ----
+    // Google Hotels' first figure for an offer leaves taxes out ("Nightly price with fees"); ours is the all-in figure, so a
+    // visitor with Google in the next tab read every result as 10% to 32% dearer for the same offer on the same site. On a
+    // priced result whose prices are all in (not feesUnverified), the main offer and each site row also say the offer's
+    // before-tax figure, only where the worker's answer carries it for that offer (beforeTax, Google Hotels'
+    // extracted_before_taxes_fees) and it is below the all-in one; nothing is ever worked out here. The offer and a row are
+    // matched to the answer by site name and the all-in figure shown. One line, once per result, says why the two can
+    // differ. English pages, and a translated page only once its dictionary has the three sentences (none has yet).
+    // Written apart from render(), which scripts/answer_check_20261026.py lifts, so the guide pages' box is unchanged.
+    var PRE = { main: '{all} a night with taxes and fees · {pre} before taxes', row: '{pre} before taxes', why: 'Some sites, Google Hotels among them, show the before-tax number first.' };
+    var preOn = !L10N || [PRE.main, PRE.row, PRE.why].every(function (k) { return T(k) !== k; });
+    function preTax(a, cur) {
+      if (!preOn || !a || a.feesUnverified) return;
+      var all = [].concat(a.sources || [], a.more || []).filter(function (s) { return s && s.source && s.allIn != null && s.beforeTax != null && s.beforeTax < s.allIn; });
+      var find = function (site, shown) {
+        return all.filter(function (s) { return String(s.source).trim() === String(site).trim() && fmt(s.allIn, cur) === shown; })[0] || null;
+      };
+      var any = false;
+      var open = $('ub-open');
+      if (open) {
+        var m = (open.textContent || '').match(/ at (.+) a night$/);
+        var hit = m ? find(open.getAttribute('data-site') || '', m[1]) : null;
+        if (hit) {
+          var line = document.createElement('p');
+          line.id = 'ub-pretax';
+          line.className = 'text-sm text-slate-700 mt-2';
+          line.innerHTML = T(PRE.main, { all: '<strong>' + fmt(hit.allIn, cur) + '</strong>', pre: fmt(hit.beforeTax, cur) });
+          var why = document.createElement('p');
+          why.id = 'ub-pretax-why';
+          why.className = 'text-xs text-stone-500 mt-1';
+          why.textContent = T(PRE.why);
+          var h2 = $('verdict').querySelector('h2');
+          var at = h2;
+          while (at && at.nextElementSibling && at.nextElementSibling !== open && !/^Going rate:/.test(at.nextElementSibling.textContent || '') &&
+            !at.nextElementSibling.querySelector('#ub-open')) at = at.nextElementSibling;
+          if (at) { at.parentNode.insertBefore(line, at.nextSibling); line.parentNode.insertBefore(why, line.nextSibling); any = true; }
+        }
+      }
+      [].forEach.call($('sites').querySelectorAll('li'), function (li) {
+        var name = li.querySelector('p.font-semibold'), pr = li.querySelector('.text-right p.font-bold');
+        if (!name || !pr) return;
+        var site = name.firstChild && name.firstChild.nodeType === 3 ? name.firstChild.nodeValue : name.textContent;
+        var hit = find(site, pr.textContent);
+        if (!hit) return;
+        var p = document.createElement('p');
+        p.className = 'ub-pretax-row text-xs text-stone-500';
+        p.textContent = T(PRE.row, { pre: fmt(hit.beforeTax, cur) });
+        pr.parentNode.insertBefore(p, pr.nextSibling);
+        any = true;
+      });
+      return any;
+    }
+    var preRender = render;
+    render = function (a, cur) { preRender(a, cur); preTax(a, cur); };
+    // ---- end before taxes ----
+
+    // ---- One question (2026-11-13, docs/USER_QUESTIONS.md) ----
+    // Each week one question to the people who run a check, under the result (#uq above). Shown after the first result of a
+    // page view, priced or not; once it has been seen (uqViewed below), never again in this browser for the same question
+    // (localStorage ub_uq holds the question's id; with no storage it is once per page view). English pages only (L10N is null), never from a browser that
+    // says it is automated (isAuto) or on the install welcome page's visit (it is installed). After a tap the buttons give way
+    // to one line; "Yes" (answer 1) adds the store link this visitor's offer uses: the X29 offer's own link as app.js routed it
+    // (Chrome, Edge Add-ons, Firefox Add-ons; utm_campaign=user_question), the App Store on an iPhone or iPad when app.js
+    // offers it there (window.ubAppStore 'ios'), Firefox Add-ons in Firefox for Android 142+; never in desktop Safari (no Mac
+    // version is offered) and none where no store can add it. Counted: uq_view (seen: uqViewed) and uq_<n> (the button, 1 to 4 in
+    // UQ.a's order), once per page view each; only {"ev": <name>} is sent. Written apart from the pieces
+    // scripts/answer_check_20261026.py lifts (it wraps render, renderOther and noneShow here), so the guide pages' box is
+    // unchanged. Next week: change UQ (a new id shows it again to everyone); the five event names stay.
+    var UQ = {
+      id: '2026-11-23',
+      q: 'One question, one tap: would you want an email when this hotel\'s price goes down?',
+      a: ['Yes, email me', 'Yes, but not by email', 'No, I only check once', 'I am not planning a trip']
+    };
+    var uqBox = $('uq'), uqState = 0; // 0 not shown, 1 asked, 2 answered, 3 off for this page view
+    var uqOffer = ic && ic.querySelector ? ic.querySelector('a.ub-install') : null; // app.js rewrites it in place for Edge or Firefox
+    function uqStoreHref() {
+      var tag = function (h) {
+        try { var u = new URL(h); if (u.searchParams.get('utm_campaign')) u.searchParams.set('utm_campaign', 'user_question'); return u.toString(); } catch (x) { return h; }
+      };
+      try {
+        var ua = navigator.userAgent || '';
+        if (handheld) {
+          if (window.ubAppStore === 'ios') {
+            var as = document.querySelector('a[data-ub-appstore]');
+            return as ? as.href.split('?')[0] + '?ct=ios_user_question' : ''; // the phone card's App Store link (app.js holds the one switch)
+          }
+          var fx = ua.match(/\bFirefox\/(\d+)/);
+          if (/\bAndroid\b/.test(ua) && fx && Number(fx[1]) >= 142) {
+            var amo = document.querySelector('a[data-ub-amo]');
+            return amo ? tag(amo.href) : ''; // app.js's phone card link (UB_FIREFOX_ANDROID)
+          }
+          return '';
+        }
+        // Safari on a Mac: no store can add it there, and no Mac version is offered (app.js ubMacSafari's test).
+        // 2026-11-14: where app.js offers the Mac version (window.ubAppStore 'mac', live since 11/13), "Yes" links the App Store.
+        if (/\bMacintosh\b/.test(ua) && /\bVersion\/[\d.]+.*\bSafari\//.test(ua) && !/Chrome|Chromium|CriOS|Edg|OPR|Firefox|FxiOS/.test(ua)) {
+          return window.ubAppStore === 'mac' && uqOffer && /^https:\/\/apps\.apple\.com\/app\/id\d+/.test(uqOffer.href) ? uqOffer.href.split('?')[0] + '?ct=mac_user_question' : '';
+        }
+        if (!CAN_ADD || !uqOffer || !/^https:\/\/(chromewebstore\.google\.com|microsoftedge\.microsoft\.com|addons\.mozilla\.org)\//.test(uqOffer.href)) return '';
+        return tag(uqOffer.href);
+      } catch (x) { return ''; }
+    }
+    function uqDraw() {
+      uqBox.innerHTML = '<div role="group" aria-labelledby="uqQ"><p id="uqQ" class="text-sm font-semibold text-ink">' + esc(UQ.q) + '</p>' +
+        '<div id="uqBtns" class="mt-3 flex flex-wrap gap-2">' + UQ.a.map(function (t, i) {
+          return '<button type="button" data-uq="' + (i + 1) + '" class="inline-flex items-center text-sm font-semibold px-3.5 py-2 rounded-lg border border-stone-300 bg-white hover:border-ink transition">' + esc(t) + '</button>';
+        }).join('') + '</div>' +
+        '<p id="uqSaid" class="text-sm text-slate-700" role="status" aria-live="polite" tabindex="-1"></p></div>';
+    }
+    // A view counts only when it is seen: half of the block inside the window for one second (IntersectionObserver), then
+    // uq_view is sent and ub_uq stored. Until then a later page view asks again. Without IntersectionObserver: at draw.
+    var uqSeen = false, uqIO = null, uqTimer = 0;
+    function uqViewed() {
+      if (uqSeen) return;
+      uqSeen = true;
+      if (uqTimer) { clearTimeout(uqTimer); uqTimer = 0; }
+      if (uqIO) { uqIO.disconnect(); uqIO = null; }
+      try { localStorage.setItem('ub_uq', UQ.id); } catch (x) { /* no storage: once per page view */ }
+      wev('uq_view');
+    }
+    function uqWatch() {
+      if (!window.IntersectionObserver) { uqViewed(); return; }
+      uqIO = new IntersectionObserver(function (es) {
+        var e = es[es.length - 1];
+        if (e.isIntersecting && e.intersectionRatio >= 0.5) {
+          if (!uqTimer) uqTimer = setTimeout(function () { uqTimer = 0; if (uqBox && uqBox.isConnected && !uqBox.classList.contains('hidden')) uqViewed(); }, 1000);
+        } else if (uqTimer) { clearTimeout(uqTimer); uqTimer = 0; }
+      }, { threshold: [0, 0.5, 1] });
+      uqIO.observe(uqBox);
+    }
+    function uqAnswer(n) {
+      if (uqState !== 1) return;
+      uqState = 2;
+      uqViewed(); // a tap is a view, even inside the first second
+      wev('uq_' + n);
+      var had = uqBox.contains(document.activeElement), href = '';
+      var btns = $('uqBtns'); if (btns) btns.parentNode.removeChild(btns);
+      var said = $('uqSaid');
+      said.innerHTML = href ? 'It is free. Add it here: <a href="' + esc(href) + '" target="_blank" rel="noopener" data-uq-store="1" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">' + (/apps\.apple\.com/.test(href) ? 'Underbook for Safari on the App Store' : 'Underbook for ' + esc(BROWSER) + (/addons\.mozilla\.org/.test(href) && handheld ? ' for Android' : '')) + '</a>'
+        : 'Thank you. That is all.'; // 2026-11-14: a phone with no store gets the next step, not a dead end
+      said.classList.add('mt-1');
+      if (had) { var to = said.querySelector('a') || said; try { to.focus({ preventScroll: true }); } catch (x) { to.focus(); } }
+    }
+    function uqDrop() {
+      uqState = 3;
+      if (uqTimer) { clearTimeout(uqTimer); uqTimer = 0; }
+      if (uqIO) { uqIO.disconnect(); uqIO = null; }
+      uqBox.parentNode.removeChild(uqBox); uqBox = null;
+    }
+    function uqAfter(kind) {
+      if (!uqBox || uqState === 3) return;
+      if (uqState === 0) {
+        var seen = false;
+        try { seen = localStorage.getItem('ub_uq') === UQ.id; } catch (x) { /* no storage: once per page view */ }
+        if (L10N || isAuto || fromWelcome || seen) { uqDrop(); return; }
+        uqDraw();
+        uqState = 1;
+      } else if (uqState === 2) {
+        uqDrop(); return; // answered: a later result goes without it
+      }
+      // Where: a no-price result, at the end of X5's block (after X40's offer); a priced result, directly under the install
+      // offer when it is drawn for this visitor (#installCta, wherever X20 puts the share row), else directly under the
+      // answer (#verdict). A result priced for another country ('other', 2026-11-16 labelled-order): the list sits directly
+      // under #verdict there (listPlace), so with no offer drawn the question goes under the list, never above it.
+      if (kind === 'none') $('noneNext').appendChild(uqBox);
+      else {
+        var off = ic && ic.isConnected && ic.getClientRects().length ? ic : kind === 'other' ? $('sites') : $('verdict');
+        // X95: an iPhone's App Store card drawn directly under the answer stays there; the question goes under it.
+        if (off === $('verdict') && pl && pl.previousElementSibling === off && pl.getClientRects().length) off = pl;
+        off.parentNode.insertBefore(uqBox, off.nextSibling);
+      }
+      uqBox.classList.remove('hidden');
+      if (uqState === 1 && !uqSeen && !uqIO) uqWatch();
+    }
+    if (uqBox) {
+      uqBox.addEventListener('click', function (e) {
+        var bt = e.target && e.target.closest ? e.target.closest('button[data-uq]') : null;
+        if (bt && e.isTrusted !== false) uqAnswer(Number(bt.getAttribute('data-uq')));
+      });
+      var uqRender = render, uqOther = renderOther, uqNone = noneShow;
+      render = function (a, cur) { uqRender(a, cur); uqAfter('price'); };
+      renderOther = function (a, cur) { uqOther(a, cur); uqAfter('other'); };
+      noneShow = function (st) { uqNone(st); uqAfter('none'); };
+    }
+    // ---- end one question ----
+
+    // Auto-run only when it is plausibly a person (2026-10-01, docs/CHECKER_CRAWLER_GUARD_2026-10-01.md). 9/29: crawler
+    // user agents stopped running checks. 10/01 18:20Z to 18:35Z, right after a deploy pinged IndexNow with ~6,000 URLs,
+    // desktop-browser user agents with no bot word walked the hotel pages into this page: ~50 live searches for no one.
+    // A link with a stay (?hotel=) now runs by itself only when all of these hold:
+    //  - the browser does not say it is automated (navigator.webdriver) and its user agent is not a known crawler or
+    //    link-preview fetcher (CRAWLER_UA: the worker's rules, kept in step by scripts/worker-ladder-test.mjs TCG8);
+    //  - a person asked for it: a click on one of our check forms or links in this tab in the last two minutes (the
+    //    click flag above), a link from "Share this check" (src=share), or the install welcome page's form (src=welcome);
+    //  - the page is visible (a link opened in a background tab waits until it is shown).
+    // Otherwise the form shows the stay with a "Check prices" button and runs on that click; the load counts
+    // web_autorun_held (the worker puts crawler user agents in site:bot).
+    var CRAWLER_UA = /bot|crawl|spider|slurp|headless|lighthouse|phantom|puppeteer|playwright|selenium|preview|scan|monitor|python|curl|wget|httpclient|inspectiontool|\bYeti\/|\bDaum\/\d|\bDaumoa|\bia_archiver|facebookexternalhit|\bmeta-(webindexer|external)|^WhatsApp\/\d|\bEmbedly\b|\bIframely\/|\bGoogle-(InspectionTool|Read-Aloud|Site-Verification|CWS)\b|\bGoogleOther\b|\bPTST\//i;
+    var isAuto = false;
+    try { isAuto = navigator.webdriver === true || CRAWLER_UA.test(navigator.userAgent || ''); } catch (x) { isAuto = false; }
+    var autoRun = !isAuto && (clickedIn || fromShare || fromWelcome);
+    var whenShown = function (fn) {
+      if (!document.visibilityState || document.visibilityState === 'visible') { fn(); return; }
+      var shown = function () { if (document.visibilityState !== 'visible') return; document.removeEventListener('visibilitychange', shown); fn(); };
+      document.addEventListener('visibilitychange', shown);
+    };
+    var hold = function (noteSays) {
+      $('checkBtn').textContent = 'Check prices';
+      if (!noteSays) $('stayMsg').textContent = 'Your hotel and dates are filled in. Press Check prices to see every booking site.';
+      wev('web_autorun_held');
+    };
+    // Watch your booking from a hotel or city page (2026-10-01, docs/WATCH_PROMOTION_2026-10-01.md). The page's form sends
+    // its dates, which are the prefilled sample dates unless the visitor changed them, and a booking has dates of its own.
+    // So a booked=1 link whose dates are those sample dates, or that carries none, does not check by itself: the date
+    // fields are emptied and marked and the page asks for the booking's dates, and the one check that follows prices the
+    // stay that was booked. web_autorun_held is counted only when the crawler guard would have held the load anyway.
+    var isYmd = function (s) { return /^\d{4}-\d{2}-\d{2}$/.test(s || ''); };
+    var bookedNeedsDates = q.get('booked') === '1' && !!q.get('hotel') && !fromShare &&
+      (!isYmd(q.get('in')) || !isYmd(q.get('out')) || linkPast || (fromHotel && q.get('in') === ymd(d1) && q.get('out') === ymd(d2)));
+    var holdForDates = function () {
+      $('checkIn').value = ''; $('checkOut').value = '';
+      ['checkIn', 'checkOut'].forEach(function (id) { $(id).classList.add('ring-2', 'ring-amber-400'); });
+      $('checkBtn').textContent = 'Check prices';
+      $('stayMsg').textContent = 'Already booked? Enter the dates of your booking, then press Check prices. You can watch your booking under the result.';
+      if (!autoRun) wev('web_autorun_held');
+    };
+    // A shared check (2026-10-01): say so above the form, keep the dates editable, and run it again with today's prices.
+    // Dates that have passed are not checked: the note asks for new ones (check-out then follows check-in at the shared
+    // stay's length). A person's arrival counts web_share_visit, and web_share_past when the dates had passed.
+    if (fromShare && q.get('hotel')) {
+      var sIn = q.get('in') || '', sOut = q.get('out') || '';
+      var past = /^\d{4}-\d{2}-\d{2}$/.test(sIn) && sIn < ymd(new Date());
+      var note = $('sharedNote');
+      var datesBtn = function (label) { return ' <button type="button" data-dates="1" class="inline-block mt-1 font-semibold text-ink px-2.5 py-0.5 rounded-lg border border-amber-300 bg-white hover:border-ink">' + label + '</button>'; };
+      if (past) {
+        note.innerHTML = '<strong>' + T('Shared check:') + '</strong> ' + T('{hotel}. Its dates ({dates}) have passed, so we did not check them. Pick your dates below, then check every booking site.',
+          { hotel: esc($('hotel').value), dates: esc(sharedIn ? (L10N ? L10N.range(dayShow(sIn), dayShow(sOut)) : dayFmt(sIn) + ' to ' + dayFmt(sOut)) : dayShow(sIn)) }) + datesBtn(T('Pick dates'));
+        $('checkIn').value = ''; $('checkOut').value = '';
+        ['checkIn', 'checkOut'].forEach(function (id) { $(id).classList.add('ring-2', 'ring-amber-400'); });
+      } else {
+        note.innerHTML = '<strong>Shared check:</strong> the hotel and dates came with this link. ' +
+          (autoRun ? 'We are checking every booking site again now, so the prices are today’s.' : 'Press Check prices to check every booking site with today’s prices.') +
+          ' Your stay is different?' + datesBtn('Change dates');
+      }
+      note.classList.remove('hidden');
+      if (!isAuto) { wev('web_share_visit'); if (viaExt) wev('web_share_visit_ext'); if (past) wev('web_share_past'); }
+      if (!past) { if (autoRun) whenShown(run); else hold(true); }
+    } else if (q.get('hotel')) {
+      if (bookedNeedsDates) holdForDates(); else if (autoRun) whenShown(run); else hold(false);
+    }
+  });
+  </script>
+  <script type="module" src="/app.js?v=20261006b"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="robots" content="noindex, follow" />
+
+  <title>Add Underbook to your browser | Underbook</title>
+  <meta name="description" content="Underbook is free for Chrome, Edge, Firefox and Safari. On a hotel page it shows if another site lists your stay for less and if it names the same room." />
+  <link rel="canonical" href="https://underbook.co/get" />
+
+  <!-- Open Graph: the card a post, a chat or an email shows for this link (preview fetchers run no JavaScript) -->
+  <meta property="og:title" content="Underbook: Your hotel, double-checked." />
+  <meta property="og:description" content="Underbook is free for Chrome, Edge, Firefox and Safari. On a hotel page it shows if another site lists your stay for less and if it names the same room." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://underbook.co/get" />
+  <meta property="og:image" content="https://underbook.co/assets/images/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Underbook: Your hotel, double-checked." />
+  <meta name="twitter:description" content="Underbook is free for Chrome, Edge, Firefox and Safari. On a hotel page it shows if another site lists your stay for less and if it names the same room." />
+  <meta name="twitter:image" content="https://underbook.co/assets/images/og.png" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui,-apple-system' font-size='17' font-weight='800' fill='%23ffffff'%3EU%3C/text%3E%3C/svg%3E" />
+
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <script>
+    // underbook.co/get: one link to the right place for each browser (see the comment at the top of <body>). This script
+    // sits above the stylesheets so it never waits for them: it reads the destination from the links below as soon as
+    // they are parsed and replaces this page with it.
+    (function () {
+      // The same crawler and automation rule as app.js (UB_BOT) and rate.html (RATE_BOT); worker-ladder-test.mjs TCG8
+      // keeps the three in step.
+      var GET_BOT = /bot|crawl|spider|slurp|headless|lighthouse|phantom|puppeteer|playwright|selenium|preview|scan|monitor|python|curl|wget|httpclient|^$|inspectiontool|\bYeti\/|\bDaum\/\d|\bDaumoa|\bia_archiver|facebookexternalhit|\bmeta-(webindexer|external)|^WhatsApp\/\d|\bEmbedly\b|\bIframely\/|\bGoogle-(InspectionTool|Read-Aloud|Site-Verification|CWS)\b|\bGoogleOther\b|\bPTST\//i;
+      // The store test is rate.html's, copied whole (engine/get-e2e.mjs fails if the two differ).
+      /* rate-pick */
+      // The store this browser adds extensions from, or null: a phone or tablet, Safari, or a browser we cannot tell.
+      function ubRateStore(ua, brands, mobile, touchMac) {
+        ua = String(ua || '');
+        var b = '';
+        for (var i = 0; brands && i < brands.length; i++) b += ' ' + ((brands[i] && brands[i].brand) || '');
+        if (mobile === true || touchMac === true || /Android|iPhone|iPad|iPod|Mobile/i.test(ua)) return null;
+        if (/Microsoft Edge/i.test(b) || /\bEdg\//.test(ua)) return 'edge';
+        if (/\bFirefox\//.test(ua) && !/Seamonkey/i.test(ua)) return 'amo';
+        if (/\b(Google Chrome|Chromium)\b/i.test(b) || /\bChrome\//.test(ua)) return 'cws';
+        return null;
+      }
+      /* /rate-pick */
+      // Firefox for Android (2026-10-06, docs/FIREFOX_ANDROID_LISTING_2026-10-06.md): app.js UB_FIREFOX_ANDROID.live,
+      // mirrored here because this page loads no app.js (engine/fx-android-site-e2e.mjs fails if the two differ). Off by
+      // default. Switched on, Firefox for Android 142 or newer goes to Firefox Add-ons (with the link's tags) instead of
+      // the web checker; older Firefox for Android and every other phone keep going to the checker.
+      var UB_FX_ANDROID_LIVE = true, UB_FX_ANDROID_MIN = 142;
+      function ubFxAndroid(ua) {
+        var m = String(ua || '').match(/\bFirefox\/(\d+)/);
+        return UB_FX_ANDROID_LIVE === true && /\bAndroid\b/.test(String(ua || '')) && !!m && Number(m[1]) >= UB_FX_ANDROID_MIN;
+      }
+      var n = navigator, ua = '', store = null, fxAndroid = false;
+      try {
+        ua = n.userAgent || '';
+        if (n.webdriver === true || GET_BOT.test(ua)) return; // a crawler or an automated browser stays on the list
+      } catch (x) { return; }
+      try {
+        var d = n.userAgentData;
+        store = ubRateStore(ua, d && d.brands, d && d.mobile, n.platform === 'MacIntel' && n.maxTouchPoints > 1);
+        if (!store && ubFxAndroid(ua)) { store = 'amo'; fxAndroid = true; }
+      } catch (x) { store = null; }
+      // The utm tags of the link the visitor followed, and nothing else from the address: never a destination.
+      var tags = '', tag = {};
+      try {
+        var from = new URLSearchParams(location.search), to = new URLSearchParams(), seen = {}, kept = 0;
+        from.forEach(function (v, k) {
+          if (kept < 10 && /^utm_[a-z_]{1,30}$/.test(k) && !seen[k] && v && v.length <= 200) { seen[k] = 1; kept++; to.append(k, v); tag[k] = v; }
+        });
+        tags = to.toString();
+      } catch (x) { tags = ''; tag = {}; }
+      function go() {
+        var a = document.getElementById('get-' + (store || 'web'));
+        if (!a) return;
+        // Phone path (2026-10-06, docs/PHONE_PATH_2026-10-06.md). To the checker (a phone, a tablet, Safari): a two-minute
+        // mark in this tab's own sessionStorage, with the link's utm_source and utm_campaign, so the checker can say the
+        // extension is for computers and keep those tags in the link it offers to send to the visitor's computer; it never
+        // leaves the browser (app.js reads and deletes it). To a store: when the link is one a phone visitor sent to
+        // themselves (utm_medium=send_to_self, set by app.js), one anonymous daily total, {"ev":"phone_link_open"}, and
+        // nothing else (no tag, address or referrer). Crawlers and automated browsers never get here (the test above).
+        if (!store) {
+          try { sessionStorage.setItem('ub_get', JSON.stringify({ t: Date.now(), s: tag.utm_source || '', c: tag.utm_campaign || '' })); } catch (x) { /* storage blocked: no note */ }
+        } else if (tag.utm_medium === 'send_to_self' && !fxAndroid) { // phone_link_open: a link opened on a computer
+          try {
+            var ev = 'https://underbook-backend.underbook.workers.dev/event', body = JSON.stringify({ ev: 'phone_link_open' });
+            if (!(n.sendBeacon && n.sendBeacon(ev, body))) fetch(ev, { method: 'POST', body: body, keepalive: true }).catch(function () {});
+          } catch (x) { /* measurement never holds the visitor */ }
+        }
+        // Tags go only where this page's link says they are read (data-carry-utm: the Chrome Web Store, Firefox Add-ons
+        // and the web checker; scripts/store_link_utm.py --check holds the store links to its rule).
+        var carry = tags && a.hasAttribute('data-carry-utm');
+        location.replace(a.href + (carry ? (a.href.indexOf('?') < 0 ? '?' : '&') + tags : ''));
+      }
+      function ready() {
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', go, { once: true });
+        else go();
+      }
+      // A page the browser loads ahead of a click (prerendering) has not been visited: wait until it is shown.
+      if (document.prerendering) document.addEventListener('prerenderingchange', ready, { once: true });
+      else ready();
+    })();
+  </script>
+
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="font-sans bg-stone-50 text-ink antialiased">
+
+  <!-- The short link (2026-10-03, B6 in docs/INSTALL_GROWTH_PLAN.md): underbook.co/get, for posts, directories, press,
+       email signatures and the YouTube description. noindex, so it is out of the sitemap and needs no inbound link
+       (scripts/build_sitemap.py, scripts/seo-link-audit.mjs).
+       With JavaScript, the script in <head> replaces this page at once (location.replace, so Back never returns here and
+       there is no redirect loop): Chrome and the other Chromium browsers (Brave, Opera, Vivaldi, Arc) to the Chrome Web
+       Store listing, Edge to Edge Add-ons, Firefox to Firefox Add-ons; phones, tablets, Safari and browsers it cannot
+       tell to the web checker. The link's utm_* tags go with the visitor to the Chrome Web Store, Firefox Add-ons and the
+       checker, and not to Edge Add-ons, which reports no traffic source (the rule of scripts/store_link_utm.py and
+       app.js). Nothing else in the address is read, and the destinations are the four links below: no open redirect.
+       Crawlers and automated browsers are not sent anywhere: they stay on this page (noindex, follow) and its links.
+       Without JavaScript it is a plain page with the three stores and the checker.
+       Not counted: a redirect is not a person's click on a store button, so it is not a site_install (app.js); this page
+       loads no app.js (its store-link rewriting would change the links below) and sends no event, with one exception
+       (2026-10-06, docs/PHONE_PATH_2026-10-06.md): a link a phone visitor sent to themselves (utm_medium=send_to_self)
+       opened in a browser with a store counts {"ev":"phone_link_open"}. The stores' own figures split the visits by the
+       tags (Chrome Web Store page views, Firefox Add-ons installs). -->
+
+  <!-- ───────── NAV ───────── -->
+  <nav class="border-b border-stone-200 bg-stone-50/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg tracking-tight">
+        <span class="inline-block w-7 h-7 rounded-md bg-ink text-white grid place-items-center text-base font-extrabold" aria-hidden="true">U</span>
+        Underbook
+      </a>
+      <a href="/hotel-price-checker" class="text-sm font-semibold text-stone-600 hover:text-ink">Check a price</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <section class="px-4 sm:px-6 pt-14 md:pt-20 pb-16 max-w-2xl mx-auto">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.05] mb-6">Add Underbook to your browser</h1>
+    <p class="text-lg text-slate-600 leading-relaxed mb-8">
+      Underbook is a free browser extension. On a hotel page with your dates, it shows whether another booking site lists the same stay for less, and whether that price names the same room. Pick the store for your browser.
+    </p>
+
+    <h2 id="stores" class="text-xl font-bold tracking-tight mb-4">The three stores</h2>
+    <ul class="space-y-3">
+      <li>
+        <a id="get-cws" data-store="cws" data-carry-utm href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid" class="block border border-stone-200 rounded-xl p-5 bg-white hover:border-ink transition">
+          <span class="block font-bold mb-1">Chrome Web Store</span>
+          <span class="block text-sm text-slate-600">For Chrome, and for Brave, Opera, Vivaldi and other browsers that add extensions from the Chrome Web Store.</span>
+        </a>
+      </li>
+      <li>
+        <a id="get-edge" data-store="edge" href="https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd" class="block border border-stone-200 rounded-xl p-5 bg-white hover:border-ink transition">
+          <span class="block font-bold mb-1">Microsoft Edge Add-ons</span>
+          <span class="block text-sm text-slate-600">For Microsoft Edge.</span>
+        </a>
+      </li>
+      <li>
+        <a id="get-amo" data-store="amo" data-carry-utm href="https://addons.mozilla.org/firefox/addon/underbook/" class="block border border-stone-200 rounded-xl p-5 bg-white hover:border-ink transition">
+          <span class="block font-bold mb-1">Firefox Add-ons</span>
+          <span class="block text-sm text-slate-600">For Firefox on a computer or an Android phone.</span>
+        </a>
+      </li>
+    </ul>
+
+    <h2 class="text-xl font-bold tracking-tight mt-10 mb-4">On a phone, a tablet or Safari</h2>
+    <p class="text-slate-600 leading-relaxed mb-4">
+      The extension runs in Chrome, Edge and Firefox on a computer, and in Firefox on Android. Anywhere else, the web price checker runs the same check with no install.
+    </p>
+    <a id="get-web" data-carry-utm href="/hotel-price-checker" class="inline-block bg-ink text-white font-semibold text-lg px-7 py-3.5 rounded-lg hover:bg-stone-800 transition">Check a hotel's price</a>
+  </section>
+
+<!-- links-1112:start -->
+  <section class="px-6 pt-4 pb-12 max-w-3xl mx-auto">
+    <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">More to read</p>
+    <ul class="list-disc pl-5 space-y-2 text-slate-700">
+      <li>On an iPhone or iPad, <a href="/hotel-price-comparison-extension-for-safari" class="text-ink underline decoration-accent decoration-2 underline-offset-2">Underbook for Safari</a> is a free App Store download (iOS 16 or later) that you switch on in Safari.</li>
+    </ul>
+  </section>
+<!-- links-1112:end -->
+
+  </main>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer class="px-4 sm:px-6 py-10 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-6 h-6 rounded bg-ink text-white grid place-items-center text-xs font-extrabold" aria-hidden="true">U</span>
+        <span><strong class="text-ink">Underbook</strong>. Your hotel, double-checked.</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+        <a href="/" class="hover:text-ink transition">Home</a>
+        <a href="/hotel-price-checker" class="hover:text-ink transition">Check a price</a>
+        <a href="/help" class="hover:text-ink transition">Help</a>
+        <a href="/privacy" class="hover:text-ink transition">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

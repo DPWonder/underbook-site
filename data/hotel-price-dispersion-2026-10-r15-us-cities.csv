@@ -1,0 +1,427 @@
+city,region,hotel,segment,sites_listed,going_rate_usd,cheapest_usd,cheapest_site,discount_pct,verdict,cheaper_room_name_matched,cheapest_named_a_room,fees_unverified,check_in,check_out,free_cancellation_elsewhere_same_or_less
+Alexandria Virginia,US,Archer Hotel Old Town Alexandria,independent,12,260,184,Super.com,29.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,Candlewood Suites Alexandria West by IHG,chain,12,114,106,pricetravel.com,7.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,Courtyard by Marriott Alexandria Old Town/Southwest,chain,12,139,109,Traveluro,21.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Alexandria Virginia,US,"Crowne Plaza Crystal City-Washington, D.C. by IHG",chain,12,153,92,Vio.com,39.9,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,yes
+Alexandria Virginia,US,Days Inn by Wyndham Alexandria,chain,12,90,80,Vio.com,11.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,Days Inn by Wyndham Alexandria South,chain,12,72,62,Vio.com,13.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,Hampton Inn & Suites Alexandria Old Town Area South,chain,12,136,115,KAYAK.com,15.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,Hilton Alexandria Mark Center,chain,12,178,82,Traveluro,53.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Alexandria Virginia,US,Hilton Alexandria Old Town,chain,12,167,163,Traveluro,2.4,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,Holiday Inn National Airport/Crystal City by IHG,chain,12,169,107,Vio.com,36.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,yes
+Alexandria Virginia,US,"Hotel Heron Alexandria Old Town, Curio Collection by Hilton",chain,12,266,232,Traveluro,12.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,Hyatt Centric Old Town Alexandria,chain,12,206,166,Vio.com,19.4,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,Residence Inn by Marriott Alexandria Old Town South at Carlyle,chain,12,135,130,pricetravel.com,3.7,PARITY,no,no,no,2026-11-05,2026-11-07,yes
+Alexandria Virginia,US,SpringHill Suites by Marriott Alexandria Old Town/Southwest,chain,12,167,166,Qantas Hotels,0.6,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,Super 8 by Wyndham Alexandria/Washington D.C. Area,chain,12,84,73,trivago DEALS,13.1,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,"The Alexandrian Old Town Alexandria, Autograph Collection",chain,12,204,204,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,yes
+Alexandria Virginia,US,"The Satire, Autograph Collection",chain,11,289,288,Expedia.ie,0.3,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Alexandria Virginia,US,The Westin Alexandria Old Town,chain,12,148,144,pricetravel.com,2.7,PARITY,no,no,no,2026-11-05,2026-11-07,yes
+Amarillo,US,Atrea Inn | Hotel in Amarillo,independent,12,107,88,Super.com,17.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Amarillo,US,Big Texan Motel,independent,12,144,118,Agoda,18.1,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Amarillo,US,Comfort Inn & Suites Amarillo West Near Medical Center,chain,12,98,81,Traveluro,17.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Amarillo,US,"Country Inn & Suites by Radisson, Amarillo I-40 West, TX",chain,12,120,119,Hotels In America,0.8,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Amarillo,US,Drury Inn & Suites Amarillo,independent,12,128,115,KAYAK.com,10.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Amarillo,US,Embassy Suites by Hilton Amarillo Downtown,chain,12,193,179,KAYAK.com,7.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Amarillo,US,Everhome Suites Amarillo West - Medical Center,independent,12,99,99,Everhome Suites Amarillo West - Medical Center,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Amarillo,US,Fairfield by Marriott Inn & Suites Amarillo Central,chain,12,131,131,Fairfield by Marriott Inn & Suites Amarillo Central,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Amarillo,US,Hilton Garden Inn Amarillo,chain,12,87,80,KAYAK.com,8.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Amarillo,US,Holiday Inn Amarillo West Medical Center by IHG,chain,12,111,97,Vio.com,12.6,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Amarillo,US,Holiday Inn Express & Suites Amarillo West by IHG,chain,12,130,99,goseek.com,23.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Amarillo,US,Holiday Inn Express & Suites Amarillo by IHG,chain,12,162,147,Vio.com,9.3,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Amarillo,US,Homewood Suites by Hilton Amarillo,chain,12,100,92,KAYAK.com,8.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Amarillo,US,Quality Inn Amarillo West near Medical Center,chain,11,93,90,Evendo,3.2,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Amarillo,US,Spark by Hilton Amarillo East,chain,12,101,98,trivago DEALS,3.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Amarillo,US,Spark by Hilton Amarillo Western Plaza,chain,12,91,78,KAYAK.com,14.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Amarillo,US,The Cactus Cove Inn and Suites,independent,12,108,93,Super.com,13.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Amarillo,US,Tru by Hilton Amarillo West,chain,10,124,123,Hoteles.com,0.8,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Annapolis,US,Aloft by Marriott Arundel Mills BWI Airport,chain,12,118,99,Traveluro,16.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Annapolis,US,"Annapolis Waterfront Hotel, Autograph Collection",chain,12,448,407,Hotelscombined.com,9.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Annapolis,US,Best Western Annapolis,chain,12,180,161,Vio.com,10.6,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Annapolis,US,"Country Inn & Suites by Radisson, Annapolis, MD",chain,12,204,204,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,yes
+Annapolis,US,Courtyard by Marriott Annapolis,chain,12,267,222,Hotelscombined.com,16.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Annapolis,US,DoubleTree by Hilton Hotel Annapolis,chain,12,214,214,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Annapolis,US,Graduate by Hilton Annapolis,chain,12,425,374,Traveluro,12.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Annapolis,US,Hilton Garden Inn Annapolis,chain,12,254,207,Traveluro,18.5,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Annapolis,US,Hilton Garden Inn Annapolis Downtown,chain,12,324,288,KAYAK.com,11.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Annapolis,US,Historic Inns of Annapolis,independent,12,348,292,Super.com,16.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Annapolis,US,Holiday Inn Express & Suites Annapolis by IHG,chain,12,210,178,Traveluro,15.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Annapolis,US,Laurel Grove Inn on the South River,independent,8,191,191,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Annapolis,US,Sonesta ES Suites Annapolis,independent,12,222,193,Vio.com,13.1,UNVERIFIED_LOWER,no,yes,yes,2026-11-05,2026-11-07,no
+Annapolis,US,The Inn at the Chesapeake Bay Beach Club & Spa,independent,12,414,337,Super.com,18.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Annapolis,US,Wades Point Inn On The Bay,independent,12,284,237,Wades Point Inn On The Bay,16.5,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Beaufort South Carolina,US,607 Bay Inn Downtown Beaufort,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Beaufort South Carolina,US,Best Western Sea Island Inn,chain,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Beaufort South Carolina,US,City Loft Hotel,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Beaufort South Carolina,US,Comfort Suites near MCAS Beaufort,independent,11,138,138,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,"Country Inn & Suites by Radisson, Beaufort West, SC",chain,12,156,129,Traveluro,17.3,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,Extended Stay America Premier Suites- Bluffton - Hilton Head,chain,11,138,110,Super.com,20.3,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Beaufort South Carolina,US,Hampton Inn Beaufort,chain,12,185,171,KAYAK.com,7.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,Hilton Garden Inn Beaufort,chain,12,225,202,Traveluro,10.2,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,Holiday Inn & Suites Beaufort @ Highway 21 by IHG,chain,12,168,143,goseek.com,14.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Beaufort South Carolina,US,Home2 Suites by Hilton Beaufort,chain,12,170,158,Hotelscombined.com,7.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,Howard Johnson by Wyndham Beaufort/Parris Island,chain,12,97,80,KAYAK.com,17.5,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,Oasis Inn,independent,12,109,101,Booking.com,7.3,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,Quality Inn Yemassee - Point South I-95,chain,12,62,62,Quality Inn Yemassee - Point South I-95,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,Rhett House Inn,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Beaufort South Carolina,US,Sleep Inn Beaufort near MCAS,chain,12,108,97,Traveluro,10.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,SpringHill Suites by Marriott Beaufort,chain,12,224,196,SpringHill Suites by Marriott Beaufort,12.5,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,Super 8 by Wyndham Port Royal/Beaufort,chain,8,99,98,Evendo,1.0,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Beaufort South Carolina,US,The Beaufort Inn,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Carmel-by-the-Sea,US,Best Western Carmel's Town House Lodge,chain,12,275,241,Traveluro,12.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Carmel-by-the-Sea,US,Carmel Garden Inn,independent,11,314,279,Tripadvisor.com,11.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Carmel-by-the-Sea,US,Carmel Inn & Suites,independent,12,185,115,Super.com,37.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Carmel-by-the-Sea,US,Carmel Mission Inn,independent,12,423,247,Vio.com,41.6,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,yes
+Carmel-by-the-Sea,US,Carmel Resort Inn,independent,12,189,168,Super.com,11.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Carmel-by-the-Sea,US,Carmel River Inn and Cottages,independent,10,339,279,Carmel River Inn and Cottages,17.7,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Carmel-by-the-Sea,US,Cypress Inn Carmel-by-the-Sea,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Carmel-by-the-Sea,US,"Highlands Inn, a Destination by Hyatt",chain,12,693,655,Hotels.com,5.5,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Carmel-by-the-Sea,US,Horizon Inn & Ocean View Lodge,independent,1,276,276,Horizon Inn & Ocean View Lodge,0.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Carmel-by-the-Sea,US,Hotel 1110,independent,1,227,227,Hotel 1110,0.0,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Carmel-by-the-Sea,US,Old Monterey Inn,independent,12,454,349,Old Monterey Inn,23.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Carmel-by-the-Sea,US,Pine Inn,independent,2,329,329,Pine Inn,0.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Carmel-by-the-Sea,US,Stargazer Hotel,independent,10,134,129,Hotels.com,3.7,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Carmel-by-the-Sea,US,The Hotel Carmel,independent,12,503,461,Super.com,8.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Carmel-by-the-Sea,US,The Normandy Inn,independent,12,303,273,The Normandy Inn,9.9,UNVERIFIED_LOWER,no,yes,yes,2026-11-05,2026-11-07,yes
+Carmel-by-the-Sea,US,Tradewinds Carmel,independent,12,338,268,Super.com,20.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Carmel-by-the-Sea,US,Vendange Carmel Inn & Suites,independent,12,179,179,Vio.com,0.0,PARITY,no,no,yes,2026-11-05,2026-11-07,yes
+Carmel-by-the-Sea,US,Villa Mara Carmel,independent,12,966,781,Super.com,19.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Cocoa Beach,US,American Inn of Cocoa,independent,8,86,80,Booking.com,7.0,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Cocoa Beach,US,Americas Best Value Inn Satellite Beach Melbourne,independent,12,62,45,Super.com,27.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Cocoa Beach,US,Anthony's On the Beach,independent,12,117,81,Super.com,30.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Cocoa Beach,US,Beach Place Guesthouses,independent,12,188,162,Super.com,13.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Cocoa Beach,US,Cocoa Beach Suites Hotel,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Cocoa Beach,US,Courtyard by Marriott Cocoa Beach Cape Canaveral,chain,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Cocoa Beach,US,Discovery Beach Resort,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Cocoa Beach,US,Econo Lodge Cocoa Beach - near the Port,chain,12,119,103,Traveluro,13.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Cocoa Beach,US,Hilton Cocoa Beach Oceanfront,chain,1,611,611,Billabook.com,0.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Cocoa Beach,US,"Motel 6 Cocoa Beach, FL",chain,12,103,87,Vio.com,15.5,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Cocoa Beach,US,Penguins on the Beach Resort,independent,7,195,195,Agoda,0.0,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Cocoa Beach,US,Sea Aire Oceanfront Inn,independent,11,178,165,Booking.com,7.3,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Cocoa Beach,US,South Beach Inn,independent,12,129,119,Booking.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Cocoa Beach,US,The Resort On Cocoa Beach,independent,12,363,258,Vio.com,28.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Cocoa Beach,US,Westgate Cocoa Beach Resort,independent,12,289,219,Super.com,24.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Daytona Beach,US,Best Western Aku Tiki Inn,chain,12,89,69,trivago DEALS,22.5,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Daytona Beach,US,Boardwalk Inn & Suites,independent,12,122,89,Super.com,27.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Daytona Beach,US,Catalina Beach Club,independent,12,126,121,Hotels.com,4.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Daytona Beach,US,Comfort Inn & Suites Daytona Beach Oceanfront,chain,12,124,108,Traveluro,12.9,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Daytona Beach,US,Daytona Grande Oceanfront Hotel,independent,12,200,186,Super.com,7.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Daytona Beach,US,Delta Hotels Daytona Beach Oceanfront,chain,12,119,110,KAYAK.com,7.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Daytona Beach,US,Hampton Inn Daytona Beach/Beachfront,chain,12,147,144,Bluepillow.com,2.0,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Daytona Beach,US,Hard Rock Hotel Daytona Beach,chain,9,299,252,Evendo,15.7,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Daytona Beach,US,Hawaiian Inn Beach Resort,independent,12,90,90,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Daytona Beach,US,Hilton Daytona Beach Oceanfront Resort,chain,12,164,146,Traveluro,11.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Daytona Beach,US,Holiday Inn & Suites Daytona Beach on the Ocean by IHG,chain,12,129,105,Traveluro,18.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Daytona Beach,US,Holiday Inn Resort Daytona Beach Oceanfront by IHG,chain,12,114,95,Vio.com,16.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,yes
+Daytona Beach,US,Home2 Suites by Hilton Ormond Beach Oceanfront,chain,12,101,94,KAYAK.com,6.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Daytona Beach,US,Nautilus Inn,independent,12,108,94,Super.com,13.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Daytona Beach,US,Ocean Court Beachfront Hotel,independent,8,115,72,Evendo,37.4,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Daytona Beach,US,Ocean East Resort Club,independent,8,99,97,Hotels.com,2.0,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Daytona Beach,US,Ocean Walk Resort,independent,12,222,118,Super.com,46.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Daytona Beach,US,Renaissance Daytona Beach Oceanfront Hotel,independent,12,210,210,Renaissance Daytona Beach Oceanfront Hotel,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Fort Myers,US,Allure Suites,independent,12,87,60,Super.com,31.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Fort Myers,US,Americas Best Value Inn Ft. Myers,independent,11,80,62,Evendo,22.5,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Fort Myers,US,Baymont by Wyndham Fort Myers Central,chain,12,63,56,Vio.com,11.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Fort Myers,US,Courtyard by Marriott Fort Myers Cape Coral,chain,12,137,85,trivago DEALS,38.0,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Fort Myers,US,Days Inn & Suites by Wyndham Fort Myers Near JetBlue Park,chain,12,69,66,goseek.com,4.3,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Fort Myers,US,Days Inn by Wyndham Fort Myers,chain,12,61,61,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Fort Myers,US,Holiday Inn Fort Myers - Downtown Area by IHG,chain,12,129,95,Vio.com,26.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Fort Myers,US,Howard Johnson by Wyndham Ft. Myers FL,chain,12,60,55,Booking.com,8.3,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Fort Myers,US,Hyatt Place Fort Myers/at The Forum,chain,12,143,100,Evendo,30.1,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Fort Myers,US,Quality Inn Fort Myers Cape Coral,chain,12,102,62,Vio.com,39.2,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Fort Myers,US,Quality Suites Fort Myers I-75,independent,12,73,64,Vio.com,12.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Fort Myers,US,Spark by Hilton Fort Myers,chain,12,73,73,Booking.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Fort Myers,US,Staywell Inn & Suites Fort Myers,independent,2,65,58,KAYAK.com,10.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Fort Myers,US,Staywell Inn & Suites I-75 Fort Myers,independent,3,73,73,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Fort Myers,US,Suburban Studios Fort Myers Cape Coral,chain,12,51,51,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,yes
+Fort Myers,US,Travelodge by Wyndham Fort Myers Airport,chain,12,55,54,Vio.com,1.8,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Fort Myers,US,Travelodge by Wyndham Fort Myers/Cape Coral,chain,12,54,49,Hotelscombined.com,9.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Fort Myers,US,WoodSpring Suites Fort Myers - Cape Coral,independent,12,61,61,Hotels.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Gettysburg,US,1863 Inn Of Gettysburg,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Gettysburg,US,Baymont by Wyndham Gettysburg,chain,2,52,52,trivago DEALS,0.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Gettysburg,US,Brickhouse Inn Bed and Breakfast,independent,12,258,105,Super.com,59.3,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Gettysburg,US,Comfort Suites Near Gettysburg Battlefield Visitor Center,independent,12,147,132,Kiwi.com,10.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Gettysburg,US,Days Inn by Wyndham Gettysburg,chain,12,82,72,Traveluro,12.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Gettysburg,US,Hampton Inn Gettysburg,chain,12,183,156,KAYAK.com,14.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Gettysburg,US,Hilton Garden Inn Gettysburg,chain,12,150,123,KAYAK.com,18.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Gettysburg,US,Hotel Gettysburg,independent,12,239,176,Super.com,26.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Gettysburg,US,Inn at Cemetery Hill,independent,12,170,106,Super.com,37.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Gettysburg,US,Liberty Mountain Resort,independent,12,182,129,Agoda,29.1,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Gettysburg,US,"Mansion House 1757 Boutique Inn, Restaurant, & Tavern",independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Gettysburg,US,Quality Inn Gettysburg Battlefield,chain,12,140,133,Luxury Escapes,5.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Gettysburg,US,Remembrance Inn,independent,12,53,39,KAYAK.com,26.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Gettysburg,US,Super 8 by Wyndham Gettysburg,chain,12,72,60,trivago DEALS,16.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Gettysburg,US,The Brafferton Inn,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Gettysburg,US,"The Federal Pointe Inn Gettysburg, an Ascend Collection Hotel",chain,8,252,236,Vio.com,6.3,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Gettysburg,US,The Union Hotel,independent,3,227,227,The Union Hotel,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Gettysburg,US,Wyndham Gettysburg Hotel & Conference Center,chain,12,159,115,Vio.com,27.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Best Western Plus Madison-Huntsville Hotel,chain,12,99,91,Vio.com,8.1,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Candlewood Suites Huntsville - Research Park by IHG,chain,6,118,118,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Clarion Pointe Huntsville Research Park,chain,7,54,54,Booking.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Comfort Inn Huntsville Research Park,chain,12,88,83,Vio.com,5.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Comfort Suites Huntsville MidCity District at Research Park,independent,12,80,76,Vio.com,5.0,PARITY,no,no,no,2026-11-05,2026-11-07,yes
+Huntsville Alabama,US,Courtyard by Marriott Huntsville University Drive,chain,12,121,121,Courtyard by Marriott Huntsville University Drive,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,yes
+Huntsville Alabama,US,Drury Inn & Suites Huntsville at the Space & Rocket Center,independent,12,137,123,KAYAK.com,10.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Element by Marriott Huntsville,chain,12,203,152,trivago DEALS,25.1,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Everhome Suites Huntsville - Research Park,independent,12,85,81,Vio.com,4.7,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Hampton Inn Madison Huntsville Airport,chain,12,103,100,Traveluro,2.9,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Holiday Inn Research Park,chain,12,109,98,Kiwi.com,10.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Huntsville Alabama,US,Home2 Suites by Hilton Madison Huntsville Airport,chain,12,118,114,Traveluro,3.4,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Hyatt Place Huntsville / Research Park / Redstone,chain,12,149,148,Qantas Hotels,0.7,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,Hyatt Studios Huntsville,chain,12,101,93,Booking.com,7.9,UNVERIFIED_LOWER,no,yes,no,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,La Quinta Inn & Suites by Wyndham Huntsville Airport Madison,chain,12,97,79,Super.com,18.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Huntsville Alabama,US,La Quinta Inn by Wyndham Huntsville Research Park,chain,12,53,51,Luxury Escapes,3.8,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,"Studio 6 Extended stay Huntsville, AL - US Space & Rocket Center",independent,12,56,43,"Studio 6 Extended stay Huntsville, AL - US Space & Rocket Center",23.2,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Huntsville Alabama,US,The Westin Huntsville,chain,12,218,185,Billabook.com,15.1,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Lake Placid,US,Adirondack Spruce Lodge,independent,11,147,125,Adirondack Spruce Lodge,15.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lake Placid,US,Cambria Hotel Lake Placid - Lakeside Resort,chain,12,227,192,trivago DEALS,15.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lake Placid,US,Eastwind Hotel - Lake Placid,independent,12,225,165,Super.com,26.7,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Lake Placid,US,Franklin Manor,independent,6,197,197,Hotel Booking Zone,0.0,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Lake Placid,US,Hampton Inn & Suites Lake Placid,chain,12,208,192,KAYAK.com,7.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lake Placid,US,High Peaks Resort,independent,12,226,191,Agoda,15.5,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Lake Placid,US,Lake Placid Inn: Main Street,independent,12,224,203,Reservation Day,9.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Lake Placid,US,Mirror Lake Inn,independent,2,379,379,Mirror Lake Inn,0.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Lake Placid,US,Placid Bay Hotel,independent,4,136,122,Hotels In America,10.3,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Lake Placid,US,Rodeway Inn Lake Placid South,chain,12,128,117,Vio.com,8.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lake Placid,US,The Boha Hotel,independent,12,177,150,The Boha Hotel,15.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lake Placid,US,The Hungry Trout Resort,independent,12,88,88,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Lake Placid,US,The Interlaken Inn & Restaurant,independent,9,239,229,The Interlaken Inn & Restaurant,4.2,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Lake Placid,US,Town House Lodge,independent,5,197,175,Town House Lodge,11.2,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Lake Placid,US,Whiteface Lodge,independent,12,662,351,Kiwi.com,47.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lake Placid,US,Wolfjaw Lodge,independent,8,153,130,Wolfjaw Lodge,15.0,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,1786 The Limestone Inn,independent,2,129,129,1786 The Limestone Inn,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,Candlewood Suites Lancaster West by IHG,chain,12,134,130,Vio.com,3.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,Clarion Inn Strasburg - Lancaster,chain,12,112,102,trivago DEALS,8.9,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,Comfort Suites Lancaster Amish Country,independent,12,180,151,KAYAK.com,16.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Lancaster Pennsylvania,US,Country Inn of Lancaster,independent,12,108,99,Vio.com,8.3,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,Days Inn & Suites by Wyndham Lancaster Amish Country,chain,12,87,78,Traveluro,10.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,Days Inn by Wyndham Lancaster PA Dutch Country,chain,12,112,91,trivago DEALS,18.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,DoubleTree Resort by Hilton Hotel Lancaster,chain,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Lancaster Pennsylvania,US,Dutch Wonderland Inn,independent,11,120,117,Agoda,2.5,PARITY,no,yes,yes,2026-11-05,2026-11-07,yes
+Lancaster Pennsylvania,US,Eden Resort & Suites,independent,12,220,206,trivago DEALS,6.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,Hampton Inn Lancaster,chain,12,167,159,Traveluro,4.8,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,HomeTowne Studios Lancaster,independent,12,104,80,Priceline,23.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,Lancaster Inn and Suites - Hotel in Manheim PA,independent,12,194,109,Super.com,43.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,Quality Inn Lancaster,chain,12,110,107,Vio.com,2.7,PARITY,no,no,yes,2026-11-05,2026-11-07,yes
+Lancaster Pennsylvania,US,Sleep Inn & Suites of Lancaster County,chain,12,117,105,Vio.com,10.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Lancaster Pennsylvania,US,Spark by Hilton Lancaster,chain,12,141,141,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,The Inn At Leola Village - A Historic Hotel of America,independent,12,210,180,Hotels In America,14.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lancaster Pennsylvania,US,Wyndham Lancaster Resort and Convention Center,chain,12,204,174,trivago DEALS,14.7,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Lubbock,US,Americas Best Value Inn Lubbock E,independent,12,83,64,Evendo,22.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Lubbock,US,Ashmore Inn & Suites,independent,12,74,45,Super.com,39.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lubbock,US,Best Western Plus Tech Medical Center Inn,chain,12,166,148,Traveluro,10.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lubbock,US,"Cotton Court, Valencia Hotel Collection",independent,3,594,594,Cotton Court Hotel,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Lubbock,US,"Country Inn & Suites by Radisson, Lubbock Southwest, TX",chain,12,194,193,Hoteis.com,0.5,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Lubbock,US,Courtyard by Marriott Lubbock,chain,12,235,207,Courtyard by Marriott Lubbock,11.9,UNVERIFIED_LOWER,no,yes,no,2026-11-05,2026-11-07,no
+Lubbock,US,Extended Stay America Suites- Lubbock - Southwest,independent,8,67,58,KAYAK.com,13.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lubbock,US,Fairfield by Marriott Inn & Suites Lubbock Downtown,chain,7,202,202,Fairfield by Marriott Inn & Suites Lubbock Downtown,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Lubbock,US,Holiday Inn Express & Suites Lubbock South by IHG,chain,12,219,172,goseek.com,21.5,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Lubbock,US,Holiday Inn Express & Suites Lubbock Southwest - Wolfforth by IHG,chain,12,198,198,Vio.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Lubbock,US,Lubbock Regency Inn,independent,6,114,46,Lubbock Regency Inn,59.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lubbock,US,MCM Eleganté Hotel & Suites Lubbock,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Lubbock,US,Quality Inn & Suites Lubbock South,chain,12,113,110,goseek.com,2.7,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Lubbock,US,Quality Suites Lubbock Southwest,independent,12,154,135,Vio.com,12.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lubbock,US,Residence Inn by Marriott Lubbock Southwest,chain,12,277,264,Residence Inn by Marriott Lubbock Southwest,4.7,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Lubbock,US,Staybridge Suites Lubbock South by IHG,chain,12,217,208,Vio.com,4.1,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Lubbock,US,SureStay Plus by Best Western Lubbock Medical Center,chain,12,139,121,Vio.com,12.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Lubbock,US,Wingate by Wyndham Lubbock TX South,chain,6,101,101,Wingate by Wyndham Lubbock TX South,0.0,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Baymont by Wyndham Saraland,chain,12,82,82,Baymont by Wyndham Saraland,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Candlewood Suites Mobile-Downtown by IHG,chain,12,144,144,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Comfort Suites Mobile - South Alabama University Area,independent,12,115,111,Vio.com,3.5,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Mobile Alabama,US,"Country Inn & Suites by Radisson, Saraland, AL",chain,12,97,85,KAYAK.com,12.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Drury Plaza Hotel Mobile,independent,12,115,102,Agoda,11.3,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Fairfield by Marriott Inn & Suites Mobile,chain,12,86,86,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Hampton Inn & Suites Mobile Airport University Area,chain,12,163,151,KAYAK.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Mobile Alabama,US,"Holiday Inn Express & Suites Mobile West - I-10, an IHG Hotel",chain,11,135,134,Booking.com,0.7,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Holiday Inn Express & Suites Mobile – I-65 by IHG,chain,12,114,102,Vio.com,10.5,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Holiday Inn Express & Suites Mobile/Saraland,chain,9,147,135,Priceline,8.2,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Holiday Inn Mobile-Dwtn/Hist. District by IHG,chain,12,151,113,Vio.com,25.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Mobile Alabama,US,Home2 Suites by Hilton Mobile West I-10 Tillmans Corner,chain,12,98,96,trivago DEALS,2.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Hyatt Studios Mobile / Tillmans Corner,chain,12,147,147,Booking.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Malaga Inn,independent,12,124,89,trivago DEALS,28.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Mobile Alabama,US,Mobile Marriott,chain,12,135,135,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,yes
+Mobile Alabama,US,"The Admiral Hotel, Mobile Downtown",independent,12,221,181,Super.com,18.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Mystic,US,Blue Whale Inn,independent,1,140,140,Blue Whale Inn,0.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Mystic,US,Delamar Mystic,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Mystic,US,Hampton Inn & Suites Mystic,chain,12,274,273,eDreams,0.4,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Mystic,US,Harbor View Landing,independent,12,395,363,Booking.com,8.1,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Mystic,US,Hilton Mystic,chain,12,275,229,KAYAK.com,16.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Mystic,US,Howard Johnson by Wyndham Mystic,chain,12,90,74,KAYAK.com,17.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Mystic,US,Hyatt Place Mystic,chain,12,234,205,Kiwi.com,12.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Mystic,US,Inn at Mystic,independent,2,152,152,HotelTonight.com,0.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Mystic,US,Mermaid Inn of Mystic,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Mystic,US,Mystic Marriott Hotel & Spa,chain,12,326,274,Mystic Marriott Hotel & Spa,16.0,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,yes
+Mystic,US,Mystic River Inn,independent,6,541,539,Travelmyth.com,0.4,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Mystic,US,Spark by Hilton Mystic Groton,chain,12,124,124,Expedia.de,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Mystic,US,Steamboat Inn,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Mystic,US,Taber Inn Mystic,independent,12,202,158,Super.com,21.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Mystic,US,The Whaler's Inn Hotel of Mystic,independent,12,329,327,The Whaler's Inn Hotel of Mystic,0.6,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Ogunquit,US,"Anchorage By The Sea, Ogunquit Resort Collection",independent,6,267,208,"Anchorage By The Sea, Ogunquit Resort Collection",22.1,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Ogunquit,US,Cliff House Maine,independent,12,704,671,Super.com,4.7,PARITY,no,no,no,2026-11-05,2026-11-07,yes
+Ogunquit,US,Gazebo Inn Ogunquit,independent,3,234,229,Gazebo Inn Ogunquit,2.1,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Ogunquit,US,"Gorges Grant Hotel, Ogunquit Resort Collection",independent,7,197,169,"Gorges Grant Hotel, Ogunquit Resort Collection",14.2,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Ogunquit,US,Grasshopper Inn,independent,11,324,249,Grasshopper Inn,23.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Ogunquit,US,InnSeason Resorts The Falls at Ogunquit,independent,8,162,119,Hotels In America,26.5,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Ogunquit,US,Norseman Resort - The Original Ogunquit Collection,independent,10,223,223,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Ogunquit,US,Old Village Inn,independent,1,142,142,Bluepillow.id,0.0,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Ogunquit,US,Sea Chambers Motel,independent,9,165,165,Booking.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Ogunquit,US,Sea Rose Suites,independent,12,149,144,BusinessHotels.com,3.4,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Ogunquit,US,Seacastles Resort - The Original Ogunquit Collection,independent,12,138,138,Seacastles Resort - The Original Ogunquit Collection,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Ogunquit,US,The Admiral's Inn,independent,12,169,143,The Admiral's Inn,15.4,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Ogunquit,US,The Grand Hotel Ogunquit,independent,9,149,149,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Ogunquit,US,"The Meadowmere Resort, Ogunquit Resort Collection",independent,12,194,187,Hotels.com,3.6,PARITY,no,yes,no,2026-11-05,2026-11-07,yes
+Ogunquit,US,The Trident Inn,independent,9,275,250,The Trident Inn,9.1,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Sanibel Island,US,'Tween Waters Inn & Marina,independent,12,283,283,'Tween Waters Inn & Marina,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,yes
+Sanibel Island,US,Anchor Inn & Cottages Newly Remodeled,independent,12,185,175,Hotels.com,5.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Sanibel Island,US,Captiva Island Inn,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Sanibel Island,US,Casa Ybel Beach Resort,independent,11,321,321,Vio.com,0.0,PARITY,no,no,yes,2026-11-05,2026-11-07,yes
+Sanibel Island,US,Island Inn,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Sanibel Island,US,La Quinta Inn & Suites by Wyndham Ft. Myers-Sanibel Gateway,chain,11,115,115,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Sanibel Island,US,Latitude 26 Waterfront Boutique Resort - Fort Myers Beach,independent,12,133,133,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,yes
+Sanibel Island,US,Latitude 26 Waterfront Resort and Marina - Fort Myers Beach,independent,11,170,135,Agoda,20.6,UNVERIFIED_LOWER,no,yes,yes,2026-11-05,2026-11-07,no
+Sanibel Island,US,Lighthouse Island Resort,independent,12,148,115,Super.com,22.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Sanibel Island,US,Marriott Sanibel Harbour Resort & Spa,chain,12,263,249,KAYAK.com,5.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Sanibel Island,US,Pink Shell Beach Resort & Marina,independent,12,585,490,Hotels In America,16.2,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Sanibel Island,US,Residence Inn by Marriott Fort Myers Sanibel,chain,12,167,114,Evendo,31.7,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Sanibel Island,US,Sanibel Captiva Beach Resorts,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Sanibel Island,US,Sanibel Island Beach Resort,independent,12,249,183,Super.com,26.5,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Sanibel Island,US,Sanibel Siesta on the Beach,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Sanibel Island,US,South Seas,independent,12,363,248,Traveluro,31.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Sanibel Island,US,Sundial Beach Resort & Spa,independent,12,467,359,Reservation Day,23.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Sanibel Island,US,Sunshine Island Inn,independent,4,233,229,Expedia.com.ph,1.7,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Beachview Inn,independent,12,119,106,Hotels.com,10.9,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Casablanca Inn,independent,8,263,182,Billabook.com,30.8,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Comfort Inn Beach/Boardwalk Area,chain,12,148,141,Vio.com,4.7,PARITY,no,no,no,2026-11-05,2026-11-07,yes
+Santa Cruz California,US,Comfort Inn Santa Cruz North,chain,12,179,173,Hotel prive,3.4,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Continental Inn,independent,12,85,79,Hotels.com,7.1,UNVERIFIED_LOWER,no,yes,no,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Fireside Inn Santa Cruz,independent,9,95,95,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Hilton Santa Cruz/Scotts Valley,chain,10,273,248,müv AI,9.2,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Santa Cruz California,US,"Hotel Paradox, Autograph Collection",chain,12,222,163,Traveluro,26.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Hotel Solares,independent,12,109,105,KAYAK.com,3.7,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Marea Sol Hotel,independent,12,173,173,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Ocean Gate Inn,independent,10,98,89,Priceline,9.2,UNVERIFIED_LOWER,no,yes,yes,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Ocean Pacific Lodge,independent,12,122,114,Super.com,6.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Santa Cruz California,US,Riverside Inn & Suites,independent,11,101,94,Expedia.co.in,6.9,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,no
+Santa Cruz California,US,"Seacliff Inn Aptos, Tapestry Collection by Hilton",chain,12,180,141,KAYAK.com,21.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Seaside Inn & Suites,independent,11,81,81,Hotels.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,yes
+Santa Cruz California,US,Surf City Inn & Suites,independent,12,79,72,Super.com,8.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Santa Cruz California,US,The Aqua Pacific Hotel,independent,5,113,94,The Aqua Pacific Hotel,16.8,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Santa Cruz California,US,Torch Lite Inn Santa Cruz CA Hotel,independent,12,114,101,Super.com,11.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Saratoga Springs,US,AC Hotel Saratoga Springs,chain,9,234,234,AC Hotel Saratoga Springs,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Saratoga Springs,US,"Brookmere Saratoga, a Tribute Portfolio Hotel",chain,6,293,293,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Saratoga Springs,US,Comfort Inn & Suites Saratoga Springs,chain,12,141,131,trivago DEALS,7.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Saratoga Springs,US,Embassy Suites by Hilton Saratoga Springs,chain,12,261,255,Traveluro,2.3,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Saratoga Springs,US,Fairfield by Marriott Inn & Suites Saratoga Malta,chain,12,116,103,KAYAK.com,11.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Saratoga Springs,US,Hampton Inn & Suites Saratoga Springs Downtown,chain,12,300,278,KAYAK.com,7.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Saratoga Springs,US,Hilton Garden Inn Saratoga Springs,chain,12,194,179,KAYAK.com,7.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Saratoga Springs,US,Holiday Inn Saratoga Springs by IHG,chain,12,262,234,KAYAK.com,10.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Saratoga Springs,US,Home2 Suites by Hilton Saratoga Malta,chain,12,141,119,KAYAK.com,15.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Saratoga Springs,US,Hyatt Place Saratoga/Malta,chain,12,110,110,Vio.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,yes
+Saratoga Springs,US,Roosevelt Inn & Suites,independent,9,126,113,Evendo,10.3,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Saratoga Springs,US,Saratoga Casino Hotel,independent,12,160,125,Super.com,21.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Saratoga Springs,US,The Adelphi Hotel,independent,12,848,433,Hotels.com,48.9,UNVERIFIED_LOWER,no,yes,no,2026-11-05,2026-11-07,no
+Saratoga Springs,US,"The Hotel Saratoga, an Ascend Collection Hotel",chain,12,153,134,trivago DEALS,12.4,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Saratoga Springs,US,The Inn at Saratoga,independent,1,263,263,The Inn at Saratoga,0.0,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Saratoga Springs,US,The Springwater Bed and Breakfast,independent,11,243,206,Super.com,15.2,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Shreveport,US,Bally's Shreveport Casino & Hotel,independent,12,129,104,trivago DEALS,19.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,"Country Inn & Suites by Radisson, Shreveport-Airport, LA",chain,12,69,56,KAYAK.com,18.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,Del-Mar Airport Inn & Suites,independent,12,65,44,Super.com,32.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Shreveport,US,Hilton Garden Inn Shreveport,chain,11,144,142,eDreams,1.4,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Shreveport,US,Hilton Shreveport,chain,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Shreveport,US,Holiday Inn Express & Suites Shreveport - Downtown by IHG,chain,12,101,77,Vio.com,23.8,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,yes
+Shreveport,US,Holiday Inn Express & Suites Shreveport - West by IHG,chain,12,94,79,Hotelscombined.com,16.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,Holiday Inn Shreveport Downtown by IHG,chain,12,102,86,Traveluro,15.7,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Shreveport,US,Homewood Suites by Hilton Shreveport,chain,12,130,121,Homewood Suites by Hilton Shreveport,6.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,Horseshoe Bossier City - A Caesars Rewards Destination,chain,12,165,127,KAYAK.com,23.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,Horseshoe Casino,independent,3,138,138,Traveluro,0.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,La Quinta Inn & Suites by Wyndham Shreveport Airport,chain,12,105,95,KAYAK.com,9.5,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,"Live Casino & Hotel Louisiana, Curio Collection by Hilton",chain,12,188,150,KAYAK.com,20.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,Margaritaville Resort Casino,independent,12,232,211,Reservation Day,9.1,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Shreveport,US,"Sam's Town Hotel & Casino, Shreveport",independent,12,190,92,Super.com,51.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,The Fairfield Place,chain,10,110,87,Super.com,20.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,The Remington Suite Hotel & Spa,independent,12,163,124,trivago DEALS,23.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Shreveport,US,Wingate by Wyndham Shreveport Airport,chain,12,73,65,trivago DEALS,11.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+St. Simons Island,US,Best Western Plus St. Simons,chain,12,105,88,trivago DEALS,16.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+St. Simons Island,US,Days Inn & Suites by Wyndham Jekyll Island,chain,11,144,141,Days Inn & Suites by Wyndham Jekyll Island,2.1,PARITY,no,no,yes,2026-11-05,2026-11-07,yes
+St. Simons Island,US,Hampton Inn & Suites Jekyll Island,chain,12,140,138,trivago DEALS,1.4,PARITY,no,no,no,2026-11-05,2026-11-07,no
+St. Simons Island,US,Hampton Inn St. Simons Island,chain,12,138,124,KAYAK.com,10.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+St. Simons Island,US,Holiday Inn Express Saint Simons Island by IHG,chain,12,134,134,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,yes
+St. Simons Island,US,Holiday Inn Resort Jekyll Island by IHG,chain,12,155,141,KAYAK.com,9.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+St. Simons Island,US,Home2 Suites by Hilton St. Simons Island,chain,12,189,189,Booking.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+St. Simons Island,US,Hotel Simone,independent,3,294,265,Hotel Simone,9.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+St. Simons Island,US,Ocean Inn & Suites,independent,12,229,202,Super.com,11.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+St. Simons Island,US,Ocean Lodge Resort,independent,5,309,309,Bluepillow.com,0.0,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+St. Simons Island,US,Queens Court Inn,independent,12,120,103,Super.com,14.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+St. Simons Island,US,Saint Simons Inn By The Lighthouse,independent,12,213,213,Hotels.com,0.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+St. Simons Island,US,The Inn by Sea Island,independent,12,257,257,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+St. Simons Island,US,The King and Prince Beach & Golf Resort,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+St. Simons Island,US,The Westin Jekyll Island Beach Resort,chain,12,294,294,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Stowe,US,AWOL Stowe,independent,12,284,238,Kiwi.com,16.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Stowe,US,Best Western Plus Waterbury - Stowe,chain,12,166,152,Vio.com,8.4,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,yes
+Stowe,US,Bluebird Cady Hill Lodge,independent,12,179,139,Tripadvisor.com,22.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Stowe,US,Commodores Inn,independent,12,204,149,Agoda,27.0,UNVERIFIED_LOWER,no,yes,yes,2026-11-05,2026-11-07,no
+Stowe,US,Fairfield by Marriott Inn & Suites Waterbury Stowe,chain,12,205,204,Qantas Hotels,0.5,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Stowe,US,Field Guide Lodge,independent,12,179,124,Super.com,30.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Stowe,US,Green Mountain Inn,independent,12,235,145,goseek.com,38.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Stowe,US,Grey Fox Inn,independent,12,179,151,Hoteis.com,15.6,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-05,2026-11-07,yes
+Stowe,US,Outbound Stowe,independent,12,173,108,Super.com,37.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Stowe,US,Sinclair Inn Bed & Breakfast,independent,12,258,225,goseek.com,12.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Stowe,US,Stowe Motel & Snowdrift,independent,12,139,114,Vio.com,18.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Stowe,US,Stoweflake Mountain Resort & Spa,independent,0,,,,,,no,no,no,2026-11-05,2026-11-07,
+Stowe,US,Sun & Ski Inn and Suites,independent,12,191,162,Vio.com,15.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Stowe,US,"The Lodge at Spruce Peak, a Destination by Hyatt Hotel",chain,12,341,319,"The Lodge at Spruce Peak, a Destination by Hyatt Hotel",6.5,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Stowe,US,Timberholm Inn,independent,12,194,169,Timberholm Inn,12.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Stowe,US,Topnotch Resort,independent,12,293,284,Billabook.com,3.1,PARITY,no,no,yes,2026-11-05,2026-11-07,yes
+Stowe,US,"Tälta Lodge, a Bluebird by Lark",independent,12,187,134,Super.com,28.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Stowe,US,von Trapp Family Lodge & Resort,independent,12,290,264,Hotels In America,9.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tallahassee,US,Aloft by Marriott Tallahassee Downtown,chain,12,154,132,KAYAK.com,14.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tallahassee,US,BOB Hotels Tallahassee - Boutique on Budget,independent,12,85,61,Super.com,28.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tallahassee,US,Courtyard by Marriott Tallahassee Downtown/Capitol,chain,12,103,103,Courtyard by Marriott Tallahassee Downtown/Capitol,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Tallahassee,US,DoubleTree by Hilton Hotel Tallahassee,chain,12,122,113,KAYAK.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tallahassee,US,Drury Plaza Hotel Tallahassee,independent,12,174,170,Drury Plaza Hotel Tallahassee,2.3,PARITY,no,no,yes,2026-11-05,2026-11-07,no
+Tallahassee,US,Four Points by Sheraton Tallahassee Downtown,chain,12,167,166,Qantas Hotels,0.6,PARITY,no,no,yes,2026-11-05,2026-11-07,yes
+Tallahassee,US,Hilton Garden Inn Tallahassee Central,chain,12,118,109,KAYAK.com,7.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tallahassee,US,Holiday Inn & Suites Tallahassee Conference Ctr N by IHG,chain,12,151,132,Vio.com,12.6,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Tallahassee,US,Holiday Inn Tallahassee E Capitol - Univ by IHG,chain,12,154,153,Hoteles.com,0.6,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Tallahassee,US,Home2 Suites by Hilton Tallahassee State Capitol,chain,12,122,113,KAYAK.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tallahassee,US,"Hotel Duval, Autograph Collection",chain,12,149,138,KAYAK.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Tallahassee,US,Hotel Indigo Tallahassee - Collegetown by IHG,chain,12,143,115,goseek.com,19.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Tallahassee,US,La Quinta Inn by Wyndham Tallahassee North,chain,12,69,58,trivago DEALS,15.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tallahassee,US,"Motel 6 Tallahassee, FL - Downtown",chain,12,55,55,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Tallahassee,US,OYO Hotel Tallahassee Downtown,chain,12,70,59,Evendo,15.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Tallahassee,US,Staybridge Suites Tallahassee I-10 East by IHG,chain,12,181,134,HotelTonight.com,26.0,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Tallahassee,US,TRYP by Wyndham Tallahassee North I-10 Capital Circle,chain,12,95,72,Vio.com,24.2,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tallahassee,US,stayAPT Suites Tallahassee-Capitol,independent,12,105,99,Hotels.com,5.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,yes
+Tybee Island,US,Admiral's Inn on Tybee Island,independent,12,117,112,Super.com,4.3,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Tybee Island,US,"Atlantis Inn Tybee Island, Georgia",independent,8,166,150,"Atlantis Inn Tybee Island, Georgia",9.6,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,yes
+Tybee Island,US,Beach House Hilton Head Island,chain,10,241,189,Vio.com,21.6,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Tybee Island,US,DeSoto Beach Gardens,independent,10,187,159,DeSoto Beach Gardens,15.0,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tybee Island,US,DeSoto Beach Hotel,independent,12,175,129,Vio.com,26.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Tybee Island,US,DeSoto Beach Terraces,independent,7,219,181,DeSoto Beach Terraces,17.4,UNVERIFIED_LOWER,no,yes,no,2026-11-05,2026-11-07,no
+Tybee Island,US,Dunes Inn & Suites,independent,6,121,117,Hotels.com,3.3,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Tybee Island,US,Hilton Grand Vacations Club Ocean Oak Resort Hilton Head,chain,12,291,291,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,yes
+Tybee Island,US,Holiday Inn Express Hilton Head Island by IHG,chain,12,161,101,Vio.com,37.3,REAL_LOWER_MATCHED,yes,yes,no,2026-11-05,2026-11-07,no
+Tybee Island,US,Hotel Tybee,independent,12,172,158,Super.com,8.1,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tybee Island,US,Hotel tybee island,independent,8,456,456,Expedia.com,0.0,PARITY,no,no,no,2026-11-05,2026-11-07,no
+Tybee Island,US,Royal Palms Motel,independent,12,72,71,Vio.com,1.4,PARITY,no,no,yes,2026-11-05,2026-11-07,yes
+Tybee Island,US,Sandcastle Inn,independent,5,117,117,Expedia.com,0.0,PARITY,no,no,yes,2026-11-05,2026-11-07,yes
+Tybee Island,US,Sea and Breeze Hotel and Condo,independent,12,79,76,Hotels.com,3.8,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Tybee Island,US,Sky Suites,independent,12,69,69,Agoda,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Tybee Island,US,Spark by Hilton Hilton Head Island,chain,12,102,87,Traveluro,14.7,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tybee Island,US,Tybee Condo,independent,10,333,301,Hotel Booking Zone,9.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Tybee Island,US,Tybee Island Inn,independent,12,238,169,Tybee Island Inn,29.0,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Wilmington North Carolina,US,ARRIVE Wilmington,independent,12,263,215,Super.com,18.3,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Wilmington North Carolina,US,Carolina Beach Inn,independent,2,376,117,Carolina Beach Inn,68.9,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Wilmington North Carolina,US,DoubleTree by Hilton Wilmington,chain,7,153,153,DoubleTree by Hilton Wilmington,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no
+Wilmington North Carolina,US,Hampton Inn & Suites Carolina Beach Oceanfront,chain,12,180,166,KAYAK.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Wilmington North Carolina,US,Holiday Inn Express & Suites Wilmington-University Ctr by IHG,chain,12,113,101,KAYAK.com,10.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Wilmington North Carolina,US,Holiday Inn Resort Lumina on Wrightsville Beach by IHG,chain,12,398,397,Priceline,0.3,PARITY,no,yes,yes,2026-11-05,2026-11-07,yes
+Wilmington North Carolina,US,"Hotel Lela Wilmington, Tapestry Collection by Hilton",chain,12,147,127,trivago DEALS,13.6,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Wilmington North Carolina,US,Shell Island Resort,independent,12,191,150,trivago DEALS,21.5,UNVERIFIED_LOWER,no,no,yes,2026-11-05,2026-11-07,no
+Wilmington North Carolina,US,Spark by Hilton Wilmington,chain,12,82,82,Spark by Hilton Wilmington,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Wilmington North Carolina,US,Spark by Hilton Wilmington Carolina Beach Rd,chain,12,96,96,Expedia.com,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,no
+Wilmington North Carolina,US,StudioRes by Marriott Wilmington,chain,12,109,109,StudioRes by Marriott Wilmington,0.0,PARITY,no,yes,no,2026-11-05,2026-11-07,yes
+Wilmington North Carolina,US,The Beach House,independent,12,104,101,Vio.com,2.9,PARITY,no,yes,no,2026-11-05,2026-11-07,yes
+Wilmington North Carolina,US,The Starlite Inn,independent,12,119,99,Super.com,16.8,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,yes
+Wilmington North Carolina,US,Tru by Hilton Wilmington,chain,12,122,99,KAYAK.com,18.9,UNVERIFIED_LOWER,no,no,no,2026-11-05,2026-11-07,no
+Wilmington North Carolina,US,Tru by Hilton Wilmington Wrightsville Beach,chain,12,143,143,Booking.com,0.0,PARITY,no,yes,yes,2026-11-05,2026-11-07,no

@@ -1,0 +1,201 @@
+city,hotel,stay,check_in,check_out,priced_on,status,booking_com_usd,lowest_other_usd,lowest_other_sites,lowest_other_is_hotel_website,gap_pct,gap_usd,other_5pct_or_more_below,other_any_amount_below,sites_compared,lower_listing_named_room,lower_listing_free_cancellation,booking_com_named_room,booking_com_free_cancellation,property_fee_in_google_description,going_rate_before_tax_usd
+Anaheim,Anaheim Marriott,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,302
+Anaheim,Hilton Garden Inn Anaheim/Garden Grove,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,179,133,Super.com,no,25.7,46,yes,yes,18,no,no,yes,no,no,153
+Anaheim,"Hotel Fera Anaheim, a DoubleTree by Hilton",thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,130,106,Traveluro,no,18.5,24,yes,yes,24,no,no,yes,no,no,118
+Anaheim,Sonesta Anaheim Resort Area,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,135,114,Traveluro,no,15.6,21,yes,yes,22,no,no,yes,no,no,115
+Atlanta,Atlanta Marriott Marquis,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,119
+Atlanta,Courtland Grand Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,96,96,Agoda; eDreams; Hotels.com; TravelUp,no,0.0,0,no,no,6,yes,yes,yes,yes,no,78
+Atlanta,Embassy Suites by Hilton Atlanta Buckhead,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,140,111,Hotelscombined.com; KAYAK.com; momondo.com,no,20.7,29,yes,yes,22,no,no,yes,no,no,116
+Atlanta,Margaritaville Vacation Club - Atlanta,thanksgiving,2026-11-25,2026-11-29,2026-11-03,no_booking,,,,,,,,,,,,,,,195
+Boston,Four Points by Sheraton Boston Newton,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,147,138,Hotelscombined.com; KAYAK.com; momondo.com; Traveluro,no,6.1,9,yes,yes,25,no,no,yes,no,no,132
+Boston,Hyatt Place Boston / Seaport District,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,185,153,Super.com,no,17.3,32,yes,yes,28,no,no,yes,yes,no,159
+Boston,Ramada by Wyndham Boston,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,132,110,Vio.com,no,16.7,22,yes,yes,26,no,no,yes,yes,no,111
+Boston,The Revolution Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,89
+Chicago,"Fairmont Chicago, Millennium Park",thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,237
+Chicago,Hampton Inn Chicago Downtown/N Loop/Michigan Ave,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,210,153,Hotelscombined.com; KAYAK.com,no,27.1,57,yes,yes,18,no,no,yes,no,no,177
+Chicago,Sofitel Chicago Magnificent Mile,thanksgiving,2026-11-25,2026-11-29,2026-11-03,no_booking,,,,,,,,,,,,,,,280
+Chicago,The Wade,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,268,229,Traveluro,no,14.6,39,yes,yes,24,no,no,yes,yes,no,226
+Dallas,Holiday Inn Dallas-Richardson by IHG,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,90,75,Etrip.net; goseek.com; Vio.com,no,16.7,15,yes,yes,17,no,no,yes,no,no,80
+Dallas,La Quinta Inn & Suites by Wyndham Dallas - Wylie,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,94,86,Super.com,no,8.5,8,yes,yes,12,no,no,yes,no,no,83
+Dallas,Magnolia Dallas Downtown,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,164,126,Hotelscombined.com; KAYAK.com; momondo.com,no,23.2,38,yes,yes,20,no,no,yes,no,no,132
+Dallas,The Bishop Arts Hotel by Q resorts,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,212,145,Hotelscombined.com; KAYAK.com; momondo.com,no,31.6,67,yes,yes,13,no,no,no,yes,no,185
+Denver,Courtyard by Marriott Denver Cherry Creek,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,87
+Denver,Ember Hostel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,95,81,Ember Hostel,yes,14.7,14,yes,yes,10,no,no,yes,yes,no,82
+Denver,"Motel 6 Denver, CO – Downtown",thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,73,67,Etrip.net; Traveluro; trivago DEALS; Vio.com,no,8.2,6,yes,yes,19,no,yes,yes,no,no,63
+Denver,Sonesta Denver Downtown,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,108,99,Traveluro,no,8.3,9,yes,yes,15,no,no,yes,no,no,94
+Detroit,Baymont by Wyndham Downtown Detroit,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,156,135,Agoda,no,13.5,21,yes,yes,13,yes,yes,yes,yes,no,143
+Detroit,Comfort Inn Detroit Downtown,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,172,152,Etrip.net; goseek.com; Super.com; Vio.com,no,11.6,20,yes,yes,23,no,yes,yes,yes,no,159
+Detroit,Fort Pontchartrain a Wyndham Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,344,246,goseek.com,no,28.5,98,yes,yes,22,no,no,yes,yes,no,299
+Detroit,Quality Inn Detroit Downtown,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,146,128,Super.com,no,12.3,18,yes,yes,15,no,no,no,yes,no,119
+Honolulu,Hilton Hawaiian Village Waikiki Beach Resort,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,352,281,Hotelscombined.com; KAYAK.com; momondo.com,no,20.2,71,yes,yes,25,no,no,no,no,yes,296
+Honolulu,Hilton Waikiki Beach Resort & Spa,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,257,218,Hotelscombined.com; KAYAK.com; momondo.com; Traveluro,no,15.2,39,yes,yes,25,no,no,no,no,no,216
+Honolulu,Prince Waikiki,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,406,284,Hotels In America; trivago DEALS,no,30.0,122,yes,yes,24,no,no,yes,no,yes,339
+Honolulu,Sheraton Waikiki Beach Resort,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,567,400,Hotelscombined.com; KAYAK.com,no,29.5,167,yes,yes,23,no,no,no,yes,no,478
+Houston,Best Western Galleria Inn & Suites,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,95,68,trivago DEALS,no,28.4,27,yes,yes,11,no,no,yes,no,no,81
+Houston,Hyatt Regency Houston West,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,161,121,Traveluro,no,24.8,40,yes,yes,16,no,no,yes,no,no,137
+Houston,Sara's Inn on the Boulevard,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,227,163,Sara's Inn on the Boulevard,yes,28.2,64,yes,yes,10,no,no,no,yes,no,194
+Houston,The Royal Sonesta Houston Galleria,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,203,136,Etrip.net; goseek.com,no,33.0,67,yes,yes,17,no,no,yes,yes,no,173
+Las Vegas,Flamingo Las Vegas,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,119,100,Traveluro,no,16.0,19,yes,yes,25,no,no,yes,yes,no,105
+Las Vegas,Luxor Hotel & Casino,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,135,82,goseek.com; Vio.com,no,39.3,53,yes,yes,23,no,no,no,no,yes,105
+Las Vegas,MGM Grand,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,201,147,Hotelscombined.com; KAYAK.com; momondo.com,no,26.9,54,yes,yes,21,no,no,no,yes,yes,150
+Las Vegas,"The STRAT Hotel, Casino & Tower",thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,85,68,Reserving,no,20.0,17,yes,yes,25,no,no,yes,no,yes,80
+Los Angeles,"Dream Hollywood, by Hyatt",thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,289,266,Hotelscombined.com; KAYAK.com; momondo.com,no,8.0,23,yes,yes,23,no,no,yes,no,no,272
+Los Angeles,Freehand Los Angeles,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,128
+Los Angeles,Hotel Indigo Los Angeles Downtown by IHG,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,238,194,Super.com,no,18.5,44,yes,yes,17,no,no,no,yes,no,205
+Los Angeles,"The Wayfarer Downtown LA, Tapestry Collection by Hilton",thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,143,126,Traveluro; trivago DEALS,no,11.9,17,yes,yes,14,no,no,yes,no,no,123
+Miami,Atrium Design District,thanksgiving,2026-11-25,2026-11-29,2026-11-03,no_price,,,,,,,,,,,,,,,
+Miami,EAST Miami,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,462,379,trivago DEALS,no,18.0,83,yes,yes,14,no,no,yes,yes,no,409
+Miami,EVEN Hotel Miami - Airport by IHG,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,171,118,Vio.com,no,31.0,53,yes,yes,17,no,no,yes,no,no,152
+Miami,Novotel Miami Brickell,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,309,205,Traveluro,no,33.7,104,yes,yes,22,no,no,yes,no,no,272
+Minneapolis,DoubleTree Suites by Hilton Minneapolis Downtown,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,141,100,trivago DEALS,no,29.1,41,yes,yes,20,no,no,yes,no,no,122
+Minneapolis,DoubleTree by Hilton Hotel Minneapolis - Park Place,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,132,94,Traveluro,no,28.8,38,yes,yes,21,no,no,yes,no,no,118
+Minneapolis,Roami at Century Plaza,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,186,158,Expedia.com; Travelocity.com,no,15.1,28,yes,yes,6,yes,no,yes,no,no,135
+Minneapolis,The Royal Sonesta Minneapolis Downtown,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,132,102,Etrip.net; goseek.com; Traveluro; Vio.com,no,22.7,30,yes,yes,22,no,no,yes,yes,no,113
+Nashville,Holiday Inn Express & Suites Nashville Southeast - Antioch by IHG,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,147,92,Super.com,no,37.4,55,yes,yes,21,no,no,yes,yes,no,124
+Nashville,Loews Nashville Hotel at Vanderbilt Plaza,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,255,174,Hotels In America,no,31.8,81,yes,yes,20,no,no,yes,no,no,216
+Nashville,Omni Nashville Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,253,227,Hotelscombined.com; KAYAK.com; momondo.com,no,10.3,26,yes,yes,24,no,no,yes,no,no,214
+Nashville,Virgin Hotels Nashville,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,269,204,Super.com,no,24.2,65,yes,yes,21,no,no,yes,yes,no,223
+New Orleans,Dauphine Orleans Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,no_booking,,,,,,,,,,,,,,,220
+New Orleans,"NOPSI Hotel, New Orleans",thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,263,210,Hotelscombined.com; KAYAK.com; momondo.com,no,20.2,53,yes,yes,20,no,no,yes,yes,no,270
+New Orleans,The Troubadour Hotel New Orleans,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,212,156,Etrip.net,no,26.4,56,yes,yes,14,no,no,yes,no,no,190
+New Orleans,Virgin Hotels New Orleans,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,408,251,Hotels In America,no,38.5,157,yes,yes,21,no,no,yes,yes,no,323
+New York,Courtyard by Marriott Edgewater NYC Area,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,256
+New York,Courtyard by Marriott New York Queens/Fresh Meadows,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,257
+New York,Dynasty Hotel and Suites New York LaGuardia Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,174,149,Dynasty Hotel and Suites New York LaGuardia Hotel,yes,14.4,25,yes,yes,13,no,yes,no,yes,no,149
+New York,The One Boutique Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,209,152,Traveluro,no,27.3,57,yes,yes,23,no,no,no,yes,no,156
+Orlando,DoubleTree by Hilton Hotel at the Entrance to Universal Orlando,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,196,111,Hotelscombined.com; KAYAK.com; momondo.com; Traveluro,no,43.4,85,yes,yes,21,no,no,yes,yes,no,174
+Orlando,Hilton Orlando,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,234,191,Reservation Day,no,18.4,43,yes,yes,19,no,no,yes,yes,no,206
+Orlando,Staybridge Suites Orlando at Seaworld by IHG,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,161,114,Super.com,no,29.2,47,yes,yes,19,no,no,yes,no,no,143
+Orlando,Westgate Lakes Resort & Spa,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,148
+Philadelphia,Quality Inn - Center City,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,125,110,Super.com,no,12.0,15,yes,yes,20,no,no,yes,no,no,108
+Philadelphia,Sosuite at French Quarters - Rittenhouse Square,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,229,211,Super.com,no,7.9,18,yes,yes,16,no,no,yes,no,no,188
+Philadelphia,"The Franklin on Rittenhouse, A Boutique Hotel",thanksgiving,2026-11-25,2026-11-29,2026-11-03,no_price,,,,,,,,,,,,,,,
+Philadelphia,The Windsor Suites,thanksgiving,2026-11-25,2026-11-29,2026-11-03,no_booking,,,,,,,,,,,,,,,243
+San Diego,Best Western Plus Island Palms Hotel & Marina,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,273,225,Etrip.net,no,17.6,48,yes,yes,20,no,no,yes,yes,no,238
+San Diego,Handlery Hotel San Diego,thanksgiving,2026-11-25,2026-11-29,2026-11-03,no_booking,,,,,,,,,,,,,,,423
+San Diego,La Jolla Cove Hotel & Suites,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,352,264,Super.com,no,25.0,88,yes,yes,18,no,no,yes,yes,no,307
+San Diego,Sheraton San Diego Resort,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,212
+San Francisco,Beacon Grand A Union Square Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,253,196,Super.com,no,22.5,57,yes,yes,24,no,no,yes,no,no,229
+San Francisco,HI San Francisco Fisherman's Wharf Hostel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,63,63,HI San Francisco Fisherman's Wharf Hostel; Hostelworld,yes,0.0,0,no,no,3,yes,no,yes,no,no,63
+San Francisco,Hotel Union Square,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,159,96,Reservation Day,no,39.6,63,yes,yes,15,no,no,yes,yes,no,87
+San Francisco,Hotel Zoe Fisherman’s Wharf,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,220,158,Super.com,no,28.2,62,yes,yes,17,no,no,yes,yes,no,185
+Scottsdale,Hilton Vacation Club Scottsdale Links Resort,thanksgiving,2026-11-25,2026-11-29,2026-11-03,no_booking,,,,,,,,,,,,,,,368
+Scottsdale,Hilton Vacation Club Scottsdale Villa Mirage,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,248
+Scottsdale,Talking Stick Resort Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,244,150,Traveluro,no,38.5,94,yes,yes,26,no,no,yes,yes,no,214
+Scottsdale,The McCormick Scottsdale,thanksgiving,2026-11-25,2026-11-29,2026-11-03,no_price,,,,,,,,,,,,,,,
+Seattle,Coast Seattle Downtown Hotel by APA,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,126,113,Hotels In America,no,10.3,13,yes,yes,17,no,no,yes,yes,no,107
+Seattle,Graduate by Hilton Seattle,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,174,135,Hotelscombined.com; KAYAK.com; momondo.com,no,22.4,39,yes,yes,18,no,no,no,no,no,149
+Seattle,Hotel Max,thanksgiving,2026-11-25,2026-11-29,2026-11-03,no_booking,,,,,,,,,,,,,,,130
+Seattle,Mediterranean Inn,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,180,138,Hotels In America,no,23.3,42,yes,yes,19,no,no,yes,yes,no,133
+St. Louis,Four Seasons Hotel St. Louis,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,375
+St. Louis,Moonrise Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,266,169,Hotelscombined.com; KAYAK.com; momondo.com; Vio.com,no,36.5,97,yes,yes,22,no,yes,yes,yes,no,211
+St. Louis,River City Casino Hotel,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,207,146,Super.com; trivago DEALS,no,29.5,61,yes,yes,8,no,no,yes,yes,no,152
+St. Louis,The Truitt,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,282,262,CheapTickets.com; Expedia.com; Hotels.com; Orbitz.com; The Truitt; Travelocity.com,yes,7.1,20,yes,yes,8,yes,yes,no,yes,no,224
+Tampa,Econo Lodge Airport @ RJ Stadium,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,70,63,Reserving,no,10.0,7,yes,yes,22,no,no,no,yes,no,62
+Tampa,Four Points by Sheraton Suites Tampa Airport Westshore,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,150,129,Traveluro,no,14.0,21,yes,yes,21,no,no,no,no,no,132
+Tampa,Holiday Inn Express & Suites Tampa-I-75 @ Bruce B. Downs by IHG,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,212,161,Hotels In America; Super.com,no,24.1,51,yes,yes,23,no,no,yes,yes,no,187
+Tampa,Hyatt Place Tampa/Busch Gardens,thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,113
+Washington DC,"Courtyard by Marriott Washington, DC/U.S. Capitol",thanksgiving,2026-11-25,2026-11-29,2026-11-03,booking_other_party,,,,,,,,,,,,,,,101
+Washington DC,Hyatt Place Washington DC/US Capitol,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,120,111,Super.com; Traveluro,no,7.5,9,yes,yes,23,no,no,yes,no,no,103
+Washington DC,The Royal Sonesta Washington DC Dupont Circle,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,167,132,Vio.com,no,21.0,35,yes,yes,13,no,no,yes,yes,no,144
+Washington DC,YOTEL Washington DC,thanksgiving,2026-11-25,2026-11-29,2026-11-03,compared,177,126,Etrip.net,no,28.8,51,yes,yes,21,no,no,yes,no,no,157
+Anaheim,Anaheim Marriott,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,212
+Anaheim,Hilton Garden Inn Anaheim/Garden Grove,christmas,2026-12-23,2026-12-27,2026-11-04,compared,216,166,Super.com,no,23.1,50,yes,yes,18,no,no,yes,no,no,184
+Anaheim,"Hotel Fera Anaheim, a DoubleTree by Hilton",christmas,2026-12-23,2026-12-27,2026-11-04,compared,150,126,Hotels In America; Long Stay Discounts; Super.com,no,16.0,24,yes,yes,20,no,no,yes,no,no,136
+Anaheim,Sonesta Anaheim Resort Area,christmas,2026-12-23,2026-12-27,2026-11-04,compared,182,144,Vio.com,no,20.9,38,yes,yes,21,no,no,yes,no,no,155
+Atlanta,Atlanta Marriott Marquis,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,119
+Atlanta,Courtland Grand Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,booking_no_tax_split,,,,,,,,,,,,,,,82
+Atlanta,Embassy Suites by Hilton Atlanta Buckhead,christmas,2026-12-23,2026-12-27,2026-11-04,compared,148,119,Hotelscombined.com; KAYAK.com; momondo.com,no,19.6,29,yes,yes,19,no,no,yes,no,no,122
+Atlanta,Margaritaville Vacation Club - Atlanta,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,171
+Boston,Four Points by Sheraton Boston Newton,christmas,2026-12-23,2026-12-27,2026-11-04,booking_no_tax_split,,,,,,,,,,,,,,,108
+Boston,Hyatt Place Boston / Seaport District,christmas,2026-12-23,2026-12-27,2026-11-04,compared,177,153,Traveluro,no,13.6,24,yes,yes,22,no,no,yes,no,no,152
+Boston,Ramada by Wyndham Boston,christmas,2026-12-23,2026-12-27,2026-11-04,compared,121,99,Super.com,no,18.2,22,yes,yes,17,no,no,yes,yes,no,101
+Boston,The Revolution Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,98
+Chicago,"Fairmont Chicago, Millennium Park",christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,199
+Chicago,Hampton Inn Chicago Downtown/N Loop/Michigan Ave,christmas,2026-12-23,2026-12-27,2026-11-04,compared,166,121,Hotelscombined.com; KAYAK.com; momondo.com,no,27.1,45,yes,yes,21,no,no,no,no,no,139
+Chicago,Sofitel Chicago Magnificent Mile,christmas,2026-12-23,2026-12-27,2026-11-04,no_booking,,,,,,,,,,,,,,,204
+Chicago,The Wade,christmas,2026-12-23,2026-12-27,2026-11-04,compared,149,130,trivago DEALS,no,12.8,19,yes,yes,21,no,no,yes,no,no,125
+Dallas,Holiday Inn Dallas-Richardson by IHG,christmas,2026-12-23,2026-12-27,2026-11-04,compared,80,64,Super.com,no,20.0,16,yes,yes,14,no,no,yes,no,no,71
+Dallas,La Quinta Inn & Suites by Wyndham Dallas - Wylie,christmas,2026-12-23,2026-12-27,2026-11-04,compared,85,76,Hotels In America; Super.com,no,10.6,9,yes,yes,21,no,no,yes,no,no,76
+Dallas,Magnolia Dallas Downtown,christmas,2026-12-23,2026-12-27,2026-11-04,compared,179,136,Hotelscombined.com; KAYAK.com; momondo.com,no,24.0,43,yes,yes,16,no,no,yes,no,no,144
+Dallas,The Bishop Arts Hotel by Q resorts,christmas,2026-12-23,2026-12-27,2026-11-04,compared,152,121,Agoda,no,20.4,31,yes,yes,9,yes,yes,yes,yes,no,132
+Denver,Courtyard by Marriott Denver Cherry Creek,christmas,2026-12-23,2026-12-27,2026-11-04,compared,112,89,Long Stay Discounts,no,20.5,23,yes,yes,24,no,no,yes,yes,no,99
+Denver,Ember Hostel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,95,81,Ember Hostel,yes,14.7,14,yes,yes,6,no,no,yes,yes,no,82
+Denver,"Motel 6 Denver, CO – Downtown",christmas,2026-12-23,2026-12-27,2026-11-04,compared,79,79,Agoda; CheapTickets.com; Expedia.com; Hotels In America; Hotels.com; Hotelscombined.com; KAYAK.com; momondo.com; Orbitz.com; Priceline; Super.com; Travelocity.com,no,0.0,0,no,no,14,yes,no,yes,no,no,68
+Denver,Sonesta Denver Downtown,christmas,2026-12-23,2026-12-27,2026-11-04,compared,129,103,Traveluro,no,20.2,26,yes,yes,22,no,no,yes,no,no,112
+Detroit,Baymont by Wyndham Downtown Detroit,christmas,2026-12-23,2026-12-27,2026-11-04,compared,99,88,Traveluro,no,11.1,11,yes,yes,21,no,no,yes,yes,no,91
+Detroit,Comfort Inn Detroit Downtown,christmas,2026-12-23,2026-12-27,2026-11-04,compared,110,99,Best Hotel Deals; Super.com,no,10.0,11,yes,yes,17,no,yes,yes,yes,no,102
+Detroit,Fort Pontchartrain a Wyndham Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,202,153,Luxury Escapes,no,24.3,49,yes,yes,23,no,no,yes,no,no,176
+Detroit,Quality Inn Detroit Downtown,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,81
+Honolulu,Hilton Hawaiian Village Waikiki Beach Resort,christmas,2026-12-23,2026-12-27,2026-11-04,compared,723,508,Super.com,no,29.7,215,yes,yes,24,no,no,no,no,yes,609
+Honolulu,Hilton Waikiki Beach Resort & Spa,christmas,2026-12-23,2026-12-27,2026-11-04,compared,466,360,Hotelscombined.com; KAYAK.com; momondo.com,no,22.7,106,yes,yes,27,no,no,no,no,no,392
+Honolulu,Prince Waikiki,christmas,2026-12-23,2026-12-27,2026-11-04,compared,634,419,Traveluro,no,33.9,215,yes,yes,15,no,no,yes,no,yes,529
+Honolulu,Sheraton Waikiki Beach Resort,christmas,2026-12-23,2026-12-27,2026-11-04,compared,939,530,Traveluro,no,43.6,409,yes,yes,25,no,no,no,no,no,791
+Houston,Best Western Galleria Inn & Suites,christmas,2026-12-23,2026-12-27,2026-11-04,compared,111,79,trivago DEALS,no,28.8,32,yes,yes,11,no,no,yes,no,no,95
+Houston,Hyatt Regency Houston West,christmas,2026-12-23,2026-12-27,2026-11-04,compared,112,86,Hotelscombined.com; KAYAK.com; momondo.com,no,23.2,26,yes,yes,24,no,no,yes,no,no,95
+Houston,Sara's Inn on the Boulevard,christmas,2026-12-23,2026-12-27,2026-11-04,compared,172,143,Sara's Inn on the Boulevard,yes,16.9,29,yes,yes,13,no,no,yes,yes,no,147
+Houston,The Royal Sonesta Houston Galleria,christmas,2026-12-23,2026-12-27,2026-11-04,compared,148,104,Etrip.net; goseek.com; Super.com; Vio.com,no,29.7,44,yes,yes,21,no,no,no,yes,no,127
+Las Vegas,Flamingo Las Vegas,christmas,2026-12-23,2026-12-27,2026-11-04,compared,90,80,Etrip.net; goseek.com; Hotels In America; Super.com; trivago DEALS; Vio.com,no,11.1,10,yes,yes,28,no,no,yes,yes,no,80
+Las Vegas,Luxor Hotel & Casino,christmas,2026-12-23,2026-12-27,2026-11-04,compared,90,68,Hotels In America; Hotelscombined.com; KAYAK.com; momondo.com; Super.com,no,24.4,22,yes,yes,29,no,no,yes,yes,yes,70
+Las Vegas,MGM Grand,christmas,2026-12-23,2026-12-27,2026-11-04,compared,130,101,Hotelscombined.com; KAYAK.com; momondo.com,no,22.3,29,yes,yes,23,no,no,no,no,yes,115
+Las Vegas,"The STRAT Hotel, Casino & Tower",christmas,2026-12-23,2026-12-27,2026-11-04,compared,80,69,Reserving,no,13.8,11,yes,yes,29,no,no,yes,no,yes,74
+Los Angeles,"Dream Hollywood, by Hyatt",christmas,2026-12-23,2026-12-27,2026-11-04,compared,305,280,Hotelscombined.com; KAYAK.com; momondo.com,no,8.2,25,yes,yes,21,no,no,no,no,no,287
+Los Angeles,Freehand Los Angeles,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,136
+Los Angeles,Hotel Indigo Los Angeles Downtown by IHG,christmas,2026-12-23,2026-12-27,2026-11-04,compared,242,195,Super.com,no,19.4,47,yes,yes,23,no,no,yes,yes,no,207
+Los Angeles,"The Wayfarer Downtown LA, Tapestry Collection by Hilton",christmas,2026-12-23,2026-12-27,2026-11-04,compared,182,156,Hotelscombined.com; KAYAK.com; momondo.com,no,14.3,26,yes,yes,21,no,no,no,no,no,156
+Miami,Atrium Design District,christmas,2026-12-23,2026-12-27,2026-11-04,no_price,,,,,,,,,,,,,,,
+Miami,EAST Miami,christmas,2026-12-23,2026-12-27,2026-11-04,compared,614,489,Reservation Day,no,20.4,125,yes,yes,21,no,no,yes,yes,no,480
+Miami,EVEN Hotel Miami - Airport by IHG,christmas,2026-12-23,2026-12-27,2026-11-04,compared,221,104,Vio.com,no,52.9,117,yes,yes,16,no,no,yes,no,no,196
+Miami,Novotel Miami Brickell,christmas,2026-12-23,2026-12-27,2026-11-04,compared,391,318,KAYAK.com; momondo.com,no,18.7,73,yes,yes,21,no,no,no,no,no,342
+Minneapolis,DoubleTree Suites by Hilton Minneapolis Downtown,christmas,2026-12-23,2026-12-27,2026-11-04,compared,141,100,Traveluro,no,29.1,41,yes,yes,17,no,no,yes,no,no,122
+Minneapolis,DoubleTree by Hilton Hotel Minneapolis - Park Place,christmas,2026-12-23,2026-12-27,2026-11-04,compared,120,104,trivago DEALS,no,13.3,16,yes,yes,12,no,no,yes,no,no,108
+Minneapolis,Roami at Century Plaza,christmas,2026-12-23,2026-12-27,2026-11-04,compared,155,149,Hotels.com,no,3.9,6,no,yes,7,yes,yes,yes,yes,no,129
+Minneapolis,The Royal Sonesta Minneapolis Downtown,christmas,2026-12-23,2026-12-27,2026-11-04,compared,145,113,Traveluro,no,22.1,32,yes,yes,19,no,no,yes,yes,no,124
+Nashville,Holiday Inn Express & Suites Nashville Southeast - Antioch by IHG,christmas,2026-12-23,2026-12-27,2026-11-04,compared,159,116,Super.com,no,27.0,43,yes,yes,19,no,no,yes,yes,no,134
+Nashville,Loews Nashville Hotel at Vanderbilt Plaza,christmas,2026-12-23,2026-12-27,2026-11-04,compared,250,173,Super.com,no,30.8,77,yes,yes,20,no,no,yes,no,no,212
+Nashville,Omni Nashville Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,283,254,Hotelscombined.com; KAYAK.com; momondo.com,no,10.2,29,yes,yes,25,no,no,yes,no,no,240
+Nashville,Virgin Hotels Nashville,christmas,2026-12-23,2026-12-27,2026-11-04,compared,282,260,trivago DEALS,no,7.8,22,yes,yes,18,no,no,yes,yes,no,239
+New Orleans,Dauphine Orleans Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,155,100,Super.com,no,35.5,55,yes,yes,22,no,no,yes,no,no,131
+New Orleans,"NOPSI Hotel, New Orleans",christmas,2026-12-23,2026-12-27,2026-11-04,compared,203,131,Hotelscombined.com; KAYAK.com; momondo.com,no,35.5,72,yes,yes,23,no,no,yes,yes,no,172
+New Orleans,The Troubadour Hotel New Orleans,christmas,2026-12-23,2026-12-27,2026-11-04,booking_no_tax_split,,,,,,,,,,,,,,,140
+New Orleans,Virgin Hotels New Orleans,christmas,2026-12-23,2026-12-27,2026-11-04,compared,244,164,Super.com,no,32.8,80,yes,yes,21,no,no,yes,yes,no,151
+New York,Courtyard by Marriott Edgewater NYC Area,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,263
+New York,Courtyard by Marriott New York Queens/Fresh Meadows,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,236
+New York,Dynasty Hotel and Suites New York LaGuardia Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,233,201,Dynasty Hotel and Suites New York LaGuardia Hotel,yes,13.7,32,yes,yes,10,no,yes,no,yes,no,205
+New York,The One Boutique Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,361,176,Super.com,no,51.2,185,yes,yes,25,no,no,yes,yes,no,166
+Orlando,DoubleTree by Hilton Hotel at the Entrance to Universal Orlando,christmas,2026-12-23,2026-12-27,2026-11-04,compared,223,133,Hotelscombined.com; KAYAK.com; momondo.com,no,40.4,90,yes,yes,25,no,no,yes,yes,no,133
+Orlando,Hilton Orlando,christmas,2026-12-23,2026-12-27,2026-11-04,compared,236,169,Traveluro,no,28.4,67,yes,yes,9,no,no,yes,yes,no,208
+Orlando,Staybridge Suites Orlando at Seaworld by IHG,christmas,2026-12-23,2026-12-27,2026-11-04,compared,333,272,Hotelscombined.com; KAYAK.com; momondo.com,no,18.3,61,yes,yes,19,no,no,yes,no,no,296
+Orlando,Westgate Lakes Resort & Spa,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,177
+Philadelphia,Quality Inn - Center City,christmas,2026-12-23,2026-12-27,2026-11-04,compared,127,109,Best Hotel Deals,no,14.2,18,yes,yes,18,no,yes,yes,yes,no,110
+Philadelphia,Sosuite at French Quarters - Rittenhouse Square,christmas,2026-12-23,2026-12-27,2026-11-04,compared,216,199,Hotels In America,no,7.9,17,yes,yes,13,no,no,yes,no,no,180
+Philadelphia,"The Franklin on Rittenhouse, A Boutique Hotel",christmas,2026-12-23,2026-12-27,2026-11-04,compared,264,246,Super.com,no,6.8,18,yes,yes,12,no,no,yes,no,no,229
+Philadelphia,The Windsor Suites,christmas,2026-12-23,2026-12-27,2026-11-04,compared,206,148,Hotels In America,no,28.2,58,yes,yes,21,no,no,yes,no,no,177
+San Diego,Best Western Plus Island Palms Hotel & Marina,christmas,2026-12-23,2026-12-27,2026-11-04,compared,198,160,Etrip.net; Vio.com,no,19.2,38,yes,yes,22,no,no,yes,no,no,173
+San Diego,Handlery Hotel San Diego,christmas,2026-12-23,2026-12-27,2026-11-04,compared,142,116,Etrip.net; Vio.com,no,18.3,26,yes,yes,12,yes,yes,yes,yes,no,123
+San Diego,La Jolla Cove Hotel & Suites,christmas,2026-12-23,2026-12-27,2026-11-04,compared,387,267,Super.com,no,31.0,120,yes,yes,22,no,no,yes,yes,no,337
+San Diego,Sheraton San Diego Resort,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,162
+San Francisco,Beacon Grand A Union Square Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,269,194,Traveluro,no,27.9,75,yes,yes,21,no,no,yes,no,no,207
+San Francisco,HI San Francisco Fisherman's Wharf Hostel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,64,64,Hostelworld,no,0.0,0,no,no,5,yes,no,no,no,no,126
+San Francisco,Hotel Union Square,christmas,2026-12-23,2026-12-27,2026-11-04,compared,160,113,Expedia.com,no,29.4,47,yes,yes,7,yes,yes,yes,no,no,106
+San Francisco,Hotel Zoe Fisherman’s Wharf,christmas,2026-12-23,2026-12-27,2026-11-04,compared,225,216,CheapTickets.com; eDreams; Expedia.com; Hotels.com; Orbitz.com; Travelocity.com,no,4.0,9,no,yes,10,yes,yes,yes,yes,no,184
+Scottsdale,Hilton Vacation Club Scottsdale Links Resort,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,258
+Scottsdale,Hilton Vacation Club Scottsdale Villa Mirage,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,141
+Scottsdale,Talking Stick Resort Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,227,148,Tripadvisor.com,no,34.8,79,yes,yes,23,no,no,no,yes,no,180
+Scottsdale,The McCormick Scottsdale,christmas,2026-12-23,2026-12-27,2026-11-04,compared,165,114,Super.com,no,30.9,51,yes,yes,9,no,no,yes,no,no,145
+Seattle,Coast Seattle Downtown Hotel by APA,christmas,2026-12-23,2026-12-27,2026-11-04,compared,126,106,Super.com,no,15.9,20,yes,yes,20,no,no,yes,no,no,107
+Seattle,Graduate by Hilton Seattle,christmas,2026-12-23,2026-12-27,2026-11-04,compared,179,138,Hotelscombined.com; KAYAK.com; momondo.com,no,22.9,41,yes,yes,19,no,no,yes,no,no,152
+Seattle,Hotel Max,christmas,2026-12-23,2026-12-27,2026-11-04,compared,162,129,Traveluro,no,20.4,33,yes,yes,22,no,no,yes,no,no,130
+Seattle,Mediterranean Inn,christmas,2026-12-23,2026-12-27,2026-11-04,compared,170,148,Agoda,no,12.9,22,yes,yes,6,yes,no,yes,yes,no,145
+St. Louis,Four Seasons Hotel St. Louis,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,401
+St. Louis,Moonrise Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,263,167,Hotelscombined.com; KAYAK.com,no,36.5,96,yes,yes,19,no,no,yes,yes,no,188
+St. Louis,River City Casino Hotel,christmas,2026-12-23,2026-12-27,2026-11-04,compared,201,146,Super.com,no,27.4,55,yes,yes,15,no,no,yes,yes,no,148
+St. Louis,The Truitt,christmas,2026-12-23,2026-12-27,2026-11-04,compared,282,262,CheapTickets.com; Expedia.com; Hotels.com; Orbitz.com; The Truitt; Travelocity.com,yes,7.1,20,yes,yes,8,yes,yes,no,yes,no,224
+Tampa,Econo Lodge Airport @ RJ Stadium,christmas,2026-12-23,2026-12-27,2026-11-04,compared,71,60,Super.com,no,15.5,11,yes,yes,14,no,no,yes,yes,no,62
+Tampa,Four Points by Sheraton Suites Tampa Airport Westshore,christmas,2026-12-23,2026-12-27,2026-11-04,compared,153,134,groupon.com,no,12.4,19,yes,yes,18,no,no,yes,no,no,135
+Tampa,Holiday Inn Express & Suites Tampa-I-75 @ Bruce B. Downs by IHG,christmas,2026-12-23,2026-12-27,2026-11-04,compared,149,113,Super.com,no,24.2,36,yes,yes,21,no,no,yes,no,no,132
+Tampa,Hyatt Place Tampa/Busch Gardens,christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,117
+Washington DC,"Courtyard by Marriott Washington, DC/U.S. Capitol",christmas,2026-12-23,2026-12-27,2026-11-04,booking_other_party,,,,,,,,,,,,,,,98
+Washington DC,Hyatt Place Washington DC/US Capitol,christmas,2026-12-23,2026-12-27,2026-11-04,compared,106,102,Super.com; Traveluro,no,3.8,4,no,yes,23,no,no,yes,no,no,91
+Washington DC,The Royal Sonesta Washington DC Dupont Circle,christmas,2026-12-23,2026-12-27,2026-11-04,compared,167,138,Super.com,no,17.4,29,yes,yes,17,no,no,no,yes,no,144
+Washington DC,YOTEL Washington DC,christmas,2026-12-23,2026-12-27,2026-11-04,compared,183,130,Etrip.net,no,29.0,53,yes,yes,20,no,no,no,no,no,150

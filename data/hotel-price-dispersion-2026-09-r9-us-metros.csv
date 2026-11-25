@@ -1,0 +1,400 @@
+city,region,hotel,segment,sites_listed,going_rate_usd,cheapest_usd,cheapest_site,discount_pct,verdict,cheaper_room_name_matched,cheapest_named_a_room,fees_unverified,check_in,check_out,free_cancellation_elsewhere_same_or_less
+Albuquerque,US,ARRIVE Albuquerque,independent,12,139,106,Super.com,23.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Albuquerque,US,DoubleTree by Hilton Hotel Albuquerque,chain,12,125,94,Billabook.com,24.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Albuquerque,US,Drury Inn & Suites Albuquerque North,independent,12,136,122,KAYAK.com,10.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Albuquerque,US,Hotel Albuquerque at Old Town,independent,12,218,166,Super.com,23.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Albuquerque,US,Hotel Chaco,independent,12,277,216,Vio.com,22.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Albuquerque,US,Isleta Resort & Casino,independent,12,195,144,Super.com,26.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Albuquerque,US,La Quinta Inn & Suites by Wyndham Albuquerque Midtown,chain,12,73,66,KAYAK.com,9.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Albuquerque,US,La Quinta Inn & Suites by Wyndham Albuquerque West,chain,12,80,72,trivago DEALS,10.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Albuquerque,US,Monterey Motel,independent,12,74,72,Hotels.com,2.7,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Albuquerque,US,Nativo Lodge Hotel Albuquerque,independent,12,125,98,Traveluro,21.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Albuquerque,US,Sonesta ES Suites Albuquerque,independent,12,91,87,goseek.com,4.4,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Albuquerque,US,Spark by Hilton Albuquerque North I-25,chain,12,94,94,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Albuquerque,US,SpringHill Suites by Marriott Albuquerque University Area,chain,12,130,130,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Albuquerque,US,The Clyde Hotel,independent,12,164,155,Bluepillow.es,5.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Albuquerque,US,The Querque Hotel,independent,7,85,82,Wego,3.5,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Birmingham,US,Best Western Plus Birmingham Inn & Suites,chain,12,104,101,Expedia.mx,2.9,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Birmingham,US,Drury Inn & Suites Birmingham Grandview,independent,12,119,112,Traveluro,5.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Birmingham,US,Embassy Suites by Hilton Birmingham,chain,12,161,156,Traveluro,3.1,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Birmingham,US,Extended Stay America Suites- Birmingham - Wildwood,independent,12,68,56,Super.com,17.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Birmingham,US,Hilton Birmingham Downtown at UAB,chain,12,147,139,Kiwi.com,5.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Birmingham,US,Holiday Inn Express & Suites Birmingham - Homewood by IHG,chain,1,132,132,Holiday Inn Express & Suites Birmingham - Homewood by IHG,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Birmingham,US,Homewood Suites by Hilton Birmingham Downtown Near UAB,chain,10,147,146,Qantas Hotels,0.7,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Birmingham,US,La Quinta Inn & Suites by Wyndham Birmingham Homewood,chain,12,66,54,Evendo,18.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Birmingham,US,Microtel Inn & Suites by Wyndham Gardendale/Birmingham North,chain,12,71,71,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Birmingham,US,Quality Inn & Suites Birmingham - Highway 280,chain,12,65,65,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Birmingham,US,Ramada by Wyndham Birmingham Airport,chain,12,50,48,Priceline,4.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Birmingham,US,Spark by Hilton Homewood Birmingham,chain,12,84,78,KAYAK.com,7.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Birmingham,US,SpringHill Suites by Marriott Birmingham Downtown at UAB,chain,12,134,134,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Birmingham,US,"The Kelly Birmingham, Tapestry Collection by Hilton",chain,12,147,147,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Birmingham,US,"Tutwiler Hotel Birmingham, a DoubleTree by Hilton",chain,12,144,144,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Buffalo,US,Baymont by Wyndham Buffalo,chain,12,99,99,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Buffalo,US,Best Western Galleria Inn & Suites,chain,12,94,89,Vio.com,5.3,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Buffalo,US,Comfort Inn & Suites Buffalo Airport,chain,12,118,89,Traveluro,24.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Buffalo,US,Comfort Inn University,chain,12,108,108,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Buffalo,US,Curtiss Hotel,independent,12,307,267,Kiwi.com,13.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Buffalo,US,Days Inn by Wyndham Tonawanda/Buffalo,chain,12,102,76,Traveluro,25.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Buffalo,US,DoubleTree by Hilton Hotel Buffalo - Amherst,chain,11,171,171,Priceline,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Buffalo,US,Holiday Inn Express & Suites Tonawanda - Buffalo Area by IHG,chain,12,124,106,Kiwi.com,14.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Buffalo,US,Hyatt Place Buffalo/Amherst,chain,12,163,146,Kiwi.com,10.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Buffalo,US,La Quinta Inn & Suites by Wyndham Buffalo Amherst,chain,12,100,91,KAYAK.com,9.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Buffalo,US,La Quinta Inn & Suites by Wyndham Lackawanna,chain,12,79,69,Traveluro,12.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Buffalo,US,M Hotel Buffalo,independent,12,110,72,Super.com,34.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Buffalo,US,Quality Inn Near Walden Galleria Mall,chain,12,89,85,Luxury Escapes,4.5,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Buffalo,US,Red Roof PLUS+ University at Buffalo - Amherst,independent,12,71,67,Evendo,5.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Buffalo,US,Sleep Inn Amherst - Buffalo North near University,chain,12,119,116,Traveluro,2.5,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Buffalo,US,Studio 6 Corporate Extended Stay Amherst Buffalo NY,independent,12,100,76,Studio 6 Corporate Extended Stay Amherst Buffalo NY,24.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Buffalo,US,The Richardson Hotel,independent,12,229,137,Super.com,40.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Buffalo,US,Wyndham Garden Buffalo Downtown,chain,12,178,140,trivago DEALS,21.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Burlington Vermont,US,Best Western Plus Windjammer Inn & Conference Center,chain,12,129,123,goseek.com,4.7,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Burlington Vermont,US,Blind Tiger Burlington,independent,12,285,237,Super.com,16.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Burlington Vermont,US,Comfort Inn & Suites South Burlington near University,chain,12,123,123,Expedia.ca,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Burlington Vermont,US,Delta Hotels Burlington,chain,5,174,174,Agoda,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Burlington Vermont,US,DoubleTree by Hilton Burlington Vermont,chain,12,164,161,Expedia.com,1.8,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Burlington Vermont,US,Fairfield Inn Burlington Williston,chain,12,105,95,Booking.com,9.5,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,yes
+Burlington Vermont,US,Green Mountain Suites Hotel,independent,12,153,144,Super.com,5.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Burlington Vermont,US,Hampton Inn Colchester,chain,9,122,121,BusinessHotels.com,0.8,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Burlington Vermont,US,Hilton Garden Inn Burlington Downtown,chain,12,181,171,KAYAK.com,5.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Burlington Vermont,US,Homewood Suites by Hilton Burlington,chain,12,152,140,KAYAK.com,7.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Burlington Vermont,US,"Hotel Champlain Burlington, Curio Collection by Hilton",chain,12,193,164,KAYAK.com,15.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Burlington Vermont,US,La Quinta Inn & Suites by Wyndham Williston/Burlington,chain,12,105,88,Traveluro,16.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Burlington Vermont,US,Quality Inn Shelburne - Burlington,chain,12,87,83,trivago DEALS,4.6,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Burlington Vermont,US,Residence Inn by Marriott Burlington Colchester,chain,12,135,135,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Burlington Vermont,US,The Essex Resort & Spa,independent,12,167,140,klook,16.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Burlington Vermont,US,The Inn at Burlington,independent,5,120,120,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Burlington Vermont,US,The Vermont Suites,independent,12,120,79,Agoda,34.2,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Chattanooga,US,Chattanooga Choo Choo,independent,1,134,134,Billabook.com,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Chattanooga,US,DoubleTree by Hilton Chattanooga Hamilton Place,chain,12,105,98,KAYAK.com,6.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Chattanooga,US,Element by Marriott Chattanooga East,chain,2,158,158,Element by Marriott Chattanooga East,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Chattanooga,US,Hotel Clemons,independent,12,135,99,Super.com,26.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Chattanooga,US,Hotel Indigo Chattanooga - Downtown by IHG,chain,12,199,164,Vio.com,17.6,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Chattanooga,US,La Quinta Inn & Suites by Wyndham Chattanooga-Hamilton Place,chain,12,79,68,trivago DEALS,13.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Chattanooga,US,Spark by Hilton Chattanooga Downtown,chain,12,108,108,Expedia.co.uk,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Chattanooga,US,"The Chattanoogan Hotel, Curio Collection by Hilton",chain,12,149,126,KAYAK.com,15.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Chattanooga,US,The Crash Pad: An Uncommon Hostel,independent,10,75,68,The Crash Pad: An Uncommon Hostel,9.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Chattanooga,US,The Heinsman Guest House,independent,1,109,109,The Heinsman Guest House,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Chattanooga,US,The Hotel Chalet,independent,12,153,121,Super.com,20.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Chattanooga,US,The Lodge at Lookout Mountain,independent,2,160,160,Hotels.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Chattanooga,US,"The Read House Hotel, Downtown",independent,12,143,135,Hotels.com,5.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Chattanooga,US,The Westin Chattanooga,chain,12,254,254,The Westin Chattanooga,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Chattanooga,US,Tru by Hilton Chattanooga Hamilton Place,chain,12,93,86,KAYAK.com,7.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,AmericInn by Wyndham Des Moines Airport,chain,12,63,55,Traveluro,12.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,Baymont by Wyndham Des Moines North,chain,12,71,63,Traveluro,11.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,"Country Inn & Suites by Radisson, Des Moines West, IA",chain,12,95,95,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Des Moines,US,Days Inn by Wyndham West Des Moines / Clive,chain,12,58,53,trivago DEALS,8.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,Hampton Inn & Suites Des Moines Downtown,chain,12,110,107,trivago DEALS,2.7,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,Hampton Inn West Des Moines Lake Drive,chain,12,85,83,trivago DEALS,2.4,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,Hilton Garden Inn West Des Moines,chain,12,153,126,Expedia.com,17.6,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Des Moines,US,Holiday Inn & Suites Des Moines-Northwest by IHG,chain,12,98,74,Vio.com,24.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Des Moines,US,Holiday Inn Des Moines Dtwn - Mercy Area by IHG,chain,12,145,97,Vio.com,33.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,Hyatt Place Des Moines/Downtown,chain,12,114,93,trivago DEALS,18.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,Hyatt Place West Des Moines/Jordan Creek,chain,12,101,99,trivago DEALS,2.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,La Quinta Inn & Suites by Wyndham Des Moines West Clive,chain,12,83,71,Vio.com,14.5,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Des Moines,US,La Quinta by Wyndham Altoona Des Moines,chain,12,86,73,trivago DEALS,15.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,Ramada by Wyndham Des Moines Airport,chain,1,68,68,Reserving,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,Ramada by Wyndham Des Moines Tropics Resort & Conference Ctr,chain,12,95,85,trivago DEALS,10.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Des Moines,US,Sleep Inn & Suites West Des Moines near Jordan Creek,chain,12,69,69,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Des Moines,US,Stoney Creek Hotel Des Moines - Johnston,independent,12,109,78,Super.com,28.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Des Moines,US,Tru by Hilton Norwalk Des Moines,chain,12,81,81,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+El Paso,US,Boxstel Modern Stay Hotel,independent,10,119,93,Boxstel Modern Stay Hotel El Paso Downtown,21.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+El Paso,US,DoubleTree by Hilton Hotel El Paso Downtown,chain,12,187,180,trivago DEALS,3.7,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+El Paso,US,Embassy Suites by Hilton El Paso,chain,12,152,125,KAYAK.com,17.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+El Paso,US,Hawthorn Extended Stay by Wyndham El Paso,chain,12,79,58,Traveluro,26.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+El Paso,US,Holiday Inn El Paso West - Sunland Park by IHG,chain,12,97,91,Vio.com,6.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+El Paso,US,Holiday Inn Express & Suites El Paso I-10 East by IHG,chain,12,121,116,Evendo,4.1,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+El Paso,US,Home2 Suites By Hilton El Paso Airport,chain,12,120,111,momondo.com,7.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+El Paso,US,Hotel Indigo El Paso Downtown by IHG,chain,12,204,167,goseek.com,18.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+El Paso,US,La Quinta Inn by Wyndham El Paso Cielo Vista,chain,12,47,43,KAYAK.com,8.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+El Paso,US,La Quinta Inn by Wyndham El Paso West,chain,12,53,48,KAYAK.com,9.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+El Paso,US,Red Roof PLUS+ El Paso East,independent,12,57,51,Evendo,10.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+El Paso,US,Stanton House | El Paso Downtown,independent,12,191,168,Super.com,12.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+El Paso,US,The Hotel at Sunland Park Racetrack & Casino/West El Paso,independent,12,92,92,The Hotel at Sunland Park Racetrack & Casino/West El Paso,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+El Paso,US,The Plaza Hotel Pioneer Park,independent,12,290,234,Vio.com,19.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+El Paso,US,Tru by Hilton El Paso Airport,chain,12,114,114,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Fresno,US,Best Western Village Inn,chain,12,121,108,Evendo,10.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Fresno,US,Comfort Suites Fresno River Park,independent,12,141,141,Comfort Suites Fresno River Park,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Fresno,US,"Country Inn & Suites by Radisson, Fresno North, CA",chain,12,108,104,Luxury Escapes,3.7,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Fresno,US,Days Inn by Wyndham Fresno South,chain,12,63,63,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Fresno,US,Home2 Suites by Hilton Fresno Northwest,chain,12,131,131,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Fresno,US,HomeTowne Studios Fresno - West,independent,12,76,66,Evendo,13.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Fresno,US,Hotel Piccadilly & Events Center,independent,12,72,67,Super.com,6.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Fresno,US,La Quinta Inn & Suites by Wyndham Clovis CA,chain,12,133,111,Traveluro,16.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Fresno,US,La Quinta Inn by Wyndham Fresno Yosemite,chain,12,92,72,Evendo,21.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Fresno,US,Piccadilly Inn Airport,independent,12,104,75,Super.com,27.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Fresno,US,Ramada by Wyndham Fresno North,chain,9,89,89,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Fresno,US,Ramada by Wyndham Fresno Northwest,chain,5,76,75,Evendo,1.3,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Fresno,US,Rodeo Lodge,independent,12,61,55,Super.com,9.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Fresno,US,Sequoia Motel,independent,6,114,100,HomeToGo,12.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Fresno,US,Sonesta ES Suites Fresno,independent,12,116,101,Vio.com,12.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Fresno,US,University Square Hotel,independent,12,57,49,Super.com,14.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Fresno,US,Wyndham Garden Fresno Yosemite Airport,chain,12,103,102,Qantas Hotels,1.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Grand Rapids,US,Canopy by Hilton Grand Rapids Downtown,chain,12,210,209,Qantas Hotels,0.5,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Grand Rapids,US,"CityFlatsHotel - Grand Rapids, an Ascend Collection Hotel",chain,12,145,131,Vio.com,9.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Grand Rapids,US,Drury Inn & Suites Grand Rapids,independent,12,138,123,Bluepillow.co.uk,10.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Grand Rapids,US,Embassy Suites by Hilton Grand Rapids Downtown,chain,12,174,174,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Grand Rapids,US,Hampton Inn & Suites Grand Rapids Downtown,chain,12,160,160,Priceline,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Grand Rapids,US,Hampton Inn & Suites Grandville Grand Rapids South,chain,12,89,86,KAYAK.com,3.4,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Grand Rapids,US,Holiday Inn Express & Suites Grand Rapids - Airport North by IHG,chain,11,97,81,Vio.com,16.5,UNVERIFIED_LOWER,no,yes,yes,2026-11-03,2026-11-05,no
+Grand Rapids,US,Holiday Inn Express & Suites Grand Rapids Airport - South by IHG,chain,12,93,81,Kiwi.com,12.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Grand Rapids,US,Holiday Inn Grand Rapids - South by IHG,chain,12,106,97,goseek.com,8.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Grand Rapids,US,Holiday Inn Grand Rapids Downtown by IHG,chain,12,143,132,Vio.com,7.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Grand Rapids,US,Home2 Suites by Hilton Grand Rapids North,chain,11,149,149,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Grand Rapids,US,Home2 Suites by Hilton Grand Rapids Northeast,chain,12,103,91,Booking.com,11.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Grand Rapids,US,Homewood Suites by Hilton Grand Rapids Downtown,chain,12,188,182,Kiwi.com,3.2,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Grand Rapids,US,Hyatt Place Grand Rapids-South,chain,12,99,78,Vio.com,21.2,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Grand Rapids,US,Hyatt Place Grand Rapids/Downtown,chain,12,191,188,Hyatt Place Grand Rapids/Downtown,1.6,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Grand Rapids,US,Radisson Hotel Grand Rapids Riverfront,chain,12,93,84,trivago DEALS,9.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Grand Rapids,US,The Grand Select,independent,4,100,79,Super.com,21.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Grand Rapids,US,Tru by Hilton Comstock Park Grand Rapids,chain,12,85,81,Traveluro,4.7,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Greenville South Carolina,US,Baymont by Wyndham Greenville Woodruff Rd,chain,12,64,58,Expedia.com,9.4,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Greenville South Carolina,US,Best Western Plus Greenville I-385 Inn & Suites,chain,12,95,83,trivago DEALS,12.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Greenville South Carolina,US,Comfort Suites Greenville Airport,independent,12,110,109,Vio.com,0.9,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Greenville South Carolina,US,Crowne Plaza Greenville by IHG,chain,12,133,109,Vio.com,18.0,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Greenville South Carolina,US,DoubleTree by Hilton Greenville Airport,chain,12,136,132,DoubleTree by Hilton Greenville Airport,2.9,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Greenville South Carolina,US,Hampton Inn Greenville I-385 - Woodruff Rd.,chain,6,139,138,Qantas Hotels,0.7,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Greenville South Carolina,US,Hilton Greenville,chain,12,146,121,KAYAK.com,17.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Greenville South Carolina,US,Holiday Inn Express & Suites Greenville Airport by IHG,chain,12,123,115,Vio.com,6.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Greenville South Carolina,US,Holiday Inn Express & Suites Greenville S - Piedmont by IHG,chain,12,114,102,KAYAK.com,10.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Greenville South Carolina,US,Holiday Inn Greenville - Woodruff Road by IHG,chain,12,134,118,Vio.com,11.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Greenville South Carolina,US,Hyatt Place Greenville/Haywood,chain,12,116,96,Traveluro,17.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Greenville South Carolina,US,La Quinta Inn & Suites by Wyndham Greenville Haywood,chain,12,76,69,Traveluro,9.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Greenville South Carolina,US,Microtel Inn & Suites by Wyndham Greenville / Woodruff Rd,chain,9,75,75,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Greenville South Carolina,US,"Urban Boutique Hotel, BW Signature Collection",independent,12,73,73,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Greenville South Carolina,US,Wingate by Wyndham Greenville Airport,chain,12,73,65,trivago DEALS,11.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hartford,US,Best Western Hartford Hotel & Suites,chain,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Hartford,US,Cambria Hotel Manchester South Windsor,chain,12,187,187,Cambria Hotel Manchester South Windsor,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Hartford,US,Candlewood Suites Hartford Downtown by IHG,chain,12,132,112,Candlewood Suites Hartford Downtown by IHG,15.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hartford,US,Comfort Inn & Suites East Hartford - Hartford,chain,12,128,109,Expedia.com,14.8,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,yes
+Hartford,US,Comfort Inn Wethersfield - Hartford,chain,12,99,91,Traveluro,8.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Hartford,US,Courtyard by Marriott Hartford Manchester,chain,12,122,118,Vio.com,3.3,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Hartford,US,Delamar West Hartford,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Hartford,US,DoubleTree by Hilton Hartford Downtown,chain,12,303,280,KAYAK.com,7.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hartford,US,Fairfield by Marriott Inn & Suites Hartford Airport,chain,12,122,107,Evendo,12.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Hartford,US,Hampton Inn & Suites Hartford/East Hartford,chain,12,144,134,KAYAK.com,6.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hartford,US,Hartford Marriott Downtown,chain,12,589,471,Hartford Marriott Downtown,20.0,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Hartford,US,Hilton Garden Inn Hartford North/Bradley Int'l Airport,chain,12,148,134,trivago DEALS,9.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hartford,US,Holiday Inn Express Hartford South - Rocky Hill by IHG,chain,12,147,124,Vio.com,15.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Hartford,US,Hyatt House Hartford North/Windsor,chain,12,183,164,Vio.com,10.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hartford,US,La Quinta Inn & Suites by Wyndham Hartford - Bradley Airport,chain,12,134,125,Vio.com,6.7,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Hartford,US,The Capitol Hotel,independent,12,119,77,Super.com,35.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Hartford,US,The Farmington Inn & Suites,independent,12,154,128,trivago DEALS,16.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Hartford,US,The Goodwin Hotel,independent,12,364,334,Super.com,8.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Knoxville,US,Baymont by Wyndham Knoxville/Cedar Bluff,chain,12,67,57,trivago DEALS,14.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Knoxville,US,Best Western Plus Knoxville Cedar Bluff,chain,12,97,84,trivago DEALS,13.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Knoxville,US,Comfort Inn & Suites Knoxville West,chain,12,97,85,KAYAK.com,12.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Knoxville,US,"Country Inn & Suites by Radisson, Knoxville at Cedar Bluff, TN",chain,12,78,59,KAYAK.com,24.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Knoxville,US,Drury Inn & Suites Knoxville West,independent,12,117,113,Drury Inn & Suites Knoxville West,3.4,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Knoxville,US,Graduate by Hilton Knoxville,chain,12,283,258,Traveluro,8.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Knoxville,US,Hilton Knoxville,chain,12,177,153,Traveluro,13.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Knoxville,US,Holiday Inn Knoxville N - Merchant Drive by IHG,chain,12,98,92,Vio.com,6.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Knoxville,US,Holiday Inn Knoxville West- Cedar Bluff Rd,chain,12,109,94,Vio.com,13.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Knoxville,US,Home2 Suites by Hilton Knoxville West,chain,10,162,162,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Knoxville,US,THE TENNESSEAN Hotel,independent,7,269,230,HotelTonight.com,14.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Knoxville,US,TownePlace Suites by Marriott Knoxville Cedar Bluff,chain,12,93,93,TownePlace Suites by Marriott Knoxville Cedar Bluff,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Knoxville,US,Tru by Hilton Knoxville North I 75,chain,12,106,102,Traveluro,3.8,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Knoxville,US,Tru by Hilton Knoxville West Turkey Creek,chain,12,97,90,KAYAK.com,7.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Knoxville,US,WoodSpring Suites Knoxville West,independent,12,93,93,WoodSpring Suites Knoxville West,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Lexington,US,175 LEX,independent,9,184,168,Agoda,8.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lexington,US,21c Museum Hotel Lexington,independent,12,180,159,trivago DEALS,11.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lexington,US,Clarion Hotel Conference Center Lexington North,chain,12,77,65,KAYAK.com,15.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lexington,US,"Country Inn & Suites by Radisson, Lexington, KY",chain,12,81,74,Traveluro,8.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lexington,US,Elwood Hotel & Suites,independent,12,111,102,Super.com,8.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lexington,US,Embassy Suites by Hilton Lexington Green,chain,12,130,127,trivago DEALS,2.3,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Lexington,US,Everhome Suites Lexington - Horse Park,independent,12,108,108,Everhome Suites Lexington - Horse Park,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Lexington,US,GuestHouse Lexington,independent,9,92,74,Bluepillow.co.uk,19.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Lexington,US,Hilton Lexington/Downtown,chain,12,159,150,Kiwi.com,5.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lexington,US,Holiday Inn Express & Suites Lexington-Downtown/University by IHG,chain,12,129,117,Vio.com,9.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lexington,US,Holiday Inn Lexington - Hamburg by IHG,chain,12,114,108,Vio.com,5.3,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,yes
+Lexington,US,Hotel LEX - Hotel and Conference Center,independent,12,102,97,goseek.com,4.9,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Lexington,US,Hyatt Place Lexington,chain,12,117,117,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Lexington,US,Marriott Lexington Griffin Gate Golf Resort & Spa,chain,12,160,113,trivago DEALS,29.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lexington,US,Origin Hotel Lexington,independent,12,200,154,Kiwi.com,23.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lexington,US,Quality Inn Lexington -Horse Park,chain,12,72,72,Quality Inn Lexington -Horse Park,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Lexington,US,"The Campbell House Lexington, Curio Collection by Hilton",chain,12,135,125,Hotelscombined.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lexington,US,The Manchester Lexington,independent,12,218,213,Hotels.com,2.3,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Little Rock,US,Comfort Inn & Suites Presidential,chain,12,101,85,KAYAK.com,15.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Little Rock,US,"Country Inn & Suites by Radisson, North Little Rock, AR",chain,12,59,59,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Little Rock,US,DoubleTree by Hilton Hotel Little Rock,chain,12,114,111,Traveluro,2.6,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Little Rock,US,Embassy Suites by Hilton Little Rock,chain,12,114,111,trivago DEALS,2.6,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Little Rock,US,Hampton Inn & Suites Little Rock-Downtown,chain,12,110,110,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Little Rock,US,Holiday Inn Little Rock-Presidential-Dwntn by IHG,chain,12,103,86,Kiwi.com,16.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Little Rock,US,Home2 Suites by Hilton Little Rock West,chain,2,118,118,Home2 Suites by Hilton Little Rock West,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Little Rock,US,Little Rock Marriott,chain,12,244,166,Booking.com,32.0,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Little Rock,US,Quality Inn & Suites North Little Rock,chain,12,62,62,Hoteis.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Little Rock,US,Spark by Hilton Little Rock West,chain,12,65,65,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Little Rock,US,SpringHill Suites by Marriott Little Rock West,chain,12,89,89,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Little Rock,US,Staybridge Suites Little Rock - Medical Center by IHG,chain,12,125,113,KAYAK.com,9.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Little Rock,US,TownePlace Suites by Marriott Little Rock West,chain,12,82,82,TownePlace Suites by Marriott Little Rock West,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Little Rock,US,Tru By Hilton Little Rock West,chain,12,114,106,KAYAK.com,7.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Little Rock,US,Wyndham Grand Executive Center Little Rock Airport,chain,12,87,80,Booking.com,8.0,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Madison,US,AmericInn by Wyndham Madison West,chain,12,80,63,Vio.com,21.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Madison,US,Baymont Inn & Suites by Wyndham Madison,chain,12,87,68,trivago DEALS,21.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Madison,US,Baymont by Wyndham Madison West/Middleton WI West,chain,12,81,63,trivago DEALS,22.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Madison,US,"Country Inn & Suites by Radisson, Middleton - Madison West",chain,12,87,87,"Country Inn & Suites by Radisson, Middleton - Madison West",0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Madison,US,DoubleTree by Hilton Madison East,chain,12,129,109,trivago DEALS,15.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Madison,US,Embassy Suites by Hilton Madison Downtown,chain,12,202,202,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Madison,US,Hampton Inn & Suites Madison-West,chain,12,134,92,KAYAK.com,31.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Madison,US,Hilton Garden Inn Madison Downtown,chain,1,870,870,Clicktrip.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Madison,US,Holiday Inn & Suites Madison West - Middleton by IHG,chain,12,121,100,Vio.com,17.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Madison,US,Home2 Suites by Hilton Madison Central Alliant Energy Center,chain,11,177,173,Home2 Suites by Hilton Madison Central Alliant Energy Center,2.3,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Madison,US,La Quinta Inn & Suites by Wyndham Madison American Center,chain,12,71,67,Traveluro,5.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Madison,US,Madison Marriott South,chain,12,179,179,Madison Marriott South,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Madison,US,"Motel 6 Madison, WI - East",chain,12,36,36,trivago DEALS,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Madison,US,The Edgewater Hotel,independent,12,287,236,Vio.com,17.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Madison,US,The Madison Marquette Hotel,independent,12,122,98,The Madison Marquette Hotel,19.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Madison,US,The Saddlery Madison,independent,12,195,169,Vio.com,13.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Madison,US,Tru by Hilton Madison West,chain,12,94,87,KAYAK.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Madison,US,Wisconsin Union Hotel,independent,4,187,187,Wisconsin Union Hotel,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+New Haven,US,Cambria Hotel New Haven University Area,chain,12,152,113,Traveluro,25.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+New Haven,US,Courtyard by Marriott New Haven Orange/Milford,chain,12,135,133,KAYAK.com,1.5,PARITY,no,no,no,2026-11-03,2026-11-05,no
+New Haven,US,Courtyard by Marriott New Haven Wallingford,chain,12,196,196,Courtyard by Marriott New Haven Wallingford,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+New Haven,US,Courtyard by Marriott New Haven at Yale,chain,12,137,129,Traveluro,5.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+New Haven,US,Graduate by Hilton New Haven,chain,12,245,226,KAYAK.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+New Haven,US,Hampton Inn and Suites by Hilton North Haven,chain,12,140,140,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+New Haven,US,Home2 Suites by Hilton East Haven New Haven,chain,12,153,153,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+New Haven,US,Homewood Suites by Hilton Orange New Haven,chain,12,165,164,Qantas Hotels,0.6,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+New Haven,US,"Hotel Marcel New Haven, Tapestry Collection by Hilton",chain,12,195,191,Closest Hotel,2.1,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+New Haven,US,La Quinta Inn & Suites by Wyndham New Haven,chain,12,109,84,KAYAK.com,22.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+New Haven,US,New Haven Historic Mansion,independent,4,171,171,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+New Haven,US,New Haven Hotel,independent,12,154,141,Super.com,8.4,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+New Haven,US,Omni New Haven Hotel at Yale,chain,12,193,191,Vio.com,1.0,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+New Haven,US,The Blake Hotel,independent,12,289,253,Super.com,12.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+New Haven,US,The Surfside Hotel,independent,12,240,180,Agoda,25.0,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Oklahoma City,US,Baymont by Wyndham Oklahoma City/Quail Springs,chain,11,61,61,Bluepillow.co.uk,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Oklahoma City,US,Best Western Plus Executive Residency Oklahoma City I-35,chain,12,76,76,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Oklahoma City,US,Comfort Inn & Suites Oklahoma City near Bricktown,chain,12,66,66,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Oklahoma City,US,"Country Inn & Suites by Radisson, Oklahoma City - Quail Springs, OK",chain,12,60,58,Evendo,3.3,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Oklahoma City,US,"Country Inn & Suites by Radisson, Oklahoma City at Northwest Expressway, OK",chain,12,63,57,Priceline,9.5,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Oklahoma City,US,Days Inn by Wyndham Oklahoma City,chain,12,60,55,Evendo,8.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Oklahoma City,US,Fairfield by Marriott Inn & Suites Oklahoma City NW Expressway/Warr Acres,chain,7,99,99,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Oklahoma City,US,Garner Hotel Oklahoma City - Quail Springs by IHG,independent,12,79,79,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Oklahoma City,US,Hampton Inn & Suites Oklahoma City - South,chain,12,80,77,trivago DEALS,3.8,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Oklahoma City,US,Holiday Inn Express & Suites Oklahoma City NW-Quail Springs by IHG,chain,9,113,91,Holiday Inn Express & Suites Oklahoma City NW-Quail Springs by IHG,19.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Oklahoma City,US,Holiday Inn Express & Suites Oklahoma City North by IHG,chain,12,92,92,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Oklahoma City,US,Home2 Suites By Hilton Oklahoma City Yukon,chain,12,89,89,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Oklahoma City,US,Hyatt Place Oklahoma City / Bricktown,chain,12,126,118,Traveluro,6.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Oklahoma City,US,La Quinta Inn & Suites by Wyndham Oklahoma City - NW Expwy,chain,12,69,69,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Oklahoma City,US,Omni Oklahoma City Hotel,chain,12,240,218,Traveluro,9.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Oklahoma City,US,"Skirvin Oklahoma City, a Hilton Hotel",chain,12,196,161,trivago DEALS,17.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Oklahoma City,US,Wingate by Wyndham Oklahoma City Airport,chain,12,61,54,Evendo,11.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Oklahoma City,US,Wyndham Grand Oklahoma City Downtown,chain,12,119,105,Traveluro,11.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Omaha,US,Best Western Crossroads of the Bluffs,chain,12,80,62,trivago DEALS,22.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Omaha,US,Best Western Plus Midwest Inn,chain,12,83,74,Traveluro,10.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Omaha,US,"BridgePointe Inn & Suites by BPhotels, Council Bluffs, Omaha Area",independent,12,68,63,Super.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Omaha,US,Cambria Hotel Omaha Downtown,chain,12,142,107,Vio.com,24.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Omaha,US,Comfort Inn & Suites Omaha Central,chain,10,87,77,Bluepillow.com,11.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Omaha,US,"Country Inn & Suites by Radisson, Omaha Airport, IA",chain,12,71,71,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Omaha,US,DoubleTree by Hilton Omaha Southwest,chain,12,97,87,trivago DEALS,10.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Omaha,US,EVEN Hotel Omaha Downtown - Old Market by IHG,independent,12,84,76,Vio.com,9.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Omaha,US,Harrah's Council Bluffs Hotel and Casino - A Caesars Rewards Destination,chain,12,98,90,Evendo,8.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Omaha,US,Holiday Inn Express & Suites Cherry Hills by IHG,chain,12,95,89,TUI.com,6.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Omaha,US,Holiday Inn Express & Suites Omaha West by IHG,chain,12,77,69,KAYAK.com,10.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Omaha,US,Holiday Inn Omaha Downtown - Waterpark by IHG,chain,12,86,76,Holiday Inn Omaha Downtown - Waterpark by IHG,11.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Omaha,US,Kimpton Cottonwood,chain,12,189,146,Vio.com,22.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Omaha,US,Magnolia Hotel Omaha,independent,12,101,70,Super.com,30.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Omaha,US,Residence Inn by Marriott Omaha West,chain,8,101,101,Residence Inn by Marriott Omaha West,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Omaha,US,TownePlace Suites by Marriott Omaha West,chain,12,87,87,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Omaha,US,Tru by Hilton Omaha I-80 at 72nd Street,chain,12,115,114,Qantas Hotels,0.9,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Omaha,US,Wyndham Omaha/West Dodge,chain,12,47,43,trivago DEALS,8.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Portland Maine,US,Aloft by Marriott Portland Downtown Waterfront ME,chain,12,176,149,Aloft by Marriott Portland Downtown Waterfront ME,15.3,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Portland Maine,US,Cambria Hotel Portland Downtown Old Port,chain,12,152,141,Vio.com,7.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Portland Maine,US,Canopy by Hilton Portland Waterfront,chain,12,224,201,Traveluro,10.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Portland Maine,US,Courtyard by Marriott Portland Downtown/Waterfront,chain,5,136,136,Courtyard by Marriott Portland Downtown/Waterfront,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Portland Maine,US,"DoubleTree by Hilton Hotel Portland, ME",chain,12,90,83,KAYAK.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Portland Maine,US,Embassy Suites by Hilton Portland Maine,chain,3,151,151,Qantas Hotels,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Portland Maine,US,Hilton Garden Inn Portland Downtown Waterfront,chain,12,147,135,Traveluro,8.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Portland Maine,US,Holiday Inn Portland-By The Bay,chain,12,154,127,Vio.com,17.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Portland Maine,US,Hyatt Place Portland Downtown-Old Port Square,chain,12,137,113,Booking.com,17.5,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Portland Maine,US,Inn at St John,independent,12,101,67,Super.com,33.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Portland Maine,US,Portland Harbor Hotel,independent,12,212,145,Super.com,31.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Portland Maine,US,Portland Regency Hotel & Spa,independent,12,137,111,Super.com,19.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Portland Maine,US,Ramada Plaza by Wyndham Portland,chain,12,84,64,Pilot,23.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Portland Maine,US,Residence Inn by Marriott Portland Downtown/Waterfront,chain,12,127,127,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Portland Maine,US,The Inn On Peaks Island,independent,12,134,134,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Portland Maine,US,The Westin Portland Harborview,chain,12,160,137,HotelTonight.com,14.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Portland Maine,US,Tru by Hilton Portland Airport Area,chain,12,98,93,Hotel Booking Zone,5.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Providence,US,Bristol Harbor Inn,independent,2,132,132,Bristol Harbor Inn,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Providence,US,Christopher Dodge House,independent,12,186,159,Christopher Dodge House,14.5,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Providence,US,Graduate by Hilton Providence,chain,12,242,228,Traveluro,5.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Providence,US,Hampton Inn & Suites Providence/Smithfield,chain,6,135,134,Expedia.com,0.7,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Providence,US,Hampton Inn & Suites Providence/Warwick-Airport,chain,12,106,85,Traveluro,19.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Providence,US,Hilton Garden Inn Providence Waterfront,chain,12,163,163,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Providence,US,Holiday Inn Express & Suites Warwick-Providence (Airport),chain,12,137,109,Vio.com,20.4,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,yes
+Providence,US,Hotel Providence,independent,12,154,126,Super.com,18.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Providence,US,Hyatt Place Warwick Providence Airport,chain,12,147,146,goseek.com,0.7,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Providence,US,La Quinta Inn & Suites by Wyndham Warwick Providence Airport,chain,12,92,82,goseek.com,10.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Providence,US,Omni Providence Hotel,chain,12,157,144,klook,8.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Providence,US,Quality Inn Seekonk-Providence,chain,12,73,59,KAYAK.com,19.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Providence,US,Ramada by Wyndham Seekonk Providence Area,chain,12,68,63,trivago DEALS,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Providence,US,The Beatrice,independent,12,404,257,Vio.com,36.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Providence,US,"The LOOM Hotel, Tapestry Collection by Hilton",chain,12,146,135,Traveluro,7.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Reno,US,Aiden by Best Western South Reno,chain,12,94,85,Traveluro,9.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Reno,US,Atlantis Casino Resort Spa,independent,12,213,160,Super.com,24.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Reno,US,Best Bet Motor Lodge,independent,9,133,117,Best Bet Motor Lodge,12.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Reno,US,Best Western Plus Boomtown Casino Resort,chain,12,119,83,Traveluro,30.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Reno,US,Circus Circus Reno - A Caesars Rewards Destination,chain,12,69,51,Airport Hotels Worldwide,26.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Reno,US,Days Inn by Wyndham Reno,chain,12,69,64,Etrip.net,7.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Reno,US,Econo Lodge Near Reno-Sparks Convention Center,chain,12,56,53,Evendo,5.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Reno,US,Eldorado Reno - A Caesars Rewards Destination,chain,12,76,57,trivago DEALS,25.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Reno,US,Grand Sierra Resort and Casino,independent,12,94,49,Kiwi.com,47.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Reno,US,J Resort,independent,12,89,75,Super.com,15.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Reno,US,La Quinta Inn by Wyndham Reno,chain,6,78,78,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Reno,US,"Motel 6 Reno, NV - Livestock",chain,12,62,61,OYO,1.6,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Reno,US,Nugget Casino Resort,independent,7,79,79,Billabook.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Reno,US,Peppermill Resort Spa Casino,independent,11,105,104,Kiwi.com,1.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Reno,US,Ramada by Wyndham Reno Hotel & Casino,chain,7,68,68,Ramada by Wyndham Reno Hotel & Casino,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Reno,US,Silver Legacy Reno - A Caesars Rewards Destination,chain,12,76,57,Airport Hotels Worldwide,25.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Reno,US,Travelodge by Wyndham Reno Downtown,chain,12,77,77,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Reno,US,Western Village Inn & Casino,independent,11,60,45,Super.com,25.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Spokane,US,Courtyard by Marriott Spokane Downtown at the Convention Center,chain,12,130,127,Courtyard by Marriott Spokane Downtown at the Convention Center,2.3,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Spokane,US,"Davenport Hotel, Autograph Collection",chain,12,159,147,KAYAK.com,7.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Spokane,US,DoubleTree by Hilton Hotel Spokane City Center,chain,12,133,123,trivago DEALS,7.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Spokane,US,Hotel Indigo Spokane Downtown,chain,12,115,92,Vio.com,20.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Spokane,US,Hotel Ruby | Spokane,independent,12,66,66,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Spokane,US,La Quinta Inn & Suites by Wyndham Spokane Downtown,chain,12,83,71,trivago DEALS,14.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Spokane,US,Madison Inn | Hospital District Spokane,independent,12,101,83,Agoda,17.8,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Spokane,US,Montvale Hotel | Spokane,independent,12,116,87,trivago DEALS,25.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Spokane,US,Ramada by Wyndham Downtown Spokane,chain,12,75,75,Hoteis.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Spokane,US,Riverfront Park Travel Apartments,independent,3,134,134,Tripadvisor.com,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Spokane,US,Ruby River Hotel | Spokane,independent,12,126,87,Super.com,31.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Spokane,US,Spokane Tribe Resort & Casino,independent,12,118,96,Super.com,18.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Spokane,US,The Centennial Hotel,independent,12,137,109,Agoda,20.4,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,yes
+Spokane,US,"The Davenport Grand, Autograph Collection",chain,7,179,179,"The Davenport Grand, Autograph Collection",0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Spokane,US,"The Davenport Tower, Autograph Collection",chain,12,178,178,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Tulsa,US,Aloft by Marriott Tulsa,chain,12,71,61,Booking.com,14.1,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Tulsa,US,Baymont by Wyndham Tulsa,chain,12,67,61,Expedia.ca,9.0,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Tulsa,US,Best Western Plus Woodland Hills Hotel & Suites,chain,12,72,65,Evendo,9.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Tulsa,US,Brut Hotel,independent,12,161,145,Super.com,9.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Tulsa,US,Comfort Suites Tulsa Central,independent,12,73,73,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Tulsa,US,Courtyard by Marriott Tulsa Central,chain,12,93,92,Skyscanner,1.1,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Tulsa,US,Courtyard by Marriott Tulsa Woodland Hills,chain,12,96,91,Priceline,5.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Tulsa,US,Hard Rock Hotel And Casino Tulsa,chain,12,164,130,Traveluro,20.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Tulsa,US,Holiday Inn & Suites Tulsa South by IHG,chain,12,75,75,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Tulsa,US,Hyatt Regency Tulsa Downtown,chain,12,181,147,trivago DEALS,18.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Tulsa,US,La Quinta Inn & Suites by Wyndham Tulsa Downtown/Route 66,chain,12,119,93,Vio.com,21.8,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Tulsa,US,Osage Casino Hotel - Tulsa,independent,12,126,102,Super.com,19.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Tulsa,US,Residence Inn by Marriott Tulsa Midtown,chain,10,169,135,Residence Inn by Marriott Tulsa Midtown,20.1,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Tulsa,US,River Spirit Casino Resort,independent,9,126,126,Clicktrip.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Tulsa,US,Spark by Hilton Catoosa Tulsa,chain,12,79,75,Spark by Hilton Catoosa Tulsa,5.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Tulsa,US,SpringHill Suites by Marriott Tulsa,chain,10,94,94,SpringHill Suites by Marriott Tulsa,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Tulsa,US,Staybridge Suites Tulsa-Woodland Hills by IHG,chain,12,119,114,Staybridge Suites Tulsa-Woodland Hills by IHG,4.2,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Tulsa,US,The Mayo Hotel,independent,12,174,158,Traveluro,9.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Wichita,US,Comfort Inn & Suites Wichita Northeast,chain,12,78,75,Vio.com,3.8,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Wichita,US,Coratel Inn and Suites By Jasper Wichita North,independent,12,57,47,HotelsbyWeek,17.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Wichita,US,Coratel Plus Suites Wichita West Airport,independent,12,62,62,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Wichita,US,Coratel Suites,independent,4,67,67,Booking.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Wichita,US,"Country Inn & Suites by Radisson, Wichita East, KS",chain,12,80,68,KAYAK.com,15.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Wichita,US,Courtyard by Marriott Wichita at Old Town,chain,12,241,109,trivago DEALS,54.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Wichita,US,Days Inn & Suites by Wyndham Wichita,chain,12,60,60,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Wichita,US,DoubleTree by Hilton Hotel Wichita Airport,chain,12,114,114,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Wichita,US,Everhome Suites Wichita Northeast,independent,3,113,113,Everhome Suites Wichita Northeast,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Wichita,US,Hampton Inn West Wichita Goddard,chain,12,101,101,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Wichita,US,Holiday Inn Express & Suites East Wichita I-35 Andover by IHG,chain,12,100,100,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Wichita,US,Holiday Inn Wichita East I-35 by IHG,chain,12,98,98,Holiday Inn Wichita East I-35 by IHG,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Wichita,US,Howard Johnson by Wyndham Wichita Airport,chain,12,48,46,Vio.com,4.2,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Wichita,US,La Quinta Inn & Suites by Wyndham Wichita Northeast,chain,12,126,100,Evendo,20.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Wichita,US,Studio 6 Extended Stay Wichita South KS,independent,12,47,46,OYO,2.1,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Wichita,US,Super 8 by Wyndham Wichita Airport,chain,12,56,50,Evendo,10.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Wichita,US,TownePlace Suites by Marriott Wichita East,chain,12,81,79,TownePlace Suites by Marriott Wichita East,2.5,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Wichita,US,Wyndham Garden Wichita Downtown,chain,12,83,69,Vio.com,16.9,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no

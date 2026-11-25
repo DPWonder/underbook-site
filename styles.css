@@ -1,0 +1,178 @@
+/* Underbook landing: custom styles. Tailwind handles the rest in /assets/site.css, compiled by build/ (docs/TAILWIND_COMPILE_2026-10-01.md) */
+
+/* Better text rendering */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Remove default details marker (we use the + glyph) */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Smooth scroll for in-page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Form state utility classes (toggled by app.js) */
+.form-success input,
+.form-success button {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.form-loading button {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+/* ───────── Accessibility (2026-10-01, docs/ACCESSIBILITY_2026-10-01.md) ───────── */
+
+/* Keyboard focus: one clear ring on every link, button and field, the same on every page. #047857 is 5.3:1 against the
+   page, 5.5:1 against white and 3.6:1 against the dark sections (WCAG 2.4.7, and 3:1 for the ring itself). !important so
+   it also wins over the fields' focus:outline-none. */
+:focus-visible {
+  outline: 2px solid #047857 !important;
+  outline-offset: 2px !important;
+}
+
+/* The sticky nav (64px) never covers a focused element or the target of an in-page link. */
+html {
+  scroll-padding-top: 5rem;
+}
+
+/* A long unbroken string (a URL in <code>) wraps instead of pushing the page sideways on a 320px screen (WCAG 1.4.10). */
+code {
+  overflow-wrap: anywhere;
+}
+
+/* Visitors who ask for less motion get no smooth scrolling and no animations or transitions. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ───────── Top nav on a phone (2026-10-01, docs/HOMEPAGE_2026-10-01.md) ─────────
+   Below 640px the shared nav carries one action, the web price check, shown as a button: an extension cannot be added on
+   a phone, and "Check a price" next to "Add to Chrome, free" did not fit beside the logo at 360 to 414px (both broke onto
+   two lines). On phones and tablets app.js also turns the store button into a "Check a price" button (data-handheld)
+   and hides the plain link; that button stays visible here and looks the same, so nothing moves when app.js runs.
+   The markup is scripts/nav_fit_20261001.py's NAV (every page, scripts/hotel_pages.py, scripts/dispersion_page.py). */
+@media (max-width: 639.98px) {
+  nav .ub-nav-install:not([data-handheld]) {
+    display: none;
+  }
+  nav .ub-nav-check {
+    background-color: #10b981;
+    color: #0a0a0a;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/* ───────── Homepage hero: one action per device (2026-10-01, docs/HOMEPAGE_2026-10-01.md) ─────────
+   .ub-desk-only: the extension (computers). .ub-hh-only: the web price check form (phones and tablets, where an
+   extension cannot be added). index.html sets html[data-ub-device] before the first paint with app.js's device test;
+   without JavaScript the width decides (below 768px: the phone block). Only block-level wrappers carry these classes. */
+.ub-hh-only {
+  display: none;
+}
+html[data-ub-device="handheld"] .ub-hh-only {
+  display: block;
+}
+html[data-ub-device="handheld"] .ub-desk-only {
+  display: none;
+}
+/* X62 A1 (2026-11-15): on a phone or tablet a guide's check form (.ub-form-up) is drawn right under the headline, on the
+   first screen, instead of under the long first paragraph. Order only: the HTML, which crawlers and assistants read, keeps
+   the paragraph first. A browser without :has() keeps the old place. */
+html[data-ub-device="handheld"] section:has(> .ub-form-up) {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+html[data-ub-device="handheld"] section:has(> .ub-form-up) > * {
+  order: 3;
+}
+html[data-ub-device="handheld"] section:has(> .ub-form-up) > p:first-child {
+  order: 1;
+  align-self: flex-start;
+}
+html[data-ub-device="handheld"] section:has(> .ub-form-up) > h1 {
+  order: 1;
+}
+html[data-ub-device="handheld"] section:has(> .ub-form-up) > .ub-form-up {
+  order: 2;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+/* A tablet gets the phone block in one column, not half of the two-column hero. */
+html[data-ub-device="handheld"] .ub-hero-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767.98px) {
+  html:not([data-ub-device]) .ub-hh-only {
+    display: block;
+  }
+  html:not([data-ub-device]) .ub-desk-only {
+    display: none;
+  }
+}
+
+/* Contrast floor for pages generated before this pass: the ~6,000 /hotels pages keep their old markup until
+   scripts/hotel_pages.py regenerates them. Their footer label ("Hotel booking guides", text-slate-400, 2.5:1) and the
+   "Measured ..." pill (text-slate-500 on bg-stone-200/70, 4.0:1) read at the colors the generator now writes. Safe to
+   delete once every page in landing/public/hotels/ is regenerated (python3 scripts/hotel_pages.py --check passes). */
+footer .text-slate-400 {
+  color: #64748b;
+}
+.bg-stone-200\/70.text-slate-500 {
+  color: #475569;
+}
+
+/* Short laptop screens (2026-10-02): with the real Inter font (self-hosted today; the homepage test used to measure the
+   fallback font), a 1366x657 window put the web-check link and the trust links below the first screen. On computers with
+   a short window the hero starts higher, its columns align to the top and the headline is a size smaller, so the one
+   action, the web-check link and "Check our work" stay on the first screen. Taller windows are unchanged. */
+@media (min-width: 768px) and (max-height: 760px) {
+  .ub-hero { padding-top: 1.25rem; padding-bottom: 2.5rem; }
+  .ub-hero .ub-hero-grid { align-items: start; }
+  .ub-hero h1 { font-size: 3rem; margin-bottom: 0.75rem; }
+  .ub-hero .ub-desk-only > p.text-lg { font-size: 1rem; margin-bottom: 0.875rem; }
+  .ub-hero .ub-desk-only span.rounded-full { margin-bottom: 0.5rem; }
+}
+
+/* ───────── Web checker on a phone or tablet: each site row opens its site (2026-10-06, docs/PHONE_CLICKS_2026-10-06.md) ─────────
+   hotel-price-checker.html adds ub-tap-rows to its site list on phones and tablets only (the page's device test) and gives
+   each row's Open link ub-row-open. The link then covers its row, so a tap on the site's name, room or price opens that
+   site as the Open button does: the same link, words and label, nothing else in the row is a control. The button alone
+   was 26px tall, under a fingertip. Computers keep the small button as the only target. */
+.ub-tap-rows li {
+  position: relative;
+}
+.ub-tap-rows a.ub-row-open::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

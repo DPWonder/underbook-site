@@ -1,0 +1,101 @@
+city,region,hotel,segment,sites_listed,going_rate_usd,cheapest_usd,cheapest_site,discount_pct,verdict,cheaper_room_name_matched,cheapest_named_a_room,fees_unverified,check_in,check_out,free_cancellation_elsewhere_same_or_less,going_rate_all_in_usd,priced_on,first_snapshot_date,first_snapshot_going_rate_usd,property_fee_in_google_description
+Anaheim,US,Anaheim Marriott,chain,12,302,220,Traveluro,27.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,353,2026-10-27,2026-10-12,324,no
+Anaheim,US,Hilton Garden Inn Anaheim/Garden Grove,chain,12,145,119,Super.com,17.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,170,2026-10-27,2026-10-12,166,no
+Anaheim,US,"Hotel Fera Anaheim, a DoubleTree by Hilton",chain,12,118,107,Super.com,9.3,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,130,2026-10-27,2026-10-12,150,no
+Anaheim,US,Sonesta Anaheim Resort Area,independent,12,124,105,Super.com,15.3,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,146,2026-10-27,2026-10-12,144,no
+Atlanta,US,Atlanta Marriott Marquis,chain,12,119,81,Traveluro,31.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,144,2026-10-27,2026-10-12,144,no
+Atlanta,US,Courtland Grand Hotel,independent,12,78,78,Expedia.com,0.0,PARITY,no,yes,no,2026-11-25,2026-11-29,no,96,2026-10-27,2026-10-12,83,no
+Atlanta,US,Embassy Suites by Hilton Atlanta Buckhead,chain,12,117,91,KAYAK.com,22.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,142,2026-10-27,2026-10-12,128,no
+Atlanta,US,Margaritaville Vacation Club - Atlanta,independent,12,169,117,Super.com,30.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,203,2026-10-27,2026-10-12,188,no
+Boston,US,Four Points by Sheraton Boston Newton,chain,12,123,114,KAYAK.com,7.3,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,138,2026-10-27,2026-10-12,133,no
+Boston,US,Hyatt Place Boston / Seaport District,chain,12,152,131,Traveluro,13.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,177,2026-10-27,2026-10-12,152,no
+Boston,US,Ramada by Wyndham Boston,chain,12,97,82,Luxury Escapes,15.5,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,113,2026-10-27,2026-10-12,113,no
+Boston,US,The Revolution Hotel,independent,12,110,82,Traveluro,25.5,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,128,2026-10-27,2026-10-12,160,no
+Chicago,US,"Fairmont Chicago, Millennium Park",chain,12,211,187,Super.com,11.4,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,244,2026-10-27,2026-10-12,239,no
+Chicago,US,Hampton Inn Chicago Downtown/N Loop/Michigan Ave,chain,12,163,119,Super.com,27.0,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,194,2026-10-27,2026-10-12,210,no
+Chicago,US,Sofitel Chicago Magnificent Mile,chain,12,288,191,Super.com,33.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,343,2026-10-27,2026-10-12,218,no
+Chicago,US,The Wade,independent,12,247,185,Bookhotel.direct,25.1,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,293,2026-10-27,2026-10-12,115,no
+Dallas,US,Holiday Inn Dallas-Richardson by IHG,chain,12,81,64,Super.com,21.0,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,92,2026-10-27,2026-10-12,81,no
+Dallas,US,La Quinta Inn & Suites by Wyndham Dallas - Wylie,chain,12,83,74,Super.com,10.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,94,2026-10-27,2026-10-12,76,no
+Dallas,US,Magnolia Dallas Downtown,independent,12,132,106,KAYAK.com,19.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,155,2026-10-27,2026-10-12,129,no
+Dallas,US,The Bishop Arts Hotel by Q resorts,independent,12,164,126,Super.com,23.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,189,2026-10-27,2026-10-12,206,no
+Denver,US,Courtyard by Marriott Denver Cherry Creek,chain,12,97,77,trivago DEALS,20.6,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,112,2026-10-27,2026-10-12,122,no
+Denver,US,Ember Hostel,independent,12,82,71,Ember Hostel,13.4,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,95,2026-10-27,2026-10-12,82,no
+Denver,US,"Motel 6 Denver, CO – Downtown",chain,12,67,63,Evendo,6.0,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,78,2026-10-27,2026-10-12,67,no
+Denver,US,Sonesta Denver Downtown,independent,12,104,87,trivago DEALS,16.3,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,120,2026-10-27,2026-10-12,120,no
+Detroit,US,Baymont by Wyndham Downtown Detroit,chain,12,143,127,Super.com,11.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,160,2026-10-27,2026-10-12,143,no
+Detroit,US,Comfort Inn Detroit Downtown,chain,12,161,141,Vio.com,12.4,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,175,2026-10-27,2026-10-12,168,no
+Detroit,US,Fort Pontchartrain a Wyndham Hotel,chain,12,299,215,Traveluro,28.1,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,344,2026-10-27,2026-10-12,349,no
+Detroit,US,Quality Inn Detroit Downtown,chain,12,146,130,Vio.com,11.0,UNVERIFIED_LOWER,no,yes,no,2026-11-25,2026-11-29,yes,160,2026-10-27,2026-10-12,145,no
+Honolulu,US,Hilton Hawaiian Village Waikiki Beach Resort,chain,12,309,246,KAYAK.com,20.4,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,367,2026-10-27,2026-10-12,329,yes
+Honolulu,US,Hilton Waikiki Beach Resort & Spa,chain,12,213,181,KAYAK.com,15.0,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,253,2026-10-27,2026-10-12,213,no
+Honolulu,US,Prince Waikiki,independent,12,351,226,Super.com,35.6,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,418,2026-10-27,2026-10-12,361,yes
+Honolulu,US,Sheraton Waikiki Beach Resort,chain,12,485,355,Traveluro,26.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,576,2026-10-27,2026-10-12,501,no
+Houston,US,Best Western Galleria Inn & Suites,chain,12,81,59,Super.com,27.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,95,2026-10-27,2026-10-12,81,no
+Houston,US,Hyatt Regency Houston West,chain,12,133,100,Super.com,24.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,156,2026-10-27,2026-10-12,95,no
+Houston,US,Sara's Inn on the Boulevard,independent,12,167,140,Sara's Inn on the Boulevard,16.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,196,2026-10-27,2026-10-12,162,no
+Houston,US,The Royal Sonesta Houston Galleria,independent,12,173,123,Super.com,28.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,203,2026-10-27,2026-10-12,176,no
+Las Vegas,US,Flamingo Las Vegas,independent,12,105,88,Super.com,16.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,119,2026-10-27,2026-10-12,105,no
+Las Vegas,US,Luxor Hotel & Casino,independent,12,86,67,KAYAK.com,22.1,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,97,2026-10-27,2026-10-12,70,yes
+Las Vegas,US,MGM Grand,chain,12,155,135,KAYAK.com,12.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,176,2026-10-27,2026-10-12,153,yes
+Las Vegas,US,"The STRAT Hotel, Casino & Tower",independent,12,81,63,trivago DEALS,22.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,92,2026-10-27,2026-10-12,81,yes
+Los Angeles,US,"Dream Hollywood, by Hyatt",chain,12,272,229,KAYAK.com,15.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,316,2026-10-27,2026-10-12,276,no
+Los Angeles,US,Freehand Los Angeles,independent,12,130,113,Super.com,13.1,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,151,2026-10-27,2026-10-12,182,no
+Los Angeles,US,Hotel Indigo Los Angeles Downtown by IHG,chain,12,226,191,Hotels In America,15.5,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,263,2026-10-27,2026-10-12,263,no
+Los Angeles,US,"The Wayfarer Downtown LA, Tapestry Collection by Hilton",chain,12,124,107,KAYAK.com,13.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,144,2026-10-27,2026-10-12,179,no
+Miami,US,Atrium Design District,independent,1,101,101,Agoda,0.0,PARITY,no,yes,no,2026-11-25,2026-11-29,no,109,2026-10-27,2026-10-12,91,no
+Miami,US,EAST Miami,independent,12,403,339,TravelUp,15.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,456,2026-10-27,2026-10-12,403,no
+Miami,US,EVEN Hotel Miami - Airport by IHG,independent,12,151,90,Super.com,40.4,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,170,2026-10-27,2026-10-12,156,no
+Miami,US,Novotel Miami Brickell,chain,12,352,173,Billabook.com,50.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,397,2026-10-27,2026-10-12,333,no
+Minneapolis,US,DoubleTree Suites by Hilton Minneapolis Downtown,chain,12,122,87,Traveluro,28.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,141,2026-10-27,2026-10-12,122,no
+Minneapolis,US,DoubleTree by Hilton Hotel Minneapolis - Park Place,chain,12,118,95,Super.com,19.5,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,132,2026-10-27,2026-10-12,107,no
+Minneapolis,US,Roami at Century Plaza,independent,10,138,138,Booking.com,0.0,PARITY,no,yes,no,2026-11-25,2026-11-29,no,162,2026-10-27,2026-10-12,132,no
+Minneapolis,US,The Royal Sonesta Minneapolis Downtown,independent,12,113,84,Super.com,25.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,132,2026-10-27,2026-10-12,110,no
+Nashville,US,Holiday Inn Express & Suites Nashville Southeast - Antioch by IHG,chain,12,124,85,Traveluro,31.5,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,147,2026-10-27,2026-10-12,124,no
+Nashville,US,Loews Nashville Hotel at Vanderbilt Plaza,chain,12,216,153,Hotels In America,29.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,255,2026-10-27,2026-10-12,216,no
+Nashville,US,Omni Nashville Hotel,chain,12,214,194,KAYAK.com,9.3,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,253,2026-10-27,2026-10-12,304,no
+Nashville,US,Virgin Hotels Nashville,independent,12,193,144,trivago DEALS,25.4,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,228,2026-10-27,2026-10-12,211,no
+New Orleans,US,Dauphine Orleans Hotel,independent,12,220,129,TravelUp,41.4,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,260,2026-10-27,2026-10-12,228,no
+New Orleans,US,"NOPSI Hotel, New Orleans",independent,12,300,184,KAYAK.com,38.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,353,2026-10-27,2026-10-12,279,no
+New Orleans,US,The Troubadour Hotel New Orleans,independent,12,197,129,Traveluro,34.5,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,232,2026-10-27,2026-10-12,199,no
+New Orleans,US,Virgin Hotels New Orleans,independent,12,294,216,Super.com,26.5,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,346,2026-10-27,2026-10-12,261,no
+New York,US,Courtyard by Marriott Edgewater NYC Area,chain,12,256,236,KAYAK.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,293,2026-10-27,2026-10-12,293,no
+New York,US,Courtyard by Marriott New York Queens/Fresh Meadows,chain,12,231,148,trivago DEALS,35.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,268,2026-10-27,2026-10-12,203,no
+New York,US,Dynasty Hotel and Suites New York LaGuardia Hotel,independent,12,144,124,Dynasty Hotel and Suites New York LaGuardia Hotel,13.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,169,2026-10-27,2026-10-12,141,no
+New York,US,The One Boutique Hotel,independent,12,156,130,trivago DEALS,16.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,183,2026-10-27,2026-10-12,158,no
+Orlando,US,DoubleTree by Hilton Hotel at the Entrance to Universal Orlando,chain,12,174,99,KAYAK.com,43.1,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,196,2026-10-27,2026-10-12,111,no
+Orlando,US,Hilton Orlando,chain,12,233,204,Super.com,12.4,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,262,2026-10-27,2026-10-12,251,no
+Orlando,US,Staybridge Suites Orlando at Seaworld by IHG,chain,12,160,125,Super.com,21.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,180,2026-10-27,2026-10-12,147,no
+Orlando,US,Westgate Lakes Resort & Spa,independent,12,188,126,Reservation Day,33.0,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,212,2026-10-27,2026-10-12,203,no
+Philadelphia,US,Quality Inn - Center City,chain,12,109,102,Super.com,6.4,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,126,2026-10-27,2026-10-12,109,no
+Philadelphia,US,Sosuite at French Quarters - Rittenhouse Square,independent,12,237,199,Best Hotel Deals,16.0,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,274,2026-10-27,2026-10-12,251,no
+Philadelphia,US,"The Franklin on Rittenhouse, A Boutique Hotel",independent,0,,,,,,no,no,no,2026-11-25,2026-11-29,,,2026-10-27,2026-10-12,232,no
+Philadelphia,US,The Windsor Suites,independent,12,219,165,Traveluro,24.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,255,2026-10-27,2026-10-12,233,no
+San Diego,US,Best Western Plus Island Palms Hotel & Marina,chain,12,217,189,Luxury Escapes,12.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,249,2026-10-27,2026-10-12,216,no
+San Diego,US,Handlery Hotel San Diego,independent,2,890,890,Clicktrip.com,0.0,PARITY,no,no,yes,2026-11-25,2026-11-29,no,890,2026-10-27,2026-10-12,1027,no
+San Diego,US,La Jolla Cove Hotel & Suites,independent,12,327,267,Hotels In America,18.3,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,376,2026-10-27,2026-10-12,327,no
+San Diego,US,Sheraton San Diego Resort,chain,12,212,164,Hotels In America,22.6,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,243,2026-10-27,2026-10-12,202,no
+San Francisco,US,Beacon Grand A Union Square Hotel,independent,12,217,162,Traveluro,25.3,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,255,2026-10-27,2026-10-12,270,no
+San Francisco,US,HI San Francisco Fisherman's Wharf Hostel,independent,6,64,64,Booking.com,0.0,PARITY,no,yes,no,2026-11-25,2026-11-29,no,64,2026-10-27,2026-10-12,67,no
+San Francisco,US,Hotel Union Square,independent,12,119,119,Expedia.com,0.0,PARITY,no,yes,no,2026-11-25,2026-11-29,no,140,2026-10-27,2026-10-12,114,no
+San Francisco,US,Hotel Zoe Fisherman’s Wharf,independent,12,166,123,Clicktrip.com,25.9,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,195,2026-10-27,2026-10-12,167,no
+Scottsdale,US,Hilton Vacation Club Scottsdale Links Resort,chain,12,468,277,Traveluro,40.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,533,2026-10-27,2026-10-12,324,yes
+Scottsdale,US,Hilton Vacation Club Scottsdale Villa Mirage,chain,12,182,167,trivago DEALS,8.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,207,2026-10-27,2026-10-12,157,yes
+Scottsdale,US,Talking Stick Resort Hotel,independent,12,214,144,Traveluro,32.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,244,2026-10-27,2026-10-12,214,no
+Scottsdale,US,The McCormick Scottsdale,independent,12,169,140,Super.com,17.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,192,2026-10-27,2026-10-12,154,no
+Seattle,US,Coast Seattle Downtown Hotel by APA,independent,12,103,93,Traveluro,9.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,122,2026-10-27,2026-10-12,103,no
+Seattle,US,Graduate by Hilton Seattle,chain,12,149,118,KAYAK.com,20.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,173,2026-10-27,2026-10-12,179,no
+Seattle,US,Hotel Max,independent,12,137,108,trivago DEALS,21.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,161,2026-10-27,2026-10-12,129,no
+Seattle,US,Mediterranean Inn,independent,12,141,111,Traveluro,21.3,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,166,2026-10-27,2026-10-12,160,no
+St. Louis,US,Four Seasons Hotel St. Louis,chain,12,375,320,Super.com,14.7,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,438,2026-10-27,2026-10-12,375,no
+St. Louis,US,Moonrise Hotel,independent,12,209,142,Vio.com,32.1,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,yes,249,2026-10-27,2026-10-12,223,no
+St. Louis,US,River City Casino Hotel,independent,12,147,133,Hotels In America,9.5,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,173,2026-10-27,2026-10-12,179,no
+St. Louis,US,The Truitt,independent,12,241,224,Expedia.com,7.1,UNVERIFIED_LOWER,no,yes,no,2026-11-25,2026-11-29,no,282,2026-10-27,2026-10-12,241,no
+Tampa,US,Econo Lodge Airport @ RJ Stadium,chain,12,64,54,Super.com,15.6,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,73,2026-10-27,2026-10-12,70,no
+Tampa,US,Four Points by Sheraton Suites Tampa Airport Westshore,chain,12,127,109,KAYAK.com,14.2,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,144,2026-10-27,2026-10-12,121,no
+Tampa,US,Holiday Inn Express & Suites Tampa-I-75 @ Bruce B. Downs by IHG,chain,12,157,115,Super.com,26.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,178,2026-10-27,2026-10-12,156,no
+Tampa,US,Hyatt Place Tampa/Busch Gardens,chain,12,113,92,Super.com,18.6,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,128,2026-10-27,2026-10-12,116,no
+Washington DC,US,"Courtyard by Marriott Washington, DC/U.S. Capitol",chain,12,96,82,Super.com,14.6,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,111,2026-10-27,2026-10-12,95,no
+Washington DC,US,Hyatt Place Washington DC/US Capitol,chain,12,103,96,Traveluro,6.8,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,120,2026-10-27,2026-10-12,87,no
+Washington DC,US,The Royal Sonesta Washington DC Dupont Circle,independent,12,144,115,Super.com,20.1,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,167,2026-10-27,2026-10-12,176,no
+Washington DC,US,YOTEL Washington DC,chain,12,146,106,Etrip.net,27.4,UNVERIFIED_LOWER,no,no,no,2026-11-25,2026-11-29,no,163,2026-10-27,2026-10-12,157,no

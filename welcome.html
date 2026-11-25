@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Underbook is installed</title>
+  <meta name="description" content="Underbook is installed. See it check a real hotel page now, and what it shows you." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Inter,system-ui' font-weight='800' font-size='18' fill='%2310b981'%3EU%3C/text%3E%3C/svg%3E" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="stylesheet" href="/styles.css" />
+  <!-- In the visitor's language (2026-10-10, docs/LOCALIZE_2026-10-10.md): es, de, fr, pt-BR, it from navigator.language,
+       from 2026-10-13 (docs/LOCALIZE_10_2026-10-13.md) ja, ko, nl, pl, tr, sv, id, vi, zh-CN, zh-TW, and from
+       2026-10-14 (docs/PT_PT_2026-10-14.md) pt-PT (every Portuguese browser but Brazil's), and from 2026-11-13
+       (docs/WELCOME_16_2026-11-13.md) he, ru, ar, th, uk, cs, el, hu, ro, da, fi, nb, sk, bg, hr, ms (this page only;
+       Arabic and Hebrew right to left); strings from
+       /i18n/welcome.<lang>.json; English browsers get this page as it is, nothing fetched or waited for. -->
+  <script src="/i18n.js?v=20261117h" data-page="welcome"></script>
+</head>
+<body class="font-sans bg-stone-50 text-ink antialiased">
+  <nav class="border-b border-stone-200 bg-stone-50/80 backdrop-blur">
+    <div class="max-w-3xl mx-auto px-6 h-16 flex items-center gap-2">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg tracking-tight">
+        <span class="inline-block w-7 h-7 rounded-md bg-ink text-accent grid place-items-center text-sm font-extrabold" aria-hidden="true">U</span>
+        Underbook
+      </a>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto px-6 pt-8 pb-12">
+    <p class="text-sm font-semibold text-emerald-700 uppercase tracking-wider mb-3">Installed</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-5">You're set. Underbook now checks hotel prices for you.</h1>
+    <!-- Own hotel first (X9, built 2026-10-04, amended 2026-10-05 for 0.5.40; docs/WELCOME_OWN_HOTEL_2026-10-04.md,
+         docs/EXPERIMENTS.md X9). Of 19 people who opened this page 9/26 to 10/03, about 14 left with no comparison; the
+         "reload your hotel tab" step sat below the fold, under the live result. From 0.5.40 (all stores on 0.5.42 by
+         10/05) the extension runs once, at install, in the tabs already open (Chrome and Edge: background.js
+         injectOpenTabs; Firefox always did), so a dated hotel tab already has its answer: the card says to switch to it.
+         The reload stays as the fallback (a tab without dates, a tab the browser put to sleep), and a hotel open in
+         another browser is told to open it here. This card replaces the intro paragraph, whose site list it carries, and
+         sits next to X4's example on the first screen of a 1366x657 window. No button and no new count (its one link
+         opens the help page's site list): its effect is read from onb_shown, which the extension already sends. Every
+         site named is one extension/src/content-ota.js reads (BOOKING_SITES); engine/welcome-e2e.mjs --local and
+         scripts/ext-render-test.mjs TW9 check it. -->
+    <section id="own-step" aria-labelledby="own-h" class="bg-emerald-50 border-2 border-emerald-600 rounded-2xl px-5 py-4 md:px-8 mb-4">
+      <h2 id="own-h" class="text-2xl font-bold tracking-tight mb-1">Hotel open in another tab? Underbook just checked&nbsp;it.</h2>
+      <p id="own-how" class="text-slate-700">Switch to that tab. Nothing there? Pick your dates or reload the tab (<kbd class="px-1.5 py-0.5 rounded border border-stone-300 bg-white text-sm">F5</kbd>, or <kbd class="px-1.5 py-0.5 rounded border border-stone-300 bg-white text-sm">⌘ R</kbd> on a Mac). In another browser? Open the hotel in this one.</p>
+      <p id="own-sites" class="text-sm text-slate-600 mt-2">With your dates picked, it works on Booking.com, Expedia, Hotels.com, Agoda, Trip.com, Priceline, KAYAK, Marriott, Hilton, Hyatt, IHG, other chains and many hotels' own sites. <a href="/help-getting-started#which-sites" class="underline">All sites</a></p>
+    </section>
+
+    <!-- The first step: the traveler's own trip, then the example (X16, 2026-10-06, docs/WELCOME_2026-10-06.md,
+         docs/EXPERIMENTS.md X16). Week 9/29 to 10/05: 8 of 15 installs reached a first hotel page (5 by themselves, 3
+         through the example); 3 of 17 tried the example; tip_list was 0 (no new install landed on a booking site's dated
+         results list) and the check-a-hotel form below was used 0 times in 14 days. The page offered a hotel tab already
+         open (X9) and a stranger's hotel (the Bellagio), and nothing for a traveler with a trip in mind but no tab open.
+         This box asks for that trip: a city or a hotel and the dates, then opens that search on Booking.com (or Expedia)
+         in a new tab, with the dates, for two adults; a hotel opened from the list is a dated hotel page, where the
+         extension runs (and a new install on the dated list gets its one-time "open a hotel from this list" tip). It is
+         the same search address the web checker's no-price result has offered since X5 (2026-10-02). What is typed goes
+         to the booking site only; this page sends one count (welcome_trip, at most once per page load) and the try
+         (welcome_try, once per page view). X4's example (2026-10-02: first, static, never moved by the live result)
+         stays in the same card, on the first screen, with its ids, links and counts (welcome_live_click is still a
+         click on an example link in this card, #live-step). -->
+    <section id="live-step" aria-labelledby="trip-h" class="bg-white border-2 border-ink rounded-2xl p-4 sm:p-5 mb-6">
+      <h2 id="trip-h" class="text-2xl font-bold tracking-tight mb-1">Where are you staying next?</h2>
+      <p id="trip-what" class="text-slate-700 mb-2">Search it here, then open a hotel from the results and Underbook checks its price.</p>
+      <form id="trip" class="grid grid-cols-2 md:grid-cols-[minmax(0,1fr)_9.5rem_9.5rem] gap-x-2 sm:gap-x-3" novalidate>
+        <label class="col-span-2 md:col-span-1 mb-2 md:mb-0 text-sm text-slate-600">City or hotel<input id="trip-place" type="text" required maxlength="120" autocomplete="off" enterkeyhint="search" placeholder="e.g. Lisbon, or a hotel's name" aria-describedby="trip-msg" class="mt-1 w-full px-3.5 py-2.5 rounded-xl border border-stone-500 text-base focus:outline-none focus:border-ink" /></label>
+        <label class="text-sm text-slate-600">Check-in<input id="trip-in" type="date" required aria-describedby="trip-msg" class="mt-1 w-full px-2 sm:px-3 py-2.5 rounded-xl border border-stone-500 text-base" /></label>
+        <label class="text-sm text-slate-600">Check-out<input id="trip-out" type="date" required aria-describedby="trip-msg" class="mt-1 w-full px-2 sm:px-3 py-2.5 rounded-xl border border-stone-500 text-base" /></label>
+        <div class="col-span-2 md:col-span-3 mt-2 flex flex-col sm:flex-row sm:items-center gap-x-3 gap-y-2">
+          <button id="trip-booking" type="submit" data-site="booking" class="shrink-0 whitespace-nowrap bg-ink text-white font-semibold text-lg px-6 py-2.5 rounded-lg hover:bg-stone-800 transition">Search Booking.com</button>
+          <button id="trip-expedia" type="submit" data-site="expedia" class="shrink-0 whitespace-nowrap bg-white text-ink font-semibold px-5 py-2.5 rounded-lg border border-stone-300 hover:border-ink transition">Or Expedia</button>
+          <p id="trip-note" class="text-sm text-slate-500">Opens in a new tab, for two adults (change it there). Nothing is booked.</p>
+        </div>
+        <p id="trip-msg" class="col-span-2 md:col-span-3 mt-2 empty:mt-0 text-sm font-semibold text-red-700" role="status" aria-live="polite"></p>
+      </form>
+      <div id="example" class="mt-3 pt-3 border-t border-stone-200">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-x-3 gap-y-2">
+          <p class="font-semibold">No trip yet?</p>
+          <a id="try-booking" data-site="booking" href="https://www.booking.com/hotel/us/bellagio.html" target="_blank" rel="noopener" class="ub-try inline-block text-center bg-white text-ink font-semibold px-5 py-2.5 rounded-lg border-2 border-ink hover:bg-stone-100 transition">Open a real hotel on Booking.com</a>
+          <a id="try-expedia" data-site="expedia" href="https://www.expedia.com/Las-Vegas-Hotels-Bellagio.h140596.Hotel-Information" target="_blank" rel="noopener" class="ub-try inline-block text-center bg-white text-ink font-semibold px-5 py-2.5 rounded-lg border border-stone-300 hover:border-ink transition">Or on Expedia</a>
+        </div>
+        <p id="try-note" class="text-sm text-slate-500 mt-2">The Bellagio in Las Vegas, four weeks from today, two nights, two adults. It opens in a new tab and nothing is booked.</p>
+      </div>
+      <p id="toolbar-tip" class="text-sm text-slate-700 mt-2 pt-2 border-t border-stone-200">On other hotel pages, click the Underbook icon in your toolbar (under the puzzle piece until pinned).</p>
+    </section>
+
+    <div id="demo" class="hidden rounded-2xl border-2 border-emerald-300 bg-emerald-50 p-5 mb-10" aria-live="polite"></div>
+
+    <section class="bg-white rounded-2xl border border-stone-200 p-6 md:p-8 mb-10">
+      <h2 class="text-2xl font-bold tracking-tight mb-2">Or type a hotel you are considering</h2>
+      <p class="text-slate-700 mb-4">Type the hotel and your dates. You will see every booking site's price, whether a cheaper one names the same room, and where free cancellation costs no more.</p>
+      <form id="wf" class="space-y-3">
+        <div>
+          <label for="wf-hotel" class="block text-sm text-slate-600 mb-1">Hotel</label>
+          <input id="wf-hotel" type="text" required maxlength="120" autocomplete="off" placeholder="Hotel name, e.g. citizenM Tower of London" aria-describedby="wf-msg" class="w-full px-3.5 py-3 rounded-xl border border-stone-500 text-base focus:outline-none focus:border-ink" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <label class="text-sm text-slate-600">Check-in<input id="wf-in" type="date" required class="mt-1 w-full px-3 py-2.5 rounded-xl border border-stone-500 text-base" /></label>
+          <label class="text-sm text-slate-600">Check-out<input id="wf-out" type="date" required class="mt-1 w-full px-3 py-2.5 rounded-xl border border-stone-500 text-base" /></label>
+        </div>
+        <button type="submit" class="w-full sm:w-auto bg-ink text-white font-semibold px-6 py-3 rounded-lg hover:bg-stone-800 transition">Check every booking site</button>
+        <p id="wf-msg" class="text-sm text-slate-500" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold tracking-tight mb-4">What it tells you</h2>
+      <ul class="space-y-3 text-slate-700">
+        <li><strong>The going rate</strong> for your dates, the price most booking sites agree on, with taxes and fees included when the sites publish them.</li>
+        <li><strong>The lowest listed price</strong> and the site that has it, with a link straight to it.</li>
+        <li><strong>Whether it is the same room.</strong> A lower price often comes with a different room or different cancellation terms. Underbook says "same room name" only when the room names match, and "check the room" when they do not. <a href="/hotel-price-dispersion-study" class="underline">Why that matters, measured on 7,044 hotel prices.</a></li>
+        <li><strong>When no site we checked is 5% or more below the site you are on</strong>, it says so, so you can book without opening ten tabs.</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold tracking-tight mb-4">Good to know</h2>
+      <ul id="good-to-know" class="space-y-3 text-slate-700 list-disc pl-6">
+        <li>It stays quiet on pages that are not hotel pages, with two small exceptions: on a booking site's home page or hotel search results it may show one short tip (at most one a day and once every 14 days per site, never again after "Don't show tips"), and right after you book on Booking.com, Expedia, Hotels.com or Agoda it offers, once, to watch that booking.</li>
+        <li>If it does not appear on a hotel you are looking at, click the Underbook icon in your toolbar to check that page. Pin it first: click the puzzle-piece icon next to the address bar, then the pin next to Underbook.</li>
+        <li>It never books anything and never sees payment details. <a href="/privacy" class="underline">Privacy policy.</a></li>
+        <li>Questions: the <a href="/help" class="underline">help center</a> has short answers. Something looks wrong: <a href="mailto:hi@underbook.co" class="underline">hi@underbook.co</a>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="px-6 py-10 border-t border-stone-200">
+    <div class="max-w-3xl mx-auto text-sm text-slate-500 flex gap-4 flex-wrap">
+      <a href="/" class="hover:text-ink">Underbook</a>
+      <a href="/hotel-price-dispersion-study" class="hover:text-ink">Our hotel price study</a>
+      <a href="/help" class="hover:text-ink">Help</a>
+      <a href="/privacy" class="hover:text-ink">Privacy</a>
+    </div>
+  </footer>
+
+  <script>
+  // A translated page runs this once its strings are in (UBI18N.ready, i18n.js); in English it runs at once, as before.
+  (window.UBI18N ? UBI18N.ready : function (f) { f(); })(function () {
+    // L10N: the page shows in one of the 16 languages of i18n.js (docs/LOCALIZE_2026-10-10.md, LOCALIZE_10_2026-10-13.md,
+    // PT_PT_2026-10-14.md). T()
+    // writes a sentence with values in the page's language: the English template is the key (the English itself when no
+    // translation matches it), so the English page writes exactly what it wrote before.
+    var L10N = window.UBI18N && UBI18N.lang !== 'en' ? UBI18N : null;
+    var T = window.UBI18N ? UBI18N.t : function (s, v) { return String(s).replace(/\{([A-Za-z_]+)\}/g, function (m, k) { return v && k in v ? String(v[k]) : m; }); };
+    // Example stay: check in 28 days from today, two nights, two adults (local date). 28 (was 21 until X4, 2026-10-02)
+    // keeps check-in 3 to 5 weeks ahead in every time zone, including the hotel's own (Las Vegas).
+    function ymd(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+    var ci = new Date(); ci.setDate(ci.getDate() + 28);
+    var co = new Date(ci); co.setDate(co.getDate() + 2);
+    var inS = ymd(ci), outS = ymd(co);
+    var b = document.getElementById('try-booking'), e = document.getElementById('try-expedia');
+    // ubtry=1 (2026-09-30): tells the extension (0.5.27+) this traveler asked to try it, so it skips its first-run card.
+    // Booking.com and Expedia keep the parameter through their redirects in a US English browser (checked in a real Chrome).
+    // #ubtry=1 (2026-10-26, docs/INSTRUMENT_FIXES_2026-10-26.md): in a browser in any other language, Booking.com answers
+    // with a 302 to the hotel's address in that language (bellagio.fr.html, .de.html, .en-gb.html...) that keeps the dates
+    // and drops ubtry=1, so since 10/07 the example's first page counted as the install's own (onb_skip_try 0 on 20 days).
+    // The browser keeps the fragment through that redirect and the bot check's second load; 0.5.64+ reads either.
+    // x_pwa=1 (release QA 0.5.44, docs/LIVE_QA_SWEEP_2026-10-05.md finding 2): Expedia's own results links carry it; without
+    // it, 3 of 4 loads of this address showed Expedia's default dates (Oct 19 to 20) instead of the stay in the address.
+    b.href = b.href + '?checkin=' + inS + '&checkout=' + outS + '&group_adults=2&no_rooms=1&ubtry=1#ubtry=1';
+    e.href = e.href + '?chkin=' + inS + '&chkout=' + outS + '&rm1=a2&x_pwa=1&ubtry=1';
+    try {
+      // English month names in this English page (2026-10-02): a German browser wrote "6. Nov." here. A translated page
+      // writes the dates its own way (L10N.date, L10N.range).
+      var fmt = function (d) { return L10N ? L10N.date(d, { month: 'short', day: 'numeric' }) : d.toLocaleDateString(/^en(-|$)/i.test(navigator.language || 'en-US') ? (navigator.language || 'en-US') : 'en-GB', { month: 'short', day: 'numeric' }); };
+      document.getElementById('try-note').textContent = T('The Bellagio in Las Vegas, {dates}, two adults. It opens in a new tab and nothing is booked.',
+        { dates: L10N ? L10N.range(fmt(ci), fmt(co)) : fmt(ci) + ' to ' + fmt(co) });
+    } catch (x) { /* keep the default note */ }
+
+    // Anonymous counts for this page only: no id, no cookie, per-day totals (see /privacy).
+    // Counted only when the extension opened this page on a real install (src=install);
+    // an unpacked developer or test build opens it with src=dev and is counted apart.
+    var src = new URLSearchParams(location.search).get('src');
+    function ev(name) {
+      if (src !== 'install' && src !== 'dev') return;
+      var body = JSON.stringify(src === 'dev' ? { ev: name, dev: true } : { ev: name });
+      try { if (navigator.sendBeacon && navigator.sendBeacon('https://underbook-backend.underbook.workers.dev/event', body)) return; } catch (x) {}
+      try { fetch('https://underbook-backend.underbook.workers.dev/event', { method: 'POST', body: body, keepalive: true }); } catch (x) {}
+    }
+    ev('welcome_view');
+    // A try is counted once per page view (welcome_try) and on every example click (welcome_try_ex).
+    var tried = false;
+    function onTryEx() { if (!tried) { tried = true; ev('welcome_try'); } ev('welcome_try_ex'); }
+    // Live example (2026-09-29): 2 of 18 new installs tried the example in the week to 9/29, so the page now
+    // shows one real check of the example stay by itself. Real installs only (src=install; a dev build sends
+    // dev=1). The worker counts it as welcome_demo, apart from web-checker checks. Same wording as the checker.
+    (function demo() {
+      if (src !== 'install' && src !== 'dev') return;
+      var box = document.getElementById('demo');
+      function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+      // Figures as the 0.5.42 rule writes them (docs/RELEASE_QA_0.5.42.md): en-US, the answer's own currency, whole units,
+      // one mark per figure and never a code after it here: the line above the result names the currency once ("· USD").
+      // A translated page writes the figures the way its language does ("447 US$", "US$ 447"), still one mark per figure.
+      var CUR = 'USD';
+      function usd(n) { try { return new Intl.NumberFormat(L10N ? L10N.locale : 'en-US', { style: 'currency', currency: CUR, maximumFractionDigits: 0 }).format(n); } catch (x) { return Math.round(n) + ' ' + CUR; } }
+      box.textContent = 'Checking the Bellagio on every booking site right now…';
+      box.classList.remove('hidden');
+      var p = new URLSearchParams({ hotel: 'Bellagio Las Vegas', checkIn: inS, checkOut: outS, adults: '2', currency: 'USD', gl: 'us', demo: 'welcome' });
+      if (src === 'dev') p.set('dev', '1');
+      fetch('https://underbook-backend.underbook.workers.dev/compare?' + p.toString()).then(function (r) { return r.ok ? r.json() : null; }).then(function (a) {
+        if (!a || a.error || a.none || a.consensus == null) { box.classList.add('hidden'); return; }
+        if (/^[A-Z]{3}$/.test(String(a.currency || ''))) CUR = a.currency;
+        var c = a.cheapest || {};
+        // The going rate and the lowest listing on one basis: all in when both are, else both before taxes.
+        var both = a.consensusAllIn != null && c.allIn != null;
+        var base = both ? a.consensusAllIn : a.consensus;
+        var cheap = both ? c.allIn : c.nightly;
+        var save = base != null && cheap != null && cheap < base ? base - cheap : null;
+        var allIn = a.feesUnverified ? T(' (listed rate; resort fees may be missing)') : T(', all in');
+        // No space after a Japanese or Chinese full stop (2026-10-13); a space in every other language, as before.
+        var unconfirmed = (L10N && /^(ja|zh)/.test(L10N.lang) ? '' : ' ') + T('It is not confirmed as the same room, so Underbook tells you to check the room first.');
+        // The card's basis (release QA 0.5.44, docs/LIVE_QA_SWEEP_2026-10-05.md finding 1). This box's button opens the
+        // Bellagio on Booking.com, and there the card measures a lower price against Booking.com's own lowest listing
+        // (0.5.16, `hostListing` in extension/src/content-ota.js), not against the going rate: on 10/05 the box said "about
+        // $138 a night less" (the going rate, $447) and the card it opened "~$159 USD/night lower" (Booking.com's $468),
+        // under this box's "This is what Underbook shows on the hotel page itself". When the answer lists Booking.com, the
+        // box now says what that card says, from the same listings by the card's rules: Booking.com already the lowest
+        // (0.5.16); the proven room unless Booking.com lists at or below it (0.5.29); on a best-rate answer, Booking.com 5%
+        // or more above another site (0.5.15, hostAbove). Otherwise the box keeps the going-rate wording, names that basis,
+        // and makes no claim about the hotel page.
+        var BK = 'booking.com';
+        var isBk = function (s) { // a whole word of the seller's name, as the card's isPageSite reads it
+          var t = String(s || '').toLowerCase();
+          for (var i = t.indexOf(BK); i >= 0; i = t.indexOf(BK, i + 1)) {
+            if (!/[a-z0-9]/.test(i === 0 ? '' : t[i - 1]) && !/[a-z0-9]/.test(t[i + BK.length] || '')) return true;
+          }
+          return false;
+        };
+        var all = (a.sources || []).concat(a.more || []).filter(function (s) { return s && s.source; });
+        var low = function (xs, f) { return xs.reduce(function (x, y) { return f(y) < f(x) ? y : x; }); };
+        var bks = all.filter(function (s) { return isBk(s.source) && s.allIn != null; });
+        var host = bks.length ? low(bks, function (s) { return s.allIn; }) : null;
+        var lessThan = function (amt, who, at) { return T("about {amount} a night less than {site}'s {price}", { amount: usd(amt), site: esc(who), price: usd(at) }); };
+        var head = null, sameBasis = false;
+        var lower = a.verdict === 'REAL_LOWER_MATCHED' || a.verdict === 'UNVERIFIED_LOWER';
+        if (host && lower) {
+          var proof = a.verdict === 'REAL_LOWER_MATCHED' && a.roomMatch && a.roomMatch.proof && a.roomMatch.proof.source ? a.roomMatch.proof : null;
+          var notHere = !!(proof && !(proof.source === c.source && proof.nightly === c.nightly) && proof.allIn != null && host.allIn <= proof.allIn);
+          var matched = a.verdict === 'REAL_LOWER_MATCHED' && !notHere;
+          var deal = matched && proof ? proof : c;
+          // "Same room name" only when Booking.com lists a room with that name (2026-10-06, docs/ROOM_HEADLINE_FIX_2026-10-06.md;
+          // the card's roomScope): the proof's sites (sameOn), or, in an answer without them, its going-rate site.
+          var sameOn = proof ? (proof.sameOn && proof.sameOn.length ? proof.sameOn : [{ source: proof.goingSource }]) : [];
+          var named = matched && (!proof || sameOn.some(function (x) { return x && isBk(x.source); }));
+          if (c.allIn != null && host.allIn <= c.allIn) {
+            head = T('{site} already lists the lowest price we found: {price} a night{allIn}.', { site: esc(host.source), price: usd(host.allIn), allIn: allIn });
+            sameBasis = true;
+          } else if (deal.allIn != null && host.allIn > deal.allIn) {
+            head = named
+              ? T('Same room name, cheaper on {site}: {less}.', { site: esc(deal.source), less: lessThan(host.allIn - deal.allIn, host.source, host.allIn) })
+              : T('A lower price is listed on {site}, {less}.', { site: esc(deal.source), less: lessThan(host.allIn - deal.allIn, host.source, host.allIn) }) + unconfirmed;
+            sameBasis = true;
+          }
+        } else if (host) {
+          var price = function (s) { return s.allIn != null ? s.allIn : s.nightly; };
+          var m = low(all.filter(function (s) { return isBk(s.source) && price(s) != null; }), price);
+          var others = all.filter(function (s) { return !isBk(s.source) && price(s) != null; });
+          var any = others.length ? low(others, price) : null;
+          var roomed = others.filter(function (s) { return s.rooms && s.rooms.length; });
+          var named = roomed.length ? low(roomed, price) : null;
+          var o = named && price(named) <= 1.02 * price(any) ? named : any;
+          if (o && price(m) >= 1.05 * price(o)) {
+            head = T('A lower price is listed on {site}, {less}.', { site: esc(o.source), less: lessThan(price(m) - price(o), m.source, price(m)) }) + unconfirmed;
+            sameBasis = true;
+          } else if (!any || price(m) < 1.05 * price(any)) {
+            head = T("No site we checked lists the Bellagio 5% or more below {site}'s {price} a night right now.", { site: esc(m.source), price: usd(price(m)) });
+            sameBasis = true;
+          }
+        }
+        if (!head) {
+          // Against the going rate, the room name matched one site's room at that rate: the box names it (2026-10-06).
+          var rmw = a.roomMatch || {}, sameAs = (rmw.proof && rmw.proof.goingSource) || rmw.goingSource || '';
+          var hv = { same: esc(sameAs), site: esc(c.source), amount: save ? usd(save) : '' };
+          if (a.verdict === 'REAL_LOWER_MATCHED') {
+            head = sameAs
+              ? (save ? T('Same room name as on {same}, cheaper on {site}: about {amount} a night less than the going rate.', hv) : T('Same room name as on {same}, cheaper on {site}.', hv))
+              : (save ? T('Same room name, cheaper on {site}: about {amount} a night less than the going rate.', hv) : T('Same room name, cheaper on {site}.', hv));
+          } else if (a.verdict === 'UNVERIFIED_LOWER') {
+            head = (save ? T('A lower price is listed on {site}, about {amount} a night less than the going rate.', hv) : T('A lower price is listed on {site}.', hv)) + unconfirmed;
+          } else head = T('No site we checked is 5% or more below the going rate right now.');
+        }
+        var n = a.sourceCount || (a.sources || []).length;
+        var when = '';
+        var dl = /^en(-|$)/i.test(navigator.language || 'en-US') ? (navigator.language || 'en-US') : 'en-GB';
+        try {
+          when = L10N ? L10N.range(L10N.date(ci, { month: 'short', day: 'numeric' }), L10N.date(co, { month: 'short', day: 'numeric' }))
+            : ci.toLocaleDateString(dl, { month: 'short', day: 'numeric' }) + ' to ' + co.toLocaleDateString(dl, { month: 'short', day: 'numeric' });
+        } catch (x) { when = inS + ' to ' + outS; }
+        var checked = n === 1 ? T('Checked {n} booking site.', { n: n }) : T('Checked {n} booking sites.', { n: n });
+        box.innerHTML = '<p class="text-xs font-semibold uppercase tracking-wider text-emerald-700 mb-1">' + T('Live result for the example, just now') + '</p>' +
+          '<p class="text-xs text-slate-500 mb-2">' + T('Bellagio, Las Vegas · {when} · 2 adults · {cur}', { when: esc(when), cur: esc(CUR) }) + '</p>' +
+          '<p id="demo-head" class="font-bold leading-snug">' + head + '</p>' +
+          (sameBasis
+            ? '<p class="text-sm text-slate-600 mt-2">' + (a.feesUnverified ? T('Prices per night, as listed (resort fees may be missing). {checked}', { checked: checked }) : T('Prices per night, all in: taxes and fees as each site reports them; a resort or destination fee may be extra. {checked}', { checked: checked })) + '</p>' +
+              '<p id="demo-same" class="text-sm text-slate-600 mt-2">' + T('This is what Underbook shows on the hotel page itself.') + '</p>'
+            : (base != null ? '<p class="text-sm text-slate-600 mt-2">' + T('Going rate: <strong>{price}</strong> a night{allIn}. {checked}', { price: usd(base), allIn: both ? allIn : T(' before taxes'), checked: checked }) + '</p>' : '')) +
+          // The one-click example inside the result (2026-09-30, docs/ACTIVATION_2026-09-30.md): with this box on the page,
+          // the example buttons below sat under the fold on common laptop windows (top 767px; 1366x657, 1440x789, 1536x730).
+          // Same link as #try-booking (dates, ubtry=1), a new tab only when clicked, counted as the same example try.
+          '<a id="try-box" data-site="booking" href="' + esc(b.href) + '" target="_blank" rel="noopener" class="ub-try inline-block text-center bg-ink text-white font-semibold px-6 py-3 rounded-lg hover:bg-stone-800 transition mt-4">' + T('See it on the hotel page') + '</a>' +
+          '<p class="text-xs text-slate-500 mt-2">' + T('Opens the Bellagio on Booking.com in a new tab, with these dates. Nothing is booked.') + '</p>';
+        var tb = document.getElementById('try-box');
+        if (tb) tb.addEventListener('click', onTryEx);
+      }).catch(function () { box.classList.add('hidden'); });
+    })();
+    // The "check a hotel now" form (2026-09-24): opens the web checker with the stay, which
+    // runs at once. Counted as welcome_try, like the example links.
+    var wIn = document.getElementById('wf-in'), wOut = document.getElementById('wf-out');
+    wIn.value = inS; wOut.value = outS; wIn.min = ymd(new Date()); wOut.min = ymd(new Date());
+    document.getElementById('wf').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var h = document.getElementById('wf-hotel').value.trim();
+      if (!h) return;
+      if (wOut.value <= wIn.value) { document.getElementById('wf-msg').textContent = 'Check-out must be after check-in.'; return; }
+      if (!tried) { tried = true; ev('welcome_try'); }
+      ev('welcome_try_form');
+      location.href = '/hotel-price-checker?' + new URLSearchParams({ hotel: h, in: wIn.value, out: wOut.value, adults: '2', src: 'welcome' }).toString();
+    });
+    // "Where are you staying next?" (X16, 2026-10-06, docs/WELCOME_2026-10-06.md): the traveler's own trip, searched on
+    // Booking.com (or Expedia) in a new tab, with the dates, for two adults. The addresses are the web checker's no-price
+    // searches (X5, hotel-price-checker.html noneShow): Booking.com searchresults (ss, checkin, checkout, group_adults,
+    // no_rooms, group_children) and Expedia Hotel-Search (destination, startDate, endDate, adults, rooms). No ubtry=1: this
+    // is the traveler's own stay, so its first hotel page counts as onb_shown and is kept in the device's list of checked
+    // stays like any other. Opened directly, not through /go: what is typed goes to the booking site only. Counted (an
+    // install's page only, see ev): welcome_try once per page view, as the example and the form, and welcome_trip once per
+    // page load. A missing place or date, a past check-in or a check-out not after the check-in is answered here, in words,
+    // and nothing opens or is counted.
+    // A translated page (2026-10-10, docs/LOCALIZE_2026-10-10.md) adds Booking.com's own language parameter, read live on
+    // 10/10: lang=es, de, fr, pt-br and it each open the dated list in that language with the place, dates, 2 adults and
+    // 1 room kept. Expedia's country sites (expedia.es, .de) and expedia.com answer a headless browser with "Bot or Not?"
+    // (HTTP 429), so their search addresses could not be read: Expedia stays on expedia.com, unchanged. The ten languages of
+    // 2026-10-13, read live the same way that day (22:17Z, Lisboa, 11/20 to 11/22): lang=ja, ko, nl, pl, tr, sv, id, vi,
+    // zh-cn and zh-tw each open the dated list in that language (its <html lang> and heading) with the dates, 2 adults and
+    // 1 room kept. Portuguese (Portugal), 2026-10-14 (docs/PT_PT_2026-10-14.md): lang=pt-pt, read live the same way.
+    // 2026-11-13 (docs/WELCOME_16_2026-11-13.md): the 16 welcome-only languages; Norwegian's page is "nb", Booking.com's
+    // code "no".
+    var BK_LANG = { es: 'es', de: 'de', fr: 'fr', 'pt-BR': 'pt-br', 'pt-PT': 'pt-pt', it: 'it', ja: 'ja', ko: 'ko', nl: 'nl', pl: 'pl', tr: 'tr', sv: 'sv', id: 'id', vi: 'vi', 'zh-CN': 'zh-cn', 'zh-TW': 'zh-tw',
+      he: 'he', ru: 'ru', ar: 'ar', th: 'th', uk: 'uk', cs: 'cs', el: 'el', hu: 'hu', ro: 'ro', da: 'da', fi: 'fi', nb: 'no', sk: 'sk', bg: 'bg', hr: 'hr', ms: 'ms' };
+    var ISO = /^\d{4}-\d\d-\d\d$/;
+    var tf = document.getElementById('trip'), tPlace = document.getElementById('trip-place');
+    var tIn = document.getElementById('trip-in'), tOut = document.getElementById('trip-out'), tMsg = document.getElementById('trip-msg');
+    var dayAfter = function (s) { var d = new Date(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10)); d.setDate(d.getDate() + 1); return ymd(d); };
+    tIn.min = ymd(new Date()); tOut.min = dayAfter(tIn.min);
+    // A check-in picked first: the check-out follows it (one night, as the booking sites do), unless it is already later.
+    tIn.addEventListener('change', function () {
+      if (!ISO.test(tIn.value)) return;
+      tOut.min = dayAfter(tIn.value);
+      if (!ISO.test(tOut.value) || tOut.value <= tIn.value) tOut.value = dayAfter(tIn.value);
+    });
+    // Which button sent the form: the browser's submitter where it has one, else the last button pressed, else Booking.com.
+    var tripSite = 'booking', tripSent = false;
+    Array.prototype.forEach.call(tf.querySelectorAll('button[data-site]'), function (btn) {
+      btn.addEventListener('click', function () { tripSite = btn.getAttribute('data-site'); });
+    });
+    tf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var site = (e.submitter && e.submitter.getAttribute('data-site')) || tripSite;
+      tripSite = 'booking';
+      var place = tPlace.value.replace(/\s+/g, ' ').trim(), cin = tIn.value, cout = tOut.value, today = ymd(new Date());
+      var msg = !place ? 'Type a city or a hotel.'
+        : !ISO.test(cin) || !ISO.test(cout) ? 'Pick your check-in and check-out dates.'
+          : cin < today ? 'Pick a check-in date from today on.'
+            : cout <= cin ? 'Pick a check-out date after the check-in date.' : '';
+      tMsg.textContent = msg;
+      if (msg) { (!place ? tPlace : !ISO.test(cin) || cin < today ? tIn : tOut).focus(); return; }
+      var qs = function (o) { return Object.keys(o).map(function (k) { return k + '=' + encodeURIComponent(o[k]); }).join('&'); };
+      var url = site === 'expedia'
+        ? 'https://www.expedia.com/Hotel-Search?' + qs({ destination: place, startDate: cin, endDate: cout, adults: 2, rooms: 1 })
+        : 'https://www.booking.com/searchresults.html?' + qs({ ss: place, checkin: cin, checkout: cout, group_adults: 2, no_rooms: 1, group_children: 0 }) +
+          (L10N && BK_LANG[L10N.lang] ? '&lang=' + BK_LANG[L10N.lang] : '');
+      if (!tried) { tried = true; ev('welcome_try'); }
+      if (!tripSent) { tripSent = true; ev('welcome_trip'); }
+      // A link clicked inside the press opens the new tab like the example's links (no opener), and pop-up blockers allow it.
+      var a = document.createElement('a');
+      a.href = url; a.target = '_blank'; a.rel = 'noopener';
+      document.body.appendChild(a); a.click(); a.remove();
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('.ub-try'), function (a) {
+      a.addEventListener('click', onTryEx);
+    });
+    // welcome_live_click (X4, 2026-10-02): a click on a hotel link in the top step (#live-step), once per page load.
+    // The same click still counts welcome_try (once per page view) and welcome_try_ex (every example click), so those
+    // series stay comparable with the weeks before; this one says whether the top step is the way in.
+    var liveClicked = false;
+    Array.prototype.forEach.call(document.querySelectorAll('#live-step .ub-try'), function (a) {
+      a.addEventListener('click', function () { if (!liveClicked) { liveClicked = true; ev('welcome_live_click'); } });
+    });
+  });
+  </script>
+</body>
+</html>

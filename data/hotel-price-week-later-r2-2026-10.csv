@@ -1,0 +1,428 @@
+city,hotel,check_in,check_out,going_rate_usd_sep25,going_rate_usd_oct2,change_pct,cheapest_site_sep25,cheapest_site_oct2,cheaper_5pct_sep25,cheaper_5pct_oct2
+Amsterdam,Courtyard by Marriott Amsterdam,2026-10-30,2026-11-01,115,113,-1.7,Hotels.com,Expedia.ca,no,no
+Amsterdam,Crowne Plaza Amsterdam - South by IHG,2026-10-30,2026-11-01,127,127,0.0,Vio.com,Vio.com,yes,yes
+Amsterdam,Four Elements Hotel Amsterdam,2026-10-30,2026-11-01,130,131,0.8,Priceline,Priceline,yes,yes
+Amsterdam,Hotel Estherea,2026-10-30,2026-11-01,333,446,33.9,Tripadvisor.com,Tripadvisor.com,yes,yes
+Amsterdam,Hotel NH Collection Amsterdam Barbizon Palace,2026-10-30,2026-11-01,305,505,65.6,Vio.com,Vio.com,yes,yes
+Amsterdam,Hotel NH Collection Amsterdam Flower Market,2026-10-30,2026-11-01,407,401,-1.5,Reserving,Billabook.com,yes,yes
+Amsterdam,Hotel Novotel Amsterdam City,2026-10-30,2026-11-01,120,119,-0.8,Vio.com,dealbase.com,yes,yes
+Amsterdam,Hotel V Fizeaustraat,2026-10-30,2026-11-01,162,157,-3.1,Vio.com,Vio.com,yes,yes
+Amsterdam,Inntel Hotels Amsterdam Zaandam,2026-10-30,2026-11-01,156,160,2.6,Priceline,Priceline,yes,yes
+Amsterdam,Kimpton De Witt Hotel,2026-10-30,2026-11-01,250,282,12.8,goseek.com,Vio.com,no,yes
+Amsterdam,Mercure Amsterdam City Hotel,2026-10-30,2026-11-01,117,154,31.6,Vio.com,Billabook.com,yes,yes
+Amsterdam,Met Hotel Amsterdam,2026-10-30,2026-11-01,131,185,41.2,Agoda,KAYAK.com.br,no,yes
+Amsterdam,Park Centraal Amsterdam,2026-10-30,2026-11-01,235,310,31.9,dealbase.com,Agoda,yes,yes
+Amsterdam,Ramada by Wyndham Amsterdam Airport Schiphol,2026-10-30,2026-11-01,98,92,-6.1,Vio.com,Kiwi.com,yes,yes
+Amsterdam,Volkshotel,2026-10-30,2026-11-01,102,193,89.2,Hotels.com,Vio.com,no,no
+Amsterdam,XO Hotels Couture,2026-10-30,2026-11-01,120,172,43.3,Super.com,Super.com,yes,yes
+Amsterdam,ibis Amsterdam City West,2026-10-30,2026-11-01,117,149,27.4,Super.com,Billabook.com,yes,yes
+Amsterdam,ibis budget Amsterdam City South,2026-10-30,2026-11-01,106,80,-24.5,Super.com,Expedia.ca,yes,no
+Austin,Cambria Hotel Austin Uptown near the Domain,2026-10-30,2026-11-01,129,144,11.6,Vio.com,Vio.com,no,yes
+Austin,DoubleTree by Hilton Hotel Austin,2026-10-30,2026-11-01,159,173,8.8,Super.com,Kiwi.com,yes,yes
+Austin,DoubleTree by Hilton Hotel Austin Northwest Arboretum,2026-10-30,2026-11-01,102,123,20.6,Super.com,trivago DEALS,yes,yes
+Austin,Fairfield by Marriott Inn & Suites Austin Northwest/The Domain Area,2026-10-30,2026-11-01,101,105,4.0,Super.com,KAYAK.com,yes,yes
+Austin,Fairmont Austin,2026-10-30,2026-11-01,378,317,-16.1,Traveluro,Closest Hotel,yes,yes
+Austin,Hampton Inn Austin NW near The Domain,2026-10-30,2026-11-01,137,127,-7.3,Super.com,KAYAK.com,yes,yes
+Austin,Hilton Austin,2026-10-30,2026-11-01,365,365,0.0,Traveluro,Traveluro,yes,yes
+Austin,Hilton Garden Inn Cedar Park Austin,2026-10-30,2026-11-01,151,122,-19.2,Decolar,Kiwi.com,no,no
+Austin,Hotel Van Zandt,2026-10-30,2026-11-01,295,388,31.5,Super.com,Agoda,no,yes
+Austin,Hyatt Place Austin/Round Rock,2026-10-30,2026-11-01,136,139,2.2,Super.com,Traveluro,yes,yes
+Austin,"Lone Star Court, Valencia Hotel Collection",2026-10-30,2026-11-01,238,233,-2.1,Vio.com,Vio.com,yes,yes
+Austin,Omni Barton Creek Resort & Spa,2026-10-30,2026-11-01,344,367,6.7,Super.com,Stayforlong.com,yes,no
+Austin,Sonesta Simply Suites Austin South,2026-10-30,2026-11-01,93,111,19.4,Super.com,trivago DEALS,yes,yes
+Austin,SpringHill Suites by Marriott Austin Parmer/Tech Ridge,2026-10-30,2026-11-01,109,134,22.9,Priceline,Booking.com,yes,no
+Austin,The Code,2026-10-30,2026-11-01,211,219,3.8,Agoda,Tripadvisor.com,no,yes
+Austin,The LINE Austin,2026-10-30,2026-11-01,393,244,-37.9,Agoda,Agoda,yes,yes
+Austin,The Loren Hotel Austin,2026-10-30,2026-11-01,570,583,2.3,Vio.com,Kiwi.com,yes,no
+Austin,WoodSpring Suites Austin Northwest,2026-10-30,2026-11-01,50,54,8.0,Expedia.com,Booking.com,no,no
+Bali,AYANA Resort Bali,2026-10-30,2026-11-01,296,354,19.6,EaseMyTrip.com,AYANA Resort Bali,yes,yes
+Bali,Courtyard by Marriott Bali Nusa Dua Resort,2026-10-30,2026-11-01,112,125,11.6,trivago DEALS,Traveluro,yes,yes
+Bali,Discovery Kartika Plaza Hotel,2026-10-30,2026-11-01,90,76,-15.6,klook,klook,yes,yes
+Bali,Double Six Luxury Hotel,2026-10-30,2026-11-01,257,282,9.7,Booking.com,Booking.com,no,no
+Bali,Hard Rock Hotel Bali,2026-10-30,2026-11-01,170,157,-7.6,Traveluro,Hard Rock Hotel Bali,yes,yes
+Bali,Kaamala Resort Ubud by iNi Vie Hospitality,2026-10-30,2026-11-01,255,250,-2.0,Super.com,Traveloka.com,yes,yes
+Bali,Kastara Resort and Spa,2026-10-30,2026-11-01,113,167,47.8,Booking.com,Traveloka.com,yes,yes
+Bali,Nandini Jungle by Hanging Gardens,2026-10-30,2026-11-01,644,229,-64.4,Closest Hotel,Trip.com,yes,yes
+Bali,Ramayana Suites & Resort,2026-10-30,2026-11-01,66,66,0.0,Agoda,Agoda,yes,yes
+Bali,THE HAVEN Bali Seminyak,2026-10-30,2026-11-01,61,68,11.5,klook,Traveloka.com,yes,yes
+Bali,The Anvaya Beach Resort Bali,2026-10-30,2026-11-01,111,131,18.0,The Anvaya Beach Resort Bali,klook,no,yes
+Bali,The Kama,2026-10-30,2026-11-01,57,60,5.3,Bluepillow.com,Agoda,no,no
+Bali,The Kayon Jungle Resort,2026-10-30,2026-11-01,412,294,-28.6,The Kayon Jungle Resort,The Kayon Jungle Resort,yes,yes
+Bali,The Kayon Resort Ubud,2026-10-30,2026-11-01,188,170,-9.6,The Kayon Resort,Agoda,yes,no
+Bali,The Kuta Beach Heritage Hotel Bali - Dikelola oleh Accor,2026-10-30,2026-11-01,64,63,-1.6,trivago DEALS,trivago DEALS,yes,yes
+Bali,The Patra Bali Resort & Villas,2026-10-30,2026-11-01,71,68,-4.2,Super.com,Agoda,yes,no
+Bali,The Seminyak Beach Resort & Spa,2026-10-30,2026-11-01,253,265,4.7,Trip.com,Trip.com,no,yes
+Bali,Wyndham Tamansari Jivva Resort Bali,2026-10-30,2026-11-01,35,45,28.6,Trip.com,Traveloka.com,no,yes
+Bangkok,Akara Bangkok,2026-10-30,2026-11-01,70,70,0.0,klook,klook,yes,yes
+Bangkok,Ambassador Hotel Bangkok,2026-10-30,2026-11-01,56,61,8.9,Ambassador Hotel Bangkok,Ambassador Hotel Bangkok,yes,yes
+Bangkok,Anantara Riverside Bangkok Resort,2026-10-30,2026-11-01,173,186,7.5,Anantara.com,Tiket.com,yes,yes
+Bangkok,Avani+ Riverside Bangkok Hotel,2026-10-30,2026-11-01,122,107,-12.3,Traveluro,Traveluro,yes,no
+Bangkok,Centara Grand at Central Plaza Ladprao Bangkok,2026-10-30,2026-11-01,95,103,8.4,Priceline,Priceline,yes,yes
+Bangkok,Centara Watergate Pavilion Hotel Bangkok,2026-10-30,2026-11-01,57,61,7.0,trivago DEALS,KAYAK.com,no,no
+Bangkok,Hotel Royal Bangkok,2026-10-30,2026-11-01,40,36,-10.0,klook,Agoda,yes,no
+Bangkok,JC Kevin Sathorn Bangkok Hotel,2026-10-30,2026-11-01,63,52,-17.5,klook,Booking.com,yes,no
+Bangkok,Lancaster Bangkok,2026-10-30,2026-11-01,78,87,11.5,klook,Pilot,no,no
+Bangkok,"Mandarin Hotel Bangkok, managed by Centre Point",2026-10-30,2026-11-01,67,73,9.0,Agoda,Priceline,yes,yes
+Bangkok,Millennium Hilton Bangkok,2026-10-30,2026-11-01,158,157,-0.6,Stayforlong.com,Traveluro,yes,yes
+Bangkok,Rembrandt Hotel Bangkok,2026-10-30,2026-11-01,83,89,7.2,klook,klook,yes,yes
+Bangkok,Shangri-La Bangkok,2026-10-30,2026-11-01,224,223,-0.4,Agoda,Stayforlong.com,yes,yes
+Bangkok,The Berkeley Hotel Pratunam,2026-10-30,2026-11-01,73,81,11.0,klook,klook,yes,yes
+Bangkok,The Okura Prestige Bangkok,2026-10-30,2026-11-01,183,196,7.1,klook,klook,yes,yes
+Bangkok,The Quarter Chao Phraya by UHG,2026-10-30,2026-11-01,117,115,-1.7,klook,klook,yes,yes
+Bangkok,Tori Prestige Bangkok Hotel,2026-10-30,2026-11-01,30,24,-20.0,Priceline,Agoda,yes,no
+Bangkok,"dusitD2 Samyan, Bangkok",2026-10-30,2026-11-01,125,112,-10.4,Stayforlong.com,Stayforlong.com,yes,yes
+Barcelona,Antiga Casa Buenavista,2026-10-30,2026-11-01,353,396,12.2,Super.com,Super.com,yes,yes
+Barcelona,Barcelona Hotel Colonial,2026-10-30,2026-11-01,283,242,-14.5,Barcelona Hotel Colonial,Kiwi.com,yes,yes
+Barcelona,Casa Gràcia,2026-10-30,2026-11-01,225,163,-27.6,Room Casa Gracia,Room Casa Gracia,yes,yes
+Barcelona,Hilton Diagonal Mar Barcelona,2026-10-30,2026-11-01,163,158,-3.1,Kiwi.com,Kiwi.com,yes,no
+Barcelona,Hotel 1898,2026-10-30,2026-11-01,333,303,-9.0,Vio.com,Super.com,yes,yes
+Barcelona,Hotel Alma Barcelona,2026-10-30,2026-11-01,409,493,20.5,Evendo,Alma Barcelona,no,no
+Barcelona,Hotel Barcelona Princess,2026-10-30,2026-11-01,141,175,24.1,Vio.com,Barcelona Princess,no,yes
+Barcelona,Hotel Condes de Barcelona,2026-10-30,2026-11-01,426,327,-23.2,Agoda,Trip.com,yes,yes
+Barcelona,Hotel Duquesa de Cardona Barcelona,2026-10-30,2026-11-01,273,276,1.1,Duquesa de Cardona,Duquesa de Cardona,no,yes
+Barcelona,Hotel NH Collection Barcelona Gran Hotel Calderón,2026-10-30,2026-11-01,308,278,-9.7,Vio.com,Vio.com,yes,yes
+Barcelona,Hotel Porta Fira,2026-10-30,2026-11-01,189,166,-12.2,Super.com,Traveluro,yes,yes
+Barcelona,Hotel SB Diagonal Zero Barcelona,2026-10-30,2026-11-01,150,148,-1.3,Vio.com,Priceline,yes,yes
+Barcelona,Hotel SB Glow,2026-10-30,2026-11-01,175,212,21.1,Kiwi.com,SB Glow,yes,no
+Barcelona,Hotel SB | Plaça Europa,2026-10-30,2026-11-01,177,162,-8.5,SB Plaza Europa,Priceline,no,yes
+Barcelona,Olivia Balmes Hotel Trabajo,2026-10-30,2026-11-01,279,278,-0.4,Kiwi.com,Kiwi.com,yes,yes
+Barcelona,Sansi Pedralbes,2026-10-30,2026-11-01,305,302,-1.0,Booking.com,Tripadvisor.com,no,no
+Barcelona,Seventy Barcelona,2026-10-30,2026-11-01,401,411,2.5,Super.com,Vio.com,yes,yes
+Barcelona,ibis Styles Barcelona Sant Joan Despi,2026-10-30,2026-11-01,120,140,16.7,Super.com,Traveluro,yes,yes
+Berlin,Arte Luise Arthotel,2026-10-30,2026-11-01,104,87,-16.3,Arte Luise Arthotel,Arte Luise Arthotel,yes,yes
+Berlin,"Classik Hotel Alexander Plaza, Berlin-Mitte",2026-10-30,2026-11-01,154,181,17.5,Super.com,Kiwi.com,yes,yes
+Berlin,Grimm’s Hotel Berlin Mitte,2026-10-30,2026-11-01,186,175,-5.9,Agoda,Agoda,yes,yes
+Berlin,Hilton Berlin,2026-10-30,2026-11-01,158,157,-0.6,Traveluro,Traveluro,yes,yes
+Berlin,Hotel Château Royal Berlin,2026-10-30,2026-11-01,346,359,3.8,Hotel Château Royal Berlin,Agoda,yes,yes
+Berlin,Hotel NH Collection Berlin Mitte am Checkpoint Charlie,2026-10-30,2026-11-01,141,122,-13.5,Pilot,Traveluro,yes,yes
+Berlin,Hotel Telegraphenamt,2026-10-30,2026-11-01,344,293,-14.8,Qantas Hotels,Kiwi.com,no,yes
+Berlin,"Locke at East Side Gallery, Friedrichshain",2026-10-30,2026-11-01,120,119,-0.8,Super.com,Super.com,yes,yes
+Berlin,Mercure Hotel Berlin City,2026-10-30,2026-11-01,90,90,0.0,Vio.com,Traveluro,yes,yes
+Berlin,Olive Inn Berlin,2026-10-30,2026-11-01,60,60,0.0,Expedia.com,Trip.com,no,no
+Berlin,Park Inn Berlin Alexanderplatz,2026-10-30,2026-11-01,133,173,30.1,Traveluro,Billabook.com,yes,yes
+Berlin,Pestana Berlin Tiergarten,2026-10-30,2026-11-01,116,132,13.8,Evendo,Evendo,yes,yes
+Berlin,Premier Inn Berlin City Centre hotel,2026-10-30,2026-11-01,89,97,9.0,Premierinn.com,Premierinn.com,yes,yes
+Berlin,Scandic Berlin Potsdamer Platz,2026-10-30,2026-11-01,111,124,11.7,Super.com,Agoda,yes,yes
+Berlin,Steigenberger Hotel Am Kanzleramt,2026-10-30,2026-11-01,173,195,12.7,Agoda,Bluepillow.com,yes,yes
+Berlin,The Mandala Hotel,2026-10-30,2026-11-01,256,253,-1.2,Hoteis.com,Amimir.com,no,yes
+Berlin,"The Ritz-Carlton, Berlin",2026-10-30,2026-11-01,350,355,1.4,Traveluro,Traveluro,yes,yes
+Berlin,The Westin Grand Berlin,2026-10-30,2026-11-01,220,218,-0.9,Billabook.com,Traveluro,yes,yes
+Chicago,Chicago Marriott Downtown Magnificent Mile,2026-10-30,2026-11-01,350,295,-15.7,Chicago Marriott Downtown Magnificent Mile,KAYAK.com,no,yes
+Chicago,"Fairmont Chicago, Millennium Park",2026-10-30,2026-11-01,252,220,-12.7,Super.com,KAYAK.com,yes,no
+Chicago,Hampton Inn Chicago Downtown/N Loop/Michigan Ave,2026-10-30,2026-11-01,225,286,27.1,KAYAK.com,Traveloka.com,yes,yes
+Chicago,Hilton Chicago,2026-10-30,2026-11-01,201,201,0.0,Super.com,KAYAK.com,yes,yes
+Chicago,Hilton Garden Inn Chicago Downtown Riverwalk,2026-10-30,2026-11-01,282,237,-16.0,trivago DEALS,trivago DEALS,yes,yes
+Chicago,Holiday Inn Express Chicago - Magnificent Mile by IHG,2026-10-30,2026-11-01,233,219,-6.0,Super.com,goseek.com,yes,yes
+Chicago,InterContinental Chicago Magnificent Mile by IHG,2026-10-30,2026-11-01,283,286,1.1,Vio.com,Vio.com,yes,no
+Chicago,Le Méridien Essex Chicago,2026-10-30,2026-11-01,311,302,-2.9,Super.com,Hotels.com,yes,no
+Chicago,Loews Chicago Hotel,2026-10-30,2026-11-01,361,433,19.9,br.Bluepillow.com,br.Bluepillow.com,yes,yes
+Chicago,"Radisson Blu Aqua Hotel, Chicago",2026-10-30,2026-11-01,259,300,15.8,KAYAK.com,KAYAK.com,yes,yes
+Chicago,Sofitel Chicago Magnificent Mile,2026-10-30,2026-11-01,504,498,-1.2,Hotels In America,trivago DEALS,yes,yes
+Chicago,"Staypineapple, An Iconic Hotel, The Loop Chicago",2026-10-30,2026-11-01,252,238,-5.6,Super.com,Super.com,yes,yes
+Chicago,Swissotel Chicago,2026-10-30,2026-11-01,263,242,-8.0,Super.com,Booking.com,yes,yes
+Chicago,The Allegro Royal Sonesta Hotel Chicago Loop,2026-10-30,2026-11-01,254,236,-7.1,Hotels In America,Vio.com,yes,yes
+Chicago,"The Hoxton, Chicago",2026-10-30,2026-11-01,296,317,7.1,Vio.com,Super.com,no,yes
+Chicago,The Wade,2026-10-30,2026-11-01,199,236,18.6,Super.com,Traveloka.com,yes,no
+Chicago,Warwick Allerton - Chicago,2026-10-30,2026-11-01,185,285,54.1,Super.com,Warwick Allerton - Chicago,yes,yes
+Dubai,Atlantis - The Palm,2026-10-30,2026-11-01,1100,978,-11.1,klook,klook,yes,yes
+Dubai,Concorde Deira Hotel,2026-10-30,2026-11-01,45,39,-13.3,Agoda,Trip.com,no,yes
+Dubai,Conrad Dubai,2026-10-30,2026-11-01,193,207,7.3,Traveluro,Traveluro,yes,yes
+Dubai,"Courtyard by Marriott World Trade Centre, Dubai",2026-10-30,2026-11-01,104,60,-42.3,Wego,"Courtyard by Marriott World Trade Centre, Dubai",yes,yes
+Dubai,Crowne Plaza Dubai - Deira by IHG,2026-10-30,2026-11-01,64,108,68.8,Billabook.com,Clicktrip.com,yes,yes
+Dubai,Damac Hills 2 Hotel - Edge by Rotana,2026-10-30,2026-11-01,56,61,8.9,Vio.com,Damac Hills 2 Hotel - Edge by Rotana,yes,yes
+Dubai,Dusit Thani Dubai,2026-10-30,2026-11-01,161,154,-4.3,Booking.com,Super.com,yes,yes
+Dubai,Holiday Inn Dubai al-Maktoum Airport by IHG,2026-10-30,2026-11-01,62,114,83.9,Vio.com,Clicktrip.com,yes,yes
+Dubai,Holiday Inn Express Dubai Airport by IHG,2026-10-30,2026-11-01,101,73,-27.7,Pilot,Pilot,yes,yes
+Dubai,JW Marriott Marquis Hotel Dubai,2026-10-30,2026-11-01,378,378,0.0,Traveluro,Billabook.com,yes,yes
+Dubai,Jumeirah Emirates Towers,2026-10-30,2026-11-01,230,231,0.4,Super.com,Prestigia.com,yes,yes
+Dubai,Park Regis Business Bay,2026-10-30,2026-11-01,132,154,16.7,Super.com,Booking.com,yes,yes
+Dubai,Pullman Dubai Downtown,2026-10-30,2026-11-01,212,171,-19.3,Billabook.com,Traveluro,yes,yes
+Dubai,Swissôtel Al Murooj Dubai,2026-10-30,2026-11-01,187,172,-8.0,Vio.com,Vio.com,yes,yes
+Dubai,Taj Dubai,2026-10-30,2026-11-01,195,237,21.5,klook,Amimir.com,yes,yes
+Dubai,"Taj Jumeirah Lakes Towers, Dubai",2026-10-30,2026-11-01,178,197,10.7,Super.com,Booking.com,yes,yes
+Dubai,The Canvas Dubai- MGallery Hotel Collection,2026-10-30,2026-11-01,107,113,5.6,trivago DEALS,dealbase.com,yes,yes
+Dubai,VOGO GRAND HOTEL DUBAI,2026-10-30,2026-11-01,60,55,-8.3,Booking.com,Booking.com,yes,yes
+Honolulu,Aston Waikiki Sunset,2026-10-30,2026-11-01,194,227,17.0,Super.com,Trip.com,yes,yes
+Honolulu,Hilton Garden Inn Waikiki Beach,2026-10-30,2026-11-01,199,237,19.1,Super.com,Hotels.com,yes,no
+Honolulu,Hilton Hawaiian Village Waikiki Beach Resort,2026-10-30,2026-11-01,292,346,18.5,KAYAK.com,Hoteis.com,yes,no
+Honolulu,Hilton Waikiki Beach Resort & Spa,2026-10-30,2026-11-01,216,216,0.0,Super.com,KAYAK.com,yes,yes
+Honolulu,"Hotel La Croix - Honolulu, HI",2026-10-30,2026-11-01,223,199,-10.8,CheapTickets.com,Super.com,yes,yes
+Honolulu,Oasis Hotel Waikiki,2026-10-30,2026-11-01,120,156,30.0,Oasis Hotel Waikiki,Oasis Hotel Waikiki,no,yes
+Honolulu,Ohia Waikiki Studio Suites,2026-10-30,2026-11-01,135,114,-15.6,Agoda,Super.com,yes,yes
+Honolulu,Prince Waikiki,2026-10-30,2026-11-01,251,287,14.3,Super.com,Super.com,yes,yes
+Honolulu,Sheraton Princess Kaiulani Waikiki Beach,2026-10-30,2026-11-01,191,191,0.0,KAYAK.com,KAYAK.com,yes,yes
+Honolulu,Sheraton Waikiki Beach Resort,2026-10-30,2026-11-01,310,360,16.1,KAYAK.com,trivago DEALS,yes,yes
+Honolulu,The Kahala Hotel & Resort,2026-10-30,2026-11-01,413,595,44.1,Super.com,Super.com,yes,yes
+Honolulu,Waikiki Monarch Hotel,2026-10-30,2026-11-01,129,125,-3.1,Vio.com,Tripadvisor.com,yes,yes
+Honolulu,Waikiki Resort Hotel,2026-10-30,2026-11-01,242,210,-13.2,Vio.com,Super.com,yes,yes
+Honolulu,Waikīkī Grand Hotel®,2026-10-30,2026-11-01,195,197,1.0,Vio.com,Etrip.net,yes,yes
+Honolulu,‘Alohilani Resort Waikiki Beach,2026-10-30,2026-11-01,372,323,-13.2,Super.com,Super.com,yes,yes
+Las Vegas,ARIA Resort & Casino,2026-10-30,2026-11-01,288,325,12.8,KAYAK.com,Super.com,yes,yes
+Las Vegas,Bellagio Hotel & Casino,2026-10-30,2026-11-01,429,419,-2.3,Super.com,Super.com,yes,yes
+Las Vegas,Caesars Palace,2026-10-30,2026-11-01,299,309,3.3,Super.com,Vio.com,yes,yes
+Las Vegas,Excalibur Hotel & Casino,2026-10-30,2026-11-01,117,97,-17.1,KAYAK.com,Super.com,yes,yes
+Las Vegas,Flamingo Las Vegas,2026-10-30,2026-11-01,186,164,-11.8,Super.com,Vio.com,yes,yes
+Las Vegas,Las Vegas Hilton at Resorts World,2026-10-30,2026-11-01,164,145,-11.6,Super.com,Super.com,yes,yes
+Las Vegas,Luxor Hotel & Casino,2026-10-30,2026-11-01,116,96,-17.2,Super.com,Vio.com,yes,no
+Las Vegas,MGM Grand,2026-10-30,2026-11-01,152,169,11.2,Vio.com,KAYAK.com,yes,yes
+Las Vegas,Mandalay Bay,2026-10-30,2026-11-01,184,189,2.7,KAYAK.com,Vio.com,yes,yes
+Las Vegas,Park MGM Las Vegas,2026-10-30,2026-11-01,180,265,47.2,Super.com,KAYAK.com,yes,yes
+Las Vegas,Rio Hotel & Casino,2026-10-30,2026-11-01,250,221,-11.6,Vio.com,Traveluro,yes,yes
+Las Vegas,The Cosmopolitan of Las Vegas,2026-10-30,2026-11-01,441,477,8.2,KAYAK.com,Kiwi.com,yes,yes
+Las Vegas,"The STRAT Hotel, Casino & Tower",2026-10-30,2026-11-01,75,92,22.7,trivago DEALS,Traveluro,yes,yes
+Las Vegas,The Venetian Las Vegas,2026-10-30,2026-11-01,440,426,-3.2,Super.com,Super.com,yes,yes
+Las Vegas,Treasure Island TI Las Vegas Hotel – Handwritten Collection,2026-10-30,2026-11-01,165,158,-4.2,Hotels In America,Expedia.co.in,yes,no
+Las Vegas,W Las Vegas,2026-10-30,2026-11-01,265,241,-9.1,Vio.com,Vio.com,yes,yes
+Las Vegas,Westgate Las Vegas Resort & Casino,2026-10-30,2026-11-01,149,154,3.4,goseek.com,dealbase.com,yes,yes
+Lisbon,Altis Grand Hotel,2026-10-30,2026-11-01,275,245,-10.9,Super.com,Tripadvisor.com,yes,yes
+Lisbon,Brown's | Avenue Hotel,2026-10-30,2026-11-01,328,324,-1.2,Evendo,Super.com,yes,yes
+Lisbon,Dos Reis by The Beautique Hotels,2026-10-30,2026-11-01,181,145,-19.9,Agoda,Dos Reis by The Beautique Hotels,yes,no
+Lisbon,Hotel Britania Art Deco Lisboa,2026-10-30,2026-11-01,231,183,-20.8,Super.com,Trip.com,yes,no
+Lisbon,Hotel Portugal - Portugal Boutique Hotel,2026-10-30,2026-11-01,212,380,79.2,Portugal Boutique Hotel,Portugal Boutique Hotel,yes,yes
+Lisbon,Independente Principe Real,2026-10-30,2026-11-01,143,141,-1.4,Super.com,Super.com,yes,yes
+Lisbon,LX Boutique Hotel,2026-10-30,2026-11-01,211,207,-1.9,Amimir.com,Priceline,yes,yes
+Lisbon,Lumen Hotel & The Lisbon Light Show,2026-10-30,2026-11-01,194,180,-7.2,Vio.com,Trip.com,yes,yes
+Lisbon,Luster Hotel,2026-10-30,2026-11-01,248,248,0.0,trivago DEALS,Agoda,yes,yes
+Lisbon,Moxy Lisbon City,2026-10-30,2026-11-01,192,190,-1.0,Qantas Hotels,Trip.com,yes,yes
+Lisbon,My Story Hotel Rossio,2026-10-30,2026-11-01,170,230,35.3,Super.com,Super.com,yes,yes
+Lisbon,OMID Boutique Hotel,2026-10-30,2026-11-01,93,182,95.7,Trip.com,OMID Boutique Hotel,yes,yes
+Lisbon,Tandem Palacio Alfama,2026-10-30,2026-11-01,207,204,-1.4,Hotelsnest.com,Agoda,yes,yes
+Lisbon,The Central House Lisbon Baixa,2026-10-30,2026-11-01,78,176,125.6,Booking.com,The Central House Lisbon Baixa Hostel,no,yes
+Lisbon,The Editory Riverside Santa Apolónia Hotel,2026-10-30,2026-11-01,238,216,-9.2,Super.com,Vio.com,yes,yes
+Lisbon,The Lumiares Hotel & Spa,2026-10-30,2026-11-01,343,1071,212.2,Traveluro,Catchit.com,yes,yes
+Lisbon,The One Palácio da Anunciada,2026-10-30,2026-11-01,484,468,-3.3,The One Palácio da Anunciada,The One Palácio da Anunciada,yes,yes
+Lisbon,WC by The Beautique Hotels,2026-10-30,2026-11-01,118,138,16.9,Evendo,WC by The Beautique Hotels,yes,yes
+London,Abbey Wood Experience Freedom Glamping,2026-10-30,2026-11-01,65,54,-16.9,Pitchup.com,Pitchup.com,no,no
+London,Canopy by Hilton London City,2026-10-30,2026-11-01,221,214,-3.2,Super.com,Stayforlong.com,yes,yes
+London,Kimpton Fitzroy London,2026-10-30,2026-11-01,404,471,16.6,Kiwi.com,goseek.com,yes,yes
+London,Novotel London Blackfriars,2026-10-30,2026-11-01,202,218,7.9,Super.com,Vio.com,yes,yes
+London,Page8 - Page Hotels,2026-10-30,2026-11-01,308,316,2.6,Super.com,Super.com,yes,yes
+London,Rosewood London,2026-10-30,2026-11-01,888,887,-0.1,klook,klook,yes,yes
+London,Royal London Hotel,2026-10-30,2026-11-01,88,147,67.0,Booking.com,Booking.com,no,no
+London,Smart Hyde Park View,2026-10-30,2026-11-01,186,151,-18.8,Booking.com,Booking.com,yes,yes
+London,The Bailey’s Hotel London,2026-10-30,2026-11-01,222,237,6.8,Super.com,Super.com,yes,yes
+London,"The Cumberland Hotel, London",2026-10-30,2026-11-01,239,244,2.1,Super.com,Vio.com,yes,yes
+London,"The Hoxton, Southwark",2026-10-30,2026-11-01,222,319,43.7,Traveluro,Super.com,yes,yes
+London,"The Langham, London",2026-10-30,2026-11-01,543,638,17.5,Vio.com,Super.com,yes,yes
+London,"The Royal Horseguards Hotel & One Whitehall Place, London",2026-10-30,2026-11-01,317,316,-0.3,Super.com,Super.com,yes,yes
+London,"The Standard, London",2026-10-30,2026-11-01,266,257,-3.4,Super.com,Super.com,yes,yes
+London,"The Tower Hotel, by Thistle",2026-10-30,2026-11-01,165,199,20.6,Super.com,Super.com,yes,yes
+London,"The Waldorf Hilton, London",2026-10-30,2026-11-01,349,418,19.8,Super.com,Kiwi.com,yes,yes
+London,citizenM London Victoria Station,2026-10-30,2026-11-01,205,234,14.1,Super.com,Traveluro,yes,yes
+Los Angeles,AIR Venice,2026-10-30,2026-11-01,171,199,16.4,Super.com,Super.com,yes,yes
+Los Angeles,Cara Hotel,2026-10-30,2026-11-01,350,301,-14.0,Super.com,Super.com,yes,yes
+Los Angeles,"Dream Hollywood, by Hyatt",2026-10-30,2026-11-01,328,495,50.9,momondo.com,Amimir.com,yes,no
+Los Angeles,Freehand Los Angeles,2026-10-30,2026-11-01,260,292,12.3,Super.com,trivago DEALS,yes,yes
+Los Angeles,Hilton Los Angeles Airport,2026-10-30,2026-11-01,175,173,-1.1,Wego,Pilot,yes,yes
+Los Angeles,Hotel Indigo Los Angeles Downtown by IHG,2026-10-30,2026-11-01,515,510,-1.0,Hotels In America,Hotels.com,yes,no
+Los Angeles,Hyatt Regency Los Angeles International Airport,2026-10-30,2026-11-01,211,211,0.0,Stayforlong.co.uk,Vio.com,yes,yes
+Los Angeles,InterContinental Los Angeles Downtown by IHG,2026-10-30,2026-11-01,390,537,37.7,Super.com,Amimir.com,yes,yes
+Los Angeles,Lincoln Hotel Monterey Park/Los Angeles,2026-10-30,2026-11-01,129,132,2.3,trivago DEALS,Traveluro,yes,yes
+Los Angeles,Millennium Biltmore Hotel Los Angeles,2026-10-30,2026-11-01,260,339,30.4,Super.com,Super.com,yes,yes
+Los Angeles,Omni Los Angeles Hotel at California Plaza,2026-10-30,2026-11-01,304,292,-3.9,Super.com,Priceline,yes,no
+Los Angeles,Sheraton Gateway Los Angeles Hotel,2026-10-30,2026-11-01,187,159,-15.0,Hotels In America,trivago DEALS,yes,yes
+Los Angeles,Sonesta Los Angeles Airport LAX,2026-10-30,2026-11-01,154,159,3.2,KAYAK.com,Vio.com,yes,no
+Los Angeles,The LINE LA,2026-10-30,2026-11-01,322,286,-11.2,Hotels In America,Super.com,yes,yes
+Los Angeles,The Sojourn Los Angeles – Sherman Oaks,2026-10-30,2026-11-01,185,209,13.0,Vio.com,Traveluro,yes,yes
+Los Angeles,"The Wayfarer Downtown LA, Tapestry Collection by Hilton",2026-10-30,2026-11-01,347,343,-1.2,Traveluro,Traveluro,yes,yes
+Miami,Atrium Design District,2026-10-30,2026-11-01,68,68,0.0,Booking.com,Hotels.com,no,yes
+Miami,Casa Agave Miami,2026-10-30,2026-11-01,110,115,4.5,Expedia.com,Travelocity.com,no,no
+Miami,EAST Miami,2026-10-30,2026-11-01,443,428,-3.4,Vio.com,Traveluro,yes,yes
+Miami,EVEN Hotel Miami - Airport by IHG,2026-10-30,2026-11-01,161,180,11.8,Super.com,Traveluro,yes,yes
+Miami,Four Seasons Hotel Miami,2026-10-30,2026-11-01,540,610,13.0,Super.com,Hotels In America,yes,no
+Miami,Hilton Miami Downtown,2026-10-30,2026-11-01,326,340,4.3,Pilot,Globehunters UK,yes,yes
+Miami,Holiday Inn Miami-International Airport by IHG,2026-10-30,2026-11-01,176,208,18.2,Super.com,dealbase.com,yes,yes
+Miami,Hotel Indigo Miami Brickell by IHG,2026-10-30,2026-11-01,265,267,0.8,Vio.com,Vio.com,yes,yes
+Miami,InterContinental Miami by IHG,2026-10-30,2026-11-01,368,305,-17.1,Super.com,Vio.com,yes,no
+Miami,JW Marriott Miami,2026-10-30,2026-11-01,370,294,-20.5,Traveluro,trivago DEALS,yes,yes
+Miami,Kompose Boutique Hotel Miami Airport,2026-10-30,2026-11-01,158,195,23.4,Clicktrip.com,Clicktrip.com,yes,yes
+Miami,Mayfair House Hotel & Garden,2026-10-30,2026-11-01,436,428,-1.8,Super.com,Reserving,yes,yes
+Miami,Metropole Suites South Beach,2026-10-30,2026-11-01,197,222,12.7,Vio.com,Vio.com,yes,yes
+Miami,Novotel Miami Brickell,2026-10-30,2026-11-01,265,332,25.3,Super.com,trivago DEALS,yes,yes
+Miami,Pullman Miami Airport,2026-10-30,2026-11-01,162,203,25.3,HotelTonight.com,HotelTonight.com,yes,yes
+Miami,Sheraton Miami Airport Hotel & Executive Meeting Center,2026-10-30,2026-11-01,162,162,0.0,Hotels.com,trivago DEALS,no,yes
+Miami,The New Yorker Miami Hotel,2026-10-30,2026-11-01,120,157,30.8,goseek.com,Super.com,yes,yes
+Nashville,DoubleTree by Hilton Hotel Nashville Downtown,2026-10-30,2026-11-01,223,212,-4.9,Traveluro,Traveluro,yes,yes
+Nashville,Grand Hyatt Nashville,2026-10-30,2026-11-01,250,250,0.0,Vio.com,Traveluro,yes,yes
+Nashville,Holiday Inn Express & Suites Nashville Southeast - Antioch by IHG,2026-10-30,2026-11-01,150,127,-15.3,Super.com,Vio.com,yes,yes
+Nashville,Holiday Inn Nashville-Vanderbilt (Dwtn) by IHG,2026-10-30,2026-11-01,188,159,-15.4,Super.com,Traveluro,yes,yes
+Nashville,Homewood Suites by Hilton Nashville-Downtown,2026-10-30,2026-11-01,284,217,-23.6,Bluepillow.co,Traveluro,no,yes
+Nashville,Loews Nashville Hotel at Vanderbilt Plaza,2026-10-30,2026-11-01,254,231,-9.1,Super.com,Super.com,yes,yes
+Nashville,Millennium Hotel Maxwell House Nashville,2026-10-30,2026-11-01,191,162,-15.2,Booking.com,Super.com,no,yes
+Nashville,Nashville Shores Lakeside Resort,2026-10-30,2026-11-01,80,80,0.0,Nashville Shores Lakeside Resort,Nashville Shores Lakeside Resort,no,no
+Nashville,Omni Nashville Hotel,2026-10-30,2026-11-01,349,349,0.0,BusinessHotels.com,BusinessHotels.com,no,no
+Nashville,Sheraton Music City Nashville Airport,2026-10-30,2026-11-01,125,125,0.0,Traveluro,Traveluro,yes,yes
+Nashville,Sports Illustrated Resorts Nashville,2026-10-30,2026-11-01,157,255,62.4,Vio.com,Tripadvisor.com,no,yes
+Nashville,The 121 Hotel,2026-10-30,2026-11-01,246,246,0.0,Super.com,Kiwi.com,yes,yes
+Nashville,"The Nashville Reserve, by Oliver",2026-10-30,2026-11-01,278,327,17.6,Super.com,Agoda,yes,yes
+Nashville,The Westin Nashville,2026-10-30,2026-11-01,251,251,0.0,Super.com,Traveluro,yes,yes
+Nashville,Virgin Hotels Nashville,2026-10-30,2026-11-01,363,341,-6.1,Traveluro,Super.com,yes,yes
+New York,Courtyard by Marriott Edgewater NYC Area,2026-10-30,2026-11-01,251,251,0.0,KAYAK.com,KAYAK.com,yes,yes
+New York,Courtyard by Marriott New York Queens/Fresh Meadows,2026-10-30,2026-11-01,172,235,36.6,Super.com,Evendo,yes,yes
+New York,DoubleTree by Hilton Hotel Fort Lee - George Washington Bridge,2026-10-30,2026-11-01,246,226,-8.1,Billabook.com,Traveluro,yes,yes
+New York,DoubleTree by Hilton Hotel Newark Airport,2026-10-30,2026-11-01,194,180,-7.2,trivago DEALS,Traveluro,yes,yes
+New York,Dynasty Hotel and Suites New York LaGuardia Hotel,2026-10-30,2026-11-01,118,163,38.1,Hotels.com,Dynasty Hotel and Suites New York LaGuardia Hotel,no,yes
+New York,Fairfield by Marriott Inn & Suites New York Queens/Fresh Meadows,2026-10-30,2026-11-01,171,280,63.7,Super.com,Traveluro,yes,yes
+New York,Fairfield by Marriott Inn & Suites Newark Liberty International Airport,2026-10-30,2026-11-01,161,148,-8.1,Super.com,Traveluro,yes,yes
+New York,Four Points by Sheraton Flushing,2026-10-30,2026-11-01,238,301,26.5,trivago DEALS,Evendo,no,yes
+New York,Holiday Inn Express & Suites Woodside LaGuardia Airport by IHG,2026-10-30,2026-11-01,245,330,34.7,Billabook.com,Vio.com,no,yes
+New York,Hotel Executive Suites,2026-10-30,2026-11-01,138,157,13.8,Super.com,Super.com,yes,yes
+New York,Hotel Indigo Lower East Side New York by IHG,2026-10-30,2026-11-01,721,714,-1.0,Traveluro,Traveluro,yes,yes
+New York,LY New York Hotel,2026-10-30,2026-11-01,236,214,-9.3,Hotels.com,Super.com,yes,yes
+New York,Paris Suites Hotel,2026-10-30,2026-11-01,163,163,0.0,Hotels.com,Expedia.com,no,no
+New York,Q4 Hotel New York City,2026-10-30,2026-11-01,140,131,-6.4,Booking.com,Booking.com,yes,no
+New York,Serenity Room,2026-10-30,2026-11-01,117,122,4.3,Booking.com,Booking.com,no,no
+New York,SpringHill Suites by Marriott Newark Liberty International Airport,2026-10-30,2026-11-01,162,203,25.3,Super.com,Evendo,yes,yes
+New York,The Bay Ridge Hotel,2026-10-30,2026-11-01,187,349,86.6,Agoda,Agoda,no,yes
+New York,The One Boutique Hotel,2026-10-30,2026-11-01,285,244,-14.4,KAYAK.ie,trivago DEALS,yes,yes
+Orlando,"Castle Hotel, Autograph Collection",2026-10-30,2026-11-01,135,135,0.0,Super.com,KAYAK.com,yes,yes
+Orlando,"DASKK Orlando Hotel near Universal Blvd, an Ascend Collection Hotel",2026-10-30,2026-11-01,63,63,0.0,KAYAK.com,KAYAK.com,yes,yes
+Orlando,DoubleTree by Hilton Hotel at the Entrance to Universal Orlando,2026-10-30,2026-11-01,137,134,-2.2,Super.com,Traveluro,yes,yes
+Orlando,DoubleTree by Hilton Orlando Theme Park Resort,2026-10-30,2026-11-01,92,104,13.0,Super.com,Expedia.com,yes,no
+Orlando,Hilton Garden Inn Orlando I-4 Millenia Blvd Mall,2026-10-30,2026-11-01,161,161,0.0,Hotels In America,Expedia.com,yes,yes
+Orlando,Hilton Garden Inn Orlando at SeaWorld,2026-10-30,2026-11-01,122,125,2.5,Super.com,Pilot,yes,yes
+Orlando,Hilton Grand Vacations Club SeaWorld Orlando,2026-10-30,2026-11-01,150,146,-2.7,Traveluro,Super.com,no,yes
+Orlando,Hilton Orlando,2026-10-30,2026-11-01,201,203,1.0,Super.com,Hilton Orlando,yes,no
+Orlando,Hyatt Regency Orlando,2026-10-30,2026-11-01,216,206,-4.6,Vio.com,Vio.com,yes,yes
+Orlando,Renaissance Orlando at SeaWorld®,2026-10-30,2026-11-01,235,209,-11.1,Hotels In America,TravelUp,yes,yes
+Orlando,Rosen Plaza Hotel,2026-10-30,2026-11-01,100,102,2.0,KAYAK.com,Agoda,yes,yes
+Orlando,Rosen Shingle Creek,2026-10-30,2026-11-01,112,116,3.6,Vio.com,Vio.com,yes,yes
+Orlando,Staybridge Suites Orlando at Seaworld by IHG,2026-10-30,2026-11-01,120,135,12.5,Hotels In America,Vio.com,no,yes
+Orlando,Westgate Lakes Resort & Spa,2026-10-30,2026-11-01,143,120,-16.1,Reservation Day,Westgate Lakes Resort & Spa,yes,yes
+Orlando,Wyndham I-Drive Avanti Resort & Conference Center,2026-10-30,2026-11-01,87,92,5.7,Super.com,Evendo,yes,yes
+Paris,Appart'City Confort Paris Clichy Mairie - Appart Hôtel,2026-10-30,2026-11-01,102,100,-2.0,Vio.com,Billabook.com,yes,yes
+Paris,B&B HOTEL Paris 17 Batignolles,2026-10-30,2026-11-01,115,105,-8.7,Vio.com,Vio.com,yes,yes
+Paris,B&B HOTEL Paris Porte des Lilas,2026-10-30,2026-11-01,88,102,15.9,Super.com,Kiwi.com,yes,yes
+Paris,Best Western Hôtel Rives de Paris La Défense,2026-10-30,2026-11-01,84,88,4.8,Trip.com,Trip.com,yes,yes
+Paris,Campanile Prime Porte d'Italie,2026-10-30,2026-11-01,81,80,-1.2,Agoda,Agoda,yes,yes
+Paris,Crowne Plaza Paris - Republique by IHG,2026-10-30,2026-11-01,206,209,1.5,Vio.com,Kiwi.com,yes,yes
+Paris,Generator Paris,2026-10-30,2026-11-01,79,70,-11.4,Booking.com,Booking.com,yes,no
+Paris,Glint Paris,2026-10-30,2026-11-01,70,82,17.1,Booking.com,Booking.com,no,no
+Paris,Hôtel Atrium by HappyCulture,2026-10-30,2026-11-01,84,96,14.3,Agoda,Vio.com,yes,yes
+Paris,Hôtel Mercure Paris Boulogne,2026-10-30,2026-11-01,159,157,-1.3,Super.com,Billabook.com,yes,yes
+Paris,Hôtel la Régence,2026-10-30,2026-11-01,77,76,-1.3,Agoda,Hôtel la Régence,yes,no
+Paris,MEININGER Hotel Paris Porte de Vincennes,2026-10-30,2026-11-01,79,75,-5.1,MEININGER Hotel Paris Porte de Vincennes,MEININGER Hotel Paris Porte de Vincennes,no,yes
+Paris,Novotel Paris Est,2026-10-30,2026-11-01,96,96,0.0,Amimir.com,Vio.com,yes,yes
+Paris,OKKO Hotels Paris Porte De Versailles,2026-10-30,2026-11-01,104,103,-1.0,Priceline,Amimir.com,yes,no
+Paris,TRIBE Paris La Défense Esplanade,2026-10-30,2026-11-01,89,88,-1.1,Expedia.com,Booking.com,no,no
+Paris,The People Belleville,2026-10-30,2026-11-01,153,147,-3.9,The People Belleville,The People Belleville,yes,yes
+Paris,ibis Paris Issy-les-Moulineaux Val de Seine,2026-10-30,2026-11-01,83,83,0.0,Super.com,Vio.com,yes,no
+Paris,ibis Paris Porte d'Orléans,2026-10-30,2026-11-01,80,79,-1.2,Billabook.com,Billabook.com,yes,yes
+Rome,Camping Village Fabulous,2026-10-30,2026-11-01,51,68,33.3,Agoda,Agoda,no,yes
+Rome,Camplus Hotel Roma Centro,2026-10-30,2026-11-01,231,221,-4.3,Booking.com,Vio.com,yes,no
+Rome,GH Hotel San Giusto,2026-10-30,2026-11-01,103,126,22.3,Vio.com,GH Hotel San Giusto,yes,no
+Rome,Grand Hotel Fleming,2026-10-30,2026-11-01,110,126,14.5,Vio.com,Vio.com,yes,yes
+Rome,Hampton by Hilton Rome East,2026-10-30,2026-11-01,96,95,-1.0,Expedia.com,Booking.com,no,no
+Rome,Hotel Lunetta,2026-10-30,2026-11-01,378,524,38.6,dealbase.com,Agoda,yes,yes
+Rome,Hotel Nord Nuova,2026-10-30,2026-11-01,236,336,42.4,Super.com,Amimir.com,yes,yes
+Rome,Hotel Quirinale,2026-10-30,2026-11-01,346,357,3.2,Agoda,Vio.com,no,yes
+Rome,Hotel Villa Giulia,2026-10-30,2026-11-01,121,127,5.0,Hotel Villa Giulia,Super.com,yes,yes
+Rome,Ibis Styles Vintage Hotel Rome,2026-10-30,2026-11-01,78,79,1.3,Vio.com,Vio.com,no,no
+Rome,Novotel Roma Est,2026-10-30,2026-11-01,99,131,32.3,Kiwi.com,Billabook.com,yes,yes
+Rome,Occidental Aran Park,2026-10-30,2026-11-01,144,96,-33.3,Billabook.com,Barcelo.com,yes,yes
+Rome,Residenza Flaminia,2026-10-30,2026-11-01,114,89,-21.9,Booking.com,Booking.com,no,no
+Rome,Roma Talenti Fucini,2026-10-30,2026-11-01,116,126,8.6,Roma Talenti Fucini,Roma Talenti Fucini,yes,yes
+Rome,Suite Sistina for Brave Lovers,2026-10-30,2026-11-01,355,455,28.2,Evendo,Super.com,yes,yes
+Rome,YellowSquare Rome,2026-10-30,2026-11-01,200,206,3.0,Yellowsquare Rome,Yellowsquare Rome,yes,yes
+Rome,ibis Roma Fiera,2026-10-30,2026-11-01,92,93,1.1,Agoda,Vio.com,yes,yes
+San Francisco,Beacon Grand A Union Square Hotel,2026-10-30,2026-11-01,255,300,17.6,Super.com,Pilot,yes,yes
+San Francisco,Grand Hyatt San Francisco,2026-10-30,2026-11-01,204,196,-3.9,KAYAK.com,KAYAK.com,yes,yes
+San Francisco,HI San Francisco Fisherman's Wharf Hostel,2026-10-30,2026-11-01,67,66,-1.5,Hostelworld,Booking.com,no,no
+San Francisco,Handlery Union Square Hotel,2026-10-30,2026-11-01,193,165,-14.5,Vio.com,Super.com,yes,yes
+San Francisco,Hotel G,2026-10-30,2026-11-01,178,178,0.0,Super.com,Super.com,yes,yes
+San Francisco,Hotel Julian,2026-10-30,2026-11-01,163,163,0.0,Vio.com,Vio.com,yes,yes
+San Francisco,Hotel Riu Plaza,2026-10-30,2026-11-01,217,360,65.9,Vio.com,Billabook.com,yes,no
+San Francisco,Hotel Union Square,2026-10-30,2026-11-01,111,107,-3.6,Luxury Escapes,Vio.com,yes,no
+San Francisco,Hotel VIA,2026-10-30,2026-11-01,213,213,0.0,Vio.com,Vio.com,yes,yes
+San Francisco,Hotel Zephyr,2026-10-30,2026-11-01,213,236,10.8,Traveluro,Super.com,yes,yes
+San Francisco,Hotel Zoe Fisherman’s Wharf,2026-10-30,2026-11-01,207,222,7.2,Trip.com,Clicktrip.com,no,yes
+San Francisco,Hyatt Centric Fisherman's Wharf San Francisco,2026-10-30,2026-11-01,271,230,-15.1,Hotels In America,goseek.com,yes,yes
+San Francisco,Hyatt Place San Francisco / Downtown,2026-10-30,2026-11-01,184,184,0.0,Super.com,trivago DEALS,yes,yes
+San Francisco,"Marriott Vacation Club, San Francisco",2026-10-30,2026-11-01,199,293,47.2,Super.com,"Marriott Vacation Club, San Francisco",yes,yes
+San Francisco,SoMa House,2026-10-30,2026-11-01,143,177,23.8,Vio.com,SoMa House,yes,yes
+San Francisco,The Embassy Hotel,2026-10-30,2026-11-01,86,129,50.0,Agoda,Super.com,yes,yes
+San Francisco,The Marker Union Square San Francisco,2026-10-30,2026-11-01,144,182,26.4,Tripadvisor.com,Super.com,yes,yes
+San Francisco,Warfield Hotel,2026-10-30,2026-11-01,59,77,30.5,Super.com,Super.com,yes,yes
+Seoul,Batwo Stay,2026-10-30,2026-11-01,57,57,0.0,Booking.com,Booking.com,no,no
+Seoul,Grand Hyatt Seoul,2026-10-30,2026-11-01,446,737,65.2,Super.com,Traveloka.com,no,yes
+Seoul,Han River KS Stay,2026-10-30,2026-11-01,67,132,97.0,Booking.com,Booking.com,yes,no
+Seoul,Handpicked Hotel & Collections,2026-10-30,2026-11-01,92,86,-6.5,Priceline,Agoda,yes,no
+Seoul,Harmony Hotel,2026-10-30,2026-11-01,82,89,8.5,Agoda,Agoda,yes,no
+Seoul,Hotel Anteroom Seoul,2026-10-30,2026-11-01,160,619,286.9,Priceline,Traveloka.com,no,yes
+Seoul,Hotel S Seoul,2026-10-30,2026-11-01,87,84,-3.4,klook,Agoda,no,yes
+Seoul,"Le Méridien Seoul, Myeongdong",2026-10-30,2026-11-01,630,581,-7.8,Despegar,Traveloka.com,no,no
+Seoul,Mamas & Papas Hongdae Guesthouse / Hostel,2026-10-30,2026-11-01,45,51,13.3,Booking.com,Booking.com,no,no
+Seoul,Seoul Guesthouse Foreigners Only,2026-10-30,2026-11-01,23,20,-13.0,Booking.com,Booking.com,no,no
+Seoul,Seoul N Hotel Dongdaemun,2026-10-30,2026-11-01,58,198,241.4,Booking.com,Booking.com,no,yes
+Seoul,Step Inn Myeongdong 1,2026-10-30,2026-11-01,105,352,235.2,Booking.com,Booking.com,no,yes
+Seoul,"The Ace Hotel, Seoul",2026-10-30,2026-11-01,158,160,1.3,Agoda,Trip.com,yes,yes
+Seoul,호텔 트리플8,2026-10-30,2026-11-01,48,81,68.8,Booking.com,Booking.com,no,no
+Singapore,Coliwoo Hotel Kampong Glam,2026-10-30,2026-11-01,101,107,5.9,Trip.com,klook,no,yes
+Singapore,Copthorne King's Hotel Singapore,2026-10-30,2026-11-01,127,127,0.0,Super.com,Super.com,yes,yes
+Singapore,Hilton Garden Inn Singapore Serangoon,2026-10-30,2026-11-01,146,137,-6.2,Qantas Hotels,Vio.com,no,yes
+Singapore,Hmlet Novena (Previously Habyt Novena),2026-10-30,2026-11-01,68,73,7.4,Agoda,Agoda,no,no
+Singapore,Hotel Boss,2026-10-30,2026-11-01,90,101,12.2,klook,Luxury Escapes,yes,yes
+Singapore,Hotel Clover 769 North Bridge Road,2026-10-30,2026-11-01,78,90,15.4,klook,klook,yes,yes
+Singapore,Hotel Mi Bencoolen,2026-10-30,2026-11-01,111,109,-1.8,Vio.com,klook,yes,yes
+Singapore,"Hotel NuVe Heritage, City Hall",2026-10-30,2026-11-01,136,136,0.0,klook,klook,yes,yes
+Singapore,M Social Hotel Singapore,2026-10-30,2026-11-01,125,132,5.6,Super.com,Super.com,yes,yes
+Singapore,Shangri-La Singapore,2026-10-30,2026-11-01,299,299,0.0,Agoda,Super.com,yes,yes
+Singapore,Studio M Hotel,2026-10-30,2026-11-01,116,120,3.4,Super.com,EaseMyTrip.com,yes,yes
+Singapore,The Fullerton Hotel Singapore,2026-10-30,2026-11-01,347,320,-7.8,Super.com,klook,yes,yes
+Singapore,The Seacare Hotel,2026-10-30,2026-11-01,100,87,-13.0,Bluepillow.de,KAYAK.com,yes,no
+Singapore,Village Hotel Albert Court,2026-10-30,2026-11-01,124,141,13.7,Super.com,Super.com,yes,yes
+Singapore,YOTEL Singapore Orchard Road,2026-10-30,2026-11-01,108,148,37.0,KAYAK.com,Super.com,yes,yes
+Singapore,hipstercity,2026-10-30,2026-11-01,61,51,-16.4,Booking.com,Traveloka.com,no,no
+Singapore,ibis Styles Singapore On Macpherson,2026-10-30,2026-11-01,126,116,-7.9,Pilot,Pilot,yes,yes
+Singapore,lyf Bugis Singapore,2026-10-30,2026-11-01,121,121,0.0,Super.com,Super.com,yes,yes
+Sydney,Azzurro Pod Hotel - Central Sydney,2026-10-30,2026-11-01,126,137,8.7,Central Sydney Budget Stay,Central Sydney Budget Stay,yes,yes
+Sydney,Capella Sydney,2026-10-30,2026-11-01,789,732,-7.2,hutchgo (Hutchison Travel Limited),Traveluro,no,yes
+Sydney,Four Seasons Hotel Sydney,2026-10-30,2026-11-01,422,419,-0.7,Super.com,Super.com,yes,yes
+Sydney,Hilton Sydney,2026-10-30,2026-11-01,380,403,6.1,Super.com,Expedia.com,yes,no
+Sydney,Holiday Inn Sydney St Marys by IHG,2026-10-30,2026-11-01,143,134,-6.3,Super.com,dealbase.com,yes,yes
+Sydney,Little Drifter Glebe,2026-10-30,2026-11-01,123,115,-6.5,Booking.com,Hostelworld,yes,yes
+Sydney,Littomore Suites Kingswood,2026-10-30,2026-11-01,125,152,21.6,Agoda,Super.com,yes,yes
+Sydney,"Ovolo Sydney, Woolloomooloo",2026-10-30,2026-11-01,496,440,-11.3,Super.com,Kiwi.com,yes,yes
+Sydney,Padstow Park Hotel,2026-10-30,2026-11-01,73,78,6.8,Booking.com,Hotels.com,yes,yes
+Sydney,Palms Hotel,2026-10-30,2026-11-01,87,95,9.2,Booking.com,Booking.com,yes,yes
+Sydney,QT Sydney,2026-10-30,2026-11-01,380,364,-4.2,Super.com,klook,yes,yes
+Sydney,Quest Penrith,2026-10-30,2026-11-01,125,127,1.6,Agoda,Agoda,no,yes
+Sydney,Sydney Boutique Hotel,2026-10-30,2026-11-01,265,247,-6.8,Agoda,Super.com,yes,yes
+Sydney,The Baxley Bondi,2026-10-30,2026-11-01,185,190,2.7,Super.com,KAYAK.com,yes,yes
+Sydney,The Lansdowne Hotel,2026-10-30,2026-11-01,64,63,-1.6,Booking.com,Booking.com,no,no
+Sydney,The William Inglis Hotel Warwick Farm - MGallery Collection,2026-10-30,2026-11-01,196,211,7.7,The William Inglis Hotel Warwick Farm - MGallery Collection,dealbase.com,yes,yes
+Sydney,Wildlife Retreat at Taronga,2026-10-30,2026-11-01,553,489,-11.6,Super.com,Super.com,yes,yes
+Sydney,YHA Sydney Harbour - The Rocks,2026-10-30,2026-11-01,268,265,-1.1,YHA Sydney Harbour - The Rocks,Booking.com,yes,yes
+Tokyo,HOTEL THE CELESTINE TOKYO SHIBA,2026-10-30,2026-11-01,215,279,29.8,klook,klook,no,yes
+Tokyo,Hamacho Hotel,2026-10-30,2026-11-01,218,236,8.3,skyticket,skyticket,yes,yes
+Tokyo,Hotel Villa Fontaine Grand Haneda Airport,2026-10-30,2026-11-01,178,206,15.7,klook,Ikyu.com,no,no
+Tokyo,Hotel Villa Fontaine Premier Haneda-Airport,2026-10-30,2026-11-01,282,268,-5.0,br.Bluepillow.com,Super.com,no,yes
+Tokyo,Manga Art Hotel,2026-10-30,2026-11-01,78,86,10.3,Booking.com,Bluepillow.com,no,yes
+Tokyo,Mitsui Garden Hotel Toyosu Premier,2026-10-30,2026-11-01,273,348,27.5,klook,klook,yes,yes
+Tokyo,Nohga Hotel Akihabara Tokyo,2026-10-30,2026-11-01,259,317,22.4,Trip.com,Super.com,yes,no
+Tokyo,ONE@Tokyo by insomnia,2026-10-30,2026-11-01,165,204,23.6,KAYAK.com,Kiwi.com,no,yes
+Tokyo,Shinagawa Prince Hotel,2026-10-30,2026-11-01,221,218,-1.4,KAYAK.com,Traveluro,no,no
+Tokyo,Shinjuku Granbell Hotel,2026-10-30,2026-11-01,688,667,-3.1,Traveluro,Traveluro,yes,yes
+Tokyo,TOKYO-W-inn Asakusa,2026-10-30,2026-11-01,75,65,-13.3,Booking.com,Tripadvisor.com,no,no
+Tokyo,The Royal Park Hotel Tokyo Shiodome,2026-10-30,2026-11-01,309,900,191.3,Agoda,Bookhotel.direct,yes,yes
+Tokyo,Tokyo East Side Hotel Kaie,2026-10-30,2026-11-01,204,277,35.8,klook,KAYAK.com,no,yes
+Tokyo,Tokyo Guest House Ouji Music Lounge,2026-10-30,2026-11-01,53,54,1.9,Booking.com,Booking.com,yes,no
+Tokyo,ホテルイースト２１東京,2026-10-30,2026-11-01,246,394,60.2,Trip.com,Trip.com,yes,yes
+Vienna,Austria Trend Parkhotel Schönbrunn,2026-10-30,2026-11-01,114,130,14.0,Super.com,Amimir.com,yes,yes
+Vienna,BoutiqueHOTEL Donauwalzer,2026-10-30,2026-11-01,81,82,1.2,Trip.com,Trip.com,yes,yes
+Vienna,Hilton Vienna Waterfront,2026-10-30,2026-11-01,146,146,0.0,Super.com,Hilton Vienna Waterfront,yes,yes
+Vienna,Hotel Am Konzerthaus - MGallery Collection,2026-10-30,2026-11-01,158,157,-0.6,Super.com,Vio.com,yes,no
+Vienna,Hotel Mercure Wien Zentrum,2026-10-30,2026-11-01,151,166,9.9,Super.com,Vio.com,yes,yes
+Vienna,Hyatt Regency Vienna,2026-10-30,2026-11-01,156,168,7.7,Hyatt Regency Vienna,Stayforlong.com,yes,yes
+Vienna,Le Méridien Vienna,2026-10-30,2026-11-01,282,249,-11.7,Amimir.com,Traveluro,yes,yes
+Vienna,Leonardo Hotel Vienna Hauptbahnhof,2026-10-30,2026-11-01,106,105,-0.9,Super.com,Vio.com,yes,yes
+Vienna,Lindner Hotel Vienna Am Belvedere - JDV by Hyatt,2026-10-30,2026-11-01,143,141,-1.4,Trip.com,Super.com,no,yes
+Vienna,Meliá Vienna,2026-10-30,2026-11-01,187,147,-21.4,Agoda,Super.com,yes,yes
+Vienna,Mercure Grand Hotel Biedermeier Wien,2026-10-30,2026-11-01,122,139,13.9,Super.com,dealbase.com,yes,yes
+Vienna,Novotel Wien Hauptbahnhof,2026-10-30,2026-11-01,115,113,-1.7,Super.com,Vio.com,yes,no
+Vienna,PLAZA INN Amedia Wien,2026-10-30,2026-11-01,76,98,28.9,Evendo,Expedia.it,no,no
+Vienna,Renaissance Vienna Schönbrunn Hotel,2026-10-30,2026-11-01,83,87,4.8,Super.com,Booking.com,no,no
+Vienna,"Steigenberger lcon Herrenhof, Wien",2026-10-30,2026-11-01,202,226,11.9,Super.com,Steigenberger Hotel Herrenhof,yes,yes
+Vienna,Urban Boutique Hotel Vienna,2026-10-30,2026-11-01,141,123,-12.8,Urban Boutique Hotel Vienna,Urban Boutique Hotel Vienna,yes,yes
+Vienna,Vienna Marriott Hotel,2026-10-30,2026-11-01,251,250,-0.4,Expedia.com,HomeToGo,no,no
+Vienna,voco Vienna Prater by IHG,2026-10-30,2026-11-01,106,105,-0.9,Super.com,Stayforlong.com,yes,yes

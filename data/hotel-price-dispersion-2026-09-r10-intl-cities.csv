@@ -1,0 +1,438 @@
+city,region,hotel,segment,sites_listed,going_rate_usd,cheapest_usd,cheapest_site,discount_pct,verdict,cheaper_room_name_matched,cheapest_named_a_room,fees_unverified,check_in,check_out,free_cancellation_elsewhere_same_or_less
+Abu Dhabi,APAC,Bab Al Nojoum Hudayriyat Villas,independent,12,1112,784,Trip.com,29.5,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Abu Dhabi,APAC,Corniche Hotel Abu Dhabi,independent,10,393,309,Super.com,21.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Abu Dhabi,APAC,ERTH Abu Dhabi Hotel,independent,12,924,803,Super.com,13.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Abu Dhabi,APAC,Emirates Palace Mandarin Oriental,chain,12,1198,639,Super.com,46.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Abu Dhabi,APAC,Emirates Plaza Hotel,independent,9,322,322,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Abu Dhabi,APAC,"Fairmont Bab Al Bahr, Abu Dhabi",chain,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Abu Dhabi,APAC,Hilton Abu Dhabi Yas Island,chain,12,664,603,Hilton Abu Dhabi Yas Island,9.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Abu Dhabi,APAC,InterContinental Residences Abu Dhabi by IHG,chain,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Abu Dhabi,APAC,Khalidiya Palace Rayhaan by Rotana,independent,12,538,444,Amimir.com,17.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Abu Dhabi,APAC,Novotel Abu Dhabi Al Bustan,chain,12,749,677,Super.com,9.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Abu Dhabi,APAC,Oasis Villa Stay By Lunar,independent,3,65,65,Hostelworld,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Abu Dhabi,APAC,Rixos Marina Abu Dhabi,independent,12,420,372,trivago DEALS,11.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Abu Dhabi,APAC,Rosewood Abu Dhabi,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Abu Dhabi,APAC,Sweet Home Hostel,independent,2,33,33,Hostelworld,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Abu Dhabi,APAC,"The Ritz-Carlton Abu Dhabi, Grand Canal",chain,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Abu Dhabi,APAC,The St. Regis Abu Dhabi,chain,12,1243,1184,The St. Regis Abu Dhabi,4.7,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Abu Dhabi,APAC,"The St. Regis Saadiyat Island Resort, Abu Dhabi",chain,12,1078,733,Traveluro,32.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Abu Dhabi,APAC,"The WB Abu Dhabi, Curio Collection by Hilton",chain,12,565,513,"The WB Abu Dhabi, Curio Collection by Hilton",9.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Auckland,APAC,Abaco On Jervois,independent,12,84,69,Agoda,17.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Auckland,APAC,Bavaria Boutique Hotel,independent,12,105,87,Agoda,17.1,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Auckland,APAC,CitiRooms Auckland,independent,2,58,58,CitiRooms Auckland,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Auckland,APAC,"Cordis, Auckland",independent,12,124,93,Super.com,25.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Auckland,APAC,DoubleTree by Hilton Auckland Karaka,chain,12,115,114,BusinessHotels.com,0.9,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Auckland,APAC,Four Points by Sheraton Auckland,chain,12,172,149,Four Points by Sheraton Auckland,13.4,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Auckland,APAC,Grand Millennium Auckland,independent,12,173,137,Super.com,20.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Auckland,APAC,Hilton Auckland,chain,12,239,239,Hilton Auckland,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Auckland,APAC,Horizon by SkyCity,independent,12,194,102,Super.com,47.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Auckland,APAC,InterContinental Auckland by IHG,chain,12,310,308,Super.com,0.6,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Auckland,APAC,JO&JOE Auckland,chain,12,75,46,Bluepillow.com,38.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Auckland,APAC,Sofitel Auckland Viaduct Harbour,chain,12,310,294,Bluepillow.com,5.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Auckland,APAC,Sudima Auckland City,independent,12,142,108,Super.com,23.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Auckland,APAC,Takapuna Beach Holiday Park,independent,1,62,62,Takapuna Beach Holiday Park,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Auckland,APAC,The Chancellor on Hobson,independent,12,147,96,Super.com,34.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Auckland,APAC,The Grand by SkyCity,independent,12,191,107,Super.com,44.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bogota,AM,100 Luxury suites,independent,11,116,88,Evendo,24.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Bogota,AM,Bh Parque 93,independent,12,79,54,Super.com,31.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Bogota,AM,Bogotá Marriott Hotel,chain,12,419,162,TravelUp,61.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bogota,AM,Bogotá Plaza Hotel,independent,12,91,66,Super.com,27.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Bogota,AM,Casa Dann Carlton Hotel & Spa,independent,11,129,110,Traveluro,14.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Bogota,AM,Courtyard by Marriott Bogota Airport,chain,12,125,76,Traveluro,39.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Bogota,AM,Delgadillo Hotel By Socialtel,independent,12,46,24,Vio.com,47.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Bogota,AM,ESTELAR La Fontana Hotel,independent,12,113,87,Super.com,23.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Bogota,AM,ESTELAR Parque de la 93 Hotel,independent,12,188,114,Super.com,39.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bogota,AM,GHL Bioxury Hotel,independent,5,205,142,Evendo,30.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Bogota,AM,Hilton Bogota,chain,12,266,223,Hilton Bogota,16.2,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Bogota,AM,Hotel Coco,independent,12,166,95,Super.com,42.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Bogota,AM,Hotel Le Manoir Bogota,independent,11,56,46,Hoteles.com,17.9,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,yes
+Bogota,AM,Sheraton Bogota Hotel,chain,12,197,109,Traveluro,44.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bogota,AM,Sofitel Bogota Victoria Regia,chain,12,405,321,Catchit.com,20.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bogota,AM,Sonesta Hotel Bogota,independent,12,129,98,trivago DEALS,24.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Bogota,AM,The Click Clack Hotel Bogotá,independent,12,168,115,Super.com,31.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Bogota,AM,W Bogota,chain,12,423,277,Traveluro,34.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bologna,EU,Art Hotel Commercianti,independent,12,278,241,Traveluro,13.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bologna,EU,Best Western City Hotel,chain,12,140,119,Vio.com,15.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Bologna,EU,Best Western Plus Tower Hotel Bologna,chain,12,102,88,Vio.com,13.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Bologna,EU,Bibliò Rooms - Guesthouse Bologna,independent,5,116,116,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Bologna,EU,Boutique Hotel Il Guercino,independent,12,126,84,Traveluro,33.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bologna,EU,Gregorini Bingham - Art Luxury Suites,independent,1,189,189,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Bologna,EU,Hotel Internazionale,independent,12,157,142,Vio.com,9.6,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Bologna,EU,Hotel Metropolitan,independent,12,175,158,Vio.com,9.7,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Bologna,EU,Hotel NH Bologna Villanova,independent,12,80,66,Super.com,17.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Bologna,EU,Hotel Panorama,independent,12,85,60,Priceline,29.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bologna,EU,Hotel Porta San Mamolo,independent,12,232,202,Agoda,12.9,UNVERIFIED_LOWER,no,yes,yes,2026-11-03,2026-11-05,no
+Bologna,EU,Hotel San Donato - Bologna centro,independent,12,152,95,Hotel San Donato - Bologna centro,37.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bologna,EU,Hotel Savoia Regency,independent,12,148,148,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Bologna,EU,Residence le Porte,independent,8,195,183,Super.com,6.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bologna,EU,Royal Central Room,independent,12,112,96,Agoda,14.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Bologna,EU,Savhotel Aemilia Bologna,independent,12,165,150,Vio.com,9.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bologna,EU,Savhotel Fiera Bologna,independent,12,118,107,Evendo,9.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bologna,EU,The Social Hub Bologna,independent,11,134,115,Agoda,14.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Brisbane,APAC,CLLIX Brisbane Skytower Apartments,independent,12,159,143,CLLIX Brisbane Skytower Apartments,10.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,City Star Lodge,independent,12,108,96,Super.com,11.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,Courtyard by Marriott Brisbane South Bank,chain,12,161,160,Trip.com,0.6,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,Hyatt Regency Brisbane,chain,12,196,181,Hyatt Regency Brisbane,7.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,K2 Brisbane,independent,12,106,73,Hotels.com,31.1,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,LyLo Brisbane,independent,12,140,94,Booking.com,32.9,UNVERIFIED_LOWER,no,yes,yes,2026-11-03,2026-11-05,no
+Brisbane,APAC,Mercure Brisbane Spring Hill,chain,12,176,153,Pilot,13.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Brisbane,APAC,"Meriton Suites Adelaide Street, Brisbane",independent,12,115,113,"Meriton Suites Adelaide Street, Brisbane",1.7,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,"Meriton Suites Herschel Street, Brisbane",independent,12,143,122,"Meriton Suites Herschel Street, Brisbane",14.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Brisbane,APAC,Opera Apartments South Bank,independent,9,185,158,Agoda,14.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Brisbane,APAC,Point Hotel,independent,12,154,92,Super.com,40.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,Roamer Brisbane,independent,12,149,98,Booking.com,34.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,Royal On The Park Brisbane,independent,12,183,142,Super.com,22.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,Spicers Balfour Brisbane,independent,12,252,199,Super.com,21.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,Swiss-Belhotel Brisbane,independent,12,118,102,klook,13.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Brisbane,APAC,The Inchcolm by Ode Hotels,independent,12,202,167,Super.com,17.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Brisbane,APAC,The Manor Apartment Hotel,independent,12,169,165,Hotels.com,2.4,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Brisbane,APAC,Treasury Hotel Brisbane,independent,12,197,182,Vio.com,7.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Doha,APAC,"Andaz Doha, by Hyatt",chain,12,224,132,Reserving,41.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Doha,APAC,Concorde Hotel Doha,independent,10,69,64,Agoda,7.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Doha,APAC,DoubleTree by Hilton Doha - Old Town,chain,12,146,146,DoubleTree by Hilton Doha - Old Town,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Doha,APAC,Fairmont Doha,chain,12,343,249,Vio.com,27.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Doha,APAC,Four Points by Sheraton Doha,chain,12,110,92,Four Points by Sheraton Doha,16.4,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Doha,APAC,Four Seasons Hotel Doha,chain,12,373,360,Bluepillow.com,3.5,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Doha,APAC,Kingsgate Hotel Doha by Millennium Hotels,independent,12,40,32,Super.com,20.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Doha,APAC,"Marriott Executive Apartments Doha, Le Mirage City Walk",chain,11,151,127,"Marriott Executive Apartments Doha, Le Mirage City Walk",15.9,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Doha,APAC,Premier Inn Doha Airport Hotel,chain,12,63,56,Vio.com,11.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Doha,APAC,Ramada by Wyndham Doha Old Town,chain,12,69,63,Bluepillow.com,8.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Doha,APAC,Souq Al Wakra Hotel Qatar by Tivoli,independent,12,143,112,Super.com,21.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Doha,APAC,The Chedi Katara Hotel & Resort,independent,12,365,263,Super.com,27.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Doha,APAC,"The Ritz-Carlton, Doha",chain,12,420,353,"The Ritz-Carlton, Doha",16.0,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Doha,APAC,The St. Regis Doha,chain,12,351,344,Expedia.mx,2.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Doha,APAC,The Westin Doha Hotel & Spa,chain,12,178,112,Evendo,37.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Doha,APAC,Waldorf Astoria Doha Lusail,chain,12,341,286,Waldorf Astoria Doha Lusail,16.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Doha,APAC,Waldorf Astoria Doha West Bay,chain,12,227,191,Waldorf Astoria Doha West Bay,15.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Doha,APAC,ibis Doha,chain,12,68,67,Catchit.com,1.5,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Frankfurt,EU,Boutique Kaiser - Hotel & Apartments,independent,12,85,61,Traveluro,28.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Frankfurt,EU,Delta Hotels by Marriott Frankfurt Offenbach,chain,12,144,124,Evendo,13.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Frankfurt,EU,Frankfurt Marriott Hotel,chain,12,190,190,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Frankfurt,EU,Grand Hotel Downtown,independent,12,59,51,Agoda,13.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Frankfurt,EU,Hampton by Hilton Frankfurt City Centre East,chain,12,133,111,Traveluro,16.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Frankfurt,EU,Holiday Inn Express Frankfurt - Messe by IHG,chain,12,116,98,Vio.com,15.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Frankfurt,EU,Holiday Inn Express Offenbach by IHG,chain,12,94,84,Vio.com,10.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Frankfurt,EU,Hotel Topas,independent,11,64,60,Bluepillow.com,6.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Frankfurt,EU,Leonardo Royal Hotel Frankfurt,chain,12,103,95,Vio.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Frankfurt,EU,Little Paris Hotel,independent,12,72,58,Evendo,19.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Frankfurt,EU,Main Plaza | Suite Tower,independent,12,142,134,Hotels.com,5.6,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Frankfurt,EU,Manhattan Hotel,independent,12,68,57,Evendo,16.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Frankfurt,EU,Numa Frankfurt Bloc,independent,7,94,94,Agoda,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Frankfurt,EU,STAYERY Frankfurt Sachsenhausen,independent,12,108,101,Expedia.com,6.5,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,yes
+Frankfurt,EU,Scandic Frankfurt Museumsufer,independent,12,135,117,Super.com,13.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Frankfurt,EU,Steigenberger Frankfurter Hof,independent,12,311,250,trivago DEALS,19.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Frankfurt,EU,ibis Frankfurt Centrum,chain,12,151,70,Kurz-mal-weg.de,53.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Frankfurt,EU,lyf East Frankfurt,independent,12,109,107,Agoda,1.8,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Geneva,EU,Aparthotel Adagio Genève Mont-Blanc,independent,12,208,194,Traveluro,6.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Geneva,EU,Green Marmot Capsule Hotel Genève,independent,7,94,94,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Geneva,EU,Hotel D Geneva,independent,8,262,203,Hotel D Geneva,22.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Geneva,EU,Hotel Geneva By Fassbind,independent,12,159,148,Agoda,6.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Geneva,EU,Hôtel Bristol Genève,independent,12,598,389,goseek.com,34.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Geneva,EU,Hôtel Central,independent,9,111,111,Agoda,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Geneva,EU,Hôtel Cornavin,independent,12,228,197,Vio.com,13.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Geneva,EU,Hôtel Eastwest by Malone,independent,12,230,187,Vio.com,18.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Geneva,EU,Hôtel Pax,independent,12,162,162,Agoda,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Geneva,EU,Hôtel Rousseau,independent,12,178,160,Agoda,10.1,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Geneva,EU,Hôtel de Genève,independent,12,164,158,Priceline,3.7,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Geneva,EU,Hôtel des Alpes,independent,12,186,163,Vio.com,12.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Geneva,EU,MEININGER Hotel Genève Centre Charmilles,independent,12,97,92,MEININGER Hotel Genève Centre Charmilles,5.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Geneva,EU,Novotel Genève Centre,chain,12,271,199,Amimir.com,26.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Geneva,EU,Ruby Claire Hotel Geneva by IHG,independent,12,268,198,Super.com,26.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Geneva,EU,Warwick Geneva,independent,12,339,251,Agoda,26.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Geneva,EU,ibis Genève Petit Lancy,chain,12,124,106,Trip.com,14.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Geneva,EU,ibis Styles Genève Carouge,chain,12,214,205,Traveluro,4.2,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Glasgow,EU,AC Hotel Glasgow,chain,12,130,130,Expedia.ca,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Glasgow,EU,Boutique 50,independent,12,184,131,Boutique 50,28.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Glasgow,EU,House of Gods - Glasgow,independent,12,155,149,Reservation Day,3.9,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Glasgow,EU,Leonardo Royal Hotel Glasgow,chain,12,145,109,momondo.com,24.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Glasgow,EU,Millennium Hotel Glasgow,independent,12,107,81,Super.com,24.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Glasgow,EU,Novotel Glasgow Centre,chain,12,108,88,Traveluro,18.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Glasgow,EU,Number 10 Hotel,independent,12,86,71,Agoda,17.4,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Glasgow,EU,Premier Inn Glasgow City Centre (St. Enoch Square) hotel,chain,12,70,66,Premierinn.com,5.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Glasgow,EU,Revolver Glasgow,independent,12,79,61,Revolver Glasgow,22.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Glasgow,EU,Royal West End Hotel,independent,12,111,65,upps,41.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Glasgow,EU,Sherbrooke Castle Hotel Glasgow,independent,12,130,122,Super.com,6.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Glasgow,EU,The Argyll Hotel,independent,11,96,83,Trip.com,13.5,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Glasgow,EU,The Belhaven Hotel,independent,9,120,84,Super.com,30.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Glasgow,EU,The Social Hub Glasgow,independent,12,84,79,Hotels.com,6.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Glasgow,EU,The Z Hotel Glasgow,independent,12,90,85,Super.com,5.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Glasgow,EU,Travelodge Glasgow Queen Street,chain,12,136,71,travelodge.co.uk,47.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Glasgow,EU,YOTEL Glasgow,chain,12,85,71,Super.com,16.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Glasgow,EU,ibis Glasgow City Centre - Sauchiehall St.,chain,12,88,87,Vio.com,1.1,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Hamburg,EU,CAB20,independent,12,61,61,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Hamburg,EU,Courtyard by Marriott Hamburg City,chain,12,148,145,Traveluro,2.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Hamburg,EU,Fairmont Hotel Vier Jahreszeiten,chain,12,624,551,Amimir.com,11.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Hamburg,EU,"Holiday Inn - the niu, Yen Hamburg City, an IHG Hotel",chain,12,128,111,Vio.com,13.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Hamburg,EU,"Hotel Atlantic Hamburg, Autograph Collection",chain,9,336,305,Billabook.com,9.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Hamburg,EU,IntercityHotel Hamburg Dammtor,independent,12,132,94,Super.com,28.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Hamburg,EU,IntercityHotel Hamburg-Barmbek,independent,12,114,82,Agoda,28.1,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Hamburg,EU,MEININGER Hotel Hamburg City Center,independent,12,43,40,MEININGER Hotel Hamburg City Center,7.0,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,yes
+Hamburg,EU,NYX Hotel Hamburg,independent,12,168,158,Vio.com,6.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Hamburg,EU,Novotel Hamburg Central Station,chain,12,162,142,Stayforlong.com,12.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hamburg,EU,PIERDREI Hotel HafenCity Hamburg,independent,12,274,155,PIERDREI Hotel HafenCity Hamburg,43.4,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Hamburg,EU,Premier Inn Hamburg City (Zentrum) Hotel,chain,12,144,130,Super.com,9.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hamburg,EU,Premier Inn Hamburg City Alster Hotel,chain,12,154,109,Super.com,29.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Hamburg,EU,Premier Inn Hamburg City Millerntor Hotel,chain,12,96,83,Super.com,13.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hamburg,EU,Premier Inn Hamburg St. Pauli Hotel,chain,11,109,101,Super.com,7.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Hamburg,EU,"Prize by Radisson, Hamburg City",chain,12,112,96,Radissonhotels.com,14.3,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Hamburg,EU,Ruby Lotti Hotel Hamburg by IHG,independent,12,194,154,Super.com,20.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Hamburg,EU,The Nikolai Hotel Hamburg - Leonardo Limited Edition,chain,12,233,222,hutchgo (Hutchison Travel Limited),4.7,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Ho Chi Minh City,APAC,AU LAC LEGEND HOTEL,independent,12,78,67,Priceline,14.1,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Ho Chi Minh City,APAC,Adora Art Hotel,independent,12,199,62,Priceline,68.8,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Ho Chi Minh City,APAC,Alagon Saigon,independent,12,107,60,hutchgo (Hutchison Travel Limited),43.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Ho Chi Minh City,APAC,Eastin Grand Hotel Saigon,independent,12,75,64,Priceline,14.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Ho Chi Minh City,APAC,Fusion Suites Sai Gon,independent,12,137,103,Traveluro,24.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Ho Chi Minh City,APAC,Joi Boutique Bãi Trước,independent,10,9,9,Agoda,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Ho Chi Minh City,APAC,Joi Home The Hidden Villa,independent,7,8,8,Agoda,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Ho Chi Minh City,APAC,LUNA HOTEL,independent,6,10,10,HomeToGo,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Ho Chi Minh City,APAC,La Siesta Premium Saigon,independent,12,174,164,Bluepillow.ie,5.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Ho Chi Minh City,APAC,La Vela Saigon Hotel,independent,12,140,118,Agoda,15.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Ho Chi Minh City,APAC,Mai House Saigon Hotel,independent,12,192,147,Mai House Saigon Hotel,23.4,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Ho Chi Minh City,APAC,Mia Saigon - Luxury Boutique Hotel,independent,12,227,183,klook,19.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Ho Chi Minh City,APAC,SAZI RESIN HOTEL - Free Nails/Hair,independent,12,42,38,Priceline,9.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Ho Chi Minh City,APAC,Saigon Prince Hotel,chain,12,88,68,KAYAK.com,22.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Ho Chi Minh City,APAC,The Chill Suites - City Center,independent,7,30,29,Priceline,3.3,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Ho Chi Minh City,APAC,The Concept Hotel HCMC- District 1,independent,12,279,40,Bluepillow.com,85.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Ho Chi Minh City,APAC,The Odys Boutique Hotel,independent,12,80,66,Priceline,17.5,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Ho Chi Minh City,APAC,"Vinpearl Landmark 81, Autograph Collection",chain,12,275,267,Expedia.de,2.9,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Kuala Lumpur,APAC,Banyan Tree Kuala Lumpur,chain,12,294,241,Kiwi.com,18.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kuala Lumpur,APAC,"Berjaya Times Square Hotel, Kuala Lumpur",independent,12,89,73,klook,18.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Kuala Lumpur,APAC,Ceylonz KLCC,independent,12,43,33,eDreams,23.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Kuala Lumpur,APAC,Dorsett Kuala Lumpur,independent,12,70,66,Agoda,5.7,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,yes
+Kuala Lumpur,APAC,DoubleTree by Hilton Kuala Lumpur,chain,12,88,80,Catchit.com,9.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kuala Lumpur,APAC,Hilton Garden Inn Kuala Lumpur Jalan Tuanku Abdul Rahman South,chain,12,37,34,TravelUp,8.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kuala Lumpur,APAC,Hotel 28 Kuala Lumpur,independent,2,16,14,Hotel 28 Kuala Lumpur,12.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Kuala Lumpur,APAC,Impiana KLCC Hotel,independent,5,71,71,Agoda,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Kuala Lumpur,APAC,JW Marriott Hotel Kuala Lumpur,chain,12,169,141,Clicktrip.com,16.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Kuala Lumpur,APAC,"Mandarin Oriental, Kuala Lumpur",chain,10,213,187,Billabook.com,12.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Kuala Lumpur,APAC,"Oasia Suites Kuala Lumpur, Malaysia by Far East Hospitality",independent,12,54,40,Priceline,25.9,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Kuala Lumpur,APAC,STEG Kuala Lumpur (Transitioning to Boutech Hotel KL Chow Kit),independent,12,40,40,klook,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Kuala Lumpur,APAC,Shangri-La Kuala Lumpur,chain,12,129,106,klook,17.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Kuala Lumpur,APAC,Sleeping Lion Suites,independent,12,51,41,klook,19.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kuala Lumpur,APAC,"The Ritz-Carlton, Kuala Lumpur",chain,12,187,183,Clicktrip.com,2.1,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Kuala Lumpur,APAC,The platinum Suites KLCC by Moonlight,independent,12,54,54,The platinum Suites KLCC by Moonlight,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Kuala Lumpur,APAC,Travelodge Kuala Lumpur City Centre,chain,12,27,27,Travelodge Kuala Lumpur City Centre,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Kuala Lumpur,APAC,Upper View Regalia Hotel,independent,12,47,36,Booking.com,23.4,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Lima,AM,Aloft by Marriott Lima Miraflores,chain,12,196,152,Reserving,22.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lima,AM,Casa Andina Premium Golf Los Incas,independent,12,232,115,Super.com,50.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lima,AM,Casa Andina Premium Miraflores,independent,12,274,156,Agoda,43.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Lima,AM,Casa Andina Standard Benavides,independent,12,111,69,Super.com,37.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lima,AM,Country Club Lima Hotel,independent,12,571,384,Super.com,32.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lima,AM,Dazzler San Isidro by Wyndham,chain,12,109,63,Super.com,42.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lima,AM,Dazzler by Wyndham Lima Miraflores,chain,12,185,76,Agoda,58.9,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Lima,AM,Decameron El Pueblo,independent,12,216,182,trivago DEALS,15.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lima,AM,Holiday Inn Express Lima San Isidro by IHG,chain,12,180,115,Billabook.com,36.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Lima,AM,Hotel Costa del Sol Wyndham Lima Aeropuerto,chain,8,128,87,Billabook.com,32.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Lima,AM,Meliá Lima,independent,12,125,63,Super.com,49.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lima,AM,"Miraflores Park, A Belmond Hotel, Lima",independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Lima,AM,Naia Hotel Miraflores,independent,12,62,33,Naia Hotel Miraflores,46.8,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Lima,AM,Pullman Lima Miraflores,chain,12,327,308,trivago DEALS,5.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Lima,AM,Radisson Hotel Decapolis Miraflores,chain,12,148,109,Billabook.com,26.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lima,AM,Radisson RED Miraflores,chain,12,103,66,TravelUp,35.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lima,AM,"SOUMA Lima, Vignette Collection by IHG",independent,12,392,325,"SOUMA Lima, Vignette Collection by IHG",17.1,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Lyon,EU,Boscolo Lyon Hotel & Spa,independent,12,238,191,Super.com,19.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lyon,EU,"Cour des Loges Lyon, A Radisson Collection Hotel",chain,12,259,234,Radissonhotels.com,9.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Lyon,EU,Fourvière Hotel,independent,12,148,130,Agoda,12.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lyon,EU,Hotel de l'Abbaye,independent,12,181,168,Vio.com,7.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lyon,EU,Hôtel Le Roosevelt Lyon,independent,12,167,157,Hotels.com,6.0,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Lyon,EU,Hôtel Lyon Métropole by Arteloge,independent,12,159,124,Hôtel Lyon Metropole by Arteloge,22.0,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Lyon,EU,Hôtel des Artistes,independent,12,178,152,Hôtel des Artistes,14.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lyon,EU,Hôtel des Remparts,independent,12,104,96,Super.com,7.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lyon,EU,InterContinental Lyon - Hotel Dieu by IHG,chain,12,421,402,InterContinental Lyon - Hotel Dieu by IHG,4.5,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Lyon,EU,Lagrange apart'HOTEL - Lyon Lumière,independent,12,96,80,Vio.com,16.7,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,yes
+Lyon,EU,MEININGER Hotel Lyon Centre Berthelot,independent,11,66,52,MEININGER Hotel Lyon Centre Berthelot,21.2,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,yes
+Lyon,EU,MiHotel - Nos bureaux / dépose bagages,independent,10,213,213,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Lyon,EU,Our Rooms in City - Bed and breakfast Lyon,independent,2,159,159,Booking.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Lyon,EU,Pullman Lyon,chain,12,307,210,Trip.com,31.6,UNVERIFIED_LOWER,no,yes,yes,2026-11-03,2026-11-05,yes
+Lyon,EU,"Radisson Blu Hotel, Lyon",chain,12,202,171,Radissonhotels.com,15.3,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Lyon,EU,The People Lyon,independent,12,86,49,Booking.com,43.0,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Lyon,EU,VILLA MAÏA,independent,12,431,362,Super.com,16.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lyon,EU,ibis budget Lyon Confluence,chain,12,98,94,ibis budget Lyon Confluence,4.1,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Manchester,EU,Crowne Plaza Manchester City Centre,chain,12,232,173,Vio.com,25.4,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Manchester,EU,Dakota Hotel Manchester,independent,12,245,227,Vio.com,7.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Manchester,EU,Heathcote Hotel Manchester,independent,12,138,128,Super.com,7.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Manchester,EU,"Holiday Inn - the niu, Loom Manchester North, an IHG Hotel",chain,12,114,102,Kiwi.com,10.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Manchester,EU,Kula Manchester - City Centre,independent,2,154,154,Bluepillow.ca,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Manchester,EU,Manchester Portland By Sunday,independent,3,162,162,Catchit.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Manchester,EU,Parkview Residence,independent,12,51,37,Super.com,27.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Manchester,EU,Premier Inn Manchester (Heaton Park) hotel,chain,3,74,74,Premierinn.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Manchester,EU,Premier Inn Manchester City Centre (Northern Quarter) hotel,chain,9,124,117,Hotels.com,5.6,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Manchester,EU,Premier Inn Manchester City Centre West hotel,chain,6,120,104,Super.com,13.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Manchester,EU,Travelodge Manchester Central Arena,chain,12,64,62,travelodge.co.uk,3.1,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Manchester,EU,Travelodge Manchester Piccadilly,chain,2,120,120,travelodge.co.uk,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Manchester,EU,Ville Hotel,independent,2,130,130,Ville Hotel,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Manchester,EU,"Whitworth Locke, Civic Quarter",independent,12,136,103,Super.com,24.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Manchester,EU,"Wilde Aparthotels, Manchester, City Centre",independent,12,217,124,Super.com,42.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Manchester,EU,YHA Manchester Hostel,independent,1,54,54,Bluepillow.com,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Manchester,EU,YOTEL Manchester Deansgate,chain,12,136,112,Super.com,17.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Manchester,EU,a&o Manchester City Centre,independent,12,130,102,aohostels.com,21.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Manila,APAC,Airo Suites Makati,independent,9,14,14,Agoda,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Manila,APAC,Bayview Park Hotel Manila,independent,12,34,31,klook,8.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Manila,APAC,City Garden GRAND Hotel Makati,independent,12,70,62,klook,11.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Manila,APAC,City Garden Hotel Makati,independent,12,49,42,klook,14.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Manila,APAC,City Garden Suites Manila,independent,12,44,39,Agoda,11.4,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Manila,APAC,Coro Hotel,independent,12,59,56,Agoda,5.1,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Manila,APAC,Diamond Hotel Philippines,independent,12,138,89,Agoda,35.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Manila,APAC,Hotel H2O,independent,12,83,46,Trip.com,44.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Manila,APAC,I'M Hotel Makati,independent,12,66,64,Trip.com,3.0,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Manila,APAC,Lub d Manila Makati,independent,12,23,20,Agoda,13.0,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Manila,APAC,New Coast Hotel Manila,independent,12,95,86,dealbase.com,9.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Manila,APAC,Ramada by Wyndham Manila Central,chain,12,56,41,klook,26.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Manila,APAC,Red Planet Manila Bay,independent,12,33,31,klook,6.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Manila,APAC,Selah Pods Hotel,independent,8,25,25,klook,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Manila,APAC,Swiss-Belhotel Blulane,independent,12,30,24,klook,20.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Manila,APAC,The Bayleaf,independent,12,63,48,klook,23.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Manila,APAC,The Manila Hotel,independent,12,132,110,Bluepillow.de,16.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Manila,APAC,Winford Resort and Casino Manila,independent,12,80,73,klook,8.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Mumbai,APAC,Abode Bombay,independent,12,68,63,Abode Bombay,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,Fariyas Hotel Mumbai,independent,12,113,106,Hotels.com,6.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,"Grand Hotel, Mumbai - Ballard Estate, Fort",independent,11,105,103,Expedia.mx,1.9,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Mumbai,APAC,Hotel Orient Regency,independent,12,57,42,HomeToGo,26.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,Hotel Sahara Star,independent,12,137,85,Vio.com,38.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,"ITC Grand Central, a Luxury Collection Hotel, Mumbai",chain,12,333,300,ITC Grand Central A Luxury Collection Hotel,9.9,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,InterContinental Marine Drive-Mumbai by IHG,chain,12,278,242,Vio.com,12.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Mumbai,APAC,"President, Mumbai - IHCL SeleQtions",independent,12,250,199,Super.com,20.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,Sea Green Hotel,independent,12,78,69,Sea Green Hotel,11.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,"Taj Lands End, Mumbai",independent,12,325,260,Super.com,20.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,"Taj Mahal Tower, Mumbai",independent,12,395,303,Super.com,23.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,The Ambassador,independent,12,124,119,Hotels.com,4.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,"The Oberoi, Mumbai",independent,12,356,314,Vio.com,11.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Mumbai,APAC,"The Taj Mahal Palace, Mumbai",independent,12,432,342,klook,20.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Mumbai,APAC,"Trident, Nariman Point, Mumbai",independent,12,289,214,Super.com,26.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+New Delhi,APAC,Eros Hotel New Delhi Nehru Place,independent,12,195,174,TravelUp,10.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+New Delhi,APAC,"Holiday Inn New Delhi Int'L Airport, an IHG Hotel",chain,12,272,256,6E Hotels,5.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+New Delhi,APAC,Hotel Ajanta - Free Airport Pick Up Service,independent,12,49,33,Bag2Bag Hotels and Homes,32.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+New Delhi,APAC,Hotel Golden Oasis Delhi,independent,10,17,14,Booking.com,17.6,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+New Delhi,APAC,Hotel The Tark,independent,5,11,11,Agoda,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+New Delhi,APAC,"ITC Maurya, a Luxury Collection Hotel, New Delhi",chain,12,305,290,ITC Maurya A Luxury Collection Hotel,4.9,PARITY,no,no,no,2026-11-03,2026-11-05,no
+New Delhi,APAC,"NUO by jüSTa, Greater Kailash",independent,12,76,68,Vio.com,10.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+New Delhi,APAC,Pullman New Delhi Aerocity,chain,12,182,182,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+New Delhi,APAC,"Radisson Blu Plaza Hotel, Delhi Airport",chain,12,221,196,Radissonhotels.com,11.3,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+New Delhi,APAC,"Taj Palace, New Delhi",independent,12,276,231,Super.com,16.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+New Delhi,APAC,"The Connaught, New Delhi - IHCL SeleQtions",independent,6,228,227,Qantas Hotels,0.4,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+New Delhi,APAC,The Imperial New Delhi,independent,12,778,448,Vio.com,42.4,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+New Delhi,APAC,The Lalit New Delhi,independent,7,160,158,klook,1.2,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+New Delhi,APAC,The Leena International- by Haveliya Hotels,independent,5,38,38,Agoda,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+New Delhi,APAC,The Park,independent,12,106,94,TravelUp,11.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+New Delhi,APAC,"The Roseate, New Delhi",independent,10,239,215,Super.com,10.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+New Delhi,APAC,"Vivanta New Delhi, Dwarka",independent,12,135,124,Super.com,8.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+New Delhi,APAC,ibis New Delhi Aerocity,chain,12,209,175,Vio.com,16.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Ottawa,AM,Cartier Place Suite Hotel,independent,12,143,115,Vio.com,19.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Ottawa,AM,Château Cartier Hotel Gatineau & Resort - Ottawa,independent,12,119,116,Traveluro,2.5,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Ottawa,AM,Courtyard by Marriott Ottawa East,chain,11,172,161,Qantas Hotels,6.4,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Ottawa,AM,Fairmont Château Laurier,chain,12,461,460,Super.com,0.2,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Ottawa,AM,Hampton Inn & Suites Ottawa West,chain,12,121,121,Hoteis.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Ottawa,AM,Hard Rock Hotel & Casino Ottawa,chain,12,169,165,Vio.com,2.4,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Ottawa,AM,Hotel Chateauneuf Plaza,independent,4,78,66,trivago DEALS,15.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Ottawa,AM,Hotel V,independent,12,119,95,Super.com,20.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Ottawa,AM,"Le Parc Gatineau, Tapestry Collection by Hilton",chain,12,116,107,KAYAK.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Ottawa,AM,McGee's Inn,independent,8,158,132,McGee's Inn,16.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Ottawa,AM,Moxy Ottawa Downtown,chain,12,198,198,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Ottawa,AM,Sandman Signature Ottawa Airport Hotel,independent,12,174,116,Super.com,33.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Ottawa,AM,The Business Inn & Suites,independent,12,95,87,Super.com,8.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Ottawa,AM,WelcomINNS Ottawa,independent,12,87,76,Super.com,12.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Ottawa,AM,Xenios Suites,independent,10,120,113,Hotels.com,5.8,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Perth,APAC,Alex Hotel,independent,12,190,139,Super.com,26.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Perth,APAC,Crowne Plaza Perth by IHG,chain,12,226,169,Vio.com,25.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Perth,APAC,DoubleTree by Hilton Perth Waterfront,chain,12,256,236,DoubleTree by Hilton Perth Waterfront,7.8,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Perth,APAC,Duxton Hotel Perth,independent,12,216,164,Super.com,24.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Perth,APAC,East Perth Suites Hotel,independent,12,106,95,Agoda,10.4,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Perth,APAC,InterContinental Perth City Centre by IHG,chain,12,274,213,Vio.com,22.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Perth,APAC,Joondalup Resort,independent,12,119,111,Agoda,6.7,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Perth,APAC,Kangaroo Inn,independent,12,119,71,Super.com,40.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Perth,APAC,Ocean Beach Hotel,independent,12,112,100,Super.com,10.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Perth,APAC,Quest Kings Park,independent,12,136,127,Super.com,6.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Perth,APAC,Rendezvous Hotel Perth Scarborough,independent,12,141,122,Qantas Hotels,13.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Perth,APAC,Riverview Hotel,independent,5,187,124,Super.com,33.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Perth,APAC,The Great Southern Hotel Perth,independent,12,104,81,Priceline,22.1,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Perth,APAC,The Local Hotel,independent,12,100,91,Super.com,9.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Perth,APAC,The Marina Hotel,independent,12,139,115,Agoda,17.3,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Perth,APAC,The Melbourne Hotel,independent,12,161,154,Hotels.com,4.3,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Perth,APAC,"The Ritz-Carlton, Perth",chain,12,384,383,Wego,0.3,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Perth,APAC,Wonil Hotel Perth - Handwritten Collection,independent,12,195,158,Super.com,19.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Sao Paulo,AM,Canopy by Hilton Sao Paulo Jardins,chain,12,316,249,TravelUp,21.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Sao Paulo,AM,DELPLAZA Excelsior São Paulo - By Monreale,independent,12,56,49,Super.com,12.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Fênix Hotel Bom Retiro,independent,12,45,36,Hoteis.com,20.0,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Higi Hotel São Paulo,independent,7,106,90,Bluepillow.ca,15.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Hostel More SP,independent,12,37,32,Hostel More SP,13.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Sao Paulo,AM,Hotel Capsula Sao Paulo,independent,10,44,37,CAPSULA HOTEL SÃO PAULO - PAULISTA,15.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Hotel Laghetto Stilo São Paulo,independent,12,168,117,Super.com,30.4,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Hotel Nacional Inn Jaraguá São Paulo,independent,12,101,68,Super.com,32.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Hotel Rojas All Suite,independent,12,38,34,Super.com,10.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Meliá Jardim Europa,independent,12,258,205,Super.com,20.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Motel Studio A,independent,3,35,35,Booking.com,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Nikkey Palace Hotel,independent,12,57,47,Super.com,17.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Sao Paulo,AM,Palácio Tangará,independent,12,869,565,Vio.com,35.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Pestana São Paulo,independent,12,106,78,Super.com,26.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Sao Paulo,AM,"Qoya Hotel Sao Paulo, Curio Collection By Hilton",chain,12,297,208,Super.com,30.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Sao Paulo,AM,Radisson Oscar Freire,chain,12,192,139,TravelUp,27.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Sao Paulo,AM,Rosewood São Paulo,independent,12,913,706,Agoda,22.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Sao Paulo,AM,Wyndham Sao Paulo Paulista,chain,12,139,88,Reservation Day,36.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Shanghai,APAC,Artyzen Habitat Taopu Shanghai,independent,12,77,59,Agoda,23.4,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Shanghai,APAC,Campanile Shanghai Bund Hotel,independent,12,75,75,Agoda,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Shanghai,APAC,Central Hotel,independent,12,121,111,TravelUp,8.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Shanghai,APAC,Conrad Shanghai,chain,12,261,259,Expedia.com,0.8,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Shanghai,APAC,DoubleTree by Hilton Hotel Shanghai - Pudong,chain,12,139,127,BusinessHotels.com,8.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Shanghai,APAC,Grand Hyatt Shanghai,chain,5,274,250,Trip.com,8.8,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,yes
+Shanghai,APAC,Grand Kempinski Hotel Shanghai,independent,12,216,150,Super.com,30.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Shanghai,APAC,Holiday Inn Jiashan,chain,4,42,42,Holiday Inn Jiashan,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Shanghai,APAC,Hotel Indigo Shanghai on The Bund,chain,7,201,201,Bluepillow.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Shanghai,APAC,InterContinental Shanghai Pudong,chain,12,215,204,Wego,5.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Shanghai,APAC,MOONLO HOTEL,independent,12,35,33,Hotels.com,5.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Shanghai,APAC,"Mandarin Oriental Pudong, Shanghai",chain,12,348,275,klook,21.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Shanghai,APAC,Meego Qingwen Hotel,independent,12,32,22,Hostelworld,31.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Shanghai,APAC,Radisson Blu Hotel Shanghai Hong Quan,chain,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Shanghai,APAC,SSAW Boutique Hotel Shanghai Bund,independent,12,156,116,klook,25.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Shanghai,APAC,Shanghai Marriott Hotel Parkview,chain,12,188,171,BusinessHotels.com,9.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Shanghai,APAC,Sunrise On The Bund Hotel Luxury,independent,10,113,113,Bluepillow.ms,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Shanghai,APAC,"The Ritz-Carlton Shanghai, Pudong",chain,12,442,335,Booking.com,24.2,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Tel Aviv,APAC,65 Hotel an Atlas Boutique Hotels,independent,12,255,215,Evendo,15.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Tel Aviv,APAC,"ALMERA HOTEL, BAT YAM",independent,11,155,155,Hotels.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Tel Aviv,APAC,Albi Florentin,independent,11,179,179,Hotels.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Tel Aviv,APAC,Brown Beach House by Brown Hotels | בראון ביץ' האוס,independent,10,218,156,Brown Beach House by Brown Hotels | בראון ביץ' האוס,28.4,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Tel Aviv,APAC,Brown Seaside by Brown Hotels | בראון סיסייד,independent,7,109,109,Trip.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Tel Aviv,APAC,Dan Panorama Tel -Aviv,independent,12,274,213,Super.com,22.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Tel Aviv,APAC,Dan Tel Aviv Hotel,independent,12,338,257,Super.com,24.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Tel Aviv,APAC,Herods Tel Aviv,independent,12,253,173,Traveluro,31.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Tel Aviv,APAC,Hotel H7 TLV,independent,9,116,102,Despegar,12.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Tel Aviv,APAC,Hotel Indigo Tel Aviv - Diamond District by IHG,chain,12,174,151,Vio.com,13.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Tel Aviv,APAC,Iconic Hotel,independent,7,131,116,Iconic Hotel,11.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Tel Aviv,APAC,Melody an Atlas Boutique Hotel,independent,12,238,208,Melody an Atlas Boutique Hotel,12.6,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,yes
+Tel Aviv,APAC,"Pixel Hotel by Loginn - פיקסל, מלון מבית לוגאין",independent,6,213,128,"Pixel Hotel by Loginn - פיקסל, מלון מבית לוגאין",39.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Tel Aviv,APAC,Sam & Blondi Hotel,independent,10,183,182,Bluepillow.com,0.5,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Tel Aviv,APAC,The Setai Tel Aviv,independent,12,608,418,Super.com,31.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Tel Aviv,APAC,Yam an Atlas Boutique Hotel,independent,12,213,150,Reservation Day,29.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Tel Aviv,APAC,מלון פורט טאואר מרשת ישרוטל,independent,2,229,229,Booking.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Valencia,EU,Axel Hotel Valencia,independent,12,156,126,Agoda,19.2,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Valencia,EU,Caro Hotel,independent,12,227,189,Super.com,16.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Valencia,EU,Casa Clarita by SH Hoteles,independent,12,177,145,Super.com,18.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Valencia,EU,Hotel Boutique SH Inglés,independent,6,165,165,SH Inglés,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Valencia,EU,Hotel Eurostars Gran Valencia,independent,12,94,77,Super.com,18.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Valencia,EU,Hotel ILUNION Valencia 4,independent,12,109,95,Vio.com,12.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Valencia,EU,Hotel Malcom and Barret,independent,12,87,71,Super.com,18.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Valencia,EU,Hotel Primus Valencia,independent,12,135,99,Vio.com,26.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Valencia,EU,Las Arenas Balneario Resort,independent,12,311,235,Billabook.com,24.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Valencia,EU,MYR Hotel Palau Vallier,independent,12,303,301,goseek.com,0.7,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Valencia,EU,Meliá Valencia,independent,12,256,193,Super.com,24.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Valencia,EU,Mon Suites Jardín de Ayora,independent,12,87,73,Agoda,16.1,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,yes
+Valencia,EU,Old Town Flats Casa Burguerini,independent,2,128,122,Reservation Day,4.7,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Valencia,EU,Only YOU Hotel Valencia,independent,12,251,209,Only YOU Hotel Valencia,16.7,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Valencia,EU,"Palacio Santa Clara, Autograph Collection",chain,12,241,241,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Valencia,EU,SAMAN HOTEL BOUTIQUE,independent,12,119,96,Saman Boutique,19.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Valencia,EU,The Valentia Corretgeria,independent,12,196,155,Super.com,20.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Valencia,EU,ibis budget Valencia Centro Puerto,chain,12,70,66,ibis budget Valencia Centro Puerto,5.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Warsaw,EU,Barceló Warsaw Powiśle,independent,12,164,128,Barcelo.com,22.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Warsaw,EU,Bellotto Hotel,independent,8,191,191,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Warsaw,EU,Best Western Hotel Portos,chain,12,58,53,Trip.com,8.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Warsaw,EU,"Hotel Bristol, a Luxury Collection Hotel, Warsaw",chain,12,313,302,Bookhotel.direct,3.5,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Warsaw,EU,Hotel Polonia Palace,independent,12,172,155,Evendo,9.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Warsaw,EU,Hotel Teatro Boutique - Destigo Hotels,independent,12,155,143,Vio.com,7.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Warsaw,EU,"Hotel Verte, Warsaw, Autograph Collection",chain,12,266,265,"Hotel Verte, Warsaw, Autograph Collection",0.4,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Warsaw,EU,Hotel Warszawa in the Prudential Building,independent,12,215,198,Super.com,7.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Warsaw,EU,InterContinental Warsaw by IHG,chain,12,265,215,Vio.com,18.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Warsaw,EU,Lofthotel Sen Pszczoły,independent,10,59,59,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Warsaw,EU,Nobu Hotel,independent,12,244,207,Super.com,15.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Warsaw,EU,Platinum Residence Sp. o.o.,independent,12,95,95,Agoda,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Warsaw,EU,Regent Warsaw Hotel,chain,12,124,98,Evendo,21.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Warsaw,EU,Safestay Warsaw,independent,12,35,33,Safestay Warsaw Old Town,5.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Warsaw,EU,Sofitel Warsaw Victoria,chain,12,203,189,goseek.com,6.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no

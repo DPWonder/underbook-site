@@ -1,0 +1,421 @@
+city,region,hotel,segment,sites_listed,going_rate_usd,cheapest_usd,cheapest_site,discount_pct,verdict,cheaper_room_name_matched,cheapest_named_a_room,fees_unverified,check_in,check_out,free_cancellation_elsewhere_same_or_less
+Aspen,US,Annabelle Inn,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Aspen,US,Aspen Meadows Resort,independent,9,607,473,Hotels.com,22.1,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Aspen,US,Basalt Mountain Inn,independent,12,115,115,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Aspen,US,Beyul Retreat,independent,12,175,172,Beyul Retreat,1.7,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Aspen,US,"Hotel Jerome, Auberge Collection",independent,12,937,876,Super.com,6.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Aspen,US,Inn at Aspen,independent,12,322,234,Vio.com,27.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Aspen,US,Limelight Aspen,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Aspen,US,MOLLIE Aspen,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Aspen,US,Mountain Chalet Snowmass,independent,12,150,138,Super.com,8.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Aspen,US,St Moritz Lodge,independent,12,125,102,Traveluro,18.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Aspen,US,The Little Nell,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Aspen,US,The Residence Hotel,independent,12,371,303,Super.com,18.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Aspen,US,The St. Regis Aspen Resort,chain,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Aspen,US,Top Of The Village,independent,4,318,318,Priceline,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Aspen,US,Tyrolean Lodge,independent,1,174,174,Tyrolean Lodge,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Aspen,US,Viceroy Snowmass,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Aspen,US,W Aspen,chain,12,454,454,W Aspen,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Aspen,US,White Elephant Aspen,independent,12,340,319,Hotels.com,6.2,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Atlantic City,US,Atlantic Palace Suites,independent,8,114,91,Traveluro,20.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Atlantic City,US,Bally's Atlantic City Hotel & Casino,independent,12,80,72,Super.com,10.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Atlantic City,US,Best Western Atlantic City Beach Block,chain,12,71,68,Evendo,4.2,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Atlantic City,US,Borgata Hotel Casino & Spa,independent,12,119,86,Super.com,27.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Atlantic City,US,Caesars Atlantic City - A Caesars Rewards Destination,chain,12,89,71,trivago DEALS,20.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Atlantic City,US,Clarion Inn Atlantic City - Beach and Boardwalk,chain,12,72,72,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Atlantic City,US,Courtyard by Marriott Atlantic City Beach Block,chain,12,89,75,groupon.com,15.7,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Atlantic City,US,"Golden Nugget Atlantic City Hotel, Casino & Marina",independent,7,93,93,Expedia.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Atlantic City,US,Hard Rock Hotel & Casino Atlantic City,chain,12,129,95,Super.com,26.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Atlantic City,US,Harrah's Resort Atlantic City - A Caesars Rewards Destination,chain,12,113,71,trivago DEALS,37.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Atlantic City,US,Nobu Hotel Atlantic City - A Caesars Rewards Destination,chain,12,180,169,trivago DEALS,6.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Atlantic City,US,Ocean Casino Resort,independent,12,129,126,Super.com,2.3,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Atlantic City,US,Resorts Casino Hotel,independent,12,92,76,Traveluro,17.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Atlantic City,US,SOHO Suites Atlantic City Hotel,independent,12,106,88,SOHO Suites Atlantic City Hotel,17.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Atlantic City,US,Showboat Resort Atlantic City,independent,12,88,80,Vio.com,9.1,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,yes
+Atlantic City,US,The Claridge Hotel,independent,12,113,89,Tripadvisor.com,21.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Atlantic City,US,Tropicana Atlantic City,independent,5,96,44,Amimir.com,54.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Atlantic City,US,Tropicana Atlantic City - A Caesars Rewards Destination,chain,12,81,64,Vio.com,21.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,Acadia Hotel - Downtown,independent,12,174,129,Acadia Hotel - Downtown,25.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,Acadia Inn,independent,2,173,173,Acadia Inn,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Bar Harbor,US,Atlantic Oceanside Hotel & Event Center,independent,12,163,163,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,Bar Harbor Grand Hotel,independent,9,180,134,Qantas Hotels,25.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Bar Harbor,US,Bar Harbor Inn & Spa,independent,12,259,259,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,Bar Harbor Manor,independent,12,110,95,Vio.com,13.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,Black Friar Inn & Pub,independent,12,161,140,Black Friar Inn & Pub,13.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,"Harborside Hotel, Spa & Marina",independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Bar Harbor,US,Hearthside Inn,independent,12,104,84,Super.com,19.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,Ivy Manor Inn - Village Center,independent,12,153,139,Ivy Manor Inn - Village Center,9.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,Little Fig Hotel,independent,3,120,120,Booking.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Bar Harbor,US,Primrose Inn,independent,12,111,97,Super.com,12.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,The Bayview Hotel,independent,12,325,324,Super.com,0.3,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,The Central House,independent,12,130,110,Booking.com,15.4,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,The Elmhurst Inn,independent,12,168,106,The Elmhurst Inn,36.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Bar Harbor,US,The Inn on Mount Desert,independent,12,161,95,Super.com,41.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Bar Harbor,US,The Pathmaker Hotel,independent,12,157,133,Reservation Day,15.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Bar Harbor,US,Ullikana Inn,independent,6,231,231,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Branson,US,Baymont by Wyndham Branson Thousand Hills,chain,12,95,85,trivago DEALS,10.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Branson,US,Branson Falls Lodge an Ascend Collection Hotel,chain,5,94,94,Priceline,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Branson,US,Days Inn by Wyndham Branson Ozarks,chain,2,61,61,Booking.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Branson,US,Grand Oaks Hotel,independent,12,93,71,Super.com,23.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Branson,US,Howard Johnson by Wyndham Branson Theatre District,chain,12,44,44,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Branson,US,Hyatt Vacation Club at The Lodges at Timber Ridge,chain,12,168,123,Super.com,26.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Branson,US,Oak ridge hotel,independent,4,33,33,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Branson,US,Quality Inn Branson - Hwy 76 Central,chain,12,56,52,Traveluro,7.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Branson,US,Quality Inn Branson On the Strip,chain,12,69,69,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Branson,US,Sunset Inn,independent,12,60,43,Super.com,28.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Branson,US,The Drift Resort,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Branson,US,The Grand Plaza Hotel,independent,7,155,112,The Grand Plaza Hotel,27.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Branson,US,The Ozarker Lodge,independent,12,144,117,Super.com,18.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Branson,US,The Retro Hotel,independent,12,85,66,Vio.com,22.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Branson,US,The Suites at Fall Creek,independent,12,61,55,Vio.com,9.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Branson,US,Westgate Branson Woods Resort,independent,12,89,45,Super.com,49.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Branson,US,Xpress Inn & Suites,independent,6,47,47,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Destin,US,Comfort Inn & Suites Destin near Henderson Beach,chain,12,63,59,goseek.com,6.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Destin,US,Days Inn by Wyndham Destin,chain,12,61,61,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Destin,US,Destin Holiday Beach Resort,independent,12,89,89,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Destin,US,Fairfield by Marriott Inn & Suites Destin,chain,12,105,97,trivago DEALS,7.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Destin,US,Hampton Inn & Suites Destin,chain,12,104,86,Traveluro,17.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Destin,US,Hilton Garden Inn Destin Commons,chain,10,101,101,Agoda,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Destin,US,Holiday Inn Express & Suites Destin E - Commons Mall Area by IHG,chain,12,96,88,Vio.com,8.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Destin,US,Home2 Suites by Hilton Destin,chain,12,101,101,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Destin,US,Homewood Suites by Hilton Destin,chain,4,129,128,Qantas Hotels,0.8,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Destin,US,Hyatt House Destin,chain,12,93,93,Hyatt House Destin,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Destin,US,Spark by Hilton Destin,chain,12,67,60,Traveluro,10.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Destin,US,SummerPlace Inn Destin FL Hotel,independent,12,96,63,Super.com,34.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Destin,US,Tru by Hilton Destin,chain,12,75,73,trivago DEALS,2.7,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Destin,US,Village Inn of Destin,independent,9,64,59,Hotels.com,7.8,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Destin,US,Wingate by Wyndham Destin,chain,12,77,64,groupon.com,16.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Flagstaff,US,Aiden by Best Western Flagstaff,chain,12,91,76,trivago DEALS,16.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Flagstaff,US,Baymont by Wyndham Flagstaff,chain,12,60,60,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Flagstaff,US,Best Western Pony Soldier Inn & Suites,chain,12,76,66,trivago DEALS,13.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Flagstaff,US,Club Wyndham Flagstaff,chain,12,152,74,Super.com,51.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Flagstaff,US,Comfort Inn Flagstaff South I-17,chain,12,116,108,Vio.com,6.9,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Flagstaff,US,Country Inn & Suites by Radisson - Flagstaff East Route 66,chain,10,96,95,Evendo,1.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Flagstaff,US,"Country Inn & Suites by Radisson, Flagstaff Downtown, AZ",chain,12,107,95,KAYAK.com,11.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Flagstaff,US,Courtyard by Marriott Flagstaff,chain,12,124,124,Courtyard by Marriott Flagstaff,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Flagstaff,US,DoubleTree by Hilton Hotel Flagstaff,chain,12,96,94,Traveluro,2.1,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Flagstaff,US,Embassy Suites by Hilton Flagstaff,chain,12,118,116,Wotif.com,1.7,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Flagstaff,US,High Country Motor Lodge - Flagstaff Hotel,independent,12,117,105,Super.com,10.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Flagstaff,US,Hilton Garden Inn Flagstaff,chain,12,98,98,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Flagstaff,US,La Quinta Inn & Suites by Wyndham Flagstaff,chain,12,82,75,trivago DEALS,8.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Flagstaff,US,Little America Hotel,independent,12,145,119,Tripadvisor.com,17.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Flagstaff,US,voco Flagstaff by IHG,chain,12,74,69,Vio.com,6.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Galveston,US,"Beachfront Palms Resort Galveston, an Ascend Collection Hotel",chain,12,68,52,Super.com,23.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Galveston,US,Best Western Plus Galveston Suites,chain,12,99,68,trivago DEALS,31.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Galveston,US,Best Western Plus Seawall Inn & Suites by the Beach,chain,12,100,100,Expedia.mx,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Galveston,US,Casa Del Mar Beachfront Suites,independent,12,178,116,Agoda,34.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Galveston,US,Comfort Inn & Suites Galveston Central Island near Pier,chain,12,77,76,Super.com,1.3,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Galveston,US,Comfort Suites Galveston Cruise Port Area - Beachside,independent,12,62,58,trivago DEALS,6.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Galveston,US,Dawn Beach Condominiums,independent,11,144,144,Agoda,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Galveston,US,Galveston Beach Hotel,independent,9,88,60,Agoda,31.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Galveston,US,"Grand Galvez Resort, Autograph Collection",chain,9,278,258,Wego,7.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Galveston,US,Hampton Inn & Suites Galveston,chain,12,94,91,Traveluro,3.2,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Galveston,US,Hilton Galveston Island Resort,chain,12,202,187,KAYAK.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Galveston,US,Holiday Inn Club Vacations Galveston Seaside Resort,chain,11,132,132,Vio.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Galveston,US,"Holiday Inn Express & Suites Galveston West-Seawall, an IHG Hotel",chain,12,78,70,KAYAK.com,10.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Galveston,US,"Holiday Inn Galveston Island, an IHG Hotel",chain,12,81,76,goseek.com,6.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Galveston,US,Holiday Inn Resort Galveston-on the Beach by IHG,chain,12,168,130,Vio.com,22.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Galveston,US,Hyatt Select Galveston - Beachfront,chain,12,139,116,Super.com,16.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Galveston,US,La Quinta Inn & Suites by Wyndham Galveston West Seawall,chain,12,71,65,KAYAK.com,8.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Galveston,US,"The San Luis Resort, Spa and Conference Center",independent,12,284,275,Billabook.com,3.2,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Gatlinburg,US,"Bear Creek Inn Gatlinburg, TN",independent,12,76,60,Super.com,21.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Gatlinburg,US,Carr's Northside Cottages & Motel,independent,12,73,60,Super.com,17.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Gatlinburg,US,"Country Inn & Suites by Radisson, Gatlinburg, TN",chain,12,119,118,Evendo,0.8,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Gatlinburg,US,Gatlinburg Inn,independent,10,161,161,Hotels.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Gatlinburg,US,Gatlinburg Mountain Inn,independent,12,69,50,Gatlinburg Mountain Inn,27.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Gatlinburg,US,Gatlinburg River Inn,independent,12,78,70,Super.com,10.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Gatlinburg,US,Glenstone Lodge,independent,12,75,66,Super.com,12.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Gatlinburg,US,Margaritaville Resort Gatlinburg,independent,12,219,178,Super.com,18.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Gatlinburg,US,River Terrace Resort and Convention Center,independent,12,89,50,Westgate Reservations,43.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Gatlinburg,US,Sidney James Mountain Lodge - Downtown Gatlinburg,independent,12,83,75,TravelUp,9.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Gatlinburg,US,Super 8 by Wyndham Downtown Gatlinburg at Convention Center,chain,12,63,62,Vio.com,1.6,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Gatlinburg,US,SureStay Plus by Best Western Gatlinburg,chain,12,81,68,Traveluro,16.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Gatlinburg,US,The Greystone Lodge On The River,independent,12,160,125,Super.com,21.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Gatlinburg,US,Timber Ridge Lodge Motel Walking Distance from Gatlinburg Downtown,independent,7,64,52,Super.com,18.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Gatlinburg,US,Westgate Smoky Mountain Resort & Water Park,independent,12,173,143,Super.com,17.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Gatlinburg,US,Zoder's Inn & Suites,independent,4,76,76,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Gulf Shores,US,Beachside Resort Hotel,independent,12,60,59,Vio.com,1.7,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Gulf Shores,US,Best Western on the Beach,chain,12,143,143,Hotels.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Gulf Shores,US,Comfort Inn & Suites Gulf Shores East Beach near Gulf State Park,chain,12,101,91,Traveluro,9.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Gulf Shores,US,Econo Lodge Inn & Suites Foley-North Gulf Shores,chain,12,62,60,Econo Lodge Inn & Suites Foley-North Gulf Shores,3.2,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Gulf Shores,US,Fairfield by Marriott Inn & Suites Orange Beach,chain,12,111,111,Fairfield by Marriott Inn & Suites Orange Beach,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Gulf Shores,US,Hampton Inn & Suites Orange Beach/Gulf Front,chain,12,142,141,Qantas Hotels,0.7,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Gulf Shores,US,Hampton Inn Gulf Shores,chain,12,102,94,KAYAK.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Gulf Shores,US,Hilton Garden Inn Orange Beach Beachfront,chain,12,106,106,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Gulf Shores,US,Holiday Inn Express & Suites Gulf Shores by IHG,chain,12,107,107,Expedia.be,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Gulf Shores,US,Holiday Inn Express Orange Beach-on the Beach by IHG,chain,12,123,107,Tripadvisor.co.uk,13.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Gulf Shores,US,Hotel Indigo Orange Beach - Gulf Shores by IHG,chain,12,120,100,Vio.com,16.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Gulf Shores,US,Microtel Inn & Suites by Wyndham Gulf Shores,chain,12,63,56,trivago DEALS,11.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Gulf Shores,US,Phoenix All Suites Hotel,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Gulf Shores,US,Quality Inn Gulf Shores Airport,chain,12,60,60,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Gulf Shores,US,Red Roof Inn Gulf Shores,independent,12,54,45,KAYAK.com,16.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Gulf Shores,US,Sleep Inn Orange Beach,chain,12,89,79,KAYAK.com,11.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Gulf Shores,US,TownePlace Suites by Marriott Foley at OWA,chain,11,129,129,Priceline,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Hilton Head,US,Beach House Hilton Head Island,chain,12,218,161,Kiwi.com,26.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Hilton Head,US,Coral Sands Resort by Palmera,independent,12,211,138,Super.com,34.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hilton Head,US,Courtyard by Marriott Hilton Head Island,chain,12,146,146,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Hilton Head,US,DoubleTree by Hilton Hilton Head Island,chain,12,106,106,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Hilton Head,US,Hampton Inn Hilton Head,chain,12,116,107,KAYAK.com,7.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hilton Head,US,Hickory Cove Villas,independent,1,199,199,Hotel Booking Zone,0.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Hilton Head,US,Hilton Beachfront Resort and Spa Hilton Head Island,chain,12,238,146,Traveluro,38.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hilton Head,US,Hilton Grand Vacations Club Ocean Oak Resort Hilton Head,chain,12,266,266,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Hilton Head,US,Hilton Head Island Beach & Tennis Resort,chain,12,326,185,Super.com,43.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hilton Head,US,Holiday Inn Express Hilton Head Island by IHG,chain,12,121,93,Traveluro,23.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Hilton Head,US,Omni Hilton Head Oceanfront Resort,chain,12,280,262,dealbase.com,6.4,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Hilton Head,US,Palmera Inn & Suites,independent,10,134,112,Palmera Inn & Suites,16.4,UNVERIFIED_LOWER,no,yes,yes,2026-11-03,2026-11-05,no
+Hilton Head,US,Sonesta Resort Hilton Head Island,chain,12,214,214,Vio.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Hilton Head,US,Spark by Hilton Hilton Head Island,chain,12,81,68,Traveluro,16.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Hilton Head,US,SpringHill Suites by Marriott Hilton Head Island,chain,12,107,99,KAYAK.com,7.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Jackson Hole,US,Antler Inn,independent,12,166,138,Traveluro,16.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Jackson Hole,US,Anvil Hotel,independent,12,161,121,Billabook.com,24.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Jackson Hole,US,Cowboy Village Resort,independent,12,146,112,Super.com,23.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Jackson Hole,US,Elk Country Inn,independent,12,134,129,Super.com,3.7,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Jackson Hole,US,Elk Refuge Inn,independent,6,185,116,Elk Refuge Inn,37.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Jackson Hole,US,Four Seasons Resort and Residences Jackson Hole,chain,12,666,661,Super.com,0.8,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Jackson Hole,US,Hampton Inn Jackson Hole,chain,12,144,137,Traveluro,4.9,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Jackson Hole,US,Hotel Terra Jackson Hole,independent,12,387,326,klook,15.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Jackson Hole,US,Mountain Modern Jackson Hole,independent,12,130,112,Clicktrip.com,13.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Jackson Hole,US,Parkway Inn of Jackson Hole,independent,9,190,149,Parkway Inn of Jackson Hole,21.6,UNVERIFIED_LOWER,no,yes,yes,2026-11-03,2026-11-05,no
+Jackson Hole,US,Rustic Inn Creekside Resort & Spa at Jackson Hole,independent,6,252,252,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Jackson Hole,US,Spring Creek Ranch,independent,12,254,231,Super.com,9.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Jackson Hole,US,SpringHill Suites by Marriott Jackson Hole,chain,11,263,263,SpringHill Suites by Marriott Jackson Hole,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Jackson Hole,US,The Alpine House,independent,12,211,193,Traveluro,8.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Jackson Hole,US,"The Cloudveil, Autograph Collection",chain,12,403,403,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Jackson Hole,US,The Lodge at Jackson Hole,independent,12,174,124,Super.com,28.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Jackson Hole,US,The Rockwell Inn,independent,12,150,129,Super.com,14.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Jackson Hole,US,Wyoming Inn of Jackson Hole,independent,9,184,184,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Kauai,US,Aston Islander on the Beach,independent,12,229,190,Super.com,17.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Kauai,US,Banyan Harbor Resort,independent,12,233,169,Super.com,27.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kauai,US,Club Wyndham Bali Hai Villas,chain,12,281,183,Super.com,34.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Kauai,US,Club Wyndham Ka Eo Kai,chain,12,250,154,Super.com,38.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Kauai,US,Hilton Garden Inn Kauai Wailua Bay,chain,12,213,212,trivago DEALS,0.5,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Kauai,US,Kaha Lani Resort,independent,12,263,219,KAYAK.com,16.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kauai,US,Kauai Coast Resort at the Beachboy,independent,10,245,184,Agoda,24.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kauai,US,Kauai Shores Hotel,independent,12,297,244,Super.com,17.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Kauai,US,Marriott's Kaua'i Beach Club,chain,12,436,433,Qantas Hotels,0.7,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Kauai,US,OUTRIGGER Kauai Beach Resort & Spa,independent,12,256,191,Super.com,25.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Kauai,US,Plantation Hale Suites,independent,12,215,176,Vio.com,18.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kauai,US,Sheraton Kauai Coconut Beach Resort,chain,12,352,331,Hotelscombined.com,6.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kauai,US,"THE ISO HOTEL, Trademark Collection by Wyndham",chain,12,213,213,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Kauai,US,The Westin Princeville Ocean Resort Villas,chain,12,404,404,The Westin Princeville Ocean Resort Villas,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Kauai,US,Waipouli Beach Resort,independent,12,454,238,Super.com,47.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Kona,US,Aston Kona by the Sea,independent,12,375,333,Billabook.com,11.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kona,US,Club Wyndham Kona,chain,12,348,277,Super.com,20.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kona,US,Club Wyndham Mauna Loa Village,chain,12,266,164,Super.com,38.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Kona,US,Courtyard by Marriott King Kamehameha's Kona Beach Hotel,chain,12,279,279,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Kona,US,Four Seasons Resort Hualalai,chain,12,1308,1088,Super.com,16.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Kona,US,Gingerhill Farm Retreat,independent,2,145,145,Hostelworld,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Kona,US,Hale Maluhia Country Inn (House of Peace),independent,12,270,194,Hale Maluhia Country Inn (house of peace),28.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Kona,US,Holiday Inn Express & Suites Kailua-Kona by IHG,chain,12,262,243,Vio.com,7.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Kona,US,Holualoa Inn,independent,12,685,630,Holualoa Inn,8.0,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Kona,US,Kanaloa at Kona,independent,9,300,291,Hotels.com,3.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Kona,US,Kona Coast Resort,independent,12,178,123,Traveluro,30.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Kona,US,Kona Islander Inn Hotel,independent,4,275,233,Bluepillow.id,15.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Kona,US,Kona Islander Vacation Club,independent,9,197,197,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Kona,US,Manago Hotel and Restaurant,independent,4,75,75,Manago Hotel and Restaurant,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Kona,US,My Hawai‘i Hostel,independent,2,100,100,Hostelworld,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Kona,US,OUTRIGGER Kona Resort & Spa,independent,12,343,298,OUTRIGGER Kona Resort & Spa,13.1,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Kona,US,Royal Kona Resort,independent,11,281,281,Royal Kona Resort,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Kona,US,VI RESORTS at Sea Village,independent,2,298,298,Sea Village,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Lake Tahoe,US,Bally's Lake Tahoe,independent,12,80,69,Super.com,13.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lake Tahoe,US,Basecamp Tahoe City,independent,10,145,103,Agoda,29.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Lake Tahoe,US,Caesars Republic Lake Tahoe - A Caesars Rewards Destination,chain,12,96,93,Super.com,3.1,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Lake Tahoe,US,Cedar Glen Lodge,independent,12,118,118,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Lake Tahoe,US,Franciscan Lakeside Lodge,independent,12,132,105,Super.com,20.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lake Tahoe,US,Golden Nugget Lake Tahoe Hotel & Casino,independent,12,97,87,Agoda,10.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lake Tahoe,US,Harrah's Lake Tahoe - A Caesars Rewards Destination,chain,12,83,77,Super.com,7.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lake Tahoe,US,Hilton Vacation Club Lake Tahoe Resort South,chain,12,117,113,Super.com,3.4,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Lake Tahoe,US,Hotel Azure Tahoe,independent,12,117,103,Super.com,12.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Lake Tahoe,US,"Hyatt Regency Lake Tahoe Resort, Spa and Casino",chain,12,238,233,goseek.com,2.1,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Lake Tahoe,US,Margaritaville Resort Lake Tahoe,independent,12,153,128,Super.com,16.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lake Tahoe,US,"Marriott Grand Residence Club, Lake Tahoe",chain,12,178,159,Agoda,10.7,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,yes
+Lake Tahoe,US,Marriott's Timber Lodge,chain,12,135,135,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Lake Tahoe,US,"South Lake Chalet, a ZenStay Hotel",independent,3,137,137,Expedia.de,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Lake Tahoe,US,Station House Inn South Lake Tahoe,independent,12,80,57,Super.com,28.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lake Tahoe,US,The Incline Lodge,independent,12,198,197,Qantas Hotels,0.5,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Lake Tahoe,US,The Jeffrey Hotel,independent,12,76,68,Super.com,10.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Lake Tahoe,US,evo Hotel Tahoe City,independent,12,97,89,Super.com,8.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Maui,US,Aston Maui Kaanapali Villas,independent,12,275,226,Super.com,17.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Maui,US,Aston at Papakea Resort,independent,12,242,134,Book Early and Save Travel,44.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Maui,US,Aston at The Whaler on Kaanapali Beach,independent,12,396,289,Super.com,27.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Maui,US,Aston at the Maui Banyan,independent,12,234,208,Clicktrip.com,11.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Maui,US,Days Inn by Wyndham Maui Oceanfront,chain,12,215,193,Traveluro,10.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Maui,US,Hilton Grand Vacations Club Maui Bay Villas,chain,12,412,407,Hilton Grand Vacations Club Maui Bay Villas,1.2,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Maui,US,Hyatt Regency Maui Resort and Spa,chain,12,488,487,goseek.com,0.2,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Maui,US,Kahana Beach Resort,independent,12,291,202,Super.com,30.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Maui,US,Lahaina Shores Beach Resort,independent,12,178,172,Hotels.com,3.4,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Maui,US,Maui Beach Vacation Club,independent,12,211,149,Super.com,29.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Maui,US,Maui Coast Hotel,independent,12,268,223,Super.com,16.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Maui,US,OUTRIGGER Kāʻanapali Beach Resort,independent,12,324,254,Super.com,21.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Maui,US,Papakea Oceanfront Resort,independent,10,502,490,Luxury Escapes,2.4,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Maui,US,The Mauian Hotel,independent,12,280,217,Super.com,22.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Maui,US,"The Ritz-Carlton Maui, Kapalua",chain,12,858,629,Luxury Escapes,26.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Maui,US,"The Westin Maui Resort & Spa, Ka'anapali",chain,12,660,402,KAYAK.com,39.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Maui,US,"Wailea Beach Resort - Marriott, Maui",chain,12,816,816,"Wailea Beach Resort - Marriott, Maui",0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Maui,US,honua kai,independent,7,2911,300,Zeevou Direct,89.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Moab,US,Aarchway Inn,independent,12,95,74,Vio.com,22.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Moab,US,Adventure Inn Moab,independent,12,55,48,Super.com,12.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Moab,US,Atomic Hotel,independent,5,99,99,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Moab,US,Days Inn by Wyndham Moab,chain,12,78,70,trivago DEALS,10.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Moab,US,Element by Marriott Moab,chain,12,130,130,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Moab,US,Fairfield by Marriott Inn & Suites Moab,chain,12,153,152,Qantas Hotels,0.7,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Moab,US,Gravity Haus Moab,independent,12,132,96,Super.com,27.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Moab,US,HTR Moab Lodge & Cottages,independent,12,82,77,Agoda,6.1,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Moab,US,Holiday Inn Express & Suites Moab by IHG,chain,12,128,119,Vio.com,7.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Moab,US,Hotel Moab Downtown,independent,12,86,64,Super.com,25.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Moab,US,Hyatt Place Moab,chain,12,142,142,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Moab,US,INCA INN and MOTEL,independent,9,63,50,Agoda,20.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Moab,US,Moab Red Stone Inn,independent,12,64,46,Agoda,28.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Moab,US,Quality Suites Moab near Arches National Park,independent,12,85,75,KAYAK.com,11.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Moab,US,Scenic View Inn & Suites Moab,independent,9,105,105,Hotels.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Moab,US,SpringHill Suites by Marriott Moab,chain,10,150,144,TUI.com,4.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Moab,US,Wingate by Wyndham Moab,chain,12,113,81,Traveluro,28.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Moab,US,voco Moab by IHG,chain,12,74,66,KAYAK.com,10.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Monterey,US,Arbor Inn Monterey,independent,12,66,60,Super.com,9.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Monterey,US,Cannery Row Inn,independent,12,143,133,Super.com,7.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Monterey,US,Casa Munras Garden Hotel & Spa,independent,12,231,196,klook,15.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Monterey,US,Hilton Garden Inn Monterey,chain,12,188,184,trivago DEALS,2.1,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Monterey,US,Holiday Inn Express at Monterey Bay by IHG,chain,12,167,167,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Monterey,US,Hotel 1110,independent,12,149,136,Super.com,8.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Monterey,US,Hotel Abrego,independent,12,231,158,Super.com,31.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Monterey,US,Hotel Pacific,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Monterey,US,InterContinental the Clement Monterey by IHG,chain,12,420,324,Stayforlong.co.uk,22.9,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Monterey,US,Lovers Point Inn,independent,12,93,84,Super.com,9.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Monterey,US,Monterey Bay Lodge,independent,12,134,126,Monterey Bay Lodge,6.0,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Monterey,US,Monterey Plaza Hotel & Spa,independent,12,373,311,Traveluro,16.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Monterey,US,Portola Hotel & Spa at Monterey Bay,independent,12,303,263,Super.com,13.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Monterey,US,Stargazer Hotel,independent,12,91,85,Hotels.com,6.6,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Monterey,US,The Monterey Hotel,independent,12,108,108,Hotels.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Monterey,US,The Old St. Angela Inn,independent,12,184,160,The Old St. Angela Inn,13.0,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Monterey,US,Victorian Inn,independent,12,179,140,Super.com,21.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Monterey,US,Wave Street Inn,independent,12,189,142,Vio.com,24.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Napa,US,"Andaz Napa, by Hyatt",chain,12,386,386,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Napa,US,Archer Hotel Napa,independent,12,427,388,Vio.com,9.1,UNVERIFIED_LOWER,no,yes,yes,2026-11-03,2026-11-05,yes
+Napa,US,Blackbird Inn and Finch Guest House,independent,12,179,145,Super.com,19.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Napa,US,Candlelight Inn Napa Valley,independent,12,258,219,Super.com,15.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Napa,US,Cedar Gables Inn,independent,8,179,173,Evendo,3.4,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Napa,US,DoubleTree by Hilton Napa Valley American Canyon,chain,12,98,80,KAYAK.com,18.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Napa,US,Hawthorn Suites by Wyndham Napa Valley,chain,12,116,101,trivago DEALS,12.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Napa,US,Holiday Inn Express & Suites Napa Valley-American Canyon by IHG,chain,12,127,123,Vio.com,3.1,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Napa,US,"Hotel Indigo Napa Valley, an IHG Hotel",chain,12,200,167,Reserving,16.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Napa,US,"Merlot Cabernet House, an Old World Inn",independent,12,131,126,Super.com,3.8,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Napa,US,Napa Valley Marriott Hotel & Spa,chain,12,337,337,Napa Valley Marriott Hotel & Spa,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Napa,US,Napa Winery Inn,independent,12,177,174,Super.com,1.7,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Napa,US,Sonoma Hotel,independent,9,196,196,Priceline,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Napa,US,"The Charles Napa, an Artfully Designed Inclusive Inn",independent,4,206,184,"The Charles Napa, an Artfully Designed Inclusive Inn",10.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Napa,US,"The Lodge at Sonoma Resort, Autograph Collection",chain,12,350,350,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Napa,US,The Meritage Resort and Spa,independent,12,388,278,KAYAK.com,28.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Napa,US,The Napa Inn & Spa,independent,11,182,139,Bluepillow.com,23.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Napa,US,Vino Bello Resort,independent,5,253,253,Evendo,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Newport Rhode Island,US,Atlantic Beach Hotel Newport,independent,12,115,91,Super.com,20.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Newport Rhode Island,US,Bouchard Inn,independent,8,247,247,Priceline,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Newport Rhode Island,US,Club Wyndham Inn on Long Wharf,chain,12,234,172,Super.com,26.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Newport Rhode Island,US,Club Wyndham Long Wharf,chain,12,178,148,Evendo,16.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Newport Rhode Island,US,Forty 1° North,independent,9,686,417,Forty 1° North,39.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Newport Rhode Island,US,Hydrangea House Inn,independent,12,235,210,Super.com,10.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Newport Rhode Island,US,Newport Bay Club & Hotel,independent,9,241,184,Expedia.de,23.7,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+Newport Rhode Island,US,Newport Beach Hotel & Suites,independent,12,160,99,KAYAK.com,38.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Newport Rhode Island,US,Newport Harbor Island Resort,independent,12,322,291,Vio.com,9.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Newport Rhode Island,US,OceanCliff Hotel,independent,12,220,130,Super.com,40.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Newport Rhode Island,US,The Attwater,independent,12,198,142,Super.com,28.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Newport Rhode Island,US,The Bellevue Manor,independent,12,102,102,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Newport Rhode Island,US,The Cliffside Inn,independent,12,272,204,Super.com,25.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Newport Rhode Island,US,The Hamilton Hoppin House (Formerly Villa 120 Inn),independent,3,170,170,The Hamilton Hoppin House,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Newport Rhode Island,US,The Newport Harbor Hotel and Marina,independent,12,221,191,Agoda,13.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Ocean City,US,"Ashore Oceanfront Hotel, Ocean City, a Tribute Portfolio Hotel",chain,12,79,79,"Ashore Oceanfront Hotel, Ocean City, a Tribute Portfolio Hotel",0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Ocean City,US,Best Western Plus Ocean City,chain,12,76,76,Best Western Plus Ocean City,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Ocean City,US,Carousel Oceanfront Hotel & Condos,independent,12,132,108,Super.com,18.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Ocean City,US,Comfort Inn Ocean City Boardwalk,chain,12,79,75,trivago DEALS,5.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Ocean City,US,Commander Hotel & Suites,independent,12,84,72,Super.com,14.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Ocean City,US,"Country Inn & Suites by Radisson, Ocean City, MD",chain,9,106,83,"Country Inn & Suites by Radisson, Ocean City, MD",21.7,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Ocean City,US,Courtyard by Marriott Ocean City Oceanfront,chain,12,127,127,Courtyard by Marriott Ocean City Oceanfront,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Ocean City,US,DoubleTree by Hilton Ocean City Oceanfront,chain,12,89,89,DoubleTree by Hilton Ocean City Oceanfront,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Ocean City,US,Fairfield by Marriott Inn & Suites Ocean City,chain,12,82,82,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Ocean City,US,Grand Hotel,independent,6,77,73,klook,5.2,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Ocean City,US,Hampton Inn & Suites Ocean City/Bayfront-Convention Center,chain,8,95,94,Pilot,1.1,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+Ocean City,US,Hilton Ocean City Oceanfront Suites,chain,12,111,108,trivago DEALS,2.7,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Ocean City,US,Holiday Inn & Suites Ocean City by IHG,chain,12,105,96,Vio.com,8.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Ocean City,US,Holiday Inn Ocean City by IHG,chain,7,90,74,Holiday Inn Ocean City by IHG,17.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Ocean City,US,Howard Johnson Plaza by Wyndham Ocean City Oceanfront,chain,12,82,69,Traveluro,15.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Ocean City,US,Hyatt Place Ocean City / Oceanfront,chain,12,110,93,Vio.com,15.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Ocean City,US,Park Place Hotel,independent,12,81,79,Hotels.com,2.5,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Ocean City,US,Princess Royale Oceanfront Resort,independent,12,101,101,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Park City,US,All Seasons Resort Lodging at Silver King,independent,12,161,109,dealbase.com,32.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Park City,US,Black Rock Mountain Resort,independent,12,233,193,Super.com,17.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Park City,US,"Hotel Thaynes, Park City, a Tribute Portfolio Hotel",chain,12,228,228,"Hotel Thaynes, Park City, a Tribute Portfolio Hotel",0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Park City,US,Main & SKY Park City Utah,independent,12,337,337,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Park City,US,Marriott's MountainSide,chain,12,135,132,Expedia.mx,2.2,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Park City,US,Marriott's Summit Watch,chain,6,118,118,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Park City,US,Montage Deer Valley,independent,12,534,496,Vio.com,7.1,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Park City,US,Park Regency Resort,independent,12,180,100,Booking.com,44.4,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Park City,US,Sheraton Park City,chain,12,189,187,Agoda,1.1,PARITY,no,no,yes,2026-11-03,2026-11-05,yes
+Park City,US,Stein Eriksen Lodge Deer Valley,independent,12,470,370,Super.com,21.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Park City,US,Sweetwater Lift Lodge Resort,independent,4,128,128,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Park City,US,The Caledonian by All Seasons Resort Lodging,independent,9,263,263,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Park City,US,The Chateaux Deer Valley,independent,12,264,151,The Chateaux Deer Valley,42.8,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Park City,US,The St. Regis Deer Valley,chain,12,559,559,Expedia.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Park City,US,Treasure Mountain Inn,independent,12,157,154,Booking.com,1.9,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Santa Barbara,US,Ala Mar Motel,independent,12,155,125,trivago DEALS,19.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Santa Barbara,US,Cabrillo Inn at the Beach,independent,6,134,134,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Santa Barbara,US,Casa Del Mar Inn,independent,12,151,151,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Santa Barbara,US,"Casa Iglesia, a ZenStay Hotel",independent,11,210,198,Booking.com,5.7,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Santa Barbara,US,Drift Santa Barbara,independent,12,271,271,Travelocity.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Santa Barbara,US,Harbor View Inn,independent,0,,,,,,no,no,no,2026-11-03,2026-11-05,
+Santa Barbara,US,"Hideaway Santa Barbara, A Kirkwood Collection Hotel",independent,12,175,175,Expedia.ca,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Santa Barbara,US,Hotel Santa Barbara,independent,12,256,205,Super.com,19.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Santa Barbara,US,La Playa Inn,independent,12,200,172,Super.com,14.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Santa Barbara,US,Lemon Tree Inn,independent,12,143,142,Hotels.com,0.7,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Santa Barbara,US,Montecito Inn,independent,12,292,255,Montecito Inn,12.7,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+Santa Barbara,US,Pacific Crest Hotel,independent,12,134,108,Super.com,19.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Santa Barbara,US,Riviera Beach House,independent,12,204,173,Super.com,15.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Santa Barbara,US,Santa Barbara Inn,independent,12,329,290,Super.com,11.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Santa Barbara,US,Villa Rosa Inn,independent,12,184,176,Hotels.com,4.3,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Virginia Beach,US,Boardwalk Resort and Villas,independent,12,118,89,cl.Bluepillow.com,24.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Virginia Beach,US,"Country Inn & Suites by Radisson, Virginia Beach (Oceanfront)",chain,12,94,91,trivago DEALS,3.2,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Virginia Beach,US,Courtyard by Marriott Virginia Beach Oceanfront/North 37th Street,chain,12,129,129,Expedia.de,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Virginia Beach,US,Garner Hotel Virginia Beach North by IHG,independent,12,73,73,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Virginia Beach,US,Hampton Inn Virginia Beach-Oceanfront South,chain,12,118,118,Priceline,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Virginia Beach,US,Hilton Garden Inn Virginia Beach Oceanfront,chain,12,131,117,Traveluro,10.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Virginia Beach,US,Hilton Vacation Club Ocean Beach Club Virginia Beach,chain,12,92,87,Super.com,5.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Virginia Beach,US,Hilton Vacation Club Oceanaire Virginia Beach,chain,12,123,114,Super.com,7.3,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Virginia Beach,US,Hilton Virginia Beach Oceanfront,chain,12,118,114,Traveluro,3.4,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Virginia Beach,US,Holiday Inn & Suites Virginia Beach - North Beach by IHG,chain,12,136,117,Vio.com,14.0,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,yes
+Virginia Beach,US,Holiday Inn Express & Suites VA Beach Oceanfront by IHG,chain,12,107,107,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,yes
+Virginia Beach,US,Hyatt Place Virginia Beach / Oceanfront,chain,12,135,135,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Virginia Beach,US,Hyatt Place Virginia Beach Town Center,chain,12,98,95,Vio.com,3.1,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Virginia Beach,US,Marriott Virginia Beach Oceanfront Resort,chain,12,162,152,Marriott Virginia Beach Oceanfront Resort,6.2,REAL_LOWER_MATCHED,yes,yes,no,2026-11-03,2026-11-05,no
+Virginia Beach,US,Moxy Virginia Beach Oceanfront,chain,12,118,118,Moxy Virginia Beach Oceanfront,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Virginia Beach,US,Sandcastle Resort Hotel,independent,8,94,94,Expedia.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Virginia Beach,US,The Ocean Key Resort,independent,12,105,82,Super.com,21.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Virginia Beach,US,Wyndham Virginia Beach Oceanfront,chain,12,86,69,trivago DEALS,19.8,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+West Palm Beach,US,Best Western Palm Beach Lakes,chain,12,140,107,Traveluro,23.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+West Palm Beach,US,Courtyard by Marriott West Palm Beach,chain,12,139,126,KAYAK.com,9.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+West Palm Beach,US,Delta Hotels by Marriott West Palm Beach,chain,12,241,223,HotelTonight.com,7.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+West Palm Beach,US,DoubleTree by Hilton Hotel West Palm Beach Airport,chain,12,197,110,KAYAK.com,44.2,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+West Palm Beach,US,Grandview Gardens,independent,12,269,215,Grandview Gardens,20.1,UNVERIFIED_LOWER,no,yes,no,2026-11-03,2026-11-05,no
+West Palm Beach,US,Hilton Garden Inn West Palm Beach I95 Outlets,chain,12,185,171,Hilton Garden Inn West Palm Beach I95 Outlets,7.6,REAL_LOWER_MATCHED,yes,yes,yes,2026-11-03,2026-11-05,no
+West Palm Beach,US,Hilton West Palm Beach,chain,12,461,366,trivago DEALS,20.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+West Palm Beach,US,Holiday Inn Express West Palm Beach Metrocentre by IHG,chain,12,136,119,KAYAK.com,12.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+West Palm Beach,US,La Quinta Inn & Suites by Wyndham West Palm Beach Airport,chain,12,95,77,Traveluro,18.9,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+West Palm Beach,US,Ramada by Wyndham West Palm Beach Airport,chain,2,122,122,Billabook.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+West Palm Beach,US,SpringHill Suites by Marriott West Palm Beach I-95,chain,12,139,130,KAYAK.com,6.5,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+West Palm Beach,US,The Jaxon,independent,10,114,70,Agoda,38.6,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+West Palm Beach,US,The Lofts On Clematis | Stay West Palm,independent,2,191,191,Bluepillow.com,0.0,PARITY,no,no,yes,2026-11-03,2026-11-05,no
+West Palm Beach,US,The Palm Beach Hotel Condominium,independent,3,231,202,Bluepillow.com,12.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+West Palm Beach,US,West Palm Beach Marriott,chain,12,204,189,KAYAK.com,7.4,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Williamsburg,US,Club Wyndham Kingsgate,chain,12,108,72,Super.com,33.3,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Williamsburg,US,Comfort Suites Williamsburg Historic Area,independent,12,98,97,Vio.com,1.0,PARITY,no,no,no,2026-11-03,2026-11-05,no
+Williamsburg,US,DoubleTree by Hilton Hotel Williamsburg,chain,12,107,107,Hotels.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Williamsburg,US,Hampton Inn & Suites Williamsburg Historic District,chain,11,83,83,Booking.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Williamsburg,US,Hampton Inn & Suites Williamsburg-Richmond Rd.,chain,12,91,87,Expedia.mx,4.4,PARITY,no,yes,yes,2026-11-03,2026-11-05,no
+Williamsburg,US,Hilton Garden Inn Williamsburg,chain,12,83,83,Hilton Garden Inn Williamsburg,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Williamsburg,US,Hilton Vacation Club Greensprings Williamsburg,chain,12,148,133,trivago DEALS,10.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,no
+Williamsburg,US,Hilton Vacation Club The Historic Powhatan Williamsburg,chain,12,105,87,Super.com,17.1,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Williamsburg,US,"Holiday Inn Club Vacations Williamsburg Resort, an IHG Hotel",chain,12,114,114,Hoteis.com,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Williamsburg,US,Holiday Inn Express Williamsbrg Busch Gardens Area by IHG,chain,12,87,83,Vio.com,4.6,PARITY,no,no,no,2026-11-03,2026-11-05,yes
+Williamsburg,US,Kingsmill Resort,independent,12,210,154,Super.com,26.7,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no
+Williamsburg,US,Marriott's Manor Club at Ford's Colony,chain,12,85,85,Marriott's Manor Club at Ford's Colony,0.0,PARITY,no,yes,yes,2026-11-03,2026-11-05,yes
+Williamsburg,US,Spark by Hilton Williamsburg Historic Area,chain,12,76,76,Booking.com,0.0,PARITY,no,yes,no,2026-11-03,2026-11-05,no
+Williamsburg,US,The Colonies at Williamsburg,independent,12,140,84,Super.com,40.0,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,yes
+Williamsburg,US,Wedmore Place Inn at The Williamsburg Winery,independent,8,203,135,Billabook.com,33.5,UNVERIFIED_LOWER,no,no,yes,2026-11-03,2026-11-05,yes
+Williamsburg,US,Westgate Historic Williamsburg Resort,independent,12,124,96,Super.com,22.6,UNVERIFIED_LOWER,no,no,no,2026-11-03,2026-11-05,no

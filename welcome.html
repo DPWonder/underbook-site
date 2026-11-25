@@ -89,6 +89,19 @@
 
     <div id="demo" class="hidden rounded-2xl border-2 border-emerald-300 bg-emerald-50 p-5 mb-10" aria-live="polite"></div>
 
+    <!-- X133 (2026-11-25, the installs owner; docs/EXPERIMENTS.md X133): the store tile shows 0.0 stars on Chrome, Edge and
+         Firefox beside rivals with hundreds, and 27 of 34 installs in the 7 days to 11/24 came straight from store search.
+         The extension's own ask reached 9 people in 7 days. Every install opens this page, so it carries one quiet line, in
+         the page's language: no question, no reward, never "a good one". Shown only on a real install's page (src=install,
+         or dev) on a computer browser whose store we know; the button opens that store's review page (Chrome Web Store
+         reviews tab, Edge Add-ons, Firefox Add-ons) in a new tab. Counted with the legacy names review_shown (line drawn)
+         and review_click (button pressed), which no current build sends (0 in the 14 days to 11/25 but one old copy on 11/16),
+         so no worker change. The link's text and href stay fixed for i18n.js; the click handler picks the store. -->
+    <section id="rate-line" hidden class="rounded-2xl border border-stone-200 bg-white px-5 py-4 mb-10">
+      <p class="text-slate-700">Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.</p>
+      <p class="mt-2"><a id="rate-go" href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid/reviews" target="_blank" rel="noopener" class="font-semibold underline">Rate Underbook in your browser's store</a></p>
+    </section>
+
     <section class="bg-white rounded-2xl border border-stone-200 p-6 md:p-8 mb-10">
       <h2 class="text-2xl font-bold tracking-tight mb-2">Or type a hotel you are considering</h2>
       <p class="text-slate-700 mb-4">Type the hotel and your dates. You will see every booking site's price, whether a cheaper one names the same room, and where free cancellation costs no more.</p>
@@ -181,6 +194,29 @@
       try { fetch('https://underbook-backend.underbook.workers.dev/event', { method: 'POST', body: body, keepalive: true }); } catch (x) {}
     }
     ev('welcome_view');
+    // X133: the rating line (see the comment on #rate-line). The store by browser, as /rate picks it (computers only).
+    (function rateLine() {
+      if (src !== 'install' && src !== 'dev') return;
+      var n = navigator, ua = '', store = null;
+      try { ua = n.userAgent || ''; } catch (x) { return; }
+      var touchMac = n.platform === 'MacIntel' && n.maxTouchPoints > 1;
+      if (n.webdriver === true || touchMac || /Android|iPhone|iPad|iPod|Mobile/i.test(ua)) return;
+      var TAGS = '?utm_source=welcome&utm_medium=page&utm_campaign=review_ask';
+      if (/\bEdg\//.test(ua)) store = 'https://microsoftedge.microsoft.com/addons/detail/hdpeoddhbhihjmmhpidnfnochdeekicd';
+      else if (/\bFirefox\//.test(ua)) store = 'https://addons.mozilla.org/firefox/addon/underbook/' + TAGS;
+      else if (/\bOPR\//.test(ua)) store = null;
+      else if (/\bChrome\//.test(ua)) store = 'https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid/reviews' + TAGS;
+      var box = document.getElementById('rate-line'), go = document.getElementById('rate-go');
+      if (!store || !box || !go) return;
+      box.hidden = false;
+      ev('review_shown');
+      var sent = false;
+      go.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (!sent) { sent = true; ev('review_click'); }
+        window.open(store, '_blank', 'noopener');
+      });
+    })();
     // A try is counted once per page view (welcome_try) and on every example click (welcome_try_ex).
     var tried = false;
     function onTryEx() { if (!tried) { tried = true; ev('welcome_try'); } ev('welcome_try_ex'); }

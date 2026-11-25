@@ -74,7 +74,9 @@
     "Type a city or a hotel.": "Kirjoita kaupunki tai hotelli.",
     "Pick your check-in and check-out dates.": "Valitse tulopäivä ja lähtöpäivä.",
     "Pick a check-in date from today on.": "Valitse tulopäivä tästä päivästä alkaen.",
-    "Pick a check-out date after the check-in date.": "Valitse lähtöpäivä, joka on tulopäivän jälkeen."
+    "Pick a check-out date after the check-in date.": "Valitse lähtöpäivä, joka on tulopäivän jälkeen.",
+    "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook on uusi, joten sen kauppasivulla ei ole vielä arvioita. Rehellinen arvio, hyvä tai huono, auttaa muita matkailijoita päättämään, kokeilevatko he sitä.",
+    "Rate Underbook in your browser's store": "Arvioi Underbook selaimesi kaupassa"
   },
   "@quotes": [
     "”",

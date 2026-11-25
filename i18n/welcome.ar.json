@@ -74,7 +74,9 @@
     "Type a city or a hotel.": "اكتب مدينة أو فندقًا.",
     "Pick your check-in and check-out dates.": "اختر تاريخ تسجيل الوصول وتاريخ المغادرة.",
     "Pick a check-in date from today on.": "اختر تاريخ تسجيل وصول من اليوم فصاعدًا.",
-    "Pick a check-out date after the check-in date.": "اختر تاريخ مغادرة بعد تاريخ تسجيل الوصول."
+    "Pick a check-out date after the check-in date.": "اختر تاريخ مغادرة بعد تاريخ تسجيل الوصول.",
+    "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook جديد، لذلك لا تظهر أي تقييمات على صفحته في المتجر بعد. التقييم الصادق، جيدًا كان أو سيئًا، يساعد المسافرين الآخرين على أن يقرروا هل يجربونه.",
+    "Rate Underbook in your browser's store": "قيّم Underbook في متجر متصفحك"
   },
   "@quotes": [
     "\"",

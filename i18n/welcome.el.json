@@ -74,7 +74,9 @@
     "Type a city or a hotel.": "Πληκτρολογήστε μια πόλη ή ένα ξενοδοχείο.",
     "Pick your check-in and check-out dates.": "Επιλέξτε ημερομηνία check-in και check-out.",
     "Pick a check-in date from today on.": "Επιλέξτε ημερομηνία check-in από σήμερα και μετά.",
-    "Pick a check-out date after the check-in date.": "Επιλέξτε ημερομηνία check-out μετά την ημερομηνία check-in."
+    "Pick a check-out date after the check-in date.": "Επιλέξτε ημερομηνία check-out μετά την ημερομηνία check-in.",
+    "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Το Underbook είναι νέο, γι' αυτό η σελίδα του στο κατάστημα δεν έχει ακόμη αξιολογήσεις. Μια ειλικρινής αξιολόγηση, καλή ή κακή, βοηθά άλλους ταξιδιώτες να αποφασίσουν αν θα το δοκιμάσουν.",
+    "Rate Underbook in your browser's store": "Αξιολογήστε το Underbook στο κατάστημα του προγράμματος περιήγησής σας"
   },
   "@quotes": [
     "«",

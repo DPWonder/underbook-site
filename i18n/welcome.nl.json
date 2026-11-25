@@ -74,7 +74,9 @@
   "Type a city or a hotel.": "Typ een stad of een hotel.",
   "Pick your check-in and check-out dates.": "Kies je in- en uitcheckdatum.",
   "Pick a check-in date from today on.": "Kies een incheckdatum vanaf vandaag.",
-  "Pick a check-out date after the check-in date.": "Kies een uitcheckdatum na de incheckdatum."
+  "Pick a check-out date after the check-in date.": "Kies een uitcheckdatum na de incheckdatum.",
+  "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook is nieuw, dus de pagina in de store heeft nog geen beoordelingen. Een eerlijke beoordeling, goed of slecht, helpt andere reizigers beslissen of ze het proberen.",
+  "Rate Underbook in your browser's store": "Beoordeel Underbook in de store van je browser"
  },
  "@quotes": [
   "“",

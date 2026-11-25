@@ -74,7 +74,9 @@
   "Type a city or a hotel.": "Hãy nhập một thành phố hoặc một khách sạn.",
   "Pick your check-in and check-out dates.": "Hãy chọn ngày nhận phòng và ngày trả phòng.",
   "Pick a check-in date from today on.": "Hãy chọn ngày nhận phòng từ hôm nay trở đi.",
-  "Pick a check-out date after the check-in date.": "Hãy chọn ngày trả phòng sau ngày nhận phòng."
+  "Pick a check-out date after the check-in date.": "Hãy chọn ngày trả phòng sau ngày nhận phòng.",
+  "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook còn mới nên trang của nó trên cửa hàng chưa có đánh giá nào. Một đánh giá trung thực, dù tốt hay chưa tốt, giúp những người đi du lịch khác quyết định có nên dùng thử hay không.",
+  "Rate Underbook in your browser's store": "Đánh giá Underbook trên cửa hàng của trình duyệt"
  },
  "@quotes": [
   "“",

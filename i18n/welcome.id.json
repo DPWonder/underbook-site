@@ -74,7 +74,9 @@
   "Type a city or a hotel.": "Ketik kota atau hotel.",
   "Pick your check-in and check-out dates.": "Pilih tanggal check-in dan check-out Anda.",
   "Pick a check-in date from today on.": "Pilih tanggal check-in mulai hari ini.",
-  "Pick a check-out date after the check-in date.": "Pilih tanggal check-out setelah tanggal check-in."
+  "Pick a check-out date after the check-in date.": "Pilih tanggal check-out setelah tanggal check-in.",
+  "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook masih baru, jadi halamannya di toko belum punya rating. Rating yang jujur, baik atau buruk, membantu wisatawan lain memutuskan apakah akan mencobanya.",
+  "Rate Underbook in your browser's store": "Beri rating Underbook di toko browser Anda"
  },
  "@quotes": [
   "“",

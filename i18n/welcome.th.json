@@ -74,7 +74,9 @@
     "Type a city or a hotel.": "พิมพ์ชื่อเมืองหรือโรงแรม",
     "Pick your check-in and check-out dates.": "เลือกวันเช็คอินและวันเช็คเอาท์",
     "Pick a check-in date from today on.": "เลือกวันเช็คอินตั้งแต่วันนี้เป็นต้นไป",
-    "Pick a check-out date after the check-in date.": "เลือกวันเช็คเอาท์หลังวันเช็คอิน"
+    "Pick a check-out date after the check-in date.": "เลือกวันเช็คเอาท์หลังวันเช็คอิน",
+    "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook ยังใหม่ หน้าของส่วนขยายนี้ในสโตร์จึงยังไม่มีคะแนน คะแนนที่ตรงไปตรงมา ไม่ว่าดีหรือไม่ดี ช่วยให้นักเดินทางคนอื่นตัดสินใจว่าจะลองใช้หรือไม่",
+    "Rate Underbook in your browser's store": "ให้คะแนน Underbook ในสโตร์ของเบราว์เซอร์คุณ"
   },
   "@quotes": [
     "\"",

@@ -74,7 +74,9 @@
   "Type a city or a hotel.": "도시나 호텔을 입력하세요.",
   "Pick your check-in and check-out dates.": "체크인 날짜와 체크아웃 날짜를 선택하세요.",
   "Pick a check-in date from today on.": "체크인 날짜는 오늘이나 그 이후로 선택하세요.",
-  "Pick a check-out date after the check-in date.": "체크인 날짜보다 늦은 체크아웃 날짜를 선택하세요."
+  "Pick a check-out date after the check-in date.": "체크인 날짜보다 늦은 체크아웃 날짜를 선택하세요.",
+  "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook은 새로 나온 확장 프로그램이라 스토어 페이지에 아직 평점이 없습니다. 좋든 나쁘든 솔직한 평점은 다른 여행자가 사용해 볼지 정하는 데 도움이 됩니다.",
+  "Rate Underbook in your browser's store": "브라우저 스토어에서 Underbook 평가하기"
  },
  "@quotes": [
   "“",

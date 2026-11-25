@@ -74,7 +74,9 @@
     "Type a city or a hotel.": "Введите город или отель.",
     "Pick your check-in and check-out dates.": "Выберите даты заезда и выезда.",
     "Pick a check-in date from today on.": "Выберите дату заезда начиная с сегодняшнего дня.",
-    "Pick a check-out date after the check-in date.": "Выберите дату выезда позже даты заезда."
+    "Pick a check-out date after the check-in date.": "Выберите дату выезда позже даты заезда.",
+    "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook новый, поэтому на его странице в магазине пока нет оценок. Честная оценка, хорошая или плохая, помогает другим путешественникам решить, стоит ли его попробовать.",
+    "Rate Underbook in your browser's store": "Оцените Underbook в магазине вашего браузера"
   },
   "@quotes": [
     "«",

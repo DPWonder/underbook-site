@@ -74,7 +74,9 @@
     "Type a city or a hotel.": "Upišite grad ili hotel.",
     "Pick your check-in and check-out dates.": "Odaberite datum prijave i datum odjave.",
     "Pick a check-in date from today on.": "Odaberite datum prijave od danas nadalje.",
-    "Pick a check-out date after the check-in date.": "Odaberite datum odjave nakon datuma prijave."
+    "Pick a check-out date after the check-in date.": "Odaberite datum odjave nakon datuma prijave.",
+    "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook je nov pa njegova stranica u trgovini još nema ocjena. Iskrena ocjena, dobra ili loša, pomaže drugim putnicima da odluče hoće li ga isprobati.",
+    "Rate Underbook in your browser's store": "Ocijenite Underbook u trgovini svojeg preglednika"
   },
   "@quotes": [
     "„",

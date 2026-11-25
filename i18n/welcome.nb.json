@@ -74,7 +74,9 @@
     "Type a city or a hotel.": "Skriv inn en by eller et hotell.",
     "Pick your check-in and check-out dates.": "Velg en dato for innsjekking og en for utsjekking.",
     "Pick a check-in date from today on.": "Velg en innsjekkingsdato fra i dag av.",
-    "Pick a check-out date after the check-in date.": "Velg en utsjekkingsdato etter innsjekkingsdatoen."
+    "Pick a check-out date after the check-in date.": "Velg en utsjekkingsdato etter innsjekkingsdatoen.",
+    "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook er nytt, så siden i butikken har ingen vurderinger ennå. En ærlig vurdering, god eller dårlig, hjelper andre reisende å avgjøre om de vil prøve det.",
+    "Rate Underbook in your browser's store": "Vurder Underbook i nettleserens butikk"
   },
   "@quotes": [
     "«",

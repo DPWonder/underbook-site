@@ -74,7 +74,9 @@
     "Type a city or a hotel.": "Zadajte mesto alebo hotel.",
     "Pick your check-in and check-out dates.": "Vyberte dátum príchodu a dátum odchodu.",
     "Pick a check-in date from today on.": "Vyberte dátum príchodu od dnešného dňa.",
-    "Pick a check-out date after the check-in date.": "Vyberte dátum odchodu po dátume príchodu."
+    "Pick a check-out date after the check-in date.": "Vyberte dátum odchodu po dátume príchodu.",
+    "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook je nový, a preto jeho stránka v obchode zatiaľ nemá hodnotenia. Úprimné hodnotenie, dobré aj zlé, pomôže ďalším cestovateľom rozhodnúť sa, či ho vyskúšajú.",
+    "Rate Underbook in your browser's store": "Ohodnoťte Underbook v obchode svojho prehliadača"
   },
   "@quotes": [
     "„",

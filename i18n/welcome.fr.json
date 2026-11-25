@@ -74,7 +74,9 @@
   "Type a city or a hotel.": "Saisissez une ville ou un hôtel.",
   "Pick your check-in and check-out dates.": "Choisissez vos dates d'arrivée et de départ.",
   "Pick a check-in date from today on.": "Choisissez une date d'arrivée à partir d'aujourd'hui.",
-  "Pick a check-out date after the check-in date.": "Choisissez une date de départ après la date d'arrivée."
+  "Pick a check-out date after the check-in date.": "Choisissez une date de départ après la date d'arrivée.",
+  "Underbook is new, so its store page shows no ratings yet. An honest rating, good or bad, helps other travelers decide whether to try it.": "Underbook est nouveau, sa page dans la boutique n'affiche donc encore aucune note. Une note sincère, bonne ou mauvaise, aide d'autres voyageurs à décider s'ils l'essaient.",
+  "Rate Underbook in your browser's store": "Noter Underbook dans la boutique de votre navigateur"
  },
  "@quotes": [
   "«\u00a0",

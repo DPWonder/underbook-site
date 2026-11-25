@@ -424,18 +424,20 @@
       var openBtn = cLink && cheapAll != null ? '<a id="ub-open" href="' + esc(cLink) + '" target="_blank" rel="noopener sponsored" data-site="' + esc(c.source) + '" class="block text-center mt-4 bg-accent text-ink font-bold px-5 py-3.5 rounded-xl text-base hover:brightness-95 transition">' +
         T('Open {site} at {price} a night', ov) + '</a>' +
         '<p class="text-xs text-stone-500 mt-1.5 text-center">' + (verdict === 'PARITY' ? T('The lowest listed price. Check the room and the final total on {site} before you book.', ov) : T('Check the room and the final total on {site} before you book.', ov)) + '</p>' : '';
-      // X128 (2026-11-24, docs/EXPERIMENTS.md): when the site named lowest is not Booking.com and Booking.com's own row
-      // (this market, its free listing, not a Google ad) shows the same price as the page writes it (whole units), a second button says
-      // so and opens it, through /go like every row. English page only (the sentence has no translations; the partner link
-      // is for visitors outside the EU and the UK, decided by /go as for every press). No new counter: /stats aff reads it.
       var tieBlock = '';
       if (openBtn && (!window.UBI18N || UBI18N.lang === 'en') && String(c.source || '').toLowerCase() !== 'booking.com' && !(fcAlt && String(fcAlt.source || '').toLowerCase() === 'booking.com')) {
         var bkRow = srcs.filter(function (s) { return !s.country && String(s.source || '').toLowerCase() === 'booking.com'; })[0];
         var adLk = function (u) { return /^https:\/\/www\.google\.[a-z.]+\/(?:pagead\/)?aclk\?/.test(String(u || '')); };
-        if (bkRow && bkRow.link && !adLk(bkRow.link) && (bkRow.allIn == null) === (c.allIn == null) && price(bkRow) != null && fmt(price(bkRow), cur) === fmt(cheapAll, cur)) {
+        var bkP = bkRow ? price(bkRow) : null;
+        var bkTie = bkP != null && fmt(bkP, cur) === fmt(cheapAll, cur);
+        var bkNear = bkP != null && !bkTie && bkP > cheapAll && bkP <= cheapAll * 1.05;
+        if (bkRow && bkRow.link && !adLk(bkRow.link) && (bkRow.allIn == null) === (c.allIn == null) && (bkTie || bkNear)) {
           var bkLink = goHref(bkRow.link, bkRow.source);
-          if (bkLink) tieBlock = '<p id="ub-tie-note" class="text-sm text-slate-600 mt-3 text-center">Booking.com lists the same price, ' + fmt(cheapAll, cur) + ' a night' + (c.allIn != null && !a.feesUnverified ? ', all in' : '') + '.</p>' +
-            '<a id="ub-tie-open" href="' + esc(bkLink) + '" target="_blank" rel="noopener sponsored" data-site="Booking.com" class="block text-center mt-2 bg-white text-ink font-bold px-5 py-3 rounded-xl text-base border border-stone-300 hover:border-ink transition">Open Booking.com at ' + fmt(cheapAll, cur) + '&nbsp;a&nbsp;night</a>';
+          var allTxt = c.allIn != null && !a.feesUnverified ? ', all in' : '';
+          if (bkLink) tieBlock = (bkTie
+              ? '<p id="ub-tie-note" class="text-sm text-slate-600 mt-3 text-center">Booking.com lists the same price, ' + fmt(cheapAll, cur) + ' a night' + allTxt + '.</p>'
+              : '<p id="ub-tie-note" data-near="1" class="text-sm text-slate-600 mt-3 text-center">Booking.com lists ' + fmt(bkP, cur) + ' a night' + allTxt + ', ' + fmt(Math.round(bkP) - Math.round(cheapAll), cur) + ' more than ' + esc(c.source) + '.</p>') +
+            '<a id="ub-tie-open" href="' + esc(bkLink) + '" target="_blank" rel="noopener sponsored" data-site="Booking.com" class="block text-center mt-2 bg-white text-ink font-bold px-5 py-3 rounded-xl text-base border border-stone-300 hover:border-ink transition">Open Booking.com at ' + fmt(bkTie ? cheapAll : bkP, cur) + '&nbsp;a&nbsp;night</a>';
         }
       }
       var sample = linkDates && stay.checkIn === sampleIn && stay.checkOut === sampleOut;

@@ -251,7 +251,7 @@
         if (state === 1) return;
         state = 1;
         var s = document.createElement('script');
-        s.src = '/check-inline.js?v=985f80e5ce';
+        s.src = '/check-inline.js?v=3f91af7623';
         s.onload = function () { state = window.UBAnswerCheck ? 2 : 3; flush(); };
         s.onerror = function () { state = 3; flush(); };
         document.head.appendChild(s);

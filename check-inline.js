@@ -26,10 +26,13 @@
   // The page's address stays the guide's.
   var history = { replaceState: function () {} };
   // The checker's request, marked as this box's: src=answer, and ai=1 when an AI assistant's answer opened this page.
+  // pg (2026-11-26, X134): the page the box is on, its address's one word (black-friday-hotel-prices-2026), so a check
+  // can be read by page; the worker counts src=answer as before and keeps no more than that word.
   var aiSent = false, isAuto = false;
+  var pg = (String(location.pathname).match(/^\/([a-z0-9-]{1,80})(?:\.html)?\/?$/) || [])[1] || '';
   var fetch = function (url, opts) {
     var u = String(url);
-    if (u.indexOf(API + '/compare?') === 0) u += '&src=answer' + (aiSent ? '&ai=1' : '');
+    if (u.indexOf(API + '/compare?') === 0) u += '&src=answer' + (aiSent ? '&ai=1' : '') + (pg ? '&pg=' + pg : '');
     return window.fetch(u, opts);
   };
   // ---- lifted verbatim from landing/public/hotel-price-checker.html (whole-line comments dropped) ----

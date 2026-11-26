@@ -108,31 +108,126 @@
   <section class="px-6 pt-16 md:pt-24 pb-10 max-w-3xl mx-auto">
     <p class="text-sm font-semibold text-emerald-700 uppercase tracking-wider mb-3">Underbook · updated November 6, 2026</p>
     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">Is a Black Friday or Cyber Monday hotel sale price lower than other sites?</h1>
-    <p class="text-xl text-ink leading-relaxed mb-4">Updated November 6, 2026: Underbook has not priced Black Friday or Cyber Monday sales, so check the sale hotel for its dates on every site; a sale price is lower only if no other site lists the same stay for less. In Underbook&#x27;s holiday study, for Thanksgiving week stays priced November 3, 2026, “another site listed the same hotel and dates 5% or more below Booking.com at 74 of 76 hotels (97%)”.</p>
-    <!-- holiday-check:start (X48, docs/EXPERIMENTS.md: a one-field check of this page's holiday stay; opens /hotel-price-checker, which runs it) -->
-    <form id="ub-holiday-check" action="/hotel-price-checker" method="get" class="bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 mt-6 mb-6" style="scroll-margin-top:80px">
-      <p class="text-lg sm:text-xl font-bold tracking-tight mb-3 break-words">Check a sale hotel on every site</p>
-      <label for="ub-h-hotel" class="block text-sm font-semibold text-slate-700 mb-1">Hotel name and city</label>
-      <input id="ub-h-hotel" name="hotel" type="text" required maxlength="120" autocomplete="off" placeholder="e.g. Hilton Chicago" class="w-full min-w-0 px-3 py-2.5 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink mb-3" />
-      <input type="hidden" name="src" value="holiday" />
-      <div class="sm:flex sm:items-end sm:gap-3">
-        <div class="grid grid-cols-2 gap-3 sm:flex-1 min-w-0">
-          <div class="min-w-0">
-            <label for="ub-h-in" class="block text-sm font-semibold text-slate-700 mb-1">Check-in</label>
-            <input id="ub-h-in" name="in" type="date" required class="w-full min-w-0 px-3 py-2.5 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
-          </div>
-          <div class="min-w-0">
-            <label for="ub-h-out" class="block text-sm font-semibold text-slate-700 mb-1">Check-out</label>
-            <input id="ub-h-out" name="out" type="date" required class="w-full min-w-0 px-3 py-2.5 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
-          </div>
+<!-- inline-check:start -->
+  <!-- ───────── CHECK A PRICE HERE ───────── -->
+  <!-- 2026-10-26 (docs/ANSWER_CHECK_2026-10-26.md, X33; written by scripts/answer_check_20261026.py through
+       scripts/inline_check_20261005.py and the answer-page generators): the web checker's own check, run in this box.
+       check-inline.js (lifted from the checker's script, loaded when the box is touched) sends the checker's request with
+       src=answer, shows the checker's answer under the form, then the install offer for this browser (computers) or the
+       phone card (app.js), and a link to the full checker for that stay. Without the script the form opens
+       /hotel-price-checker with the stay, as before. The dates start as the checker's defaults (21 and 23 days ahead). -->
+  <div class="mb-8">
+    <form id="ub-page-check" action="/hotel-price-checker" method="get" aria-labelledby="ub-page-check-h" class="max-w-2xl bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-sm">
+      <h2 id="ub-page-check-h" class="text-xl font-bold tracking-tight mb-1">Check your hotel&#39;s price here</h2>
+      <p class="text-sm text-slate-600 mb-4 leading-relaxed">Type the hotel and your dates. We check the booking sites Google Hotels lists and show the answer on this page: what each site lists, and <strong class="text-ink">whether a lower price names the same room</strong>. Free, no install, works on your phone.</p>
+      <label for="ub-page-hotel" class="block text-sm font-semibold text-slate-700 mb-1">Hotel</label>
+      <input id="ub-page-hotel" name="hotel" type="text" required maxlength="120" autocomplete="off" placeholder="e.g. Hilton Hawaiian Village Waikiki" class="w-full min-w-0 px-3.5 py-3 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
+      <div class="grid grid-cols-2 gap-3 mt-3">
+        <div class="min-w-0">
+          <label for="ub-page-in" class="block text-sm font-semibold text-slate-700 mb-1">Check-in</label>
+          <input id="ub-page-in" name="in" type="date" class="w-full min-w-0 px-3 py-2.5 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
         </div>
-        <button type="submit" class="block w-full sm:w-auto shrink-0 mt-3 sm:mt-0 text-center bg-accent text-ink font-bold text-lg sm:text-base px-7 sm:px-5 py-4 sm:py-3 rounded-lg hover:bg-accent/90 transition">Check every booking site</button>
+        <div class="min-w-0">
+          <label for="ub-page-out" class="block text-sm font-semibold text-slate-700 mb-1">Check-out</label>
+          <input id="ub-page-out" name="out" type="date" class="w-full min-w-0 px-3 py-2.5 rounded-xl border border-stone-500 bg-white text-base focus:outline-none focus:border-ink" />
+        </div>
       </div>
-      <p class="text-xs text-slate-500 mt-3">Free, in your browser, no install. Enter the hotel and the dates the sale price is for; the check lists the price each booking site shows for that stay.</p>
-      <p class="text-sm text-slate-600 mt-2">Or a holiday stay: <button type="button" data-h-in="2026-11-25" data-h-out="2026-11-29" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Thanksgiving week, November 25 to 29</button>, <button type="button" data-h-in="2026-12-23" data-h-out="2026-12-27" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Christmas, December 23 to 27</button> or <button type="button" data-h-in="2026-12-29" data-h-out="2027-01-02" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">New Year&#x27;s Eve, December 29 to January 2</button></p>
-      <script>(function () { var f = document.getElementById('ub-holiday-check'); if (!f) return; f.addEventListener('click', function (e) { var b = e.target && e.target.closest ? e.target.closest('button[data-h-in]') : null; if (!b) return; document.getElementById('ub-h-in').value = b.getAttribute('data-h-in'); document.getElementById('ub-h-out').value = b.getAttribute('data-h-out'); var h = document.getElementById('ub-h-hotel'); if (h && !h.value) h.focus(); }); })();</script>
+      <div class="flex items-center gap-3 mt-3">
+        <label for="ub-page-adults" class="text-sm font-semibold text-slate-700">Adults</label>
+        <select id="ub-page-adults" name="adults" class="px-3 py-2 rounded-xl border border-stone-500 text-base bg-white focus:outline-none focus:border-ink"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select>
+      </div>
+      <button id="ub-page-btn" type="submit" class="block w-full mt-4 text-center bg-ink text-white font-bold text-lg py-3.5 rounded-lg hover:bg-ink/90 transition">Check every booking site</button>
+      <p id="ub-page-msg" class="text-sm text-stone-500 mt-2 min-h-[1.25rem]" role="status" aria-live="polite"></p>
     </form>
-    <!-- holiday-check:end -->
+    <p id="ub-page-said" class="sr-only" role="status" aria-live="polite"></p>
+    <div id="ub-page-result" role="region" aria-label="Your hotel&#39;s prices" class="hidden max-w-2xl mt-4 bg-white border border-stone-200 rounded-2xl p-4 sm:p-5 shadow-sm">
+      <div id="ub-page-verdict"></div>
+      <div id="ub-page-offer" class="hidden sm:flex items-start gap-3 mt-4 border border-stone-200 bg-stone-50 rounded-xl p-4">
+        <span class="inline-block w-7 h-7 shrink-0 rounded-md bg-ink text-accent grid place-items-center text-sm font-extrabold" aria-hidden="true">U</span>
+        <div class="min-w-0">
+          <p id="ub-page-offer-lead" class="text-sm text-slate-700"></p>
+          <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">
+            <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=study&amp;utm_campaign=answer_offer" target="_blank" rel="noopener" data-cta="answer-offer" class="ub-install inline-block bg-ink text-white font-semibold text-base px-5 py-3 rounded-lg hover:bg-stone-800 transition whitespace-nowrap">+ Add to Chrome, free</a>
+            <button id="ub-page-offer-hide" type="button" class="text-sm text-stone-600 px-2 py-1 rounded underline underline-offset-4 hover:text-ink whitespace-nowrap">Not now</button>
+          </div>
+          <p class="text-xs text-stone-500 mt-2">It sends the hotel name, its town, your dates and party size to our price service (<a href="/privacy" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-ink">privacy</a>).</p>
+        </div>
+      </div>
+      <div id="ub-page-phone" data-ub-phone="result" class="hidden mt-4 border border-stone-200 bg-stone-50 rounded-xl p-4"></div>
+      <details class="mt-4 border-t border-stone-200 pt-3 group">
+        <summary class="cursor-pointer text-sm font-semibold text-ink flex justify-between items-center list-none">See the price on each site<span class="text-xl text-slate-500 group-open:rotate-45 transition-transform" aria-hidden="true">+</span></summary>
+        <div id="ub-page-sites" class="mt-2"></div>
+      </details>
+      <p id="ub-page-receipt" class="text-xs text-stone-500 mt-3"></p>
+      <p id="ub-page-allin" class="hidden text-xs text-stone-500 mt-2"></p>
+      <p class="text-xs text-stone-500 mt-2">How Underbook is free: if you book through a site we link to, we may earn a small commission from that site. It never changes which prices we show or their order.</p>
+      <p class="mt-3 text-sm"><a id="ub-page-full" href="/hotel-price-checker" class="font-semibold text-ink underline decoration-accent decoration-2 underline-offset-4 hover:text-emerald-700">Open this check on the full price checker, to share it or get an email if this stay gets cheaper &#8594;</a></p>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var f = document.getElementById('ub-page-check'); if (!f) return;
+      var ci = f.elements['in'], co = f.elements['out'];
+      var ymd = function (d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+      var day = function (s) { var p = String(s).split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); };
+      var isDay = function (s) { return /^\d{4}-\d{2}-\d{2}$/.test(s || ''); };
+      // Check-out follows check-in at the stay's length until the visitor picks a check-out; after that, only when it
+      // would no longer be after check-in. Its earliest date is the day after check-in.
+      var nights = 2, outPicked = false;
+      var follow = function (keep) { if (isDay(ci.value) && (keep === true || !isDay(co.value) || co.value <= ci.value)) { var o = day(ci.value); o.setDate(o.getDate() + nights); co.value = ymd(o); } };
+      var outMin = function () { if (isDay(ci.value)) { var n = day(ci.value); n.setDate(n.getDate() + 1); co.min = ymd(n); } };
+      // Never in the past: a missing or past check-in (a browser can restore one into the field) is the sample stay again.
+      var fresh = function () {
+        var t0 = new Date(), d1 = new Date(); d1.setDate(d1.getDate() + 21); var d2 = new Date(d1); d2.setDate(d2.getDate() + 2);
+        if (!isDay(ci.value) || ci.value < ymd(t0)) { ci.value = ymd(d1); co.value = ymd(d2); nights = 2; outPicked = false; }
+        follow();
+        ci.min = ymd(t0); outMin();
+      };
+      fresh();
+      window.addEventListener('pageshow', fresh);
+      ci.addEventListener('change', function () { if (!isDay(ci.value)) return; outMin(); follow(!outPicked); });
+      co.addEventListener('change', function () { if (isDay(ci.value) && isDay(co.value)) { var n = Math.round((day(co.value) - day(ci.value)) / 864e5); if (n > 0) { nights = n; outPicked = true; } } });
+      // The check runs in this box (check-inline.js, fetched once when the box is first touched). A person's submit only:
+      // a scripted one, or a browser where the script cannot load, opens the checker with the stay, as the form always did.
+      var last = 0, state = 0, waiting = [];
+      var load = function (cb) {
+        if (cb) waiting.push(cb);
+        var flush = function () { var w = waiting; waiting = []; w.forEach(function (fn) { fn(state === 2); }); };
+        if (state >= 2) { flush(); return; }
+        if (state === 1) return;
+        state = 1;
+        var s = document.createElement('script');
+        s.src = '/check-inline.js?v=3f91af7623';
+        s.onload = function () { state = window.UBAnswerCheck ? 2 : 3; flush(); };
+        s.onerror = function () { state = 3; flush(); };
+        document.head.appendChild(s);
+      };
+      ['pointerdown', 'touchstart', 'keydown', 'click', 'input'].forEach(function (t) { f.addEventListener(t, function (e) { if (e.isTrusted) { last = Date.now(); load(); } }, { capture: true, passive: true }); });
+      f.addEventListener('focusin', function () { load(); });
+      f.addEventListener('submit', function (e) {
+        follow();
+        if (e.isTrusted === false || Date.now() - last > 5000) return;
+        e.preventDefault();
+        load(function (ready) { if (!(ready && window.UBAnswerCheck.check())) f.submit(); });
+      });
+      // The hero's "check a hotel's price" links (and the button app.js turns into one on a phone) come down to this box.
+      var here = function (e) {
+        e.preventDefault();
+        var calm = false; try { calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (x) { calm = false; }
+        try { f.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' }); } catch (x) { f.scrollIntoView(); }
+        try { f.elements.hotel.focus({ preventScroll: true }); } catch (x) { f.elements.hotel.focus(); }
+      };
+      document.addEventListener('DOMContentLoaded', function () {
+        var hero = document.querySelector('main section'); if (!hero || hero.contains(f)) return;
+        Array.prototype.forEach.call(hero.querySelectorAll('a[href="/hotel-price-checker"]'), function (a) {
+          if (!a.hasAttribute('data-handheld') && !/^or check a hotel/i.test(a.textContent.trim())) return;
+          a.setAttribute('href', '#ub-page-check'); a.addEventListener('click', here);
+        });
+      });
+    })();
+  </script>
+<!-- inline-check:end -->
+    <p class="text-xl text-ink leading-relaxed mb-4">Updated November 6, 2026: Underbook has not priced Black Friday or Cyber Monday sales, so check the sale hotel for its dates on every site; a sale price is lower only if no other site lists the same stay for less. In Underbook&#x27;s holiday study, for Thanksgiving week stays priced November 3, 2026, “another site listed the same hotel and dates 5% or more below Booking.com at 74 of 76 hotels (97%)”.</p>
     <p class="text-xl text-slate-600 leading-relaxed">Black Friday is Friday, November 27, 2026, and Cyber Monday is Monday, November 30. Booking sites and hotel chains advertise sales around those days. A sale price can be real and still not be the lower price for your stay, and a lower price on another site can be for a different room or come with stricter cancellation terms. The check above lists the price each booking site shows on Google Hotels for the hotel and dates you enter, with taxes and fees as each site reports them; a resort or destination fee may be extra.</p>
     <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center mt-8">
       <a href="https://chromewebstore.google.com/detail/bfkhcloifkimjimedcijpenafnkfibid?utm_source=underbook.co&amp;utm_medium=study&amp;utm_campaign=bf_hero" data-cta="bf_hero" class="ub-install bg-accent text-ink font-bold px-6 py-3.5 rounded-lg hover:bg-accent/90 transition w-full sm:w-auto text-center">

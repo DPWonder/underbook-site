@@ -29,7 +29,7 @@
   "Hotel name, e.g. citizenM Tower of London": "酒店名称，例如 citizenM Tower of London",
   "Check every booking site": "查看所有预订网站",
   "What it tells you": "它会告诉您什么",
-  "<strong>The going rate</strong> for your dates, the price most booking sites agree on, with taxes and fees included when the sites publish them.": "<strong>通行价格</strong>：在您所选的日期，大多数预订网站一致给出的价格；网站公布税费时，该价格包含税费。",
+  "<strong>The going rate</strong> for your dates, the most common price among the listings that name a room or offer free cancellation, with taxes and fees included when the sites publish them.": "<strong>通行价格</strong>：在您所选的日期，注明房型或可免费取消的报价中最常见的价格；网站公布税费时，该价格包含税费。",
   "<strong>The lowest listed price</strong> and the site that has it, with a link straight to it.": "<strong>列出的最低价格</strong>及列出该价格的网站，并附直达链接。",
   "<strong>Whether it is the same room.</strong> A lower price often comes with a different room or different cancellation terms. Underbook says \"same room name\" only when the room names match, and \"check the room\" when they do not. <a href=\"/hotel-price-dispersion-study\" class=\"underline\">Why that matters, measured on 7,044 hotel prices.</a>": "<strong>是否为同一房型。</strong>更低的价格常常对应不同的房型或不同的取消条款。只有在房型名称相同时，Underbook 才会显示“same room name”（房型名称相同），不相同时则显示“check the room”（核对房型）。<a href=\"/hotel-price-dispersion-study\" class=\"underline\">为什么这很重要：基于7044个酒店价格的测量（英文）。</a>",
   "<strong>When no site we checked is 5% or more below the site you are on</strong>, it says so, so you can book without opening ten tabs.": "<strong>如果我们查看的网站中，没有任何网站的价格比您当前所在网站的价格低5%或以上</strong>，它会直接告诉您，这样您无需打开十个标签页就能预订。",

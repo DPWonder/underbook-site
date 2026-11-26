@@ -29,7 +29,7 @@
   "Hotel name, e.g. citizenM Tower of London": "호텔 이름, 예: citizenM Tower of London",
   "Check every booking site": "모든 예약 사이트 확인",
   "What it tells you": "알려 드리는 정보",
-  "<strong>The going rate</strong> for your dates, the price most booking sites agree on, with taxes and fees included when the sites publish them.": "선택한 날짜의 <strong>일반 시세</strong>: 대부분의 예약 사이트가 공통으로 제시하는 가격이며, 사이트가 세금과 수수료를 게시하는 경우 이를 포함합니다.",
+  "<strong>The going rate</strong> for your dates, the most common price among the listings that name a room or offer free cancellation, with taxes and fees included when the sites publish them.": "선택한 날짜의 <strong>일반 시세</strong>: 객실 이름을 밝히거나 무료 취소를 제공하는 목록 중에서 가장 흔한 가격이며, 사이트가 세금과 수수료를 게시하는 경우 이를 포함합니다.",
   "<strong>The lowest listed price</strong> and the site that has it, with a link straight to it.": "<strong>게시된 가장 낮은 가격</strong>과 그 가격을 올린 사이트, 그리고 그곳으로 바로 가는 링크.",
   "<strong>Whether it is the same room.</strong> A lower price often comes with a different room or different cancellation terms. Underbook says \"same room name\" only when the room names match, and \"check the room\" when they do not. <a href=\"/hotel-price-dispersion-study\" class=\"underline\">Why that matters, measured on 7,044 hotel prices.</a>": "<strong>같은 객실인지 여부.</strong> 더 낮은 가격은 다른 객실이거나 취소 조건이 다른 경우가 많습니다. Underbook은 객실 이름이 일치할 때만 “same room name”(같은 객실 이름) 문구를 표시하고, 일치하지 않으면 “check the room”(객실을 확인하세요) 문구를 표시합니다. <a href=\"/hotel-price-dispersion-study\" class=\"underline\">이것이 왜 중요한지, 호텔 가격 7,044건으로 측정했습니다(영어).</a>",
   "<strong>When no site we checked is 5% or more below the site you are on</strong>, it says so, so you can book without opening ten tabs.": "<strong>확인한 사이트 중 지금 보고 있는 사이트보다 5% 이상 낮은 곳이 없으면</strong> 그렇다고 알려 드리므로, 탭을 열 개나 열지 않고도 예약할 수 있습니다.",

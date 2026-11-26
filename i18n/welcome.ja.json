@@ -29,7 +29,7 @@
   "Hotel name, e.g. citizenM Tower of London": "ホテル名（例：citizenM Tower of London）",
   "Check every booking site": "すべての予約サイトを確認",
   "What it tells you": "わかること",
-  "<strong>The going rate</strong> for your dates, the price most booking sites agree on, with taxes and fees included when the sites publish them.": "<strong>相場</strong>：その日程で大半の予約サイトの料金が一致する価格。サイトが税金や手数料を公開している場合は、それらを含みます。",
+  "<strong>The going rate</strong> for your dates, the most common price among the listings that name a room or offer free cancellation, with taxes and fees included when the sites publish them.": "<strong>相場</strong>：その日程で、部屋名を明記しているか無料キャンセルが可能な掲載のうち、最も多く見られる価格。サイトが税金や手数料を公開している場合は、それらを含みます。",
   "<strong>The lowest listed price</strong> and the site that has it, with a link straight to it.": "<strong>掲載されている最も低い価格</strong>と、その価格を掲載しているサイト。そのサイトへの直接リンク付きです。",
   "<strong>Whether it is the same room.</strong> A lower price often comes with a different room or different cancellation terms. Underbook says \"same room name\" only when the room names match, and \"check the room\" when they do not. <a href=\"/hotel-price-dispersion-study\" class=\"underline\">Why that matters, measured on 7,044 hotel prices.</a>": "<strong>同じ部屋かどうか。</strong>より低い価格は、別の部屋や別のキャンセル条件であることがよくあります。Underbookが「same room name」（同じ名前の部屋）と表示するのは部屋名が一致する場合だけで、一致しない場合は「check the room」（部屋を確認）と表示します。<a href=\"/hotel-price-dispersion-study\" class=\"underline\">なぜ重要なのか、ホテル料金7,044件で計測しました（英語）。</a>",
   "<strong>When no site we checked is 5% or more below the site you are on</strong>, it says so, so you can book without opening ten tabs.": "<strong>確認したサイトの中に、いま見ているサイトより5%以上低い価格を掲載しているサイトがない場合</strong>は、そうお知らせします。タブを十個も開かずに予約できます。",

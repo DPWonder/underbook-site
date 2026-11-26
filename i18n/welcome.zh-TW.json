@@ -29,7 +29,7 @@
   "Hotel name, e.g. citizenM Tower of London": "飯店名稱，例如 citizenM Tower of London",
   "Check every booking site": "查看所有訂房網站",
   "What it tells you": "它會告訴您什麼",
-  "<strong>The going rate</strong> for your dates, the price most booking sites agree on, with taxes and fees included when the sites publish them.": "<strong>行情價</strong>：在您所選的日期，大多數訂房網站一致的價格；網站有公布稅費時，價格包含稅費。",
+  "<strong>The going rate</strong> for your dates, the most common price among the listings that name a room or offer free cancellation, with taxes and fees included when the sites publish them.": "<strong>行情價</strong>：在您所選的日期，標明房型或可免費取消的報價中最常見的價格；網站有公布稅費時，價格包含稅費。",
   "<strong>The lowest listed price</strong> and the site that has it, with a link straight to it.": "<strong>網站列出的最低價格</strong>，以及列出這個價格的網站，並附上直達連結。",
   "<strong>Whether it is the same room.</strong> A lower price often comes with a different room or different cancellation terms. Underbook says \"same room name\" only when the room names match, and \"check the room\" when they do not. <a href=\"/hotel-price-dispersion-study\" class=\"underline\">Why that matters, measured on 7,044 hotel prices.</a>": "<strong>是否為同一間房。</strong>更低的價格常常對應不同的房型或不同的取消條款。只有在房型名稱相同時，Underbook 才會顯示「same room name」（同名房型）；名稱不一致時則顯示「check the room」（請確認房間）。<a href=\"/hotel-price-dispersion-study\" class=\"underline\">為什麼這很重要：以7044個飯店價格測量的結果（英文）。</a>",
   "<strong>When no site we checked is 5% or more below the site you are on</strong>, it says so, so you can book without opening ten tabs.": "<strong>如果我們查看的網站中，沒有任何一個的價格比您目前所在網站的價格低5%或更多</strong>，它會直接告訴您，讓您不必開十個分頁就能訂房。",

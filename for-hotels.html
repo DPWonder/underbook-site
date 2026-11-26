@@ -22,7 +22,11 @@
        next bet is that hotels pay. This page is the first piece a stranger sees: the measured problem, what the weekly
        report holds, the price, and one box that asks for the hotel, its town and an email (/ask.js, page "for-hotels",
        read with python3 scripts/words_read.py --strangers). No payment is taken here. The hero's figures come from
-       python3 scripts/hotels_independent_share.py (11/26 16:1xZ: 812 of 1,142, chains taken out by name; it first read 511 of 743). -->
+       python3 scripts/hotels_independent_share.py (11/26 16:1xZ: 812 of 1,142, chains taken out by name; it first read 511 of 743).
+       11/26 18:2xZ: hero and example re-stated against the hotel's OWN price, taxes included (439 of the 686 whose own site
+       is listed; the example from data/dispersion/r15_cities, Saratoga Casino Hotel's sites list). The study's going rate is
+       the most common price among only the room-naming listings, so "the rate most sites agreed on" was not true per hotel
+       (Saratoga: 7 of 23 sites), and "12 sites" was Google's featured entries with repeats (23 different sites). -->
 
   <!-- ───────── NAV ───────── -->
   <nav class="border-b border-stone-200 bg-stone-50/80 backdrop-blur sticky top-0 z-50">
@@ -44,7 +48,7 @@
       Is another site selling your rooms for less than you are?
     </h1>
     <p class="text-lg text-slate-600 leading-relaxed mb-4">
-      In September 2026 we priced 1,142 independent hotels across the United States on every booking site Google Hotels lists. At 812 of them (71%), at least one site showed the same stay more than 5% below the rate most sites agreed on. The site most often lowest was Super.com.
+      In September 2026 we priced 1,142 independent hotels across the United States on every booking site Google Hotels lists. 686 of them had their own site in that list, and at 439 of those (64%), at least one other site showed the same stay more than 5% below the hotel's own price, taxes included. The site most often lowest was Super.com.
     </p>
     <p class="text-lg text-slate-600 leading-relaxed">
       A guest who sees that lower price books there instead of with you, or asks you to match it at the desk. Checking every site for every date by hand takes hours, so most of it goes unseen.
@@ -59,13 +63,13 @@
         A 4-star independent hotel in Saratoga Springs, New York. Two nights in early November, checked 35 days ahead.
       </p>
       <dl class="grid grid-cols-2 gap-4 text-sm mb-4">
-        <div><dt class="text-slate-500">Sites listing it</dt><dd class="text-2xl font-bold">12</dd></div>
-        <div><dt class="text-slate-500">Rate most sites agreed on</dt><dd class="text-2xl font-bold">$160 <span class="text-sm font-normal text-slate-500">a night</span></dd></div>
-        <div><dt class="text-slate-500">Lowest listing</dt><dd class="text-2xl font-bold">$125 <span class="text-sm font-normal text-slate-500">on Super.com</span></dd></div>
-        <div><dt class="text-slate-500">Below the going rate</dt><dd class="text-2xl font-bold">22%</dd></div>
+        <div><dt class="text-slate-500">Sites listing it</dt><dd class="text-2xl font-bold">23</dd></div>
+        <div><dt class="text-slate-500">The hotel's own site</dt><dd class="text-2xl font-bold">$213 <span class="text-sm font-normal text-slate-500">a night</span></dd></div>
+        <div><dt class="text-slate-500">Lowest listing</dt><dd class="text-2xl font-bold">$143 <span class="text-sm font-normal text-slate-500">on Super.com</span></dd></div>
+        <div><dt class="text-slate-500">Below the hotel's own price</dt><dd class="text-2xl font-bold">33%</dd></div>
       </dl>
       <p class="text-sm text-slate-600 leading-relaxed">
-        The lower listing named no room, so a guest could not tell whether it was the same room. Prices are before taxes and fees. The full method is in our <a href="/hotel-price-dispersion-study" class="underline">price study</a>.
+        18 of the other 22 sites showed the stay below the hotel's own price. The lowest listing named no room, so a guest could not tell whether it was the same room. Prices are a night with taxes and fees. The full method is in our <a href="/hotel-price-dispersion-study" class="underline">price study</a>.
       </p>
     </div>
   </section>

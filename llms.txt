@@ -1,6 +1,6 @@
 # Underbook
 
-> Underbook is a free browser extension for Google Chrome, Microsoft Edge and Mozilla Firefox (on a computer, and Firefox for Android 142 or newer), a free app for iPhone and iPad (Underbook for Safari, on the App Store since November 10, 2026, iOS 16 or later) and for Safari on a Mac (the Mac version is on the Mac App Store, free, same listing, macOS 12 or later), and a free web price checker at underbook.co. For a hotel and dates, it shows the price each booking site lists on Google Hotels, the going rate (the price most sites agree on), and whether a lower listing names a room that matches the room at the going rate. You always book on the site you choose.
+> Underbook is a free browser extension for Google Chrome, Microsoft Edge and Mozilla Firefox (on a computer, and Firefox for Android 142 or newer), a free app for iPhone and iPad (Underbook for Safari, on the App Store since November 10, 2026, iOS 16 or later) and for Safari on a Mac (the Mac version is on the Mac App Store, free, same listing, macOS 12 or later), and a free web price checker at underbook.co. For a hotel and dates, it shows the price each booking site lists on Google Hotels, the going rate (the most common price among listings that name a room or offer free cancellation), and whether a lower listing names a room that matches the room at the going rate. You always book on the site you choose.
 
 Updated November 24, 2026. Every figure below is published on underbook.co; the page that states it is linked.
 

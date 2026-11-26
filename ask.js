@@ -31,6 +31,10 @@
   function draw(host) {
     var id = (host.getAttribute('data-ub-ask') || 'page').slice(0, 30);
     var q = host.getAttribute('data-q') || 'Anything you want to tell us? One line is plenty.';
+    // Optional per-page words (2026-11-26, /for-hotels): data-ph placeholder, data-small small print, data-thanks reply.
+    var ph = host.getAttribute('data-ph') || 'One line is plenty';
+    var smallText = host.getAttribute('data-small') || 'No email needed. We keep only the words you send, and we read every one (';
+    var thanks = host.getAttribute('data-thanks') || 'Thank you. We read every line, and this one goes to the person who decides what to change.';
     if (!TEST && store('ub_ask_' + id)) return;
 
     var box = el('div', 'border:1px solid #e7e5e4;background:#fff;border-radius:16px;padding:16px 20px;max-width:42rem;margin:0 auto;');
@@ -40,12 +44,12 @@
     input.type = 'text';
     input.maxLength = 300;
     input.autocomplete = 'off';
-    input.placeholder = 'One line is plenty';
+    input.placeholder = ph;
     input.setAttribute('aria-label', q);
     var btn = el('button', 'padding:10px 18px;border:0;border-radius:12px;background:#0f172a;color:#fff;font-weight:600;font-size:16px;cursor:pointer;', 'Send');
     btn.type = 'submit';
     var small = el('p', 'margin:8px 0 0;font-size:12px;color:#64748b;');
-    small.appendChild(document.createTextNode('No email needed. We keep only the words you send, and we read every one ('));
+    small.appendChild(document.createTextNode(smallText));
     var a = el('a', 'color:inherit;text-decoration:underline;', 'privacy');
     a.href = '/privacy';
     small.appendChild(a);
@@ -83,7 +87,7 @@
           store('ub_ask_' + id, '1');
           form.remove();
           small.remove();
-          msg.textContent = 'Thank you. We read every line, and this one goes to the person who decides what to change.';
+          msg.textContent = thanks;
         })
         .catch(function () {
           busy = false;

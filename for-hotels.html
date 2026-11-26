@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="robots" content="index, follow" />
+
+  <title>Is another site selling your rooms for less? A weekly rate check for hotels | Underbook</title>
+  <meta name="description" content="For independent hotels: one email a week listing every booking site that shows your stay below your own rate, with the price and the room it names. $39 a month, the first report is free." />
+  <link rel="canonical" href="https://underbook.co/for-hotels" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui,-apple-system' font-size='17' font-weight='800' fill='%23ffffff'%3EU%3C/text%3E%3C/svg%3E" />
+
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <link rel="stylesheet" href="/assets/site.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="font-sans bg-stone-50 text-ink antialiased">
+  <!-- X135 (2026-11-26, the owner; GROWTH.md "Does the money add up"): travelers' presses cannot earn enough, so the
+       next bet is that hotels pay. This page is the first piece a stranger sees: the measured problem, what the weekly
+       report holds, the price, and one box that asks for the hotel, its town and an email (/ask.js, page "for-hotels",
+       read with python3 scripts/words_read.py --strangers). No payment is taken here. -->
+
+  <!-- ───────── NAV ───────── -->
+  <nav class="border-b border-stone-200 bg-stone-50/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <a href="/" class="flex items-center gap-2 font-bold text-lg tracking-tight shrink-0">
+        <span class="inline-block w-7 h-7 rounded-md bg-ink text-white grid place-items-center text-base font-extrabold" aria-hidden="true">U</span>
+        Underbook <span class="text-stone-500 font-semibold text-base">for hotels</span>
+      </a>
+      <a href="#first-report" class="text-sm font-semibold text-stone-600 hover:text-ink whitespace-nowrap">Get the first report<span class="hidden sm:inline"> free</span></a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <!-- ───────── HERO ───────── -->
+  <section class="px-6 pt-16 md:pt-24 pb-12 max-w-2xl mx-auto">
+    <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-4">For independent hotels</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.05] mb-6">
+      Is another site selling your rooms for less than you are?
+    </h1>
+    <p class="text-lg text-slate-600 leading-relaxed mb-4">
+      In September 2026 we priced 743 independent hotels across the United States on every booking site Google Hotels lists. At 511 of them (69%), at least one site showed the same stay more than 5% below the rate most sites agreed on. The site most often lowest was Super.com.
+    </p>
+    <p class="text-lg text-slate-600 leading-relaxed">
+      A guest who sees that lower price books there instead of with you, or asks you to match it at the desk. Checking every site for every date by hand takes hours, so most of it goes unseen.
+    </p>
+  </section>
+
+  <!-- ───────── ONE MEASURED EXAMPLE ───────── -->
+  <section class="px-6 pb-12 max-w-2xl mx-auto">
+    <div class="border border-stone-200 rounded-2xl bg-white p-6">
+      <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3">One measured example</p>
+      <p class="text-slate-700 leading-relaxed mb-4">
+        A 4-star independent hotel in Saratoga Springs, New York. Two nights in early November, checked 35 days ahead.
+      </p>
+      <dl class="grid grid-cols-2 gap-4 text-sm mb-4">
+        <div><dt class="text-slate-500">Sites listing it</dt><dd class="text-2xl font-bold">12</dd></div>
+        <div><dt class="text-slate-500">Rate most sites agreed on</dt><dd class="text-2xl font-bold">$160 <span class="text-sm font-normal text-slate-500">a night</span></dd></div>
+        <div><dt class="text-slate-500">Lowest listing</dt><dd class="text-2xl font-bold">$125 <span class="text-sm font-normal text-slate-500">on Super.com</span></dd></div>
+        <div><dt class="text-slate-500">Below the going rate</dt><dd class="text-2xl font-bold">22%</dd></div>
+      </dl>
+      <p class="text-sm text-slate-600 leading-relaxed">
+        The lower listing named no room, so a guest could not tell whether it was the same room. Prices are before taxes and fees. The full method is in our <a href="/hotel-price-dispersion-study" class="underline">price study</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ───────── WHAT THE REPORT HOLDS ───────── -->
+  <section class="px-6 py-16 bg-white border-y border-stone-200">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl font-bold mb-6 tracking-tight">The weekly report</h2>
+      <ul class="space-y-4 text-slate-700 leading-relaxed">
+        <li><strong>One email every Monday.</strong> For your next four weekends, or the dates you pick, every site that lists your hotel and the price it shows, with and without taxes and fees.</li>
+        <li><strong>The listings below your rate, marked.</strong> Each one more than 5% below your own direct rate, with the site, the room name it shows (or that it shows none), and how far below it is.</li>
+        <li><strong>What changed since last week.</strong> Sites that started or stopped undercutting you, so you know whom to call.</li>
+        <li><strong>Nothing to install or connect.</strong> No login, no channel manager access, no code on your site. We check the public prices a guest sees.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ───────── PRICE AND THE FIRST REPORT ───────── -->
+  <section id="first-report" class="px-6 py-16 max-w-2xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4 tracking-tight">$39 a month per hotel. The first report is free.</h2>
+    <p class="text-slate-600 leading-relaxed mb-8">
+      Tell us your hotel and where to send it. The first report comes from hi@underbook.co within two working days. You decide after you have read it, and there is nothing to pay until you do. A paid report stops whenever you reply "stop".
+    </p>
+    <div data-ub-ask="for-hotels" data-q="Your hotel's name, its town, and the email for the report"
+         data-ph="Hotel name, town, email"
+         data-small="We use these words only to send your report and to write to you about it ("
+         data-thanks="Thank you. Your first report comes from hi@underbook.co within two working days. If you think of a date you care about, reply to it and we will add it."
+         hidden></div>
+    <script src="/ask.js?v=20261126b" defer></script>
+    <p class="text-sm text-slate-500 mt-6 leading-relaxed">
+      Prefer email? Write to <a href="mailto:hi@underbook.co?subject=First%20rate%20report%20for%20my%20hotel&body=Hotel%20name%3A%0ATown%3A%0ADates%20I%20care%20about%20(optional)%3A" class="underline">hi@underbook.co</a> with your hotel's name and town.
+    </p>
+  </section>
+
+  <!-- ───────── WHO WE ARE ───────── -->
+  <section class="px-6 pb-20 max-w-2xl mx-auto">
+    <h2 class="text-xl font-bold mb-3 tracking-tight">Who is behind this</h2>
+    <p class="text-slate-600 leading-relaxed">
+      Underbook is a free price check that travelers use in Chrome, Edge, Firefox and Safari: on a hotel page it compares the same stay on every site Google Hotels lists. This report is that same check, pointed at your hotel and sent to you instead. We are not a booking site and we do not sell rooms.
+    </p>
+  </section>
+
+  </main>
+
+  <!-- ───────── FOOTER ───────── -->
+  <footer class="px-6 py-10 border-t border-stone-200">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-6 h-6 rounded bg-ink text-white grid place-items-center text-xs font-extrabold" aria-hidden="true">U</span>
+        <span><strong class="text-ink">Underbook</strong>. Your hotel, double-checked.</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <a href="/" class="hover:text-ink transition">Home</a>
+        <a href="/hotel-price-dispersion-study" class="hover:text-ink transition">Price study</a>
+        <a href="/help" class="hover:text-ink transition">Help</a>
+        <a href="/privacy" class="hover:text-ink transition">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -608,7 +608,13 @@ if (ubAppStore === 'ios' && ubEnglishPage && !ubAsL) {
 if (ubAppStore === 'ios') {
   document.querySelectorAll('[data-ub-ios-top]').forEach((el) => {
     try {
-      el.innerHTML = `<a href="${ubAppStoreHref(`${ubAsTag}_top`)}" target="_blank" rel="noopener" data-ub-appstore="top" class="ub-install inline-flex items-center text-sm font-semibold bg-ink text-white px-4 py-2.5 rounded-lg hover:bg-stone-800 transition">${ubAsLabelHtml}</a>`;
+      // 2026-11-26 (the owner chat, the founder's 11/25 "read the presses tomorrow"): on 11/25 this button got 0 person
+      // presses (phone_appstore_top) while 1 person pressed the App Store card lower down. A bare install button above
+      // the sentence that says what Underbook does asked for an install before any reason. On an English page it now
+      // carries one line first (what it does in Safari, free) and a shorter label; other languages keep their label.
+      // Read on 11/27: phone_appstore_top against home_view_phone.
+      el.innerHTML = (ubAsL ? '' : '<span class="block text-sm text-slate-600 mb-2 leading-relaxed">On an iPhone? Underbook for Safari runs this check by itself on the hotel pages you open in Safari. Free, no account.</span>')
+        + `<a href="${ubAppStoreHref(`${ubAsTag}_top`)}" target="_blank" rel="noopener" data-ub-appstore="top" class="ub-install inline-flex items-center text-sm font-semibold bg-ink text-white px-4 py-2.5 rounded-lg hover:bg-stone-800 transition">${ubAsL ? ubAsLabelHtml : 'Get it free on the App Store'}</a>`;
       el.hidden = false;
     } catch { /* the page stays as written */ }
   });

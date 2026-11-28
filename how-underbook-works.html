@@ -42,7 +42,7 @@
  },
  "mainEntityOfPage": "https://underbook.co/how-underbook-works",
  "datePublished": "2026-10-01",
- "dateModified": "2026-11-15",
+ "dateModified": "2026-11-28",
  "about": {
   "@type": "SoftwareApplication",
   "@id": "https://underbook.co/#extension",
@@ -126,7 +126,7 @@
 
   <!-- ───────── HERO ───────── -->
   <section class="px-6 pt-16 md:pt-24 pb-12 max-w-4xl mx-auto">
-    <p class="text-sm font-semibold text-emerald-700 uppercase tracking-wider mb-3">Why trust Underbook? Updated November 15, 2026</p>
+    <p class="text-sm font-semibold text-emerald-700 uppercase tracking-wider mb-3">Why trust Underbook? Updated November 28, 2026</p>
     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight mb-6">How Underbook works, and how to check us</h1>
     <p class="text-xl text-slate-600 leading-relaxed">Underbook compares the price of a hotel stay across the booking sites Google Hotels lists: on the hotel page you are looking at, with the browser extension for Chrome, Edge or Firefox, or on the web, with the <a href="/hotel-price-checker" class="underline">price checker</a>. This page says where the prices come from, what the words on a result mean, how often we measured them to hold, what we never do and how we make money. Each point names where you can check it: our <a href="/privacy" class="underline">privacy policy</a>, our <a href="/hotel-price-dispersion-study" class="underline">price study</a> or our <a href="/corrections" class="underline">corrections log</a>.</p>
     <!-- chatgpt-lines-1111:start -->
@@ -182,7 +182,7 @@
       <ul class="space-y-3 text-lg text-slate-700 leading-relaxed list-disc pl-6 mb-6">
         <li><strong>Only what Google Hotels lists.</strong> A booking site that Google Hotels does not list for that stay is not compared. The prices are the public ones a signed-out visitor sees, so a discount you would only get after signing in to a site, such as Booking.com's Genius price, is not in them.</li>
         <li><strong>The extension does not read the price on your page.</strong> On a hotel page it reads the hotel's name, the town when the page shows it, your dates and the number of adults, and sends those to the price service. The price of the site you are on comes from Google Hotels' listing for that site, when there is one.</li>
-        <li><strong>Prices can be up to 30 minutes old.</strong> A priced result is kept for 30 minutes so a repeat check is fast (the privacy policy says so), and booking sites change prices often. The site you open shows the final price.</li>
+        <li><strong>Prices can be up to 30 minutes old.</strong> A priced result, or one that found no rates, is kept for 30 minutes so a repeat check is fast (the privacy policy says so), and booking sites change prices often. The site you open shows the final price.</li>
         <li><strong>A backup source.</strong> If the main lookup fails outright, the price service can use a second data provider, MakCorps, in US dollars. It names no rooms and gives no links to book, and its prices count as all-in only when MakCorps reports the taxes; otherwise they are shown as listed rates.</li>
       </ul>
       <h3 class="text-2xl font-bold mb-3 tracking-tight">What "all-in" covers, and when it does not</h3>
@@ -299,7 +299,7 @@
     <p class="text-lg text-slate-700 leading-relaxed mb-4">A summary. The <a href="/privacy" class="underline">privacy policy</a> has every detail and is the one that counts.</p>
     <ul class="space-y-3 text-lg text-slate-700 leading-relaxed list-disc pl-6">
       <li><strong>What a check sends:</strong> the hotel name, its town when the page shows it, your dates, the number of adults, the booking site's market and currency, and the extension's version. Never your identity, your browsing history or payment information.</li>
-      <li><strong>What the price service keeps:</strong> a priced result for 30 minutes, with nothing about who asked. Lookups that found no rates, and hotel names we had to pick from close matches, go in short lists (the most recent 50, at most 30 days) that record nothing about who made them.</li>
+      <li><strong>What the price service keeps:</strong> a priced result, or one that found no rates, for 30 minutes, with nothing about who asked, and for one day the number of searches each pair of stay dates and market used. Lookups that found no rates, and hotel names we had to pick from close matches, go in short lists (the most recent 50, at most 30 days) that record nothing about who made them.</li>
       <li><strong>Usage statistics:</strong> anonymous events counted as daily totals, so we can see where people stop getting value. They never contain a web address, a hotel name, your dates or your email, and no IP address is stored.</li>
       <li><strong>Your email, only if you ask:</strong> for a price-drop alert or a watch on a stay you booked, we keep your email and that stay, and use them only to email you about it, with at most one drop alert and a one-click unsubscribe. A watch on a booked stay is deleted the day after check-out.</li>
       <li><strong>On your device only:</strong> the last 25 stays you checked, so a return visit can say what the price did. They never leave your device.</li>

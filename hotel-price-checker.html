@@ -1751,6 +1751,24 @@
     }
     // ---- end one question ----
 
+    // X141 (2026-11-28, docs/owners/web-checks.md B25): the phone card on a no-price result. On a phone or tablet the card
+    // (#phoneLink: the App Store line on an iPhone or iPad, the link to open on a computer elsewhere) sat inside #result,
+    // which a no-price answer, or a check the search ration refused, keeps hidden, so such a visitor saw no way to install
+    // at all while a computer got X40's offer in X5's block. It now moves into X5's block (#noneNext), after the two
+    // searches and above the one question; the next priced result moves it back (phoneShown). Counted as before
+    // (phone_appstore_click, site_install). Written apart from the pieces scripts/answer_check_20261026.py lifts, so the
+    // guide pages' box is unchanged.
+    if (pl) {
+      var x141None = noneShow;
+      noneShow = function (st) {
+        x141None(st);
+        var nn = $('noneNext'), u = $('uq');
+        if (!nn || !pl) return;
+        if (u && u.parentNode === nn) nn.insertBefore(pl, u); else nn.appendChild(pl);
+        if (pl.getAttribute('data-ub-ready') === '1' && !pl.hasAttribute('data-ub-skip')) pl.classList.remove('hidden');
+      };
+    }
+
     // Auto-run only when it is plausibly a person (2026-10-01, docs/CHECKER_CRAWLER_GUARD_2026-10-01.md). 9/29: crawler
     // user agents stopped running checks. 10/01 18:20Z to 18:35Z, right after a deploy pinged IndexNow with ~6,000 URLs,
     // desktop-browser user agents with no bot word walked the hotel pages into this page: ~50 live searches for no one.
